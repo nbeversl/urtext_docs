@@ -1,0 +1,12 @@
+URTEXT LOG2020-02-02 15:16:33,838 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 15:16:33,844 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 15:16:34,334 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 15:16:34,334 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 15:16:34,341 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 15:16:34,341 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+

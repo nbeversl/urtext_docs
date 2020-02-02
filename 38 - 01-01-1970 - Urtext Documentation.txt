@@ -180,10 +180,10 @@ Urtext Documentation >a5m
 ├── Filenames >01m
 └── Extension and Customization >01o
 /-- 
-flags: exclude_from_tree
 title: Table of Contents
-ID: 01a
+flags: exclude_from_tree
 defined in: >029
+ID: 01a
 --/}}
 
 | About Urtext >>013

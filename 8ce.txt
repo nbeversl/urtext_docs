@@ -72,7 +72,7 @@ Metadata Keys
     │   ├── From the root >00g
     │   ├── Sublime Text tools to help with linking >00m
     │   ├── Traverse Mode >00w
-    │   ├── About the Sublime Text Implementation >01u
+    │   ├── Sublime Text Implementation >01u
     │   ├── Sublime >40f
     │   ├── Sublime >7n6
     │   ├── Sublime >8fh
