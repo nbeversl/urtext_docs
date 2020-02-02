@@ -1,0 +1,147 @@
+
+About Urtext
+   
+ {{ What Urtext Is 
+
+    {{ Description
+        
+        Urtext is a compilable syntax for writing in plaintext. It is structured but flexible, allowing freeform, fragmentary writing while permitting gradual aggregation of content with other content, across many files.  You may start with a single note and build it gradually into a large, structured document that can organize and modify itself based on instructions and metadata embedded in its own content. Urtext parses content into outlines (trees) that can also have recursive (tangled) structure, function much like hypertext (HTML), except with the syntax fully exposed to the writer/reader.
+
+        The present interpreter/compiler for Urtext is in Python. Urtext is implemented in Python and can be used wherever Python is used. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS). There is no reason, however, that equivalent or variant implementations could not be created in any language.
+ 
+        /-- ID:yv2 --/ }}
+
+    {{ Comparison To Other Tools
+        
+        Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for organizing text.
+    
+        Urtext consolidates content, markup and instructions (scripting) into a single compilable syntax. Though it can hyperlink many documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible content. Everything the compiler/interpreter reads is visible to the author.
+
+         /-- ID:h8z --/ }}
+
+    {{  Uses
+        
+        Urtext has many uses, including but limited to:
+    
+            - prose writing
+            - research
+            - documentation
+            - knowledge/information base
+            - journaling
+            - Zettelkasten
+            - project/personal organization
+            - notetaking
+            - any other writing or information management that can be done in text form
+ 
+     /-- ID:lhs --/ }}
+
+    {{  Requirements, Features, Benefits 
+
+        Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they cannot be found together in one single existing tool; this was the motivation for creating Urtext.
+
+            - Urtext uses plain text files. Plaintext is fast, human-readable, flexible, cross-platform, device-portable, and future-proof.
+
+            - Urtext can compile, organize, and link content spread across hundreds or thousands of files.
+
+            - Urtext files and content elements can be linked to one another in tree-like, recursive (tangled), and other non-hierarchical ways.
+
+            - It has customizable and extensible metadata that does not rely on the file system.
+
+            - It is decoupled from any particular text editor or interface ; it can be incorporated into any environment that runs Python, including any scriptable text editor or Python-scriptable environment capable of displaying a text editing view.
+
+            - It is usable across multiple platforms and devices.
+               
+            - It can incorporate other plaintext syntaxes.
+   
+            - There is no need to interact directly with the file system (creating, naming, saving, organizing files). File creation, naming and management is handled for you, unless you want to manually name files.
+      
+            - Does not require years to master.
+   
+            - Future-proof. No reliance on anything that may not exist in 5 or 100 years. Urtext files themselves are in plaintext, which will never become unusable. The interpreter/compiler could theoretically be implemented in any sufficiently capable language desired, current, past or future.
+   
+            - Does not depend on a cloud service. Though cloud services can be used to sync project files among devices, the interpreter itself is made to operate locally, not depending on an internet cellular data connection; content wholly resides on the device being used.
+
+            - Being open source, Urtext is extensible, hackable and customizable to specific needs. See | Extension and Customization >01o for information on how to modify it for your own purposes.
+
+            Being in plaintext and having a syntax specification, it can also be used with:
+
+            - Themes and syntax highlighting.
+
+            - Version control (using Git, for example).
+
+        /--ID:006--/}}
+/-- ID: hdf --/
+    }}
+
+
+{{ Sublime Text Implementation /-- tags:sublime --/
+
+    A text editor with scripting capabilities can be seen as an empty, all-purpose user interface for working with plain text in any way. The Urtext package for Sublime Text utilizes Sublime Text's as a user interface for editing Urtext files, using Sublime's embedded Python interpreter both to run the Urtext interpreter/compiler and to add features to Sublime that make working with Urtext easy. The Sublime Text Urtext package:
+
+        - binds Urtext's features to commands in the Sublime command palette
+        - adds key bindings (hotkeys) as shortcuts for some features
+        - leverages the built-in Sublime browser/palette for Urtext project navigation
+        - defines a syntax for use with Sublime's color schemes
+        - adds Urtext syntax highlighting to two of Sublime's default color schemes (Monokai and Sixteen)
+        - adds filebrowser-like project navigation using | Traverse Mode >00w
+
+    Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation. Features that are specific to Sublime are tagged with the keyword `sublime`.
+
+{{     Dependencies and Installation
+    
+        The decision has been made not to include Urtext or its dependencies in the Urtext package for Sublime. This is to simplify development of Urtext independently of particular contexts. As such, it is necessary to install everything manually into Sublime's Python environment, and to update them independently when desired.
+
+        To use Urtext in Sublime Text:
+
+            - Clone or download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ). Place it in your Packages folder (Sublime Text 3/Packages).
+
+            - The following must then be manually added to Sublime's library folder (`Sublime Text 3/Lib/python3.3`):
+
+                - anytree
+                    https://github.com/c0fec0de/anytree
+                    The folder needed is `anytree` inside this download; add it to `Sublime Text 3/Lib/python3.3`.
+
+                - whoosh
+                    https://bitbucket.org/mchaput/whoosh/downloads/
+                    The folder needed is `src/whoosh`; add it to `Sublime Text 3/Lib/python3.3`.
+
+                - pytz
+                    https://pypi.org/project/pytz/
+                    The folder neded is `pytz`; add it to `Sublime Text 3/Lib/python3.3`.
+
+                - six
+                    https://pypi.org/project/six/
+                    The only FILE needed is `six.py`, nothing else; add this directly to `Sublime Text 3/Lib/python3.3`.
+
+                - urtext 
+                    https://github.com/nbeversl/urtext
+                    (This is Urtext itself.) Put the entire folder (`urtext`) into `Sublime Text 3/Lib/python3.3`.
+
+            In the future a script may be provided to install/update these dependencies, but for now it is a manual process.
+
+            Close and reopen Sublime Text. Urtext is now ready to use.
+
+        /-- id: 2fn --/ }}        
+
+    /-- ID:01u --/ }}
+
+
+{{  Pythonista Implementation
+    
+    Urtext can be used on iOS devices using the Pythonista app, which provides a full Python interpreter inside of iOS. 
+    This implentation utilizes Pythonista's access to the native iOS user interface to create a basic text editor view, along with buttons bound to Urtext's functions (similar to the keyboard shortcut bindings in Sublime), project navigation funtions, and syntax highlighting matching those found in the Sublime Text implementation. Using iCloud, projects can be synced among iOS devices and other devices (desktops, laptops) using the same iCloud account. Once synced, a copy of the project resides fully on the device and is not dependent on a live data connection (see | Requirements, Features, Benefits >006).
+    At present,
+
+        - Clone or download the Urtext-Pythonista package.
+
+        - Install all the above mentioned Python dependencies into your Pythonista environment.
+
+        - To launch or switch to Urtext from a single app icon, use the Shortcuts app.
+
+ /--  id: os4 --/ }}
+                                                                                                    
+/-- ID:013
+index:01
+Timestamp:<Wed., Jun. 05, 2019, 10:01 PM>
+tags: 
+--/

@@ -1,0 +1,59 @@
+Inline Nodes                                                                 
+	 
+    Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. The syntax for inline nodes is to wrap the content in double curly braces: {{ Example inline node /-- ID:00e --/ }}. 
+
+    {{ Creating Inline Nodes /-- ID: rbs --/
+
+        {{  Sublime /-- tags:sublime --/
+            
+                Press Shift-Ctrl-{ . Inside the inserted double curly braces is a new node with an auto-generated ID. 
+            
+                To wrap existing content into an inline node, first select the content and use the same keypress.
+            
+                You can also do this manually by typing the curly braces generating a new metadata region with an ID by pressing Control-Shift-I. /--  id: 8fh--/ }}
+
+        {{  Pythonista
+
+            Press the curly-braces `{ {` in the Urtext key row.
+
+         /-- id: hrv --/  /-- tags:pythonista --/}}
+
+
+        {{  Python
+       
+               %%-PYTHON
+
+                   UrtextProject.add_inline_node(date=None, contents='', metadata={}, one_line=False)
+                   
+                   """
+                   Kwargs:
+                       date (datetime): optional timestamp
+                       contents (str): optional initial contents
+                       metadata (dict): optional key/value metadata pairs
+                       one_line (Boolean): Whether the wrapper and metadata should be consolidated on a single line
+                   Returns:
+                       string: the contents of the new node, which can then be manually inserted using a text editor.
+
+                   This is mostly a utility function to generate text that can otherwise be written manually. Since this has to be done in any Urtext implementation, it is included as a method. It also generates a unique node ID and adds the node to the project object.
+                   """
+               
+               %%-END  /-- id: fv2;  --/ }}
+
+         }} 
+
+    Unlike a word processor, Urtext requires attention to syntax. Every opening doubly curly bracket must be closed in the same file and requires an ID metadata tag between its opening an closing brackets.
+
+    NOTE that file-level nodes (>01g) do not use curly-braces, as their boundaries are defined by the file itself.
+
+    For all purposes in Urtext, inline nodes' metadata and identity is unique from their containing file and parent nodes.
+
+    {{  Syntax Highlighting of Inline Nodes (Sublime)
+    
+        In Sublime, when syntax highlighting is used (>01d), inline nodes will have background shading showing nesting up to five layers deep. More levels can be added, if you need them, by altering sublime_urtext.sublime-syntax./-- id: koe --/ /-- tags:sublime --/ }}
+
+
+/-- ID:004
+Timestamp:<Fri., Jun. 07, 2019, 04:14 PM>
+tags: 
+index: 04
+--/

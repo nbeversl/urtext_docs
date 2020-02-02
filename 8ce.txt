@@ -1,0 +1,92 @@
+Metadata Keys
+├── flags
+│   └── exclude_from_tree
+│       ├── Example Source Node 2 >00v
+│       ├── Example Dynamic Node Title >016
+│       ├── Example Source Node 1 >017
+│       ├── Table of Contents >01a
+│       ├── Example Source Node 3 >01b
+│       └── Example Source Node 4 >01c
+├── home
+│   └── a5m
+│       └── project_settings >00l
+├── kind
+│   └── gift_list
+│       └── Node Metadata >00x
+├── note
+│   └── example note
+│       └── Node Metadata >00x
+├── project_title
+│   └── Urtext Documentation
+│       └── project_settings >00l
+├── purpose
+│   └── work-related
+│       └── Node Metadata >00x
+├── tag
+│   ├── example_node
+│   │   ├── Example Source Node 2 >00v
+│   │   ├── Example Source Node 1 >017
+│   │   ├── Example Source Node 3 >01b
+│   │   └── Example Source Node 4 >01c
+│   ├── exclude_this
+│   │   └── Example Source Node 2 >00v
+│   └── groceries
+│       └── Node Metadata >00x
+└── tags
+    ├── 
+    │   ├── Inline Nodes >004
+    │   ├── Timestamps >005
+    │   ├── Links and Pointers >00j
+    │   ├── project_settings >00l
+    │   ├── Node Metadata >00x
+    │   ├── About Urtext >013
+    │   ├── In-Progress / Experimental / Wish List >014
+    │   ├── Reference: Key Bindings >018
+    │   ├── The Node List >01i
+    │   ├── Nodes >01j
+    │   ├── Filenames >01m
+    │   ├── Extension and Customization >01o
+    │   ├── More About Node IDs >01q
+    │   └── Projects, Structure and Compiling >01x
+    ├── coming
+    │   └── Files >00p
+    ├── python
+    │   ├── Python >0ow
+    │   ├── Python >83e
+    │   ├── Python >b44
+    │   ├── Python >n2m
+    │   └── Python >xor
+    ├── pythonista
+    │   ├── Pythonista >0yn
+    │   ├── Pythonista >agg
+    │   ├── Pythonista >c3y
+    │   ├── Pythonista >c7r
+    │   ├── Pythonista >hrv
+    │   ├── Pythonista >iy8
+    │   ├── Pythonista >ouh
+    │   ├── Pythonista >rs8
+    │   └── Pythonista >xcx
+    ├── sublime
+    │   ├── Sublime >00a
+    │   ├── From any given node >00f
+    │   ├── From the root >00g
+    │   ├── Sublime Text tools to help with linking >00m
+    │   ├── Traverse Mode >00w
+    │   ├── About the Sublime Text Implementation >01u
+    │   ├── Sublime >40f
+    │   ├── Sublime >7n6
+    │   ├── Sublime >8fh
+    │   ├── Using a Sublime Project >c3n
+    │   ├── Syntax Highlighting of Inline Nodes (Sublime) >koe
+    │   ├── Sublime >osu
+    │   ├── Sublime >p78
+    │   ├── Sublime >qwn
+    │   ├── Sublime >rij
+    │   ├── Sublime >xo8
+    │   └── Sublime >zm2
+    └── urtext_documentation
+        └── Setup >003
+/--
+id:zzy
+title: Metadata List
+--/

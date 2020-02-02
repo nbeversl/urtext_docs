@@ -1,0 +1,15 @@
+Search
+
+   {{  Fuzzy Full Text Search 
+    
+    Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments.
+
+    
+
+    /-- ID: 4p9 --/ }}
+
+
+
+/-- ID:k67
+Timestamp:<Fri., Oct. 11, 2019, 11:36 AM>
+--/

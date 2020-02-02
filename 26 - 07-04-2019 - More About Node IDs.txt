@@ -1,0 +1,32 @@
+More About Node IDs
+
+	The purpose of Node IDs is to uniquely identify each piece of content (node) in a project. This permits free file naming/renaming without breaking links within a project. It also makes links of short, uniform length, minimally impacting readability of surrounding text.
+
+	Nodes IDs are three characters long and incorporate all ten digits (0 - 9) and all letters a - z, resulting in over 46,000 possible unique identifiers per project.
+
+	Node IDs are generated automatically by Urtext; every newly created node is assigned an available (unused) ID. 
+
+	IDs have no special meaning and do not represent the order of node creation within a project. They are assigned in random order so that, if the project is used across many devices that may not always be in sync, the probability of accidentally creating two different nodes with the same ID is minimal.
+
+	When an ID is deleted from a project, new nodes are later assigned to vacant node IDs.
+
+	{{ Inserting a Node ID manually
+
+	Control-Shift-I will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually. /-- id: 04s --/ }}
+
+	Node IDs can also be user-created arbitrarily if for some reason you want to. If you do this, note that node IDs are case-insensitive; this is so that they can also be incorporated as filenames (for file-level nodes) as needed.
+
+	If more than one Node ID appears in a node, only the first one is read and the rest are treated (indexed) as regular metadata.
+
+{{ 	Accidental Duplicate Node IDs
+
+	If somehow two nodes end up with the same ID, the compiler will include only one (the first one found in the order of compilation, and the entire FILE containing the node with the duplicate ID is omitted. The log will show a message to this effect. 
+
+	To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
+	
+	/-- id: bzv --/ }}
+
+/-- ID:01q
+Timestamp:<Thu., Jul. 04, 2019, 06:46 AM>
+tags: 
+ --/

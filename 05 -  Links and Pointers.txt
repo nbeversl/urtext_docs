@@ -1,0 +1,84 @@
+Links and Pointers
+
+{{  Simple Links 
+
+    To make a simple "hyperlink" from one node to another, use the right angle bracket (>) followed immediately by a node ID. Linking does not require a filename or any other information, only the node ID. Any other surrounding text is ignored.
+
+    {{  Sublime Text tools to help with linking /-- tags:sublime --/
+
+        Two Sublime Command Palette commands can make linking quick and easy:
+     
+        Urtext : Link To ...
+            Links from the currently viewed node to another node which you can select in the selection panel. When you select a node in the quick panel, a link to that node will be inserted at the cursor.
+ 
+        Urtext: Link From ...
+            Links TO the current node FROM another node. When you select this command, a link to the current node will be copied to the clipboard. You can then paste the reference into the node you open in the quick panel.
+            
+            /-- ID:00m --/ }} 
+
+        /-- ID: 0y2 --/ }}
+
+{{  Dynamically Titled Links
+
+    Prepending a pipe character to any node link will populate the space between the pipe and link with the node's title, from its metadata or default title. Examples are found throughout this documentation. 
+
+    Note that node link titles are not updated globally throughout the project whenever any node's title changes; rather, titled links are updated at the single file level whenever that file is saved.  
+
+ /-- id: 4vu --/ }}
+
+{{ Opening Links 
+    
+    {{ Sublime
+
+        Press Shift-Ctrl-/ on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. /-- id: osu --/ /-- tags:sublime --/}}
+
+    {{ Pythonista 
+
+        Use the `>` key when the cursor is on any line containing a link.
+
+    /--tags: pythonista--/ /-- id: iy8 --/ }}
+
+    Note that Urtext reads node regions on every save, so cursor location may be imprecise if the file has been altered since the last save. 
+
+    {{ Python
+
+        Pass the current line contents and cursor position (within the line) to the UrtextProject. The method returns the best link match. Find the filename as described in >h8c and open it at the start_position returned from get_link(). See the open_urtext_node() function in the Sublime Text package for an example. 
+
+        %%-PYTHON
+
+            UrtextProject.get_link( line, position=0 )
+            """
+            Args:
+                line (string) : the current line from the text editor
+            Kwargs:
+                position (int) : cursor position
+            Returns: tuple
+                ('HTTP', url ), 
+                ('NODE', node_id [string], start_position [int]),
+                or None
+            Notes:
+                This looks first in the line around the cursor position, 
+                then forward, then backward.
+            """
+
+        %%-END
+
+     /-- id: eea --/ }} /-- ID:01w --/ }}
+
+
+| Viewing Linked Relationships >>00u
+
+
+
+
+| Linking to outside resources >>00q
+
+
+| Pointers >>lmu
+| Traverse Mode >>00w
+
+/-- ID:00j
+Timestamp:<Fri., Jun. 07, 2019, 05:26 PM>
+tags: 
+index: 06
+ --/

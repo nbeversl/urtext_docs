@@ -1,0 +1,49 @@
+Metadata Keys
+├── flags
+│   └── exclude_from_tree
+│       └── Excludes a node from being included in a tree. Because it is flagged `exclude_from_tree`, this node >1e3
+├── home
+│   └── a5m
+│       ├── project_settings >00l
+│       └── project_settings >00l
+├── kind
+│   └── gift_list
+│       ├── Node Metadata >00x
+│       └── Node Metadata >00x
+├── note
+│   └── example note
+│       ├── Node Metadata >00x
+│       └── Node Metadata >00x
+├── purpose
+│   └── work-related
+│       ├── Node Metadata >00x
+│       └── Node Metadata >00x
+├── tag
+│   ├── example_node
+│   │   ├── Example Source Node 2 >00v
+│   │   ├── Example Source Node 1 >017
+│   │   ├── Example Source Node 3 >01b
+│   │   └── Example Source Node 4 >01c
+│   ├── exclude_this
+│   │   └── Example Source Node 2 >00v
+│   └── groceries
+│       ├── Node Metadata >00x
+│       └── Node Metadata >00x
+└── tags
+    ├── coming
+    │   └── Files >00p
+    ├── python
+    │   └── (Python) >83e
+    └── sublime
+        ├── From a selected node >00f
+        ├── From the root >00g
+        ├── Sublime Text tools to help with linking >00m
+        ├── About the Sublime Text Implementation >01u
+        ├── Generating a node ID manually >a0i
+        ├── Syntax Highlighting of Inline Nodes >koe
+        ├── (Sublime) >qx6
+        └── (Sublime) >xo8
+/--
+ID:zzy
+title: Metadata List
+--/
