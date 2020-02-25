@@ -49,7 +49,7 @@
 %  
             - tree:(root id) 
     
-                (root id) : Populates the node with a tree with the provided node ID as root. For more information, see | Trees >00h.
+                (root id) : Populates the node with a tree with the provided node ID as root. For more on trees, see >00h.
                 /--  id: 4mb; title:tree --/
 
 %
@@ -64,8 +64,11 @@
                 
                 /-- ID: l2c; title: export --/ 
  }}
-            | tag_all >>yin
 
+
+            Two more dynamic keys are available. See:
+                | tag_all >>yin
+                | search >>uy4
            
 
     /--  id: 37h--/ }}
@@ -87,9 +90,9 @@
         {{ Example Source Node 4
            /-- ID: 01c; tag: example_node; index:05 ;flags:exclude_from_tree; --/ }}
 
-    ( Note that each of these nodes has the `exclude_from_tree` flag in the metadata, so that they are not included in the Table of Contents. See | - exclude_from_tree >1e3. )
+    ( Note that each of these nodes has the `exclude_from_tree` flag in the metadata, so that they are not included in the Table of Contents. See >1e3. )
 
-    Here is an example dynamic node definition targeting node ID: | Example Dynamic Node Title >016
+    Here is an example dynamic node definition targeting node ID >016
 
         [[ ID:016
             include:metadata:tag:example_node
@@ -110,9 +113,9 @@
     Example Source Node 4 >01c
     /-- 
     title: Example Dynamic Node Title
-    flags: exclude_from_tree
     defined in: >01r
     ID: 016
+    flags: exclude_from_tree
     --/}}
                                                                                               
 
@@ -133,7 +136,7 @@ index: 08
 
     Changing the titles or structure of sections in this documentation will dynamically update the table of contents tree.
 
-    For more information, see | Trees >00h
+    For more information on trees, see | Trees >00h
 
      /-- ID: 029 --/}}
      

@@ -49,7 +49,7 @@ Pointers >lmu
         ├── Using this document >009
             ├── On the web >fak
             ├── With Sublime Text >e6m
-            ├── With the Pythonista Binding >1dc
+            ├── With Pythonista >1dc
             └── Standalone >plq
         ├── About Urtext >013
         ├── Setup >003

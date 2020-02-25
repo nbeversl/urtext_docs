@@ -1,15 +1,51 @@
 Search
 
-   {{  Fuzzy Full Text Search 
+   {{  Full Text Search 
     
-    Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments.
+    Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments. Urtext uses the `whoosh` module by Matt Chaput, which generates indexes from text content that are stored ("pickled") to disk for fast queries. 
 
-    
+	{{  Building the Index
+	    Anytime a new project is instantiated, Urtext creates an `index` folder inside the project folder for storing the search index. This is maintained by Urtext/whoosh and requires no user interaction. The index is initially empty. Before using it for the first time, select `Urtext: Rebuild Search Index` from the command palette. This will take less than a second to several seconds or longer, depending on the number of files. From then on, nodes are reindexed every time a file is saved. If the index gets out of date/sync with the project for any reason (you notice search terms are not being found, or matches are found that no longer exist), use `Urtext: Rebuild Search Index` again.
+	/-- id: xqi --/ }}
+
+	{{	Searching
+
+		^ Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes. /-- id: k8v; timestamp: <Mon., Feb. 24, 2020, 01:05 PM> --/
+		/-- id: mzj --/
+
+        ^ Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. /-- id: q8j; timestamp: <Mon., Feb. 24, 2020, 02:19 PM> --/
+
+
+         }}	
+
+	{{ 	Search Using Dynamic Nodes
+
+        Search results can populate a dynamic node by using the key-value pair:
+
+            - search:(string)
+
+        For example, the following definition targets node >3x3 (below) and populates it with all nodes containing the word "urtext".
+        [[ 
+        id:3x3
+        search:urtext
+        metadata:title:Example Search Results
+        metadata:flags:exclude_from_tree
+        ]]
+
+        {{
+Example Search Results
+/-- 
+title: Example Search Results
+defined in: >uy4
+ID: 3x3
+flags: exclude_from_tree
+--/}}
+
+ /-- id: uy4 --/ }}
+
 
     /-- ID: 4p9 --/ }}
 
 
 
-/-- ID:k67
-Timestamp:<Fri., Oct. 11, 2019, 11:36 AM>
---/
+/-- ID:k67--/

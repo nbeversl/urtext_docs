@@ -1,16 +1,16 @@
+
 Urtext Documentation
 
-Version: 0.1.5-alpha
+Version: 0.2.0-alpha
 License: GNU General Public License 3.0
 
 {{  Using this document
 
     This is a documentation of Urtext, written in Urtext. 
-
     It can be used in an Urtext implementation to try out the features described. It can also be read on the web in HTML-exported form.
 
     {{  On the web
-
+        
         An HTML export of the latest version of this document is published at www.urtext.org/docs.
 
     /-- ID:fak --/ }}
@@ -18,19 +18,14 @@ License: GNU General Public License 3.0
     {{ With Sublime Text
 
         - You can always open this help document by choosing "Urtext: Help" from the command pallette.
-
-        - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See | Links and Pointers >00j for more information).
-
+        - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See Links >00j for more information).
         - To return to this table of contents, press ctrl-shift-H.
-
-        - You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See | Traverse Mode >00w for more information.
-      
-        - Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See | Syntax Highlighting >01d for more information.
+        - You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See (>00w) for more information on Traverse Mode.
+        - Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See >01d for more on syntax highlighting.
 
      /-- ID:e6m --/ }}
 
-    {{  With the Pythonista Binding
-       
+    {{  With Pythonista
 
 
      /-- ID:1dc --/ }}
@@ -38,7 +33,7 @@ License: GNU General Public License 3.0
 
     {{  Standalone
 
-        A Markdown export of this document is included in the documentation folder and readable 
+        Being in plaintext, it is also human readable as-is. 
         
      /-- ID:plq --/ }}
 
@@ -51,7 +46,7 @@ Urtext Documentation >a5m
 ├── Using this document >009
     ├── On the web >fak
     ├── With Sublime Text >e6m
-    ├── With the Pythonista Binding >1dc
+    ├── With Pythonista >1dc
     └── Standalone >plq
 ├── About Urtext >013
     ├── What Urtext Is >hdf
@@ -120,7 +115,7 @@ Urtext Documentation >a5m
             └── Time Zones >7w6
                 └── Timezone List >zh1
         └── Project Metadata List >012
-            ├── Metadata List >zzy
+            ├── ? (Missing Node): >zzy
             └── Opening the Metadata List >saa
                 ├── Sublime >zm2
                 ├── Pythonista >c7r
@@ -142,7 +137,8 @@ Urtext Documentation >a5m
         ├── metadata >oa2
         ├── tree >4mb
         ├── export >l2c
-        └── tag_all >yin
+        ├── tag_all >yin
+        └── Search Using Dynamic Nodes >uy4
     ├── Example 1 : List >01r
     └── Example 2 : Tree >029
 ├── Trees >00h
@@ -176,14 +172,19 @@ Urtext Documentation >a5m
     ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
     └── Example : Fragment Exported to HTML >baq
 ├── Search >k67
-    └── Fuzzy Full Text Search >4p9
+    └── Full Text Search >4p9
+        ├── Building the Index >xqi
+        ├── Searching >mzj
+            ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+            └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+        └── Search Using Dynamic Nodes >uy4
 ├── Filenames >01m
 └── Extension and Customization >01o
 /-- 
 title: Table of Contents
-flags: exclude_from_tree
 defined in: >029
 ID: 01a
+flags: exclude_from_tree
 --/}}
 
 | About Urtext >>013

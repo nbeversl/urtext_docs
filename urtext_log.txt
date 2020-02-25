@@ -10,3 +10,4539 @@ URTEXT LOG2020-02-02 15:16:33,838 INFO Multiple ID tags in >012, 012, 012 ( usin
 
 2020-02-02 15:16:34,341 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
 
+2020-02-02 15:17:52,223 INFO MODIFIED 38 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-02 15:17:52,223 INFO MODIFIED 38 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-02 21:55:50,511 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 21:55:50,511 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 21:55:54,940 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 21:55:54,947 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 21:55:55,355 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 21:55:55,355 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 21:55:55,362 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 21:55:55,362 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 21:56:19,266 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:19,266 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:24,947 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:24,947 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:27,550 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:27,550 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:30,202 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:30,202 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:51,453 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:51,453 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:54,321 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:56:54,321 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:57:01,589 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:57:01,589 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:57:15,622 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:57:15,622 INFO MODIFIED 27 - 07-04-2019 - The Node List.txt - Updating the project object
+
+2020-02-02 21:57:55,842 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 21:57:55,842 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 21:58:32,290 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 21:58:32,290 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 21:58:35,210 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 21:58:35,217 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 21:58:35,469 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 21:58:35,469 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 21:58:35,487 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 21:58:35,487 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 21:59:02,466 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 21:59:02,473 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 21:59:02,723 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 21:59:02,723 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 21:59:02,729 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 21:59:02,729 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 21:59:11,960 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 21:59:11,960 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 21:59:12,041 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 21:59:12,041 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:00:51,453 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-02 22:00:51,453 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-02 22:01:08,870 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 22:01:08,877 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 22:01:09,111 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 22:01:09,111 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 22:01:09,127 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 22:01:09,127 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 22:01:12,063 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:01:12,063 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:01:12,139 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:01:12,139 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:01:26,801 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-02 22:01:26,801 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-02 22:04:14,016 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 22:04:14,022 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 22:04:14,259 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 22:04:14,259 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 22:04:14,275 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 22:04:14,275 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 22:04:16,939 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:04:16,939 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:04:17,019 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:04:17,019 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:05:26,173 INFO MODIFIED 131 - 03-19-2019 - <Tue , Mar  19, 2019, 02-50 PM>.txt - Updating the project object
+
+2020-02-02 22:05:26,173 INFO MODIFIED 131 - 03-19-2019 - <Tue , Mar  19, 2019, 02-50 PM>.txt - Updating the project object
+
+2020-02-02 22:05:26,198 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:05:26,198 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:05:31,378 INFO MODIFIED 131 - 03-19-2019 - <Tue , Mar  19, 2019, 02-50 PM>.txt - Updating the project object
+
+2020-02-02 22:05:31,378 INFO MODIFIED 131 - 03-19-2019 - <Tue , Mar  19, 2019, 02-50 PM>.txt - Updating the project object
+
+2020-02-02 22:05:31,380 INFO Node >001 has duplicate definition in >029. Keeping the definition in >027.
+
+2020-02-02 22:05:31,380 INFO Node >001 has duplicate definition in >029. Keeping the definition in >027.
+
+2020-02-02 22:05:31,399 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:05:31,399 INFO Dynamic node definition >027 points to nonexistent node >001
+
+2020-02-02 22:05:31,399 INFO Dynamic node definition >029 points to nonexistent node >001
+
+2020-02-02 22:05:31,399 INFO Dynamic node definition >029 points to nonexistent node >001
+
+2020-02-02 22:05:57,639 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-02 22:05:57,639 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-02 22:06:12,284 INFO MODIFIED 131 - 03-19-2019 - <Tue , Mar  19, 2019, 02-50 PM>.txt - Updating the project object
+
+2020-02-02 22:06:12,284 INFO MODIFIED 131 - 03-19-2019 - <Tue , Mar  19, 2019, 02-50 PM>.txt - Updating the project object
+
+2020-02-02 22:06:12,286 INFO Node >001 has duplicate definition in >029. Keeping the definition in >027.
+
+2020-02-02 22:06:12,286 INFO Node >001 has duplicate definition in >029. Keeping the definition in >027.
+
+2020-02-02 22:07:15,434 INFO MODIFIED cie.txt - Updating the project object
+
+2020-02-02 22:07:15,434 INFO MODIFIED cie.txt - Updating the project object
+
+2020-02-02 22:07:51,976 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:07:51,976 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:09:04,258 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:09:04,258 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:09:59,688 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:09:59,688 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:11:41,205 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:11:41,205 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:12:35,772 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:12:35,772 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:12:57,418 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:12:57,418 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:13:07,531 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:13:07,531 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:13:23,799 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:13:23,799 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:13:44,983 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:13:44,983 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:14:04,667 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:14:04,667 INFO MODIFIED project.py - Updating the project object
+
+2020-02-02 22:14:07,719 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 22:14:07,726 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 22:14:08,185 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 22:14:08,185 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-02 22:14:08,193 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 22:14:08,193 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-02 22:14:10,689 INFO Node >001 has duplicate definition in >029. Keeping the definition in >027.
+
+2020-02-02 22:14:10,689 INFO Node >001 has duplicate definition in >029. Keeping the definition in >027.
+
+2020-02-02 22:14:10,928 INFO Node >001 has duplicate definition in >029. Keeping the definition in >027.
+
+2020-02-02 22:14:10,928 INFO Node >001 has duplicate definition in >029. Keeping the definition in >027.
+
+2020-02-02 22:36:23,646 INFO MODIFIED oaa.txt - Updating the project object
+
+2020-02-02 22:36:23,646 INFO MODIFIED oaa.txt - Updating the project object
+
+2020-02-02 22:36:42,886 INFO MODIFIED 2oz.txt - Updating the project object
+
+2020-02-02 22:36:42,886 INFO MODIFIED 2oz.txt - Updating the project object
+
+2020-02-02 22:37:32,646 INFO MODIFIED 2c6.txt - Updating the project object
+
+2020-02-02 22:37:32,646 INFO MODIFIED 2c6.txt - Updating the project object
+
+2020-02-03 08:44:17,112 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:44:17,112 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:44:30,481 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:44:30,481 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:44:54,522 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:44:54,522 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:44:55,739 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:44:55,739 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:45:01,633 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:45:01,633 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:45:05,390 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:45:05,390 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:50:29,709 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:50:29,709 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:51:06,081 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:51:06,081 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:51:09,152 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:51:09,152 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:51:47,125 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:51:47,125 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:51:54,715 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:51:54,715 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:52:44,576 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:52:44,576 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:52:53,239 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:52:53,239 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:53:37,081 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:53:37,081 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:54:29,551 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:54:29,551 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:54:30,609 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:54:30,609 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:54:51,871 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:54:51,871 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:55:15,410 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 08:55:15,410 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:03:29,490 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:03:29,490 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:04:23,154 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:04:23,154 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:04:29,769 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:04:29,769 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:04:31,646 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:04:31,646 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:04:55,723 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:04:55,723 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:06:19,885 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:06:19,885 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:06:27,220 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:06:27,220 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:07:09,386 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:07:09,386 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:07:24,734 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:07:24,734 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:08:07,083 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:08:07,083 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:12:40,593 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:12:40,593 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:13:09,516 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:13:09,516 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:13:11,838 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:13:11,838 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:14:04,261 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:14:04,261 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:14:06,274 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:14:06,274 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:14:07,066 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:14:07,066 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:16:58,728 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:16:58,728 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:17:05,760 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:17:05,760 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:17:12,690 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:17:12,690 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:17:14,962 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:17:14,962 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:18:10,853 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:18:10,853 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:19:58,150 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:19:58,150 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:20:09,579 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:20:09,579 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:21:42,978 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:21:42,978 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:22:14,209 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:22:14,209 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:24:20,953 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:24:20,953 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:24:55,217 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:24:55,217 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:24:57,287 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:24:57,287 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:27:23,567 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:27:23,567 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:28:14,165 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:28:14,165 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-03 09:54:03,743 INFO MODIFIED base.php - Updating the project object
+
+2020-02-03 09:54:03,743 INFO MODIFIED base.php - Updating the project object
+
+2020-02-03 09:54:31,869 INFO MODIFIED base.php - Updating the project object
+
+2020-02-03 09:54:31,869 INFO MODIFIED base.php - Updating the project object
+
+2020-02-03 09:54:56,202 INFO MODIFIED base.php - Updating the project object
+
+2020-02-03 09:54:56,202 INFO MODIFIED base.php - Updating the project object
+
+2020-02-03 09:58:52,837 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 09:58:52,837 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:01:12,687 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:01:12,687 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:03:02,635 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:03:02,635 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:03:36,737 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:03:36,737 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:09:38,993 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:09:38,993 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:10:55,721 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:10:55,721 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:11:29,705 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:11:29,705 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:12:06,999 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 10:12:06,999 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:30:46,101 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:30:46,147 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:32:30,644 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:32:30,651 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:32:43,246 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:32:43,255 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:33:16,884 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:33:16,895 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:33:25,758 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:33:25,767 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:33:45,107 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:33:45,114 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:33:45,353 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:33:45,353 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:33:45,370 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:33:45,370 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:33:59,391 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:33:59,391 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:34:31,784 INFO MODIFIED compile.py - Updating the project object
+
+2020-02-03 14:34:31,784 INFO MODIFIED compile.py - Updating the project object
+
+2020-02-03 14:34:41,220 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:34:41,220 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:35:14,198 INFO MODIFIED trees.py - Updating the project object
+
+2020-02-03 14:35:14,198 INFO MODIFIED trees.py - Updating the project object
+
+2020-02-03 14:35:39,509 INFO MODIFIED trees.py - Updating the project object
+
+2020-02-03 14:35:39,509 INFO MODIFIED trees.py - Updating the project object
+
+2020-02-03 14:35:40,109 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:35:40,109 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:35:52,726 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:35:52,726 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:36:05,303 INFO MODIFIED trees.py - Updating the project object
+
+2020-02-03 14:36:05,303 INFO MODIFIED trees.py - Updating the project object
+
+2020-02-03 14:36:11,053 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:36:11,053 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:38:10,055 INFO MODIFIED .lando.yml - Updating the project object
+
+2020-02-03 14:38:10,055 INFO MODIFIED .lando.yml - Updating the project object
+
+2020-02-03 14:40:12,556 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:40:12,556 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:40:58,720 INFO MODIFIED trees.py - Updating the project object
+
+2020-02-03 14:40:58,720 INFO MODIFIED trees.py - Updating the project object
+
+2020-02-03 14:41:12,467 INFO MODIFIED compile.py - Updating the project object
+
+2020-02-03 14:41:12,467 INFO MODIFIED compile.py - Updating the project object
+
+2020-02-03 14:41:53,275 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:41:53,275 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:42:13,444 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:42:13,444 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:42:16,796 INFO MODIFIED trees.py - Updating the project object
+
+2020-02-03 14:42:16,796 INFO MODIFIED trees.py - Updating the project object
+
+2020-02-03 14:42:22,535 INFO MODIFIED compile.py - Updating the project object
+
+2020-02-03 14:42:22,535 INFO MODIFIED compile.py - Updating the project object
+
+2020-02-03 14:42:32,007 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:42:32,007 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:42:44,241 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:42:44,241 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:44:35,359 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:44:35,367 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:45:11,845 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:45:11,852 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:45:12,033 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:45:12,033 INFO Multiple ID tags in >012, 012, 012 ( using the first one found.
+
+2020-02-03 14:45:12,040 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:45:12,040 INFO Duplicate node ID zzy in 39 - 01-01-1970 - Metadata List.txt -- already used in 23 - 01-01-1970 - Metadata List.txt (>zzy)
+
+2020-02-03 14:45:48,760 INFO MODIFIED project.py - Updating the project object
+
+2020-02-03 14:45:48,760 INFO MODIFIED project.py - Updating the project object
+
+2020-02-07 14:55:13,949 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-07 14:55:13,949 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-07 14:55:22,156 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 14:55:22,156 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 14:55:27,303 INFO MODIFIED 1c6.txt - Updating the project object
+
+2020-02-07 14:55:27,303 INFO MODIFIED 1c6.txt - Updating the project object
+
+2020-02-07 14:01:26,503 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 14:01:26,503 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 14:04:28,583 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:04:28,583 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:08:39,149 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 14:08:39,149 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 14:12:40,048 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 14:12:40,048 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 14:12:40,071 INFO Dynamic node definition >02o points to nonexistent node >z6c
+
+2020-02-07 14:12:40,071 INFO Dynamic node definition >02o points to nonexistent node >z6c
+
+2020-02-07 14:12:40,073 INFO Dynamic node definition >02o points to nonexistent node >gtu
+
+2020-02-07 14:12:40,073 INFO Dynamic node definition >02o points to nonexistent node >gtu
+
+2020-02-07 14:12:46,776 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 14:12:46,776 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 14:12:46,798 INFO Dynamic node definition >02o points to nonexistent node >z6c
+
+2020-02-07 14:12:46,798 INFO Dynamic node definition >02o points to nonexistent node >z6c
+
+2020-02-07 14:12:46,800 INFO Dynamic node definition >02o points to nonexistent node >gtu
+
+2020-02-07 14:12:46,800 INFO Dynamic node definition >02o points to nonexistent node >gtu
+
+2020-02-07 14:14:48,157 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 14:14:48,157 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 14:16:36,476 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 14:16:36,476 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 14:16:37,581 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 14:16:37,581 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 14:16:39,621 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 14:16:39,621 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 14:16:40,488 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 14:16:40,488 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 14:19:45,682 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-07 14:19:45,682 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-07 14:19:47,579 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-07 14:19:47,579 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-07 14:19:49,737 INFO MODIFIED 10 -  project_settings.txt - Updating the project object
+
+2020-02-07 14:19:49,737 INFO MODIFIED 10 -  project_settings.txt - Updating the project object
+
+2020-02-07 14:23:14,970 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:23:14,970 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:23:16,847 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:23:16,847 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:51:46,387 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:51:46,387 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:53:18,787 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:53:18,787 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:58:37,877 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:58:37,877 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:59:25,129 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:59:25,129 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:59:27,242 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 14:59:27,242 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:00:11,981 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:00:11,981 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:00:14,505 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:00:14,505 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:00:57,414 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:00:57,414 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:01:04,657 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:01:04,657 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:02:19,508 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:02:19,508 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:02:23,431 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:02:23,431 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:07:04,328 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:07:04,328 INFO MODIFIED syntax.py - Updating the project object
+
+2020-02-07 15:07:15,178 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:07:15,178 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:08:07,911 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:08:07,911 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:08:17,650 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:08:17,650 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:08:24,147 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:08:24,147 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:08:24,783 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:08:24,783 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:09:08,039 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:09:08,039 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:09:30,104 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:09:30,104 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:10:41,403 INFO MODIFIED launcy.py - Updating the project object
+
+2020-02-07 15:10:41,403 INFO MODIFIED launcy.py - Updating the project object
+
+2020-02-07 15:10:51,583 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:10:51,583 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:10:54,878 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:10:54,878 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:11:20,734 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:11:20,734 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:12:05,402 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:12:05,402 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:13:24,311 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:13:24,311 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:13:35,854 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:13:35,854 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:13:45,714 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:13:45,714 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:14:22,130 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:14:22,130 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:20:43,224 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:20:43,224 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:22:06,527 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:22:06,527 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:22:07,213 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:22:07,213 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:22:13,728 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:22:13,728 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:22:14,632 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:22:14,632 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 15:34:30,749 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 15:34:30,749 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 15:51:26,454 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-07 15:51:26,454 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-07 15:51:29,971 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-07 15:51:29,971 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-07 16:01:12,739 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:01:12,739 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:01:43,432 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:01:43,432 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:02:57,131 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:02:57,131 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:02:58,136 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:02:58,136 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:02:59,932 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:02:59,932 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:00,736 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:00,736 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:00,963 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:00,963 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:01,131 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:01,131 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:01,309 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:01,309 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:01,471 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:01,471 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:01,620 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:03:01,620 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:04:22,899 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:04:22,899 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:04:38,880 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:04:38,880 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:04:39,403 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:04:39,403 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:04:45,803 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 16:04:45,803 INFO MODIFIED urtext_pythonista.py - Updating the project object
+
+2020-02-07 17:37:48,829 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:37:48,829 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:37:48,829 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:37:48,829 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:37:56,388 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-07 17:37:56,388 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-07 17:37:56,388 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-07 17:37:56,388 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-07 17:38:20,482 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:38:20,482 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:38:20,482 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:38:20,482 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:38:46,608 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:38:46,608 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:38:46,608 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:38:46,608 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:38:49,980 INFO MODIFIED y6t.txt - Updating the project object
+
+2020-02-07 17:38:49,980 INFO MODIFIED y6t.txt - Updating the project object
+
+2020-02-07 17:38:49,980 INFO MODIFIED y6t.txt - Updating the project object
+
+2020-02-07 17:38:49,980 INFO MODIFIED y6t.txt - Updating the project object
+
+2020-02-07 17:39:00,971 INFO MODIFIED y6t.txt - Updating the project object
+
+2020-02-07 17:39:00,971 INFO MODIFIED y6t.txt - Updating the project object
+
+2020-02-07 17:39:00,971 INFO MODIFIED y6t.txt - Updating the project object
+
+2020-02-07 17:39:00,971 INFO MODIFIED y6t.txt - Updating the project object
+
+2020-02-07 17:40:40,387 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:40:40,387 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:40:40,387 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:40:40,387 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:40:48,405 INFO MODIFIED t46.txt - Updating the project object
+
+2020-02-07 17:40:48,405 INFO MODIFIED t46.txt - Updating the project object
+
+2020-02-07 17:40:48,405 INFO MODIFIED t46.txt - Updating the project object
+
+2020-02-07 17:40:48,405 INFO MODIFIED t46.txt - Updating the project object
+
+2020-02-07 17:40:50,433 INFO MODIFIED t46.txt - Updating the project object
+
+2020-02-07 17:40:50,433 INFO MODIFIED t46.txt - Updating the project object
+
+2020-02-07 17:40:50,433 INFO MODIFIED t46.txt - Updating the project object
+
+2020-02-07 17:40:50,433 INFO MODIFIED t46.txt - Updating the project object
+
+2020-02-07 17:41:04,688 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:41:04,688 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:41:04,688 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:41:04,688 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 17:41:32,027 INFO MODIFIED 1g5.txt - Updating the project object
+
+2020-02-07 17:41:32,027 INFO MODIFIED 1g5.txt - Updating the project object
+
+2020-02-07 17:41:32,027 INFO MODIFIED 1g5.txt - Updating the project object
+
+2020-02-07 17:41:32,027 INFO MODIFIED 1g5.txt - Updating the project object
+
+2020-02-07 17:41:35,522 INFO MODIFIED 1g5.txt - Updating the project object
+
+2020-02-07 17:41:35,522 INFO MODIFIED 1g5.txt - Updating the project object
+
+2020-02-07 17:41:35,522 INFO MODIFIED 1g5.txt - Updating the project object
+
+2020-02-07 17:41:35,522 INFO MODIFIED 1g5.txt - Updating the project object
+
+2020-02-07 21:54:55,598 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 21:54:55,598 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 21:55:01,715 INFO MODIFIED 1c6.txt - Updating the project object
+
+2020-02-07 21:55:01,715 INFO MODIFIED 1c6.txt - Updating the project object
+
+2020-02-07 21:55:12,141 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 21:55:12,141 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 21:55:13,394 INFO MODIFIED 1c6.txt - Updating the project object
+
+2020-02-07 21:55:13,394 INFO MODIFIED 1c6.txt - Updating the project object
+
+2020-02-07 21:56:00,650 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 21:56:00,650 INFO MODIFIED 98v.txt - Updating the project object
+
+2020-02-07 22:48:21,210 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 22:48:21,210 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-07 22:48:27,965 INFO MODIFIED 2nb.txt - Updating the project object
+
+2020-02-07 22:48:27,965 INFO MODIFIED 2nb.txt - Updating the project object
+
+2020-02-08 12:39:18,561 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-08 12:39:18,561 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-08 12:39:57,987 INFO MODIFIED 9e4.txt - Updating the project object
+
+2020-02-08 12:39:57,987 INFO MODIFIED 9e4.txt - Updating the project object
+
+2020-02-08 19:52:44,524 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-08 19:52:44,524 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-08 19:52:44,524 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-08 19:52:44,524 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-08 19:53:01,859 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-08 19:53:01,859 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-08 19:53:01,859 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-08 19:53:01,859 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-09 10:18:56,108 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 10:18:56,108 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 10:19:02,154 INFO MODIFIED yfk.txt - Updating the project object
+
+2020-02-09 10:19:02,154 INFO MODIFIED yfk.txt - Updating the project object
+
+2020-02-09 11:15:11,590 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 11:15:11,590 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 11:15:18,142 INFO MODIFIED t46.txt - Updating the project object
+
+2020-02-09 11:15:18,142 INFO MODIFIED t46.txt - Updating the project object
+
+2020-02-09 11:15:28,964 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 11:15:28,964 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 11:15:33,515 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-09 11:15:33,515 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-09 12:35:56,818 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 12:35:56,818 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 18:15:17,034 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 18:15:17,034 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 18:16:07,324 INFO MODIFIED q3s.txt - Updating the project object
+
+2020-02-09 18:16:07,324 INFO MODIFIED q3s.txt - Updating the project object
+
+2020-02-09 18:48:13,167 INFO MODIFIED q3s.txt - Updating the project object
+
+2020-02-09 18:48:13,167 INFO MODIFIED q3s.txt - Updating the project object
+
+2020-02-09 18:48:24,262 INFO MODIFIED q3s.txt - Updating the project object
+
+2020-02-09 18:48:24,262 INFO MODIFIED q3s.txt - Updating the project object
+
+2020-02-09 21:38:27,535 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 21:38:27,535 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-09 21:38:59,004 INFO MODIFIED 82u.txt - Updating the project object
+
+2020-02-09 21:38:59,004 INFO MODIFIED 82u.txt - Updating the project object
+
+2020-02-10 10:06:46,488 INFO MODIFIED qqx.txt - Updating the project object
+
+2020-02-10 10:06:46,488 INFO MODIFIED qqx.txt - Updating the project object
+
+2020-02-10 10:06:57,275 INFO MODIFIED project_list.py - Updating the project object
+
+2020-02-10 10:06:57,275 INFO MODIFIED project_list.py - Updating the project object
+
+2020-02-10 10:07:08,006 INFO MODIFIED qqx.txt - Updating the project object
+
+2020-02-10 10:07:08,006 INFO MODIFIED qqx.txt - Updating the project object
+
+2020-02-10 10:07:30,453 INFO MODIFIED qqx.txt - Updating the project object
+
+2020-02-10 10:07:30,453 INFO MODIFIED qqx.txt - Updating the project object
+
+2020-02-10 10:09:03,088 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 10:09:03,088 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 15:59:58,637 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-10 15:59:58,637 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-10 16:01:30,605 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-10 16:01:30,605 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-10 17:48:20,145 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-10 17:48:20,145 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-10 17:51:39,197 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-10 17:51:39,197 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-10 17:51:51,325 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-10 17:51:51,325 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-10 17:51:56,609 INFO MODIFIED fvc.txt - Updating the project object
+
+2020-02-10 17:51:56,609 INFO MODIFIED fvc.txt - Updating the project object
+
+2020-02-10 17:54:19,213 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-10 17:54:19,213 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-10 17:54:21,624 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-10 17:54:21,624 INFO MODIFIED 000 -  WTTW-WFMT TODO lists.txt - Updating the project object
+
+2020-02-10 17:50:33,019 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:50:33,019 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:50:38,072 INFO MODIFIED interlinks.py - Updating the project object
+
+2020-02-10 17:50:38,072 INFO MODIFIED interlinks.py - Updating the project object
+
+2020-02-10 17:51:39,597 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:51:39,597 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:52:09,188 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:52:09,188 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:52:53,028 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:52:53,028 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:53:15,814 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:53:15,814 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:53:29,999 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:53:29,999 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:53:49,896 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:53:49,896 INFO MODIFIED project.py - Updating the project object
+
+2020-02-10 17:55:04,765 INFO MODIFIED project_list.py - Updating the project object
+
+2020-02-10 17:55:04,765 INFO MODIFIED project_list.py - Updating the project object
+
+2020-02-10 17:55:37,873 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 17:55:37,873 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 18:06:50,635 INFO MODIFIED vsk.txt - Updating the project object
+
+2020-02-10 18:06:50,635 INFO MODIFIED vsk.txt - Updating the project object
+
+2020-02-10 18:07:32,483 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 18:07:32,483 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 18:08:00,939 INFO MODIFIED w8a.txt - Updating the project object
+
+2020-02-10 18:08:00,939 INFO MODIFIED w8a.txt - Updating the project object
+
+2020-02-10 18:08:13,872 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 18:08:13,872 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 18:08:38,442 INFO MODIFIED i61.txt - Updating the project object
+
+2020-02-10 18:08:38,442 INFO MODIFIED i61.txt - Updating the project object
+
+2020-02-10 18:08:53,719 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 18:08:53,719 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 18:09:11,284 INFO MODIFIED coc.txt - Updating the project object
+
+2020-02-10 18:09:11,284 INFO MODIFIED coc.txt - Updating the project object
+
+2020-02-10 18:09:18,573 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 18:09:18,573 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-10 18:09:37,250 INFO MODIFIED quy.txt - Updating the project object
+
+2020-02-10 18:09:37,250 INFO MODIFIED quy.txt - Updating the project object
+
+2020-02-11 08:31:10,231 INFO MODIFIED l9e.txt - Updating the project object
+
+2020-02-11 08:31:10,231 INFO MODIFIED l9e.txt - Updating the project object
+
+2020-02-11 08:31:37,895 INFO MODIFIED w8a.txt - Updating the project object
+
+2020-02-11 08:31:37,895 INFO MODIFIED w8a.txt - Updating the project object
+
+2020-02-11 08:32:28,442 INFO MODIFIED w8a.txt - Updating the project object
+
+2020-02-11 08:32:28,442 INFO MODIFIED w8a.txt - Updating the project object
+
+2020-02-11 08:33:59,154 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-11 08:33:59,154 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-11 08:39:46,330 INFO MODIFIED irc.txt - Updating the project object
+
+2020-02-11 08:39:46,330 INFO MODIFIED irc.txt - Updating the project object
+
+2020-02-11 08:39:48,961 INFO MODIFIED irc.txt - Updating the project object
+
+2020-02-11 08:39:48,961 INFO MODIFIED irc.txt - Updating the project object
+
+2020-02-11 08:39:51,145 INFO MODIFIED irc.txt - Updating the project object
+
+2020-02-11 08:39:51,145 INFO MODIFIED irc.txt - Updating the project object
+
+2020-02-11 08:40:24,242 INFO MODIFIED project.py - Updating the project object
+
+2020-02-11 08:40:24,242 INFO MODIFIED project.py - Updating the project object
+
+2020-02-11 08:40:32,455 INFO MODIFIED project.py - Updating the project object
+
+2020-02-11 08:40:32,455 INFO MODIFIED project.py - Updating the project object
+
+2020-02-11 08:40:35,819 INFO MODIFIED project.py - Updating the project object
+
+2020-02-11 08:40:35,819 INFO MODIFIED project.py - Updating the project object
+
+2020-02-11 08:42:45,989 INFO MODIFIED f9d.txt - Updating the project object
+
+2020-02-11 08:42:45,989 INFO MODIFIED f9d.txt - Updating the project object
+
+2020-02-11 08:42:58,101 INFO MODIFIED 1sl.txt - Updating the project object
+
+2020-02-11 08:42:58,101 INFO MODIFIED 1sl.txt - Updating the project object
+
+2020-02-11 11:51:19,028 INFO MODIFIED base.php - Updating the project object
+
+2020-02-11 11:51:19,028 INFO MODIFIED base.php - Updating the project object
+
+2020-02-11 12:02:24,083 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:02:24,083 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:02:25,601 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:02:25,601 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:02:26,577 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:02:26,577 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:13:48,192 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:13:48,192 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:13:59,712 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:13:59,712 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:17:54,408 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:17:54,408 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:18:36,512 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:18:36,512 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:19:52,888 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:19:52,888 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:37:50,070 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:37:50,070 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:38:38,761 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:38:38,761 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:39:16,482 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:39:16,482 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:40:15,689 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:40:15,689 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:40:24,051 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:40:24,051 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:40:34,570 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:40:34,570 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:41:23,058 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:41:23,058 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:41:45,436 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:41:45,436 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:41:49,516 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:41:49,516 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:44:54,999 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:44:54,999 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:45:22,435 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:45:22,435 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:45:50,257 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:45:50,257 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:46:16,879 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:46:16,879 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:46:18,610 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:46:18,610 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:47:09,121 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:47:09,121 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:47:21,083 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:47:21,083 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:47:52,400 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:47:52,400 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:48:08,882 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:48:08,882 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:48:31,869 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:48:31,869 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:48:38,742 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:48:38,742 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:49:16,724 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:49:16,724 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:53:45,149 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:53:45,149 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:54:25,709 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:54:25,709 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:56:08,907 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:56:08,907 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:56:10,009 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:56:10,009 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:59:33,374 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:59:33,374 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:59:39,082 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:59:39,082 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 12:59:49,038 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 12:59:49,038 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:00:38,888 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:00:38,888 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:01:07,201 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:01:07,201 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:01:18,024 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:01:18,024 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:01:47,547 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:01:47,547 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:02:16,490 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:02:16,490 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:02:40,254 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:02:40,254 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:03:00,043 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:03:00,043 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:03:33,322 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:03:33,322 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:03:58,192 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:03:58,192 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:04:46,592 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:04:46,592 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:05:17,287 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:05:17,287 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:05:38,325 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:05:38,325 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:11:11,991 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:11:11,991 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:13:06,868 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:13:06,868 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:14:31,290 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:14:31,290 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:15:03,237 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:15:03,237 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:15:45,066 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:15:45,066 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:15:50,341 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:15:50,341 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:16:00,504 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:16:00,504 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 13:27:40,791 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:27:40,791 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 13:59:48,050 INFO MODIFIED handler.php - Updating the project object
+
+2020-02-11 13:59:48,050 INFO MODIFIED handler.php - Updating the project object
+
+2020-02-11 14:01:20,048 INFO MODIFIED handler.php - Updating the project object
+
+2020-02-11 14:01:20,048 INFO MODIFIED handler.php - Updating the project object
+
+2020-02-11 14:01:30,581 INFO MODIFIED handler.php - Updating the project object
+
+2020-02-11 14:01:30,581 INFO MODIFIED handler.php - Updating the project object
+
+2020-02-11 14:02:09,942 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:02:09,942 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:02:16,204 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:02:16,204 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:03:54,651 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:03:54,651 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:04:17,025 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 14:04:17,025 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 14:04:21,685 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 14:04:21,685 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 14:04:31,090 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 14:04:31,090 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 14:06:09,303 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:06:09,303 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:06:32,072 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:06:32,072 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:08:30,120 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:08:30,120 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 14:09:11,036 INFO MODIFIED handler.php - Updating the project object
+
+2020-02-11 14:09:11,036 INFO MODIFIED handler.php - Updating the project object
+
+2020-02-11 15:03:36,114 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:03:36,114 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:04:14,057 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 15:04:14,057 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 15:04:25,806 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 15:04:25,806 INFO MODIFIED functions.php - Updating the project object
+
+2020-02-11 15:05:59,561 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:05:59,561 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:06:07,807 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:06:07,807 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:06:23,820 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:06:23,820 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:06:29,734 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:06:29,734 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:06:40,647 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:06:40,647 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:06:47,172 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:06:47,172 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:07:03,023 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:07:03,023 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:07:17,963 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:07:17,963 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:07:41,030 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:07:41,030 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:07:55,876 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:07:55,876 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:08:21,684 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:08:21,684 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:10:01,990 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:10:01,990 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:10:16,639 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:10:16,639 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:11:35,637 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:11:35,637 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:11:44,997 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:11:44,997 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:11:51,826 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:11:51,826 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:13:04,648 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:13:04,648 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:13:20,695 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:13:20,695 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:14:37,353 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:14:37,353 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:14:57,690 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:14:57,690 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:15:08,924 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:15:08,924 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:15:11,551 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:15:11,551 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:17:34,112 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:17:34,112 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:17:49,101 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:17:49,101 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:18:19,563 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:18:19,563 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:19:26,511 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:19:26,511 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:22:13,309 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:22:13,309 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:22:43,501 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:22:43,501 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:23:42,680 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:23:42,680 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 15:25:01,484 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:25:01,484 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:25:08,823 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:25:08,823 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:26:17,167 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:26:17,167 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:26:24,623 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:26:24,623 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:26:51,533 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:26:51,533 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:27:20,919 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:27:20,919 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:28:53,047 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:28:53,047 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:28:53,822 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:28:53,822 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:29:14,920 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:29:14,920 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:41:48,269 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:41:48,269 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:42:30,370 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:42:30,370 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:42:35,706 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:42:35,706 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:43:52,563 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:43:52,563 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:44:25,403 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:44:25,403 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:44:30,274 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:44:30,274 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:44:31,009 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:44:31,009 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:45:07,461 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:45:07,461 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:45:17,758 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:45:17,758 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:48:08,204 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:48:08,204 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:48:46,968 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:48:46,968 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:49:12,225 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:49:12,225 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:53:38,295 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:53:38,295 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:57:12,788 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:57:12,788 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:57:44,551 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 15:57:44,551 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:07:31,786 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:07:31,786 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:07:57,178 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:07:57,178 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:08:52,548 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:08:52,548 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:08:57,389 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:08:57,389 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:09:28,549 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:09:28,549 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:09:53,449 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:09:53,449 INFO MODIFIED wfmt-ajax.js - Updating the project object
+
+2020-02-11 16:10:52,581 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 16:10:52,581 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 16:11:27,553 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 16:11:27,553 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 16:14:38,547 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 16:14:38,547 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 16:14:44,284 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 16:14:44,284 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 16:14:45,763 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 16:14:45,763 INFO MODIFIED pro_theme_custom_api.php - Updating the project object
+
+2020-02-11 20:15:40,488 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-11 20:15:40,488 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-11 20:18:35,846 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:18:35,846 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:24:45,649 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:24:45,649 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:31:24,905 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:31:24,905 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:33:08,982 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:33:08,982 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:36:11,279 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:36:11,279 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:45:26,717 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:45:26,717 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:46:56,581 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:46:56,581 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:47:05,725 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:47:05,725 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:47:37,744 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-11 20:47:37,744 INFO MODIFIED 4dc.txt - Updating the project object
+
+2020-02-12 13:29:10,205 INFO MODIFIED wp-config.php - Updating the project object
+
+2020-02-12 13:29:10,205 INFO MODIFIED wp-config.php - Updating the project object
+
+2020-02-12 16:22:33,889 INFO MODIFIED rk4.txt - Updating the project object
+
+2020-02-12 16:22:33,889 INFO MODIFIED rk4.txt - Updating the project object
+
+2020-02-12 16:22:47,390 INFO MODIFIED rk4.txt - Updating the project object
+
+2020-02-12 16:22:47,390 INFO MODIFIED rk4.txt - Updating the project object
+
+2020-02-12 16:23:05,203 INFO MODIFIED uzt.txt - Updating the project object
+
+2020-02-12 16:23:05,203 INFO MODIFIED uzt.txt - Updating the project object
+
+2020-02-12 16:23:15,509 INFO MODIFIED 131 - 03-19-2019 - <Tue , Mar  19, 2019, 02-50 PM>.txt - Updating the project object
+
+2020-02-12 16:23:15,509 INFO MODIFIED 131 - 03-19-2019 - <Tue , Mar  19, 2019, 02-50 PM>.txt - Updating the project object
+
+2020-02-12 16:23:21,782 INFO MODIFIED u0l.txt - Updating the project object
+
+2020-02-12 16:23:21,782 INFO MODIFIED u0l.txt - Updating the project object
+
+2020-02-12 16:23:33,621 INFO MODIFIED u0l.txt - Updating the project object
+
+2020-02-12 16:23:33,621 INFO MODIFIED u0l.txt - Updating the project object
+
+2020-02-12 16:23:50,143 INFO MODIFIED uzt.txt - Updating the project object
+
+2020-02-12 16:23:50,143 INFO MODIFIED uzt.txt - Updating the project object
+
+2020-02-12 21:02:21,425 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-12 21:02:21,425 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-12 21:02:21,429 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-12 21:02:21,429 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-12 21:02:29,247 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-12 21:02:29,247 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-12 21:02:29,250 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-12 21:02:29,250 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-12 21:03:08,305 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-12 21:03:08,305 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-12 21:03:11,252 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-12 21:03:11,252 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-12 21:03:36,497 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-12 21:03:36,497 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-12 21:03:49,222 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:03:49,222 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:04:00,284 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:04:00,284 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:04:04,086 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:04:04,086 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:04:17,069 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:04:17,069 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:04:28,847 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:04:28,847 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:04:40,184 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:04:40,184 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:05:21,855 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:05:21,855 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-12 21:06:05,550 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-12 21:06:05,550 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-12 21:06:05,572 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-12 21:06:05,572 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 06:56:37,091 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 06:56:37,091 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 06:57:04,802 INFO Node dkb is not in the project
+
+2020-02-13 06:57:04,802 INFO Node dkb is not in the project
+
+2020-02-13 06:57:06,585 INFO Node dkb is not in the project
+
+2020-02-13 06:57:06,585 INFO Node dkb is not in the project
+
+2020-02-13 06:58:17,855 INFO Node dkb is not in the project
+
+2020-02-13 06:58:17,855 INFO Node dkb is not in the project
+
+2020-02-13 06:58:17,855 INFO Node dkb is not in the project
+
+2020-02-13 06:58:17,855 INFO Node dkb is not in the project
+
+2020-02-13 06:58:18,806 INFO Node dkb is not in the project
+
+2020-02-13 06:58:18,806 INFO Node dkb is not in the project
+
+2020-02-13 06:58:18,806 INFO Node dkb is not in the project
+
+2020-02-13 06:58:18,806 INFO Node dkb is not in the project
+
+2020-02-13 08:20:17,956 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 08:20:17,956 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 08:21:09,329 INFO Node 255 is not in the project
+
+2020-02-13 08:21:09,329 INFO Node 255 is not in the project
+
+2020-02-13 08:21:26,281 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:21:26,281 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:21:27,048 INFO Node 255 is not in the project
+
+2020-02-13 08:21:27,048 INFO Node 255 is not in the project
+
+2020-02-13 08:21:30,163 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:21:30,163 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:22:07,453 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:22:07,453 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:22:20,755 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:22:20,755 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:22:22,843 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:22:22,843 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:22:38,999 INFO MODIFIED fc8.txt - Updating the project object
+
+2020-02-13 08:22:38,999 INFO MODIFIED fc8.txt - Updating the project object
+
+2020-02-13 08:22:44,264 INFO MODIFIED fc8.txt - Updating the project object
+
+2020-02-13 08:22:44,264 INFO MODIFIED fc8.txt - Updating the project object
+
+2020-02-13 08:26:05,113 INFO MODIFIED Default (OSX).sublime-keymap - Updating the project object
+
+2020-02-13 08:26:05,113 INFO MODIFIED Default (OSX).sublime-keymap - Updating the project object
+
+2020-02-13 08:26:11,534 INFO MODIFIED Default (OSX).sublime-keymap - Updating the project object
+
+2020-02-13 08:26:11,534 INFO MODIFIED Default (OSX).sublime-keymap - Updating the project object
+
+2020-02-13 08:26:37,558 INFO MODIFIED fc8.txt - Updating the project object
+
+2020-02-13 08:26:37,558 INFO MODIFIED fc8.txt - Updating the project object
+
+2020-02-13 08:27:42,519 INFO MODIFIED file.py - Updating the project object
+
+2020-02-13 08:27:42,519 INFO MODIFIED file.py - Updating the project object
+
+2020-02-13 08:29:29,631 INFO MODIFIED file.py - Updating the project object
+
+2020-02-13 08:29:29,631 INFO MODIFIED file.py - Updating the project object
+
+2020-02-13 08:30:50,528 INFO MODIFIED file.py - Updating the project object
+
+2020-02-13 08:30:50,528 INFO MODIFIED file.py - Updating the project object
+
+2020-02-13 08:33:20,236 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-13 08:33:20,236 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-13 08:37:55,753 INFO MODIFIED 9k7.txt - Updating the project object
+
+2020-02-13 08:37:55,753 INFO MODIFIED 9k7.txt - Updating the project object
+
+2020-02-13 08:38:00,354 INFO MODIFIED 9k7.txt - Updating the project object
+
+2020-02-13 08:38:00,354 INFO MODIFIED 9k7.txt - Updating the project object
+
+2020-02-13 08:38:10,242 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:38:10,242 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:42:35,894 INFO MODIFIED project.py - Updating the project object
+
+2020-02-13 08:42:35,894 INFO MODIFIED project.py - Updating the project object
+
+2020-02-13 08:43:40,301 INFO MODIFIED project.py - Updating the project object
+
+2020-02-13 08:43:40,301 INFO MODIFIED project.py - Updating the project object
+
+2020-02-13 08:44:11,141 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:44:11,141 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:44:14,176 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:44:14,176 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:10,874 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:10,874 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:32,496 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:32,496 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:34,097 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:34,097 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:38,350 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:38,350 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:43,019 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:43,019 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:44,099 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:44,099 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:54,371 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:54,371 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:54,380 INFO Multiple ID tags in >qp9, qp9, qsj ( using the first one found.
+
+2020-02-13 08:45:54,380 INFO Multiple ID tags in >qp9, qp9, qsj ( using the first one found.
+
+2020-02-13 08:45:56,451 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:56,451 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:58,760 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:45:58,760 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:47:06,548 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:47:06,548 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-13 08:47:24,414 INFO MODIFIED 8xv.txt - Updating the project object
+
+2020-02-13 08:47:24,414 INFO MODIFIED 8xv.txt - Updating the project object
+
+2020-02-13 08:48:24,494 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-13 08:48:24,494 INFO MODIFIED sublime_urtext.py - Updating the project object
+
+2020-02-13 08:48:56,094 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 08:48:56,094 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 08:49:28,101 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 08:49:28,101 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 08:49:32,038 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 08:49:32,038 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 08:52:06,044 INFO Node 45l is not in the project
+
+2020-02-13 08:52:06,044 INFO Node 45l is not in the project
+
+2020-02-13 08:52:12,263 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:52:12,263 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:52:23,209 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 08:52:23,209 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 08:52:26,109 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 08:52:26,109 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 08:52:29,686 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 08:52:29,686 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 08:54:00,891 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:54:00,891 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:54:13,534 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:54:13,534 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:54:15,520 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:54:15,520 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:54:18,184 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:54:18,184 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:55:07,058 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:55:07,058 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:55:09,150 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:55:09,150 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:56:09,049 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:56:09,049 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:56:09,763 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:56:09,763 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:56:10,486 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:56:10,486 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:57:25,254 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:57:25,254 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:57:30,595 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:57:30,595 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:57:47,102 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:57:47,102 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:59:13,275 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:59:13,275 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:59:17,565 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 08:59:17,565 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:01:45,020 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:01:45,020 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:01:48,540 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:01:48,540 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:01:50,590 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:01:50,590 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:01:51,744 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:01:51,744 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:03:19,228 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:03:19,228 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:03:22,635 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:03:22,635 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:05:25,723 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:05:25,723 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:06:12,432 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:06:12,432 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:12:23,861 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 09:12:23,861 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 09:12:43,355 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:12:43,355 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:12:46,448 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:12:46,448 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:16:52,024 INFO Node 3a2 is not in the project
+
+2020-02-13 09:16:52,024 INFO Node 3a2 is not in the project
+
+2020-02-13 09:21:13,669 INFO Node 3a2 is not in the project
+
+2020-02-13 09:21:13,669 INFO Node 3a2 is not in the project
+
+2020-02-13 09:21:21,762 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:21:21,762 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:21:26,367 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:21:26,367 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:21:39,372 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 09:21:39,372 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 09:24:17,091 INFO index is at the end.
+
+2020-02-13 09:24:17,091 INFO index is at the end.
+
+2020-02-13 09:24:25,522 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:24:25,522 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:27:42,918 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:27:42,918 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:31:18,430 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:31:18,430 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:33:08,074 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:33:08,074 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:33:14,397 INFO MODIFIED 89l.txt - Updating the project object
+
+2020-02-13 09:33:14,397 INFO MODIFIED 89l.txt - Updating the project object
+
+2020-02-13 09:33:16,182 INFO MODIFIED 89l.txt - Updating the project object
+
+2020-02-13 09:33:16,182 INFO MODIFIED 89l.txt - Updating the project object
+
+2020-02-13 09:33:16,834 INFO MODIFIED 89l.txt - Updating the project object
+
+2020-02-13 09:33:16,834 INFO MODIFIED 89l.txt - Updating the project object
+
+2020-02-13 09:33:17,307 INFO MODIFIED 89l.txt - Updating the project object
+
+2020-02-13 09:33:17,307 INFO MODIFIED 89l.txt - Updating the project object
+
+2020-02-13 09:33:17,850 INFO MODIFIED 89l.txt - Updating the project object
+
+2020-02-13 09:33:17,850 INFO MODIFIED 89l.txt - Updating the project object
+
+2020-02-13 09:33:43,082 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:33:43,082 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:37:52,002 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 09:37:52,002 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:05:12,518 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:05:12,518 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:06:25,430 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:06:25,430 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:06:35,825 INFO Duplicate node ID 04v in 04v.txt -- already used in 1404 - 06-07-2006 - <?xml version="1 0" encoding="UTF-8"?>.txt (>04v)
+
+2020-02-13 10:06:35,825 INFO Duplicate node ID 04v in 04v.txt -- already used in 1404 - 06-07-2006 - <?xml version="1 0" encoding="UTF-8"?>.txt (>04v)
+
+2020-02-13 10:07:32,346 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:07:32,346 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:07:39,778 INFO MODIFIED iv9.txt - Updating the project object
+
+2020-02-13 10:07:39,778 INFO MODIFIED iv9.txt - Updating the project object
+
+2020-02-13 10:08:25,514 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:08:25,514 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:08:27,823 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:08:27,823 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:12:32,054 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:12:32,054 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:15:22,789 INFO Node 70b is not in the project
+
+2020-02-13 10:15:22,789 INFO Node 70b is not in the project
+
+2020-02-13 10:15:25,331 INFO Node 70b is not in the project
+
+2020-02-13 10:15:25,331 INFO Node 70b is not in the project
+
+2020-02-13 10:15:25,455 INFO Node 70b is not in the project
+
+2020-02-13 10:15:25,455 INFO Node 70b is not in the project
+
+2020-02-13 10:15:33,252 INFO Node 70b is not in the project
+
+2020-02-13 10:15:33,252 INFO Node 70b is not in the project
+
+2020-02-13 10:18:32,589 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:18:32,589 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:20:15,332 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:20:15,332 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:20:31,408 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:20:31,408 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:22:39,562 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:22:39,562 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:26:31,934 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:26:31,934 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:26:35,073 INFO MODIFIED y9e.txt - Updating the project object
+
+2020-02-13 10:26:35,073 INFO MODIFIED y9e.txt - Updating the project object
+
+2020-02-13 10:28:36,763 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:28:36,763 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:29:13,201 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:29:13,201 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:33:35,852 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:33:35,852 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:34:07,802 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 10:34:07,802 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 13:12:07,134 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 13:12:07,134 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 14:37:24,381 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 14:37:24,381 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-13 15:56:39,389 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 15:56:39,389 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 15:57:04,058 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 15:57:04,058 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 15:57:07,826 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-13 15:57:07,826 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-13 15:57:14,470 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 15:57:14,470 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 15:57:16,545 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 15:57:16,545 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 15:57:34,908 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 15:57:34,908 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 15:57:51,739 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-13 15:57:51,739 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-13 15:57:51,761 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-13 15:57:51,761 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-13 17:42:10,882 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:42:10,882 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:42:17,234 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:42:17,234 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:42:24,469 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:42:24,469 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:44:53,820 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:44:53,820 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:45:59,954 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:45:59,954 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:46:04,888 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:46:04,888 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:46:10,556 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:46:10,556 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:48:40,381 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:48:40,381 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:48:44,815 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:48:44,815 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:48:50,419 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:48:50,419 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:48:55,633 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:48:55,633 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:49:02,547 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:49:02,547 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:49:11,165 INFO MODIFIED 4wv.txt - Updating the project object
+
+2020-02-13 17:49:11,165 INFO MODIFIED 4wv.txt - Updating the project object
+
+2020-02-13 17:49:43,964 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:49:43,964 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:51:04,192 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:51:04,192 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:51:07,384 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:51:07,384 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:51:16,219 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:51:16,219 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:51:27,422 INFO MODIFIED 4wv.txt - Updating the project object
+
+2020-02-13 17:51:27,422 INFO MODIFIED 4wv.txt - Updating the project object
+
+2020-02-13 17:52:26,414 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:52:26,414 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:52:36,451 INFO MODIFIED 4wv.txt - Updating the project object
+
+2020-02-13 17:52:36,451 INFO MODIFIED 4wv.txt - Updating the project object
+
+2020-02-13 17:53:48,556 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:53:48,556 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:53:57,693 INFO MODIFIED 4wv.txt - Updating the project object
+
+2020-02-13 17:53:57,693 INFO MODIFIED 4wv.txt - Updating the project object
+
+2020-02-13 17:54:24,862 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:54:24,862 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:54:26,828 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:54:26,828 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 17:58:03,173 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:58:03,173 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:58:11,455 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 17:58:11,455 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:34:33,706 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:34:33,706 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:35:32,078 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:35:32,078 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:43:15,113 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:43:15,113 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:44:44,375 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:44:44,375 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:45:47,914 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:45:47,914 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:46:03,095 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-13 18:46:03,095 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-13 18:46:03,113 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-13 18:46:03,113 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-13 18:46:21,118 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:46:21,118 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:47:20,220 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:47:20,220 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:47:40,120 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:47:40,120 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:48:54,709 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:48:54,709 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:49:10,895 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:49:10,895 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:49:23,145 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-13 18:49:23,145 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-13 18:49:28,396 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:49:28,396 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 18:49:42,780 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-13 18:49:42,780 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-13 18:53:01,295 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:53:01,295 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:55:28,959 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-13 18:55:28,959 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-13 18:55:34,564 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:55:34,564 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 18:57:07,618 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-13 18:57:07,618 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-13 18:57:18,006 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-13 18:57:18,006 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-13 20:46:44,183 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-13 20:46:44,183 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-13 20:48:19,653 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-13 20:48:19,653 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-13 21:06:04,639 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 21:06:04,639 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-13 21:06:19,172 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 21:06:19,172 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 21:07:45,280 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:07:45,280 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:07:45,313 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:07:45,313 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:07:51,484 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 21:07:51,484 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 21:07:55,781 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:07:55,781 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:07:55,795 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:07:55,795 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:08:03,206 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:08:03,206 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:08:03,218 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:08:03,218 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:08:06,684 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:08:06,684 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:08:06,696 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:08:06,696 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:08:16,677 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:08:16,677 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:08:16,680 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:08:16,680 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:08:50,805 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:08:50,805 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-13 21:08:50,839 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 21:08:50,839 INFO Timestamp <Mon., Feb. 10, 2020, 10:00 AM -0500> not in any specified date format in >cr4
+
+2020-02-13 22:16:12,608 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 22:16:12,608 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 22:16:30,401 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 22:16:30,401 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 22:16:38,630 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 22:16:38,630 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 22:16:57,781 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-13 22:16:57,781 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-14 00:31:42,062 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-14 00:31:42,062 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-14 00:31:54,026 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-14 00:31:54,026 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-14 00:32:52,469 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-14 00:32:52,469 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-14 00:32:58,729 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-14 00:32:58,729 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-14 08:29:06,742 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-14 08:29:06,742 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-14 08:29:08,396 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-14 08:29:08,396 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-15 14:32:18,149 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:32:18,149 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:32:29,107 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:32:29,107 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:32:34,219 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:32:34,219 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:32:36,187 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:32:36,187 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:37:15,968 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:37:15,968 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:43:19,613 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:43:19,613 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:43:20,750 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:43:20,750 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:43:37,096 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:43:37,096 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:43:41,431 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:43:41,431 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:44:43,400 INFO Node dqu is not in the project
+
+2020-02-15 14:44:43,400 INFO Node dqu is not in the project
+
+2020-02-15 14:44:46,852 INFO Node dqu is not in the project
+
+2020-02-15 14:44:46,852 INFO Node dqu is not in the project
+
+2020-02-15 14:44:49,091 INFO Node dqu is not in the project
+
+2020-02-15 14:44:49,091 INFO Node dqu is not in the project
+
+2020-02-15 14:44:51,980 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:44:51,980 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:44:52,925 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:44:52,925 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:44:53,462 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:44:53,462 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:44:57,518 INFO Node dqu is not in the project
+
+2020-02-15 14:44:57,518 INFO Node dqu is not in the project
+
+2020-02-15 14:45:01,714 INFO Node rwy is not in the project
+
+2020-02-15 14:45:01,714 INFO Node rwy is not in the project
+
+2020-02-15 14:45:02,912 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:45:02,912 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:45:15,647 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:45:15,647 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 14:49:21,609 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-15 14:49:21,609 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-15 14:49:25,091 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-15 14:49:25,091 INFO MODIFIED z2f.txt - Updating the project object
+
+2020-02-15 15:19:04,397 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 15:19:04,397 INFO MODIFIED xid.txt - Updating the project object
+
+2020-02-15 20:31:39,986 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-15 20:31:39,986 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-16 10:31:40,658 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:31:40,658 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:31:58,883 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:31:58,883 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:32:07,745 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:32:07,745 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:32:33,770 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:32:33,770 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:35:05,655 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:35:05,655 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:35:36,773 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:35:36,773 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:36:14,135 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:36:14,135 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:38:23,128 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:38:23,128 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:38:30,161 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:38:30,161 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:41:42,676 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:41:42,676 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:42:35,864 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:42:35,864 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:44:02,444 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:44:02,444 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:44:04,666 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:44:04,666 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:44:06,787 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 10:44:06,787 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 17:51:52,416 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 17:51:52,416 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 17:53:05,848 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 17:53:05,848 INFO MODIFIED oan.txt - Updating the project object
+
+2020-02-16 17:53:18,506 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-16 17:53:18,506 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-16 22:07:57,298 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 22:07:57,298 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 23:00:19,411 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:00:19,411 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:02:23,011 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:02:23,011 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:02:34,569 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:02:34,569 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:13:48,031 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:13:48,031 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:17:36,518 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:17:36,518 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:18:44,191 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:18:44,191 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:18:48,383 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:18:48,383 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:18:53,948 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 23:18:53,948 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 23:19:02,654 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-16 23:19:02,654 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-16 23:19:11,673 INFO MODIFIED y6t.txt - Updating the project object
+
+2020-02-16 23:19:11,673 INFO MODIFIED y6t.txt - Updating the project object
+
+2020-02-16 23:19:15,010 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 23:19:15,010 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 23:19:35,665 INFO MODIFIED bzy.txt - Updating the project object
+
+2020-02-16 23:19:35,665 INFO MODIFIED bzy.txt - Updating the project object
+
+2020-02-16 23:19:55,177 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:19:55,177 INFO MODIFIED rcy.txt - Updating the project object
+
+2020-02-16 23:20:20,118 INFO MODIFIED ml2.txt - Updating the project object
+
+2020-02-16 23:20:20,118 INFO MODIFIED ml2.txt - Updating the project object
+
+2020-02-16 23:20:39,618 INFO MODIFIED ml2.txt - Updating the project object
+
+2020-02-16 23:20:39,618 INFO MODIFIED ml2.txt - Updating the project object
+
+2020-02-16 23:20:46,663 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 23:20:46,663 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 23:21:05,866 INFO MODIFIED 82u.txt - Updating the project object
+
+2020-02-16 23:21:05,866 INFO MODIFIED 82u.txt - Updating the project object
+
+2020-02-16 23:21:08,302 INFO MODIFIED 82u.txt - Updating the project object
+
+2020-02-16 23:21:08,302 INFO MODIFIED 82u.txt - Updating the project object
+
+2020-02-16 23:21:11,484 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 23:21:11,484 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-16 23:21:19,470 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-16 23:21:19,470 INFO MODIFIED mfb.txt - Updating the project object
+
+2020-02-17 14:50:55,902 INFO MODIFIED 1bh.txt - Updating the project object
+
+2020-02-17 14:50:55,902 INFO MODIFIED 1bh.txt - Updating the project object
+
+2020-02-17 14:50:58,238 INFO Node mpk is not in the project
+
+2020-02-17 14:50:58,238 INFO Node mpk is not in the project
+
+2020-02-17 14:51:29,959 INFO MODIFIED 1bh.txt - Updating the project object
+
+2020-02-17 14:51:29,959 INFO MODIFIED 1bh.txt - Updating the project object
+
+2020-02-17 14:51:33,996 INFO MODIFIED 1bh.txt - Updating the project object
+
+2020-02-17 14:51:33,996 INFO MODIFIED 1bh.txt - Updating the project object
+
+2020-02-17 14:51:40,155 INFO Node iyg is not in the project
+
+2020-02-17 14:51:40,155 INFO Node iyg is not in the project
+
+2020-02-17 14:51:47,856 INFO MODIFIED 1bh.txt - Updating the project object
+
+2020-02-17 14:51:47,856 INFO MODIFIED 1bh.txt - Updating the project object
+
+2020-02-17 14:52:14,800 INFO MODIFIED 0003 -  Orchestra Blog - Main.txt - Updating the project object
+
+2020-02-17 14:52:14,800 INFO MODIFIED 0003 -  Orchestra Blog - Main.txt - Updating the project object
+
+2020-02-17 19:16:27,893 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-17 19:16:27,893 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-18 17:32:13,152 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-18 17:32:13,152 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-18 17:32:16,775 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:32:16,775 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:32:54,183 INFO MODIFIED v38.txt - Updating the project object
+
+2020-02-18 17:32:54,183 INFO MODIFIED v38.txt - Updating the project object
+
+2020-02-18 17:32:57,479 INFO MODIFIED v38.txt - Updating the project object
+
+2020-02-18 17:32:57,479 INFO MODIFIED v38.txt - Updating the project object
+
+2020-02-18 17:33:02,356 INFO MODIFIED v38.txt - Updating the project object
+
+2020-02-18 17:33:02,356 INFO MODIFIED v38.txt - Updating the project object
+
+2020-02-18 17:33:07,797 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:33:07,797 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:33:38,511 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:33:38,511 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:35:40,756 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:35:40,756 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:39:39,999 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:39:39,999 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:41:39,404 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:41:39,404 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:43:07,372 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:43:07,372 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:43:53,544 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:43:53,544 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:44:11,459 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:44:11,459 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:45:22,975 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-18 17:45:22,975 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-18 17:46:34,727 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:46:34,727 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:47:11,744 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-18 17:47:11,744 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-18 17:47:12,968 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:47:12,968 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:47:15,151 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-18 17:47:15,151 INFO MODIFIED dkb.txt - Updating the project object
+
+2020-02-18 17:47:17,470 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:47:17,470 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 17:47:33,137 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:47:33,137 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:47:38,301 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:47:38,301 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:47:43,282 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:47:43,282 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:50:13,001 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:50:13,001 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:50:25,453 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:50:25,453 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:52:43,129 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:52:43,129 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:53:02,782 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:53:02,782 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:53:59,134 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:53:59,134 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:57:41,633 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:57:41,633 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:58:12,309 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 17:58:12,309 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:01:58,357 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:01:58,357 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:06:05,151 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:06:05,151 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:06:18,816 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:06:18,816 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:06:33,972 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:06:33,972 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:06:44,909 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:06:44,909 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:06:55,111 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:06:55,111 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:07:01,090 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:07:01,090 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:07:02,349 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:07:02,349 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:07:13,941 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:07:13,941 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:07:18,188 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:07:18,188 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:07:19,990 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:07:19,990 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:08:18,566 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:08:18,566 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:29:56,767 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-18 18:29:56,767 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-18 18:30:03,776 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:30:03,776 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:30:17,677 INFO MODIFIED kvu.txt - Updating the project object
+
+2020-02-18 18:30:17,677 INFO MODIFIED kvu.txt - Updating the project object
+
+2020-02-18 18:30:22,988 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:30:22,988 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:31:27,916 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:31:27,916 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:32:31,857 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:32:31,857 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:33:51,816 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:33:51,816 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:35:21,763 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:35:21,763 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:35:22,394 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:35:22,394 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:35:28,537 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:35:28,537 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 18:35:37,575 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:35:37,575 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:36:00,937 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:36:00,937 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:36:14,084 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:36:14,084 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:36:42,434 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:36:42,434 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:38:09,743 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:38:09,743 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:38:22,135 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 18:38:22,135 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 20:26:05,516 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 20:26:05,516 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 20:47:06,224 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 20:47:06,224 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 20:47:41,753 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 20:47:41,753 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 20:47:45,816 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 20:47:45,816 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 20:48:13,641 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 20:48:13,641 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 20:49:23,711 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 20:49:23,711 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:16:26,137 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:16:26,137 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:16:41,056 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:16:41,056 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:16:41,762 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:16:41,762 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:16:59,220 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 23:16:59,220 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 23:21:55,559 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-18 23:21:55,559 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-18 23:21:55,594 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-18 23:21:55,594 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-18 23:22:23,695 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-18 23:22:23,695 INFO MODIFIED oai.txt - Updating the project object
+
+2020-02-18 23:22:23,731 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-18 23:22:23,731 INFO Multiple ID tags in >t9g, t9g, 9kb ( using the first one found.
+
+2020-02-18 23:22:27,987 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 23:22:27,987 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 23:23:32,835 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:23:32,835 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:23:32,864 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:23:32,864 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:28:25,781 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:28:25,781 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:28:25,814 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:28:25,814 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:40:29,122 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:40:29,122 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:40:29,158 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:40:29,158 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:43:00,041 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:43:00,041 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:43:00,068 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:43:00,068 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:43:09,458 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:43:09,458 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:43:09,508 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:43:09,508 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:43:29,099 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 23:43:29,099 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 23:47:16,059 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:47:16,059 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:47:16,098 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:47:16,098 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:48:24,230 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:48:24,230 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:48:24,261 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:48:24,261 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:48:55,734 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:48:55,734 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:48:55,795 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:48:55,795 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:49:00,484 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 23:49:00,484 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 23:50:10,194 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:50:10,194 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:52:01,331 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:52:01,331 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:54:03,428 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:54:03,428 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:54:16,152 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:54:16,152 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-18 23:54:34,102 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 23:54:34,102 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-18 23:55:28,331 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:55:28,331 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:55:28,362 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:55:28,362 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:55:38,721 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:55:38,721 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-18 23:55:38,763 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-18 23:55:38,763 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-19 00:00:28,176 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 00:00:28,176 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 00:00:32,492 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-19 00:00:32,492 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-19 00:00:32,517 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-19 00:00:32,517 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-19 00:00:39,002 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-19 00:00:39,002 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-19 00:00:39,039 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-19 00:00:39,039 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-19 00:00:41,290 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 00:00:41,290 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 00:00:44,793 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-19 00:00:44,793 INFO MODIFIED qjl.txt - Updating the project object
+
+2020-02-19 00:00:44,838 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-19 00:00:44,838 INFO Multiple ID tags in >q6b, q6b, qzm ( using the first one found.
+
+2020-02-19 00:08:24,895 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 00:08:24,895 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 00:08:29,983 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 00:08:29,983 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 12:16:15,451 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 12:16:15,451 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 12:16:19,827 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 12:16:19,827 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 14:58:08,135 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 14:58:08,135 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 14:58:15,972 INFO MODIFIED mbq.txt - Updating the project object
+
+2020-02-19 14:58:15,972 INFO MODIFIED mbq.txt - Updating the project object
+
+2020-02-19 15:00:46,064 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:00:46,064 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:00:52,783 INFO MODIFIED a6e.txt - Updating the project object
+
+2020-02-19 15:00:52,783 INFO MODIFIED a6e.txt - Updating the project object
+
+2020-02-19 15:10:52,302 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:10:52,302 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:11:03,122 INFO MODIFIED 3bm.txt - Updating the project object
+
+2020-02-19 15:11:03,122 INFO MODIFIED 3bm.txt - Updating the project object
+
+2020-02-19 15:11:17,976 INFO MODIFIED 3bm.txt - Updating the project object
+
+2020-02-19 15:11:17,976 INFO MODIFIED 3bm.txt - Updating the project object
+
+2020-02-19 15:11:24,881 INFO MODIFIED 3bm.txt - Updating the project object
+
+2020-02-19 15:11:24,881 INFO MODIFIED 3bm.txt - Updating the project object
+
+2020-02-19 15:11:26,863 INFO MODIFIED 11s.txt - Updating the project object
+
+2020-02-19 15:11:26,863 INFO MODIFIED 11s.txt - Updating the project object
+
+2020-02-19 15:37:33,143 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:37:33,143 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:39:41,183 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:39:41,183 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:44:08,518 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:44:08,518 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:46:03,398 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:46:03,398 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:46:03,454 INFO MODIFIED sx8.txt - Updating the project object
+
+2020-02-19 15:46:03,454 INFO MODIFIED sx8.txt - Updating the project object
+
+2020-02-19 15:48:30,442 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:48:30,442 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:50:18,193 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:50:18,193 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:54:10,261 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:54:10,261 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:55:08,459 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:55:08,459 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:57:14,151 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:57:14,151 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:22:15,956 INFO MODIFIED 5x1.txt - Updating the project object
+
+2020-02-19 15:22:15,956 INFO MODIFIED 5x1.txt - Updating the project object
+
+2020-02-19 15:29:12,468 INFO MODIFIED v14.txt - Updating the project object
+
+2020-02-19 15:29:12,468 INFO MODIFIED v14.txt - Updating the project object
+
+2020-02-19 15:30:32,425 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 15:30:32,425 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 15:33:46,217 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 15:33:46,217 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 15:33:52,685 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 15:33:52,685 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 15:34:05,028 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:34:05,028 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 15:54:44,957 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:54:44,957 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:08,387 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:08,387 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:26,276 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:26,276 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:28,394 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:28,394 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:30,056 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:30,056 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:30,555 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:30,555 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:30,821 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:55:30,821 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:37,043 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:37,043 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:38,767 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:38,767 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:40,777 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:40,777 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:41,191 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:41,191 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:41,494 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:41,494 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:41,690 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:41,690 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:41,855 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:41,855 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:42,024 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:42,024 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:42,196 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:56:42,196 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:11,139 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:11,139 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:11,592 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:11,592 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:11,915 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:11,915 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,095 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,095 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,267 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,267 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,436 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,436 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,593 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,593 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,762 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,762 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,954 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:57:12,954 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:58:07,176 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 15:58:07,176 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-19 16:02:34,975 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-19 16:02:34,975 INFO MODIFIED cr4.txt - Updating the project object
+
+2020-02-19 16:02:37,427 INFO MODIFIED v38.txt - Updating the project object
+
+2020-02-19 16:02:37,427 INFO MODIFIED v38.txt - Updating the project object
+
+2020-02-19 16:02:50,974 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:02:50,974 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:02:53,357 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:02:53,357 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:04:08,227 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:04:08,227 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:28,127 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:28,127 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:29,777 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:29,777 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:30,813 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:30,813 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:31,905 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:31,905 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:36,154 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:36,154 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:39,480 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:39,480 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 16:10:46,735 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:10:46,735 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:12:49,797 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:12:49,797 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:12:55,279 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:12:55,279 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:13:05,753 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:13:05,753 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:13:56,164 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:13:56,164 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:14:03,149 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:14:03,149 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:14:13,737 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:14:13,737 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:15:36,006 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:15:36,006 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:15:40,709 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:15:40,709 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:16:54,983 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:16:54,983 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:18:38,439 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:18:38,439 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:30:26,844 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:30:26,844 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:30:53,442 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:30:53,442 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:33:15,978 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:33:15,978 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:33:18,709 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:33:18,709 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:34:40,111 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:34:40,111 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:34:42,783 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:34:42,783 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:34:44,790 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:34:44,790 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:34:55,058 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:34:55,058 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:35:01,040 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:35:01,040 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:35:47,617 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:35:47,617 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:35:50,792 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:35:50,792 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:35:58,754 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:35:58,754 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:36:42,971 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:36:42,971 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:36:45,704 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:36:45,704 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:36:47,714 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:36:47,714 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:36:50,936 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:36:50,936 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:36:56,343 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:36:56,343 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:37:33,687 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:37:33,687 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:37:34,979 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:37:34,979 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:43:48,370 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:43:48,370 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 16:44:23,931 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:44:23,931 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:44:38,133 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:44:38,133 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:44:41,823 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:44:41,823 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:45:04,904 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:45:04,904 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:45:25,699 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:45:25,699 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:45:47,343 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:45:47,343 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:53:18,112 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:53:18,112 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:53:20,193 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 16:53:20,193 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 18:27:37,522 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 18:27:37,522 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 18:27:38,970 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:27:38,970 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:29:15,343 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 18:29:15,343 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 18:29:16,289 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:29:16,289 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:29:32,400 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:29:32,400 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:29:39,710 INFO MODIFIED 9r4.txt - Updating the project object
+
+2020-02-19 18:29:39,710 INFO MODIFIED 9r4.txt - Updating the project object
+
+2020-02-19 18:29:42,200 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:29:42,200 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:29:57,511 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:29:57,511 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:32:27,242 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 18:32:27,242 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 18:32:36,017 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:32:36,017 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:32:54,061 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:32:54,061 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:33:03,408 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 18:33:03,408 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 18:33:28,841 INFO MODIFIED 1c6.txt - Updating the project object
+
+2020-02-19 18:33:28,841 INFO MODIFIED 1c6.txt - Updating the project object
+
+2020-02-19 18:34:07,794 INFO MODIFIED kpf.txt - Updating the project object
+
+2020-02-19 18:34:07,794 INFO MODIFIED kpf.txt - Updating the project object
+
+2020-02-19 18:34:12,473 INFO MODIFIED kpf.txt - Updating the project object
+
+2020-02-19 18:34:12,473 INFO MODIFIED kpf.txt - Updating the project object
+
+2020-02-19 18:34:19,862 INFO MODIFIED 1c6.txt - Updating the project object
+
+2020-02-19 18:34:19,862 INFO MODIFIED 1c6.txt - Updating the project object
+
+2020-02-19 18:35:09,714 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 18:35:09,714 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 18:35:18,176 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:35:18,176 INFO MODIFIED oky.txt - Updating the project object
+
+2020-02-19 18:36:36,686 INFO MODIFIED 9r4.txt - Updating the project object
+
+2020-02-19 18:36:36,686 INFO MODIFIED 9r4.txt - Updating the project object
+
+2020-02-19 18:37:47,526 INFO MODIFIED 7ts.txt - Updating the project object
+
+2020-02-19 18:37:47,526 INFO MODIFIED 7ts.txt - Updating the project object
+
+2020-02-19 21:48:17,783 INFO MODIFIED 7ts.txt - Updating the project object
+
+2020-02-19 21:48:17,783 INFO MODIFIED 7ts.txt - Updating the project object
+
+2020-02-19 22:56:36,569 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 22:56:36,569 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-19 22:57:16,900 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 22:57:16,900 INFO MODIFIED d68.txt - Updating the project object
+
+2020-02-19 22:58:21,461 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-19 22:58:21,461 INFO MODIFIED xt6.txt - Updating the project object
+
+2020-02-20 20:23:44,983 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-20 20:23:44,983 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-20 20:24:51,002 INFO MODIFIED erv.txt - Updating the project object
+
+2020-02-20 20:24:51,002 INFO MODIFIED erv.txt - Updating the project object
+
+2020-02-20 20:26:05,917 INFO MODIFIED erv.txt - Updating the project object
+
+2020-02-20 20:26:05,917 INFO MODIFIED erv.txt - Updating the project object
+
+2020-02-20 20:27:35,292 INFO MODIFIED erv.txt - Updating the project object
+
+2020-02-20 20:27:35,292 INFO MODIFIED erv.txt - Updating the project object
+
+2020-02-24 12:59:48,136 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 12:59:48,136 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 13:01:31,941 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:01:31,941 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:03:01,796 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:03:01,796 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:07:03,970 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:07:03,970 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:07:07,443 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:07:07,443 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:09:00,607 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 13:09:00,607 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 13:09:19,666 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:09:19,666 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:09:20,350 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:20,350 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:20,543 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:20,543 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:36,539 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:09:36,539 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:09:37,180 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:37,180 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:37,241 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:37,241 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:58,549 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:09:58,549 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:09:59,037 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:59,037 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:59,075 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:09:59,075 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:10:16,208 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:10:16,208 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:10:16,406 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:10:16,406 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:10:16,462 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:10:16,462 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:15:09,646 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:09,646 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:10,042 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:15:10,042 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:15:10,223 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:15:10,223 INFO Node >3x3 has duplicate definition in >uy4. Keeping the definition in >3x3.
+
+2020-02-24 13:15:21,920 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:21,920 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:25,116 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:25,116 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:42,463 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:42,463 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:45,208 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:45,208 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:49,022 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:49,022 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:55,177 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:15:55,177 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:19:50,698 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:19:50,698 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:01,869 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:01,869 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:38,019 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:38,019 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:45,036 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:45,036 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:50,394 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:50,394 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:52,292 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:52,292 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:58,401 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:20:58,401 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:02,417 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:02,417 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:07,761 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:07,761 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:19,836 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:19,836 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:34,574 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:34,574 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:40,791 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:40,791 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:53,167 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:53,167 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:56,284 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:21:56,284 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:22:16,173 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:22:16,173 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:24,113 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:24,113 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:26,723 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:26,723 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:29,097 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:29,097 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:31,436 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:31,436 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:34,756 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:34,756 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:36,589 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:36,589 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:43,159 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:43,159 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:44,367 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:44,367 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:49,054 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:49,054 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:51,732 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:23:51,732 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:27:09,273 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:27:09,273 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:27:14,268 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:27:14,268 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:27:38,130 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:27:38,130 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:28:42,075 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:28:42,075 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:28:43,909 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:28:43,909 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:28:46,294 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:28:46,294 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:28:49,804 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:28:49,804 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:32:10,474 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:32:10,474 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:32:16,132 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:32:16,132 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:32:18,821 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:32:18,821 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:36,784 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:36,784 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:38,666 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:38,666 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:41,756 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:41,756 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:44,403 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:44,403 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:46,875 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:46,875 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:50,242 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:50,242 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:54,225 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:54,225 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:58,339 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:33:58,339 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:01,279 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:01,279 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:06,444 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:06,444 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:09,390 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:09,390 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:14,370 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:14,370 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:18,128 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:18,128 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:21,199 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:21,199 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:24,848 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:24,848 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:28,354 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:28,354 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:31,078 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:31,078 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:33,450 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:33,450 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:36,837 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:34:36,837 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:30,344 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:30,344 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:33,385 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:33,385 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:39,366 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:39,366 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:42,337 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:42,337 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:44,890 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:44,890 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:47,377 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:35:47,377 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:36:48,378 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:36:48,378 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:36:51,998 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:36:51,998 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:36:57,251 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:36:57,251 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:36:59,760 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:36:59,760 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:37:02,234 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:37:02,234 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:37:04,398 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 13:37:04,398 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:11:46,922 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:11:46,922 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:11:50,177 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:11:50,177 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:11:52,548 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:11:52,548 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:11:55,540 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:11:55,540 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:12:30,261 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:12:30,261 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:20:18,129 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:20:18,129 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:20:20,425 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:20:20,425 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:20:22,765 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:20:22,765 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:20:22,879 INFO Multiple ID tags in >q8j, q8j, 4p9 ( using the first one found.
+
+2020-02-24 14:20:22,879 INFO Multiple ID tags in >q8j, q8j, 4p9 ( using the first one found.
+
+2020-02-24 14:20:25,015 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:20:25,015 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:21:48,030 INFO MODIFIED 31 - 01-01-1970 - Dynamic Nodes.txt - Updating the project object
+
+2020-02-24 14:21:48,030 INFO MODIFIED 31 - 01-01-1970 - Dynamic Nodes.txt - Updating the project object
+
+2020-02-24 14:22:06,109 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:22:06,109 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:22:36,124 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:22:36,124 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:22:47,723 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:22:47,723 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:23:35,907 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:23:35,907 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:23:58,025 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:23:58,025 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:24:04,112 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:24:04,112 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:24:21,842 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:24:21,842 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:24:51,283 INFO MODIFIED 31 - 01-01-1970 - Dynamic Nodes.txt - Updating the project object
+
+2020-02-24 14:24:51,283 INFO MODIFIED 31 - 01-01-1970 - Dynamic Nodes.txt - Updating the project object
+
+2020-02-24 14:25:25,564 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:25:25,564 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:25:33,179 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:25:33,179 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:26:00,506 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:26:00,506 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:26:16,087 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:26:16,087 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:26:31,758 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:26:31,758 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:26:41,715 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:26:41,715 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:27:26,682 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:27:26,682 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:28:03,716 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:28:03,716 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:28:11,694 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:28:11,694 INFO MODIFIED 33 - 01-01-1970 - Urtext Documentation.txt - Updating the project object
+
+2020-02-24 14:28:31,303 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:28:31,303 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:28:45,748 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:28:45,748 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:29:05,477 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 14:29:05,477 INFO MODIFIED 22 - 10-11-2019 - Search.txt - Updating the project object
+
+2020-02-24 15:01:53,625 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-24 15:01:53,625 INFO MODIFIED 0000 -  Home.txt - Updating the project object
+
+2020-02-24 15:05:47,961 INFO MODIFIED w0n.txt - Updating the project object
+
+2020-02-24 15:05:47,961 INFO MODIFIED w0n.txt - Updating the project object
+
+2020-02-24 15:06:10,045 INFO MODIFIED w0n.txt - Updating the project object
+
+2020-02-24 15:06:10,045 INFO MODIFIED w0n.txt - Updating the project object
+
+2020-02-24 15:06:52,665 INFO MODIFIED 9tg.txt - Updating the project object
+
+2020-02-24 15:06:52,665 INFO MODIFIED 9tg.txt - Updating the project object
+
+2020-02-24 15:06:55,407 INFO MODIFIED 9tg.txt - Updating the project object
+
+2020-02-24 15:06:55,407 INFO MODIFIED 9tg.txt - Updating the project object
+
+2020-02-24 15:07:37,328 INFO MODIFIED 8sn.txt - Updating the project object
+
+2020-02-24 15:07:37,328 INFO MODIFIED 8sn.txt - Updating the project object
+
+2020-02-24 15:08:15,305 INFO MODIFIED tkj.txt - Updating the project object
+
+2020-02-24 15:08:15,305 INFO MODIFIED tkj.txt - Updating the project object
+
+2020-02-24 15:08:38,131 INFO MODIFIED 7us.txt - Updating the project object
+
+2020-02-24 15:08:38,131 INFO MODIFIED 7us.txt - Updating the project object
+
+2020-02-24 15:09:23,057 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-24 15:09:23,057 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-24 15:09:29,556 INFO MODIFIED 45l.txt - Updating the project object
+
+2020-02-24 15:09:29,556 INFO MODIFIED 45l.txt - Updating the project object
+
