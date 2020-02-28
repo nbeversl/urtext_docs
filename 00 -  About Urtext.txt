@@ -93,6 +93,8 @@ About Urtext
 
         To use Urtext in Sublime Text:
 
+            - Install Sublime Text ( https://www.sublimetext.com/ )
+
             - Clone or download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ). Place it in your Packages folder (Sublime Text 3/Packages).
 
             - The following must then be manually added to Sublime's library folder (`Sublime Text 3/Lib/python3.3`):
@@ -132,11 +134,13 @@ About Urtext
     This implentation utilizes Pythonista's access to the native iOS user interface to create a basic text editor view, along with buttons bound to Urtext's functions (similar to the keyboard shortcut bindings in Sublime), project navigation funtions, and syntax highlighting matching those found in the Sublime Text implementation. Using iCloud, projects can be synced among iOS devices and other devices (desktops, laptops) using the same iCloud account. Once synced, a copy of the project resides fully on the device and is not dependent on a live data connection (see | Requirements, Features, Benefits >006).
     At present,
 
-        - Clone or download the Urtext-Pythonista package.
+        - Install Pythonista (http://omz-software.com/pythonista/)
+
+        - Clone or download the Urtext-Pythonista package (https://github.com/nbeversl/urtext_pythonista).
 
         - Install all the above mentioned Python dependencies into your Pythonista environment.
 
-        - To launch or switch to Urtext from a single app icon, use the Shortcuts app.
+        - (optional) To launch or switch to Urtext from a single app icon, use the Shortcuts app.
 
  /--  id: os4 --/ }}
                                                                                                     

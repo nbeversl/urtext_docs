@@ -7,7 +7,8 @@ License: GNU General Public License 3.0
     This is a documentation of Urtext, written in Urtext. It is an Urtext project that can be open, browsed and edited in the Urtext implementations described below, to try out the features described. It also exports dynamically to Markdown, so that the README.MD file in this folder is always up to date. The documentation can also be read on the web. If you have not yet installed an Urtext implementation, it will be easier to use the README.MD file to get started. See the section on setup. 
 
     {{ With Sublime Text
-        - After installing the Sublime Urtext package, Urtext, and its dependencies, open the folder containing this project in Sublime text and any of thee features described herein will work. 
+
+        - After installing Sublime Text, the Sublime Urtext package, Urtext, and its dependencies, open the folder containing this project in Sublime text and any of thee features described herein will work. 
         - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See  | Links and Pointers >00j for more information).
         - To return to this table of contents, press ctrl-shift-H.
         - You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See (| Traverse Mode >00w) for more information on Traverse Mode.

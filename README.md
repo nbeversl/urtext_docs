@@ -11,7 +11,8 @@ This is a documentation of Urtext, written in Urtext. It is an Urtext project th
 
 ## With Sublime Text
 
-- After installing the Sublime Urtext package, Urtext, and its dependencies, open the folder containing this project in Sublime text and any of thee features described herein will work. 
+
+- After installing Sublime Text, the Sublime Urtext package, Urtext, and its dependencies, open the folder containing this project in Sublime text and any of thee features described herein will work. 
 - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See  "Links and Pointers" for more information).
 - To return to this table of contents, press ctrl-shift-H.
 - You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See ("Traverse Mode") for more information on Traverse Mode.
@@ -258,6 +259,8 @@ The decision has been made not to include Urtext or its dependencies in the Urte
 
 To use Urtext in Sublime Text:
 
+- Install Sublime Text ( https://www.sublimetext.com/ )
+
 - Clone or download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ). Place it in your Packages folder (Sublime Text 3/Packages).
 
 - The following must then be manually added to Sublime's library folder (`Sublime Text 3/Lib/python3.3`):
@@ -293,11 +296,13 @@ Urtext can be used on iOS devices using the Pythonista app, which provides a ful
 This implentation utilizes Pythonista's access to the native iOS user interface to create a basic text editor view, along with buttons bound to Urtext's functions (similar to the keyboard shortcut bindings in Sublime), project navigation funtions, and syntax highlighting matching those found in the Sublime Text implementation. Using iCloud, projects can be synced among iOS devices and other devices (desktops, laptops) using the same iCloud account. Once synced, a copy of the project resides fully on the device and is not dependent on a live data connection (see "Requirements, Features, Benefits").
 At present,
 
-- Clone or download the Urtext-Pythonista package.
+- Install Pythonista (http://omz-software.com/pythonista/)
+
+- Clone or download the Urtext-Pythonista package (https://github.com/nbeversl/urtext_pythonista).
 
 - Install all the above mentioned Python dependencies into your Pythonista environment.
 
-- To launch or switch to Urtext from a single app icon, use the Shortcuts app.
+- (optional) To launch or switch to Urtext from a single app icon, use the Shortcuts app.
 
 
 # Setup
