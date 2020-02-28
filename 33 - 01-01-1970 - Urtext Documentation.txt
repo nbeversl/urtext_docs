@@ -172,7 +172,7 @@ Version: 0.2.0-alpha >a5m
 ID: 01a
 defined in: >029
 flags: exclude_from_tree
-title: Table of Contents (does not appear correctly in Markdown format)
+title: Table of Contents (does not yet appear correctly in Markdown format)
 --/}}
 
 

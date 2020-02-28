@@ -32,7 +32,7 @@ The following are described in more detail in this documentation, but use these 
 
 Being in plaintext, it is also human readable as-is. However, you will have to track down links and references manually.
 
-# Table of Contents (does not appear correctly in Markdown format)
+# Table of Contents (does not yet appear correctly in Markdown format)
 
 Table of Contents
 Version: 0.2.0-alpha"Version: 0.2.0-alpha"
@@ -1600,7 +1600,7 @@ Here is an example Child Node:
 
 
 
-The example Pointer above becomes a child of this node, visible in the "Table of Contents (does not appear correctly in Markdown format)" or using the other tree views described in "Trees".
+The example Pointer above becomes a child of this node, visible in the "Table of Contents (does not yet appear correctly in Markdown format)" or using the other tree views described in "Trees".
 
 The advantages to Node Pointers are many, including:
 
