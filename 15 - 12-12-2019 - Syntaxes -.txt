@@ -2,10 +2,10 @@ Syntaxes :
 
 
 	The { {  and } } wrapper are within the ranges of the CONTAINING node, not the node they enclose.
+	The ^ character also gets included in its PARENT.
 
 	The % character gets included in the range of the node FOLLOWING it.
 	
-	The ^ character also gets included in the range of the node FOLLOWING it.
 
 
 

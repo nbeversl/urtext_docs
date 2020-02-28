@@ -1,26 +1,25 @@
-Search
-
-   {{  Full Text Search 
+Full Text Search 
     
-    Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments. Urtext uses the `whoosh` module by Matt Chaput, which generates indexes from text content that are stored ("pickled") to disk for fast queries. 
+    Full text search is implemented in most modern desktop text editors and some mobile text editors and applications. However Urtext has a built-in search and index capability to avoid reliance on editors and environments. This feature utilizes the `whoosh` module by Matt Chaput, which generates indexes text content and stores ("pickles") it to disk for fast query and retrieval. 
 
 	{{  Building the Index
-	    Anytime a new project is instantiated, Urtext creates an `index` folder inside the project folder for storing the search index. This is maintained by Urtext/whoosh and requires no user interaction. The index is initially empty. Before using it for the first time, select `Urtext: Rebuild Search Index` from the command palette. This will take less than a second to several seconds or longer, depending on the number of files. From then on, nodes are reindexed every time a file is saved. If the index gets out of date/sync with the project for any reason (you notice search terms are not being found, or matches are found that no longer exist), use `Urtext: Rebuild Search Index` again.
-	/-- id: xqi --/ }}
+
+	    Any time a new project is instantiated, Urtext creates an `index` folder inside the project folder for storing the search index. This is maintained by Urtext/whoosh and requires no user interaction/maintenance. The index is initially empty. Before using it for the first time, select `Urtext: Rebuild Search Index` from the command palette. This will take less than a second to several seconds or longer, depending on the number of files. From then on, nodes are reindexed every time a file is saved. If the index gets out of date/sync with the project for any reason (you notice search terms are not being found, or matches are found that no longer exist), use `Urtext: Rebuild Search Index` again.    /-- id: xqi --/ }}
 
 	{{	Searching
 
 		^ Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes. /-- id: k8v; timestamp: <Mon., Feb. 24, 2020, 01:05 PM> --/
-		/-- id: mzj --/
+		
+/-- id: mzj --/
 
-        ^ Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. /-- id: q8j; timestamp: <Mon., Feb. 24, 2020, 02:19 PM> --/
+        ^ Pythonista : Use the "??" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. /-- id: q8j; timestamp: <Mon., Feb. 24, 2020, 02:19 PM> --/
 
 
          }}	
 
-	{{ 	Search Using Dynamic Nodes
+	{{ 	Dynamically Updated Searches (Dynamic Nodes)
 
-        Search results can populate a dynamic node by using the key-value pair:
+        Search results can populate a dynamic node using the key-value pair:
 
             - search:(string)
 
@@ -35,17 +34,12 @@ Search
         {{
 Example Search Results
 /-- 
-title: Example Search Results
-defined in: >uy4
 ID: 3x3
+defined in: >uy4
 flags: exclude_from_tree
+title: Example Search Results
 --/}}
 
  /-- id: uy4 --/ }}
-
-
-    /-- ID: 4p9 --/ }}
-
-
 
 /-- ID:k67--/

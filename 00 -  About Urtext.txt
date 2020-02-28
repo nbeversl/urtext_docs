@@ -5,7 +5,7 @@ About Urtext
 
     {{ Description
         
-        Urtext is a compilable syntax for writing in plaintext. It is structured but flexible, allowing freeform, fragmentary writing while permitting gradual aggregation of content with other content, across many files.  You may start with a single note and build it gradually into a large, structured document that can organize and modify itself based on instructions and metadata embedded in its own content. Urtext parses content into outlines (trees) that can also have recursive (tangled) structure, function much like hypertext (HTML), except with the syntax fully exposed to the writer/reader.
+        Urtext is a compilable syntax for writing in plaintext. It is structured but flexible, allowing freeform, fragmentary writing while permitting gradual aggregation of content with other content, across many files.  You may start with a single note and build it gradually into a large, structured document that can organize and modify itself based on instructions and metadata embedded in its own content. Urtext parses content into outlines (trees) that can also have recursive (tangled) structure, much like hypertext (HTML), except with the syntax fully exposed to the writer/reader.
 
         The present interpreter/compiler for Urtext is in Python. Urtext is implemented in Python and can be used wherever Python is used. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS). There is no reason, however, that equivalent or variant implementations could not be created in any language.
  

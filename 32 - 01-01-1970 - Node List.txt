@@ -6,15 +6,15 @@ Example Source Node 1 >017
 -
 Setup >003
 -
-index >00z
--
 Nodes >01j
+-
+index >00z
 -
 Inline Nodes >004
 -
-Node Metadata >00x
--
 Example Source Node 4 >01c
+-
+Node Metadata >00x
 -
 Links and Pointers >00j
 -
@@ -30,7 +30,7 @@ Reference: Key Bindings >018
 -
 project_settings >00l
 -
-Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+Pythonista : Use the "??" Urtext Button. Results will be updated in real time in the view behind the >q8j
 -
 Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
 -
@@ -42,13 +42,13 @@ another node to move >coc
 -
 another damn node to move >quy
 -
-(untitled) >ult
+ >ult
 -
-Inside >d0f
+Example >3sc
 -
 Test >hg1
 -
-Example >3sc
+Inside >d0f
 -
 Syntaxes : >r0w
 -
@@ -76,281 +76,277 @@ The Node List >01i
 -
 In-Progress / Experimental / Wish List >014
 -
-Example Dynamic Node Title >016
--
-Simple Links >0y2
--
-become child nodes of their containing node. >hiz
--
-Python >fv2
--
-Compact Nodes >ucj
--
-Project Metadata List >012
--
-exclude >e18
--
-- exclude_from_tree >1e3
--
-Python >eea
--
-Urtext Documentation >a5m
--
-export >l2c
--
-What Urtext Is >hdf
--
-Sublime >7n6
--
-Description & Purpose >h0y
--
-Opening the Node List >hl7
--
-Pythonista >rs8
--
-Making a New Project >dce
--
-Pythonista >0yn
--
-Sublime >zm2
--
-Search >k67
--
-Full Text Search >4p9
--
-Sublime >p78
--
-Sublime >qwn
--
-Example Compact Node >d7b
--
-Sublime >00a
+With Sublime Text >e6m
 -
 Python >xor
 -
-include >a3r
--
-Pointers >lmu
--
-Time Zones >7w6
--
-title (overrides the default title) >00y
--
-Example Source Node 2 >00v
--
-Synchronator Setup >01z
--
-Viewing Linked Relationships >00u
--
-Reserved Metadata Keys >011
--
-Files >00p
--
-Linking to outside resources >00q
--
-Timestamp Formats >00n
--
-Web >00o
--
-flags >cwb
--
-Sublime Text tools to help with linking >00m
--
-Timeline View >00k
--
-Trees >00h
--
-Filename formats >00i
--
-From any given node >00f
--
-From the root >00g
--
-Example inline node >00e
--
-Using/Adding Existing Files >00b
--
-Home Node >00c
--
-tree >4mb
--
-Shortkeys to Create Split Nodes >0mn
--
-Sublime >xo8
--
-can have arbitrary other metadata >xlc
--
-Pythonista Implementation >os4
--
-Example Search Results >3x3
--
-iPhone/iPad/iOS >01y
--
-Using this document >009
--
-Requirements, Features, Benefits >006
--
-Syntax >igk
--
-Sublime Text Interface Tips >000
--
-0.1.11-alpha >01l
--
-Using a Sublime Project >c3n
--
-Example Recursive Node Tree >01n
--
-Node Identity (Node IDs) >01h
--
-Hiding Line Numbers >01e
--
-Syntax Highlighting >01d
--
-File Level Nodes >01g
--
-Table of Contents >01a
--
-Searching >mzj
--
-Opening Links >01w
--
-Project Naming (Identification) >tgp
--
-tag_all >yin
--
-Python >3bb
--
-Node List >zzz
--
-Example : Urtext Documentation Exported in Markdown to a File >m9d
--
-Recursive Node Pointers >6ct
--
-Uses >lhs
--
-On the web >fak
--
-id >02t
+Linking Between Projects >7lx
 -
 Second Example split Node >ftz
 -
-Sublime >8fh
+flags >cwb
 -
-Other dynamic instructions (to be linked from someplace else possibly) >x0c
+Pythonista >ouh
 -
-Accidental Duplicate Node IDs >bzv
+export >l2c
+-
+Pythonista >0yn
+-
+Python >3bb
+-
+Inserting a Node ID manually >04s
+-
+Converting and Exporting >ezg
+-
+Using a Sublime Project >c3n
+-
+Reserved Metadata Keys >011
+-
+0.1.16-alpha >03l
+-
+Sublime >xo8
 -
 Python >83e
--
-First Example Split Node >jym
--
-Pythonista >agg
--
-Dependencies and Installation >2fn
 -
 Creating a File Level Node >ekz
 -
 Pythonista >c3y
 -
-require an ID >frm
+Recursive Node Pointers >6ct
 -
 Standalone >plq
 -
-Pythonista >ouh
+Node List >zzz
 -
-0.1.16-alpha >03l
+Python >eea
 -
-0.1.15-alpha >024
+Pointers >lmu
 -
-Sublime Text Implementation >01u
+Making a New Project >dce
 -
-Sublime >rij
+Simple Links >0y2
+-
+Python >0ow
+-
+Opening the Node List >hl7
+-
+Full Text Search >k67
+-
+become child nodes of their containing node. >hiz
+-
+exclude >e18
+-
+Pythonista >hrv
+-
+Sublime >8fh
+-
+Pythonista Implementation >os4
+-
+Python >b44
+-
+Sublime >osu
+-
+Example Dynamic Node Title >016
+-
+Hiding Tabs >015
+-
+Example Search Results >3x3
+-
+Project Metadata List >012
+-
+id >02t
+-
+Example : Fragment Exported to HTML >baq
+-
+Description >yv2
+-
+Creating Inline Nodes >rbs
+-
+Sublime >40f
+-
+Python >n2m
+-
+can have arbitrary other metadata >xlc
+-
+From any given node >00f
+-
+Dynamic Nodes >e82
+-
+tree >4mb
+-
+Python >fv2
+-
+Other dynamic instructions (to be linked from someplace else possibly) >x0c
+-
+First Example Split Node >jym
+-
+Pythonista >bhk
+-
+File Level Nodes >01g
+-
+Hiding Line Numbers >01e
+-
+Syntax Highlighting >01d
+-
+Table of Contents >01a
+-
+Example Recursive Node Tree >01n
+-
+0.1.11-alpha >01l
+-
+Node Identity (Node IDs) >01h
+-
+0.1.14-alpha >022
 -
 0.1.12-alpha >020
 -
 0.1.13-alpha >021
 -
-0.1.14-alpha >022
--
-Disable Prompts for File Reload >023
--
-Traverse Mode >00w
--
-Sublime >40f
--
 Example 2 : Tree >029
 -
-Full Screen / Distraction Free Mode >002
+Synchronator Setup >01z
 -
-Pythonista >hrv
--
-Linking Between Projects >7lx
--
-Creating a Dynamic Node >yon
--
-Opening the Metadata List >saa
--
-Pythonista >bhk
--
-Inserting a Node ID manually >04s
--
-Pythonista >xcx
--
-Comparison To Other Tools >h8z
--
-Definition keys/values >37h
--
-Converting and Exporting >ezg
--
-With Pythonista >1dc
--
-Word Wrap in Traverse Mode >xci
--
-Dynamically Titled Links >4vu
--
-Python >h8c
--
-Sublime >osu
--
-Creating Inline Nodes >rbs
--
-Python >n2m
--
-Building the Index >xqi
--
-With Sublime Text >e6m
--
-Search Using Dynamic Nodes >uy4
--
-Description >yv2
--
-Example : Fragment Exported to HTML >baq
--
-Pythonista >iy8
--
-(untitled) >fxq
--
-Pythonista >c7r
--
-Python >b44
--
-Syntax Highlighting of Inline Nodes (Sublime) >koe
--
-Python >0ow
--
-Dynamic Nodes >e82
+iPhone/iPad/iOS >01y
 -
 Creating Compact Nodes >3t5
 -
-Hiding Tabs >015
+Creating a Dynamic Node >yon
 -
-Using Multiple Projects at a Time >ipy
+Trees >00h
 -
-sort >05f
+(untitled) >fxq
+-
+Filename formats >00i
+-
+0.1.15-alpha >024
+-
+Syntax >igk
+-
+Example inline node >00e
+-
+Dynamically Updated Searches (Dynamic Nodes) >uy4
+-
+From the root >00g
+-
+Sublime >00a
+-
+Using/Adding Existing Files >00b
+-
+Home Node >00c
+-
+Sublime Text tools to help with linking >00m
+-
+Timestamp Formats >00n
+-
+Web >00o
+-
+Word Wrap in Traverse Mode >xci
+-
+Opening the Metadata List >saa
+-
+Timeline View >00k
+-
+Duplicate Pointers >00t
+-
+Viewing Linked Relationships >00u
+-
+Example Source Node 2 >00v
+-
+Sublime >rij
+-
+Files >00p
+-
+Linking to outside resources >00q
+-
+Sublime >zm2
+-
+title (overrides the default title) >00y
+-
+Building the Index >xqi
+-
+Pythonista >c7r
+-
+Pythonista >agg
 -
 metadata >oa2
 -
-Duplicate Pointers >00t
+Uses >lhs
+-
+Sublime >qwn
+-
+Sublime >p78
+-
+Pythonista >xcx
+-
+Requirements, Features, Benefits >006
+-
+Sublime Text Interface Tips >000
+-
+Full Screen / Distraction Free Mode >002
+-
+Searching >mzj
+-
+Using this document >009
+-
+Definition keys/values >37h
+-
+require an ID >frm
+-
+Syntax Highlighting of Inline Nodes (Sublime) >koe
+-
+tag_all >yin
+-
+Dependencies and Installation >2fn
+-
+Dynamically Titled Links >4vu
+-
+Pythonista >iy8
+-
+Opening Links >01w
+-
+With Pythonista >1dc
+-
+Time Zones >7w6
+-
+Accidental Duplicate Node IDs >bzv
+-
+include >a3r
+-
+Disable Prompts for File Reload >023
+-
+Sublime Text Implementation >01u
+-
+Pythonista >rs8
+-
+- exclude_from_tree >1e3
+-
+Compact Nodes >ucj
+-
+Using Multiple Projects at a Time >ipy
+-
+Description & Purpose >h0y
+-
+Python >h8c
+-
+Version: 0.2.0-alpha >a5m
+-
+What Urtext Is >hdf
+-
+Example Compact Node >d7b
+-
+Comparison To Other Tools >h8z
+-
+Project Naming (Identification) >tgp
+-
+Traverse Mode >00w
+-
+sort >05f
+-
+Shortkeys to Create Split Nodes >0mn
+-
+Sublime >7n6
+-
+Example : Urtext Documentation Exported in Markdown to a File >m9d
 -
 /--
 id:zzz

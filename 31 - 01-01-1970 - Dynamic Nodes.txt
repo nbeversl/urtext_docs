@@ -64,11 +64,8 @@
                 
                 /-- ID: l2c; title: export --/ 
  }}
+            | tag_all >>yin
 
-
-            Two more dynamic keys are available. See:
-                | tag_all >>yin
-                | search >>uy4
            
 
     /--  id: 37h--/ }}
@@ -112,10 +109,10 @@
     Example Source Node 1 >017
     Example Source Node 4 >01c
     /-- 
-    title: Example Dynamic Node Title
-    defined in: >01r
     ID: 016
+    defined in: >01r
     flags: exclude_from_tree
+    title: Example Dynamic Node Title
     --/}}
                                                                                               
 
