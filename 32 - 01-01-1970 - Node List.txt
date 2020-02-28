@@ -188,7 +188,7 @@ Hiding Line Numbers >01e
 -
 Syntax Highlighting >01d
 -
-Table of Contents >01a
+Table of Contents (does not appear correctly in Markdown format) >01a
 -
 Example Recursive Node Tree >01n
 -

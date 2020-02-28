@@ -11,7 +11,7 @@ License: GNU General Public License 3.0
         - See | Dependencies and Installation >2fn for information on how to set up Urtext with Sublime Text.
         - Open the folder containing this project in Sublime text and any of thee features described herein will work. 
         
-        The following are described in more detail in this documentation, but the following quick start
+        The following are described in more detail in this documentation, but use these tips to get started quickly:
 
         - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See  | Links and Pointers >00j for more information).
         - To return to this table of contents, press ctrl-shift-H.
@@ -172,7 +172,7 @@ Version: 0.2.0-alpha >a5m
 ID: 01a
 defined in: >029
 flags: exclude_from_tree
-title: Table of Contents
+title: Table of Contents (does not appear correctly in Markdown format)
 --/}}
 
 

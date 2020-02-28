@@ -15,7 +15,7 @@ This is a documentation of Urtext, written in Urtext. It is an Urtext project th
 - See "Dependencies and Installation" for information on how to set up Urtext with Sublime Text.
 - Open the folder containing this project in Sublime text and any of thee features described herein will work. 
 
-The following are described in more detail in this documentation, but the following quick start
+The following are described in more detail in this documentation, but use these tips to get started quickly:
 
 - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See  "Links and Pointers" for more information).
 - To return to this table of contents, press ctrl-shift-H.
@@ -32,7 +32,7 @@ The following are described in more detail in this documentation, but the follow
 
 Being in plaintext, it is also human readable as-is. However, you will have to track down links and references manually.
 
-# Table of Contents
+# Table of Contents (does not appear correctly in Markdown format)
 
 Table of Contents
 Version: 0.2.0-alpha"Version: 0.2.0-alpha"
@@ -1600,7 +1600,7 @@ Here is an example Child Node:
 
 
 
-The example Pointer above becomes a child of this node, visible in the "Table of Contents" or using the other tree views described in "Trees".
+The example Pointer above becomes a child of this node, visible in the "Table of Contents (does not appear correctly in Markdown format)" or using the other tree views described in "Trees".
 
 The advantages to Node Pointers are many, including:
 
