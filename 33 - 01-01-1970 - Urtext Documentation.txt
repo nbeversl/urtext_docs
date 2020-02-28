@@ -8,10 +8,14 @@ License: GNU General Public License 3.0
 
     {{ With Sublime Text
 
-        - After installing Sublime Text, the Sublime Urtext package, Urtext, and its dependencies, open the folder containing this project in Sublime text and any of thee features described herein will work. 
+        - See | Dependencies and Installation >2fn for information on how to set up Urtext with Sublime Text.
+        - Open the folder containing this project in Sublime text and any of thee features described herein will work. 
+        
+        The following are described in more detail in this documentation, but the following quick start
+
         - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See  | Links and Pointers >00j for more information).
         - To return to this table of contents, press ctrl-shift-H.
-        - You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See (| Traverse Mode >00w) for more information on Traverse Mode.
+        - You can traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See | Traverse Mode >00w for more information on Traverse Mode.
         - Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See | Syntax Highlighting >01d for more information.    /-- ID:e6m --/ }}
 
     {{  With Pythonista
