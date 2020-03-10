@@ -29,14 +29,14 @@ This is a documentation of Urtext, written in Urtext. It can be used in an Urtex
 - Clone the documentation repository into your base Urtext path and it will be accessible from within Pythonista Urtext.
 
 # Table of Contents
-`
+
 Table of Contents
 Urtext Documentation[Urtext Documentation](#urtext-documentation)
-├── Using this document[Using this document](#using-this-document)
-│   ├── With Sublime Text[With Sublime Text](#with-sublime-text)
-│   └── Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
-├── About Urtext[About Urtext](#about-urtext)
-│   └── What Urtext Is[What Urtext Is](#what-urtext-is)
+Using this document[Using this document](#using-this-document)
+With Sublime Text[With Sublime Text](#with-sublime-text)
+Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
+About Urtext[About Urtext](#about-urtext)
+What Urtext Is[What Urtext Is](#what-urtext-is)
 │       ├── Description[Description](#description)
 │       ├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
 │       ├── Uses[Uses](#uses)
@@ -161,7 +161,7 @@ Urtext Documentation[Urtext Documentation](#urtext-documentation)
 ├── Filenames[Filenames](#filenames)
 ├── Extension and Customization[Extension and Customization](#extension-and-customization)
 └── File History[File History](#file-history)
-`
+
 
 
 # About Urtext
