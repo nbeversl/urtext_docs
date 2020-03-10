@@ -45,11 +45,10 @@ Pointers >lmu
 ├── Duplicate Pointers >00t
     └── Example Child Node Using a Node Pointer >001
 └── Recursive Node Pointers >6ct
-    ├── Version: 0.2.0-alpha >a5m
+    ├── Urtext Documentation >a5m
         ├── Using this document >009
             ├── With Sublime Text >e6m
-            ├── With Pythonista >1dc
-            └── Standalone >plq
+            └── Using Pythonista Urtext >lvf
         ├── About Urtext >013
         ├── Setup >003
         ├── Nodes >01j
@@ -58,11 +57,12 @@ Pointers >lmu
         ├── Links and Pointers >00j
         ├── Using Multiple Projects at a Time >ipy
         ├── Converting and Exporting >ezg
-        ├── Full Text Search >k67
+        ├── Search >k67
         ├── Filenames >01m
-        └── Extension and Customization >01o
+        ├── Extension and Customization >01o
+        └── File History >prp
     └── Example Recursive Node Tree >01n
-/-- ID: 01n; defined in: >6ct; title: Example Recursive Node Tree --/}}
+/-- defined in: >6ct; ID: 01n; title: Example Recursive Node Tree --/}}
     
     [[ 
     id:01n

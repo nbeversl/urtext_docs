@@ -74,75 +74,7 @@ About Urtext
     }}
 
 
-{{ Sublime Text Implementation /-- tags:sublime --/
 
-    A text editor with scripting capabilities can be seen as an empty, all-purpose user interface for working with plain text in any way. The Urtext package for Sublime Text utilizes Sublime Text's as a user interface for editing Urtext files, using Sublime's embedded Python interpreter both to run the Urtext interpreter/compiler and to add features to Sublime that make working with Urtext easy. The Sublime Text Urtext package:
-
-        - binds Urtext's features to commands in the Sublime command palette
-        - adds key bindings (hotkeys) as shortcuts for some features
-        - leverages the built-in Sublime browser/palette for Urtext project navigation
-        - defines a syntax for use with Sublime's color schemes
-        - adds Urtext syntax highlighting to two of Sublime's default color schemes (Monokai and Sixteen)
-        - adds filebrowser-like project navigation using | Traverse Mode >00w
-
-    Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation. Features that are specific to Sublime are tagged with the keyword `sublime`.
-
-{{     Dependencies and Installation
-    
-        The decision has been made not to include Urtext or its dependencies in the Urtext package for Sublime. This is to simplify development of Urtext independently of particular contexts. As such, it is necessary to install everything manually into Sublime's Python environment, and to update them independently when desired.
-
-        To use Urtext in Sublime Text:
-
-            - Install Sublime Text ( https://www.sublimetext.com/ )
-
-            - Clone or download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ). Place it in your Packages folder (Sublime Text 3/Packages).
-
-            - The following must then be manually added to Sublime's library folder (`Sublime Text 3/Lib/python3.3`):
-
-                - anytree
-                    https://github.com/c0fec0de/anytree
-                    The folder needed is `anytree` inside this download; add it to `Sublime Text 3/Lib/python3.3`.
-
-                - whoosh
-                    https://bitbucket.org/mchaput/whoosh/downloads/
-                    The folder needed is `src/whoosh`; add it to `Sublime Text 3/Lib/python3.3`.
-
-                - pytz
-                    https://pypi.org/project/pytz/
-                    The folder neded is `pytz`; add it to `Sublime Text 3/Lib/python3.3`.
-
-                - six
-                    https://pypi.org/project/six/
-                    The only FILE needed is `six.py`, nothing else; add this directly to `Sublime Text 3/Lib/python3.3`.
-
-                - urtext 
-                    https://github.com/nbeversl/urtext
-                    (This is Urtext itself.) Put the entire folder (`urtext`) into `Sublime Text 3/Lib/python3.3`.
-
-            In the future a script may be provided to install/update these dependencies, but for now it is a manual process.
-
-            Close and reopen Sublime Text. Urtext is now ready to use.
-
-        /-- id: 2fn --/ }}        
-
-    /-- ID:01u --/ }}
-
-
-{{  Pythonista Implementation
-    
-    Urtext can be used on iOS devices using the Pythonista app, which provides a full Python interpreter inside of iOS. 
-    This implentation utilizes Pythonista's access to the native iOS user interface to create a basic text editor view, along with buttons bound to Urtext's functions (similar to the keyboard shortcut bindings in Sublime), project navigation funtions, and syntax highlighting matching those found in the Sublime Text implementation. Using iCloud, projects can be synced among iOS devices and other devices (desktops, laptops) using the same iCloud account. Once synced, a copy of the project resides fully on the device and is not dependent on a live data connection (see | Requirements, Features, Benefits >006).
-    At present,
-
-        - Install Pythonista (http://omz-software.com/pythonista/)
-
-        - Clone or download the Urtext-Pythonista package (https://github.com/nbeversl/urtext_pythonista).
-
-        - Install all the above mentioned Python dependencies into your Pythonista environment.
-
-        - (optional) To launch or switch to Urtext from a single app icon, use the Shortcuts app.
-
- /--  id: os4 --/ }}
                                                                                                     
 /-- ID:013
 index:01

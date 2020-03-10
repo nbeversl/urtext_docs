@@ -1,55 +1,50 @@
 
-Version: 0.2.0-alpha
+Urtext Documentation
 
 
+Version: 0.1.5-alpha
 License: GNU General Public License 3.0
 
 # Using this document
 
 
-This is a documentation of Urtext, written in Urtext. It is an Urtext project that can be open, browsed and edited in the Urtext implementations described below, to try out the features described. It also exports dynamically to Markdown, so that the README.MD file in this folder is always up to date. The documentation can also be read on the web. If you have not yet installed an Urtext implementation, it will be easier to use the README.MD file to get started. See the section on setup.
+This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation to try out the features described. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable. To
 
 ## With Sublime Text
 
 
-- See "Dependencies and Installation" for information on how to set up Urtext with Sublime Text.
-- Open the folder containing this project in Sublime text and any of thee features described herein will work. 
+- First set up Urtext in Sublime. Follow the instructions at "Dependencies and Installation (Sublime)"
+- Clone/download this repository and open it up in Sublime. It will automatically be read as an Urtext project when you can navigate. To get started quickly, follow these tips, which are described in greater detail in their respective sections of this documentation.
 
-The following are described in more detail in this documentation, but use these tips to get started quickly:
-
-- To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See  "Links and Pointers" for more information).
+- To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See "Links and Pointers" for more information).
 - To return to this table of contents, press ctrl-shift-H.
-- You can traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See "Traverse Mode" for more information on Traverse Mode.
-- Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See "Syntax Highlighting" for more information.
+- You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See "Traverse Mode" for more information.
+- Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See  "Syntax Highlighting" for more information.
+- See "Sublime Text Interface Tips" for other suggestions.
 
-## With Pythonista
-
-
-- This documentation can also be used as a regular Urtext project inside the Pythonista implementation.
-
-## Standalone
+## Using Pythonista Urtext
 
 
-Being in plaintext, it is also human readable as-is. However, you will have to track down links and references manually.
+- Set up Urtext in Pythonista. Follow the instructions in "Pythonista Urtext Implementation Setup"
+- Clone the documentation repository into your base Urtext path and it will be accessible from within Pythonista Urtext.
 
-# Table of Contents (does not yet appear correctly in Markdown format)
+# Table of Contents
 
 Table of Contents
-Version: 0.2.0-alpha"Version: 0.2.0-alpha"
+Urtext Documentation"Urtext Documentation"
 ├── Using this document"Using this document"
     ├── With Sublime Text"With Sublime Text"
-    ├── With Pythonista"With Pythonista"
-    └── Standalone"Standalone"
+    └── Using Pythonista Urtext"Using Pythonista Urtext"
 ├── About Urtext"About Urtext"
-    ├── What Urtext Is"What Urtext Is"
+    └── What Urtext Is"What Urtext Is"
         ├── Description"Description"
         ├── Comparison To Other Tools"Comparison To Other Tools"
         ├── Uses"Uses"
         └── Requirements, Features, Benefits"Requirements, Features, Benefits"
-    ├── Sublime Text Implementation"Sublime Text Implementation"
-        └── Dependencies and Installation"Dependencies and Installation"
-    └── Pythonista Implementation"Pythonista Implementation"
 ├── Setup"Setup"
+    ├── Sublime Text Implementation Setup"Sublime Text Implementation Setup"
+        └── Dependencies and Installation (Sublime)"Dependencies and Installation (Sublime)"
+    ├── Pythonista Urtext Implementation Setup"Pythonista Urtext Implementation Setup"
     ├── Making a New Project"Making a New Project"
         ├── Sublime"Sublime"
         ├── Pythonista"Pythonista"
@@ -102,16 +97,10 @@ Version: 0.2.0-alpha"Version: 0.2.0-alpha"
             ├── index"index"
             └── flags"flags"
                 └── - exclude_from_tree"- exclude_from_tree"
-        ├── Timestamps"Timestamps"
+        └── Timestamps"Timestamps"
             ├── Timeline View"Timeline View"
             └── Time Zones"Time Zones"
                 └── Timezone List"Timezone List"
-        └── Project Metadata List"Project Metadata List"
-            ├── ? (Missing Node):[ MISSING LINK : zzy ] 
-            └── Opening the Metadata List"Opening the Metadata List"
-                ├── Sublime"Sublime"
-                ├── Pythonista"Pythonista"
-                └── Python"Python"
     └── The Node List"The Node List"
         └── Opening the Node List"Opening the Node List"
             ├── Sublime"Sublime"
@@ -152,7 +141,7 @@ Version: 0.2.0-alpha"Version: 0.2.0-alpha"
         ├── Duplicate Pointers"Duplicate Pointers"
             └── Example Child Node Using a Node Pointer"Example Child Node Using a Node Pointer"
         └── Recursive Node Pointers"Recursive Node Pointers"
-            ├── RECURSION : Version: 0.2.0-alpha"Version: 0.2.0-alpha"
+            ├── RECURSION : Urtext Documentation"Urtext Documentation"
             └── Example Recursive Node Tree"Example Recursive Node Tree"
     └── Traverse Mode"Traverse Mode"
         └── Word Wrap in Traverse Mode"Word Wrap in Traverse Mode"
@@ -162,15 +151,16 @@ Version: 0.2.0-alpha"Version: 0.2.0-alpha"
 ├── Converting and Exporting"Converting and Exporting"
     ├── Example : Urtext Documentation Exported in Markdown to a File"Example : Urtext Documentation Exported in Markdown to a File"
     └── Example : Fragment Exported to HTML"Example : Fragment Exported to HTML"
-├── Full Text Search"Full Text Search"
-    ├── Building the Index"Building the Index"
-    ├── Searching"Searching"
-        ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe"Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe"
-        └── Pythonista : Use the "??" Urtext Button. Results will be updated in real time in the view behind the"Pythonista : Use the "??" Urtext Button. Results will be updated in real time in the view behind the"
-    └── Dynamically Updated Searches (Dynamic Nodes)"Dynamically Updated Searches (Dynamic Nodes)"
+├── Search"Search"
+    └── Full Text Search"Full Text Search"
+        ├── Building the Index"Building the Index"
+        ├── Searching"Searching"
+            ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe"Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe"
+            └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the"Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the"
+        └── Search Using Dynamic Nodes"Search Using Dynamic Nodes"
 ├── Filenames"Filenames"
-└── Extension and Customization"Extension and Customization"
-
+├── Extension and Customization"Extension and Customization"
+└── File History"File History"
 
 
 
@@ -242,7 +232,15 @@ Being in plaintext and having a syntax specification, it can also be used with:
 
 - Version control (using Git, for example).
 
-## Sublime Text Implementation
+
+# Setup
+
+
+| Sublime Text Implementation Setup >>
+
+Setup
+
+## Sublime Text Implementation Setup
 
 
 A text editor with scripting capabilities can be seen as an empty, all-purpose user interface for working with plain text in any way. The Urtext package for Sublime Text utilizes Sublime Text's as a user interface for editing Urtext files, using Sublime's embedded Python interpreter both to run the Urtext interpreter/compiler and to add features to Sublime that make working with Urtext easy. The Sublime Text Urtext package:
@@ -256,7 +254,7 @@ A text editor with scripting capabilities can be seen as an empty, all-purpose u
 
 Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation. Features that are specific to Sublime are tagged with the keyword `sublime`.
 
-### Dependencies and Installation
+### Dependencies and Installation (Sublime)
 
 
 The decision has been made not to include Urtext or its dependencies in the Urtext package for Sublime. This is to simplify development of Urtext independently of particular contexts. As such, it is necessary to install everything manually into Sublime's Python environment, and to update them independently when desired.
@@ -293,12 +291,12 @@ In the future a script may be provided to install/update these dependencies, but
 
 Close and reopen Sublime Text. Urtext is now ready to use.
 
-## Pythonista Implementation
+
+## Pythonista Urtext Implementation Setup
 
 
 Urtext can be used on iOS devices using the Pythonista app, which provides a full Python interpreter inside of iOS. 
-This implentation utilizes Pythonista's access to the native iOS user interface to create a basic text editor view, along with buttons bound to Urtext's functions (similar to the keyboard shortcut bindings in Sublime), project navigation funtions, and syntax highlighting matching those found in the Sublime Text implementation. Using iCloud, projects can be synced among iOS devices and other devices (desktops, laptops) using the same iCloud account. Once synced, a copy of the project resides fully on the device and is not dependent on a live data connection (see "Requirements, Features, Benefits").
-At present,
+This implementation utilizes the native iOS user interface to create a basic text editor view, along with buttons bound to Urtext's functions (similar to the keyboard shortcut bindings in Sublime), project navigation funtions, and syntax highlighting matching those found in the Sublime Text implementation. Using iCloud, projects can be synced among iOS devices and other devices (desktops, laptops). Once synced, a copy of the project resides fully on the device and is not dependent on a live data connection (see "Requirements, Features, Benefits").
 
 - Install Pythonista (http://omz-software.com/pythonista/)
 
@@ -309,7 +307,6 @@ At present,
 - (optional) To launch or switch to Urtext from a single app icon, use the Shortcuts app.
 
 
-# Setup
 
 ## Making a New Project
 
@@ -435,7 +432,10 @@ Think of a node as a region of paper with flexible and open-ended length.
 ## Node Identity (Node IDs)
 
 
-Nodes are uniquely identified by a three-character ID generated automatically on creation and placed into the initial metadata region. The identity of a node within Urtext persists no matter its containing filename. Every node must have an ID; files with nodes missing IDs cannot be compiled and are omitted from the project. 
+The identity of an Urtext node persists no matter its containing filename, even when moved from one file to another. This is accomplished by assigning each node a unique identifier. Since nothing is hidden from view in an Urtext file, a minimally intrusive format of three alphanumeric was chosen. IDs are not case sensitive.
+
+generated automatically on creation and placed into their initial metadata region.  
+Every node must have an ID; files with nodes missing IDs cannot be compiled and are omitted from the project. 
 
 Node IDs have no special meaning except as a unique identifier. IDs are covered more in "More About Node IDs".
 
@@ -631,7 +631,7 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press Co
 Metadata ## Node Metadata
 
 
-Metadata is data about the content, in the form of key/value pairs and timestamps. Other than a few reserved key/value pairs used for compiling, metadata is open for user-defined purposes. Keys and values of metadata tags are indexed automatically and searchable within the Urtext project (see"Project Metadata List"). 
+Metadata is data about the content, in the form of key/value pairs and timestamps. Other than a few reserved key/value pairs used for compiling, metadata is open for user-defined purposes. Keys and values of metadata tags are indexed automatically and searchable within the Urtext project (see[ MISSING LINK : 012 ] ). 
 
 Metadata regions in Urtext open with a forward-slash followed by two dashes and close with two dashes followed by a forward slash. Each metadata entry is a key/value pair, separated by a colon, with the value containing an optional timestamp. Examples:
 
@@ -697,7 +697,7 @@ The only additional reserved metadata keys apply only to the project_settings no
 
 Next topics:
 
-Timestamps ### Timestamps
+### Timestamps
 
 
 Reliance on the operating system's file-created or file-modified date metadata is avoided, since it can be too easily and involuntarily overwritten under ordinary file system operations, such as copying and moving files or folders. 
@@ -1321,29 +1321,6 @@ Zulu
 )
 
 
-Project Metadata List ### Project Metadata List
-
-
-
-Like "The Node List", every project maintains a Metadata List, automatically written to a built-in file-level dynamic node. The Node ID `zzy` is reserved for the Metadata list. (See "Node Identity (Node IDs)" for more information on Node IDs). To see the metadata list for the documentation, for instance, see node >>
-
-
-Project Metadata List  
-
-Like "The Node List", every project maintains a Metadata List, automatically written to a built-in file-level dynamic node. The Node ID `zzy` is reserved for the Metadata list. (See "Node Identity (Node IDs)" for more information on Node IDs). To see the metadata list for the documentation, for instance, see node >>zzy.
-
-#### Opening the Metadata List
-
-##### Sublime
-
-
-Ctrl-Shift-U
-
-Like any node, the Metadata List can be traversed in Sublime using Traverse Mode ("Traverse Mode"). You can also link to it from anywhere by its node ID, like this:[ MISSING LINK : zzy ] . 
-
-In Sublime Text there is also the alternative of using the "Find By Meta" command in Command Palette. Press Control-Shift-E or select "Urtext: Metadata List" from the Sublime command palette (Shift-Super-P).
-
-
 
 
 Node list ## The Node List
@@ -1600,7 +1577,7 @@ Here is an example Child Node:
 
 
 
-The example Pointer above becomes a child of this node, visible in the "Table of Contents (does not yet appear correctly in Markdown format)" or using the other tree views described in "Trees".
+The example Pointer above becomes a child of this node, visible in the "Table of Contents" or using the other tree views described in "Trees".
 
 The advantages to Node Pointers are many, including:
 
@@ -1636,11 +1613,10 @@ Pointers"Pointers"
 ├── Duplicate Pointers"Duplicate Pointers"
     └── Example Child Node Using a Node Pointer"Example Child Node Using a Node Pointer"
 └── Recursive Node Pointers"Recursive Node Pointers"
-    ├── Version: 0.2.0-alpha"Version: 0.2.0-alpha"
+    ├── Urtext Documentation"Urtext Documentation"
         ├── Using this document"Using this document"
             ├── With Sublime Text"With Sublime Text"
-            ├── With Pythonista"With Pythonista"
-            └── Standalone"Standalone"
+            └── Using Pythonista Urtext"Using Pythonista Urtext"
         ├── About Urtext"About Urtext"
         ├── Setup"Setup"
         ├── Nodes"Nodes"
@@ -1649,9 +1625,10 @@ Pointers"Pointers"
         ├── Links and Pointers"Links and Pointers"
         ├── Using Multiple Projects at a Time"Using Multiple Projects at a Time"
         ├── Converting and Exporting"Converting and Exporting"
-        ├── Full Text Search"Full Text Search"
+        ├── Search"Search"
         ├── Filenames"Filenames"
-        └── Extension and Customization"Extension and Customization"
+        ├── Extension and Customization"Extension and Customization"
+        └── File History"File History"
     └── Example Recursive Node Tree"Example Recursive Node Tree"
 
 
@@ -1725,7 +1702,7 @@ export : (format) : ( source_node_id )
 ## Example : Urtext Documentation Exported in Markdown to a File
 
 
-The following dynamic definition exports this entire documentation (from its root node "Version: 0.2.0-alpha" ) in Markdown format to a file called documentation.md:
+The following dynamic definition exports this entire documentation (from its root node "Urtext Documentation" ) in Markdown format to a file called documentation.md:
 
 ## Example : Fragment Exported to HTML
 
@@ -1733,48 +1710,50 @@ The following dynamic definition exports this entire documentation (from its roo
 The following Dynamic Definition exports the "Links and Pointers" section of the documentation to HTML, into a node inside this one:
 
 
-# Full Text Search
+# Search
+
+## Full Text Search
 
 
-Full text search is implemented in most modern desktop text editors and some mobile text editors and applications. However Urtext has a built-in search and index capability to avoid reliance on editors and environments. This feature utilizes the `whoosh` module by Matt Chaput, which generates indexes text content and stores ("pickles") it to disk for fast query and retrieval. 
-
-
-
-## Building the Index
-
-
-Any time a new project is instantiated, Urtext creates an `index` folder inside the project folder for storing the search index. This is maintained by Urtext/whoosh and requires no user interaction/maintenance. The index is initially empty. Before using it for the first time, select `Urtext: Rebuild Search Index` from the command palette. This will take less than a second to several seconds or longer, depending on the number of files. From then on, nodes are reindexed every time a file is saved. If the index gets out of date/sync with the project for any reason (you notice search terms are not being found, or matches are found that no longer exist), use `Urtext: Rebuild Search Index` again.
+Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments. Urtext uses the `whoosh` module by Matt Chaput, which generates indexes from text content that are stored ("pickled") to disk for fast queries. 
 
 
 
+### Building the Index
+
+Anytime a new project is instantiated, Urtext creates an `index` folder inside the project folder for storing the search index. This is maintained by Urtext/whoosh and requires no user interaction. The index is initially empty. Before using it for the first time, select `Urtext: Rebuild Search Index` from the command palette. This will take less than a second to several seconds or longer, depending on the number of files. From then on, nodes are reindexed every time a file is saved. If the index gets out of date/sync with the project for any reason (you notice search terms are not being found, or matches are found that no longer exist), use `Urtext: Rebuild Search Index` again.
 
 
-## Searching
 
 
-### Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe
+
+
+### Searching
+
+
+#### Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe
 r edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes.
 
 
 
 
-### Pythonista : Use the "??" Urtext Button. Results will be updated in real time in the view behind the
+#### Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the
 search field. To exit, tap outside the search field.
 
 
 
 
 
-## Dynamically Updated Searches (Dynamic Nodes)
+### Search Using Dynamic Nodes
 
 
-Search results can populate a dynamic node using the key-value pair:
+Search results can populate a dynamic node by using the key-value pair:
 
 - search:(string)
 
 For example, the following definition targets node"Example Search Results" (below) and populates it with all nodes containing the word "urtext".
 
-### Example Search Results
+#### Example Search Results
 
 Example Search Results
 
@@ -1803,6 +1782,20 @@ This system preserves automatic numerical sorting within the filesystem, such th
 
 Some features described in this document are specific to this Sublime Text implementation, (though they could be reproduced in any scriptable text editor), but most are features of Urtext itself. Where there is question, you can find out fairly be inspecting the code. Anything that is 
 [ TO BE COMPLETED ]
+
+
+
+# File History
+
+
+Urtext files, being in plaintext, can be versioned using tools such as Git, Subversion, Mercurial, and others. Those tools are intended mainly for coding, when it is generally considered bad practice to commit non-working/non-compiling iterations of a project. Though Urtext files do compile, their actual text content is not a factor in this, so is reasonable to track changes at all stages of a project, even at granular levels.
+
+Though use of powerful version control tools is not discouraged, Urtext has its own, lighter versioning system that tracks edits in the background at discrete intervals so it is not necessary to make explicit "commits" to have access to file history. Urtext creates a single, linear, nondestructive history of each file's content, with each snapshot being a "diff", or record of changes since the previous snapshot. When a previous state is restored, no "checkout" or "rewind" occurs; rather, the newly restored state is appended to the end of the history. Therefore, in addition to functioning as version control, the feature can also be used as a non-destructive "undo/redo" editing history that saves state after the file is closed.
+
+The default interval is 10 seconds, and can be modified in project_settings. 
+To access a file's timeline, use Control-Shift-G in Sublime Text. 
+
+Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories.
 
 
 

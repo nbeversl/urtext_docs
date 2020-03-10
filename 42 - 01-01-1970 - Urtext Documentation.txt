@@ -1,53 +1,51 @@
+Urtext Documentation
 
-Version: 0.2.0-alpha
+Version: 0.1.5-alpha
 License: GNU General Public License 3.0
 
 {{  Using this document
 
-    This is a documentation of Urtext, written in Urtext. It is an Urtext project that can be open, browsed and edited in the Urtext implementations described below, to try out the features described. It also exports dynamically to Markdown, so that the README.MD file in this folder is always up to date. The documentation can also be read on the web. If you have not yet installed an Urtext implementation, it will be easier to use the README.MD file to get started. See the section on setup. 
+    This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation to try out the features described. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable. To
 
     {{ With Sublime Text
 
-        - See | Dependencies and Installation >2fn for information on how to set up Urtext with Sublime Text.
-        - Open the folder containing this project in Sublime text and any of thee features described herein will work. 
-        
-        The following are described in more detail in this documentation, but use these tips to get started quickly:
+        - First set up Urtext in Sublime. Follow the instructions at | Dependencies and Installation (Sublime) >2fn
+        - Clone/download this repository and open it up in Sublime. It will automatically be read as an Urtext project when you can navigate. To get started quickly, follow these tips, which are described in greater detail in their respective sections of this documentation.
 
-        - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See  | Links and Pointers >00j for more information).
-        - To return to this table of contents, press ctrl-shift-H.
-        - You can traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See | Traverse Mode >00w for more information on Traverse Mode.
-        - Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See | Syntax Highlighting >01d for more information.    /-- ID:e6m --/ }}
+            - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See | Links and Pointers >00j for more information).
+            - To return to this table of contents, press ctrl-shift-H.
+            - You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See | Traverse Mode >00w for more information.
+            - Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See  | Syntax Highlighting >01d for more information.
+            - See | Sublime Text Interface Tips >000 for other suggestions.
 
-    {{  With Pythonista
+     /-- ID:e6m --/ }}
 
-       - This documentation can also be used as a regular Urtext project inside the Pythonista implementation.    /-- ID:1dc --/ }}
+     {{ Using Pythonista Urtext
 
+        - Set up Urtext in Pythonista. Follow the instructions in | Pythonista Urtext Implementation Setup >os4
+        - Clone the documentation repository into your base Urtext path and it will be accessible from within Pythonista Urtext.
 
-    {{  Standalone
+      /-- id: lvf --/ }}
 
-        Being in plaintext, it is also human readable as-is. However, you will have to track down links and references manually. 
-        
-     /-- ID:plq --/ }}  /--ID:009--/}}
-
+   /--ID:009--/}}
 
 
 {{
 Table of Contents
-Version: 0.2.0-alpha >a5m
+Urtext Documentation >a5m
 ├── Using this document >009
     ├── With Sublime Text >e6m
-    ├── With Pythonista >1dc
-    └── Standalone >plq
+    └── Using Pythonista Urtext >lvf
 ├── About Urtext >013
-    ├── What Urtext Is >hdf
+    └── What Urtext Is >hdf
         ├── Description >yv2
         ├── Comparison To Other Tools >h8z
         ├── Uses >lhs
         └── Requirements, Features, Benefits >006
-    ├── Sublime Text Implementation >01u
-        └── Dependencies and Installation >2fn
-    └── Pythonista Implementation >os4
 ├── Setup >003
+    ├── Sublime Text Implementation Setup >01u
+        └── Dependencies and Installation (Sublime) >2fn
+    ├── Pythonista Urtext Implementation Setup >os4
     ├── Making a New Project >dce
         ├── Sublime >00a
         ├── Pythonista >rs8
@@ -100,16 +98,10 @@ Version: 0.2.0-alpha >a5m
             ├── index >00z
             └── flags >cwb
                 └── - exclude_from_tree >1e3
-        ├── Timestamps >005
+        └── Timestamps >005
             ├── Timeline View >00k
             └── Time Zones >7w6
                 └── Timezone List >zh1
-        └── Project Metadata List >012
-            ├── ? (Missing Node): >zzy
-            └── Opening the Metadata List >saa
-                ├── Sublime >zm2
-                ├── Pythonista >c7r
-                └── Python >3bb
     └── The Node List >01i
         └── Opening the Node List >hl7
             ├── Sublime >p78
@@ -150,7 +142,7 @@ Version: 0.2.0-alpha >a5m
         ├── Duplicate Pointers >00t
             └── Example Child Node Using a Node Pointer >001
         └── Recursive Node Pointers >6ct
-            ├── RECURSION : Version: 0.2.0-alpha >a5m
+            ├── RECURSION : Urtext Documentation >a5m
             └── Example Recursive Node Tree >01n
     └── Traverse Mode >00w
         └── Word Wrap in Traverse Mode >xci
@@ -160,21 +152,22 @@ Version: 0.2.0-alpha >a5m
 ├── Converting and Exporting >ezg
     ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
     └── Example : Fragment Exported to HTML >baq
-├── Full Text Search >k67
-    ├── Building the Index >xqi
-    ├── Searching >mzj
-        ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
-        └── Pythonista : Use the "??" Urtext Button. Results will be updated in real time in the view behind the >q8j
-    └── Dynamically Updated Searches (Dynamic Nodes) >uy4
+├── Search >k67
+    └── Full Text Search >4p9
+        ├── Building the Index >xqi
+        ├── Searching >mzj
+            ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+            └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+        └── Search Using Dynamic Nodes >uy4
 ├── Filenames >01m
-└── Extension and Customization >01o
+├── Extension and Customization >01o
+└── File History >prp
 /-- 
-ID: 01a
 defined in: >029
+ID: 01a
+title: Table of Contents
 flags: exclude_from_tree
-title: Table of Contents (does not yet appear correctly in Markdown format)
 --/}}
-
 
 | About Urtext >>013
 | Setup >>003
@@ -184,9 +177,10 @@ title: Table of Contents (does not yet appear correctly in Markdown format)
 | Links and Pointers >>00j
 | Using Multiple Projects at a Time >>ipy
 | Converting and Exporting >>ezg
-| Full Text Search >>k67
+| Search >>k67
 | Filenames >>01m
 | Extension and Customization >>01o
 
+| File History >>prp
 
 /-- ID: a5m --/

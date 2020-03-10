@@ -65,8 +65,7 @@ Node Metadata
 
 Next topics:
 
-Timestamps >>005
-Project Metadata List >>012
+| Timestamps >>005
 
 
 

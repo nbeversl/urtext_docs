@@ -4,7 +4,10 @@ Think of a node as a region of paper with flexible and open-ended length.
 
 {{ Node Identity (Node IDs)
 
- 	Nodes are uniquely identified by a three-character ID generated automatically on creation and placed into the initial metadata region. The identity of a node within Urtext persists no matter its containing filename. Every node must have an ID; files with nodes missing IDs cannot be compiled and are omitted from the project. 
+	The identity of an Urtext node persists no matter its containing filename, even when moved from one file to another. This is accomplished by assigning each node a unique identifier. Since nothing is hidden from view in an Urtext file, a minimally intrusive format of three alphanumeric was chosen. IDs are not case sensitive.
+
+	 generated automatically on creation and placed into their initial metadata region.  
+ 	Every node must have an ID; files with nodes missing IDs cannot be compiled and are omitted from the project. 
 	
 	Node IDs have no special meaning except as a unique identifier. IDs are covered more in | More About Node IDs >01q.
 

@@ -1,0 +1,14 @@
+Pythonista Urtext Implementation Setup
+    
+    Urtext can be used on iOS devices using the Pythonista app, which provides a full Python interpreter inside of iOS. 
+    This implementation utilizes the native iOS user interface to create a basic text editor view, along with buttons bound to Urtext's functions (similar to the keyboard shortcut bindings in Sublime), project navigation funtions, and syntax highlighting matching those found in the Sublime Text implementation. Using iCloud, projects can be synced among iOS devices and other devices (desktops, laptops). Once synced, a copy of the project resides fully on the device and is not dependent on a live data connection (see | Requirements, Features, Benefits >006).
+
+        - Install Pythonista (http://omz-software.com/pythonista/)
+
+        - Clone or download the Urtext-Pythonista package (https://github.com/nbeversl/urtext_pythonista).
+
+        - Install all the above mentioned Python dependencies into your Pythonista environment.
+
+        - (optional) To launch or switch to Urtext from a single app icon, use the Shortcuts app.
+
+ /--  id: os4 --/

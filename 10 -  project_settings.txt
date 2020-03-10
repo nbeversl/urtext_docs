@@ -11,6 +11,7 @@ title: project_settings
 project_title: Urtext Documentation
 tags: 
 index: 100
+console_log:True
 --/
 
 This node now has special reserved metadata keys that will be parsed as follows:

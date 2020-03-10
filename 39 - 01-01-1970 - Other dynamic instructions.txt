@@ -1,4 +1,4 @@
-Other dynamic instructions (to be linked from someplace else possibly)
+Other dynamic instructions
 
 Some dynamic instructions do things other than populate or modify contents of nodes.	
 
@@ -12,5 +12,4 @@ Some dynamic instructions do things other than populate or modify contents of no
 
  /-- id: yin --/ }}
 
-/-- ID:x0c
---/
+/-- ID:x0c --/
