@@ -30,21 +30,21 @@ This is a documentation of Urtext, written in Urtext. It can be used in an Urtex
 
 # Table of Contents
 
-Table of Contents
-Urtext Documentation[Urtext Documentation](#urtext-documentation)
-Using this document[Using this document](#using-this-document)
-With Sublime Text[With Sublime Text](#with-sublime-text)
-Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
-About Urtext[About Urtext](#about-urtext)
-What Urtext Is[What Urtext Is](#what-urtext-is)
+	Table of Contents
+	Urtext Documentation[Urtext Documentation](#urtext-documentation)
+	Using this document[Using this document](#using-this-document)
+	With Sublime Text[With Sublime Text](#with-sublime-text)
+	Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
+	About Urtext[About Urtext](#about-urtext)
+	What Urtext Is[What Urtext Is](#what-urtext-is)
 
-│       ├── Description[Description](#description)
+	│       ├── Description[Description](#description)
 
-│       ├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
+	│       ├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
 
-│       ├── Uses[Uses](#uses)
+	│       ├── Uses[Uses](#uses)
 
-│       └── Requirements, Features, Benefits[Requirements, Features, Benefits](#requirements,-features,-benefits)
+	│       └── Requirements, Features, Benefits[Requirements, Features, Benefits](#requirements,-features,-benefits)
 
 ├── Setup[Setup](#setup)
 
