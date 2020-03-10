@@ -41,28 +41,136 @@ Pointers
 {{
 Example Recursive Node Tree
 Pointers >lmu
-|-- Example Child Node Using a Node Pointer >001
-|-- Duplicate Pointers >00t
-|   +-- Example Child Node Using a Node Pointer >001
-+-- Recursive Node Pointers >6ct
-    |-- Urtext Documentation >a5m
-    |   |-- Using this document >009
-    |   |   |-- With Sublime Text >e6m
-    |   |   +-- Using Pythonista Urtext >lvf
-    |   |-- About Urtext >013
-    |   |-- Setup >003
-    |   |-- Nodes >01j
-    |   |-- Dynamic Nodes >e82
-    |   |-- Trees >00h
-    |   |-- Links and Pointers >00j
-    |   |-- Using Multiple Projects at a Time >ipy
-    |   |-- Converting and Exporting >ezg
-    |   |-- Search >k67
-    |   |-- Filenames >01m
-    |   |-- Extension and Customization >01o
-    |   +-- File History >prp
-    +-- Example Recursive Node Tree >01n
-/-- ID: 01n; defined in: >6ct; title: Example Recursive Node Tree --/}}
+├── Example Child Node Using a Node Pointer >001
+├── Duplicate Pointers >00t
+│   └── Example Child Node Using a Node Pointer >001
+└── Recursive Node Pointers >6ct
+    ├── Urtext Documentation >a5m
+    │   ├── Using this document >009
+    │   │   ├── With Sublime Text >e6m
+    │   │   └── Using Pythonista Urtext >lvf
+    │   ├── About Urtext >013
+    │   │   └── What Urtext Is >hdf
+    │   │       ├── Description >yv2
+    │   │       ├── Comparison To Other Tools >h8z
+    │   │       ├── Uses >lhs
+    │   │       └── Requirements, Features, Benefits >006
+    │   ├── Setup >003
+    │   │   ├── Sublime Text Implementation Setup >01u
+    │   │   │   └── Dependencies and Installation (Sublime) >2fn
+    │   │   ├── Pythonista Urtext Implementation Setup >os4
+    │   │   ├── Making a New Project >dce
+    │   │   │   ├── Sublime >00a
+    │   │   │   ├── Pythonista >rs8
+    │   │   │   └── Python >n2m
+    │   │   ├── Using/Adding Existing Files >00b
+    │   │   │   ├── Sublime >rij
+    │   │   │   ├── Pythonista >ouh
+    │   │   │   └── Python >b44
+    │   │   ├── Using a Sublime Project >c3n
+    │   │   └── Sublime Text Interface Tips >000
+    │   │       ├── Syntax Highlighting >01d
+    │   │       ├── Hiding Tabs >015
+    │   │       ├── Hiding Line Numbers >01e
+    │   │       ├── Full Screen / Distraction Free Mode >002
+    │   │       └── Disable Prompts for File Reload >023
+    │   ├── Nodes >01j
+    │   │   ├── Node Identity (Node IDs) >01h
+    │   │   ├── File Level Nodes >01g
+    │   │   │   └── Creating a File Level Node >ekz
+    │   │   │       ├── Sublime >xo8
+    │   │   │       ├── Pythonista >xcx
+    │   │   │       └── Python >83e
+    │   │   ├── Inline Nodes >004
+    │   │   │   ├── Example inline node >00e
+    │   │   │   ├── Creating Inline Nodes >rbs
+    │   │   │   │   ├── Sublime >8fh
+    │   │   │   │   ├── Pythonista >hrv
+    │   │   │   │   └── Python >fv2
+    │   │   │   └── Syntax Highlighting of Inline Nodes (Sublime) >koe
+    │   │   ├── Compact Nodes >kpz
+    │   │   │   ├── Example Compact Node >d7b
+    │   │   │   │   └── Example inline node within the compact node >9up
+    │   │   │   └── Creating Compact Nodes >3t5
+    │   │   │       ├── Sublime >qwn
+    │   │   │       ├── Pythonista >0yn
+    │   │   │       └── Python >xor
+    │   │   ├── Split Nodes >k6d
+    │   │   │   ├── First Example Split Node >jym
+    │   │   │   ├── Second Example split Node >ftz
+    │   │   │   └── Shortkeys to Create Split Nodes >0mn
+    │   │   │       ├── Sublime >40f
+    │   │   │       └── Pythonista >agg
+    │   │   ├── Generating a node ID manually >rfp
+    │   │   │   ├── Sublime >7n6
+    │   │   │   ├── Pythonista >bhk
+    │   │   │   └── Python >0ow
+    │   │   ├── Node Metadata >00x
+    │   │   │   ├── Reserved Metadata Keys >011
+    │   │   │   │   ├── title (overrides the default title) >00y
+    │   │   │   │   ├── index >00z
+    │   │   │   │   └── flags >cwb
+    │   │   │   │       └── - exclude_from_tree >1e3
+    │   │   │   └── Timestamps >005
+    │   │   │       ├── Timeline View >00k
+    │   │   │       └── Time Zones >7w6
+    │   │   │           └── Timezone List >zh1
+    │   │   └── The Node List >01i
+    │   │       └── Opening the Node List >hl7
+    │   │           ├── Sublime >p78
+    │   │           ├── Pythonista >c3y
+    │   │           └── Python >h8c
+    │   ├── Dynamic Nodes >e82
+    │   │   ├── Description & Purpose >h0y
+    │   │   ├── Syntax >igk
+    │   │   ├── Creating a Dynamic Node >yon
+    │   │   ├── Definition keys/values >37h
+    │   │   │   ├── id >02t
+    │   │   │   ├── include >a3r
+    │   │   │   ├── exclude >e18
+    │   │   │   ├── sort >05f
+    │   │   │   ├── metadata >oa2
+    │   │   │   ├── tree >4mb
+    │   │   │   ├── export >l2c
+    │   │   │   └── tag_all >yin
+    │   │   ├── Example 1 : List >01r
+    │   │   └── Example 2 : Tree >029
+    │   ├── Trees >00h
+    │   │   ├── From any given node >00f
+    │   │   └── From the root >00g
+    │   ├── Links and Pointers >00j
+    │   │   ├── Simple Links >0y2
+    │   │   │   └── Sublime Text tools to help with linking >00m
+    │   │   ├── Dynamically Titled Links >4vu
+    │   │   ├── Opening Links >01w
+    │   │   │   ├── Sublime >osu
+    │   │   │   ├── Pythonista >iy8
+    │   │   │   └── Python >eea
+    │   │   ├── Viewing Linked Relationships >00u
+    │   │   ├── Linking to outside resources >00q
+    │   │   │   ├── Web >00o
+    │   │   │   └── Files >00p
+    │   │   ├── RECURSION : Pointers >lmu
+    │   │   └── Traverse Mode >00w
+    │   │       └── Word Wrap in Traverse Mode >xci
+    │   ├── Using Multiple Projects at a Time >ipy
+    │   │   ├── Project Naming (Identification) >tgp
+    │   │   └── Linking Between Projects >7lx
+    │   ├── Converting and Exporting >ezg
+    │   │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+    │   │   └── Example : Fragment Exported to HTML >baq
+    │   ├── Search >k67
+    │   │   └── Full Text Search >4p9
+    │   │       ├── Building the Index >xqi
+    │   │       ├── Searching >mzj
+    │   │       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+    │   │       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+    │   │       └── Search Using Dynamic Nodes >uy4
+    │   ├── Filenames >01m
+    │   ├── Extension and Customization >01o
+    │   └── File History >prp
+    └── Example Recursive Node Tree >01n
+/-- title: Example Recursive Node Tree; defined in: >6ct; ID: 01n --/}}
     
     [[ 
     id:01n

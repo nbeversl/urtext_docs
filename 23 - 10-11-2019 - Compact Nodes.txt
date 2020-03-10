@@ -8,13 +8,13 @@ Compact Nodes
 
 {{
 Compact Nodes >j6t
-|-- require an ID >frm
-|-- can have arbitrary other metadata >xlc
-|-- become child nodes of their containing node. >hiz
-+-- Compact Nodes >ucj
+├── require an ID >frm
+├── can have arbitrary other metadata >xlc
+├── become child nodes of their containing node. >hiz
+└── Compact Nodes >ucj
 /-- 
-ID: ucj
 defined in: >j6t
+ID: ucj
 --/}}
 
 [[ ID:ucj
