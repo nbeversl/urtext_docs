@@ -29,7 +29,7 @@ This is a documentation of Urtext, written in Urtext. It can be used in an Urtex
 - Clone the documentation repository into your base Urtext path and it will be accessible from within Pythonista Urtext.
 
 # Table of Contents
-
+`
 Table of Contents
 Urtext Documentation[Urtext Documentation](#urtext-documentation)
 ├── Using this document[Using this document](#using-this-document)
@@ -161,7 +161,7 @@ Urtext Documentation[Urtext Documentation](#urtext-documentation)
 ├── Filenames[Filenames](#filenames)
 ├── Extension and Customization[Extension and Customization](#extension-and-customization)
 └── File History[File History](#file-history)
-
+`
 
 
 # About Urtext

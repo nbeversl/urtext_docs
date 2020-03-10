@@ -109,9 +109,9 @@
     Example Source Node 1 >017
     Example Source Node 4 >01c
     /-- 
-    defined in: >01r
     title: Example Dynamic Node Title
     flags: exclude_from_tree
+    defined in: >01r
     ID: 016
     --/}}
                                                                                               
