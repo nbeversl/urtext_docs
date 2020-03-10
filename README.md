@@ -30,8 +30,9 @@ This is a documentation of Urtext, written in Urtext. It can be used in an Urtex
 
 # Table of Contents
 
-Table of Contents
-Urtext Documentation >a5m
+	
+	Table of Contents
+	Urtext Documentation >a5m
 	├── Using this document >009
 	│   ├── With Sublime Text >e6m
 	│   └── Using Pythonista Urtext >lvf
@@ -161,8 +162,8 @@ Urtext Documentation >a5m
 	├── Filenames >01m
 	├── Extension and Customization >01o
 	└── File History >prp
-
-
+	
+	
 
 
 
@@ -312,9 +313,6 @@ This implementation utilizes the native iOS user interface to create a basic tex
 
 ## Making a New Project
 
-
-
-
 ### Sublime
 
 
@@ -365,8 +363,6 @@ Once the Sublime package is installed, it will always look for any files with th
 
 Here are some tips for best leveraging Sublime's great UI features.
 
-
-
 ### Syntax Highlighting
 
 
@@ -374,21 +370,11 @@ This package comes with a .YML file (sublime_urtext.sublime_syntax) defining the
 
 Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.)
 
-
-
-
-
 ### Hiding Tabs
 
 
 If you prefer a clean, terminal-like view, hide tabs: View -> Hide Tabs
-This preference can also be set on a per-(Sublime)-project basis. See the Sublime documentation.  
-
-
-
-
-
-
+This preference can also be set on a per-(Sublime)-project basis. See the Sublime documentation.
 
 ### Hiding Line Numbers
 
@@ -400,22 +386,10 @@ For an extra-clean look, hide line numbers by adding:
 
 ... to your Sublime project settings file.
 
-
-
-
-
-
-
 ### Full Screen / Distraction Free Mode
 
 
 Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode
-
-
-
-
-
-
 
 ### Disable Prompts for File Reload
 
@@ -446,33 +420,17 @@ Node IDs have no special meaning except as a unique identifier. IDs are covered 
 
 A file-level node is any node at the outermost level of a single file. It may or may not contain other nodes nested inside it.
 
-
-
 ### Creating a File Level Node
-
-
-
 
 #### Sublime
 
 
-Press Control-Shift-; (Control-Shift-semicolon). 
-
-
-
-
-
+Press Control-Shift-; (Control-Shift-semicolon).
 
 #### Pythonista
 
 
 Press `;` in the Urtext key row.
-
-
-
-
-
-
 
 #### Python
 
@@ -499,11 +457,7 @@ The file is created, named and saved automatically. It has whitespace on top and
 
 
 
-
-
 By default, the first non-whitespace line of any node is the node's title. Write a title and anything else into the node. Save it as usual (Super-S in Sublime).
-
-
 
 
 
@@ -578,14 +532,7 @@ For contents requiring only a single line, such as list items, very short notes,
 
 #### Example inline node within the compact node
 
-
-
-
-
 ### Creating Compact Nodes
-
-
-
 
 #### Sublime
 
@@ -597,8 +544,6 @@ Split Nodes ## Split Nodes
 
 
 A node region can be split into two separate nodes by placing the `%` character as the first character on a line. Each node must then have its own ID, which you can either generate manually (see Inserting a Node ID manually >04s) or with the split node shortkey (below, >0mn).
-
-
 
 ### First Example Split Node
 
@@ -613,8 +558,6 @@ Note using a `%` symbol at the file level (outside of an inline node wrapper) is
 
 
 These also insert an ID directly above the split marker.
-
-
 
 #### Sublime
 
@@ -1328,23 +1271,14 @@ Zulu
 Node list ## The Node List
 
 
-Every project maintains a list of all its nodes. The Node List is automatically written to a built-in file-level dynamic node. (See | Dynamic Nodes >e82 for more information). 
-
-
+Every project maintains a list of all its nodes. The Node List is automatically written to a built-in file-level dynamic node. (See | Dynamic Nodes >e82 for more information).
 
 ### Opening the Node List
-
-
-
 
 #### Sublime
 
 
 Ctrl-Shift-J. Like any node, the Node List can be traversed using | Traverse Mode >00w.
-
-
-
-
 
 
 
@@ -1577,7 +1511,7 @@ Here is an example Child Node:
 
 #### Example Child Node Using a Node Pointer
 
-
+ 
 
 The example Pointer above becomes a child of this node, visible in the | Table of Contents >01a or using the other tree views described in | Trees >00h.
 
@@ -1609,137 +1543,32 @@ Note, however, that if you view the entire tree with another node as root, one f
 
 #### Example Recursive Node Tree
 
-Example Recursive Node Tree
-Pointers >lmu
-├── Example Child Node Using a Node Pointer >001
-├── Duplicate Pointers >00t
-│   └── Example Child Node Using a Node Pointer >001
-└── Recursive Node Pointers >6ct
-    ├── Urtext Documentation >a5m
-    │   ├── Using this document >009
-    │   │   ├── With Sublime Text >e6m
-    │   │   └── Using Pythonista Urtext >lvf
-    │   ├── About Urtext >013
-    │   │   └── What Urtext Is >hdf
-    │   │       ├── Description >yv2
-    │   │       ├── Comparison To Other Tools >h8z
-    │   │       ├── Uses >lhs
-    │   │       └── Requirements, Features, Benefits >006
-    │   ├── Setup >003
-    │   │   ├── Sublime Text Implementation Setup >01u
-    │   │   │   └── Dependencies and Installation (Sublime) >2fn
-    │   │   ├── Pythonista Urtext Implementation Setup >os4
-    │   │   ├── Making a New Project >dce
-    │   │   │   ├── Sublime >00a
-    │   │   │   ├── Pythonista >rs8
-    │   │   │   └── Python >n2m
-    │   │   ├── Using/Adding Existing Files >00b
-    │   │   │   ├── Sublime >rij
-    │   │   │   ├── Pythonista >ouh
-    │   │   │   └── Python >b44
-    │   │   ├── Using a Sublime Project >c3n
-    │   │   └── Sublime Text Interface Tips >000
-    │   │       ├── Syntax Highlighting >01d
-    │   │       ├── Hiding Tabs >015
-    │   │       ├── Hiding Line Numbers >01e
-    │   │       ├── Full Screen / Distraction Free Mode >002
-    │   │       └── Disable Prompts for File Reload >023
-    │   ├── Nodes >01j
-    │   │   ├── Node Identity (Node IDs) >01h
-    │   │   ├── File Level Nodes >01g
-    │   │   │   └── Creating a File Level Node >ekz
-    │   │   │       ├── Sublime >xo8
-    │   │   │       ├── Pythonista >xcx
-    │   │   │       └── Python >83e
-    │   │   ├── Inline Nodes >004
-    │   │   │   ├── Example inline node >00e
-    │   │   │   ├── Creating Inline Nodes >rbs
-    │   │   │   │   ├── Sublime >8fh
-    │   │   │   │   ├── Pythonista >hrv
-    │   │   │   │   └── Python >fv2
-    │   │   │   └── Syntax Highlighting of Inline Nodes (Sublime) >koe
-    │   │   ├── Compact Nodes >kpz
-    │   │   │   ├── Example Compact Node >d7b
-    │   │   │   │   └── Example inline node within the compact node >9up
-    │   │   │   └── Creating Compact Nodes >3t5
-    │   │   │       ├── Sublime >qwn
-    │   │   │       ├── Pythonista >0yn
-    │   │   │       └── Python >xor
-    │   │   ├── Split Nodes >k6d
-    │   │   │   ├── First Example Split Node >jym
-    │   │   │   ├── Second Example split Node >ftz
-    │   │   │   └── Shortkeys to Create Split Nodes >0mn
-    │   │   │       ├── Sublime >40f
-    │   │   │       └── Pythonista >agg
-    │   │   ├── Generating a node ID manually >rfp
-    │   │   │   ├── Sublime >7n6
-    │   │   │   ├── Pythonista >bhk
-    │   │   │   └── Python >0ow
-    │   │   ├── Node Metadata >00x
-    │   │   │   ├── Reserved Metadata Keys >011
-    │   │   │   │   ├── title (overrides the default title) >00y
-    │   │   │   │   ├── index >00z
-    │   │   │   │   └── flags >cwb
-    │   │   │   │       └── - exclude_from_tree >1e3
-    │   │   │   └── Timestamps >005
-    │   │   │       ├── Timeline View >00k
-    │   │   │       └── Time Zones >7w6
-    │   │   │           └── Timezone List >zh1
-    │   │   └── The Node List >01i
-    │   │       └── Opening the Node List >hl7
-    │   │           ├── Sublime >p78
-    │   │           ├── Pythonista >c3y
-    │   │           └── Python >h8c
-    │   ├── Dynamic Nodes >e82
-    │   │   ├── Description & Purpose >h0y
-    │   │   ├── Syntax >igk
-    │   │   ├── Creating a Dynamic Node >yon
-    │   │   ├── Definition keys/values >37h
-    │   │   │   ├── id >02t
-    │   │   │   ├── include >a3r
-    │   │   │   ├── exclude >e18
-    │   │   │   ├── sort >05f
-    │   │   │   ├── metadata >oa2
-    │   │   │   ├── tree >4mb
-    │   │   │   ├── export >l2c
-    │   │   │   └── tag_all >yin
-    │   │   ├── Example 1 : List >01r
-    │   │   └── Example 2 : Tree >029
-    │   ├── Trees >00h
-    │   │   ├── From any given node >00f
-    │   │   └── From the root >00g
-    │   ├── Links and Pointers >00j
-    │   │   ├── Simple Links >0y2
-    │   │   │   └── Sublime Text tools to help with linking >00m
-    │   │   ├── Dynamically Titled Links >4vu
-    │   │   ├── Opening Links >01w
-    │   │   │   ├── Sublime >osu
-    │   │   │   ├── Pythonista >iy8
-    │   │   │   └── Python >eea
-    │   │   ├── Viewing Linked Relationships >00u
-    │   │   ├── Linking to outside resources >00q
-    │   │   │   ├── Web >00o
-    │   │   │   └── Files >00p
-    │   │   ├── RECURSION : Pointers >lmu
-    │   │   └── Traverse Mode >00w
-    │   │       └── Word Wrap in Traverse Mode >xci
-    │   ├── Using Multiple Projects at a Time >ipy
-    │   │   ├── Project Naming (Identification) >tgp
-    │   │   └── Linking Between Projects >7lx
-    │   ├── Converting and Exporting >ezg
-    │   │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
-    │   │   └── Example : Fragment Exported to HTML >baq
-    │   ├── Search >k67
-    │   │   └── Full Text Search >4p9
-    │   │       ├── Building the Index >xqi
-    │   │       ├── Searching >mzj
-    │   │       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
-    │   │       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
-    │   │       └── Search Using Dynamic Nodes >uy4
-    │   ├── Filenames >01m
-    │   ├── Extension and Customization >01o
-    │   └── File History >prp
-    └── Example Recursive Node Tree >01n
+	
+	Example Recursive Node Tree
+	Pointers >lmu
+	├── Example Child Node Using a Node Pointer >001
+	├── Duplicate Pointers >00t
+	│   └── Example Child Node Using a Node Pointer >001
+	└── Recursive Node Pointers >6ct
+	    ├── Urtext Documentation >a5m
+	    │   ├── Using this document >009
+	    │   │   ├── With Sublime Text >e6m
+	    │   │   └── Using Pythonista Urtext >lvf
+	    │   ├── About Urtext >013
+	    │   ├── Setup >003
+	    │   ├── Nodes >01j
+	    │   ├── Dynamic Nodes >e82
+	    │   ├── Trees >00h
+	    │   ├── Links and Pointers >00j
+	    │   ├── Using Multiple Projects at a Time >ipy
+	    │   ├── Converting and Exporting >ezg
+	    │   ├── Search >k67
+	    │   ├── Filenames >01m
+	    │   ├── Extension and Customization >01o
+	    │   └── File History >prp
+	    └── Example Recursive Node Tree >01n
+	
+	
 
 
 ## Traverse Mode
@@ -1825,34 +1654,19 @@ The following Dynamic Definition exports the | Links and Pointers >00j section o
 ## Full Text Search
 
 
-Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments. Urtext uses the `whoosh` module by Matt Chaput, which generates indexes from text content that are stored ("pickled") to disk for fast queries. 
-
-
+Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments. Urtext uses the `whoosh` module by Matt Chaput, which generates indexes from text content that are stored ("pickled") to disk for fast queries.
 
 ### Building the Index
 
 Anytime a new project is instantiated, Urtext creates an `index` folder inside the project folder for storing the search index. This is maintained by Urtext/whoosh and requires no user interaction. The index is initially empty. Before using it for the first time, select `Urtext: Rebuild Search Index` from the command palette. This will take less than a second to several seconds or longer, depending on the number of files. From then on, nodes are reindexed every time a file is saved. If the index gets out of date/sync with the project for any reason (you notice search terms are not being found, or matches are found that no longer exist), use `Urtext: Rebuild Search Index` again.
 
-
-
-
-
-
 ### Searching
-
 
 #### Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe
 r edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes.
 
-
-
-
 #### Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the
 search field. To exit, tap outside the search field.
-
-
-
-
 
 ### Search Using Dynamic Nodes
 
