@@ -37,11 +37,17 @@ With Sublime Text[With Sublime Text](#with-sublime-text)
 Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
 About Urtext[About Urtext](#about-urtext)
 What Urtext Is[What Urtext Is](#what-urtext-is)
+
 │       ├── Description[Description](#description)
+
 │       ├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
+
 │       ├── Uses[Uses](#uses)
+
 │       └── Requirements, Features, Benefits[Requirements, Features, Benefits](#requirements,-features,-benefits)
+
 ├── Setup[Setup](#setup)
+
 │   ├── Sublime Text Implementation Setup[Sublime Text Implementation Setup](#sublime-text-implementation-setup)
 │   │   └── Dependencies and Installation (Sublime)[Dependencies and Installation (Sublime)](#dependencies-and-installation-(sublime))
 │   ├── Pythonista Urtext Implementation Setup[Pythonista Urtext Implementation Setup](#pythonista-urtext-implementation-setup)
