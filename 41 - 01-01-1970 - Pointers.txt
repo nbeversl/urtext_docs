@@ -41,28 +41,28 @@ Pointers
 {{
 Example Recursive Node Tree
 Pointers >lmu
-├── Example Child Node Using a Node Pointer >001
-├── Duplicate Pointers >00t
-    └── Example Child Node Using a Node Pointer >001
-└── Recursive Node Pointers >6ct
-    ├── Urtext Documentation >a5m
-        ├── Using this document >009
-            ├── With Sublime Text >e6m
-            └── Using Pythonista Urtext >lvf
-        ├── About Urtext >013
-        ├── Setup >003
-        ├── Nodes >01j
-        ├── Dynamic Nodes >e82
-        ├── Trees >00h
-        ├── Links and Pointers >00j
-        ├── Using Multiple Projects at a Time >ipy
-        ├── Converting and Exporting >ezg
-        ├── Search >k67
-        ├── Filenames >01m
-        ├── Extension and Customization >01o
-        └── File History >prp
-    └── Example Recursive Node Tree >01n
-/-- defined in: >6ct; ID: 01n; title: Example Recursive Node Tree --/}}
+|-- Example Child Node Using a Node Pointer >001
+|-- Duplicate Pointers >00t
+|   +-- Example Child Node Using a Node Pointer >001
++-- Recursive Node Pointers >6ct
+    |-- Urtext Documentation >a5m
+    |   |-- Using this document >009
+    |   |   |-- With Sublime Text >e6m
+    |   |   +-- Using Pythonista Urtext >lvf
+    |   |-- About Urtext >013
+    |   |-- Setup >003
+    |   |-- Nodes >01j
+    |   |-- Dynamic Nodes >e82
+    |   |-- Trees >00h
+    |   |-- Links and Pointers >00j
+    |   |-- Using Multiple Projects at a Time >ipy
+    |   |-- Converting and Exporting >ezg
+    |   |-- Search >k67
+    |   |-- Filenames >01m
+    |   |-- Extension and Customization >01o
+    |   +-- File History >prp
+    +-- Example Recursive Node Tree >01n
+/-- ID: 01n; defined in: >6ct; title: Example Recursive Node Tree --/}}
     
     [[ 
     id:01n
