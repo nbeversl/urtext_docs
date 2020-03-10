@@ -35,10 +35,10 @@ Search
         {{
 Example Search Results
 /-- 
-title: Example Search Results
-defined in: >uy4
 ID: 3x3
 flags: exclude_from_tree
+title: Example Search Results
+defined in: >uy4
 --/}}
 
  /-- id: uy4 --/ }}
