@@ -62,7 +62,7 @@ Pointers >lmu
     │   ├── Extension and Customization >01o
     │   └── File History >prp
     └── Example Recursive Node Tree >01n
-/-- title: Example Recursive Node Tree; defined in: >6ct; ID: 01n --/}}
+/-- ID: 01n; defined in: >6ct; title: Example Recursive Node Tree --/}}
     
     [[ 
     id:01n
