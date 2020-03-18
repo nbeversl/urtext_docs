@@ -3,45 +3,19 @@ Urtext Documentation
 Version: 0.1.5-alpha
 License: GNU General Public License 3.0
 
-{{  Using this document
-
-    This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation to try out the features described. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable. To
-
-    {{ With Sublime Text
-
-        - First set up Urtext in Sublime. Follow the instructions at | Dependencies and Installation (Sublime) >2fn
-        - Clone/download this repository and open it up in Sublime. It will automatically be read as an Urtext project when you can navigate. To get started quickly, follow these tips, which are described in greater detail in their respective sections of this documentation.
-
-            - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See | Links and Pointers >00j for more information).
-            - To return to this table of contents, press ctrl-shift-H.
-            - You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See | Traverse Mode >00w for more information.
-            - Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See  | Syntax Highlighting >01d for more information.
-            - See | Sublime Text Interface Tips >000 for other suggestions.
-
-     /-- ID:e6m --/ }}
-
-     {{ Using Pythonista Urtext
-
-        - Set up Urtext in Pythonista. Follow the instructions in | Pythonista Urtext Implementation Setup >os4
-        - Clone the documentation repository into your base Urtext path and it will be accessible from within Pythonista Urtext.
-
-      /-- id: lvf --/ }}
-
-   /--ID:009--/}}
-
 
 {{
 Table of Contents
 Urtext Documentation >a5m
-├── Using this document >009
-│   ├── With Sublime Text >e6m
-│   └── Using Pythonista Urtext >lvf
 ├── About Urtext >013
 │   └── What Urtext Is >hdf
 │       ├── Description >yv2
 │       ├── Comparison To Other Tools >h8z
 │       ├── Uses >lhs
 │       └── Requirements, Features, Benefits >006
+├── Using this document >009
+│   ├── With Sublime Text >e6m
+│   └── Using Pythonista Urtext >lvf
 ├── Setup >003
 │   ├── Sublime Text Implementation Setup >01u
 │   │   └── Dependencies and Installation (Sublime) >2fn
@@ -165,11 +139,40 @@ Urtext Documentation >a5m
 /-- 
 ID: 01a
 defined in: >029
-flags: exclude_from_tree
 title: Table of Contents
+flags: exclude_from_tree
 --/}}
 
 | About Urtext >>013
+
+
+{{  Using this document
+
+    This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation to try out the features described. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable. To
+
+    {{ With Sublime Text
+
+        - First set up Urtext in Sublime. Follow the instructions at | Dependencies and Installation (Sublime) >2fn
+        - Clone/download this repository and open it up in Sublime. It will automatically be read as an Urtext project when you can navigate. To get started quickly, follow these tips, which are described in greater detail in their respective sections of this documentation.
+
+            - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See | Links and Pointers >00j for more information).
+            - To return to this table of contents, press ctrl-shift-H.
+            - You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See | Traverse Mode >00w for more information.
+            - Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See  | Syntax Highlighting >01d for more information.
+            - See | Sublime Text Interface Tips >000 for other suggestions.
+
+     /-- ID:e6m --/ }}
+
+     {{ Using Pythonista Urtext
+
+        - Set up Urtext in Pythonista. Follow the instructions in | Pythonista Urtext Implementation Setup >os4
+        - Clone the documentation repository into your base Urtext path and it will be accessible from within Pythonista Urtext.
+
+      /-- id: lvf --/ }}
+
+   /--ID:009--/}}
+
+   
 | Setup >>003
 | Nodes >>01j
 | Dynamic Nodes >>e82

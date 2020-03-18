@@ -1,13 +1,14 @@
-
 About Urtext
    
- {{ What Urtext Is 
+{{ What Urtext Is 
 
     {{ Description
         
-        Urtext is a compilable syntax for writing in plaintext. It is structured but flexible, allowing freeform, fragmentary writing while permitting gradual aggregation of content with other content, across many files.  You may start with a single note and build it gradually into a large, structured document that can organize and modify itself based on instructions and metadata embedded in its own content. Urtext parses content into outlines (trees) that can also have recursive (tangled) structure, much like hypertext (HTML), except with the syntax fully exposed to the writer/reader.
+        Urtext is a syntax and interpreter for writing using plaintext. The syntax permits embedding of structural and instructional code into the text itself. 
 
-        The present interpreter/compiler for Urtext is in Python. Urtext is implemented in Python and can be used wherever Python is used. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS). There is no reason, however, that equivalent or variant implementations could not be created in any language.
+        Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A collection of nodes constitutes a "project"; the interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files.
+     
+        The present interpreter for Urtext is in Python and can be used wherever Python is running. There is no reason, however, that equivalent or variant interpreters could not be created in any language or editing environment. Using Urtext in a text editor requires an additional "wrapper" to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS). 
  
         /-- ID:yv2 --/ }}
 
@@ -15,7 +16,7 @@ About Urtext
         
         Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for organizing text.
     
-        Urtext consolidates content, markup and instructions (scripting) into a single compilable syntax. Though it can hyperlink many documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible content. Everything the compiler/interpreter reads is visible to the author.
+        Urtext consolidates content, markup and instructions (scripting) into a single compilable syntax. Though it can hyperlink many documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible content. Everything the interpreter reads is visible to the author.
 
          /-- ID:h8z --/ }}
 
@@ -71,13 +72,8 @@ About Urtext
 
         /--ID:006--/}}
 /-- ID: hdf --/
-    }}
-
-
-
-                                                                                                    
+    }}                                                                                
 /-- ID:013
 index:01
 Timestamp:<Wed., Jun. 05, 2019, 10:01 PM>
-tags: 
 --/

@@ -46,10 +46,10 @@ Pointers >lmu
 │   └── Example Child Node Using a Node Pointer >001
 └── Recursive Node Pointers >6ct
     ├── Urtext Documentation >a5m
+    │   ├── About Urtext >013
     │   ├── Using this document >009
     │   │   ├── With Sublime Text >e6m
     │   │   └── Using Pythonista Urtext >lvf
-    │   ├── About Urtext >013
     │   ├── Setup >003
     │   ├── Nodes >01j
     │   ├── Dynamic Nodes >e82

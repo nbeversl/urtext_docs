@@ -111,8 +111,8 @@
     /-- 
     ID: 016
     defined in: >01r
-    flags: exclude_from_tree
     title: Example Dynamic Node Title
+    flags: exclude_from_tree
     --/}}
                                                                                               
 

@@ -5,165 +5,139 @@ Urtext Documentation
 Version: 0.1.5-alpha
 License: GNU General Public License 3.0
 
-# Using this document
-
-
-This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation to try out the features described. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable. To
-
-## With Sublime Text
-
-
-- First set up Urtext in Sublime. Follow the instructions at [Dependencies and Installation (Sublime)](#dependencies-and-installation-(sublime))
-- Clone/download this repository and open it up in Sublime. It will automatically be read as an Urtext project when you can navigate. To get started quickly, follow these tips, which are described in greater detail in their respective sections of this documentation.
-
-- To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See [Links and Pointers](#links-and-pointers) for more information).
-- To return to this table of contents, press ctrl-shift-H.
-- You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See [Traverse Mode](#traverse-mode) for more information.
-- Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See  [Syntax Highlighting](#syntax-highlighting) for more information.
-- See [Sublime Text Interface Tips](#sublime-text-interface-tips) for other suggestions.
-
-## Using Pythonista Urtext
-
-
-- Set up Urtext in Pythonista. Follow the instructions in [Pythonista Urtext Implementation Setup](#pythonista-urtext-implementation-setup)
-- Clone the documentation repository into your base Urtext path and it will be accessible from within Pythonista Urtext.
-
 # Table of Contents
 
-	
-	Table of Contents
-	Urtext Documentation[Urtext Documentation](#urtext-documentation)
-	├── Using this document[Using this document](#using-this-document)
-	│   ├── With Sublime Text[With Sublime Text](#with-sublime-text)
-	│   └── Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
-	├── About Urtext[About Urtext](#about-urtext)
-	│   └── What Urtext Is[What Urtext Is](#what-urtext-is)
-	│       ├── Description[Description](#description)
-	│       ├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
-	│       ├── Uses[Uses](#uses)
-	│       └── Requirements, Features, Benefits[Requirements, Features, Benefits](#requirements,-features,-benefits)
-	├── Setup[Setup](#setup)
-	│   ├── Sublime Text Implementation Setup[Sublime Text Implementation Setup](#sublime-text-implementation-setup)
-	│   │   └── Dependencies and Installation (Sublime)[Dependencies and Installation (Sublime)](#dependencies-and-installation-(sublime))
-	│   ├── Pythonista Urtext Implementation Setup[Pythonista Urtext Implementation Setup](#pythonista-urtext-implementation-setup)
-	│   ├── Making a New Project[Making a New Project](#making-a-new-project)
-	│   │   ├── Sublime[Sublime](#sublime)
-	│   │   ├── Pythonista[Pythonista](#pythonista)
-	│   │   └── Python[Python](#python)
-	│   ├── Using/Adding Existing Files[Using/Adding Existing Files](#using/adding-existing-files)
-	│   │   ├── Sublime[Sublime](#sublime)
-	│   │   ├── Pythonista[Pythonista](#pythonista)
-	│   │   └── Python[Python](#python)
-	│   ├── Using a Sublime Project[Using a Sublime Project](#using-a-sublime-project)
-	│   └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
-	│       ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
-	│       ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
-	│       ├── Hiding Line Numbers[Hiding Line Numbers](#hiding-line-numbers)
-	│       ├── Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
-	│       └── Disable Prompts for File Reload[Disable Prompts for File Reload](#disable-prompts-for-file-reload)
-	├── Nodes[Nodes](#nodes)
-	│   ├── Node Identity (Node IDs)[Node Identity (Node IDs)](#node-identity-(node-ids))
-	│   ├── File Level Nodes[File Level Nodes](#file-level-nodes)
-	│   │   └── Creating a File Level Node[Creating a File Level Node](#creating-a-file-level-node)
-	│   │       ├── Sublime[Sublime](#sublime)
-	│   │       ├── Pythonista[Pythonista](#pythonista)
-	│   │       └── Python[Python](#python)
-	│   ├── Inline Nodes[Inline Nodes](#inline-nodes)
-	│   │   ├── Example inline node[Example inline node](#example-inline-node)
-	│   │   ├── Creating Inline Nodes[Creating Inline Nodes](#creating-inline-nodes)
-	│   │   │   ├── Sublime[Sublime](#sublime)
-	│   │   │   ├── Pythonista[Pythonista](#pythonista)
-	│   │   │   └── Python[Python](#python)
-	│   │   └── Syntax Highlighting of Inline Nodes (Sublime)[Syntax Highlighting of Inline Nodes (Sublime)](#syntax-highlighting-of-inline-nodes-(sublime))
-	│   ├── Compact Nodes[Compact Nodes](#compact-nodes)
-	│   │   ├── Example Compact Node[Example Compact Node](#example-compact-node)
-	│   │   │   └── Example inline node within the compact node[Example inline node within the compact node](#example-inline-node-within-the-compact-node)
-	│   │   └── Creating Compact Nodes[Creating Compact Nodes](#creating-compact-nodes)
-	│   │       ├── Sublime[Sublime](#sublime)
-	│   │       ├── Pythonista[Pythonista](#pythonista)
-	│   │       └── Python[Python](#python)
-	│   ├── Split Nodes[Split Nodes](#split-nodes)
-	│   │   ├── First Example Split Node[First Example Split Node](#first-example-split-node)
-	│   │   ├── Second Example split Node[Second Example split Node](#second-example-split-node)
-	│   │   └── Shortkeys to Create Split Nodes[Shortkeys to Create Split Nodes](#shortkeys-to-create-split-nodes)
-	│   │       ├── Sublime[Sublime](#sublime)
-	│   │       └── Pythonista[Pythonista](#pythonista)
-	│   ├── Generating a node ID manually[Generating a node ID manually](#generating-a-node-id-manually)
-	│   │   ├── Sublime[Sublime](#sublime)
-	│   │   ├── Pythonista[Pythonista](#pythonista)
-	│   │   └── Python[Python](#python)
-	│   ├── Node Metadata[Node Metadata](#node-metadata)
-	│   │   ├── Reserved Metadata Keys[Reserved Metadata Keys](#reserved-metadata-keys)
-	│   │   │   ├── title (overrides the default title)[title (overrides the default title)](#title-(overrides-the-default-title))
-	│   │   │   ├── index[index](#index)
-	│   │   │   └── flags[flags](#flags)
-	│   │   │       └── - exclude_from_tree[- exclude_from_tree](#--exclude_from_tree)
-	│   │   └── Timestamps[Timestamps](#timestamps)
-	│   │       ├── Timeline View[Timeline View](#timeline-view)
-	│   │       └── Time Zones[Time Zones](#time-zones)
-	│   │           └── Timezone List[Timezone List](#timezone-list)
-	│   └── The Node List[The Node List](#the-node-list)
-	│       └── Opening the Node List[Opening the Node List](#opening-the-node-list)
-	│           ├── Sublime[Sublime](#sublime)
-	│           ├── Pythonista[Pythonista](#pythonista)
-	│           └── Python[Python](#python)
-	├── Dynamic Nodes[Dynamic Nodes](#dynamic-nodes)
-	│   ├── Description & Purpose[Description & Purpose](#description-&-purpose)
-	│   ├── Syntax[Syntax](#syntax)
-	│   ├── Creating a Dynamic Node[Creating a Dynamic Node](#creating-a-dynamic-node)
-	│   ├── Definition keys/values[Definition keys/values](#definition-keys/values)
-	│   │   ├── id[id](#id)
-	│   │   ├── include[include](#include)
-	│   │   ├── exclude[exclude](#exclude)
-	│   │   ├── sort[sort](#sort)
-	│   │   ├── metadata[metadata](#metadata)
-	│   │   ├── tree[tree](#tree)
-	│   │   ├── export[export](#export)
-	│   │   └── tag_all[tag_all](#tag_all)
-	│   ├── Example 1 : List[Example 1 : List](#example-1-:-list)
-	│   └── Example 2 : Tree[Example 2 : Tree](#example-2-:-tree)
-	├── Trees[Trees](#trees)
-	│   ├── From any given node[From any given node](#from-any-given-node)
-	│   └── From the root[From the root](#from-the-root)
-	├── Links and Pointers[Links and Pointers](#links-and-pointers)
-	│   ├── Simple Links[Simple Links](#simple-links)
-	│   │   └── Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
-	│   ├── Dynamically Titled Links[Dynamically Titled Links](#dynamically-titled-links)
-	│   ├── Opening Links[Opening Links](#opening-links)
-	│   │   ├── Sublime[Sublime](#sublime)
-	│   │   ├── Pythonista[Pythonista](#pythonista)
-	│   │   └── Python[Python](#python)
-	│   ├── Viewing Linked Relationships[Viewing Linked Relationships](#viewing-linked-relationships)
-	│   ├── Linking to outside resources[Linking to outside resources](#linking-to-outside-resources)
-	│   │   ├── Web[Web](#web)
-	│   │   └── Files[Files](#files)
-	│   ├── Pointers[Pointers](#pointers)
-	│   │   ├── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
-	│   │   ├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
-	│   │   │   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
-	│   │   └── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-	│   │       ├── RECURSION : Urtext Documentation[Urtext Documentation](#urtext-documentation)
-	│   │       └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
-	│   └── Traverse Mode[Traverse Mode](#traverse-mode)
-	│       └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
-	├── Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
-	│   ├── Project Naming (Identification)[Project Naming (Identification)](#project-naming-(identification))
-	│   └── Linking Between Projects[Linking Between Projects](#linking-between-projects)
-	├── Converting and Exporting[Converting and Exporting](#converting-and-exporting)
-	│   ├── Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
-	│   └── Example : Fragment Exported to HTML[Example : Fragment Exported to HTML](#example-:-fragment-exported-to-html)
-	├── Search[Search](#search)
-	│   └── Full Text Search[Full Text Search](#full-text-search)
-	│       ├── Building the Index[Building the Index](#building-the-index)
-	│       ├── Searching[Searching](#searching)
-	│       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe[Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe](#sublime-:-select-`urtext:-search`-from-the-command-pallete.-this-provides-an-input-panel-on-the-lowe)
-	│       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the[Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the](#pythonista-:-use-the-"?"-urtext-button.-results-will-be-updated-in-real-time-in-the-view-behind-the)
-	│       └── Search Using Dynamic Nodes[Search Using Dynamic Nodes](#search-using-dynamic-nodes)
-	├── Filenames[Filenames](#filenames)
-	├── Extension and Customization[Extension and Customization](#extension-and-customization)
-	└── File History[File History](#file-history)
-	
-	
+Table of Contents
+Urtext Documentation[Urtext Documentation](#urtext-documentation)
+├── About Urtext[About Urtext](#about-urtext)
+│   └── What Urtext Is[What Urtext Is](#what-urtext-is)
+│       ├── Description[Description](#description)
+│       ├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
+│       ├── Uses[Uses](#uses)
+│       └── Requirements, Features, Benefits[Requirements, Features, Benefits](#requirements,-features,-benefits)
+├── Using this document[Using this document](#using-this-document)
+│   ├── With Sublime Text[With Sublime Text](#with-sublime-text)
+│   └── Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
+├── Setup[Setup](#setup)
+│   ├── Sublime Text Implementation Setup[Sublime Text Implementation Setup](#sublime-text-implementation-setup)
+│   │   └── Dependencies and Installation (Sublime)[Dependencies and Installation (Sublime)](#dependencies-and-installation-(sublime))
+│   ├── Pythonista Urtext Implementation Setup[Pythonista Urtext Implementation Setup](#pythonista-urtext-implementation-setup)
+│   ├── Making a New Project[Making a New Project](#making-a-new-project)
+│   │   ├── Sublime[Sublime](#sublime)
+│   │   ├── Pythonista[Pythonista](#pythonista)
+│   │   └── Python[Python](#python)
+│   ├── Using/Adding Existing Files[Using/Adding Existing Files](#using/adding-existing-files)
+│   │   ├── Sublime[Sublime](#sublime)
+│   │   ├── Pythonista[Pythonista](#pythonista)
+│   │   └── Python[Python](#python)
+│   ├── Using a Sublime Project[Using a Sublime Project](#using-a-sublime-project)
+│   └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
+│       ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
+│       ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
+│       ├── Hiding Line Numbers[Hiding Line Numbers](#hiding-line-numbers)
+│       ├── Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
+│       └── Disable Prompts for File Reload[Disable Prompts for File Reload](#disable-prompts-for-file-reload)
+├── Nodes[Nodes](#nodes)
+│   ├── Node Identity (Node IDs)[Node Identity (Node IDs)](#node-identity-(node-ids))
+│   ├── File Level Nodes[File Level Nodes](#file-level-nodes)
+│   │   └── Creating a File Level Node[Creating a File Level Node](#creating-a-file-level-node)
+│   │       ├── Sublime[Sublime](#sublime)
+│   │       ├── Pythonista[Pythonista](#pythonista)
+│   │       └── Python[Python](#python)
+│   ├── Inline Nodes[Inline Nodes](#inline-nodes)
+│   │   ├── Example inline node[Example inline node](#example-inline-node)
+│   │   ├── Creating Inline Nodes[Creating Inline Nodes](#creating-inline-nodes)
+│   │   │   ├── Sublime[Sublime](#sublime)
+│   │   │   ├── Pythonista[Pythonista](#pythonista)
+│   │   │   └── Python[Python](#python)
+│   │   └── Syntax Highlighting of Inline Nodes (Sublime)[Syntax Highlighting of Inline Nodes (Sublime)](#syntax-highlighting-of-inline-nodes-(sublime))
+│   ├── Compact Nodes[Compact Nodes](#compact-nodes)
+│   │   ├── Example Compact Node[Example Compact Node](#example-compact-node)
+│   │   │   └── Example inline node within the compact node[Example inline node within the compact node](#example-inline-node-within-the-compact-node)
+│   │   └── Creating Compact Nodes[Creating Compact Nodes](#creating-compact-nodes)
+│   │       ├── Sublime[Sublime](#sublime)
+│   │       ├── Pythonista[Pythonista](#pythonista)
+│   │       └── Python[Python](#python)
+│   ├── Split Nodes[Split Nodes](#split-nodes)
+│   │   ├── First Example Split Node[First Example Split Node](#first-example-split-node)
+│   │   ├── Second Example split Node[Second Example split Node](#second-example-split-node)
+│   │   └── Shortkeys to Create Split Nodes[Shortkeys to Create Split Nodes](#shortkeys-to-create-split-nodes)
+│   │       ├── Sublime[Sublime](#sublime)
+│   │       └── Pythonista[Pythonista](#pythonista)
+│   ├── Generating a node ID manually[Generating a node ID manually](#generating-a-node-id-manually)
+│   │   ├── Sublime[Sublime](#sublime)
+│   │   ├── Pythonista[Pythonista](#pythonista)
+│   │   └── Python[Python](#python)
+│   ├── Node Metadata[Node Metadata](#node-metadata)
+│   │   ├── Reserved Metadata Keys[Reserved Metadata Keys](#reserved-metadata-keys)
+│   │   │   ├── title (overrides the default title)[title (overrides the default title)](#title-(overrides-the-default-title))
+│   │   │   ├── index[index](#index)
+│   │   │   └── flags[flags](#flags)
+│   │   │       └── - exclude_from_tree[- exclude_from_tree](#--exclude_from_tree)
+│   │   └── Timestamps[Timestamps](#timestamps)
+│   │       ├── Timeline View[Timeline View](#timeline-view)
+│   │       └── Time Zones[Time Zones](#time-zones)
+│   │           └── Timezone List[Timezone List](#timezone-list)
+│   └── The Node List[The Node List](#the-node-list)
+│       └── Opening the Node List[Opening the Node List](#opening-the-node-list)
+│           ├── Sublime[Sublime](#sublime)
+│           ├── Pythonista[Pythonista](#pythonista)
+│           └── Python[Python](#python)
+├── Dynamic Nodes[Dynamic Nodes](#dynamic-nodes)
+│   ├── Description & Purpose[Description & Purpose](#description-&-purpose)
+│   ├── Syntax[Syntax](#syntax)
+│   ├── Creating a Dynamic Node[Creating a Dynamic Node](#creating-a-dynamic-node)
+│   ├── Definition keys/values[Definition keys/values](#definition-keys/values)
+│   │   ├── id[id](#id)
+│   │   ├── include[include](#include)
+│   │   ├── exclude[exclude](#exclude)
+│   │   ├── sort[sort](#sort)
+│   │   ├── metadata[metadata](#metadata)
+│   │   ├── tree[tree](#tree)
+│   │   ├── export[export](#export)
+│   │   └── tag_all[tag_all](#tag_all)
+│   ├── Example 1 : List[Example 1 : List](#example-1-:-list)
+│   └── Example 2 : Tree[Example 2 : Tree](#example-2-:-tree)
+├── Trees[Trees](#trees)
+│   ├── From any given node[From any given node](#from-any-given-node)
+│   └── From the root[From the root](#from-the-root)
+├── Links and Pointers[Links and Pointers](#links-and-pointers)
+│   ├── Simple Links[Simple Links](#simple-links)
+│   │   └── Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
+│   ├── Dynamically Titled Links[Dynamically Titled Links](#dynamically-titled-links)
+│   ├── Opening Links[Opening Links](#opening-links)
+│   │   ├── Sublime[Sublime](#sublime)
+│   │   ├── Pythonista[Pythonista](#pythonista)
+│   │   └── Python[Python](#python)
+│   ├── Viewing Linked Relationships[Viewing Linked Relationships](#viewing-linked-relationships)
+│   ├── Linking to outside resources[Linking to outside resources](#linking-to-outside-resources)
+│   │   ├── Web[Web](#web)
+│   │   └── Files[Files](#files)
+│   ├── Pointers[Pointers](#pointers)
+│   │   ├── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
+│   │   ├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
+│   │   │   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
+│   │   └── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
+│   │       ├── RECURSION : Urtext Documentation[Urtext Documentation](#urtext-documentation)
+│   │       └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
+│   └── Traverse Mode[Traverse Mode](#traverse-mode)
+│       └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
+├── Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
+│   ├── Project Naming (Identification)[Project Naming (Identification)](#project-naming-(identification))
+│   └── Linking Between Projects[Linking Between Projects](#linking-between-projects)
+├── Converting and Exporting[Converting and Exporting](#converting-and-exporting)
+│   ├── Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
+│   └── Example : Fragment Exported to HTML[Example : Fragment Exported to HTML](#example-:-fragment-exported-to-html)
+├── Search[Search](#search)
+│   └── Full Text Search[Full Text Search](#full-text-search)
+│       ├── Building the Index[Building the Index](#building-the-index)
+│       ├── Searching[Searching](#searching)
+│       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe[Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe](#sublime-:-select-`urtext:-search`-from-the-command-pallete.-this-provides-an-input-panel-on-the-lowe)
+│       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the[Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the](#pythonista-:-use-the-"?"-urtext-button.-results-will-be-updated-in-real-time-in-the-view-behind-the)
+│       └── Search Using Dynamic Nodes[Search Using Dynamic Nodes](#search-using-dynamic-nodes)
+├── Filenames[Filenames](#filenames)
+├── Extension and Customization[Extension and Customization](#extension-and-customization)
+└── File History[File History](#file-history)
 
 
 
@@ -174,16 +148,18 @@ This is a documentation of Urtext, written in Urtext. It can be used in an Urtex
 ### Description
 
 
-Urtext is a compilable syntax for writing in plaintext. It is structured but flexible, allowing freeform, fragmentary writing while permitting gradual aggregation of content with other content, across many files.  You may start with a single note and build it gradually into a large, structured document that can organize and modify itself based on instructions and metadata embedded in its own content. Urtext parses content into outlines (trees) that can also have recursive (tangled) structure, much like hypertext (HTML), except with the syntax fully exposed to the writer/reader.
+Urtext is a syntax and interpreter for writing using plaintext. The syntax permits embedding of structural and instructional code into the text itself. 
 
-The present interpreter/compiler for Urtext is in Python. Urtext is implemented in Python and can be used wherever Python is used. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS). There is no reason, however, that equivalent or variant implementations could not be created in any language.
+Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A collection of nodes constitutes a "project"; the interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files.
+
+The present interpreter for Urtext is in Python and can be used wherever Python is running. There is no reason, however, that equivalent or variant interpreters could not be created in any language or editing environment. Using Urtext in a text editor requires an additional "wrapper" to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).
 
 ### Comparison To Other Tools
 
 
 Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for organizing text.
 
-Urtext consolidates content, markup and instructions (scripting) into a single compilable syntax. Though it can hyperlink many documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible content. Everything the compiler/interpreter reads is visible to the author.
+Urtext consolidates content, markup and instructions (scripting) into a single compilable syntax. Though it can hyperlink many documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible content. Everything the interpreter reads is visible to the author.
 
 ### Uses
 
@@ -234,6 +210,33 @@ Being in plaintext and having a syntax specification, it can also be used with:
 - Themes and syntax highlighting.
 
 - Version control (using Git, for example).
+
+
+
+# Using this document
+
+
+This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation to try out the features described. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable. To
+
+## With Sublime Text
+
+
+- First set up Urtext in Sublime. Follow the instructions at [Dependencies and Installation (Sublime)](#dependencies-and-installation-(sublime))
+- Clone/download this repository and open it up in Sublime. It will automatically be read as an Urtext project when you can navigate. To get started quickly, follow these tips, which are described in greater detail in their respective sections of this documentation.
+
+- To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See [Links and Pointers](#links-and-pointers) for more information).
+- To return to this table of contents, press ctrl-shift-H.
+- You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See [Traverse Mode](#traverse-mode) for more information.
+- Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See  [Syntax Highlighting](#syntax-highlighting) for more information.
+- See [Sublime Text Interface Tips](#sublime-text-interface-tips) for other suggestions.
+
+## Using Pythonista Urtext
+
+
+- Set up Urtext in Pythonista. Follow the instructions in [Pythonista Urtext Implementation Setup](#pythonista-urtext-implementation-setup)
+- Clone the documentation repository into your base Urtext path and it will be accessible from within Pythonista Urtext.
+
+
 
 
 # Setup
@@ -408,12 +411,9 @@ Think of a node as a region of paper with flexible and open-ended length.
 ## Node Identity (Node IDs)
 
 
-The identity of an Urtext node persists no matter its containing filename, even when moved from one file to another. This is accomplished by assigning each node a unique identifier. Since nothing is hidden from view in an Urtext file, a minimally intrusive format of three alphanumeric was chosen. IDs are not case sensitive.
+The identity of an Urtext node persists no matter its containing filename, even when moved from one file to another. This is accomplished by assigning each node a unique identifier. Since nothing is hidden from view in an Urtext file, a minimally intrusive format of three alphanumeric was chosen. This results in over 46,000 possible nodes per project. Every node must have an ID; files with nodes missing IDs cannot be compiled and are omitted from the project. Each node's ID is generated automatically on creation and placed into its initial metadata region. ID's can be changed without affecting functionality, though pre-existing links must be manually changed as well. IDs are not case sensitive.
 
-generated automatically on creation and placed into their initial metadata region.  
-Every node must have an ID; files with nodes missing IDs cannot be compiled and are omitted from the project. 
-
-Node IDs have no special meaning except as a unique identifier. IDs are covered more in [More About Node IDs](#more-about-node-ids).
+Node IDs are assigned in random order and have no special meaning except as a unique identifier. IDs are covered more in [More About Node IDs](#more-about-node-ids).
 
 ## File Level Nodes
 
@@ -1542,32 +1542,29 @@ Note, however, that if you view the entire tree with another node as root, one f
 
 #### Example Recursive Node Tree
 
-	
-	Example Recursive Node Tree
-	Pointers[Pointers](#pointers)
-	├── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
-	├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
-	│   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
-	└── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-	    ├── Urtext Documentation[Urtext Documentation](#urtext-documentation)
-	    │   ├── Using this document[Using this document](#using-this-document)
-	    │   │   ├── With Sublime Text[With Sublime Text](#with-sublime-text)
-	    │   │   └── Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
-	    │   ├── About Urtext[About Urtext](#about-urtext)
-	    │   ├── Setup[Setup](#setup)
-	    │   ├── Nodes[Nodes](#nodes)
-	    │   ├── Dynamic Nodes[Dynamic Nodes](#dynamic-nodes)
-	    │   ├── Trees[Trees](#trees)
-	    │   ├── Links and Pointers[Links and Pointers](#links-and-pointers)
-	    │   ├── Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
-	    │   ├── Converting and Exporting[Converting and Exporting](#converting-and-exporting)
-	    │   ├── Search[Search](#search)
-	    │   ├── Filenames[Filenames](#filenames)
-	    │   ├── Extension and Customization[Extension and Customization](#extension-and-customization)
-	    │   └── File History[File History](#file-history)
-	    └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
-	
-	
+Example Recursive Node Tree
+Pointers[Pointers](#pointers)
+├── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
+├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
+│   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
+└── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
+    ├── Urtext Documentation[Urtext Documentation](#urtext-documentation)
+    │   ├── About Urtext[About Urtext](#about-urtext)
+    │   ├── Using this document[Using this document](#using-this-document)
+    │   │   ├── With Sublime Text[With Sublime Text](#with-sublime-text)
+    │   │   └── Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
+    │   ├── Setup[Setup](#setup)
+    │   ├── Nodes[Nodes](#nodes)
+    │   ├── Dynamic Nodes[Dynamic Nodes](#dynamic-nodes)
+    │   ├── Trees[Trees](#trees)
+    │   ├── Links and Pointers[Links and Pointers](#links-and-pointers)
+    │   ├── Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
+    │   ├── Converting and Exporting[Converting and Exporting](#converting-and-exporting)
+    │   ├── Search[Search](#search)
+    │   ├── Filenames[Filenames](#filenames)
+    │   ├── Extension and Customization[Extension and Customization](#extension-and-customization)
+    │   └── File History[File History](#file-history)
+    └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
 
 
 ## Traverse Mode

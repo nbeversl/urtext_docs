@@ -17,7 +17,7 @@ Setup
 
 %	    Python
 
-		Pass a system path to a new instance of urtext.UrtextProject(): 
+		Pass a system path to a new instance of urtext.UrtextProject: 
 		
 		%%-PYTHON
 

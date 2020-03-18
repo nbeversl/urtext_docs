@@ -37,8 +37,8 @@ Example Search Results
 /-- 
 ID: 3x3
 defined in: >uy4
-flags: exclude_from_tree
 title: Example Search Results
+flags: exclude_from_tree
 --/}}
 
  /-- id: uy4 --/ }}
