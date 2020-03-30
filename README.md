@@ -219,12 +219,12 @@ Being in plaintext and having a syntax specification, it can also be used with:
 # Using this document
 
 
-This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation to try out the features described. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable. To
+This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation as both a reference manual and an example project. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable.
 
 ## With Sublime Text
 
 
-- First set up Urtext in Sublime. Follow the instructions at [Dependencies and Installation (Sublime)](#dependencies-and-installation-(sublime))
+- First set up Urtext in Sublime. Follow the instructions at [Dependencies and Installation (Sublime)](#dependencies-and-installation-sublime)
 - Clone/download this repository and open it up in Sublime. It will automatically be read as an Urtext project when you can navigate. To get started quickly, follow these tips, which are described in greater detail in their respective sections of this documentation.
 
 - To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See [Links and Pointers](#links-and-pointers) for more information).
@@ -1290,7 +1290,7 @@ In Sublime Text there is also the alternative of using the UI dropdown. Press Co
 
 In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see [index](#index)). 
 
-The Node ID `zzz` is reserved for the Node list. (See [Node Identity (Node IDs)](#node-identity-(node-ids)) for more information.)
+The Node ID `zzz` is reserved for the Node list. (See [Node Identity (Node IDs)](#node-identity-node-ids) for more information.)
 
 
 

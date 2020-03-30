@@ -73,9 +73,6 @@ Urtext Documentation >a5m
 │   │   │   └── flags >cwb
 │   │   │       └── - exclude_from_tree >1e3
 │   │   └── Timestamps >005
-│   │       ├── Timeline View >00k
-│   │       └── Time Zones >7w6
-│   │           └── Timezone List >zh1
 │   └── The Node List >01i
 │       └── Opening the Node List >hl7
 │           ├── Sublime >p78
@@ -138,9 +135,9 @@ Urtext Documentation >a5m
 └── File History >prp
 /-- 
 flags: exclude_from_tree
-ID: 01a
-defined in: >029
 title: Table of Contents
+defined in: >029
+ID: 01a
 --/}}
 
 | About Urtext >>013
@@ -148,7 +145,7 @@ title: Table of Contents
 
 {{  Using this document
 
-    This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation as both a reference manual and an example project. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable.
+    This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation to try out the features described. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable. To
 
     {{ With Sublime Text
 
