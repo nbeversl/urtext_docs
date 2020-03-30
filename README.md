@@ -328,7 +328,7 @@ To make an empty project, make a new folder (or open an existing folder, if you 
 ## Using/Adding Existing Files
 
 
-To use existing plaintext files, you must add minimally an `ID` ([Hiding Line Numbers](#hiding-line-numbers)) metadata tag to the file's text content. See [Node Metadata](#node-metadata) for more information on Metadata.
+To use existing plaintext files, you must add minimally an `ID` ([More About Node IDs](#more-about-node-ids)) metadata tag to the file's text content. See [Node Metadata](#node-metadata) for more information on Metadata.
 
 ### Sublime
 
@@ -372,7 +372,7 @@ Here are some tips for best leveraging Sublime's great UI features.
 ### Syntax Highlighting
 
 
-This package comes with a .YML file (sublime_urtext.sublime_syntax) defining the Urtext syntax, along with two color schemes that provide syntax highlighting. Syntax highlighting makes everything easier by showing depth of node nesting and dimming certain elements of the syntax. Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ... 
+This package comes with a .YML file (`sublime_urtext.sublime_syntax`) defining the Urtext syntax, along with two color schemes that provide syntax highlighting. Syntax highlighting makes everything easier by showing depth of node nesting and dimming certain elements of the syntax. Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ... 
 
 Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.)
 
