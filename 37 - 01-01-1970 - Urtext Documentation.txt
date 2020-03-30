@@ -137,10 +137,10 @@ Urtext Documentation >a5m
 ├── Extension and Customization >01o
 └── File History >prp
 /-- 
-flags: exclude_from_tree
-title: Table of Contents
 defined in: >029
 ID: 01a
+title: Table of Contents
+flags: exclude_from_tree
 --/}}
 
 | About Urtext >>013

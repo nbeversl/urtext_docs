@@ -17,7 +17,8 @@ Converting and Exporting
     [[ 
         file:README.md
         export:markdown:a5m
-        preformat:true
+        preformat:True
+        
      ]]
 
 
