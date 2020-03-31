@@ -3,7 +3,6 @@ Urtext Documentation
 Version: 0.1.5-alpha
 License: GNU General Public License 3.0
 
-
 {{
 Table of Contents
 Urtext Documentation >a5m
@@ -137,10 +136,10 @@ Urtext Documentation >a5m
 ├── Extension and Customization >01o
 └── File History >prp
 /-- 
+title: Table of Contents
 flags: exclude_from_tree
 ID: 01a
 defined in: >029
-title: Table of Contents
 --/}}
 
 | About Urtext >>013

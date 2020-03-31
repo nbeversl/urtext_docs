@@ -180,7 +180,7 @@ Urtext has many uses, including but limited to:
 - any other writing or information management that can be done in text form
 
 ### Requirements, Features, Benefits
-
+ 
 
 Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they cannot be found together in one single existing tool; this was the motivation for creating Urtext.
 
@@ -245,12 +245,8 @@ This is a documentation of Urtext, written in Urtext. It can be used in an Urtex
 # Setup
 
 
-| Sublime Text Implementation Setup >>
-
-Setup
-
 ## Sublime Text Implementation Setup
-
+ 
 
 A text editor with scripting capabilities can be seen as an empty, all-purpose user interface for working with plain text in any way. The Urtext package for Sublime Text utilizes Sublime Text's as a user interface for editing Urtext files, using Sublime's embedded Python interpreter both to run the Urtext interpreter/compiler and to add features to Sublime that make working with Urtext easy. The Sublime Text Urtext package:
 
@@ -300,6 +296,9 @@ In the future a script may be provided to install/update these dependencies, but
 
 Close and reopen Sublime Text. Urtext is now ready to use.
 
+  
+
+
 
 ## Pythonista Urtext Implementation Setup
 
@@ -321,7 +320,7 @@ This implementation utilizes the native iOS user interface to create a basic tex
 
 ### Sublime
 
-
+  
 
 To make an empty project, make a new folder (or open an existing folder, if you want to create a new project there) and open the folder in Sublime. Select Urtext : Initialize Project from the Sublime Command Palette. Then press Ctrl-Shift-; to create a new node.
 
@@ -331,7 +330,7 @@ To make an empty project, make a new folder (or open an existing folder, if you 
 To use existing plaintext files, you must add minimally an `ID` ([More About Node IDs](#more-about-node-ids)) metadata tag to the file's text content. See [Node Metadata](#node-metadata) for more information on Metadata.
 
 ### Sublime
-
+ 
 
 Select `Urtext : Import Project` from the Sublime Command palette.
 
@@ -343,7 +342,7 @@ Note that the append will occur without a confirmation dialog, so if you are jus
 Not currently implemented.
 
 ### Python
-
+ 
 
 Pass the keyword argument `import_project=True`:
 
@@ -356,7 +355,7 @@ my_project = UrtextProject(path, import_project=True)
 %%-END
 
 ## Using a Sublime Project
-
+ 
 
 (not to be confused with an Urtext Project -- see https://www.sublimetext.com/docs/3/projects.html )
 
@@ -426,12 +425,12 @@ A file-level node is any node at the outermost level of a single file. It may or
 ### Creating a File Level Node
 
 #### Sublime
-
+ 
 
 Press Control-Shift-; (Control-Shift-semicolon).
 
 #### Pythonista
-
+ 
 
 Press `;` in the Urtext key row.
 
@@ -465,7 +464,7 @@ By default, the first non-whitespace line of any node is the node's title. Write
 
 
 ## Inline Nodes
-
+                                                                 
 
 Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. The syntax for inline nodes is to wrap the content in double curly braces:
 
@@ -476,7 +475,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 ### Creating Inline Nodes
 
 #### Sublime
-
+ 
 
 Press Shift-Ctrl-{ . Inside the inserted double curly braces is a new node with an auto-generated ID. 
 
@@ -538,7 +537,7 @@ For contents requiring only a single line, such as list items, very short notes,
 ### Creating Compact Nodes
 
 #### Sublime
-
+  
 
 Shift-Control-^
 
@@ -549,7 +548,7 @@ Split Nodes ## Split Nodes
 A node region can be split into two separate nodes by placing the `%` character as the first character on a line. Each node must then have its own ID, which you can either generate manually (see Inserting a Node ID manually[Inserting a Node ID manually](#inserting-a-node-id-manually)) or with the split node shortkey (below,[Shortkeys to Create Split Nodes](#shortkeys-to-create-split-nodes)).
 
 ### First Example Split Node
-
+ 
 
 This node must contain its own ID (above).
 
@@ -563,7 +562,7 @@ Note using a `%` symbol at the file level (outside of an inline node wrapper) is
 These also insert an ID directly above the split marker.
 
 #### Sublime
-
+   
 
 Control-Shift-%
 
@@ -571,7 +570,7 @@ Control-Shift-%
 Generating a node ID manually ## Generating a node ID manually
 
 ## Sublime
-
+   
 
 If you accidentally delete a Node ID or need to insert one arbitrarily, press Control-Shift-I.
 
@@ -646,7 +645,7 @@ The only additional reserved metadata keys apply only to the project_settings no
 Next topics:
 
 ### Timestamps
-
+                                                                                  
 
 Reliance on the operating system's file-created or file-modified date metadata is avoided, since it can be too easily and involuntarily overwritten under ordinary file system operations, such as copying and moving files or folders. 
 
@@ -665,14 +664,14 @@ Timestamps are read and written utilizing Python's `strftime` directives. The de
 which creates timestamps like: <Tue., Jun. 04, 2019, 08:51 PM>. The format can be customized in the project_settings node (see project_settings[project_settings](#project_settings)). For more information on `strftime` directives and options, see https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior.
 
 #### Timeline View
-
+ 
 
 Urtext will parse node timestamps along with inline timestamps into a project timeline. Press Ctrl-Shift-T or select Urtext: Show Timeline in the Sublime command palette. Each node and inline timestamp is shown in chronological order with nearby text. You can try it with this example project, but note that since many nodes in this document are undated, they have a default date of Thu., Jan. 01, 1970, 12:00AM.
 
 As everywhere in a project, node IDs shown are links that can be opened using Ctrl-Shift-/.
 
 #### Time Zones
-
+  
 
 Time zones are not required in timestamps. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing and comparison purposes. To modify this default, set the `timezone` key in project settings to another valid value. (Timezone List ##### Timezone List
 
@@ -1279,7 +1278,7 @@ Every project maintains a list of all its nodes. The Node List is automatically 
 ### Opening the Node List
 
 #### Sublime
-
+  
 
 Ctrl-Shift-J. Like any node, the Node List can be traversed using [Traverse Mode](#traverse-mode).
 
@@ -1362,7 +1361,7 @@ Example Source Node 1[Example Source Node 1](#example-source-node-1)
 Example Source Node 4[Example Source Node 4](#example-source-node-4)
 
 ## Example 2 : Tree
-
+ 
 
 Here is the dynamic definition that actually generates the table of contents for this documentation:
 
@@ -1402,12 +1401,12 @@ Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plain
 # Links and Pointers
 
 ## Simple Links
-
+ 
 
 To make a simple "hyperlink" from one node to another, use the right angle bracket (>) followed immediately by a node ID. Linking does not require a filename or any other information, only the node ID. Any other surrounding text is ignored.
 
 ### Sublime Text tools to help with linking
-
+ 
 
 Two Sublime Command Palette commands can make linking quick and easy:
 
@@ -1432,7 +1431,7 @@ Note that node link titles are not updated globally throughout the project whene
 Press Shift-Ctrl-/ on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point.
 
 ### Pythonista
-
+ 
 
 Use the `>` key when the cursor is on any line containing a link.
 
@@ -1497,15 +1496,7 @@ COMING.
 
 
 ## Pointers
-
-
-You can extend trees beyond the file level to create node relationships spanning many files. Preceding a link to a node with two right angle brackets instead of one creates a Pointer. In addition to being a hyperlink, this connects the targeted node, and all of its subchildren, as children of the node containing the Pointer. Example:
-
-Here is an example Child Node:
-
-| Example Child Node Using a Node Pointer >>
-
-Pointers          
+          
 
 You can extend trees beyond the file level to create node relationships spanning many files. Preceding a link to a node with two right angle brackets instead of one creates a Pointer. In addition to being a hyperlink, this connects the targeted node, and all of its subchildren, as children of the node containing the Pointer. Example:
 
@@ -1526,7 +1517,7 @@ The advantages to Node Pointers are many, including:
 - The tree can be displayed from any arbitrary starting point, whether or not its branches are within or beyond a particular file.
 
 ### Duplicate Pointers
-
+ 
 
 Node Pointers may point more than once to the same node, so that content can be reused or referenced across multiple trees within the same project:
 
@@ -1654,7 +1645,7 @@ The following Dynamic Definition exports the [Links and Pointers](#links-and-poi
 # Search
 
 ## Full Text Search
-
+ 
 
 Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments. Urtext uses the `whoosh` module by Matt Chaput, which generates indexes from text content that are stored ("pickled") to disk for fast queries.
 
@@ -1668,7 +1659,7 @@ Anytime a new project is instantiated, Urtext creates an `index` folder inside t
 r edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes.
 
 #### Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the
-search field. To exit, tap outside the search field.
+ search field. To exit, tap outside the search field.
 
 ### Search Using Dynamic Nodes
 
@@ -1686,7 +1677,7 @@ Example Search Results
 
 # Filenames
 
-
+                                                                                 
 
 Since node identities are independent of their containing filenames, you can use any naming convention you want. Urtext can also rename files automatically in convenient formats based on their title and/or index. Renaming by index is useful, for instance, if you want file-level nodes easily readable inside a file system, mobile app, or other file browser.
 
