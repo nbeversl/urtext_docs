@@ -1,0 +1,143 @@
+UrText Syntax Guide
+
+Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dynamic definition wrapper. The following syntax applies:
+
+	 >0y2	Link to another node by ID. More information: | Links >0y2
+
+	 | 		Placed before a node link, dynamically populates the node title. 
+	 		Example and more info: | Dynamically Titled Links >4vu
+
+	 >>xxx	Node Pointer
+
+	% 		Splits a node into two. Must be the first character on a line.
+			More information: | (untitled) >k6d
+
+	 ^		Compact Node marker. Must be the first non-whitespace character on a line.
+	 		More information: | Compact Nodes >j6t
+
+	{{  }}	Subnode	wrapper. Can appear anywhere. Can be nested aribrarily deep.
+			More information: | Inline Nodes >004
+
+	/-- --/ 														
+	Metadata wrapper. Example:
+
+		/--
+			[key]:[value]												
+			Metadata Pair, can contain any keys/values and optional timestamp.
+			Some keys are reserved (see below). Keys are case-insensitive.
+
+			;					
+			Separator for metadata pairs
+
+			|															
+			Separator for multiple values in metadata pairs
+
+			Reserved Metadata Keys, With Example Vales
+
+			id: znj
+				Uniquely identifies the node in the project. Required in strict mode.
+				more info: | More About Node IDs >01q
+
+			index:01					
+				- Sets the index (priority) of the node in the project. more info: | index >00z
+
+			timestamp:<Wed., Jun. 05, 2019, 10:01 PM>					
+				Timestamp. more info: | Timestamps >005
+
+			title: UrText Reference Guide								
+				Overrides the Node Title. more info: | title (overrides the default title) >00y
+
+			flags:exclude_from_tree										
+				Sets node behavior. More info: | flags >cwb
+
+			from:Joes-iMac
+				Hostname of originating computer/device.
+
+		--/
+
+	[[ ]]	Dynamic Definition Wrapper. 
+
+			Template:
+			[[ OPERATOR(key:value:<timestamp> suboperator)]]
+
+			Examples:
+			[[ 
+				
+			ID(xxx) 	Target Node id, to dynamically populate with output
+
+			INCLUDE()  	Nodes to include. Accepts multiple parameters.
+						
+						Examples:
+
+						INCLUDE(all)	
+						Includes all nodes in the project
+
+						INCLUDE(indexed)	
+						Includes all nodes in the project that have an index
+
+						INCLUDE(key:value)	
+						Includes all nodes with the given value in the given key
+
+							Operators:
+
+							"and"
+							INCLUDE(key:value and other_key:other_value)
+							Includes nodes matching both `key:value` and `other_key:other_value`
+
+							"or"
+							INCLUDE(key:value or other_key:other_value)
+							Includes any nodes matching either or both of `key:value` and `other_key:other_value`
+
+							"all_projects"
+							INCLUDE(all_projects)
+							Expands included nodes to include all projects in the project list.
+
+							Optional Timestamp:
+							
+							INCLUDE(tags:cello:<2019> or tags:teaching:<2019>)
+							Includes any nodes matching either or both of the key/value pairs within the corresponding timestamp.
+
+			EXCLUDE()	Evaluated after INCLUDE(), excludes the given nodes from the result.
+						Accepts the same parameters as INCLUDE()
+
+			SHOW()		Formats the output, overriding defaults. Accepts arbitrary text, unicode newline characters (\n, \r), and tokens.
+						Words preceded (without whitespace) by `$` are evaluated as tokens for the value of metadata keys.
+
+						In addition to user-defined metadata keys, the following tokens are valid:
+						SHOW(
+							$title 
+							Displays the node title, default or via the `title` meta key.
+
+							$link
+							Displays a link to the node
+
+							 )
+
+			TREE()
+
+			TIMELINE()
+
+			FORMAT()
+
+			SEARCH()
+
+			SORT()
+
+			EXPORT()
+
+			FILE()
+
+			TAG_ALL()
+
+			METADATA()
+
+
+			]]
+
+
+
+/-- ID: znj --/
+/-- 
+timestamp: <Fri., Apr. 24, 2020, 01:10 PM>
+from: wwci-00407.local
+--/

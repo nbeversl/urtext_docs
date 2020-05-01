@@ -15,7 +15,7 @@ Trees
      
     Note that each branch of the resulting file tree contains Node ID that works like a link. You can navigate the links on the tree using Shift-Control-/ (see | Simple Links >0y2) or using | Traverse Mode >00w.
 
-    File trees are displayed in Sublime's scratch views, meaning they will never report as being "dirty" (unsaved). They are intended for one-time/temporary use, will not have a filename, and will not update when a node/file changes. To make permanent and dynamically updated trees, see | Dynamic Nodes >e82.
+    File trees are displayed in Sublime's scratch views, meaning they will never report as being "dirty" (unsaved). They are intended for one-time/temporary use, will not have a filename, and will not update when a node/file changes. To make permanent and dynamically updated trees, see |  ?  >e82.
 
     You can extend node trees beyond the file level by using | Pointers >lmu.
 

@@ -1,4 +1,4 @@
- Dynamic Nodes /-- ID: e82 --/
+Dynamic Nodes /-- ID: qjl --/
 
     ^ Dynamic nodes can compile and update content in real time from other nodes. Dynamic nodes can display complete contents or lists of titles of other nodes, as well as display tree diagrams of relationships among nodes, across many files.  /-- id: h0y; title: Description & Purpose --/
 
@@ -23,22 +23,22 @@
                 Note that in order to work, the target node must exist; dynamic definitions do not create their target nodes. 
 
                 /-- id:02t; title:id --/
-%             
+            
              - include:metadata:[AND:|OR:](metadata key):(metadata value(s)): 
     
                 Include nodes with this metadata key and value. Keys and values are chained together and separated by the colon (:) as shown above. Multiple values can be chained together with successive colons. The default operator is "OR"; for "AND", chain this indicator as shown before the tag name.  
                 /-- id:a3r; title:include--/
-% 
+
             - exclude:metadata:(tag name):(tag values) 
     
                 Exclude nodes with this metadata key and value. Keys and values are strung together and separated by the colon (:) as shown above. To exclude multiple key/value pairs, write multiple lines. Excluding will always supersede including, no matter the order listed in the definition. 
                 /-- id:e18; title:exclude --/
-% 
+ 
            - sort:(key):(reverse)
     
                 This specifies how to sort the nodes in the dynamically populated node. The key can be any metadata key in the project, including timestamp. If `:reverse` is appended to the end, the sort order will be reversed.
                 /-- id:05f; title:sort --/
-% 
+
             - metadata:(tag name):(value) 
     
                 Metadata to add to the dynamically populated node. This can be any metadata, including the reserved title, index and parent keys.
@@ -46,13 +46,13 @@
     
                 Dynamic nodes will always automatically include the metadata key 'defined in' which will point to the node containing its definition.
     
-%  
+
             - tree:(root id) 
     
                 (root id) : Populates the node with a tree with the provided node ID as root. For more on trees, see >00h.
                 /--  id: 4mb; title:tree --/
 
-%
+
              - export:(format):(source id)
 
                 Exports the specified source_id to the target id value in the `id` key field, in the specific format.
@@ -91,11 +91,10 @@
 
     Here is an example dynamic node definition targeting node ID >016
 
-        [[ ID:016
-            include:metadata:tag:example_node
-            exclude:metadata:tag:exclude_this
-            sort:index
-            show:title
+        [[ ID(016)
+            INCLUDE( tag:example_node )
+            EXCLUDE ( tag:exclude_this )
+            SORT(index)
             metadata:title:Example Dynamic Node Title
             metadata:flags:exclude_from_tree
             indent:4
@@ -104,16 +103,11 @@
         Here is the compiled node defined by the definition above. Changing the dynamic definition and/or the contents or metadata of the source nodes will update the dynamic node. Saving is necessary to trigger the update.
 
 {{
-    Example Dynamic Node Title
-    Example Source Node 3 >01b
-    Example Source Node 1 >017
-    Example Source Node 4 >01c
-    /-- 
-    title: Example Dynamic Node Title
-    flags: exclude_from_tree
-    ID: 016
-    defined in: >01r
-    --/}}
+Example Source Node 1 >>017
+Example Source Node 4 >>01c
+Example Source Node 3 >>01b
+Example Source Node 2 >>00v
+/-- ID: 016; defined in: >01r --/}}
                                                                                               
 
 /-- ID: 01r
@@ -125,15 +119,16 @@ index: 08
 
     Here is the dynamic definition that actually generates the table of contents for this documentation:
 
-        [[ ID:01a
-            tree:a5m
-            metadata:title:Table of Contents
-            metadata:flags:exclude_from_tree
+        [[  ID(e5j)
+            TREE(a5m)
+            METADATA(flags:exclude_from_tree title:"Table of Contents")
          ]]  
 
     Changing the titles or structure of sections in this documentation will dynamically update the table of contents tree.
 
     For more information on trees, see | Trees >00h
-
+s
      /-- ID: 029 --/}}
-     
+
+ /-- ID: ri9 --/
+    

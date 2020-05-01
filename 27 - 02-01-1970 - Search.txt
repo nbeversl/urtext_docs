@@ -26,20 +26,82 @@ Search
 
         For example, the following definition targets node >3x3 (below) and populates it with all nodes containing the word "urtext".
         [[ 
-        id:3x3
-        search:urtext
-        metadata:title:Example Search Results
-        metadata:flags:exclude_from_tree
+        ID(3x3)
+        METADATA(title:"Example Search Results" flags:exclude_from_tree)
+        SEARCH(urtext)
         ]]
 
         {{
-Example Search Results
-/-- 
-title: Example Search Results
-flags: exclude_from_tree
-ID: 3x3
-defined in: >uy4
---/}}
+Example Search Results 
+Projects, Structure and Compiling >01x
+Using a Sublime Project >c3n
+0.1.14-alpha >022
+Disable Prompts for File Reload >023
+More About Node IDs >01q
+Sublime Text Implementation Setup >01u
+Opening Links >01w
+Node Identity (Node IDs) >01h
+Filenames >01m
+Building the Index >xqi
+Syntax Highlighting >01d
+Using Multiple Projects at a Time >ipy
+Pythonista Urtext Implementation Setup >os4
+Pythonista >hrv
+Sublime >p78
+Sublime >7n6
+Urtext  Version: 0.2.0-alpha >a5m
+Python >fv2
+Make Installation Easier >mh8
+Download and Install Dependencies Manually >774
+Urtext Action Guide >e1x
+Metadata List >zzy
+About Urtext >013
+Python >eea
+Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+Inline Nodes >004
+Timestamps >005
+The Node List >01i
+Viewing Linked Relationships >00u
+Full Text Search >4p9
+Project Naming (Identification) >tgp
+Syntax Highlighting of Inline Nodes (Sublime) >koe
+Using Pythonista Urtext >lvf
+Sublime >rij
+0.1.11-alpha >01l
+Full Screen / Distraction Free Mode >002
+Setup >003
+Project Requirements and Features >006
+Python >83e
+Description >yv2
+Python >b44
+Example : Urtext Documentation Exported in Markdown to a File >m9d
+Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+Urtext Syntax Guide >znj
+Dependencies and Installation (Sublime) >2fn
+With Sublime Text >e6m
+Quick Start and Guides >z7t
+tag_all >yin
+iPhone/iPad/iOS >01y
+Node Metadata >00x
+Pythonista >xcx
+File History >prp
+Download Dependencies from a Monorepo >arl
+Traverse Mode >00w
+Timeline View >00k
+Converting and Exporting >ezg
+Recursive Node Pointers >6ct
+project_settings >00l
+Sublime Text tools to help with linking >00m
+Sublime >00a
+From any given node >00f
+From the root >00g
+Using this document >009
+Comparison To Other Tools >h8z
+Search Using Dynamic Nodes >uy4
+Pythonista >0yn
+Python >xor
+Uses >lhs
+/-- ID: 3x3; flags: exclude_from_tree ; title: Example Search Results ; defined in: >uy4 --/}}
 
  /-- id: uy4 --/ }}
 

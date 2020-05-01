@@ -1,0 +1,50 @@
+Urtext Action Guide
+
+Navigation:
+
+	Home
+	Navigate Forward
+	Navigate Back
+
+Export
+
+Timeline
+
+Node List
+
+Search
+
+Traverse Mode
+
+Multiple Projects
+
+Jump to Source
+
+File History
+
+Interlinks
+
+Tree
+
+Consolidate Metadata
+
+Import Project
+
+Reload Project
+
+Reindex All Files
+
+Rename File(s) from Meta
+
+Delete This Node
+
+Initialize Project
+
+Pop Node
+
+Move File to Other Project
+
+Node Access History
+
+
+/-- id: e1x; from: wwci-00407.local; timestamp: <Thu., Apr. 30, 2020, 01:13 PM> --/

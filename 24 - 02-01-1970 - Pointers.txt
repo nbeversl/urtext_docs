@@ -1,0 +1,155 @@
+Pointers          
+
+    You can extend trees beyond the file level to create node relationships spanning many files. Preceding a link to a node with two right angle brackets instead of one creates a Pointer. In addition to being a hyperlink, this connects the targeted node, and all of its subchildren, as children of the node containing the Pointer. Example:
+
+    Here is an example Child Node:
+
+        | Example Child Node Using a Node Pointer >>001 
+
+    The example Pointer above becomes a child of this node, visible in the |  ?  >01a or using the other tree views described in | Trees >00h.
+
+    The advantages to Node Pointers are many, including:
+
+        - The tree represents a hierachy of actual content, rather than the files containing the content.
+
+        - The tree permits nesting both within and beyond file level.
+   
+        - The tree can be displayed from any arbitrary starting point, whether or not its branches are within or beyond a particular file.
+
+{{ Duplicate Pointers 
+    
+    Node Pointers may point more than once to the same node, so that content can be reused or referenced across multiple trees within the same project:
+    
+    Here is the same example child node from above: | Example Child Node Using a Node Pointer >>001 
+
+
+    /-- ID:00t --/ }}
+
+
+{{  Recursive Node Pointers
+
+    Recursive Node Pointers would be ones that point to one of their containing node's own ancestors, causing a circular reference.
+
+    These are not prohibited, but the recursion will not be drawn if it is already contained in the tree. Instead, the point of recursion will show RECURSION, with a link to the Node ID of the node causing the recursion.
+
+    For example, this Node Pointer points back to the root node of the table of contents: | Urtext Documentation >>a5m. Instead of the table of contents being drawn recursively from this node, you can see the recursion point in the table of contents.
+
+    Note, however, that if you view the entire tree with another node as root, one full iteration will still appear, with the point of recursion falling elsewhere in the tree. For instance, below is the table of contents with the node "Pointers" (| Pointers >lmu) as root. See Dynamic Nodes (| Dynamic Nodes >e82) for more information on how to generate trees like this in dynamic nodes.
+
+    
+
+{{
+Example Recursive Node Tree 
+Pointers >lmu
+├── Duplicate Pointers >00t
+│   └── Example Child Node Using a Node Pointer >001
+└── Recursive Node Pointers >6ct
+    ├── Urtext  Version: 0.2.0-alpha >a5m
+    │   ├── Quick Start and Guides >z7t
+    │   │   ├── Urtext Syntax Guide >znj
+    │   │   └── Urtext Action Guide >e1x
+    │   ├── About Urtext >013
+    │   │   ├── Description >yv2
+    │   │   ├── Comparison To Other Tools >h8z
+    │   │   ├── Uses >lhs
+    │   │   └── Project Requirements and Features >006
+    │   ├── Using this document >009
+    │   │   ├── With Sublime Text >e6m
+    │   │   └── Using Pythonista Urtext >lvf
+    │   ├── Setup >003
+    │   │   ├── Making a New Project >dce
+    │   │   │   └── Sublime >00a
+    │   │   ├── Using/Adding Existing Files >00b
+    │   │   │   ├── Sublime >rij
+    │   │   │   ├── Pythonista >ouh
+    │   │   │   └── Python >b44
+    │   │   ├── Using a Sublime Project >c3n
+    │   │   └── Sublime Text Interface Tips >000
+    │   │       ├── Syntax Highlighting >01d
+    │   │       ├── Hiding Tabs >015
+    │   │       ├── Hiding Line Numbers >01e
+    │   │       ├── Full Screen / Distraction Free Mode >002
+    │   │       ├── Disable Prompts for File Reload >023
+    │   │       └── Remove Indent Guides >1rc
+    │   ├── Nodes >01j
+    │   │   ├── Node Identity (Node IDs) >01h
+    │   │   ├── File Level Nodes >01g
+    │   │   │   └── Creating a File Level Node >ekz
+    │   │   │       ├── Sublime >xo8
+    │   │   │       ├── Pythonista >xcx
+    │   │   │       └── Python >83e
+    │   │   ├── Inline Nodes >004
+    │   │   │   ├── Example inline node >00e
+    │   │   │   ├── Creating Inline Nodes >rbs
+    │   │   │   │   ├── Sublime >8fh
+    │   │   │   │   ├── Pythonista >hrv
+    │   │   │   │   └── Python >fv2
+    │   │   │   └── Syntax Highlighting of Inline Nodes (Sublime) >koe
+    │   │   ├── Compact Nodes >kpz
+    │   │   │   ├── Example Compact Node >d7b
+    │   │   │   │   └── Example inline node within the compact node >9up
+    │   │   │   └── Sublime >qwn
+    │   │   │       └── Pythonista >0yn
+    │   │   ├── Generating a node ID manually >rfp
+    │   │   │   └── Sublime >7n6
+    │   │   ├── Node Metadata >00x
+    │   │   │   ├── Reserved Metadata Keys >011
+    │   │   │   │   ├── title (overrides the default title) >00y
+    │   │   │   │   ├── index >00z
+    │   │   │   │   └── flags >cwb
+    │   │   │   │       └── - exclude_from_tree >1e3
+    │   │   │   └── Timestamps >005
+    │   │   │       ├── Timeline View >00k
+    │   │   │       └── Time Zones >7w6
+    │   │   │           └── Timezone List >zh1
+    │   │   └── The Node List >01i
+    │   │       └── Opening the Node List >hl7
+    │   │           └── Sublime >p78
+    │   ├── Trees >00h
+    │   │   ├── From any given node >00f
+    │   │   └── From the root >00g
+    │   ├── Links and Pointers >00j
+    │   │   ├── Links >0y2
+    │   │   │   └── Sublime Text tools to help with linking >00m
+    │   │   ├── Dynamically Titled Links >4vu
+    │   │   ├── Opening Links >01w
+    │   │   │   ├── Sublime >osu
+    │   │   │   └── Pythonista >iy8
+    │   │   ├── Viewing Linked Relationships >00u
+    │   │   ├── Linking to outside resources >00q
+    │   │   │   ├── Web >00o
+    │   │   │   └── Files >00p
+    │   │   ├── ? (Missing Node): > !RECURSION 3:
+    │   │   └── Traverse Mode >00w
+    │   │       └── Word Wrap in Traverse Mode >xci
+    │   ├── Using Multiple Projects at a Time >ipy
+    │   │   ├── Project Naming (Identification) >tgp
+    │   │   └── Linking Between Projects >7lx
+    │   ├── Converting and Exporting >ezg
+    │   │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+    │   │   └── Example : Fragment Exported to HTML >baq
+    │   ├── Search >k67
+    │   │   └── Full Text Search >4p9
+    │   │       ├── Building the Index >xqi
+    │   │       ├── Searching >mzj
+    │   │       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+    │   │       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+    │   │       └── Search Using Dynamic Nodes >uy4
+    │   ├── Filenames >01m
+    │   ├── Development >01o
+    │   │   └── Make Installation Easier >mh8
+    │   └── File History >prp
+    └── Example Recursive Node Tree >01n
+/-- ID: 01n; title: Example Recursive Node Tree ; defined in: >6ct --/}}
+    
+    [[ 
+    ID(01n)
+    TREE(lmu)
+    METADATA(title:"Example Recursive Node Tree")
+    ]]
+
+/-- ID: 6ct --/ }}
+
+/-- ID: lmu --/
+
+

@@ -1,8 +1,8 @@
 Links and Pointers
 
-{{  Simple Links 
+{{  Links 
 
-    To make a simple "hyperlink" from one node to another, use the right angle bracket (>) followed immediately by a node ID. Linking does not require a filename or any other information, only the node ID. Any other surrounding text is ignored.
+    To make a "hyperlink" from one node to another, use the right angle bracket (>) followed immediately by a node ID. Linking does not require a filename or any other information, only the node ID. Any other surrounding text is ignored.
 
     {{  Sublime Text tools to help with linking /-- tags:sublime --/
 
@@ -40,40 +40,11 @@ Links and Pointers
 
     Note that Urtext reads node regions on every save, so cursor location may be imprecise if the file has been altered since the last save. 
 
-    {{ Python
-
-        Pass the current line contents and cursor position (within the line) to the UrtextProject. The method returns the best link match. Find the filename as described in >h8c and open it at the start_position returned from get_link(). See the open_urtext_node() function in the Sublime Text package for an example. 
-
-        %%-PYTHON
-
-            UrtextProject.get_link( line, position=0 )
-            """
-            Args:
-                line (string) : the current line from the text editor
-            Kwargs:
-                position (int) : cursor position
-            Returns: tuple
-                ('HTTP', url ), 
-                ('NODE', node_id [string], start_position [int]),
-                or None
-            Notes:
-                This looks first in the line around the cursor position, 
-                then forward, then backward.
-            """
-
-        %%-END
-
-     /-- id: eea --/ }} /-- ID:01w --/ }}
+ /-- ID:01w --/ }}
 
 
 | Viewing Linked Relationships >>00u
-
-
-
-
 | Linking to outside resources >>00q
-
-
 | Pointers >>lmu
 | Traverse Mode >>00w
 

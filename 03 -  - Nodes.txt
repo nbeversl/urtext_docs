@@ -53,12 +53,11 @@ Think of a node as a region of paper with flexible and open-ended length.
 
 	/-- ID:01g --/ }}
 
- >>004
-Compact Nodes >>kpz
-Split Nodes >>k6d
-Generating a node ID manually >>rfp
-Metadata >>00x
-Node list >>01i
+| Inline Nodes >>004
+| Compact Nodes >>kpz
+| Generating a node ID manually >>rfp
+| Node Metadata >>00x
+| The Node List >>01i
 
 
 /-- ID:01j

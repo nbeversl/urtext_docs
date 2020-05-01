@@ -1,14 +1,11 @@
 About Urtext
    
-{{ What Urtext Is 
 
     {{ Description
         
-        Urtext is a syntax and interpreter for writing using plaintext. The syntax permits embedding of structural and instructional code into the text itself. 
-
-        Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A collection of nodes constitutes a "project"; the interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files.
+        Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A collection of nodes constitutes a "project"; the interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The syntax permits embedding of structural and instructional code into the text itself. 
      
-        The present interpreter for Urtext is in Python and can be used wherever Python is running. There is no reason, however, that equivalent or variant interpreters could not be created in any language or editing environment. Using Urtext in a text editor requires an additional "wrapper" to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS). 
+        The present interpreter for Urtext is in Python and can be used wherever Python is running. Equivalent or variant interpreters could be created in any language or editing environment. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS). 
  
         /-- ID:yv2 --/ }}
 
@@ -16,7 +13,7 @@ About Urtext
         
         Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for organizing text.
     
-        Urtext consolidates content, markup and instructions (scripting) into a single compilable syntax. Though it can hyperlink many documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible content. Everything the interpreter reads is visible to the author.
+        Urtext consolidates content, markup and instructions (scripting) into a single compilable syntax. Though it can hyperlink many documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible content. Everything the interpreter reads is visible at all times.
 
          /-- ID:h8z --/ }}
 
@@ -36,13 +33,13 @@ About Urtext
  
      /-- ID:lhs --/ }}
 
-    {{  Requirements, Features, Benefits 
+    {{  Project Requirements and Features 
 
         Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they cannot be found together in one single existing tool; this was the motivation for creating Urtext.
 
-            - Urtext uses plain text files. Plaintext is fast, human-readable, flexible, cross-platform, device-portable, and future-proof.
+            - It uses plain text files. Plaintext is fast, human-readable, flexible, cross-platform, device-portable, and future-proof.
 
-            - Urtext can compile, organize, and link content spread across hundreds or thousands of files.
+            - It can compile, organize, and link content spread across hundreds or thousands of files.
 
             - Urtext files and content elements can be linked to one another in tree-like, recursive (tangled), and other non-hierarchical ways.
 
@@ -52,17 +49,17 @@ About Urtext
 
             - It is usable across multiple platforms and devices.
                
-            - It can incorporate other plaintext syntaxes.
+            - It can incorporate other plaintext syntaxes, including other markup languages and programming languages.
    
             - There is no need to interact directly with the file system (creating, naming, saving, organizing files). File creation, naming and management is handled for you, unless you want to manually name files.
       
-            - Does not require years to master.
-   
+            - Cascading complexity; use only the parts you need. Does not take months/years to learn.
+
             - Future-proof. No reliance on anything that may not exist in 5 or 100 years. Urtext files themselves are in plaintext, which will never become unusable. The interpreter/compiler could theoretically be implemented in any sufficiently capable language desired, current, past or future.
    
-            - Does not depend on a cloud service. Though cloud services can be used to sync project files among devices, the interpreter itself is made to operate locally, not depending on an internet cellular data connection; content wholly resides on the device being used.
+            - Does not depend on a cloud service. Though cloud services can be used to sync project files among devices, the interpreter itself is made to operate locally; content wholly resides on the device being used.
 
-            - Being open source, Urtext is extensible, hackable and customizable to specific needs. See | Extension and Customization >01o for information on how to modify it for your own purposes.
+            - Being open source, Urtext is extensible, hackable and customizable to specific needs.
 
             Being in plaintext and having a syntax specification, it can also be used with:
 
@@ -71,8 +68,8 @@ About Urtext
             - Version control (using Git, for example).
 
         /--ID:006--/}}
-/-- ID: hdf --/
-    }}                                                                                
+
+                                                                           
 /-- ID:013
 index:01
 Timestamp:<Wed., Jun. 05, 2019, 10:01 PM>

@@ -12,13 +12,10 @@ Compact Nodes >j6t
 ├── can have arbitrary other metadata >xlc
 ├── become child nodes of their containing node. >hiz
 └── Compact Nodes >ucj
-/-- 
-ID: ucj
-defined in: >j6t
---/}}
+/-- ID: ucj; defined in: >j6t --/}}
 
-[[ ID:ucj
-	tree:j6t
+[[ ID(ucj)
+	TREE(j6t)
  ]]
 
 /-- ID:j6t

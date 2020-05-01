@@ -8,34 +8,20 @@ For contents requiring only a single line, such as list items, very short notes,
 
 	{{ Creating Compact Nodes
 
-		{{ 	Sublime /-- id:qwn --/ /-- tags:sublime --/
+		{{	Sublime /-- id:qwn --/ /-- tags:sublime --/
 
 			Shift-Control-^ 
 
-% 	 		Pythonista /-- id:0yn --/ /-- tags:pythonista --/
+		}}{{
+
+			Pythonista /-- id:0yn --/ /-- tags:pythonista --/
 
 			Urtext Keys : ^
 
-% 			Python
+	 }}
+	 }}
 
-			%%-PYTHON
-
-			UrtextProject.add_compact_node(date=None, contents='', metadata={})
-			"""
-			Kwargs:
-				date (datetime) : Optional datestamp for the compact node
-				contents (string) :
-				metadata (dict): optional key/value metadata pairs
-            Returns:
-               string: the contents of the new node, which can then be manually inserted using a text editor.
-			"""
-
-			%%-END /-- tags:python --/ /-- id: xor --/ }}
-
-
-
-	 /-- id: 3t5 --/ }}
-
-/-- ID:kpz
+/-- 
+id:kpz
 Timestamp:<Thu., Oct. 31, 2019, 12:05 PM>
 --/

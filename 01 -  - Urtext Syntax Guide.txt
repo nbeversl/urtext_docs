@@ -1,0 +1,212 @@
+Urtext Syntax Guide
+
+Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dynamic definition wrapper. The following syntax applies:
+
+	 >0y2	Link to another node by ID. 
+	 		More information: | Links >0y2
+
+	 | 		Placed before a node link, dynamically populates the node title. 
+	 		Example and more info: | Dynamically Titled Links >4vu
+
+	 >>xxx	Node Pointer
+	 		Embeds the specified node as though it were included inline using {{ }}
+	 		More information: | Pointers >lmu
+
+	 ^		Compact Node marker. Must be the first non-whitespace character on a line.
+	 		More information: | Compact Nodes >j6t
+
+	{{  }}	Subnode	wrapper. Can appear anywhere. Can be nested aribrarily deep.
+			More information: | Inline Nodes >004
+
+	/-- --/	Metadata wrapper
+
+		Example:
+
+		/--
+			
+			[key]:[value]		
+			Metadata Pair, can contain any keys/values and optional timestamp.
+				- Pairs must be separated by a semicolon or a new line
+				- Keys are case-insensitive.
+				- Keys must be single words. Underscore/dash character is valid.
+				- Some keys are reserved (see below). 
+
+			;					
+			Separator for metadata key/value pairs
+
+			|															
+			Separator for multiple values in metadata pairs
+
+			Reserved Metadata Keys, With Example Vales:
+
+				id: znj
+				Uniquely identifies the node in the project. Required in strict mode.
+				more info: | More About Node IDs >01q
+
+				index:01					
+				Sets the index (priority) of the node in the project. 
+				more info: | index >00z
+
+				timestamp:<Wed., Jun. 05, 2019, 10:01 PM>					
+				Timestamp. more info: | Timestamps >005
+
+				title: Urtext Syntax Guide								
+				Overrides the Node Title. more info: | title (overrides the default title) >00y
+
+				flags:								
+				Sets node behavior. More info: | flags >cwb
+
+				from:Joes-iMac
+				Hostname of originating computer/device.
+
+		--/
+
+	[[ ]]	Dynamic Definition Wrapper. 
+
+			Template:
+			[[ FUNCTION(key:value:<timestamp> operator) ]]
+
+			Examples:
+			
+			[[ 	ID(xxx) 	Target Node id to dynamically populate with output
+
+				INCLUDE()  	Nodes to include. Accepts one or multiple parameters.
+							
+							Examples:
+
+							INCLUDE(all)	
+							Includes all nodes in the project
+
+							INCLUDE(indexed)	
+							Includes all nodes in the project that have an index
+
+							INCLUDE(key:value)	
+							Includes all nodes with the given value in the given key
+
+								Operators:
+
+								"and"
+								INCLUDE(key:value and other_key:other_value)
+								Includes nodes matching both `key:value` and `other_key:other_value`
+
+								"or"
+								INCLUDE(key:value or other_key:other_value)
+								Includes any nodes matching either or both of `key:value` and `other_key:other_value`
+
+								"all_projects"
+								INCLUDE(all_projects)
+								Expands included nodes to include all projects in the project list.
+
+								Optional Timestamp:
+								
+								INCLUDE(tags:cello:<2019> or tags:teaching:<2019>)
+								Includes any nodes matching either or both of the key/value pairs within the corresponding timestamp.
+
+				EXCLUDE()	Accepts the same parameters as INCLUDE()
+							Evaluated after INCLUDE(), excludes the specified nodes from the result.
+
+				SORT()		Sorts the results. Accepts multiple parameters:
+
+							SORT(
+								$key_name		Sorts by the value of the given key. Default is alphabetical.	
+								timestamp   	Sort by timestamp instead of alphabetical
+								last_accessed	Sort by last accessed
+								reverse			Reverse sort order 
+								)
+
+				LIMIT()		Limits the output to the specified number of results.
+
+							Example:
+							LIMIT(30)
+
+				SHOW()		Formats the output, overriding defaults. 
+							Accepts arbitrary text, unicode newline characters (\n, \r), and words preceded (without whitespace) by `$`, which are are evaluated as metadata keys. Key names are
+							not displayed, only values. Add keynames manually if you want them included.
+
+							Example:
+							SHOW(Author: $author, Date: $date\n)
+
+							In addition to user-defined metadata keys, the following tokens are valid:
+
+							SHOW(
+
+								$title 
+								Displays the node title, default or via the `title` meta key
+
+								$link
+								Displays a link to the node
+
+								$date 
+								Displays the node's date in the project's default timestamp format
+
+								$meta
+								Shorthand to show all metadata for every node, formatted as by "consolidate metadata"
+
+								$contents:120
+								Displays the contents of the node. Optional excerpt/length specifier after the colon
+
+								)
+
+				TREE(xxx)		Outputs a tree of the hierarchy of nested nodes, with the specified node as root.
+								Does not incorporate INCLUDE() or EXCLUDE().
+
+				TIMELINE()		Outputs the specific nodes as a timeline.
+
+								Accepts one of two arguments. If more than one is present, only the first one is
+								evaluated.
+
+								TIMELINE(meta)		Uses dates from node metadata
+
+								TIMELINE(inline)	Parses dates from inline timestamps
+
+				FORMAT()		Formats the exported output. Accepts one or more predefined arguments:
+								
+								FORMAT(preformat) 	
+								Wraps preformatted text (trees, etc.) in backticks to preserve formatting in 
+								Markdown contexts. Used only with EXPORT().
+
+								FORMAT(multiline_meta)
+								Places dynamic node metadata on separate lines instead of separated by ;
+
+								FORMAT(indent:30)
+								Indents the dynamic node by the specified number of spaces
+
+				METADATA()		Applies the given metadata to the output node. Accepts any number of key/value
+								pairs with optional timestamps.
+
+
+				SEARCH()		Returns search results of the string passed as an argument.
+								Searches are case-insensitive.
+
+								Example:
+								SEARCH("western civilization")
+
+				
+
+				EXPORT()		Exports the specified node id to a file and/or other node in the project.
+
+								EXPORT (
+									source:xxx		Specifies the source node id
+									plaintext 		Export as plaintext (default)
+									markdown		Export as markdown
+									html			Export as HTML
+								)
+
+				FILE()			Used only with EXPORT(). Outputs the export to the specified filename.
+
+								FILE(myfile.txt)
+
+				TAG_ALL()		Applies the specific metadata to all nodes in the target node. Accepts any number
+								of key/value pairs with optional timestamps.
+
+								Example:
+								TAG_ALL(
+									tasks:due_soon		key/value pair to apply
+									recursive			(optional) applies metadata also to all descendants	
+								)
+
+				Notice the dynamic definition syntax ignores whitespace and arbitrary text outside of functions.
+
+			]] 
+
+/-- ID: znj --/

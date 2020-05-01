@@ -1,28 +1,23 @@
-Urtext Documentation
-
-Version: 0.1.5-alpha
-License: GNU General Public License 3.0
+Urtext | Version: 0.2.0-alpha
+Usage Guide and Reference
 
 {{
-Table of Contents
-Urtext Documentation >a5m
+Table of Contents 
+Urtext  Version: 0.2.0-alpha >a5m
+├── Quick Start and Guides >z7t
+│   ├── Urtext Syntax Guide >znj
+│   └── Urtext Action Guide >e1x
 ├── About Urtext >013
-│   └── What Urtext Is >hdf
-│       ├── Description >yv2
-│       ├── Comparison To Other Tools >h8z
-│       ├── Uses >lhs
-│       └── Requirements, Features, Benefits >006
+│   ├── Description >yv2
+│   ├── Comparison To Other Tools >h8z
+│   ├── Uses >lhs
+│   └── Project Requirements and Features >006
 ├── Using this document >009
 │   ├── With Sublime Text >e6m
 │   └── Using Pythonista Urtext >lvf
 ├── Setup >003
-│   ├── Sublime Text Implementation Setup >01u
-│   │   └── Dependencies and Installation (Sublime) >2fn
-│   ├── Pythonista Urtext Implementation Setup >os4
 │   ├── Making a New Project >dce
-│   │   ├── Sublime >00a
-│   │   ├── Pythonista >rs8
-│   │   └── Python >n2m
+│   │   └── Sublime >00a
 │   ├── Using/Adding Existing Files >00b
 │   │   ├── Sublime >rij
 │   │   ├── Pythonista >ouh
@@ -33,7 +28,8 @@ Urtext Documentation >a5m
 │       ├── Hiding Tabs >015
 │       ├── Hiding Line Numbers >01e
 │       ├── Full Screen / Distraction Free Mode >002
-│       └── Disable Prompts for File Reload >023
+│       ├── Disable Prompts for File Reload >023
+│       └── Remove Indent Guides >1rc
 ├── Nodes >01j
 │   ├── Node Identity (Node IDs) >01h
 │   ├── File Level Nodes >01g
@@ -51,20 +47,10 @@ Urtext Documentation >a5m
 │   ├── Compact Nodes >kpz
 │   │   ├── Example Compact Node >d7b
 │   │   │   └── Example inline node within the compact node >9up
-│   │   └── Creating Compact Nodes >3t5
-│   │       ├── Sublime >qwn
-│   │       ├── Pythonista >0yn
-│   │       └── Python >xor
-│   ├── Split Nodes >k6d
-│   │   ├── First Example Split Node >jym
-│   │   ├── Second Example split Node >ftz
-│   │   └── Shortkeys to Create Split Nodes >0mn
-│   │       ├── Sublime >40f
-│   │       └── Pythonista >agg
+│   │   └── Sublime >qwn
+│   │       └── Pythonista >0yn
 │   ├── Generating a node ID manually >rfp
-│   │   ├── Sublime >7n6
-│   │   ├── Pythonista >bhk
-│   │   └── Python >0ow
+│   │   └── Sublime >7n6
 │   ├── Node Metadata >00x
 │   │   ├── Reserved Metadata Keys >011
 │   │   │   ├── title (overrides the default title) >00y
@@ -77,45 +63,26 @@ Urtext Documentation >a5m
 │   │           └── Timezone List >zh1
 │   └── The Node List >01i
 │       └── Opening the Node List >hl7
-│           ├── Sublime >p78
-│           ├── Pythonista >c3y
-│           └── Python >h8c
-├── Dynamic Nodes >e82
-│   ├── Description & Purpose >h0y
-│   ├── Syntax >igk
-│   ├── Creating a Dynamic Node >yon
-│   ├── Definition keys/values >37h
-│   │   ├── id >02t
-│   │   ├── include >a3r
-│   │   ├── exclude >e18
-│   │   ├── sort >05f
-│   │   ├── metadata >oa2
-│   │   ├── tree >4mb
-│   │   ├── export >l2c
-│   │   └── tag_all >yin
-│   ├── Example 1 : List >01r
-│   └── Example 2 : Tree >029
+│           └── Sublime >p78
 ├── Trees >00h
 │   ├── From any given node >00f
 │   └── From the root >00g
 ├── Links and Pointers >00j
-│   ├── Simple Links >0y2
+│   ├── Links >0y2
 │   │   └── Sublime Text tools to help with linking >00m
 │   ├── Dynamically Titled Links >4vu
 │   ├── Opening Links >01w
 │   │   ├── Sublime >osu
-│   │   ├── Pythonista >iy8
-│   │   └── Python >eea
+│   │   └── Pythonista >iy8
 │   ├── Viewing Linked Relationships >00u
 │   ├── Linking to outside resources >00q
 │   │   ├── Web >00o
 │   │   └── Files >00p
 │   ├── Pointers >lmu
-│   │   ├── Example Child Node Using a Node Pointer >001
 │   │   ├── Duplicate Pointers >00t
 │   │   │   └── Example Child Node Using a Node Pointer >001
 │   │   └── Recursive Node Pointers >6ct
-│   │       ├── RECURSION : Urtext Documentation >a5m
+│   │       ├── ? (Missing Node): >! RECURSION 2:a5m
 │   │       └── Example Recursive Node Tree >01n
 │   └── Traverse Mode >00w
 │       └── Word Wrap in Traverse Mode >xci
@@ -133,21 +100,20 @@ Urtext Documentation >a5m
 │       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
 │       └── Search Using Dynamic Nodes >uy4
 ├── Filenames >01m
-├── Extension and Customization >01o
+├── Development >01o
+│   └── Make Installation Easier >mh8
 └── File History >prp
-/-- 
-title: Table of Contents
-flags: exclude_from_tree
-ID: 01a
-defined in: >029
---/}}
+/-- ID: e5j; flags: exclude_from_tree ; title: Table of Contents ; defined in: >029 --/}}
 
+{{  Quick Start and Guides
+| Urtext Syntax Guide >>znj
+|  ?  >>e1x
+/-- id: z7t; timestamp: <Thu., Apr. 30, 2020, 01:16 PM> --/ }}
 | About Urtext >>013
-
 
 {{  Using this document
 
-    This is a documentation of Urtext, written in Urtext. It can be used in an Urtext implementation as both a reference manual and an example project. If you're reading this on Github, the README.MD file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded and used in Urtext. Being in plaintext, the project is also human readable.
+    This is a documentation of Urtext, written and compiled in Urtext. It can be used as both a reference manual and an example project. If you're reading this on Github, the `README.MD` file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded.
 
     {{ With Sublime Text
 
@@ -166,22 +132,23 @@ defined in: >029
 
         - Set up Urtext in Pythonista. Follow the instructions in | Pythonista Urtext Implementation Setup >os4
         - Clone the documentation repository into your base Urtext path and it will be accessible from within Pythonista Urtext.
-
       /-- id: lvf --/ }}
 
    /--ID:009--/}}
 
-   
+
 | Setup >>003
 | Nodes >>01j
-| Dynamic Nodes >>e82
 | Trees >>00h
 | Links and Pointers >>00j
 | Using Multiple Projects at a Time >>ipy
 | Converting and Exporting >>ezg
 | Search >>k67
 | Filenames >>01m
-| Extension and Customization >>01o
+| Development >>01o
 | File History >>prp
+
+
+License: GNU General Public License 3.0
 
 /-- ID: a5m --/
