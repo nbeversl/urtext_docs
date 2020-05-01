@@ -2,12 +2,8 @@ Search
 
    {{  Full Text Search 
     
-    Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments. Urtext uses the `whoosh` module by Matt Chaput, which generates indexes from text content that are stored ("pickled") to disk for fast queries. 
-
-	{{  Building the Index
-	    Anytime a new project is instantiated, Urtext creates an `index` folder inside the project folder for storing the search index. This is maintained by Urtext/whoosh and requires no user interaction. The index is initially empty. Before using it for the first time, select `Urtext: Rebuild Search Index` from the command palette. This will take less than a second to several seconds or longer, depending on the number of files. From then on, nodes are reindexed every time a file is saved. If the index gets out of date/sync with the project for any reason (you notice search terms are not being found, or matches are found that no longer exist), use `Urtext: Rebuild Search Index` again.
-	/-- id: xqi --/ }}
-
+    Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments.
+    
 	{{	Searching
 
 		^ Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes. /-- id: k8v; timestamp: <Mon., Feb. 24, 2020, 01:05 PM> --/
@@ -33,75 +29,74 @@ Search
 
         {{
 Example Search Results 
+Opening Links >01w
+Python >xor
+Sublime Text Implementation Setup >01u
+Metadata List >zzy
+More About Node IDs >01q
+Sublime >p78
+Uses >lhs
+iPhone/iPad/iOS >01y
+Syntax Highlighting >01d
+Comparison To Other Tools >h8z
+0.1.11-alpha >01l
+Filenames >01m
+Description >yv2
+Node Identity (Node IDs) >01h
+The Node List >01i
+Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+Project Naming (Identification) >tgp
+Pythonista >xcx
+Full Text Search >4p9
+Search Using Dynamic Nodes >uy4
+Disable Prompts for File Reload >023
+0.1.14-alpha >022
+About Urtext >013
+Download and Install Dependencies Manually >774
+Quick Start and Guides >z7t
+Example : Urtext Documentation Exported in Markdown to a File >m9d
 Projects, Structure and Compiling >01x
 Using a Sublime Project >c3n
-0.1.14-alpha >022
-Disable Prompts for File Reload >023
-More About Node IDs >01q
-Sublime Text Implementation Setup >01u
-Opening Links >01w
-Node Identity (Node IDs) >01h
-Filenames >01m
-Building the Index >xqi
-Syntax Highlighting >01d
-Using Multiple Projects at a Time >ipy
-Pythonista Urtext Implementation Setup >os4
-Pythonista >hrv
-Sublime >p78
-Sublime >7n6
-Urtext  Version: 0.2.0-alpha >a5m
-Python >fv2
-Make Installation Easier >mh8
-Download and Install Dependencies Manually >774
-Urtext Action Guide >e1x
-Metadata List >zzy
-About Urtext >013
-Python >eea
-Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
-Inline Nodes >004
-Timestamps >005
-The Node List >01i
-Viewing Linked Relationships >00u
-Full Text Search >4p9
-Project Naming (Identification) >tgp
-Syntax Highlighting of Inline Nodes (Sublime) >koe
-Using Pythonista Urtext >lvf
-Sublime >rij
-0.1.11-alpha >01l
-Full Screen / Distraction Free Mode >002
-Setup >003
-Project Requirements and Features >006
-Python >83e
-Description >yv2
-Python >b44
-Example : Urtext Documentation Exported in Markdown to a File >m9d
-Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
 Urtext Syntax Guide >znj
+Sublime >7n6
+Pythonista >0yn
+Python >b44
+Sublime >rij
+Python >83e
+Make Installation Easier >mh8
 Dependencies and Installation (Sublime) >2fn
-With Sublime Text >e6m
-Quick Start and Guides >z7t
+From the root >00g
 tag_all >yin
-iPhone/iPad/iOS >01y
-Node Metadata >00x
-Pythonista >xcx
-File History >prp
-Download Dependencies from a Monorepo >arl
-Traverse Mode >00w
-Timeline View >00k
+With Sublime Text >e6m
+Pythonista >hrv
+Using this document >009
+Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+Setup >003
+Full Screen / Distraction Free Mode >002
+Timestamps >005
+Inline Nodes >004
+Project Requirements and Features >006
 Converting and Exporting >ezg
 Recursive Node Pointers >6ct
-project_settings >00l
+Download Dependencies from a Monorepo >arl
+Using Multiple Projects at a Time >ipy
+Python >fv2
+Python >eea
+Timeline View >00k
 Sublime Text tools to help with linking >00m
+project_settings >00l
 Sublime >00a
+Urtext  Version: 0.2.0-alpha >a5m
 From any given node >00f
-From the root >00g
-Using this document >009
-Comparison To Other Tools >h8z
-Search Using Dynamic Nodes >uy4
-Pythonista >0yn
-Python >xor
-Uses >lhs
-/-- ID: 3x3; flags: exclude_from_tree ; title: Example Search Results ; defined in: >uy4 --/}}
+Node Metadata >00x
+Syntax Highlighting of Inline Nodes (Sublime) >koe
+Pythonista Urtext Implementation Setup >os4
+Using Pythonista Urtext >lvf
+File History >prp
+Viewing Linked Relationships >00u
+Traverse Mode >00w
+Urtext Action Guide >e1x
+/-- title: Example Search Results ; flags: exclude_from_tree ; defined in: >uy4; ID: 3x3 --/}}
 
  /-- id: uy4 --/ }}
 

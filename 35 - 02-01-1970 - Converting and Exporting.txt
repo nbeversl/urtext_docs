@@ -13,13 +13,13 @@ Converting and Exporting
 
 {{  Example : Urtext Documentation Exported in Markdown to a File
 
-    The following dynamic definition exports this entire documentation (from its root node | Urtext Documentation >a5m ) in Markdown format to a file called documentation.md:
-    [[ 
+    The following dynamic definition exports this entire documentation (from its root node | Urtext  Version: 0.2.0-alpha >a5m ) in Markdown format to a file called documentation.md:
+
+    [[ ss
         FILE(README.md)
         EXPORT(source:a5m markdown)
         FORMAT(preformat)
-        
-     ]]
+     ]]ss
 
 
 /-- id: m9d --/ }}

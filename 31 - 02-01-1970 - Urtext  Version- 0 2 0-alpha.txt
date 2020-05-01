@@ -94,7 +94,6 @@ Urtext  Version: 0.2.0-alpha >a5m
 │   └── Example : Fragment Exported to HTML >baq
 ├── Search >k67
 │   └── Full Text Search >4p9
-│       ├── Building the Index >xqi
 │       ├── Searching >mzj
 │       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
 │       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
@@ -103,11 +102,11 @@ Urtext  Version: 0.2.0-alpha >a5m
 ├── Development >01o
 │   └── Make Installation Easier >mh8
 └── File History >prp
-/-- ID: e5j; flags: exclude_from_tree ; title: Table of Contents ; defined in: >029 --/}}
+/-- title: Table of Contents ; flags: exclude_from_tree ; defined in: >029; ID: e5j --/}}
 
 {{  Quick Start and Guides
 | Urtext Syntax Guide >>znj
-|  ?  >>e1x
+| Urtext Action Guide >>e1x
 /-- id: z7t; timestamp: <Thu., Apr. 30, 2020, 01:16 PM> --/ }}
 | About Urtext >>013
 
