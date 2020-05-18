@@ -1,106 +1,106 @@
 Urtext  Version: 0.2.0-alphaUrtext | Version: 0.2.0-alpha
 Usage Guide and Reference
 # Table of Contents
-Table of Contents 
-Urtext  Version: 0.2.0-alpha[Urtext  Version: 0.2.0-alpha](#urtext--version:-0.2.0-alpha)
-├── Quick Start and Guides[Quick Start and Guides](#quick-start-and-guides)
-│   ├── Urtext Syntax Guide[Urtext Syntax Guide](#urtext-syntax-guide)
-│   │   └── ? (Missing Node): >! (Missing Node)[ MISSING LINK : xxx ] 
-│   └── Urtext Action Guide[Urtext Action Guide](#urtext-action-guide)
-├── About Urtext[About Urtext](#about-urtext)
-│   ├── Description[Description](#description)
-│   ├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
-│   ├── Uses[Uses](#uses)
-│   └── Project Requirements and Features[Project Requirements and Features](#project-requirements-and-features)
-├── Using this document[Using this document](#using-this-document)
-│   ├── With Sublime Text[With Sublime Text](#with-sublime-text)
-│   └── Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
-├── Using/Adding Existing Files[Using/Adding Existing Files](#using/adding-existing-files)
-│   ├── Sublime[Sublime](#sublime)
-│   ├── Pythonista[Pythonista](#pythonista)
-│   ├── Using a Sublime Project[Using a Sublime Project](#using-a-sublime-project)
-│   └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
-│       ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
-│       ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
-│       ├── Hiding Line Numbers[Hiding Line Numbers](#hiding-line-numbers)
-│       ├── Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
-│       ├── Disable Prompts for File Reload[Disable Prompts for File Reload](#disable-prompts-for-file-reload)
-│       ├── Remove Indent Guides[Remove Indent Guides](#remove-indent-guides)
-│       └── Save on Focus Lost[Save on Focus Lost](#save-on-focus-lost)
-├── Nodes[Nodes](#nodes)
-│   ├── Node Identity (Node IDs)[Node Identity (Node IDs)](#node-identity-node-ids)
-│   ├── File Level Nodes[File Level Nodes](#file-level-nodes)
-│   │   └── Creating a File Level Node[Creating a File Level Node](#creating-a-file-level-node)
-│   │       ├── Sublime[Sublime](#sublime)
-│   │       ├── Pythonista[Pythonista](#pythonista)
-│   │       └── Python[Python](#python)
-│   ├── Inline Nodes[Inline Nodes](#inline-nodes)
-│   │   ├── Example inline node[Example inline node](#example-inline-node)
-│   │   ├── Creating Inline Nodes[Creating Inline Nodes](#creating-inline-nodes)
-│   │   │   ├── Sublime[Sublime](#sublime)
-│   │   │   ├── Pythonista[Pythonista](#pythonista)
-│   │   │   └── Python[Python](#python)
-│   │   └── Syntax Highlighting of Inline Nodes (Sublime)[Syntax Highlighting of Inline Nodes (Sublime)](#syntax-highlighting-of-inline-nodes-sublime)
-│   ├── Compact Nodes[Compact Nodes](#compact-nodes)
-│   │   ├── Example Compact Node[Example Compact Node](#example-compact-node)
-│   │   │   └── Example inline node within the compact node[Example inline node within the compact node](#example-inline-node-within-the-compact-node)
-│   │   └── Sublime[Sublime](#sublime)
-│   │       └── Pythonista[Pythonista](#pythonista)
-│   ├── Generating a node ID manually[Generating a node ID manually](#generating-a-node-id-manually)
-│   ├── Node Metadata[Node Metadata](#node-metadata)
-│   │   ├── Reserved Metadata Keys[Reserved Metadata Keys](#reserved-metadata-keys)
-│   │   │   ├── title (overrides the default title)[title (overrides the default title)](#title-overrides-the-default-title)
-│   │   │   ├── index[index](#index)
-│   │   │   └── flags[flags](#flags)
-│   │   │       └── - exclude_from_tree[- exclude_from_tree](#--exclude_from_tree)
-│   │   └── Timestamps[Timestamps](#timestamps)
-│   │       ├── Timeline View[Timeline View](#timeline-view)
-│   │       └── Time Zones[Time Zones](#time-zones)
-│   │           └── Timezone List[Timezone List](#timezone-list)
-│   └── The Node List[The Node List](#the-node-list)
-│       └── Opening the Node List[Opening the Node List](#opening-the-node-list)
-│           ├── Sublime[Sublime](#sublime)
-│           ├── Pythonista[Pythonista](#pythonista)
-│           └── Python[Python](#python)
-├── Trees[Trees](#trees)
-│   ├── From any given node[From any given node](#from-any-given-node)
-│   └── From the root[From the root](#from-the-root)
-├── Links and Pointers[Links and Pointers](#links-and-pointers)
-│   ├── Links[Links](#links)
-│   │   └── Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
-│   ├── Dynamically Titled Links[Dynamically Titled Links](#dynamically-titled-links)
-│   ├── Opening Links[Opening Links](#opening-links)
-│   │   ├── Sublime[Sublime](#sublime)
-│   │   └── Pythonista[Pythonista](#pythonista)
-│   ├── Viewing Linked Relationships[Viewing Linked Relationships](#viewing-linked-relationships)
-│   ├── Linking to outside resources[Linking to outside resources](#linking-to-outside-resources)
-│   │   ├── Web[Web](#web)
-│   │   └── Files[Files](#files)
-│   ├── Pointers[Pointers](#pointers)
-│   │   ├── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
-│   │   ├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
-│   │   │   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
-│   │   └── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-│   │       ├── ? (Missing Node): > !RECURSION 3:
-│   │       └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
-│   └── Traverse Mode[Traverse Mode](#traverse-mode)
-│       └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
-├── Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
-│   ├── Project Naming (Identification)[Project Naming (Identification)](#project-naming-identification)
-│   └── Linking Between Projects[Linking Between Projects](#linking-between-projects)
-├── Converting and Exporting[Converting and Exporting](#converting-and-exporting)
-│   ├── Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
-│   └── Example : Fragment Exported to HTML[Example : Fragment Exported to HTML](#example-:-fragment-exported-to-html)
-├── Search[Search](#search)
-│   └── Full Text Search[Full Text Search](#full-text-search)
-│       ├── Searching[Searching](#searching)
-│       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe[Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe](#sublime-:-select-`urtext:-search`-from-the-command-pallete.-this-provides-an-input-panel-on-the-lowe)
-│       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the[Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the](#pythonista-:-use-the-"?"-urtext-button.-results-will-be-updated-in-real-time-in-the-view-behind-the)
-│       └── Search Using Dynamic Nodes[Search Using Dynamic Nodes](#search-using-dynamic-nodes)
-├── Filenames[Filenames](#filenames)
-├── Development[Development](#development)
-│   └── Make Installation Easier[Make Installation Easier](#make-installation-easier)
-└── File History[File History](#file-history)
+	Table of Contents 
+	Urtext  Version: 0.2.0-alpha >a5m
+	├── Quick Start and Guides >z7t
+	│   ├── Urtext Syntax Guide >znj
+	│   │   └── ? (Missing Node): >! (Missing Node) >xxx
+	│   └── Urtext Action Guide >e1x
+	├── About Urtext >013
+	│   ├── Description >yv2
+	│   ├── Comparison To Other Tools >h8z
+	│   ├── Uses >lhs
+	│   └── Project Requirements and Features >006
+	├── Using this document >009
+	│   ├── With Sublime Text >e6m
+	│   └── Using Pythonista Urtext >lvf
+	├── Using/Adding Existing Files >003
+	│   ├── Sublime >rij
+	│   ├── Pythonista >ouh
+	│   ├── Using a Sublime Project >c3n
+	│   └── Sublime Text Interface Tips >000
+	│       ├── Syntax Highlighting >01d
+	│       ├── Hiding Tabs >015
+	│       ├── Hiding Line Numbers >01e
+	│       ├── Full Screen / Distraction Free Mode >002
+	│       ├── Disable Prompts for File Reload >023
+	│       ├── Remove Indent Guides >1rc
+	│       └── Save on Focus Lost >sqq
+	├── Nodes >01j
+	│   ├── Node Identity (Node IDs) >01h
+	│   ├── File Level Nodes >01g
+	│   │   └── Creating a File Level Node >ekz
+	│   │       ├── Sublime >xo8
+	│   │       ├── Pythonista >xcx
+	│   │       └── Python >83e
+	│   ├── Inline Nodes >004
+	│   │   ├── Example inline node >00e
+	│   │   ├── Creating Inline Nodes >rbs
+	│   │   │   ├── Sublime >8fh
+	│   │   │   ├── Pythonista >hrv
+	│   │   │   └── Python >fv2
+	│   │   └── Syntax Highlighting of Inline Nodes (Sublime) >koe
+	│   ├── Compact Nodes >kpz
+	│   │   ├── Example Compact Node >d7b
+	│   │   │   └── Example inline node within the compact node >9up
+	│   │   └── Sublime >qwn
+	│   │       └── Pythonista >0yn
+	│   ├── Generating a node ID manually >rfp
+	│   ├── Node Metadata >00x
+	│   │   ├── Reserved Metadata Keys >011
+	│   │   │   ├── title (overrides the default title) >00y
+	│   │   │   ├── index >00z
+	│   │   │   └── flags >cwb
+	│   │   │       └── - exclude_from_tree >1e3
+	│   │   └── Timestamps >005
+	│   │       ├── Timeline View >00k
+	│   │       └── Time Zones >7w6
+	│   │           └── Timezone List >zh1
+	│   └── The Node List >01i
+	│       └── Opening the Node List >hl7
+	│           ├── Sublime >p78
+	│           ├── Pythonista >c3y
+	│           └── Python >h8c
+	├── Trees >00h
+	│   ├── From any given node >00f
+	│   └── From the root >00g
+	├── Links and Pointers >00j
+	│   ├── Links >0y2
+	│   │   └── Sublime Text tools to help with linking >00m
+	│   ├── Dynamically Titled Links >4vu
+	│   ├── Opening Links >01w
+	│   │   ├── Sublime >osu
+	│   │   └── Pythonista >iy8
+	│   ├── Viewing Linked Relationships >00u
+	│   ├── Linking to outside resources >00q
+	│   │   ├── Web >00o
+	│   │   └── Files >00p
+	│   ├── Pointers >lmu
+	│   │   ├── Example Child Node Using a Node Pointer >001
+	│   │   ├── Duplicate Pointers >00t
+	│   │   │   └── Example Child Node Using a Node Pointer >001
+	│   │   └── Recursive Node Pointers >6ct
+	│   │       ├── ? (Missing Node): >! RECURSION 2:a5m
+	│   │       └── Example Recursive Node Tree >01n
+	│   └── Traverse Mode >00w
+	│       └── Word Wrap in Traverse Mode >xci
+	├── Using Multiple Projects at a Time >ipy
+	│   ├── Project Naming (Identification) >tgp
+	│   └── Linking Between Projects >7lx
+	├── Converting and Exporting >ezg
+	│   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+	│   └── Example : Fragment Exported to HTML >baq
+	├── Search >k67
+	│   └── Full Text Search >4p9
+	│       ├── Searching >mzj
+	│       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+	│       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+	│       └── Search Using Dynamic Nodes >uy4
+	├── Filenames >01m
+	├── Development >01o
+	│   └── Make Installation Easier >mh8
+	└── File History >prp
 # Quick Start and Guides  
 
 This documentation is in progress, still contains many formatting issues, and is somewhat behind development and features. Please post any questions as issues (https://github.com/nbeversl/urtext-docs/issues).

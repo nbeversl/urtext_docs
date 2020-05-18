@@ -82,7 +82,7 @@ Urtext  Version: 0.2.0-alpha >a5m
 │   │   ├── Duplicate Pointers >00t
 │   │   │   └── Example Child Node Using a Node Pointer >001
 │   │   └── Recursive Node Pointers >6ct
-│   │       ├── ? (Missing Node): > !RECURSION 3:
+│   │       ├── ? (Missing Node): >! RECURSION 2:a5m
 │   │       └── Example Recursive Node Tree >01n
 │   └── Traverse Mode >00w
 │       └── Word Wrap in Traverse Mode >xci
