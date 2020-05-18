@@ -1,7 +1,9 @@
-Setup
+{{ Installation
 
 | Sublime Text Implementation Setup >>01u  
 | Pythonista Urtext Implementation Setup >>os4
+/-- id: k74; created: <Tue., May. 05, 2020, 12:56 PM> --/ }}
+
 
 {{  Making a New Project
 
@@ -33,21 +35,6 @@ Setup
     {{ Pythonista
 
     	Not currently implemented.  /-- tags:pythonista --/ /-- id: ouh --/ }}
-
-    {{  Python /-- tags:python --/
-    	
-    	Pass the keyword argument `import_project=True`:
-
-    	%%-PYTHON
-
-			from urtext.project import UrtextProject
-			path = '~/users/someone/path/to/project/folder'
-			my_project = UrtextProject(path, import_project=True)
-
-		%%-END
-
-    /-- id: b44 --/ }}
-    /-- ID:00b --/ }}
 
 {{  Using a Sublime Project /-- tags:sublime --/
 	
@@ -112,6 +99,14 @@ Setup
 			}
 
 	/-- id: 1rc --/ }}
+
+	{{  Save on Focus Lost
+
+			Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:
+
+			{ "save_on_focus_lost": true }
+
+	/-- id: sqq --/ }}
 
  /-- ID:000 --/ }}
 

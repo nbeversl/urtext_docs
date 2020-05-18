@@ -29,74 +29,74 @@ Search
 
         {{
 Example Search Results 
-Opening Links >01w
-Python >xor
-Sublime Text Implementation Setup >01u
-Metadata List >zzy
-More About Node IDs >01q
-Sublime >p78
-Uses >lhs
-iPhone/iPad/iOS >01y
-Syntax Highlighting >01d
-Comparison To Other Tools >h8z
 0.1.11-alpha >01l
 Filenames >01m
-Description >yv2
+Installation >k74
 Node Identity (Node IDs) >01h
-The Node List >01i
-Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
-Project Naming (Identification) >tgp
-Pythonista >xcx
-Full Text Search >4p9
-Search Using Dynamic Nodes >uy4
-Disable Prompts for File Reload >023
-0.1.14-alpha >022
-About Urtext >013
-Download and Install Dependencies Manually >774
-Quick Start and Guides >z7t
-Example : Urtext Documentation Exported in Markdown to a File >m9d
+Syntax Highlighting >01d
+Traverse Mode >00w
+Using Pythonista Urtext >lvf
 Projects, Structure and Compiling >01x
-Using a Sublime Project >c3n
-Urtext Syntax Guide >znj
-Sublime >7n6
-Pythonista >0yn
-Python >b44
-Sublime >rij
-Python >83e
-Make Installation Easier >mh8
-Dependencies and Installation (Sublime) >2fn
-From the root >00g
-tag_all >yin
-With Sublime Text >e6m
-Pythonista >hrv
-Using this document >009
-Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
-Setup >003
-Full Screen / Distraction Free Mode >002
+iPhone/iPad/iOS >01y
+Project Requirements and Features >006
 Timestamps >005
 Inline Nodes >004
-Project Requirements and Features >006
-Converting and Exporting >ezg
-Recursive Node Pointers >6ct
-Download Dependencies from a Monorepo >arl
+Full Screen / Distraction Free Mode >002
+Syntax Highlighting of Inline Nodes (Sublime) >koe
+Urtext Syntax Guide >znj
 Using Multiple Projects at a Time >ipy
-Python >fv2
-Python >eea
-Timeline View >00k
+Description >yv2
 Sublime Text tools to help with linking >00m
 project_settings >00l
+Timeline View >00k
+From the root >00g
+Pythonista >hrv
 Sublime >00a
-Urtext  Version: 0.2.0-alpha >a5m
-From any given node >00f
+Download and Install Dependencies Manually >774
 Node Metadata >00x
-Syntax Highlighting of Inline Nodes (Sublime) >koe
-Pythonista Urtext Implementation Setup >os4
-Using Pythonista Urtext >lvf
-File History >prp
+Pythonista >0yn
+About Urtext >013
+Using a Sublime Project >c3n
 Viewing Linked Relationships >00u
-Traverse Mode >00w
+Table of Contents >d0p
+Quick Start and Reference Guides >z7t
+tag_all >yin
+Sublime >rij
+Sublime Text Implementation Setup >01u
+Using this document >009
+Dependencies and Installation (Sublime) >2fn
+Python >fv2
+Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+Disable Prompts for File Reload >023
+0.1.14-alpha >022
+From any given node >00f
+Make Installation Easier >mh8
+Pythonista Urtext Implementation Setup >os4
+Sublime >p78
+Opening Links >01w
 Urtext Action Guide >e1x
-/-- title: Example Search Results ; flags: exclude_from_tree ; defined in: >uy4; ID: 3x3 --/}}
+More About Node IDs >01q
+Full Text Search >4p9
+Python >83e
+With Sublime Text >e6m
+Uses >lhs
+Python >eea
+Search Using Dynamic Nodes >uy4
+Save on Focus Lost >sqq
+Recursive Node Pointers >6ct
+The Node List >01i
+Comparison To Other Tools >h8z
+Urtext >a5m
+Download Dependencies from a Monorepo >arl
+Example : Urtext Documentation Exported in Markdown to a File >m9d
+Converting and Exporting >ezg
+Project Naming (Identification) >tgp
+Metadata List >zzy
+Pythonista >xcx
+Python >xor
+File History >prp
+/-- flags: exclude_from_tree ; title: Example Search Results ; defined in: >uy4; ID: 3x3 --/}}
 
  /-- id: uy4 --/ }}
 

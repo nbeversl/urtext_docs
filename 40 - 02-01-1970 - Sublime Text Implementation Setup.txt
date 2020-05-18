@@ -13,13 +13,13 @@ Sublime Text Implementation Setup /-- tags:sublime --/
 
 {{     Dependencies and Installation (Sublime)
     
-        The decision has been made not to include Urtext or its dependencies in the Urtext package for Sublime. It is necessary to install everything manually into Sublime's Python 3.3 environment. This is in fact less complicated than the current alternatives considered. For developers, see | Make Installation Easier >mh8.
+        The decision has been made not to include Urtext or its dependencies in the Urtext package for Sublime. It is necessary to install everything manually into Sublime's Python 3.3 environment. This is in fact less complicated than the alternatives considered. For developers, see | Make Installation Easier >mh8.
 
         To use Urtext in Sublime Text:
 
             - Install Sublime Text ( https://www.sublimetext.com/ )
 
-            - Clone or download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ). Place it in your Packages folder (Sublime Text 3/Packages). The package is not yet available in Package Control. 
+            - Clone or download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ). Place it in your Packages folder (Sublime Text 3/Packages). The package is not available in Package Control. 
 
             - Add Urtext and all its dependencies to Sublime's Python interpreter. There are two options for doing this:
 
@@ -52,7 +52,10 @@ Sublime Text Implementation Setup /-- tags:sublime --/
 
         {{  Download Dependencies from a Monorepo
 
-                As a convenience, all of the above depenencies are (for now) maintained in recent versions at https://github.com/nbeversl/urtext_deps, with all files in the path locations described above. Download this repository as a .ZIP file, unzip it, and drop its contents into your `Sublime Text 3/Lib/python3.3` folder.
+                As a convenience, all of the above depenencies are (for now) maintained in recent versions at https://github.com/nbeversl/urtext_deps, with all files in the path locations described above. You can either download this repository as a .ZIP file and unzip it, or if you want to maintain version control, use:
+                     `git clone --recurse-submodules https://github.com/nbeversl/urtext_deps`
+
+                Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your `Sublime Text 3/Lib/python3.3` folder.
 
          /-- id: arl --/ }}
 

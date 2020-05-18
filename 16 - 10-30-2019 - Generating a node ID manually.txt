@@ -1,14 +1,14 @@
 Generating a node ID manually 
 
-{{ 	Sublime  /-- tags:sublime --/ /-- ID: 7n6 --/
+{{ 	Sublime  /-- tags:sublime --/ 
 
 		If you accidentally delete a Node ID or need to insert one arbitrarily, press Control-Shift-I. 
 
-% 	Pythonista /-- ID: bhk --/
+	Pythonista 
 		
 		Not current implemented
 
-% 	Python /-- tags:python --/ /-- id:0ow --/
+ 	Python /-- tags:python --/
 
 		%%-PYTHON
 

@@ -10,7 +10,7 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 	 >>xxx	Node Pointer
 
 	% 		Splits a node into two. Must be the first character on a line.
-			More information: | (untitled) >k6d
+			More information: |  ?  >k6d
 
 	 ^		Compact Node marker. Must be the first non-whitespace character on a line.
 	 		More information: | Compact Nodes >j6t
@@ -136,7 +136,6 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 
 
 
-/-- ID: znj --/
 /-- 
 timestamp: <Fri., Apr. 24, 2020, 01:10 PM>
 from: wwci-00407.local

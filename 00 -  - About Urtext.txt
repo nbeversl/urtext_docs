@@ -1,5 +1,4 @@
 About Urtext
-   
 
     {{ Description
         
@@ -29,6 +28,7 @@ About Urtext
             - Zettelkasten
             - project/personal organization
             - notetaking
+            - lightweight database
             - any other writing or information management that can be done in text form
  
      /-- ID:lhs --/ }}

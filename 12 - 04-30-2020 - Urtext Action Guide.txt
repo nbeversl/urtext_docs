@@ -6,43 +6,40 @@ Navigation:
 	Navigate Forward
 	Navigate Back
 
-Export
+Export:
+	Export
+	Jump to Source
 
-Timeline
+Views
 
-Node List
+	Timeline
+	Search
+	Interlinks
+	Tree
 
-Search
+Navigation:
 
-Traverse Mode
+	Node List
 
-Multiple Projects
 
-Jump to Source
+Sublime Text Only:
+	Traverse Mode
 
-File History
+Editing:
+	File History
+	Consolidate Metadata
 
-Interlinks
 
-Tree
-
-Consolidate Metadata
-
-Import Project
-
-Reload Project
-
-Reindex All Files
-
-Rename File(s) from Meta
-
-Delete This Node
-
-Initialize Project
-
-Pop Node
-
-Move File to Other Project
+Project Management:
+	Multiple Projects
+	Import Project
+	Reload Project
+	Reindex All Files
+	Rename File(s) from Meta
+	Delete This Node
+	Initialize Project
+	Pop Node
+	Move File to Other Project
 
 Node Access History
 

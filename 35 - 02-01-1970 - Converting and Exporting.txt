@@ -15,11 +15,11 @@ Converting and Exporting
 
     The following dynamic definition exports this entire documentation (from its root node | Urtext  Version: 0.2.0-alpha >a5m ) in Markdown format to a file called documentation.md:
 
-    [[ ss
+    [[ 
         FILE(README.md)
         EXPORT(source:a5m markdown)
         FORMAT(preformat)
-     ]]ss
+     ]]
 
 
 /-- id: m9d --/ }}
