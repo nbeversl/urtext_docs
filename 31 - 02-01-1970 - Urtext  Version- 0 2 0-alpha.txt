@@ -105,6 +105,9 @@ Urtext  Version: 0.2.0-alpha >a5m
 /-- flags: exclude_from_tree ; title: Table of Contents ; ID: e5j; defined in: >029 --/}}
 
 {{  Quick Start and Guides
+
+This documentation is in progress, still contains many formatting issues, and is somewhat behind development and features. Please post any questions as issues (https://github.com/nbeversl/urtext-docs/issues).
+
 | Urtext Syntax Guide >>znj
 | Urtext Action Guide >>e1x
 /-- id: z7t; timestamp: <Thu., Apr. 30, 2020, 01:16 PM> --/ }}

@@ -103,8 +103,8 @@ Dynamic Nodes /-- ID: qjl --/
         Here is the compiled node defined by the definition above. Changing the dynamic definition and/or the contents or metadata of the source nodes will update the dynamic node. Saving is necessary to trigger the update.
 
 {{
-Example Source Node 1 >>017
 Example Source Node 4 >>01c
+Example Source Node 1 >>017
 Example Source Node 3 >>01b
 Example Source Node 2 >>00v
 /-- ID: 016; defined in: >01r --/}}
