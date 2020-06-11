@@ -1,25 +1,13 @@
 Compact Nodes
 
-For contents requiring only a single line, such as list items, very short notes, and similar entries, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the ^ character appears, with the closing wrapper being the end of the same line. Note that, like all nodes, a compact node must contain an ID, and can contain any other metadata. It can even include inline nodes, as long as their entire contents, including wrapper and metadata, are contained on a single line.
+For contents requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the ^ character appears, with the closing wrapper being the end of the same line. 
 
-(Note that "line" in this case refers to consecutive characters between explicit line breaks, and not to lines in the editor, which may be arbitrarily wrapped.)
+Note that, like all nodes, a compact node must contain an ID, and can contain any other metadata. It can even include inline nodes, as long as their entire contents, including wrapper and metadata, are contained on a single line. (Note that "line" in this case refers to consecutive characters between explicit line breaks, and not to lines in the editor, which may be arbitrarily wrapped.)
+
+To create a new compact node, use Urtext-^
 
 	^ Example Compact Node /-- ID: d7b --/  {{  Example inline node within the compact node /-- timestamp: <Thu., Oct. 31, 2019, 12:13 PM>; id: 9up --/ }}
 
-	{{ Creating Compact Nodes
-
-		{{	Sublime /-- id:qwn --/ /-- tags:sublime --/
-
-			Shift-Control-^ 
-
-		}}{{
-
-			Pythonista /-- id:0yn --/ /-- tags:pythonista --/
-
-			Urtext Keys : ^
-
-	 }}
-	 }}
 
 /-- 
 id:kpz

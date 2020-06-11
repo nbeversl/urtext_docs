@@ -1,51 +1,3 @@
-{{ Installation
-
-| Sublime Text Implementation Setup >>01u  
-| Pythonista Urtext Implementation Setup >>os4
-/-- id: k74; created: <Tue., May. 05, 2020, 12:56 PM> --/ }}
-
-
-{{  Making a New Project
-
-	{{	
-		Sublime /-- ID:00a --/ /-- tags:sublime --/
-
-	    To make an empty project, make a new folder (or open an existing folder, if you want to create a new project there) and open the folder in Sublime. Select Urtext : Initialize Project from the Sublime Command Palette. Then press Ctrl-Shift-; to create a new node.
-
-		Pythonista
-
-			not currently implemented. Use an existing project. 
-			/-- id:rs8 --/ /-- tags:pythonista--/
-
-    	  }}
-	
-	/-- ID: dce --/ }}
-
-
- {{ Using/Adding Existing Files
-
-    To use existing plaintext files, you must add minimally an `ID` (| More About Node IDs >01q) metadata tag to the file's text content. See | Node Metadata >00x for more information on Metadata.
-
-    {{  Sublime /-- tags:sublime --/
-
-	    Select `Urtext : Import Project` from the Sublime Command palette.
-
-	    Note that the append will occur without a confirmation dialog, so if you are just experimenting with this system, consider making a copy of your file folder so you can revert without having to manually remove the metadata./-- id: rij --/ }}
-
-    {{ Pythonista
-
-    	Not currently implemented.  /-- tags:pythonista --/ /-- id: ouh --/ }}
-
-{{  Using a Sublime Project /-- tags:sublime --/
-	
-	(not to be confused with an Urtext Project -- see https://www.sublimetext.com/docs/3/projects.html )
-
-	You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.  
-
-	Once the Sublime package is installed, it will always look for any files with the .txt extension in open folders and attempt to compile them. To open an existing Urtext project, open the folder, a file in the folder, or a Sublime project that includes the folder, and any feature described in this documentation will work.
-
-	/-- id: c3n --/ }}
-
 
 {{  Sublime Text Interface Tips
 	
@@ -108,8 +60,15 @@
 
 	/-- id: sqq --/ }}
 
- /-- ID:000 --/ }}
 
+
+	{{  Using a Sublime Project for an Urtext Project
+	
+			( see https://www.sublimetext.com/docs/3/projects.html )
+
+			You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.  
+
+		/-- id: c3n --/ }}
 
 /-- ID:003
 Timestamp:<Fri., Jun. 07, 2019, 04:12 PM>

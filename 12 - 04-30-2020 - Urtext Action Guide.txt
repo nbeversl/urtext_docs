@@ -1,36 +1,9 @@
-Urtext Action Guide
+Urtext Operations Guide
 
-Navigation:
-
-	Home
-	Navigate Forward
-	Navigate Back
-
-Export:
-	Export
-	Jump to Source
-
-Views
-
-	Timeline
-	Search
-	Interlinks
-	Tree
-
-Navigation:
-
-	Node List
-
-
-Sublime Text Only:
-	Traverse Mode
-
-Editing:
-	File History
-	Consolidate Metadata
-
+Urtext has some built-in operations that bound to either hotkeys or to UI menus. They are described here with their suggested hotkey:
 
 Project Management:
+
 	Multiple Projects
 	Import Project
 	Reload Project
@@ -40,6 +13,67 @@ Project Management:
 	Initialize Project
 	Pop Node
 	Move File to Other Project
+
+
+Navigation: 
+
+	`h` 	Home  
+			Go to the designated home page of the project. Define the home node in | project_settings >00l
+
+	`<` 	Navigate Back
+			Go to the previously visited node (web-browser-like navigation)
+
+	`>` 	Navigate Forward 
+			Go to the next visited node (web-browser-like navigation)
+
+	`e`		Node List :
+			Show a quick search bar of all nodes in the current project
+
+	`*`		Global Node List:
+			Show a quick search bar of all nodes in all known projects.
+
+	(none) 	Jump to Source:
+			When attempting to type or modify any dynamic node (export, tree, search, etc), the editor will jump to the source node of the text at the cursor's position.
+
+Insertions:
+
+	`t` 	Timestamp:
+			Insert a timestamp at the cursor's location, in the project's default format. For setting timestamp format defaults, see | project_settings >00l
+
+	`i` 	ID:
+			Insert an arbitrary (unallocated) Node ID with metadata wrapper at the cursor position.
+
+
+Editing:
+	
+	`g`: 	Editing History
+			View the editing history for the currently viewed file.
+			For more informatino see | File History >prp
+	
+	(menu)	Consolidate Metadata
+			Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
+
+
+Scratch Views
+	
+Several outputs performed by dynamic definitions (see | Urtext Syntax Guide >znj) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
+
+	(menu)	Timeline
+	
+	`n`		Search:
+			See "SEARCH()" in | Urtext Syntax Guide >znj
+	
+	(menu)	Interlinks
+		
+	(menu)	Tree
+
+
+
+Sublime Text Only:
+	Traverse Mode
+
+
+
 
 Node Access History
 

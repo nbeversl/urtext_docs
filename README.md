@@ -1,109 +1,132 @@
 Urtext  Version: 0.2.0-alphaUrtext | Version: 0.2.0-alpha
-Usage Guide and Reference
+Usage Guide and References
+License: GNU General Public License 3.0
+
+This is a documentation of Urtext, written in Urtext. If you're reading this as a `README.MD` (on Github, etc.), this file was generated from the Urtext files in this repository. The repository is an Urtext project. Clone or download it to use it as both a reference and an example project.   
+
+If you are reading this in an Urtext implementation, such as in Sublime Text:
+
+The Urtext key combination is different for Mac/PC/Linux.
+Mac:    Control-Shift
+PC:     
+Linux:   
+
+While holding the Urtext key combination:
+- press `/` to follow any link
+- press `h` at any time to return to this node.
 # Table of Contents
-	Table of Contents 
-	Urtext  Version: 0.2.0-alpha >a5m
-	├── Quick Start and Guides >z7t
-	│   ├── Urtext Syntax Guide >znj
-	│   │   └── ? (Missing Node): >! (Missing Node) >xxx
-	│   └── Urtext Action Guide >e1x
-	├── About Urtext >013
-	│   ├── Description >yv2
-	│   ├── Comparison To Other Tools >h8z
-	│   ├── Uses >lhs
-	│   └── Project Requirements and Features >006
-	├── Using this document >009
-	│   ├── With Sublime Text >e6m
-	│   └── Using Pythonista Urtext >lvf
-	├── Using/Adding Existing Files >003
-	│   ├── Sublime >rij
-	│   ├── Pythonista >ouh
-	│   ├── Using a Sublime Project >c3n
-	│   └── Sublime Text Interface Tips >000
-	│       ├── Syntax Highlighting >01d
-	│       ├── Hiding Tabs >015
-	│       ├── Hiding Line Numbers >01e
-	│       ├── Full Screen / Distraction Free Mode >002
-	│       ├── Disable Prompts for File Reload >023
-	│       ├── Remove Indent Guides >1rc
-	│       └── Save on Focus Lost >sqq
-	├── Nodes >01j
-	│   ├── Node Identity (Node IDs) >01h
-	│   ├── File Level Nodes >01g
-	│   │   └── Creating a File Level Node >ekz
-	│   │       ├── Sublime >xo8
-	│   │       ├── Pythonista >xcx
-	│   │       └── Python >83e
-	│   ├── Inline Nodes >004
-	│   │   ├── Example inline node >00e
-	│   │   ├── Creating Inline Nodes >rbs
-	│   │   │   ├── Sublime >8fh
-	│   │   │   ├── Pythonista >hrv
-	│   │   │   └── Python >fv2
-	│   │   └── Syntax Highlighting of Inline Nodes (Sublime) >koe
-	│   ├── Compact Nodes >kpz
-	│   │   ├── Example Compact Node >d7b
-	│   │   │   └── Example inline node within the compact node >9up
-	│   │   └── Sublime >qwn
-	│   │       └── Pythonista >0yn
-	│   ├── Generating a node ID manually >rfp
-	│   ├── Node Metadata >00x
-	│   │   ├── Reserved Metadata Keys >011
-	│   │   │   ├── title (overrides the default title) >00y
-	│   │   │   ├── index >00z
-	│   │   │   └── flags >cwb
-	│   │   │       └── - exclude_from_tree >1e3
-	│   │   └── Timestamps >005
-	│   │       ├── Timeline View >00k
-	│   │       └── Time Zones >7w6
-	│   │           └── Timezone List >zh1
-	│   └── The Node List >01i
-	│       └── Opening the Node List >hl7
-	│           ├── Sublime >p78
-	│           ├── Pythonista >c3y
-	│           └── Python >h8c
-	├── Trees >00h
-	│   ├── From any given node >00f
-	│   └── From the root >00g
-	├── Links and Pointers >00j
-	│   ├── Links >0y2
-	│   │   └── Sublime Text tools to help with linking >00m
-	│   ├── Dynamically Titled Links >4vu
-	│   ├── Opening Links >01w
-	│   │   ├── Sublime >osu
-	│   │   └── Pythonista >iy8
-	│   ├── Viewing Linked Relationships >00u
-	│   ├── Linking to outside resources >00q
-	│   │   ├── Web >00o
-	│   │   └── Files >00p
-	│   ├── Pointers >lmu
-	│   │   ├── Example Child Node Using a Node Pointer >001
-	│   │   ├── Duplicate Pointers >00t
-	│   │   │   └── Example Child Node Using a Node Pointer >001
-	│   │   └── Recursive Node Pointers >6ct
-	│   │       ├── ? (Missing Node): >! RECURSION 2:a5m
-	│   │       └── Example Recursive Node Tree >01n
-	│   └── Traverse Mode >00w
-	│       └── Word Wrap in Traverse Mode >xci
-	├── Using Multiple Projects at a Time >ipy
-	│   ├── Project Naming (Identification) >tgp
-	│   └── Linking Between Projects >7lx
-	├── Converting and Exporting >ezg
-	│   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
-	│   └── Example : Fragment Exported to HTML >baq
-	├── Search >k67
-	│   └── Full Text Search >4p9
-	│       ├── Searching >mzj
-	│       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
-	│       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
-	│       └── Search Using Dynamic Nodes >uy4
-	├── Filenames >01m
-	├── Development >01o
-	│   └── Make Installation Easier >mh8
-	└── File History >prp
-# Quick Start and Guides  
+    Table of Contents 
+    Urtext  Version: 0.2.0-alpha >a5m
+    ├── Quick Start, Guides and Examples >z7t
+    │   ├── Installation and Setup >6cd
+    │   ├── Urtext Syntax Guide >znj
+    │   ├── Urtext Operations Guide >e1x
+    │   └── Examples >yd5
+    └── Reference >ac5
+        ├── About Urtext >013
+        │   ├── Description >yv2
+        │   ├── Comparison To Other Tools >h8z
+        │   ├── Uses >lhs
+        │   └── Project Requirements and Features >006
+        ├── Sublime Text Interface Tips >003
+        │   ├── Syntax Highlighting >01d
+        │   ├── Hiding Tabs >015
+        │   ├── Hiding Line Numbers >01e
+        │   ├── Full Screen / Distraction Free Mode >002
+        │   ├── Disable Prompts for File Reload >023
+        │   ├── Remove Indent Guides >1rc
+        │   ├── Save on Focus Lost >sqq
+        │   └── Using a Sublime Project for an Urtext Project >c3n
+        ├── Making a New Project >dce
+        │   └── Using/Adding Existing Files >rij
+        ├── Nodes >01j
+        │   ├── Files >ekz
+        │   ├── Inline Nodes >004
+        │   │   ├── Example Inline Node >00e
+        │   │   └── Syntax Highlighting >koe
+        │   ├── Compact Nodes >kpz
+        │   │   └── Example Compact Node >d7b
+        │   │       └── Example inline node within the compact node >9up
+        │   ├── Generating a node ID manually >rfp
+        │   └── The Node Browser >01i
+        │       └── Opening the Node List >hl7
+        │           ├── Sublime >p78
+        │           ├── Pythonista >c3y
+        │           └── Python >h8c
+        ├── Metadata >00x
+        │   ├── Reserved Metadata Keys >011
+        │   │   ├── title (overrides the default title) >00y
+        │   │   ├── index >00z
+        │   │   └── flags >cwb
+        │   │       └── - exclude_from_tree >1e3
+        │   └── Timestamps >005
+        │       ├── Timeline View >00k
+        │       └── Time Zones >7w6
+        │           └── Timezone List >zh1
+        ├── Trees >00h
+        │   ├── From any given node >00f
+        │   └── From the root >00g
+        ├── Links and Pointers >00j
+        │   ├── Links >0y2
+        │   │   └── Sublime Text tools to help with linking >00m
+        │   ├── Dynamically Titled Links >4vu
+        │   ├── Opening Links >01w
+        │   │   ├── Sublime >osu
+        │   │   └── Pythonista >iy8
+        │   ├── Viewing Linked Relationships >00u
+        │   ├── Linking to outside resources >00q
+        │   │   ├── Web >00o
+        │   │   └── Files >00p
+        │   ├── Pointers >lmu
+        │   │   ├── Example Child Node Using a Node Pointer >001
+        │   │   ├── Duplicate Pointers >00t
+        │   │   │   └── Example Child Node Using a Node Pointer >001
+        │   │   └── Recursive Node Pointers >6ct
+        │   │       ├── ? (Missing Node): > !RECURSION 3:
+        │   │       └── Example Recursive Node Tree >01n
+        │   └── Traverse Mode >00w
+        │       └── Word Wrap in Traverse Mode >xci
+        ├── Using Multiple Projects at a Time >ipy
+        │   ├── Project Naming (Identification) >tgp
+        │   └── Linking Between Projects >7lx
+        ├── Converting and Exporting >ezg
+        │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+        │   └── Example : Fragment Exported to HTML >baq
+        ├── Search >k67
+        │   └── Full Text Search >4p9
+        │       ├── Searching >mzj
+        │       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+        │       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+        │       └── Search Using Dynamic Nodes >uy4
+        ├── Filenames >01m
+        ├── Development >01o
+        │   └── Make Installation Easier >mh8
+        └── File History >prp
+# Quick Start, Guides and Examples  
 
 This documentation is in progress, still contains many formatting issues, and is somewhat behind development and features. Please post any questions as issues (https://github.com/nbeversl/urtext-docs/issues).
+
+## Installation and Setup
+
+For desktop use (PC/Mac/Linux) Urtext is implemented in Sublime Text.
+
+1. Download Sublime Text. (https://www.sublimetext.com/).
+
+2. Download Urtext and all its dependencies from the monorepo at `https://github.com/nbeversl/urtext_deps`. You can either download this repository as a .ZIP file and unzip it, or if you want to maintain version control, use `git clone --recurse-submodules https://github.com/nbeversl/urtext_deps`. Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your `Sublime Text 3/Lib/python3.3` folder.
+
+3. Download the Sublime Urtext package at `https://github.com/nbeversl/urtext_sublime`. Place it in your Packages folder (Sublime Text 3/Packages)
+
+4. Clone/download this documentation repository and open its folder in Sublime. It will automatically be read as an Urtext project.
+
+Once the Sublime package is installed, it will always look for any files with the .txt extension in open folders and attempt to compile them into a project. To open an existing Urtext project, open the folder, a file in the folder, or a Sublime project that includes the folder, and any feature described in this documentation will work.
+
+To make a new project, open an empty folder and select Select `Urtext : Initialize Project` from the Sublime Command Palette. For more information, see [Making a New Project](#making-a-new-project).
+
+See also:
+
+[Sublime Text Interface Tips](#sublime-text-interface-tips)
+[Details on the Sublime Implementation](#details-on-the-sublime-implementation)
+[Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
 
 ## Urtext Syntax GuideUrtext Syntax Guide
 
@@ -114,7 +137,9 @@ More information: [Links](#links)
 | 		Placed before a node link, dynamically populates the node title. 
 Example and more info: [Dynamically Titled Links](#dynamically-titled-links)
 
->>xxx	Node Pointer
+### This node is just here as a destination from the node pointer in  Urtext Syntax GuideThis node is just here as a destination from the node pointer in [Urtext Syntax Guide](#urtext-syntax-guide)
+Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
+	Node Pointer
 Urtext Syntax Guide
 
 Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dynamic definition wrapper. The following syntax applies:
@@ -124,7 +149,7 @@ More information: [Links](#links)
 | 		Placed before a node link, dynamically populates the node title. 
 Example and more info: [Dynamically Titled Links](#dynamically-titled-links)
 
->>xxx	Node Pointer
+	Node Pointer
 Embeds the specified node as though it were included inline using
 More information: [Pointers](#pointers)
 More information: [Compact Nodes](#compact-nodes)
@@ -142,41 +167,169 @@ Dynamic Definition Wrapper.
 Template:
 
 
+
+Note the dynamic definition syntax ignores whitespace and arbitrary text outside of functions.
+
 Examples:
 
-## Urtext Action Guide
+[[ 	ID(rrr) 	Target Node id to dynamically populate with output
 
-Navigation:
+FILE()		Used only with EXPORT(). Outputs the export to the specified target filename.
 
-Home
-Navigate Forward
-Navigate Back
+Example:
+FILE(myfile.txt)
 
-Export:
-Export
-Jump to Source
+INCLUDE()  	Nodes to include. Accepts one or multiple parameters.
 
-Views
+Examples:
 
-Timeline
-Search
-Interlinks
-Tree
+INCLUDE(all)	
+Includes all nodes in the project
 
-Navigation:
+INCLUDE(indexed)	
+Includes all nodes in the project that have an index
 
-Node List
+INCLUDE(key:value)	
+Includes all nodes with the given value in the given key
+
+Operators:
+
+"and"
+INCLUDE(key:value and other_key:other_value)
+Includes nodes matching both `key:value` and `other_key:other_value`
+
+"or"
+INCLUDE(key:value or other_key:other_value)
+Includes any nodes matching either or both of `key:value` and `other_key:other_value`
+
+"all_projects"
+INCLUDE(key:value all_projects)
+Expands included nodes to include all projects in the project list.
+
+Optional Timestamp:
+
+INCLUDE(tags:cello:<2019> or tags:teaching:<2019>)
+Includes any nodes matching either or both of the key/value pairs within the corresponding timestamp.
+
+EXCLUDE()	Accepts the same parameters as INCLUDE()
+Evaluated after INCLUDE(), excludes the specified nodes from the result.
+
+SORT()		Sorts the results. Accepts multiple parameters:
+
+SORT(
+$[key_name]		Sorts by the value of the given key. Default is alphabetical.	
+timestamp   	Sort by timestamp instead of alphabetical
+last_accessed	Sort by last accessed
+reverse			Reverse sort order 
+)
+
+Example:
+SORT($title, reverse)
+
+LIMIT()		Limits the output to the specified number of results.
+
+Example:
+LIMIT(30)
+
+SHOW()		Supplies a template for the output, overriding defaults. 
+Accepts arbitrary text, unicode newline characters (\n, \r), and words preceded (without whitespace) by `$`, which are are evaluated as metadata keys. 
+
+- Key names are not displayed, only values. 
+- Add keynames manually if you want them included.
+
+Example:
+SHOW(Author: $author, Date: $date\n)
+
+In addition to user-defined metadata keys, the following tokens are valid:
+
+SHOW(
+
+$title 
+Displays the node title, default or via the `title` meta key
+
+$link
+Displays a link to the node
+
+$date 
+Displays the node's date in the project's default timestamp format
+
+$meta
+Shorthand to show all metadata for every node, formatted as by "consolidate metadata"
+
+$contents:120
+Displays the contents of the node. Optional excerpt/length specifier after the colon
+
+)
+
+METADATA()		Applies the given metadata to the output node. Accepts any number of key/value
+pairs with optional timestamps.
+
+TAG_ALL()		Applies the specific metadata to all nodes in the target node. 
+Accepts any number of key/value pairs with optional timestamps, and the option keyword `recursive`, which applies metadata also to all descendants.	
+
+Example:
+TAG_ALL(tasks:due_soon recursive)
+
+FORMAT()		Formats the output. 
+Accepts one or more predefined arguments:
+
+FORMAT(preformat) 	
+Wraps preformatted text (trees, etc.) in backticks to preserve formatting in 
+Markdown contexts. Only used with EXPORT().
+
+FORMAT(multiline_meta)
+Places dynamic node metadata on separate lines instead of separated by;
+
+FORMAT(indent:30)
+Indents the dynamic node by the specified number of spaces
 
 
-Sublime Text Only:
-Traverse Mode
+The remaining functions will only be used one at a time and will override SHOW() and in some cases other functions.
 
-Editing:
-File History
-Consolidate Metadata
+TREE()			Outputs a tree of the hierarchy of nested nodes, with the specified node as root.
 
+- Ignores INCLUDE() and EXCLUDE().
+
+Example:
+TREE(rtr)
+Will output a tree with the node `rtr` as the root.
+
+TIMELINE()		Outputs the specified nodes as a timeline.
+
+- Ignores SORT()
+
+Accepts one of two arguments. If more than one is present, only the first is
+evaluated.
+
+TIMELINE(meta)		Uses dates from node metadata
+TIMELINE(inline)	Parses dates from inline timestamps
+
+SEARCH()		Returns search results of the string passed as an argument.
+Searches are case-insensitive.
+
+- Ignores INCLUDE() and EXCLUDE().
+
+Example:
+SEARCH("western civilization")
+
+EXPORT()		Exports the specified node id to a file and/or other node in the project.
+
+- Ignores everything except ID() and FILE().
+
+EXPORT (
+source:xxx		Specifies the source node id
+plaintext 		Export as plaintext (default)
+markdown		Export as markdown
+html			Export as HTML
+)
+]]
+
+## Urtext Operations Guide
+
+Urtext has some built-in operations that bound to either hotkeys or to UI menus. They are described here with their suggested hotkey:
 
 Project Management:
+
 Multiple Projects
 Import Project
 Reload Project
@@ -187,20 +340,85 @@ Initialize Project
 Pop Node
 Move File to Other Project
 
+
+Navigation: 
+
+`h` 	Home  
+Go to the designated home page of the project. Define the home node in [project_settings](#project_settings)
+
+`<` 	Navigate Back
+Go to the previously visited node (web-browser-like navigation)
+
+`>` 	Navigate Forward 
+Go to the next visited node (web-browser-like navigation)
+
+`e`		Node List :
+Show a quick search bar of all nodes in the current project
+
+`*`		Global Node List:
+Show a quick search bar of all nodes in all known projects.
+
+(none) 	Jump to Source:
+When attempting to type or modify any dynamic node (export, tree, search, etc), the editor will jump to the source node of the text at the cursor's position.
+
+Insertions:
+
+`t` 	Timestamp:
+Insert a timestamp at the cursor's location, in the project's default format. For setting timestamp format defaults, see [project_settings](#project_settings)
+
+`i` 	ID:
+Insert an arbitrary (unallocated) Node ID with metadata wrapper at the cursor position.
+
+
+Editing:
+
+`g`: 	Editing History
+View the editing history for the currently viewed file.
+For more informatino see [File History](#file-history)
+
+(menu)	Consolidate Metadata
+Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
+
+
+Scratch Views
+
+Several outputs performed by dynamic definitions (see [Urtext Syntax Guide](#urtext-syntax-guide)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
+
+(menu)	Timeline
+
+`n`		Search:
+See "SEARCH()" in [Urtext Syntax Guide](#urtext-syntax-guide)
+
+(menu)	Interlinks
+
+(menu)	Tree
+
+
+
+Sublime Text Only:
+Traverse Mode
+
+
+
+
 Node Access History
 
-# About Urtext
-## Description 
+## Examples
+
+# Reference 
+
+## About Urtext
+### Description 
 
 Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A collection of nodes constitutes a "project"; the interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The syntax permits embedding of structural and instructional code into the text itself. 
 
 The present interpreter for Urtext is in Python and can be used wherever Python is running. Equivalent or variant interpreters could be created in any language or editing environment. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).
-## Comparison To Other Tools 
+### Comparison To Other Tools 
 
 Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for organizing text.
 
 Urtext consolidates content, markup and instructions (scripting) into a single compilable syntax. Though it can hyperlink many documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible content. Everything the interpreter reads is visible at all times.
-## Uses  
+### Uses  
 
 Urtext has many uses, including but limited to:
 
@@ -214,7 +432,7 @@ Urtext has many uses, including but limited to:
 - notetaking
 - lightweight database
 - any other writing or information management that can be done in text form
-## Project Requirements and Features   
+### Project Requirements and Features   
 
 Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they cannot be found together in one single existing tool; this was the motivation for creating Urtext.
 
@@ -248,41 +466,6 @@ Being in plaintext and having a syntax specification, it can also be used with:
 
 - Version control (using Git, for example).
 
-# Using this document  
-
-This is a documentation of Urtext, written and compiled in Urtext. It can be used as both a reference manual and an example project. If you're reading this on Github, the `README.MD` file was generated from the Urtext files in this repository. The repository itself is an Urtext project that can be cloned/downloaded.
-## With Sublime Text 
-
-- First set up Urtext in Sublime. Follow the instructions at [Dependencies and Installation (Sublime)](#dependencies-and-installation-sublime)
-- Clone/download this repository and open it up in Sublime. It will automatically be read as an Urtext project when you can navigate. To get started quickly, follow these tips, which are described in greater detail in their respective sections of this documentation.
-
-- To go to a link in the table of contents, press ctrl-shift-/ from any line. Links are three-character node-IDs preceded by one or two right-angle brackets. (See [Links and Pointers](#links-and-pointers) for more information).
-- To return to this table of contents, press ctrl-shift-H.
-- You can also traverse the table of contents while viewing linked content in another pane using Traverse Mode : Press Ctrl-Shift-R and click or arrow-navigate to any node in the table. See [Traverse Mode](#traverse-mode) for more information.
-- Enabling syntax highlighting makes the documentation much easier to read: Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...  Then switch to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) See  [Syntax Highlighting](#syntax-highlighting) for more information.
-- See [Sublime Text Interface Tips](#sublime-text-interface-tips) for other suggestions.
-## Using Pythonista Urtext 
-
-- Set up Urtext in Pythonista. Follow the instructions in [Pythonista Urtext Implementation Setup](#pythonista-urtext-implementation-setup)
-- Clone the documentation repository into your base Urtext path and it will be accessible from within Pythonista Urtext.
-# Using/Adding Existing Files 
-
-To use existing plaintext files, you must add minimally an `ID` ([More About Node IDs](#more-about-node-ids)) metadata tag to the file's text content. See [Node Metadata](#node-metadata) for more information on Metadata.
-## Sublime   
-
-Select `Urtext : Import Project` from the Sublime Command palette.
-
-Note that the append will occur without a confirmation dialog, so if you are just experimenting with this system, consider making a copy of your file folder so you can revert without having to manually remove the metadata.
-## Pythonista 
-
-Not currently implemented.
-## Using a Sublime Project   
-
-(not to be confused with an Urtext Project -- see https://www.sublimetext.com/docs/3/projects.html )
-
-You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.  
-
-Once the Sublime package is installed, it will always look for any files with the .txt extension in open folders and attempt to compile them. To open an existing Urtext project, open the folder, a file in the folder, or a Sublime project that includes the folder, and any feature described in this documentation will work.
 ## Sublime Text Interface Tips  
 
 Here are some tips for best leveraging Sublime's great UI features.
@@ -324,101 +507,117 @@ Formatting plaintext using tab indentions can look messy if indent guides are on
 Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:
 
 { "save_on_focus_lost": true }
+### Using a Sublime Project for an Urtext Project  
 
-# Nodes
+( see https://www.sublimetext.com/docs/3/projects.html )
 
-Think of a node as a region of paper with flexible and open-ended length.
-## Node Identity (Node IDs) 
+You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.
 
-The identity of an Urtext node persists no matter its containing filename, even when moved from one file to another. This is accomplished by assigning each node a unique identifier. Since nothing is hidden from view in an Urtext file, a minimally intrusive format of three alphanumeric was chosen. This results in over 46,000 possible nodes per project. Every node must have an ID; files with nodes missing IDs cannot be compiled and are omitted from the project. Each node's ID is generated automatically on creation and placed into its initial metadata region. ID's can be changed without affecting functionality, though pre-existing links must be manually changed as well. IDs are not case sensitive.
+## Making a New Project
 
-Node IDs are assigned in random order and have no special meaning except as a unique identifier. IDs are covered more in [More About Node IDs](#more-about-node-ids).
-## File Level Nodes 
+An Urtext project is a single folder. The folder must contain at least file with an Urtext Node ID.
 
-A file-level node is any node at the outermost level of a single file. It may or may not contain other nodes nested inside it.
-### Creating a File Level Node
-#### Sublime  
+To make an new empty project:
+- make a new folder and open the folder in Sublime Text. 
+- Select Urtext : Initialize Project from the Sublime Command Palette. 
+- The folder how has one Urtext file and a `history` folder (for tracking edits. See [File History](#file-history)  for more information)
+### Using/Adding Existing Files 
 
-Press Control-Shift-; (Control-Shift-semicolon).
-#### Pythonista  
+Once a folder contains at least one file with a node ID, you can add and use existing plaintext files in the project without any modification. However for most of the benefits of Urtext you must minimally an ID ([More About Node IDs](#more-about-node-ids)) in each file.
 
-Press `;` in the Urtext key row.
-#### Python 
+To do so, select `Urtext : Import Project` from the Sublime Command palette.
 
-%%-PYTHON
+Note the append will occur without a confirmation dialog, so if you are just experimenting with this system, consider making a copy of your file folder so you can revert without having to manually remove the metadata.
 
-UrtextProject.new_file_node(date=None, metadata = {}, node_id=None)
-"""
-Kwargs:
-date (datetime): the timestamp, defaults to now if not specified
-metadata (dict): key/value metadata pairs
-node_id (str): optionally specify a node_id (rarely used)
-Returns:
-dict: { 'filename' : # (str) : the new filename, without path
-'id': # (str) the new node_id 
-}
-"""
+## Nodes
 
-%%-END
-The file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and a timestamp of the creation date and time.
-By default, the first non-whitespace line of any node is the node's title. Write a title and anything else into the node. Save it as usual (Super-S in Sublime).
-## Inline Nodes                                                                 
+A node is region, or set of regions, of a file, up to and including the entire file. A file is a node and nodes can contain other nodes.
 
-Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. The syntax for inline nodes is to wrap the content in double curly braces:
-### Example inline node
-.
-### Creating Inline Nodes
-#### Sublime   
+The identity of an Urtext node persists no matter its containing filename, even when moved from one file to another. This is accomplished by assigning each node a unique identifier of three alphanumeric characters. This provides over 46,000 possible nodes per project. It is possible to use files containing no IDs in an Urtext project, but most of the benefits of Urtext are lost. 
 
-Press Shift-Ctrl-{ . Inside the inserted double curly braces is a new node with an auto-generated ID. 
+Each node's ID is generated automatically on creation and placed into its initial metadata region. ID's can be changed without affecting functionality, though pre-existing links must be manually changed as well. 
+
+Node IDs are assigned in random order and have no special meaning except as a unique identifier. See [More About Node IDs](#more-about-node-ids) for more information.
+### Files 
+
+The most basic node is a single file. It may or may not contain other nodes nested inside it.
+To create a new file, press `Urtext-;`. A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
+By default, the first non-whitespace line of any node is the node's title. 
+
+Files can contain any number of nodes:
+### Inline Nodes                                                                 
+
+Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. The syntax for inline nodes is to wrap the content in double curly braces, likt this:
+#### Example Inline Node
+. 
+
+Create an inline nodes with `Urtext-{`. Inside the inserted double curly braces is a new node with an auto-generated ID. 
 
 To wrap existing content into an inline node, first select the content and use the same keypress.
 
-You can also do this manually by typing the curly braces generating a new metadata region with an ID by pressing Control-Shift-I.
-#### Pythonista  
+Like everything in Urtext syntax, you can do this manually by typing the curly braces and generating a new metadata region with an ID by pressing Control-Shift-I. 
 
-Press the curly-braces `{ {` in the Urtext key row.
-#### Python  
+Urtext requires attention to syntax. Every opening doubly curly bracket must be closed in the same file and requires an ID metadata tag between its opening an closing brackets.
 
-%%-PYTHON
-
-UrtextProject.add_inline_node(date=None, contents='', metadata={}, one_line=False)
-
-"""
-Kwargs:
-date (datetime): optional timestamp
-contents (str): optional initial contents
-metadata (dict): optional key/value metadata pairs
-one_line (Boolean): Whether the wrapper and metadata should be consolidated on a single line
-Returns:
-string: the contents of the new node, which can then be manually inserted using a text editor.
-
-This is mostly a utility function to generate text that can otherwise be written manually. Since this has to be done in any Urtext implementation, it is included as a method. It also generates a unique node ID and adds the node to the project object.
-"""
-
-%%-END
-Unlike a word processor, Urtext requires attention to syntax. Every opening doubly curly bracket must be closed in the same file and requires an ID metadata tag between its opening an closing brackets.
-
-NOTE that file-level nodes [File Level Nodes](#file-level-nodes)) do not use curly-braces, as their boundaries are defined by the file itself.
+NOTE that nodes at the file level (see [ MISSING LINK : 01g ] ) do not use curly-braces, as their boundaries are defined by the file itself.
 
 For all purposes in Urtext, inline nodes' metadata and identity is unique from their containing file and parent nodes.
-### Syntax Highlighting of Inline Nodes (Sublime)  
+#### Syntax Highlighting  
 
-In Sublime, when syntax highlighting is used [Syntax Highlighting](#syntax-highlighting)), inline nodes will have background shading showing nesting up to five layers deep. More levels can be added, if you need them, by altering sublime_urtext.sublime-syntax.
+When syntax highlighting is used ( see | |  ?  >d), inline nodes are colored to showing nesting.
 
-## Compact Nodes
+### Compact Nodes
 
-For contents requiring only a single line, such as list items, very short notes, and similar entries, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the ^ character appears, with the closing wrapper being the end of the same line. Note that, like all nodes, a compact node must contain an ID, and can contain any other metadata. It can even include inline nodes, as long as their entire contents, including wrapper and metadata, are contained on a single line.
+For contents requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the ^ character appears, with the closing wrapper being the end of the same line. 
 
-(Note that "line" in this case refers to consecutive characters between explicit line breaks, and not to lines in the editor, which may be arbitrarily wrapped.)
-### Example Compact Node
-#### Example inline node within the compact node
+Note that, like all nodes, a compact node must contain an ID, and can contain any other metadata. It can even include inline nodes, as long as their entire contents, including wrapper and metadata, are contained on a single line. (Note that "line" in this case refers to consecutive characters between explicit line breaks, and not to lines in the editor, which may be arbitrarily wrapped.)
 
-## Generating a node ID manually
+To create a new compact node, use Urtext-^
+#### Example Compact Node
+##### Example inline node within the compact node
 
-## Node Metadata
+### Generating a node ID manually 
+If you accidentally delete a Node ID or need to insert one arbitrarily, press Urtext-i.
 
-Metadata is data about the content, in the form of key/value pairs and timestamps. Other than a few reserved key/value pairs used for compiling, metadata is open for user-defined purposes. Keys and values of metadata tags are indexed automatically and searchable within the Urtext project (see[ MISSING LINK : 012 ] ). 
+
+### The Node Browser
+
+Every project maintains a list of all its nodes. The Node List is automatically written to a built-in file-level dynamic node. (See [ MISSING LINK : e82 ]  for more information).
+#### Opening the Node List
+##### Sublime 	  
+
+Ctrl-Shift-J. Like any node, the Node List can be traversed using [Traverse Mode](#traverse-mode)
+##### Pythonista
+
+
+
+Urtext Keys: L
+
+The Pythonista Urtext app also contains a Node Browser with fuzzy search. Press ? and type a node title.
+##### Python
+
+
+
+Get the filename by passing node ID 'zzy' to get_file_name() method and open it directly:
+
+%%-PYTHON
+UrtextProject.get_file_name(node_id)
+"""
+Args:
+node_id (string) : Node ID=
+Returns:
+string : filename **WITHOUT** path
+or None
+"""
+%%-END
+In Sublime Text there is also the alternative of using the UI dropdown. Press Control-Shift-E or select "Urtext: Node List" from the Sublime command palette (Shift-Super-P). Here you can find a node by typing part of its title.
+
+In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see [index](#index)).
+
+
+## Metadata
+
+Metadata is data about the content, in the form of key/value pairs and timestamps. Other than a few reserved key/value pairs used for compiling, metadata is open for user-defined purposes. Keys and values of metadata tags are indexed automatically and searchable within the Urtext project. 
 
 Metadata regions in Urtext open with a forward-slash followed by two dashes and close with two dashes followed by a forward slash. Each metadata entry is a key/value pair, separated by a colon, with the value containing an optional timestamp. Examples:
 
@@ -456,7 +655,7 @@ You can optionally add a two-digit sort index (00-99) to a node, such as:
 
 
 
-Index tags will sort the files in the Node List [The Node List](#the-node-list)) . Any indexed nodes will sort before (above) the others, with lowest number appearing first. 
+Index tags will sort the files in the Node List [The Node Browser](#the-node-browser)) . Any indexed nodes will sort before (above) the others, with lowest number appearing first. 
 
 Remember unindexed notes display in order of creation, newest first, based on the value of the timestamp. You can give the same index number to multiple nodes; in this case they sort with the most recent node first, within each index.
 #### flags  
@@ -466,9 +665,7 @@ The `flags` key is used to set node behavior. At present only the following exis
 
 Excludes a node from being included in a tree. For an example, see Example 2 in "Dynamic Nodes"[Example 2 : Tree](#example-2-:-tree). For more on tree, see[Trees](#trees)
 The only additional reserved metadata keys apply only to the project_settings node [project_settings](#project_settings)).
-Next topics:
-
-### Timestamps                                                                                  
+Next topic### Timestamps                                                                                  
 
 Reliance on the operating system's file-created or file-modified date metadata is avoided, since it can be too easily and involuntarily overwritten under ordinary file system operations, such as copying and moving files or folders. 
 
@@ -476,7 +673,7 @@ Text between two angled brackets (<  >) is interpreted as a timestamp.
 
 To insert a timestamp in Sublime, press Control-Shift-O. 
 
-Node timestamps are part of metadata (see Metadata[Node Metadata](#node-metadata)). Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed.
+Node timestamps are part of metadata (see Metadata[Metadata](#metadata)). Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed.
 
 Timestamps are read and written utilizing Python's `strftime` directives. The default format is:
 
@@ -1085,48 +1282,13 @@ Zulu
 )
 
 
-## The Node List
-
-Every project maintains a list of all its nodes. The Node List is automatically written to a built-in file-level dynamic node. (See [ MISSING LINK : e82 ]  for more information).
-### Opening the Node List
-#### Sublime 	  
-
-Ctrl-Shift-J. Like any node, the Node List can be traversed using [Traverse Mode](#traverse-mode)
-#### Pythonista
-
-
-
-Urtext Keys: L
-
-The Pythonista Urtext app also contains a Node Browser with fuzzy search. Press ? and type a node title.
-#### Python
-
-
-
-Get the filename by passing node ID 'zzy' to get_file_name() method and open it directly:
-
-%%-PYTHON
-UrtextProject.get_file_name(node_id)
-"""
-Args:
-node_id (string) : Node ID=
-Returns:
-string : filename **WITHOUT** path
-or None
-"""
-%%-END
-In Sublime Text there is also the alternative of using the UI dropdown. Press Control-Shift-E or select "Urtext: Node List" from the Sublime command palette (Shift-Super-P). Here you can find a node by typing part of its title.
-
-In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see [index](#index)).
-
-
-# Trees
+## Trees
 
 In Sublime, you can view a tree of node hierarchies in two ways:
-## From any given node 
+### From any given node 
 
 Position the cursor in the node you want to see as root (outermost) and select "Urtext: Show Tree From Current Node" from the Sublime Command Palette. This will add a new split view to the left side of the current view in Sublime, containing a tree with the selected node as root.
-## From the root  
+### From the root  
 
 Position the cursor anywhere in the node/file and select "Urtext: Show Tree From Root". This will do the same as above, but the tree will include everything back to the node's root. If the tree extends upward beyond the current file, that will also be included.
 Note that each branch of the resulting file tree contains Node ID that works like a link. You can navigate the links on the tree using Shift-Control-/ (see [Links](#links)) or using [Traverse Mode](#traverse-mode).
@@ -1137,11 +1299,11 @@ You can extend node trees beyond the file level by using [Pointers](#pointers).
 
 Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
 
-# Links and Pointers
-## Links   
+## Links and Pointers
+### Links   
 
 To make a "hyperlink" from one node to another, use the right angle bracket (>) followed immediately by a node ID. Linking does not require a filename or any other information, only the node ID. Any other surrounding text is ignored.
-### Sublime Text tools to help with linking   
+#### Sublime Text tools to help with linking   
 
 Two Sublime Command Palette commands can make linking quick and easy:
 
@@ -1150,42 +1312,42 @@ Links from the currently viewed node to another node which you can select in the
 
 Urtext: Link From ...
 Links TO the current node FROM another node. When you select this command, a link to the current node will be copied to the clipboard. You can then paste the reference into the node you open in the quick panel.
-## Dynamically Titled Links  
+### Dynamically Titled Links  
 
 Prepending a pipe character to any node link will populate the space between the pipe and link with the node's title, from its metadata or default title. Examples are found throughout this documentation. 
 
 Note that node link titles are not updated globally throughout the project whenever any node's title changes; rather, titled links are updated at the single file level whenever that file is saved.
-## Opening Links
-### Sublime 
+### Opening Links
+#### Sublime 
 
 Press Shift-Ctrl-/ on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point.
-### Pythonista  
+#### Pythonista  
 
 Use the `>` key when the cursor is on any line containing a link.
 Note that Urtext reads node regions on every save, so cursor location may be imprecise if the file has been altered since the last save.
-## Viewing Linked Relationships
+### Viewing Linked Relationships
 
 Elaborate writing and reference systems such as wikis often linking nodes together in tangled and intricate ways. While Urtext cannot draw diagrams of this kind (called acyclic graphs) in plaintext, it can represent these relationships from the perspective of any one node: Position the cursor in the desired node and select "Urtext : Show Linked Relationships..." The currently selected node will be displayed as root; all nodes linking into this nodes, and recursively into those nodes, will be displayed above the root; all files linked from this node, and recursively from those nodes, will be displayed below. Circular references are represented up to one iteration.
 
 These diagrams are displayed as Sublime "scratch" views, meaning they will never report as being dirty (unsaved). They are intended for one-time/temporary use and will not update when a node/file changes. To make permanent and dynamically updated diagrams, see [ MISSING LINK : e82 ] .
 
-## Linking to outside resources
-### Web 
+### Linking to outside resources
+#### Web 
 
 HTTP links are recognized automatically and will open in the default browser.
 
 Example: http://fantutti.com
-### Files 
+#### Files 
 
 COMING.
 
-## Pointers          
+### Pointers          
 
 You can extend trees beyond the file level to create node relationships spanning many files. Preceding a link to a node with two right angle brackets instead of one creates a Pointer. In addition to being a hyperlink, this connects the targeted node, and all of its subchildren, as children of the node containing the Pointer. Example:
 
 Here is an example Child Node:
 
-#### Example Child Node Using a Node Pointer
+##### Example Child Node Using a Node Pointer
 
 Pointers          
 
@@ -1204,12 +1366,12 @@ The advantages to Node Pointers are many, including:
 - The tree permits nesting both within and beyond file level.
 
 - The tree can be displayed from any arbitrary starting point, whether or not its branches are within or beyond a particular file.
-### Duplicate Pointers  
+#### Duplicate Pointers  
 
 Node Pointers may point more than once to the same node, so that content can be reused or referenced across multiple trees within the same project:
 
 Here is the same example child node from above: 
-### Recursive Node Pointers  
+#### Recursive Node Pointers  
 
 Recursive Node Pointers would be ones that point to one of their containing node's own ancestors, causing a circular reference.
 
@@ -1218,109 +1380,96 @@ These are not prohibited, but the recursion will not be drawn if it is already c
 For example, this Node Pointer points back to the root node of the table of contents: | Urtext Documentation >>a5m. Instead of the table of contents being drawn recursively from this node, you can see the recursion point in the table of contents.
 
 Note, however, that if you view the entire tree with another node as root, one full iteration will still appear, with the point of recursion falling elsewhere in the tree. For instance, below is the table of contents with the node "Pointers" ([Pointers](#pointers)) as root. See Dynamic Nodes ([ MISSING LINK : e82 ] ) for more information on how to generate trees like this in dynamic nodes.
-#### Example Recursive Node Tree
-	Example Recursive Node Tree 
-	Pointers >lmu
-	├── Example Child Node Using a Node Pointer >001
-	├── Duplicate Pointers >00t
-	│   └── Example Child Node Using a Node Pointer >001
-	└── Recursive Node Pointers >6ct
-	    ├── Urtext  Version: 0.2.0-alpha >a5m
-	    │   ├── Quick Start and Guides >z7t
-	    │   │   ├── Urtext Syntax Guide >znj
-	    │   │   │   └── ? (Missing Node): >! (Missing Node) >xxx
-	    │   │   └── Urtext Action Guide >e1x
-	    │   ├── About Urtext >013
-	    │   │   ├── Description >yv2
-	    │   │   ├── Comparison To Other Tools >h8z
-	    │   │   ├── Uses >lhs
-	    │   │   └── Project Requirements and Features >006
-	    │   ├── Using this document >009
-	    │   │   ├── With Sublime Text >e6m
-	    │   │   └── Using Pythonista Urtext >lvf
-	    │   ├── Using/Adding Existing Files >003
-	    │   │   ├── Sublime >rij
-	    │   │   ├── Pythonista >ouh
-	    │   │   ├── Using a Sublime Project >c3n
-	    │   │   └── Sublime Text Interface Tips >000
-	    │   │       ├── Syntax Highlighting >01d
-	    │   │       ├── Hiding Tabs >015
-	    │   │       ├── Hiding Line Numbers >01e
-	    │   │       ├── Full Screen / Distraction Free Mode >002
-	    │   │       ├── Disable Prompts for File Reload >023
-	    │   │       ├── Remove Indent Guides >1rc
-	    │   │       └── Save on Focus Lost >sqq
-	    │   ├── Nodes >01j
-	    │   │   ├── Node Identity (Node IDs) >01h
-	    │   │   ├── File Level Nodes >01g
-	    │   │   │   └── Creating a File Level Node >ekz
-	    │   │   │       ├── Sublime >xo8
-	    │   │   │       ├── Pythonista >xcx
-	    │   │   │       └── Python >83e
-	    │   │   ├── Inline Nodes >004
-	    │   │   │   ├── Example inline node >00e
-	    │   │   │   ├── Creating Inline Nodes >rbs
-	    │   │   │   │   ├── Sublime >8fh
-	    │   │   │   │   ├── Pythonista >hrv
-	    │   │   │   │   └── Python >fv2
-	    │   │   │   └── Syntax Highlighting of Inline Nodes (Sublime) >koe
-	    │   │   ├── Compact Nodes >kpz
-	    │   │   │   ├── Example Compact Node >d7b
-	    │   │   │   │   └── Example inline node within the compact node >9up
-	    │   │   │   └── Sublime >qwn
-	    │   │   │       └── Pythonista >0yn
-	    │   │   ├── Generating a node ID manually >rfp
-	    │   │   ├── Node Metadata >00x
-	    │   │   │   ├── Reserved Metadata Keys >011
-	    │   │   │   │   ├── title (overrides the default title) >00y
-	    │   │   │   │   ├── index >00z
-	    │   │   │   │   └── flags >cwb
-	    │   │   │   │       └── - exclude_from_tree >1e3
-	    │   │   │   └── Timestamps >005
-	    │   │   │       ├── Timeline View >00k
-	    │   │   │       └── Time Zones >7w6
-	    │   │   │           └── Timezone List >zh1
-	    │   │   └── The Node List >01i
-	    │   │       └── Opening the Node List >hl7
-	    │   │           ├── Sublime >p78
-	    │   │           ├── Pythonista >c3y
-	    │   │           └── Python >h8c
-	    │   ├── Trees >00h
-	    │   │   ├── From any given node >00f
-	    │   │   └── From the root >00g
-	    │   ├── Links and Pointers >00j
-	    │   │   ├── Links >0y2
-	    │   │   │   └── Sublime Text tools to help with linking >00m
-	    │   │   ├── Dynamically Titled Links >4vu
-	    │   │   ├── Opening Links >01w
-	    │   │   │   ├── Sublime >osu
-	    │   │   │   └── Pythonista >iy8
-	    │   │   ├── Viewing Linked Relationships >00u
-	    │   │   ├── Linking to outside resources >00q
-	    │   │   │   ├── Web >00o
-	    │   │   │   └── Files >00p
-	    │   │   ├── ? (Missing Node): > !RECURSION 3:
-	    │   │   └── Traverse Mode >00w
-	    │   │       └── Word Wrap in Traverse Mode >xci
-	    │   ├── Using Multiple Projects at a Time >ipy
-	    │   │   ├── Project Naming (Identification) >tgp
-	    │   │   └── Linking Between Projects >7lx
-	    │   ├── Converting and Exporting >ezg
-	    │   │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
-	    │   │   └── Example : Fragment Exported to HTML >baq
-	    │   ├── Search >k67
-	    │   │   └── Full Text Search >4p9
-	    │   │       ├── Searching >mzj
-	    │   │       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
-	    │   │       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
-	    │   │       └── Search Using Dynamic Nodes >uy4
-	    │   ├── Filenames >01m
-	    │   ├── Development >01o
-	    │   │   └── Make Installation Easier >mh8
-	    │   └── File History >prp
-	    └── Example Recursive Node Tree >01n
+##### Example Recursive Node Tree
+Example Recursive Node Tree 
+Pointers[Pointers](#pointers)
+├── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
+├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
+│   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
+└── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
+    ├── Urtext  Version: 0.2.0-alpha[Urtext  Version: 0.2.0-alpha](#urtext--version:-0.2.0-alpha)
+    │   ├── Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
+    │   │   ├── Installation and Setup[Installation and Setup](#installation-and-setup)
+    │   │   ├── Urtext Syntax Guide[Urtext Syntax Guide](#urtext-syntax-guide)
+    │   │   ├── Urtext Operations Guide[Urtext Operations Guide](#urtext-operations-guide)
+    │   │   └── Examples[Examples](#examples)
+    │   └── Reference[Reference](#reference)
+    │       ├── About Urtext[About Urtext](#about-urtext)
+    │       │   ├── Description[Description](#description)
+    │       │   ├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
+    │       │   ├── Uses[Uses](#uses)
+    │       │   └── Project Requirements and Features[Project Requirements and Features](#project-requirements-and-features)
+    │       ├── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
+    │       │   ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
+    │       │   ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
+    │       │   ├── Hiding Line Numbers[Hiding Line Numbers](#hiding-line-numbers)
+    │       │   ├── Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
+    │       │   ├── Disable Prompts for File Reload[Disable Prompts for File Reload](#disable-prompts-for-file-reload)
+    │       │   ├── Remove Indent Guides[Remove Indent Guides](#remove-indent-guides)
+    │       │   ├── Save on Focus Lost[Save on Focus Lost](#save-on-focus-lost)
+    │       │   └── Using a Sublime Project for an Urtext Project[Using a Sublime Project for an Urtext Project](#using-a-sublime-project-for-an-urtext-project)
+    │       ├── Making a New Project[Making a New Project](#making-a-new-project)
+    │       │   └── Using/Adding Existing Files[Using/Adding Existing Files](#using/adding-existing-files)
+    │       ├── Nodes[Nodes](#nodes)
+    │       │   ├── Files[Files](#files)
+    │       │   ├── Inline Nodes[Inline Nodes](#inline-nodes)
+    │       │   │   ├── Example Inline Node[Example Inline Node](#example-inline-node)
+    │       │   │   └── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
+    │       │   ├── Compact Nodes[Compact Nodes](#compact-nodes)
+    │       │   │   └── Example Compact Node[Example Compact Node](#example-compact-node)
+    │       │   │       └── Example inline node within the compact node[Example inline node within the compact node](#example-inline-node-within-the-compact-node)
+    │       │   ├── Generating a node ID manually[Generating a node ID manually](#generating-a-node-id-manually)
+    │       │   └── The Node Browser[The Node Browser](#the-node-browser)
+    │       │       └── Opening the Node List[Opening the Node List](#opening-the-node-list)
+    │       │           ├── Sublime[Sublime](#sublime)
+    │       │           ├── Pythonista[Pythonista](#pythonista)
+    │       │           └── Python[Python](#python)
+    │       ├── Metadata[Metadata](#metadata)
+    │       │   ├── Reserved Metadata Keys[Reserved Metadata Keys](#reserved-metadata-keys)
+    │       │   │   ├── title (overrides the default title)[title (overrides the default title)](#title-overrides-the-default-title)
+    │       │   │   ├── index[index](#index)
+    │       │   │   └── flags[flags](#flags)
+    │       │   │       └── - exclude_from_tree[- exclude_from_tree](#--exclude_from_tree)
+    │       │   └── Timestamps[Timestamps](#timestamps)
+    │       │       ├── Timeline View[Timeline View](#timeline-view)
+    │       │       └── Time Zones[Time Zones](#time-zones)
+    │       │           └── Timezone List[Timezone List](#timezone-list)
+    │       ├── Trees[Trees](#trees)
+    │       │   ├── From any given node[From any given node](#from-any-given-node)
+    │       │   └── From the root[From the root](#from-the-root)
+    │       ├── Links and Pointers[Links and Pointers](#links-and-pointers)
+    │       │   ├── Links[Links](#links)
+    │       │   │   └── Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
+    │       │   ├── Dynamically Titled Links[Dynamically Titled Links](#dynamically-titled-links)
+    │       │   ├── Opening Links[Opening Links](#opening-links)
+    │       │   │   ├── Sublime[Sublime](#sublime)
+    │       │   │   └── Pythonista[Pythonista](#pythonista)
+    │       │   ├── Viewing Linked Relationships[Viewing Linked Relationships](#viewing-linked-relationships)
+    │       │   ├── Linking to outside resources[Linking to outside resources](#linking-to-outside-resources)
+    │       │   │   ├── Web[Web](#web)
+    │       │   │   └── Files[Files](#files)
+    │       │   ├── ? (Missing Node): >! RECURSION 2:lmu
+    │       │   └── Traverse Mode[Traverse Mode](#traverse-mode)
+    │       │       └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
+    │       ├── Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
+    │       │   ├── Project Naming (Identification)[Project Naming (Identification)](#project-naming-identification)
+    │       │   └── Linking Between Projects[Linking Between Projects](#linking-between-projects)
+    │       ├── Converting and Exporting[Converting and Exporting](#converting-and-exporting)
+    │       │   ├── Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
+    │       │   └── Example : Fragment Exported to HTML[Example : Fragment Exported to HTML](#example-:-fragment-exported-to-html)
+    │       ├── Search[Search](#search)
+    │       │   └── Full Text Search[Full Text Search](#full-text-search)
+    │       │       ├── Searching[Searching](#searching)
+    │       │       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe[Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe](#sublime-:-select-`urtext:-search`-from-the-command-pallete.-this-provides-an-input-panel-on-the-lowe)
+    │       │       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the[Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the](#pythonista-:-use-the-"?"-urtext-button.-results-will-be-updated-in-real-time-in-the-view-behind-the)
+    │       │       └── Search Using Dynamic Nodes[Search Using Dynamic Nodes](#search-using-dynamic-nodes)
+    │       ├── Filenames[Filenames](#filenames)
+    │       ├── Development[Development](#development)
+    │       │   └── Make Installation Easier[Make Installation Easier](#make-installation-easier)
+    │       └── File History[File History](#file-history)
+    └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
 
-## Traverse ModeTraverse Mode    
+### Traverse ModeTraverse Mode    
 
 This feature is currently implemented in Sublime Text only.
 
@@ -1331,14 +1480,14 @@ Toggle Traverse Mode off by pressing Shift-Ctrl-R again. The status bar at the b
 Note that if Traverse mode is off, you can also open a link manually (Shift-Ctrl-/) as normal. 
 
 This feature is not built into Urtext; it is a feature of the Sublime package only.
-### Word Wrap in Traverse Mode 
+#### Word Wrap in Traverse Mode 
 
 Since Traverse Mode splits the window into two or more panes, it is suggested to set Word Wrap Column to "Auto" in Sublime Settings. This will cause the edited views to wrap correctly no matter the screen or window/pane size, as well as in Sublime's Distraction Free Mode.
 
 Whenever Traverse Mode is enabled on a view, word wrap for that view is turned off altogether to prevent awkward wrapping of trees. It is restored when Traverse Mode is turned off.
 
 
-# Using Multiple Projects at a Time
+## Using Multiple Projects at a Time
 
 To use multiple projects at once, there is a project context manager. When you initially pass a path to Urtext, it looks recursively in all sub folders for additional projects. If it finds a compilable Urtext project in any one, it adds these to the context manager.  You can then freely switch among projects, either explicitly, or using links between the projects (described below). When switching projects, all Urtext's features, content and behavior, including links, compiling, and all functions linked to UI buttons, will operate in the context of the selected project. 
 
@@ -1350,10 +1499,10 @@ Recall that what defines a project is a folder. This is also what separates it f
 
 To switch between projects in Sublime, select Urtext: Select Project from the command palette.
 In Pythonista, use "Switch Projects" from the feature menu.
-## Project Naming (Identification) 
+### Project Naming (Identification) 
 
 Unlike nodes, projects are uniquely identified by name. For this reason, each project must have an unique name within the running instance of Urtext. Projects can be named using the project_title key in the project's project_settings node. If no name is present, the project's name becomes its absolute path in the file system.
-## Linking Between Projects 
+### Linking Between Projects 
 
 You may also link from one project to another within the text. To so this, use the following syntax:
 
@@ -1362,7 +1511,7 @@ You may also link from one project to another within the text. To so this, use t
 
 Following this link will change the project context to the named project and open its specified node.
 
-# Converting and Exporting
+## Converting and Exporting
 
 Urtext can convert (export) nodes, and sets of nodes, to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within the same project. Like other dynamic functions, exporting is dynamic ; that is, when changes are made to the source nodes, exports are immediately updated, whether they are in a project node or an external file.
 
@@ -1374,98 +1523,94 @@ export : (format) : ( source_node_id )
 
 (format) : One of `plaintext`, `markdown` or `html`
 (source_id): The source node to export.
-## Example : Urtext Documentation Exported in Markdown to a File  
+### Example : Urtext Documentation Exported in Markdown to a File  
 
 The following dynamic definition exports this entire documentation (from its root node [Urtext  Version: 0.2.0-alpha](#urtext--version:-0.2.0-alpha) ) in Markdown format to a file called documentation.md:
-## Example : Fragment Exported to HTML  
+### Example : Fragment Exported to HTML  
 
 The following Dynamic Definition exports the [Links and Pointers](#links-and-pointers) section of the documentation to HTML, into a node inside this one:
 
-# Search
-## Full Text Search   
+## Search
+### Full Text Search   
 
 Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments.
-### Searching
-#### Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe r edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes.
-#### Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the  search field. To exit, tap outside the search field.
-### Search Using Dynamic Nodes 	
+#### Searching
+##### Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe r edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes.
+##### Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the  search field. To exit, tap outside the search field.
+#### Search Using Dynamic Nodes 	
 
 Search results can populate a dynamic node by using the key-value pair:
 
 - search:(string)
 
 For example, the following definition targets node[Example Search Results](#example-search-results) (below) and populates it with all nodes containing the word "urtext".
-#### Example Search Results
+##### Example Search Results
 Example Search Results 
-Pythonista[Pythonista](#pythonista)
-Pythonista[Pythonista](#pythonista)
-Using a Sublime Project[Using a Sublime Project](#using-a-sublime-project)
-Urtext Syntax Guide[Urtext Syntax Guide](#urtext-syntax-guide)
-Urtext  Version: 0.2.0-alpha[Urtext  Version: 0.2.0-alpha](#urtext--version:-0.2.0-alpha)
-File History[File History](#file-history)
-About Urtext[About Urtext](#about-urtext)
-Pythonista[Pythonista](#pythonista)
-Download Dependencies from a Monorepo[Download Dependencies from a Monorepo](#download-dependencies-from-a-monorepo)
+Files[Files](#files)
 Download and Install Dependencies Manually[Download and Install Dependencies Manually](#download-and-install-dependencies-manually)
-Full Text Search[Full Text Search](#full-text-search)
-0.1.14-alpha[0.1.14-alpha](#0.1.14-alpha)
-Disable Prompts for File Reload[Disable Prompts for File Reload](#disable-prompts-for-file-reload)
-Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe[Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe](#sublime-:-select-`urtext:-search`-from-the-command-pallete.-this-provides-an-input-panel-on-the-lowe)
-Installation[Installation](#installation)
-Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
-Quick Start and Guides[Quick Start and Guides](#quick-start-and-guides)
-Filenames[Filenames](#filenames)
-0.1.11-alpha[0.1.11-alpha](#0.1.11-alpha)
-The Node List[The Node List](#the-node-list)
-Node Identity (Node IDs)[Node Identity (Node IDs)](#node-identity-node-ids)
-Description[Description](#description)
-Sublime Text Implementation Setup[Sublime Text Implementation Setup](#sublime-text-implementation-setup)
-Python[Python](#python)
-Opening Links[Opening Links](#opening-links)
-More About Node IDs[More About Node IDs](#more-about-node-ids)
-iPhone/iPad/iOS[iPhone/iPad/iOS](#iphone/ipad/ios)
-Projects, Structure and Compiling[Projects, Structure and Compiling](#projects,-structure-and-compiling)
-Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
-Syntax Highlighting of Inline Nodes (Sublime)[Syntax Highlighting of Inline Nodes (Sublime)](#syntax-highlighting-of-inline-nodes-sublime)
-Node Metadata[Node Metadata](#node-metadata)
-Search Using Dynamic Nodes[Search Using Dynamic Nodes](#search-using-dynamic-nodes)
-Urtext Action Guide[Urtext Action Guide](#urtext-action-guide)
+This node is just here as a destination from the node pointer in  Urtext Syntax Guide[This node is just here as a destination from the node pointer in  Urtext Syntax Guide](#this-node-is-just-here-as-a-destination-from-the-node-pointer-in--urtext-syntax-guide)
+Project Naming (Identification)[Project Naming (Identification)](#project-naming-identification)
+Urtext Syntax Guide[Urtext Syntax Guide](#urtext-syntax-guide)
 Traverse Mode[Traverse Mode](#traverse-mode)
-Viewing Linked Relationships[Viewing Linked Relationships](#viewing-linked-relationships)
-Timeline View[Timeline View](#timeline-view)
-project_settings[project_settings](#project_settings)
-Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
-Sublime[Sublime](#sublime)
-Sublime[Sublime](#sublime)
+About Urtext[About Urtext](#about-urtext)
+Make Installation Easier[Make Installation Easier](#make-installation-easier)
+Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
+Pythonista[Pythonista](#pythonista)
+Metadata[Metadata](#metadata)
+Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe[Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe](#sublime-:-select-`urtext:-search`-from-the-command-pallete.-this-provides-an-input-panel-on-the-lowe)
+Python[Python](#python)
 From any given node[From any given node](#from-any-given-node)
 From the root[From the root](#from-the-root)
-Python[Python](#python)
-Project Naming (Identification)[Project Naming (Identification)](#project-naming-identification)
-Using Pythonista Urtext[Using Pythonista Urtext](#using-pythonista-urtext)
-Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
 Converting and Exporting[Converting and Exporting](#converting-and-exporting)
-Make Installation Easier[Make Installation Easier](#make-installation-easier)
-Python[Python](#python)
-Python[Python](#python)
-Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the[Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the](#pythonista-:-use-the-"?"-urtext-button.-results-will-be-updated-in-real-time-in-the-view-behind-the)
-Using this document[Using this document](#using-this-document)
-Save on Focus Lost[Save on Focus Lost](#save-on-focus-lost)
-Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
-Project Requirements and Features[Project Requirements and Features](#project-requirements-and-features)
+project_settings[project_settings](#project_settings)
+Details on the Sublime Implementation[Details on the Sublime Implementation](#details-on-the-sublime-implementation)
 Timestamps[Timestamps](#timestamps)
-Pythonista[Pythonista](#pythonista)
-Inline Nodes[Inline Nodes](#inline-nodes)
-Pythonista Urtext Implementation Setup[Pythonista Urtext Implementation Setup](#pythonista-urtext-implementation-setup)
-Metadata List[Metadata List](#metadata-list)
-With Sublime Text[With Sublime Text](#with-sublime-text)
-Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
-tag_all[tag_all](#tag_all)
-Uses[Uses](#uses)
-Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
+Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
+Description[Description](#description)
+Dependencies and Installation[Dependencies and Installation](#dependencies-and-installation)
 Python[Python](#python)
-Dependencies and Installation (Sublime)[Dependencies and Installation (Sublime)](#dependencies-and-installation-sublime)
+Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
+Project Requirements and Features[Project Requirements and Features](#project-requirements-and-features)
+Reference[Reference](#reference)
+Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
+Opening Links[Opening Links](#opening-links)
+More About Node IDs[More About Node IDs](#more-about-node-ids)
+Inline Nodes[Inline Nodes](#inline-nodes)
+<----Tue., Jun. 02, 2020, 10:26AM from Node ID[<----Tue., Jun. 02, 2020, 10:26AM from Node ID](#<----tue.,-jun.-02,-2020,-10:26am-from-node-id)
+iPhone/iPad/iOS[iPhone/iPad/iOS](#iphone/ipad/ios)
+Projects, Structure and Compiling[Projects, Structure and Compiling](#projects,-structure-and-compiling)
+Search Using Dynamic Nodes[Search Using Dynamic Nodes](#search-using-dynamic-nodes)
+Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
+Timeline View[Timeline View](#timeline-view)
+Urtext  Version: 0.2.0-alpha[Urtext  Version: 0.2.0-alpha](#urtext--version:-0.2.0-alpha)
+Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
+The Node Browser[The Node Browser](#the-node-browser)
+Download Dependencies from a Monorepo[Download Dependencies from a Monorepo](#download-dependencies-from-a-monorepo)
+Nodes[Nodes](#nodes)
+Urtext Operations Guide[Urtext Operations Guide](#urtext-operations-guide)
+Making a New Project[Making a New Project](#making-a-new-project)
+Using a Sublime Project for an Urtext Project[Using a Sublime Project for an Urtext Project](#using-a-sublime-project-for-an-urtext-project)
+Python[Python](#python)
+Generating a node ID manually[Generating a node ID manually](#generating-a-node-id-manually)
+0.1.14-alpha[0.1.14-alpha](#0.1.14-alpha)
+File History[File History](#file-history)
+tag_all[tag_all](#tag_all)
+Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the[Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the](#pythonista-:-use-the-"?"-urtext-button.-results-will-be-updated-in-real-time-in-the-view-behind-the)
+Compact Nodes[Compact Nodes](#compact-nodes)
+Using/Adding Existing Files[Using/Adding Existing Files](#using/adding-existing-files)
+Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
+Save on Focus Lost[Save on Focus Lost](#save-on-focus-lost)
+Installation and Setup[Installation and Setup](#installation-and-setup)
+0.1.11-alpha[0.1.11-alpha](#0.1.11-alpha)
+Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
+Full Text Search[Full Text Search](#full-text-search)
+Using Urtext in iOS with Pythonista[Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
+Viewing Linked Relationships[Viewing Linked Relationships](#viewing-linked-relationships)
+Disable Prompts for File Reload[Disable Prompts for File Reload](#disable-prompts-for-file-reload)
+Uses[Uses](#uses)
+Filenames[Filenames](#filenames)
 
-# Filenames
+## Filenames
 
 
 Since node identities are independent of their containing filenames, you can use any naming convention you want. Urtext can also rename files automatically in convenient formats based on their title and/or index. Renaming by index is useful, for instance, if you want file-level nodes easily readable inside a file system, mobile app, or other file browser.
@@ -1482,8 +1627,8 @@ If no index is present:
 
 This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
 
-# Development
-## Make Installation Easier  
+## Development
+### Make Installation Easier  
 
 The way Sublime Text is currently set up, manually installing all the dependency modules is the easiest way to get it set up. Alternatives such as using git subtrees, wrapping each individual dependency in a separate Sublime Package and then making those Packages dependencies of the Urtext Package, etc., all end up involving both more maintenance and more legwork for the end user than just manually installing everything.
 
@@ -1501,7 +1646,7 @@ https://forum.sublimetext.com/t/dependencies-in-package-control-3/14646/5
 Example:
 https://github.com/packagecontrol/requests
 
-# File History
+## File History
 
 Urtext files, being in plaintext, can be versioned using tools such as Git, Subversion, Mercurial, and others. Those tools are intended mainly for coding, when it is generally considered bad practice to commit non-working/non-compiling iterations of a project. Though Urtext files do compile, their actual text content is not a factor in this, so is reasonable to track changes at all stages of a project, even at granular levels.
 
@@ -1512,6 +1657,3 @@ To access a file's timeline, use Control-Shift-G in Sublime Text.
 
 Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories.
 
-
-
-License: GNU General Public License 3.0

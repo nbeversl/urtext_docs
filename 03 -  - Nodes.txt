@@ -1,62 +1,27 @@
 Nodes
 
-Think of a node as a region of paper with flexible and open-ended length. 
+A node is region, or set of regions, of a file, up to and including the entire file. A file is a node and nodes can contain other nodes.
 
-{{ Node Identity (Node IDs)
+The identity of an Urtext node persists no matter its containing filename, even when moved from one file to another. This is accomplished by assigning each node a unique identifier of three alphanumeric characters. This provides over 46,000 possible nodes per project. It is possible to use files containing no IDs in an Urtext project, but most of the benefits of Urtext are lost. 
 
-	The identity of an Urtext node persists no matter its containing filename, even when moved from one file to another. This is accomplished by assigning each node a unique identifier. Since nothing is hidden from view in an Urtext file, a minimally intrusive format of three alphanumeric was chosen. This results in over 46,000 possible nodes per project. Every node must have an ID; files with nodes missing IDs cannot be compiled and are omitted from the project. Each node's ID is generated automatically on creation and placed into its initial metadata region. ID's can be changed without affecting functionality, though pre-existing links must be manually changed as well. IDs are not case sensitive.
+Each node's ID is generated automatically on creation and placed into its initial metadata region. ID's can be changed without affecting functionality, though pre-existing links must be manually changed as well. 
 
- 	Node IDs are assigned in random order and have no special meaning except as a unique identifier. IDs are covered more in | More About Node IDs >01q.
+Node IDs are assigned in random order and have no special meaning except as a unique identifier. See | More About Node IDs >01q for more information.
+ 
+{{ Files
 
-   /-- ID:01h --/ }}
-
-{{ File Level Nodes
-
-	A file-level node is any node at the outermost level of a single file. It may or may not contain other nodes nested inside it.
-
-	{{ Creating a File Level Node
-
-		{{ Sublime /-- tags:sublime --/
-
-			Press Control-Shift-; (Control-Shift-semicolon). 
-			/-- id: xo8; --/ }}
-
-		{{ Pythonista /-- tags:pythonista --/
-
-			Press `;` in the Urtext key row.
-
-		 /-- id: xcx --/ }}
-
-		{{ Python
-
-			%%-PYTHON
-
-				UrtextProject.new_file_node(date=None, metadata = {}, node_id=None)
-				"""
-				Kwargs:
-					date (datetime): the timestamp, defaults to now if not specified
-					metadata (dict): key/value metadata pairs
-					node_id (str): optionally specify a node_id (rarely used)
-				Returns:
-					dict: { 'filename' : # (str) : the new filename, without path
-							'id': # (str) the new node_id 
-							}
-				"""
-
-			%%-END /-- id: 83e; tags:python--/ }}
-	
-	The file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and a timestamp of the creation date and time.
+	The most basic node is a single file. It may or may not contain other nodes nested inside it.
+	To create a new file, press `Urtext-;`. A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
 
 	/--  id: ekz	--/ }}
 
-	By default, the first non-whitespace line of any node is the node's title. Write a title and anything else into the node. Save it as usual (Super-S in Sublime).
+By default, the first non-whitespace line of any node is the node's title. 
 
-	/-- ID:01g --/ }}
-
+Files can contain any number of nodes:
 | Inline Nodes >>004
 | Compact Nodes >>kpz
 | Generating a node ID manually >>rfp
-| Node Metadata >>00x
+
 | The Node List >>01i
 
 

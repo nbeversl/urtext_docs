@@ -1,6 +1,6 @@
-The Node List
+The Node Browser
 
-	Every project maintains a list of all its nodes. The Node List is automatically written to a built-in file-level dynamic node. (See |  ?  >e82 for more information). 
+Every project maintains a list of all its nodes. The Node List is automatically written to a built-in file-level dynamic node. (See |  ?  >e82 for more information). 
 
 	{{ Opening the Node List
 

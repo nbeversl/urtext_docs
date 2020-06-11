@@ -8,7 +8,7 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 	 | 		Placed before a node link, dynamically populates the node title. 
 	 		Example and more info: | Dynamically Titled Links >4vu
 
-	 >>xxx	Node Pointer
+	 >>ttt	Node Pointer
 	 		Embeds the specified node as though it were included inline using {{ }}
 	 		More information: | Pointers >lmu
 
@@ -64,11 +64,19 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 	[[ ]]	Dynamic Definition Wrapper. 
 
 			Template:
+			
 			[[ FUNCTION(key:value:<timestamp> operator) ]]
+
+			Note the dynamic definition syntax ignores whitespace and arbitrary text outside of functions.
 
 			Examples:
 			
-			[[ 	ID(xxx) 	Target Node id to dynamically populate with output
+			[[ 	ID(rrr) 	Target Node id to dynamically populate with output
+
+				FILE()		Used only with EXPORT(). Outputs the export to the specified target filename.
+
+							Example:
+							FILE(myfile.txt)
 
 				INCLUDE()  	Nodes to include. Accepts one or multiple parameters.
 							
@@ -94,7 +102,7 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 								Includes any nodes matching either or both of `key:value` and `other_key:other_value`
 
 								"all_projects"
-								INCLUDE(all_projects)
+								INCLUDE(key:value all_projects)
 								Expands included nodes to include all projects in the project list.
 
 								Optional Timestamp:
@@ -108,20 +116,25 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 				SORT()		Sorts the results. Accepts multiple parameters:
 
 							SORT(
-								$key_name		Sorts by the value of the given key. Default is alphabetical.	
+								$[key_name]		Sorts by the value of the given key. Default is alphabetical.	
 								timestamp   	Sort by timestamp instead of alphabetical
 								last_accessed	Sort by last accessed
 								reverse			Reverse sort order 
 								)
+
+							Example:
+							SORT($title, reverse)
 
 				LIMIT()		Limits the output to the specified number of results.
 
 							Example:
 							LIMIT(30)
 
-				SHOW()		Formats the output, overriding defaults. 
-							Accepts arbitrary text, unicode newline characters (\n, \r), and words preceded (without whitespace) by `$`, which are are evaluated as metadata keys. Key names are
-							not displayed, only values. Add keynames manually if you want them included.
+				SHOW()		Supplies a template for the output, overriding defaults. 
+							Accepts arbitrary text, unicode newline characters (\n, \r), and words preceded (without whitespace) by `$`, which are are evaluated as metadata keys. 
+
+							- Key names are not displayed, only values. 
+							- Add keynames manually if you want them included.
 
 							Example:
 							SHOW(Author: $author, Date: $date\n)
@@ -146,44 +159,61 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 								Displays the contents of the node. Optional excerpt/length specifier after the colon
 
 								)
+	
+				METADATA()		Applies the given metadata to the output node. Accepts any number of key/value
+								pairs with optional timestamps.
 
-				TREE(xxx)		Outputs a tree of the hierarchy of nested nodes, with the specified node as root.
-								Does not incorporate INCLUDE() or EXCLUDE().
+				TAG_ALL()		Applies the specific metadata to all nodes in the target node. 
+								Accepts any number of key/value pairs with optional timestamps, and the option keyword `recursive`, which applies metadata also to all descendants.	
 
-				TIMELINE()		Outputs the specific nodes as a timeline.
+								Example:
+								TAG_ALL(tasks:due_soon recursive)
 
-								Accepts one of two arguments. If more than one is present, only the first one is
-								evaluated.
-
-								TIMELINE(meta)		Uses dates from node metadata
-
-								TIMELINE(inline)	Parses dates from inline timestamps
-
-				FORMAT()		Formats the exported output. Accepts one or more predefined arguments:
+				FORMAT()		Formats the output. 
+								Accepts one or more predefined arguments:
 								
 								FORMAT(preformat) 	
 								Wraps preformatted text (trees, etc.) in backticks to preserve formatting in 
-								Markdown contexts. Used only with EXPORT().
+								Markdown contexts. Only used with EXPORT().
 
 								FORMAT(multiline_meta)
-								Places dynamic node metadata on separate lines instead of separated by ;
+								Places dynamic node metadata on separate lines instead of separated by;
 
 								FORMAT(indent:30)
 								Indents the dynamic node by the specified number of spaces
 
-				METADATA()		Applies the given metadata to the output node. Accepts any number of key/value
-								pairs with optional timestamps.
 
+				The remaining functions will only be used one at a time and will override SHOW() and in some cases other functions.
+
+				TREE()			Outputs a tree of the hierarchy of nested nodes, with the specified node as root.
+								
+								- Ignores INCLUDE() and EXCLUDE().
+
+								Example:
+								TREE(rtr)
+								Will output a tree with the node `rtr` as the root.
+
+				TIMELINE()		Outputs the specified nodes as a timeline.
+
+								- Ignores SORT()
+
+								Accepts one of two arguments. If more than one is present, only the first is
+								evaluated.
+
+								TIMELINE(meta)		Uses dates from node metadata
+								TIMELINE(inline)	Parses dates from inline timestamps
 
 				SEARCH()		Returns search results of the string passed as an argument.
 								Searches are case-insensitive.
 
+								- Ignores INCLUDE() and EXCLUDE().
+
 								Example:
 								SEARCH("western civilization")
 
-				
-
 				EXPORT()		Exports the specified node id to a file and/or other node in the project.
+
+								- Ignores everything except ID() and FILE().
 
 								EXPORT (
 									source:xxx		Specifies the source node id
@@ -191,22 +221,6 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 									markdown		Export as markdown
 									html			Export as HTML
 								)
-
-				FILE()			Used only with EXPORT(). Outputs the export to the specified filename.
-
-								FILE(myfile.txt)
-
-				TAG_ALL()		Applies the specific metadata to all nodes in the target node. Accepts any number
-								of key/value pairs with optional timestamps.
-
-								Example:
-								TAG_ALL(
-									tasks:due_soon		key/value pair to apply
-									recursive			(optional) applies metadata also to all descendants	
-								)
-
-				Notice the dynamic definition syntax ignores whitespace and arbitrary text outside of functions.
-
 			]] 
 
 /-- ID: znj --/

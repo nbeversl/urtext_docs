@@ -1,31 +1,31 @@
-Node Metadata
-    
-    Metadata is data about the content, in the form of key/value pairs and timestamps. Other than a few reserved key/value pairs used for compiling, metadata is open for user-defined purposes. Keys and values of metadata tags are indexed automatically and searchable within the Urtext project (see >012). 
+Metadata
 
-    Metadata regions in Urtext open with a forward-slash followed by two dashes and close with two dashes followed by a forward slash. Each metadata entry is a key/value pair, separated by a colon, with the value containing an optional timestamp. Examples:
+Metadata is data about the content, in the form of key/value pairs and timestamps. Other than a few reserved key/value pairs used for compiling, metadata is open for user-defined purposes. Keys and values of metadata tags are indexed automatically and searchable within the Urtext project. 
 
-        /-- purpose: work-related <Tue., Mar. 05, 2019, 07:25 PM> --/
-        /-- kind: gift_list --/
+Metadata regions in Urtext open with a forward-slash followed by two dashes and close with two dashes followed by a forward slash. Each metadata entry is a key/value pair, separated by a colon, with the value containing an optional timestamp. Examples:
 
-    The only required metadata is a node ID. Additional user-defined metadata can be added into the same region, and additional metadata regions can be inserted arbitrarily anywhere inside a node. You can also string several entries together on one line, separated by semicolons:
+    /-- purpose: work-related <Tue., Mar. 05, 2019, 07:25 PM> --/
+    /-- kind: gift_list --/
+
+The only required metadata is a node ID. Additional user-defined metadata can be added into the same region, and additional metadata regions can be inserted arbitrarily anywhere inside a node. You can also string several entries together on one line, separated by semicolons:
 
         /-- note: example note ; tag: groceries --/
 
-    Note that: 
+Note that: 
 
-        -   A colon separates the key from the value 
+    -   A colon separates the key from the value 
 
-        -   All three components are optional; any content preceding a colon (if one is present) is interpreted as a key; content following the (first) colon is interpreted as a value. If no colon is present, the entry is read as a key with an empty value.
+    -   All three components are optional; any content preceding a colon (if one is present) is interpreted as a key; content following the (first) colon is interpreted as a value. If no colon is present, the entry is read as a key with an empty value.
 
-        -   A timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed.
+    -   A timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed.
 
-        -   Values are not case-sensitive, except for the values of the following keys:
+    -   Values are not case-sensitive, except for the values of the following keys:
 
-                title
-                notes
-                timestamp_format 
-                    ( used in the project_settings node only : see >00l)
-                filenames 
+            title
+            notes
+            timestamp_format 
+                ( used in the project_settings node only : see >00l)
+            filenames 
 
 {{ Reserved Metadata Keys
                                                    
@@ -63,9 +63,7 @@ Node Metadata
                    
     /-- ID:011 --/ }}
 
-Next topics:
-
-| Timestamps >>005
+Next topic| Timestamps >>005
 
 
 

@@ -1,29 +1,4 @@
 Generating a node ID manually 
-
-{{ 	Sublime  /-- tags:sublime --/ 
-
-		If you accidentally delete a Node ID or need to insert one arbitrarily, press Control-Shift-I. 
-
-	Pythonista 
-		
-		Not current implemented
-
- 	Python /-- tags:python --/
-
-		%%-PYTHON
-
-			UrtextProject.next_index()
-			"""
-			Returns: 
-				string : An unused node ID in the project.
-			"""
-
-		%%-END
-
-
-
-}}
-
-/-- ID:rfp
-Timestamp:<Wed., Oct. 30, 2019, 04:37 PM>
---/
+If you accidentally delete a Node ID or need to insert one arbitrarily, press Urtext-i. 
+	
+/-- ID:rfp --/
