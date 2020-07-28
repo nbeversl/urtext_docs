@@ -1,75 +1,110 @@
 Metadata
 
-Metadata is data about the content, in the form of key/value pairs and timestamps. Other than a few reserved key/value pairs used for compiling, metadata is open for user-defined purposes. Keys and values of metadata tags are indexed automatically and searchable within the Urtext project. 
+Every node can have an unlimited number of metadata entries. Metadata is indexed and becomes searchable and sortable. Other than a few reserved key/value pairs, metadata is user-defined. 
 
-Metadata regions in Urtext open with a forward-slash followed by two dashes and close with two dashes followed by a forward slash. Each metadata entry is a key/value pair, separated by a colon, with the value containing an optional timestamp. Examples:
+Metadata can be added to text in two ways: using wrapped blocks, or using inline notation:
 
-    /-- purpose: work-related <Tue., Mar. 05, 2019, 07:25 PM> --/
-    /-- kind: gift_list --/
+{{ Wrapped
 
-The only required metadata is a node ID. Additional user-defined metadata can be added into the same region, and additional metadata regions can be inserted arbitrarily anywhere inside a node. You can also string several entries together on one line, separated by semicolons:
+    Wrapped metadata blocks can be inserted arbitrarily anywhere inside a node. Metadata blocks open with a forward-slash followed by two dashes and close with two dashes followed by a forward slash: 
+  
 
-        /-- note: example note ; tag: groceries --/
+    Wrapped metadata can be either free-form, such as the example above, or structured in colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:
 
-Note that: 
+        purpose::This node describes Metadata in Urtext <Thu., Jun. 11, 2020, 09:09 PM>
+        audience::Urtext user 
+
+      Separated multiple entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line. 
+
+    Note that:
 
     -   A colon separates the key from the value 
 
-    -   All three components are optional; any content preceding a colon (if one is present) is interpreted as a key; content following the (first) colon is interpreted as a value. If no colon is present, the entry is read as a key with an empty value.
+    -   All three components are optional; any content preceding a colon (if one is present) is interpreted as a key. Content following the (first) colon is interpreted as a value. 
 
-    -   A timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed.
+    -   If no colon is present, the entry is read as a value with the default key `comment`.
 
-    -   Values are not case-sensitive, except for the values of the following keys:
+    -   A timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. iy7}}
 
-            title
-            notes
-            timestamp_format 
-                ( used in the project_settings node only : see >00l)
-            filenames 
 
-{{ Reserved Metadata Keys
-                                                   
-    There are three reserved metadata keys:
+{{ Inline
+    
+    Individual metadata key/value pairs can also be inserted anywhere in the text without a wrapper, using a double colon (` :: `) notation. 
+      example_key::example_value. 
 
-       {{   title
-       
-            If you want to override the automatic title and assign a title manually, use title tag in the metadata block: /-- title: title (overrides the default title)  --/
+    Inline metadata entries remember their location in the text, making them double as contextual markers and sort indexes.
 
-        /-- ID:00y --/ }}
+    Inline metadata entries do not include the option of timestamps. Instead, you may insert inline timestamp notation. See | Timestamps >005
 
-       {{   index
-       
-            You can optionally add a two-digit sort index (00-99) to a node, such as:
+     gmk}}
+  
+  | Timestamps >>005
 
-               /-- index: 03 --/    
+    {{  Case-sensitivity
 
-            Index tags will sort the files in the Node List (>01i) . Any indexed nodes will sort before (above) the others, with lowest number appearing first. 
+        -   Values are not case-sensitive, except those with the following keys:
 
-            Remember unindexed notes display in order of creation, newest first, based on the value of the timestamp. You can give the same index number to multiple nodes; in this case they sort with the most recent node first, within each index.
+            `title`             Manually overrides the node's title. {{ **Needs edit/organization here about Node Titles. 
+id::hof
+tags::edit
+created::<Thu., Jun. 11, 2020, 04:40 PM> }}
+            `comments           ( This key is assumed when no key is present; used for freeform comments. )
+            `notes`             ( as for `comments` )
+            `weblink`           ( used for HTTP/S links. See | Linking to outside resources >00q )
 
-            /-- ID:00z --/ }}
+            The rest are used only in the project_settings node (see | project_settings >00l) :
 
-        {{  flags
+            `timestamp_format`  
+            `filenames`         
+            `project_title`
+            `timezone`
+            `timestamp_format`
 
-            The `flags` key is used to set node behavior. At present only the following exists:
-
-            {{- exclude_from_tree
-
-                Excludes a node from being included in a tree. For an example, see Example 2 in "Dynamic Nodes" >029. For more on tree, see >00h  /-- id: 1e3 --/ }}
-
-        /-- id: cwb--/ }}
           
-    The only additional reserved metadata keys apply only to the project_settings node (>00l).
-                   
-    /-- ID:011 --/ }}
+id::l36 }}
 
-Next topic| Timestamps >>005
+   {{ Reserved Keys
+
+      There are two reserved keys that Urtext interprets in a special way:
+
+        {{   `index`
+      
+           Provides a way to give nodes a sort order in | The Node Browser >01i.  Indexed nodes will sort before (above) the others, lowest numbers appearing first. To utilize, add a two-digit sort index (00-99) to a node, such as: 
+index::03    
+
+           You can give the same index number to multiple nodes; in this case they sort first by index, then by timestamped, newest first.
+
+           Unindexed nodes will display underneath indexed nodes, by timestamp, newest first.        
+
+           
+ID::00z }}
+
+       {{  `flags`
+
+           Used to set node behavior for specific purposes withing Urtext. At present only the following exists:
+
+           - {{  `exclude_from_tree`
+
+               Excludes a node from being included in a tree. For an example, see Example 2 in "Dynamic Nodes" | Example 2 : Tree >029. For more on tree, see | Trees >00h  
+
+           
+id::1e3 }}
+
+
+            - {{ `exclude_from_export`
+
+                Excludes a node from being exported, when project content is exported. See | Converting and Exporting >ezg.
+
+
+             id: vv7;  --/ }}
+       
+id::cwb }}
+     
+id::fo2 }}
 
 
 
 
-/-- ID:00x
-Timestamp:<Sat., Jun. 08, 2019, 09:23 AM>
-tags: 
-index: 05
---/
+ID::00x
+Updated::<Thu., Jun. 11, 2020, 04:35 PM>
+index::05

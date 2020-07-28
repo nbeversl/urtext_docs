@@ -1,6 +1,6 @@
 This node is just here as a destination from the node pointer in | Urtext Syntax Guide >znj
 Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
 
-/-- id: ttt; 
-flags:exclude_from_tree; 
- --/
+
+id::ttt
+flags::exclude_from_tree

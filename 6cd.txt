@@ -1,4 +1,4 @@
-Installation and Setup
+Installation and Setup (Desktop)
 
 For desktop use (PC/Mac/Linux) Urtext is implemented in Sublime Text.
 
@@ -20,4 +20,5 @@ See also:
 | Details on the Sublime Implementation >01u
 | Using Urtext in iOS with Pythonista >os4
 
-/--  id: 6cd --/
+
+id::6cd

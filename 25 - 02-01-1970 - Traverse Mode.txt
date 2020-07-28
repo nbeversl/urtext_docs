@@ -1,4 +1,7 @@
-Traverse Mode   /-- ID:00w; title: Traverse Mode --/ /-- tags:sublime --/
+Traverse Mode   
+ID::00w
+title::Traverse Mode 
+tags::sublime
 
 This feature is currently implemented in Sublime Text only.
 
@@ -16,4 +19,5 @@ This feature is currently implemented in Sublime Text only.
 
         Whenever Traverse Mode is enabled on a view, word wrap for that view is turned off altogether to prevent awkward wrapping of trees. It is restored when Traverse Mode is turned off.
 
-    /-- ID:xci --/ }}
+    
+ID::xci }}

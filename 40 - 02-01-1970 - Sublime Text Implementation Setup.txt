@@ -48,7 +48,8 @@ Details on the Sublime Implementation
                 - diff-match-patch
                     The folder needed is `diff_match_patch`; add it to `Sublime Text 3/Lib/python3.3`.
                     https://pypi.org/project/diff-match-patch/ 
-                    /--  id: 774  --/ }}
+                    
+id::774 }}
 
     {{  Download Dependencies from a Monorepo
 
@@ -57,10 +58,13 @@ Details on the Sublime Implementation
 
             Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your `Sublime Text 3/Lib/python3.3` folder.
 
-     /-- id: arl --/ }}
+     
+id::arl }}
 
         Close and reopen Sublime Text. Urtext is now ready to use.
 
-    /-- id: 2fn --/ }}        
+    
+id::2fn }}        
 
-/-- ID:01u --/
+
+ID::01u

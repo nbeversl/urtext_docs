@@ -4,4 +4,5 @@ Viewing Linked Relationships
 
     These diagrams are displayed as Sublime "scratch" views, meaning they will never report as being dirty (unsaved). They are intended for one-time/temporary use and will not update when a node/file changes. To make permanent and dynamically updated diagrams, see | Dynamic Nodes >e82.
 
-    /-- ID:00u --/
+    
+ID::00u

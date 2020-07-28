@@ -12,4 +12,6 @@
                string: the contents of the new node, which can then be manually inserted using a text editor.
 			"""
 
-			%%-END /-- tags:python --/ /-- id: xor --/
+			%%-END 
+tags::python 
+id::xor

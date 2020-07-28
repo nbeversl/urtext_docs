@@ -1,4 +1,8 @@
 
 
 
-/-- id: iud; timestamp: <Tue., Jun. 02, 2020, 10:22 AM +0000>; from: Nates-iPhone; created: <Tue., Jun. 02, 2020, 10:26 AM> --/
+
+id::iud
+timestamp::<Tue., Jun. 02, 2020, 10:22 AM +0000>
+from::Nates-iPhone
+created::<Tue., Jun. 02, 2020, 10:26 AM>

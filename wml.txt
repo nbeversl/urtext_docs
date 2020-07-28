@@ -18,42 +18,23 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 	{{  }}	Subnode	wrapper. Can appear anywhere. Can be nested aribrarily deep.
 			More information: | Inline Nodes >004
 
-	/-- --/ 														
+	
+ 														
 	Metadata wrapper. Example:
 
-		/--
-			[key]:[value]												
-			Metadata Pair, can contain any keys/values and optional timestamp.
-			Some keys are reserved (see below). Keys are case-insensitive.
-
-			;					
-			Separator for metadata pairs
-
-			|															
-			Separator for multiple values in metadata pairs
-
-			Reserved Metadata Keys, With Example Vales
-
-			id: znj
-				Uniquely identifies the node in the project. Required in strict mode.
-				more info: | More About Node IDs >01q
-
-			index:01					
-				- Sets the index (priority) of the node in the project. more info: | index >00z
-
-			timestamp:<Wed., Jun. 05, 2019, 10:01 PM>					
-				Timestamp. more info: | Timestamps >005
-
-			title: UrText Reference Guide								
-				Overrides the Node Title. more info: | title (overrides the default title) >00y
-
-			flags:exclude_from_tree										
-				Sets node behavior. More info: | flags >cwb
-
-			from:Joes-iMac
-				Hostname of originating computer/device.
-
-		--/
+		
+[key]::[value]
+id::znj
+more info::| More About Node IDs >01q
+index::01
+Sets the index (priority) of the node in the project. more info::| index >00z
+timestamp::<Wed., Jun. 05, 2019, 10:01 PM>
+Timestamp. more info::| Timestamps >005
+title::UrText Reference Guide
+Overrides the Node Title. more info::| title (overrides the default title) >00y
+flags::exclude_from_tree
+Sets node behavior. More info::| flags >cwb
+from::Joes-iMac
 
 	[[ ]]	Dynamic Definition Wrapper. 
 
@@ -136,7 +117,6 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 
 
 
-/-- 
-timestamp: <Fri., Apr. 24, 2020, 01:10 PM>
-from: wwci-00407.local
---/
+
+timestamp::<Fri., Apr. 24, 2020, 01:10 PM>
+from::wwci-00407.local

@@ -23,7 +23,8 @@ Pointers
     Here is the same example child node from above: | Example Child Node Using a Node Pointer >>001 
 
 
-    /-- ID:00t --/ }}
+    
+ID::00t }}
 
 
 {{  Recursive Node Pointers
@@ -32,40 +33,39 @@ Pointers
 
     These are not prohibited, but the recursion will not be drawn if it is already contained in the tree. Instead, the point of recursion will show RECURSION, with a link to the Node ID of the node causing the recursion.
 
-    For example, this Node Pointer points back to the root node of the table of contents: | Urtext Documentation >>a5m. Instead of the table of contents being drawn recursively from this node, you can see the recursion point in the table of contents.
+    For example, this Node Pointer points back to the root node of the table of contents: | Urtext  Version: 0.4.0-alpha  Usage Guide and References >>a5m. Instead of the table of contents being drawn recursively from this node, you can see the recursion point in the table of contents.
 
-    Note, however, that if you view the entire tree with another node as root, one full iteration will still appear, with the point of recursion falling elsewhere in the tree. For instance, below is the table of contents with the node "Pointers" (| Pointers >lmu) as root. See Dynamic Nodes (| Dynamic Nodes >e82) for more information on how to generate trees like this in dynamic nodes.
+    Note, however, that if you view the entire tree with another node as root, one full iteration will still appear, with the point of recursion falling elsewhere in the tree. For instance, below is the table of contents with the node "Pointers" (| Pointers >lmu) as root. See Dynamic Nodes (|  ?  >e82) for more information on how to generate trees like this in dynamic nodes.
 
     
 
 {{
-Example Recursive Node Tree 
 Pointers >lmu
 ├── Example Child Node Using a Node Pointer >001
 ├── Duplicate Pointers >00t
 │   └── Example Child Node Using a Node Pointer >001
 └── Recursive Node Pointers >6ct
-    ├── Urtext  Version: 0.2.0-alpha >a5m
+    ├── Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m
+    │   ├── Urtext  Version: 0.4.0-alpha  Usage Guide and References >e5j
     │   ├── Quick Start, Guides and Examples >z7t
-    │   │   ├── Installation and Setup >6cd
+    │   │   ├── Installation and Setup (Desktop) >6cd
     │   │   ├── Urtext Syntax Guide >znj
     │   │   ├── Urtext Operations Guide >e1x
-    │   │   └── Examples >yd5
+    │   │   └── Sublime Text Interface Tips >003
+    │   │       ├── Syntax Highlighting >01d
+    │   │       ├── Hiding Tabs >015
+    │   │       ├── Hiding Line Numbers >01e
+    │   │       ├── Full Screen / Distraction Free Mode >002
+    │   │       ├── Disable Prompts for File Reload >023
+    │   │       ├── Remove Indent Guides >1rc
+    │   │       ├── Save on Focus Lost >sqq
+    │   │       └── Using a Sublime Project for an Urtext Project >c3n
     │   └── Reference >ac5
     │       ├── About Urtext >013
     │       │   ├── Description >yv2
     │       │   ├── Comparison To Other Tools >h8z
     │       │   ├── Uses >lhs
-    │       │   └── Project Requirements and Features >006
-    │       ├── Sublime Text Interface Tips >003
-    │       │   ├── Syntax Highlighting >01d
-    │       │   ├── Hiding Tabs >015
-    │       │   ├── Hiding Line Numbers >01e
-    │       │   ├── Full Screen / Distraction Free Mode >002
-    │       │   ├── Disable Prompts for File Reload >023
-    │       │   ├── Remove Indent Guides >1rc
-    │       │   ├── Save on Focus Lost >sqq
-    │       │   └── Using a Sublime Project for an Urtext Project >c3n
+    │       │   └── Requirements and Features >006
     │       ├── Making a New Project >dce
     │       │   └── Using/Adding Existing Files >rij
     │       ├── Nodes >01j
@@ -73,25 +73,22 @@ Pointers >lmu
     │       │   ├── Inline Nodes >004
     │       │   │   ├── Example Inline Node >00e
     │       │   │   └── Syntax Highlighting >koe
-    │       │   ├── Compact Nodes >kpz
-    │       │   │   └── Example Compact Node >d7b
-    │       │   │       └── Example inline node within the compact node >9up
-    │       │   ├── Generating a node ID manually >rfp
-    │       │   └── The Node Browser >01i
-    │       │       └── Opening the Node List >hl7
-    │       │           ├── Sublime >p78
-    │       │           ├── Pythonista >c3y
-    │       │           └── Python >h8c
+    │       │   ├── ? (Missing Node): >! (Missing Node) >kpz
+    │       │   └── Generating a node ID manually >rfp
     │       ├── Metadata >00x
-    │       │   ├── Reserved Metadata Keys >011
-    │       │   │   ├── title (overrides the default title) >00y
-    │       │   │   ├── index >00z
-    │       │   │   └── flags >cwb
-    │       │   │       └── - exclude_from_tree >1e3
-    │       │   └── Timestamps >005
-    │       │       ├── Timeline View >00k
-    │       │       └── Time Zones >7w6
-    │       │           └── Timezone List >zh1
+    │       │   ├── Wrapped >iy7
+    │       │   ├── Inline >gmk
+    │       │   ├── Timestamps >005
+    │       │   │   ├── Collection / Timeline View >00k
+    │       │   │   └── Time Zones >7w6
+    │       │   │       └── Timezone List >zh1
+    │       │   ├── Case-sensitivity >l36
+    │       │   │   └── **Needs edit/organization here about Node Titles. >hof
+    │       │   └── Reserved Keys >fo2
+    │       │       ├── `index` >00z
+    │       │       └── `flags` >cwb
+    │       │           └── `exclude_from_tree` >1e3
+    │       ├── Collection / Timeline View >00k
     │       ├── Trees >00h
     │       │   ├── From any given node >00f
     │       │   └── From the root >00g
@@ -106,7 +103,7 @@ Pointers >lmu
     │       │   ├── Linking to outside resources >00q
     │       │   │   ├── Web >00o
     │       │   │   └── Files >00p
-    │       │   ├── ? (Missing Node): >! RECURSION 2:lmu
+    │       │   ├── ? (Missing Node): > !RECURSION 3:
     │       │   └── Traverse Mode >00w
     │       │       └── Word Wrap in Traverse Mode >xci
     │       ├── Using Multiple Projects at a Time >ipy
@@ -117,16 +114,15 @@ Pointers >lmu
     │       │   └── Example : Fragment Exported to HTML >baq
     │       ├── Search >k67
     │       │   └── Full Text Search >4p9
-    │       │       ├── Searching >mzj
-    │       │       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
-    │       │       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+    │       │       ├── Searching >k8v
     │       │       └── Search Using Dynamic Nodes >uy4
+    │       │           └── Description >3x3
     │       ├── Filenames >01m
     │       ├── Development >01o
     │       │   └── Make Installation Easier >mh8
     │       └── File History >prp
-    └── Example Recursive Node Tree >01n
-/-- title: Example Recursive Node Tree ; ID: 01n; defined in: >6ct --/}}
+    └── Pointers >01n
+ID::01n; def::>6ct; }}
     
     [[ 
     ID(01n)
@@ -134,8 +130,10 @@ Pointers >lmu
     METADATA(title:"Example Recursive Node Tree")
     ]]
 
-/-- ID: 6ct --/ }}
 
-/-- ID: lmu --/
+ID::6ct }}
+
+
+ID::lmu
 
 

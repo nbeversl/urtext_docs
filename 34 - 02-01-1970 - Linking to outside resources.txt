@@ -6,12 +6,16 @@ Linking to outside resources
         
         Example: http://fantutti.com
         
-        /-- ID:00o --/ }}
+        
+ID::00o }}
 
     {{ Files
         
        COMING.
     
-        /-- ID:00p --/ /--tags: coming --/ }}
+        
+ID::00p 
+tags::coming }}
                                                                                                
-    /-- ID:00q --/
+    
+ID::00q

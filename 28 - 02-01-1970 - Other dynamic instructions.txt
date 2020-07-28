@@ -10,6 +10,8 @@ Some dynamic instructions do things other than populate or modify contents of no
 
 		Note that metadata tags do not actually get added to the inline text of the the children/descendants as a result of this instruction, only that they acquire the specified key/value metadata pair for all purposes metadata serves within Urtext.
 
- /-- id: yin --/ }}
+ 
+id::yin }}
 
-/-- ID:x0c --/
+
+ID::x0c

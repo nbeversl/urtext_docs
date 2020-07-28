@@ -4,23 +4,26 @@ This is the `project_settings` node for the "Urtext Documentation" Urtext projec
 
 The `project_settings` node is optional. To create one, make a node and use metadata to give it the title `project_settings`:
 
-/-- ID:00l
-Timestamp: <Sat., Jun. 08, 2019, 08:03 AM>
-home: a5m
-title: project_settings
-project_title: Urtext Documentation
-tags: 
-index: 100
-console_log:True
---/
+
+ID::00l
+Timestamp::<Sat., Jun. 08, 2019, 08:03 AM>
+home::a5m
+title::project_settings
+project_title::Urtext Documentation
+tags::
+index::100
+console_log::False
 
 This node now has special reserved metadata keys that will be parsed as follows:
 
 {{ Home Node
 
-The Home page is accessible anywhere in the project by pressing Ctrl-Shift-H. Specify the node ID you want this shortcut to jump to. /-- ID:00c --/ }}
+The Home page is accessible anywhere in the project by pressing Ctrl-Shift-H. Specify the node ID you want this shortcut to jump to. 
+ID::00c }}
 
-{{ Filename formats /-- ID:00i --/ }}
+{{ Filename formats 
+ID::00i }}
 
-{{ Timestamp Formats /-- ID:00n --/ }}
+{{ Timestamp Formats 
+ID::00n }}
 

@@ -8,7 +8,7 @@ Projects, Structure and Compiling
   
 	>>00l
 	
-/-- ID:01x
-Timestamp:<Thu., Jul. 04, 2019, 07:17 AM>
-tags: 
- --/
+
+ID::01x
+Timestamp::<Thu., Jul. 04, 2019, 07:17 AM>
+tags::

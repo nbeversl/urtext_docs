@@ -13,53 +13,31 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 	 		More information: | Pointers >lmu
 
 	 ^		Compact Node marker. Must be the first non-whitespace character on a line.
-	 		More information: | Compact Nodes >j6t
+	 		More information: |  ?  >j6t
 
 	{{  }}	Subnode	wrapper. Can appear anywhere. Can be nested aribrarily deep.
 			More information: | Inline Nodes >004
 
-	/-- --/	Metadata wrapper
+	
+	Metadata wrapper
 
 		Example:
 
-		/--
-			
-			[key]:[value]		
-			Metadata Pair, can contain any keys/values and optional timestamp.
-				- Pairs must be separated by a semicolon or a new line
-				- Keys are case-insensitive.
-				- Keys must be single words. Underscore/dash character is valid.
-				- Some keys are reserved (see below). 
+		
+[key]::[value]
+Reserved Metadata Keys, With Example Vales:
+id::znj
+index::01
 
-			;					
-			Separator for metadata key/value pairs
-
-			|															
-			Separator for multiple values in metadata pairs
-
-			Reserved Metadata Keys, With Example Vales:
-
-				id: znj
-				Uniquely identifies the node in the project. Required in strict mode.
-				more info: | More About Node IDs >01q
-
-				index:01					
-				Sets the index (priority) of the node in the project. 
-				more info: | index >00z
-
-				timestamp:<Wed., Jun. 05, 2019, 10:01 PM>					
-				Timestamp. more info: | Timestamps >005
-
-				title: Urtext Syntax Guide								
-				Overrides the Node Title. more info: | title (overrides the default title) >00y
-
-				flags:								
-				Sets node behavior. More info: | flags >cwb
-
-				from:Joes-iMac
-				Hostname of originating computer/device.
-
-		--/
+more info: | More About Node IDs >01q
+more info:| `index` >00z
+timestamp::<Wed., Jun. 05, 2019, 10:01 PM>
+Timestamp. more info::| Timestamps >005
+title::Urtext Syntax Guide
+Overrides the Node Title. more info::|  ?  >00y
+flags::
+Sets node behavior. More info::| `flags` >cwb
+from::Joes-iMac
 
 	[[ ]]	Dynamic Definition Wrapper. 
 
@@ -94,7 +72,7 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 								Operators:
 
 								"and"
-								INCLUDE(key:value and other_key:other_value)
+								INCLUDE(key = value -and other_key = other_value)
 								Includes nodes matching both `key:value` and `other_key:other_value`
 
 								"or"
@@ -223,4 +201,5 @@ Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dyn
 								)
 			]] 
 
-/-- ID: znj --/
+
+ID::znj

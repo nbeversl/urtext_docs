@@ -9,4 +9,5 @@ To access a file's timeline, use Control-Shift-G in Sublime Text.
 
 Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories. 
 
-/-- ID:prp --/
+
+ID::prp

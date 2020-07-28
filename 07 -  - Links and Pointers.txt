@@ -4,7 +4,8 @@ Links and Pointers
 
     To make a "hyperlink" from one node to another, use the right angle bracket (>) followed immediately by a node ID. Linking does not require a filename or any other information, only the node ID. Any other surrounding text is ignored.
 
-    {{  Sublime Text tools to help with linking /-- tags:sublime --/
+    {{  Sublime Text tools to help with linking 
+tags::sublime
 
         Two Sublime Command Palette commands can make linking quick and easy:
      
@@ -14,9 +15,11 @@ Links and Pointers
         Urtext: Link From ...
             Links TO the current node FROM another node. When you select this command, a link to the current node will be copied to the clipboard. You can then paste the reference into the node you open in the quick panel.
             
-            /-- ID:00m --/ }} 
+            
+ID::00m }} 
 
-        /-- ID: 0y2 --/ }}
+        
+ID::0y2 }}
 
 {{  Dynamically Titled Links
 
@@ -24,23 +27,29 @@ Links and Pointers
 
     Note that node link titles are not updated globally throughout the project whenever any node's title changes; rather, titled links are updated at the single file level whenever that file is saved.  
 
- /-- id: 4vu --/ }}
+ 
+id::4vu }}
 
 {{ Opening Links 
     
     {{ Sublime
 
-        Press Shift-Ctrl-/ on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. /-- id: osu --/ /-- tags:sublime --/}}
+        Press Shift-Ctrl-/ on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
+id::osu 
+tags::sublime}}
 
     {{ Pythonista 
 
         Use the `>` key when the cursor is on any line containing a link.
 
-    /--tags: pythonista--/ /-- id: iy8 --/ }}
+    
+tags::pythonista 
+id::iy8 }}
 
     Note that Urtext reads node regions on every save, so cursor location may be imprecise if the file has been altered since the last save. 
 
- /-- ID:01w --/ }}
+ 
+ID::01w }}
 
 
 | Viewing Linked Relationships >>00u
@@ -48,8 +57,8 @@ Links and Pointers
 | Pointers >>lmu
 | Traverse Mode >>00w
 
-/-- ID:00j
-Timestamp:<Fri., Jun. 07, 2019, 05:26 PM>
-tags: 
-index: 06
- --/
+
+ID::00j
+Timestamp::<Fri., Jun. 07, 2019, 05:26 PM>
+tags::
+index::06

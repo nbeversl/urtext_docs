@@ -14,7 +14,8 @@ In Pythonista, use "Switch Projects" from the feature menu.
 {{ Project Naming (Identification)
 
 Unlike nodes, projects are uniquely identified by name. For this reason, each project must have an unique name within the running instance of Urtext. Projects can be named using the project_title key in the project's project_settings node. If no name is present, the project's name becomes its absolute path in the file system. 
-/-- id: tgp --/ }}
+
+id::tgp }}
 
 {{ Linking Between Projects
 
@@ -24,6 +25,8 @@ Unlike nodes, projects are uniquely identified by name. For this reason, each pr
        (This link is only an example and is non-functioning)
 
 	Following this link will change the project context to the named project and open its specified node. 
-/--  id: 7lx --/ }}
 
-/-- ID:ipy --/
+id::7lx }}
+
+
+ID::ipy

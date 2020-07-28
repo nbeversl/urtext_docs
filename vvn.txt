@@ -1,0 +1,24 @@
+{{
+ID::k50; def::>vvn; }}
+
+[[ ID(k50)
+INCLUDE(tags:edit)
+METADATA(title:"Needing Edits") ]]
+
+{{
+ID::v7b; def::>vvn; }}
+
+[[ ID(v7b)
+INCLUDE(tags:key_command_question)
+METADATA(title:"key_command_question")
+ ]]
+
+
+ Still to Document:
+
+ Uses for inline nodes, such as adding comments/edits, tracking anchors and pointers in documents.
+
+
+id::vvn
+from::wwci-00407.local
+created::<Thu., Jun. 11, 2020, 04:41 PM>

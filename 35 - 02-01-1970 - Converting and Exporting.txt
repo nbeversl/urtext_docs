@@ -22,18 +22,19 @@ Converting and Exporting
      ]]
 
 
-/-- id: m9d --/ }}
+
+id::m9d }}
 
 {{  Example : Fragment Exported to HTML
 
     The following Dynamic Definition exports the | Links and Pointers >00j section of the documentation to HTML, into a node inside this one:
 
 
-/-- 
-ID: baq
-defined in: >plg
---/}}
+
+ID::baq
+defined in::>plg}}
 
 
 
-/-- id: ezg --/
+
+id::ezg

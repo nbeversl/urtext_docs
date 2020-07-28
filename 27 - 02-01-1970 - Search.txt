@@ -6,10 +6,15 @@ Search
     
 	{{	Searching
 
-		^ Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes. /-- id: k8v; timestamp: <Mon., Feb. 24, 2020, 01:05 PM> --/
-		/-- id: mzj --/
+		^ Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes. 
+id::k8v
+timestamp::<Mon., Feb. 24, 2020, 01:05 PM>
+		
+id::mzj
 
-        ^ Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. /-- id: q8j; timestamp: <Mon., Feb. 24, 2020, 02:19 PM> --/
+        ^ Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. 
+id::q8j
+timestamp::<Mon., Feb. 24, 2020, 02:19 PM>
 
 
          }}	
@@ -28,77 +33,74 @@ Search
         ]]
 
         {{
-Example Search Results 
-Files >ekz
-Download and Install Dependencies Manually >774
+Description >yv2
+Quick Start, Guides and Examples >z7t
 This node is just here as a destination from the node pointer in  Urtext Syntax Guide >ttt
-Project Naming (Identification) >tgp
-Urtext Syntax Guide >znj
-Traverse Mode >00w
+Urtext Operations Guide >e1x
+Details on the Sublime Implementation >01u
+`flags` >cwb
+More About Node IDs >01q
+Opening Links >01w
+Full Screen / Distraction Free Mode >002
+Projects, Structure and Compiling >01x
+iPhone/iPad/iOS >01y
+Generating a node ID manually >rfp
+Syntax Highlighting >01d
+Nodes >01j
+The Node Browser >01i
+Filenames >01m
+Viewing Linked Relationships >00u
+Requirements and Features >006
+Python >eea
+Using Multiple Projects at a Time >ipy
+Using Urtext in iOS with Pythonista >os4
+Timestamps >005
+Download Dependencies from a Monorepo >arl
+Example : Urtext Documentation Exported in Markdown to a File >m9d
 About Urtext >013
+Traverse Mode >00w
+Using/Adding Existing Files >rij
+Download and Install Dependencies Manually >774
+Converting and Exporting >ezg
+From any given node >00f
+0.1.11-alpha >01l
+Sublime Text tools to help with linking >00m
+Using a Sublime Project for an Urtext Project >c3n
+Collection / Timeline View >00k
+Files >ekz
+Reference >ac5
+Python >xor
+Project Naming (Identification) >tgp
+Reserved Keys >fo2
+Installation and Setup (Desktop) >6cd
+Full Text Search >4p9
+From the root >00g
+Recursive Node Pointers >6ct
+Save on Focus Lost >sqq
+Making a New Project >dce
+Disable Prompts for File Reload >023
+0.1.14-alpha >022
+tag_all >yin
+Inline Nodes >004
 Make Installation Easier >mh8
 Comparison To Other Tools >h8z
-Pythonista >c3y
-Metadata >00x
-Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
-Python >h8c
-From any given node >00f
-From the root >00g
-Converting and Exporting >ezg
-project_settings >00l
-Details on the Sublime Implementation >01u
-Timestamps >005
-Quick Start, Guides and Examples >z7t
-Description >yv2
-Dependencies and Installation >2fn
-Python >xor
-Recursive Node Pointers >6ct
-Project Requirements and Features >006
-Reference >ac5
-Full Screen / Distraction Free Mode >002
-Opening Links >01w
-More About Node IDs >01q
-Inline Nodes >004
-<----Tue., Jun. 02, 2020, 10:26AM from Node ID >xxx
-iPhone/iPad/iOS >01y
-Projects, Structure and Compiling >01x
 Search Using Dynamic Nodes >uy4
-Syntax Highlighting >01d
-Timeline View >00k
-Urtext  Version: 0.2.0-alpha >a5m
-Sublime Text tools to help with linking >00m
-The Node Browser >01i
-Download Dependencies from a Monorepo >arl
-Nodes >01j
-Urtext Operations Guide >e1x
-Making a New Project >dce
-Using a Sublime Project for an Urtext Project >c3n
-Python >eea
-Generating a node ID manually >rfp
-0.1.14-alpha >022
+project_settings >00l
+Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m
+Urtext Syntax Guide >znj
 File History >prp
-tag_all >yin
-Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
-Compact Nodes >kpz
-Using/Adding Existing Files >rij
-Example : Urtext Documentation Exported in Markdown to a File >m9d
-Save on Focus Lost >sqq
-Installation and Setup >6cd
-0.1.11-alpha >01l
-Using Multiple Projects at a Time >ipy
-Full Text Search >4p9
-Using Urtext in iOS with Pythonista >os4
-Viewing Linked Relationships >00u
-Disable Prompts for File Reload >023
+Dependencies and Installation >2fn
 Uses >lhs
-Filenames >01m
-/-- flags: exclude_from_tree ; title: Example Search Results ; ID: 3x3; defined in: >uy4 --/}}
+ID::3x3; def::>uy4; }}
 
- /-- id: uy4 --/ }}
-
-
-    /-- ID: 4p9 --/ }}
+ 
+id::uy4 }}
 
 
+    
+ID::4p9 }}
 
-/-- ID:k67--/
+
+
+
+ID::k67

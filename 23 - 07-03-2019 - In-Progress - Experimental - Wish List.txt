@@ -12,11 +12,13 @@ In-Progress / Experimental / Wish List
 
 		DOCUMENTATION COMING
 
-		/-- ID:01z --/ }}
+		
+ID::01z }}
 
 	Syncing manually comes with the drawback that changes made on the iOS device will not themselves sync to Dropbox in the background. For instance, if changes are made to a file on iOS while not connected to the internet and Pythonista, the project will have to be explictly synced at a later time. So there remains the possibility that projects will get out of sync.
 
-/-- ID:01y --/ }}
+
+ID::01y }}
 
 
 Import/Export to/from: Markdown, HTML, pure plain text, JSON
@@ -24,7 +26,7 @@ Import/Export to/from: Markdown, HTML, pure plain text, JSON
 
 
 
-/-- ID:014
-Timestamp:<Wed., Jul. 03, 2019, 04:09 PM>
-tags: 
- --/
+
+ID::014
+Timestamp::<Wed., Jul. 03, 2019, 04:09 PM>
+tags::
