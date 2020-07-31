@@ -70,7 +70,7 @@ Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m
     │   │   │   └── Example Child Node Using a Node Pointer >001
     │   │   └── Recursive Node Pointers >6ct
     │   │       ├── ? (Missing Node): > !RECURSION 3:
-    │   │       └── Pointers >01n
+    │   │       └── (untitled) >01n
     │   └── Traverse Mode >00w
     │       └── Word Wrap in Traverse Mode >xci
     ├── Using Multiple Projects at a Time >ipy
@@ -83,12 +83,12 @@ Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m
     │   └── Full Text Search >4p9
     │       ├── Searching >k8v
     │       └── Search Using Dynamic Nodes >uy4
-    │           └── Description >3x3
+    │           └── (untitled) >3x3
     ├── Filenames >01m
     ├── Development >01o
     │   └── Make Installation Easier >mh8
     └── File History >prp
-ID::e5j; def::>029; }}
+def::>029; ID::e5j; }}
 
 {{  Quick Start, Guides and Examples
 

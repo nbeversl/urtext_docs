@@ -1,45 +1,51 @@
 Urtext Syntax Guide
 
-Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dynamic definition wrapper. The following syntax applies:
+Basic Text Syntax
+
+	All text is plain content unless inside a timetamp wrapper or dynamic definition wrapper. 
+	The following syntax applies:
 
 	 >0y2	Link to another node by ID. 
 	 		More information: | Links >0y2
 
-	 | 		Placed before a node link, dynamically populates the node title. 
+	 | 		Placed before a node link, dynamically populates the linked node title.
 	 		Example and more info: | Dynamically Titled Links >4vu
 
-	 >>ttt	Node Pointer
-	 		Embeds the specified node as though it were included inline using {{ }}
-	 		More information: | Pointers >lmu
 
 	 ^		Compact Node marker. Must be the first non-whitespace character on a line.
 	 		More information: |  ?  >j6t
 
-	{{  }}	Subnode	wrapper. Can appear anywhere. Can be nested aribrarily deep.
+	{{  }}	Subnode	wrappers. Can appear anywhere. Can be nested aribrarily deep.
 			More information: | Inline Nodes >004
-
-	
-	Metadata wrapper
-
-		Example:
-
 		
-[key]::[value]
-Reserved Metadata Keys, With Example Vales:
-id::znj
-index::01
+	 >>ttt	Node Pointer
+	 		Embeds the specified node as though it were included inline using wrappers {{ }} (see above)
+	 		More information: | Pointers >lmu
 
-more info: | More About Node IDs >01q
-more info:| `index` >00z
-timestamp::<Wed., Jun. 05, 2019, 10:01 PM>
-Timestamp. more info::| Timestamps >005
-title::Urtext Syntax Guide
-Overrides the Node Title. more info::|  ?  >00y
-flags::
-Sets node behavior. More info::| `flags` >cwb
-from::Joes-iMac
+	< > 	Timestamp enclosure. Accepts and parses user-defined datetime strings, with some default formats built in.
+			Example: <Tue., Jul. 28, 2020, 03:43 PM>
+			More information: | Timestamps >005
 
-	[[ ]]	Dynamic Definition Wrapper. 
+	::		Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right, anywhere inside node contents. 
+			
+			Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline.
+			Example: example_key::example value for the key <Tue., Jul. 28, 2020, 03:39 PM>
+			
+			The pipe character (`|`) separates multiple values.
+			Example: some_key::one value | another value
+
+			Metadata entries remember their location and can serve as anchors to their 
+
+			More information | Metadata >00x
+
+
+Dynamic Definitions
+
+Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere inside node content. It is not necessary to store the definition in the same file to which it refers.
+
+	Dynamic definitions are wrapped using double left and right square brackets:
+
+	[[ ]]	Dynamic Definition Wrapper
 
 			Template:
 			
@@ -49,103 +55,157 @@ from::Joes-iMac
 
 			Examples:
 			
-			[[ 	ID(rrr) 	Target Node id to dynamically populate with output
+			[[ 	TARGET() 		Target Node ID or external file to dynamically populate with output
+								Accepts either a link to a node (>eee) or file( f>example.file)
+								
+								Accepts any one (only) of the following flags:
 
-				FILE()		Used only with EXPORT(). Outputs the export to the specified target filename.
+									-list (default)
 
-							Example:
-							FILE(myfile.txt)
+										Outputs a list of nodes determined by INCLUDE() and EXCLUDE() (see below)
 
-				INCLUDE()  	Nodes to include. Accepts one or multiple parameters.
-							
-							Examples:
+										Example:
+										TARGET(>er3 -list)
+										
 
-							INCLUDE(all)	
-							Includes all nodes in the project
+									-tree
 
-							INCLUDE(indexed)	
-							Includes all nodes in the project that have an index
+										Outputs a tree of the hierarchy of nested nodes, with the root node specified using keyword `root`.
+										For information see | Trees >00h
 
-							INCLUDE(key:value)	
-							Includes all nodes with the given value in the given key
+										TARGET(>er3 -tree root:45e)
 
-								Operators:
+										- Ignores INCLUDE() and EXCLUDE().
+										- Ignores SORT()
 
-								"and"
-								INCLUDE(key = value -and other_key = other_value)
-								Includes nodes matching both `key:value` and `other_key:other_value`
+									-collection
 
-								"or"
-								INCLUDE(key:value or other_key:other_value)
-								Includes any nodes matching either or both of `key:value` and `other_key:other_value`
+										TARGET(>er5 -collection)		
+										Returns a list of all metadata tags and their context, as specified in INCLUDE().
 
-								"all_projects"
-								INCLUDE(key:value all_projects)
-								Expands included nodes to include all projects in the project list.
+									-interlinks
+
+										TARGET(>er5 -interlinks root:2f6)
+										Returns a double tree representing the entire network of nodes linkin into and out
+										of the specified node.
+
+
+				INCLUDE()  		Nodes to include. Accepts one or multiple parameters.
+
+								Comparisons:
+
+									`=` means equal to
+									INCLUDE(key = value)	
+									Includes all nodes with the given value in the given key
+
+									`~` means fuzzy match, which is something that needs to be added anyway.
+									INCLUDE(key ~ value)	
+
+									`?` means "contains"
+									INCLUDE(_contents ? some text or content)
+
+								Comparison Operators:
+
+									-or (default)
+									INCLUDE(key:value -or other_key:other_value)
+									Includes any nodes matching either or both of `key::value` and `other_key::other_value`
+
+									-and
+									INCLUDE(key = value -and other_key = other_value)
+									Includes nodes matching both `key::value` and `other_key::other_value`
+								
+								Additional Flags:
+
+
+									Additional flags can be included in 
+
+									-all
+									INCLUDE(-all)	
+									Includes all nodes in the project									
+
+									-all_projects
+									INCLUDE(-all_projects)
+									Expands included nodes to include all projects in the project list.
 
 								Optional Timestamp:
 								
-								INCLUDE(tags:cello:<2019> or tags:teaching:<2019>)
+								INCLUDE(tags = cello:<2019> -or tags = teaching:<2019>)
 								Includes any nodes matching either or both of the key/value pairs within the corresponding timestamp.
 
-				EXCLUDE()	Accepts the same parameters as INCLUDE()
-							Evaluated after INCLUDE(), excludes the specified nodes from the result.
 
-				SORT()		Sorts the results. Accepts multiple parameters:
+								System keys
 
-							SORT(
-								$[key_name]		Sorts by the value of the given key. Default is alphabetical.	
-								timestamp   	Sort by timestamp instead of alphabetical
-								last_accessed	Sort by last accessed
-								reverse			Reverse sort order 
-								)
+									Urtext includes some built-in keys whose values are generated automatically. 
+									These may also be used in INCLUDE(): 
+										
+										_links_to			
+										INCLUDE(_links_to = 46d)
+										Includes all nodes that contain links to node ID `46d`
 
-							Example:
-							SORT($title, reverse)
+										_links_from
+										INCLUDE(_links_from = 46d)
+										Includes all nodes to which node ID `46d` links
 
-				LIMIT()		Limits the output to the specified number of results.
+										_contents
+										Refers to the text contents of the node. Can be used to for full text search or comparison.
+										INCLUDE(_contents ? Western Civilization)
+										Includes any node that contents the text "Western Civilization"
 
-							Example:
-							LIMIT(30)
+				EXCLUDE()		Accepts all the same parameters as INCLUDE()
+								Always evaluated after INCLUDE(), excludes the specified nodes from the result.
 
-				SHOW()		Supplies a template for the output, overriding defaults. 
-							Accepts arbitrary text, unicode newline characters (\n, \r), and words preceded (without whitespace) by `$`, which are are evaluated as metadata keys. 
+				SORT()			Sorts the results. Accepts multiple parameters:
 
-							- Key names are not displayed, only values. 
-							- Add keynames manually if you want them included.
-
-							Example:
-							SHOW(Author: $author, Date: $date\n)
-
-							In addition to user-defined metadata keys, the following tokens are valid:
-
-							SHOW(
-
-								$title 
-								Displays the node title, default or via the `title` meta key
-
-								$link
-								Displays a link to the node
-
-								$date 
-								Displays the node's date in the project's default timestamp format
-
-								$meta
-								Shorthand to show all metadata for every node, formatted as by "consolidate metadata"
-
-								$contents:120
-								Displays the contents of the node. Optional excerpt/length specifier after the colon
-
-								)
-	
-				METADATA()		Applies the given metadata to the output node. Accepts any number of key/value
-								pairs with optional timestamps.
-
-				TAG_ALL()		Applies the specific metadata to all nodes in the target node. 
-								Accepts any number of key/value pairs with optional timestamps, and the option keyword `recursive`, which applies metadata also to all descendants.	
+								SORT(
+									$[key_name]		Sorts by the value of the given key. Default is alphabetical.	
+									timestamp   	Sort by timestamp instead of alphabetical
+									last_accessed	Sort by last accessed
+									reverse			Reverse sort order 
+									)
 
 								Example:
-								TAG_ALL(tasks:due_soon recursive)
+								SORT($title, reverse)
+
+
+								_last_accesssed		Timestamp when the node was last accessed.
+
+				LIMIT()			Limits the output to the specified number of results.
+
+								Example:
+								LIMIT(30)
+
+				SHOW()			Supplies a template for the output. 
+								Accepts arbitrary text, unicode newline characters (\n, \r).
+
+								Words preceded (without whitespace) by `$` are are evaluated as metadata key, whose value(s) will appear in the output.
+								Note that key names are not displayed in the output, only values. Add keynames manually if you want them included.
+
+								Example:
+								SHOW(Author: $author, Date: $date\n)
+
+								In addition to user-defined metadata keys, the following tokens are valid:
+
+								SHOW(
+
+									$title 
+									Displays the node title, default or via the `title` meta key
+
+									$link
+									Displays a link to the node
+
+									$date 
+									Displays the node's date in the project's default timestamp format
+
+									$meta
+									Shorthand to show all metadata for every node, formatted as by "consolidate metadata"
+
+									$contents:120
+									Displays the contents of the node. Optional excerpt/length specifier after the colon
+
+									)
+		
+				METADATA()		Applies the given metadata to the output node. Accepts any number of key/value
+								pairs with optional timestamps.
 
 				FORMAT()		Formats the output. 
 								Accepts one or more predefined arguments:
@@ -159,35 +219,7 @@ from::Joes-iMac
 
 								FORMAT(indent:30)
 								Indents the dynamic node by the specified number of spaces
-
-
-				The remaining functions will only be used one at a time and will override SHOW() and in some cases other functions.
-
-				TREE()			Outputs a tree of the hierarchy of nested nodes, with the specified node as root.
-								
-								- Ignores INCLUDE() and EXCLUDE().
-
-								Example:
-								TREE(rtr)
-								Will output a tree with the node `rtr` as the root.
-
-				TIMELINE()		Outputs the specified nodes as a timeline.
-
-								- Ignores SORT()
-
-								Accepts one of two arguments. If more than one is present, only the first is
-								evaluated.
-
-								TIMELINE(meta)		Uses dates from node metadata
-								TIMELINE(inline)	Parses dates from inline timestamps
-
-				SEARCH()		Returns search results of the string passed as an argument.
-								Searches are case-insensitive.
-
-								- Ignores INCLUDE() and EXCLUDE().
-
-								Example:
-								SEARCH("western civilization")
+	
 
 				EXPORT()		Exports the specified node id to a file and/or other node in the project.
 
@@ -200,6 +232,66 @@ from::Joes-iMac
 									html			Export as HTML
 								)
 			]] 
+
+
+
+	
+Urtext includes some built-in metadata keys. Built-in keys all begin with an underscore character `_`
+
+	title  				Overrides the Node Title. 
+						more info:  TO BE ADDED 
+
+	flags  				Sets node behavior. More info:| `flags` >cwb
+
+
+
+flags = [ 
+
+    '-rr', 
+    '-recursive',
+
+    '-use_timestamp',
+    '-t',
+
+    '-last-accessed',
+    '-la',
+
+    '-r',
+    '-reverse',
+
+    '-and',
+    '-&',
+
+    '-all-projects',
+    '-*p',
+
+    '-markdown',
+    '-md',
+
+    '-html',
+
+    '-plaintext',
+    '-txt',
+
+    '-preformat',
+    '-p',
+
+    '-multiline_meta',
+    '-mm',
+
+    '-indent',
+    '-i',
+
+    '-num',
+    '-n',
+
+    '-alpha',
+    '-a'
+]
+
+
+
+
 
 
 ID::znj

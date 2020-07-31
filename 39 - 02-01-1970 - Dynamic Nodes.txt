@@ -151,15 +151,15 @@ index::08}}
 
     Here is the dynamic definition that actually generates the table of contents for this documentation:
 
-        [[  ID(e5j)
-            TREE(a5m)
+        [[  ID(e5j -tree root:a5m)
+            INCLUDE(-all)
             METADATA(flags:exclude_from_tree title:"Table of Contents")
          ]]  
 
     Changing the titles or structure of sections in this documentation will dynamically update the table of contents tree.
 
     For more information on trees, see | Trees >00h
-s
+
      
 ID::029}}
 

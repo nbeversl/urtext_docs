@@ -81,7 +81,7 @@ This is a documentation of Urtext, written in Urtext. If you're reading this as 
     │   └── Full Text Search[Full Text Search](#full-text-search)
     │       ├── Searching[Searching](#searching)
     │       └── Search Using Dynamic Nodes[Search Using Dynamic Nodes](#search-using-dynamic-nodes)
-    │           └── Make Installation Easier[Make Installation Easier](#make-installation-easier)
+    │           └── Description[Description](#description)
     ├── Filenames[Filenames](#filenames)
     ├── Development[Development](#development)
     │   └── Make Installation Easier[Make Installation Easier](#make-installation-easier)
@@ -113,56 +113,52 @@ See also:
 [Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
 
 [Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
-## Urtext Syntax GuideUrtext Syntax Guide
+## Urtext Syntax Guide
 
-Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dynamic definition wrapper. The following syntax applies:
+Basic Text Syntax
+
+All text is plain content unless inside a timetamp wrapper or dynamic definition wrapper. 
+The following syntax applies:
 [Links](#links)	Link to another node by ID. 
 More information: [Links](#links)
 
-| 		Placed before a node link, dynamically populates the node title. 
+| 		Placed before a node link, dynamically populates the linked node title.
 Example and more info: [Dynamically Titled Links](#dynamically-titled-links)
+More information: [ MISSING LINK : j6t ]
+Subnode	wrappers. Can appear anywhere. Can be nested aribrarily deep.
+More information: [Inline Nodes](#inline-nodes)
 
 ### This node is just here as a destination from the node pointer in  Urtext Syntax GuideThis node is just here as a destination from the node pointer in [Urtext Syntax Guide](#urtext-syntax-guide)
 Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
 	Node Pointer
-Urtext Syntax Guide
-
-Text is plain content unless inside a metadata wrapper, timetamp wrapper, or dynamic definition wrapper. The following syntax applies:
-[Links](#links)	Link to another node by ID. 
-More information: [Links](#links)
-
-| 		Placed before a node link, dynamically populates the node title. 
-Example and more info: [Dynamically Titled Links](#dynamically-titled-links)
-
-	Node Pointer
-Embeds the specified node as though it were included inline using
+Embeds the specified node as though it were included inline using wrappers
+(see above)
 More information: [Pointers](#pointers)
-More information: [ MISSING LINK : j6t ]
-Subnode	wrapper. Can appear anywhere. Can be nested aribrarily deep.
-More information: [Inline Nodes](#inline-nodes)
+
+Timestamp enclosure. Accepts and parses user-defined datetime strings, with some default formats built in.
+Example: 
+More information: [Timestamps](#timestamps)
+
+::		Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right, anywhere inside node contents. 
+
+Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline.
+Example: 
+
+The pipe character (`|`) separates multiple values.
+Example: 
+
+Metadata entries remember their location and can serve as anchors to their 
+
+More information [Metadata](#metadata)
 
 
-Metadata wrapper
+Dynamic Definitions
 
-Example:
+Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere inside node content. It is not necessary to store the definition in the same file to which it refers.
 
+Dynamic definitions are wrapped using double left and right square brackets:
 
-[key]::[value]
-Reserved Metadata Keys, With Example Vales:
-
-
-
-more info: [More About Node IDs](#more-about-node-ids)
-more info:[`index`](#`index`)
-
-Timestamp. more 
-
-Overrides the Node Title. more 
-flags::
-Sets node behavior. More 
-
-
-Dynamic Definition Wrapper. 
+Dynamic Definition Wrapper
 
 Template:
 
@@ -172,49 +168,100 @@ Note the dynamic definition syntax ignores whitespace and arbitrary text outside
 
 Examples:
 
-[[ 	ID(rrr) 	Target Node id to dynamically populate with output
+[[ 	TARGET() 		Target Node ID or external file to dynamically populate with output
+Accepts either a link to a node [ MISSING LINK : eee ] ) or file( f>example.file)
 
-FILE()		Used only with EXPORT(). Outputs the export to the specified target filename.
+Accepts any one (only) of the following flags:
+
+-list (default)
+
+Outputs a list of nodes determined by INCLUDE() and EXCLUDE() (see below)
 
 Example:
-FILE(myfile.txt)
+TARGET[ MISSING LINK : er3 ]  -list)
 
-INCLUDE()  	Nodes to include. Accepts one or multiple parameters.
 
-Examples:
+-tree
 
-INCLUDE(all)	
-Includes all nodes in the project
+Outputs a tree of the hierarchy of nested nodes, with node specified in INCLUDE() as root.
+For information see [Trees](#trees)
 
-INCLUDE(indexed)	
-Includes all nodes in the project that have an index
+TARGET[ MISSING LINK : er3 ]  -tree)
 
-INCLUDE(key:value)	
+- Ignores INCLUDE() and EXCLUDE().
+- Ignores SORT()
+
+-collection
+
+TARGET[ MISSING LINK : er5 ]  -collection)		
+Returns a list of all metadata tags and their context, as specified in INCLUDE().
+
+
+INCLUDE()  		Nodes to include. Accepts one or multiple parameters.
+
+Comparisons:
+
+`=` means equal to
+INCLUDE(key = value)	
 Includes all nodes with the given value in the given key
 
-Operators:
+`~` means fuzzy match, which is something that needs to be added anyway.
+INCLUDE(key ~ value)	
 
-"and"
+`?` means "contains"
+INCLUDE(_contents ? some text or content)
+
+Comparison Operators:
+
+-or (default)
+INCLUDE(key:value -or other_key:other_value)
+Includes any nodes matching either or both of `
+
+-and
 INCLUDE(key = value -and other_key = other_value)
-Includes nodes matching both `key:value` and `other_key:other_value`
+Includes nodes matching both `
 
-"or"
-INCLUDE(key:value or other_key:other_value)
-Includes any nodes matching either or both of `key:value` and `other_key:other_value`
+Additional Flags:
 
-"all_projects"
-INCLUDE(key:value all_projects)
+
+Additional flags can be included in 
+
+-all
+INCLUDE(-all)	
+Includes all nodes in the project									
+
+-all_projects
+INCLUDE(-all_projects)
 Expands included nodes to include all projects in the project list.
 
 Optional Timestamp:
 
-INCLUDE(tags:cello: or tags:teaching:)
+INCLUDE(tags = cello: -or tags = teaching:)
 Includes any nodes matching either or both of the key/value pairs within the corresponding timestamp.
 
-EXCLUDE()	Accepts the same parameters as INCLUDE()
-Evaluated after INCLUDE(), excludes the specified nodes from the result.
 
-SORT()		Sorts the results. Accepts multiple parameters:
+System keys
+
+Urtext includes some built-in keys whose values are generated automatically. 
+These may also be used in INCLUDE(): 
+
+_links_to			
+INCLUDE(_links_to = 46d)
+Includes all nodes that contain links to node ID `46d`
+
+_links_from
+INCLUDE(_links_from = 46d)
+Includes all nodes to which node ID `46d` links
+
+_contents
+Refers to the text contents of the node. Can be used to for full text search or comparison.
+INCLUDE(_contents ? Western Civilization)
+Includes any node that contents the text "Western Civilization"
+
+EXCLUDE()		Accepts all the same parameters as INCLUDE()
+Always evaluated after INCLUDE(), excludes the specified nodes from the result.
+
+SORT()			Sorts the results. Accepts multiple parameters:
 
 SORT(
 $[key_name]		Sorts by the value of the given key. Default is alphabetical.	
@@ -226,16 +273,19 @@ reverse			Reverse sort order
 Example:
 SORT($title, reverse)
 
-LIMIT()		Limits the output to the specified number of results.
+
+_last_accesssed		Timestamp when the node was last accessed.
+
+LIMIT()			Limits the output to the specified number of results.
 
 Example:
 LIMIT(30)
 
-SHOW()		Supplies a template for the output, overriding defaults. 
-Accepts arbitrary text, unicode newline characters (\n, \r), and words preceded (without whitespace) by `$`, which are are evaluated as metadata keys. 
+SHOW()			Supplies a template for the output. 
+Accepts arbitrary text, unicode newline characters (\n, \r).
 
-- Key names are not displayed, only values. 
-- Add keynames manually if you want them included.
+Words preceded (without whitespace) by `$` are are evaluated as metadata key, whose value(s) will appear in the output.
+Note that key names are not displayed in the output, only values. Add keynames manually if you want them included.
 
 Example:
 SHOW(Author: $author, Date: $date\n)
@@ -264,12 +314,6 @@ Displays the contents of the node. Optional excerpt/length specifier after the c
 METADATA()		Applies the given metadata to the output node. Accepts any number of key/value
 pairs with optional timestamps.
 
-TAG_ALL()		Applies the specific metadata to all nodes in the target node. 
-Accepts any number of key/value pairs with optional timestamps, and the option keyword `recursive`, which applies metadata also to all descendants.	
-
-Example:
-TAG_ALL(tasks:due_soon recursive)
-
 FORMAT()		Formats the output. 
 Accepts one or more predefined arguments:
 
@@ -284,34 +328,6 @@ FORMAT(indent:30)
 Indents the dynamic node by the specified number of spaces
 
 
-The remaining functions will only be used one at a time and will override SHOW() and in some cases other functions.
-
-TREE()			Outputs a tree of the hierarchy of nested nodes, with the specified node as root.
-
-- Ignores INCLUDE() and EXCLUDE().
-
-Example:
-TREE(rtr)
-Will output a tree with the node `rtr` as the root.
-
-TIMELINE()		Outputs the specified nodes as a timeline.
-
-- Ignores SORT()
-
-Accepts one of two arguments. If more than one is present, only the first is
-evaluated.
-
-TIMELINE(meta)		Uses dates from node metadata
-TIMELINE(inline)	Parses dates from inline timestamps
-
-SEARCH()		Returns search results of the string passed as an argument.
-Searches are case-insensitive.
-
-- Ignores INCLUDE() and EXCLUDE().
-
-Example:
-SEARCH("western civilization")
-
 EXPORT()		Exports the specified node id to a file and/or other node in the project.
 
 - Ignores everything except ID() and FILE().
@@ -322,7 +338,63 @@ plaintext 		Export as plaintext (default)
 markdown		Export as markdown
 html			Export as HTML
 )
-]]
+]] 
+
+
+
+
+Urtext includes some built-in metadata keys. Built-in keys all begin with an underscore character `_`
+
+title  				Overrides the Node Title. 
+more info:  TO BE ADDED 
+
+flags  				Sets node behavior. More info:[`flags`](#`flags`)
+
+
+
+flags = [ 
+
+'-rr', 
+'-recursive',
+
+'-use_timestamp',
+'-t',
+
+'-last-accessed',
+'-la',
+
+'-r',
+'-reverse',
+
+'-and',
+'-&',
+
+'-all-projects',
+'-*p',
+
+'-markdown',
+'-md',
+
+'-html',
+
+'-plaintext',
+'-txt',
+
+'-preformat',
+'-p',
+
+'-multiline_meta',
+'-mm',
+
+'-indent',
+'-i',
+
+'-num',
+'-n',
+
+'-alpha',
+'-a'
+]
 
 ## Urtext Operations Guide
 
@@ -1454,7 +1526,7 @@ Note, however, that if you view the entire tree with another node as root, one f
     │       │   ├── Linking to outside resources[Linking to outside resources](#linking-to-outside-resources)
     │       │   │   ├── Web[Web](#web)
     │       │   │   └── Files[Files](#files)
-    │       │   ├── ? (Missing Node): > !RECURSION 3:
+    │       │   ├── ? (Missing Node): >! RECURSION 2:lmu
     │       │   └── Traverse Mode[Traverse Mode](#traverse-mode)
     │       │       └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
     │       ├── Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
@@ -1467,7 +1539,7 @@ Note, however, that if you view the entire tree with another node as root, one f
     │       │   └── Full Text Search[Full Text Search](#full-text-search)
     │       │       ├── Searching[Searching](#searching)
     │       │       └── Search Using Dynamic Nodes[Search Using Dynamic Nodes](#search-using-dynamic-nodes)
-    │       │           └── Make Installation Easier[Make Installation Easier](#make-installation-easier)
+    │       │           └── Description[Description](#description)
     │       ├── Filenames[Filenames](#filenames)
     │       ├── Development[Development](#development)
     │       │   └── Make Installation Easier[Make Installation Easier](#make-installation-easier)
@@ -1559,65 +1631,65 @@ Search results can populate a dynamic node by using the key-value pair:
 
 - search:(string)
 
-For example, the following definition targets node[Make Installation Easier](#make-installation-easier) (below) and populates it with all nodes containing the word "urtext".
-##### Make Installation Easier[Make Installation Easier](#make-installation-easier)
-Urtext  Version: 0.4.0-alpha  Usage Guide and References[Urtext  Version: 0.4.0-alpha  Usage Guide and References](#urtext--version:-0.4.0-alpha--usage-guide-and-references)
+For example, the following definition targets node[Description](#description) (below) and populates it with all nodes containing the word "urtext".
+##### Description[Description](#description)
+Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
+This node is just here as a destination from the node pointer in  Urtext Syntax Guide[This node is just here as a destination from the node pointer in  Urtext Syntax Guide](#this-node-is-just-here-as-a-destination-from-the-node-pointer-in--urtext-syntax-guide)
+Urtext Operations Guide[Urtext Operations Guide](#urtext-operations-guide)
+Details on the Sublime Implementation[Details on the Sublime Implementation](#details-on-the-sublime-implementation)
+`flags`[`flags`](#`flags`)
+More About Node IDs[More About Node IDs](#more-about-node-ids)
+Opening Links[Opening Links](#opening-links)
+Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
+Projects, Structure and Compiling[Projects, Structure and Compiling](#projects,-structure-and-compiling)
+iPhone/iPad/iOS[iPhone/iPad/iOS](#iphone/ipad/ios)
+Generating a node ID manually[Generating a node ID manually](#generating-a-node-id-manually)
+Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
+Nodes[Nodes](#nodes)
 The Node Browser[The Node Browser](#the-node-browser)
 Filenames[Filenames](#filenames)
-Nodes[Nodes](#nodes)
-Search Using Dynamic Nodes[Search Using Dynamic Nodes](#search-using-dynamic-nodes)
-Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
-Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
-Requirements and Features[Requirements and Features](#requirements-and-features)
-Timestamps[Timestamps](#timestamps)
-Inline Nodes[Inline Nodes](#inline-nodes)
-Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
-Python[Python](#python)
-Python[Python](#python)
-This node is just here as a destination from the node pointer in  Urtext Syntax Guide[This node is just here as a destination from the node pointer in  Urtext Syntax Guide](#this-node-is-just-here-as-a-destination-from-the-node-pointer-in--urtext-syntax-guide)
-Opening Links[Opening Links](#opening-links)
-Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
-Installation and Setup (Desktop)[Installation and Setup (Desktop)](#installation-and-setup-desktop)
-Projects, Structure and Compiling[Projects, Structure and Compiling](#projects,-structure-and-compiling)
-Urtext Operations Guide[Urtext Operations Guide](#urtext-operations-guide)
-Save on Focus Lost[Save on Focus Lost](#save-on-focus-lost)
-Files[Files](#files)
-`flags`[`flags`](#`flags`)
-From the root[From the root](#from-the-root)
-From any given node[From any given node](#from-any-given-node)
-Reference[Reference](#reference)
-Description[Description](#description)
-Collection / Timeline View[Collection / Timeline View](#collection-/-timeline-view)
-Dependencies and Installation[Dependencies and Installation](#dependencies-and-installation)
 Viewing Linked Relationships[Viewing Linked Relationships](#viewing-linked-relationships)
-Download and Install Dependencies Manually[Download and Install Dependencies Manually](#download-and-install-dependencies-manually)
-Using/Adding Existing Files[Using/Adding Existing Files](#using/adding-existing-files)
-Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
-project_settings[project_settings](#project_settings)
-Traverse Mode[Traverse Mode](#traverse-mode)
-Using a Sublime Project for an Urtext Project[Using a Sublime Project for an Urtext Project](#using-a-sublime-project-for-an-urtext-project)
+Requirements and Features[Requirements and Features](#requirements-and-features)
+Python[Python](#python)
+Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
+Using Urtext in iOS with Pythonista[Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
+Timestamps[Timestamps](#timestamps)
 Download Dependencies from a Monorepo[Download Dependencies from a Monorepo](#download-dependencies-from-a-monorepo)
-Reserved Keys[Reserved Keys](#reserved-keys)
-File History[File History](#file-history)
-Urtext Syntax Guide[Urtext Syntax Guide](#urtext-syntax-guide)
-Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
+Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
+About Urtext[About Urtext](#about-urtext)
+Traverse Mode[Traverse Mode](#traverse-mode)
+Using/Adding Existing Files[Using/Adding Existing Files](#using/adding-existing-files)
+Download and Install Dependencies Manually[Download and Install Dependencies Manually](#download-and-install-dependencies-manually)
 Converting and Exporting[Converting and Exporting](#converting-and-exporting)
+From any given node[From any given node](#from-any-given-node)
 0.1.11-alpha[0.1.11-alpha](#0.1.11-alpha)
-Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
+Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
+Using a Sublime Project for an Urtext Project[Using a Sublime Project for an Urtext Project](#using-a-sublime-project-for-an-urtext-project)
+Collection / Timeline View[Collection / Timeline View](#collection-/-timeline-view)
+Files[Files](#files)
+Reference[Reference](#reference)
+Python[Python](#python)
+Project Naming (Identification)[Project Naming (Identification)](#project-naming-identification)
+Reserved Keys[Reserved Keys](#reserved-keys)
+Installation and Setup (Desktop)[Installation and Setup (Desktop)](#installation-and-setup-desktop)
+Full Text Search[Full Text Search](#full-text-search)
+From the root[From the root](#from-the-root)
+Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
+Save on Focus Lost[Save on Focus Lost](#save-on-focus-lost)
+Making a New Project[Making a New Project](#making-a-new-project)
 Disable Prompts for File Reload[Disable Prompts for File Reload](#disable-prompts-for-file-reload)
 0.1.14-alpha[0.1.14-alpha](#0.1.14-alpha)
-Details on the Sublime Implementation[Details on the Sublime Implementation](#details-on-the-sublime-implementation)
-Generating a node ID manually[Generating a node ID manually](#generating-a-node-id-manually)
-More About Node IDs[More About Node IDs](#more-about-node-ids)
-Full Text Search[Full Text Search](#full-text-search)
-Making a New Project[Making a New Project](#making-a-new-project)
-iPhone/iPad/iOS[iPhone/iPad/iOS](#iphone/ipad/ios)
-Uses[Uses](#uses)
-Project Naming (Identification)[Project Naming (Identification)](#project-naming-identification)
 tag_all[tag_all](#tag_all)
-Using Urtext in iOS with Pythonista[Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
-About Urtext[About Urtext](#about-urtext)
+Inline Nodes[Inline Nodes](#inline-nodes)
+Make Installation Easier[Make Installation Easier](#make-installation-easier)
+Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
+Search Using Dynamic Nodes[Search Using Dynamic Nodes](#search-using-dynamic-nodes)
+project_settings[project_settings](#project_settings)
+Urtext  Version: 0.4.0-alpha  Usage Guide and References[Urtext  Version: 0.4.0-alpha  Usage Guide and References](#urtext--version:-0.4.0-alpha--usage-guide-and-references)
+Urtext Syntax Guide[Urtext Syntax Guide](#urtext-syntax-guide)
+File History[File History](#file-history)
+Dependencies and Installation[Dependencies and Installation](#dependencies-and-installation)
+Uses[Uses](#uses)
 
 ## Filenames
 

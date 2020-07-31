@@ -33,64 +33,6 @@ timestamp::<Mon., Feb. 24, 2020, 02:19 PM>
         ]]
 
         {{
-Description >yv2
-Quick Start, Guides and Examples >z7t
-This node is just here as a destination from the node pointer in  Urtext Syntax Guide >ttt
-Urtext Operations Guide >e1x
-Details on the Sublime Implementation >01u
-`flags` >cwb
-More About Node IDs >01q
-Opening Links >01w
-Full Screen / Distraction Free Mode >002
-Projects, Structure and Compiling >01x
-iPhone/iPad/iOS >01y
-Generating a node ID manually >rfp
-Syntax Highlighting >01d
-Nodes >01j
-The Node Browser >01i
-Filenames >01m
-Viewing Linked Relationships >00u
-Requirements and Features >006
-Python >eea
-Using Multiple Projects at a Time >ipy
-Using Urtext in iOS with Pythonista >os4
-Timestamps >005
-Download Dependencies from a Monorepo >arl
-Example : Urtext Documentation Exported in Markdown to a File >m9d
-About Urtext >013
-Traverse Mode >00w
-Using/Adding Existing Files >rij
-Download and Install Dependencies Manually >774
-Converting and Exporting >ezg
-From any given node >00f
-0.1.11-alpha >01l
-Sublime Text tools to help with linking >00m
-Using a Sublime Project for an Urtext Project >c3n
-Collection / Timeline View >00k
-Files >ekz
-Reference >ac5
-Python >xor
-Project Naming (Identification) >tgp
-Reserved Keys >fo2
-Installation and Setup (Desktop) >6cd
-Full Text Search >4p9
-From the root >00g
-Recursive Node Pointers >6ct
-Save on Focus Lost >sqq
-Making a New Project >dce
-Disable Prompts for File Reload >023
-0.1.14-alpha >022
-tag_all >yin
-Inline Nodes >004
-Make Installation Easier >mh8
-Comparison To Other Tools >h8z
-Search Using Dynamic Nodes >uy4
-project_settings >00l
-Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m
-Urtext Syntax Guide >znj
-File History >prp
-Dependencies and Installation >2fn
-Uses >lhs
 ID::3x3; def::>uy4; }}
 
  
