@@ -1,5 +1,5 @@
 {{
-def::>26l; ID::nbd; }}
+ID::nbd; def::>26l; }}
 
 [[ ID(nbd -collection)
 	INCLUDE(tags=urtext)

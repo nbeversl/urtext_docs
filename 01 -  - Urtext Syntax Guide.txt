@@ -53,42 +53,68 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 			Note the dynamic definition syntax ignores whitespace and arbitrary text outside of functions.
 
-			Examples:
+			The order of functions within a definition is unimportant; they are evaluated as a group.
 			
-			[[ 	TARGET() 		Target Node ID or external file to dynamically populate with output
-								Accepts either a link to a node (>eee) or file( f>example.file)
+			[[ 	TARGET() 		Target node or external file to dynamically populate with output.
+								Accepts a link to either a node (>eee) or file( f>example.file)
 								
-								Accepts any one (only) of the following flags:
+								Accepts any one of the following flags, some with corresponding keys/values:
 
 									-list (default)
 
-										Outputs a list of nodes determined by INCLUDE() and EXCLUDE() (see below)
+										Outputs a list of nodes specificed by INCLUDE() and EXCLUDE() (see below).
+										The list output will include only unique entries, no duplicates.
 
 										Example:
 										TARGET(>er3 -list)
 										
-
-									-tree
-
-										Outputs a tree of the hierarchy of nested nodes, with the root node specified using keyword `root`.
-										For information see | Trees >00h
-
-										TARGET(>er3 -tree root:45e)
-
-										- Ignores INCLUDE() and EXCLUDE().
-										- Ignores SORT()
-
 									-collection
 
 										TARGET(>er5 -collection)		
 										Returns a list of all metadata tags and their context, as specified in INCLUDE().
+										The output will be every tag instance, even when individual nodes are duplicated.
+
+									-tree
+
+										Outputs a tree showing the hierarchy of nested nodes, with the root node specified using keyword `root` (required). (For information see | Trees >00h)
+
+										TARGET(>er3 -tree root:45e)
+
+										- Ignores INCLUDE() and SORT()
+										- Observes EXCLUDE() (individual nodes may be omitted)
+										
+										Accepts:
+										-rr or -recursive
+										Includes all nodes pointed to by the root file, recursively.
 
 									-interlinks
 
 										TARGET(>er5 -interlinks root:2f6)
-										Returns a double tree representing the entire network of nodes linkin into and out
-										of the specified node.
+										Returns a double tree representing the entire network of nodes linking into and out
+										of node specified by `root` (required).
 
+									-plaintext or -txt	
+
+										Outputs the node specified by `source` (required) as plaintext.
+										(Strips all Urtext syntax, including metadata and dynamic definitions)
+										Can be used, for instance, to export a node or nodes to a non-Urtext file.
+
+									-markdown or -md	
+
+										Outputs the node specified by `source` (required) as Markdown. 
+										Will include all hierarchically nested nodes with Markdown heading format.
+										See FORMAT() for ways to preformat the output.
+									
+										Accepts:
+										-rr or -recursive
+										Includes all nodes pointed to by the root file, recursively.
+
+									-html			
+
+										Outputs the node specified by `source` (required) as Markdown. 
+										Accepts:
+										-rr or -recursive
+										Includes all nodes pointed to by the root file, recursively.
 
 				INCLUDE()  		Nodes to include. Accepts one or multiple parameters.
 
@@ -104,18 +130,21 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 									`?` means "contains"
 									INCLUDE(_contents ? some text or content)
 
-								Comparison Operators:
+									Use semicolon or newline to separate entries, as everwhere in Urtext.
+
+								Comparison Flags:
 
 									-or (default)
 									INCLUDE(key:value -or other_key:other_value)
 									Includes any nodes matching either or both of `key::value` and `other_key::other_value`
 
-									-and
+									-and or -&
 									INCLUDE(key = value -and other_key = other_value)
 									Includes nodes matching both `key::value` and `other_key::other_value`
 								
-								Additional Flags:
+									Note that comparison flags substitute for semicolons/newlines as separators between entries.
 
+								Additional Flags:
 
 									Additional flags can be included in 
 
@@ -123,15 +152,16 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 									INCLUDE(-all)	
 									Includes all nodes in the project									
 
-									-all_projects
+									-all_projects or -*p
 									INCLUDE(-all_projects)
 									Expands included nodes to include all projects in the project list.
 
+									Note these additional flags substitute for semicolons/newlines as separators between entries.
+
 								Optional Timestamp:
 								
-								INCLUDE(tags = cello:<2019> -or tags = teaching:<2019>)
-								Includes any nodes matching either or both of the key/value pairs within the corresponding timestamp.
-
+									INCLUDE(tags = cello:<2019> -or tags = teaching:<2019>)
+									Includes any nodes matching either or both of the key/value pairs within the corresponding timestamp.
 
 								System keys
 
@@ -146,8 +176,8 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 										INCLUDE(_links_from = 46d)
 										Includes all nodes to which node ID `46d` links
 
-										_contents
-										Refers to the text contents of the node. Can be used to for full text search or comparison.
+										_contents : Refers to a node's text contents. 
+										Can be used, for instance, for full text search or comparison.
 										INCLUDE(_contents ? Western Civilization)
 										Includes any node that contents the text "Western Civilization"
 
@@ -156,11 +186,13 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 				SORT()			Sorts the results. Accepts multiple parameters:
 
+
+
 								SORT(
 									$[key_name]		Sorts by the value of the given key. Default is alphabetical.	
-									timestamp   	Sort by timestamp instead of alphabetical
-									last_accessed	Sort by last accessed
-									reverse			Reverse sort order 
+									-timestamp   	Sort by timestamp instead of alphabetical
+									$_last_accessed	Sort by last accessed
+									-r			Reverse sort order 
 									)
 
 								Example:
@@ -169,37 +201,54 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 								_last_accesssed		Timestamp when the node was last accessed.
 
+								  	'-num',
+								    '-n',
+
+								-alpha or -a
+								Sorts the results alphabetically (default)
+
+								-use_timestamp
+							    -t
+							    Sorts by the timestamp, rather than the value(s), of the metadata entries specific
+							    by the `$` key.
+
+							    -r or -reverse
+							    Reverses the sort order. Applicable to any of the above options.
+
+
 				LIMIT()			Limits the output to the specified number of results.
 
 								Example:
 								LIMIT(30)
+								Will only show 30 results of nodes with the specified parameters.
 
 				SHOW()			Supplies a template for the output. 
-								Accepts arbitrary text, unicode newline characters (\n, \r).
+								Accepts variables denoted with `$`, arbitrary text, and newline characters (\n, \r).
 
-								Words preceded (without whitespace) by `$` are are evaluated as metadata key, whose value(s) will appear in the output.
+								Words preceded by `$` are are evaluated as a metadata key, whose value(s) will appear in the output.
+
 								Note that key names are not displayed in the output, only values. Add keynames manually if you want them included.
 
 								Example:
 								SHOW(Author: $author, Date: $date\n)
 
-								In addition to user-defined metadata keys, the following tokens are valid:
+								In addition to all user-defined metadata keys, the following tokens are included:
 
 								SHOW(
 
-									$title 
+									$_title 
 									Displays the node title, default or via the `title` meta key
 
-									$link
+									$_link
 									Displays a link to the node
 
-									$date 
+									$_date 
 									Displays the node's date in the project's default timestamp format
 
-									$meta
+									$_meta
 									Shorthand to show all metadata for every node, formatted as by "consolidate metadata"
 
-									$contents:120
+									$_contents:120
 									Displays the contents of the node. Optional excerpt/length specifier after the colon
 
 									)
@@ -207,30 +256,22 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 				METADATA()		Applies the given metadata to the output node. Accepts any number of key/value
 								pairs with optional timestamps.
 
-				FORMAT()		Formats the output. 
-								Accepts one or more predefined arguments:
-								
-								FORMAT(preformat) 	
-								Wraps preformatted text (trees, etc.) in backticks to preserve formatting in 
-								Markdown contexts. Only used with EXPORT().
+				FORMAT()		Specificies global formatting of the output. 
 
-								FORMAT(multiline_meta)
+								Primarily intended for formatting export, but can be applied to any output. 
+								Accepts one or more predefined flags:
+								
+								-preformat or -pre
+								Wraps preformatted text (trees, etc.) in backticks to preserve preformatting, 
+								for instance, for Markdown contenxts.
+
+								-multiline_meta or -mm
 								Places dynamic node metadata on separate lines instead of separated by;
 
-								FORMAT(indent:30)
-								Indents the dynamic node by the specified number of spaces
-	
+								-indent() or -i()
+								Indents the dynamic node by the number of spaces specified in parentheses.
+								Example: `-indent(20)
 
-				EXPORT()		Exports the specified node id to a file and/or other node in the project.
-
-								- Ignores everything except ID() and FILE().
-
-								EXPORT (
-									source:xxx		Specifies the source node id
-									plaintext 		Export as plaintext (default)
-									markdown		Export as markdown
-									html			Export as HTML
-								)
 			]] 
 
 
@@ -238,58 +279,10 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 	
 Urtext includes some built-in metadata keys. Built-in keys all begin with an underscore character `_`
 
-	title  				Overrides the Node Title. 
-						more info:  TO BE ADDED 
+	_title  				Overrides the Node Title. 
+							more info:  TO BE ADDED 
 
-	flags  				Sets node behavior. More info:| `flags` >cwb
-
-
-
-flags = [ 
-
-    '-rr', 
-    '-recursive',
-
-    '-use_timestamp',
-    '-t',
-
-    '-last-accessed',
-    '-la',
-
-    '-r',
-    '-reverse',
-
-    '-and',
-    '-&',
-
-    '-all-projects',
-    '-*p',
-
-    '-markdown',
-    '-md',
-
-    '-html',
-
-    '-plaintext',
-    '-txt',
-
-    '-preformat',
-    '-p',
-
-    '-multiline_meta',
-    '-mm',
-
-    '-indent',
-    '-i',
-
-    '-num',
-    '-n',
-
-    '-alpha',
-    '-a'
-]
-
-
+	_flags  				Sets node behavior. More info:| `flags` >cwb
 
 
 
