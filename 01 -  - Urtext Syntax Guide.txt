@@ -46,8 +46,6 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 	Dynamic definitions are wrapped using double left and right square brackets:
 
 	[[ ]]	Dynamic Definition Wrapper
-
-			Template:
 			
 			[[ FUNCTION(key:value:<timestamp> operator) ]]
 
@@ -78,10 +76,9 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 										Outputs a tree showing the hierarchy of nested nodes, with the root node specified using keyword `root` (required). (For information see | Trees >00h)
 
-										TARGET(>er3 -tree root:45e)
+										TARGET(>er3 -tree)
 
-										- Ignores INCLUDE() and SORT()
-										- Observes EXCLUDE() (individual nodes may be omitted)
+										- Ignores SORT()
 										
 										Accepts:
 										-rr or -recursive
@@ -89,7 +86,7 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 									-interlinks
 
-										TARGET(>er5 -interlinks root:2f6)
+										TARGET(>er5 -interlinks)
 										Returns a double tree representing the entire network of nodes linking into and out
 										of node specified by `root` (required).
 
@@ -130,7 +127,12 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 									`?` means "contains"
 									INCLUDE(_contents ? some text or content)
 
-									Use semicolon or newline to separate entries, as everwhere in Urtext.
+
+									`*` means "anything"
+									INCLUDE(index = *)
+									Includes all nodes containing the key `index`
+
+									Use semicolon or newline to separate entries, as everywhere in Urtext.
 
 								Comparison Flags:
 
@@ -189,41 +191,31 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 
 								SORT(
-									$[key_name]		Sorts by the value of the given key. Default is alphabetical.	
-									-timestamp   	Sort by timestamp instead of alphabetical
-									$_last_accessed	Sort by last accessed
-									-r			Reverse sort order 
+									[key_name(s)]		Sorts by the value of the given key. Default is alphabetical.
+														Accepts multiple keys, for secondary/tertiary/etc. sort
+									-timestamp   		Sort by timestamp instead of alphabetical
+									-r					Reverse sort order 
 									)
 
 								Example:
-								SORT($title, reverse)
-
-
-								_last_accesssed		Timestamp when the node was last accessed.
-
-								  	'-num',
-								    '-n',
+								SORT(title, -reverse)
 
 								-alpha or -a
 								Sorts the results alphabetically (default)
 
-								-use_timestamp
-							    -t
-							    Sorts by the timestamp, rather than the value(s), of the metadata entries specific
-							    by the `$` key.
-
-							    -r or -reverse
-							    Reverses the sort order. Applicable to any of the above options.
+							  	-num or -n
+							  	Sorts the results numerically (if possible)
 
 
-				LIMIT()			Limits the output to the specified number of results.
+								-timestamp or -t
+							    Sorts by the timestamp, rather than the value(s)
 
-								Example:
-								LIMIT(30)
-								Will only show 30 results of nodes with the specified parameters.
+							    -reverse or -r
+							    Reverses the sort order. Applicable to any of the above.
+
 
 				SHOW()			Supplies a template for the output. 
-								Accepts variables denoted with `$`, arbitrary text, and newline characters (\n, \r).
+								Accepts keynames denoted with `$`, arbitrary text, and newline characters (\n, \r).
 
 								Words preceded by `$` are are evaluated as a metadata key, whose value(s) will appear in the output.
 
@@ -252,9 +244,14 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 									Displays the contents of the node. Optional excerpt/length specifier after the colon
 
 									)
-		
-				METADATA()		Applies the given metadata to the output node. Accepts any number of key/value
-								pairs with optional timestamps.
+
+
+				LIMIT()			Limits the output to the specified number of results.
+
+								Example:
+								LIMIT(30)
+								Will only show 30 results of nodes with the specified parameters.
+
 
 				FORMAT()		Specificies global formatting of the output. 
 
