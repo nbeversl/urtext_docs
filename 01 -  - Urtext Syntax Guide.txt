@@ -1,4 +1,4 @@
-Urtext Syntax Guide
+Urtext Syntax
 
 Basic Text Syntax
 
@@ -46,13 +46,8 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 	Dynamic definitions are wrapped using double left and right square brackets:
 
 	[[ ]]	Dynamic Definition Wrapper
-
-			Template:
 			
-			[[ FUNCTION(key:value:<timestamp> operator) ]]
-
-			Note the dynamic definition syntax ignores whitespace and arbitrary text outside of functions.
-
+			Note the dynamic definitions ignore whitespace and arbitrary text outside of functions.
 			The order of functions within a definition is unimportant; they are evaluated as a group.
 			
 			[[ 	TARGET() 		Target node or external file to dynamically populate with output.
@@ -76,12 +71,11 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 									-tree
 
-										Outputs a tree showing the hierarchy of nested nodes, with the root node specified using keyword `root` (required). (For information see | Trees >00h)
+										Outputs a tree showing the hierarchy of nested nodes, with the root nodes specified in INCLUDE | Trees >00h)
 
-										TARGET(>er3 -tree root:45e)
+										TARGET(>er3 -tree)
 
-										- Ignores INCLUDE() and SORT()
-										- Observes EXCLUDE() (individual nodes may be omitted)
+										- SORT()
 										
 										Accepts:
 										-rr or -recursive
@@ -89,19 +83,27 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 									-interlinks
 
-										TARGET(>er5 -interlinks root:2f6)
+										TARGET(>er5 -interlinks)
 										Returns a double tree representing the entire network of nodes linking into and out
-										of node specified by `root` (required).
+										of node specified in INCLUDE().
+
+									-search 
+
+										TARGET(>er5 -search)
+										Performs a full-text search of the project and returns instances of the search term(s)
+										specificied in INCLUDE()
 
 									-plaintext or -txt	
-
+									
+										TARGET(>er5 -plaintext)
 										Outputs the node specified by `source` (required) as plaintext.
 										(Strips all Urtext syntax, including metadata and dynamic definitions)
 										Can be used, for instance, to export a node or nodes to a non-Urtext file.
 
 									-markdown or -md	
 
-										Outputs the node specified by `source` (required) as Markdown. 
+										TARGET(>er5 -markdown)
+										Outputs a Markdown representaion of the node(s) specified in INCLUDE().\\
 										Will include all hierarchically nested nodes with Markdown heading format.
 										See FORMAT() for ways to preformat the output.
 									
@@ -124,9 +126,6 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 									INCLUDE(key = value)	
 									Includes all nodes with the given value in the given key
 
-									`~` means fuzzy match, which is something that needs to be added anyway.
-									INCLUDE(key ~ value)	
-
 									`?` means "contains"
 									INCLUDE(_contents ? some text or content)
 
@@ -148,7 +147,7 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 									Additional flags can be included in 
 
-									-all
+									-all or -*
 									INCLUDE(-all)	
 									Includes all nodes in the project									
 
@@ -157,11 +156,6 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 									Expands included nodes to include all projects in the project list.
 
 									Note these additional flags substitute for semicolons/newlines as separators between entries.
-
-								Optional Timestamp:
-								
-									INCLUDE(tags = cello:<2019> -or tags = teaching:<2019>)
-									Includes any nodes matching either or both of the key/value pairs within the corresponding timestamp.
 
 								System keys
 
@@ -184,37 +178,34 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 				EXCLUDE()		Accepts all the same parameters as INCLUDE()
 								Always evaluated after INCLUDE(), excludes the specified nodes from the result.
 
-				SORT()			Sorts the results. Accepts multiple parameters:
-
-
+				SORT()			Sorts the results. Entries can be keynames (include system-defined ones, see below)
+								or flags, with multiple keys separated by semicolon or newline.
+	
 
 								SORT(
-									$[key_name]		Sorts by the value of the given key. Default is alphabetical.	
-									-timestamp   	Sort by timestamp instead of alphabetical
-									$_last_accessed	Sort by last accessed
-									-r			Reverse sort order 
-									)
+									key_name			Sorts by the value of the given key.
+									secondary_keyname	[example] - provides a secondary sort key
+									-timestamp   		Sort by timestamp instead of alphabetical
+									-r					Reverse sort order 
+									)								
 
-								Example:
-								SORT($title, reverse)
+								Note this system-assigned keys that indicates when the node was last accessed
+								is also available in SORT():
+								_last_accesssed		
 
-
-								_last_accesssed		Timestamp when the node was last accessed.
-
-								  	'-num',
-								    '-n',
+								Sort flags:
 
 								-alpha or -a
-								Sorts the results alphabetically (default)
+								Sorts alphabetically (default)
 
-								-use_timestamp
-							    -t
-							    Sorts by the timestamp, rather than the value(s), of the metadata entries specific
-							    by the `$` key.
+							  	-num or -n
+							  	Sort numerically, if applicable
 
-							    -r or -reverse
+								-timestamp or -t
+							    Sorts by the timestamp, rather than the value(s) of the provided key(s).
+
+							    -reverse or -r
 							    Reverses the sort order. Applicable to any of the above options.
-
 
 				LIMIT()			Limits the output to the specified number of results.
 
