@@ -100,7 +100,8 @@ This documentation is in progress, still contains many formatting issues, and is
 | Urtext Operations Guide >>e1x
 | Sublime Text Interface Tips >>003
 
-z7t}}
+
+id::z7t }}
 
 {{ Reference
 
@@ -112,7 +113,12 @@ z7t}}
 
 {{ User Interface Elements
 | The Node Browser >>01i
-Updated::<Thu., Jun. 11, 2020, 04:04 PM> y2n}}
+
+
+
+ 
+Updated::<Thu., Jun. 11, 2020, 04:04 PM>
+d::y2n }}
 
 | Collection / Timeline View >>00k
 | Trees >>00h
@@ -123,6 +129,7 @@ Updated::<Thu., Jun. 11, 2020, 04:04 PM> y2n}}
 | Filenames >>01m
 | Development >>01o
 | File History >>prp
-ac5}} 
 
-id::a5m
+
+id::ac5 }} 
+ID::a5m

@@ -183,23 +183,15 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 				SORT()			Sorts the results. Entries can be keynames (include system-defined ones, see below)
 								or flags, with multiple keys separated by semicolon or newline.
 	
-
 								SORT(
-									key_name			Sorts by the value of the given key.
-									secondary_keyname	[example] - provides a secondary sort key
-									-timestamp   		Sort by timestamp instead of alphabetical
-									-r					Reverse sort order 
+									key_name				Sorts by the value of the given key.
+									-timestamp or -t   		Sorts by the timestamp, rather than the value(s) of the provided key(s).
+									-reverse or -r			Reverses sort order 
 									)								
 
-								Note system-assigned keys are also available in SORT(), including:
+								Note that system-assigned keys are also available in SORT():
 									_last_accesssed
-									_contents
-
-								-timestamp or -t
-							    Sorts by the timestamp, rather than the value(s) of the provided key(s).
-
-							    -reverse or -r
-							    Reverses the sort order. Applicable to any of the above options.
+									_contents	    
 
 				LIMIT()			Limits the output to the specified number of results.
 
@@ -208,11 +200,10 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 								Will only show 30 results of nodes with the specified parameters.
 
 				SHOW()			Supplies a template for the output. 
-								Accepts variables denoted with `$`, arbitrary text, and newline characters (\n, \r).
+								Accepts keynames denoted with `$`, arbitrary text, and newline characters (\n, \r).
 
-								Words preceded by `$` are are evaluated as a metadata key, whose value(s) will appear in the output.
-
-								Note that key names are not displayed in the output, only values. Add keynames manually if you want them included.
+								Words preceded by `$` are are evaluated as metadata keys, replaced in the output by their value(s).
+								Note that key names themselves are not displayed in the output. Add keynames manually if you want them included.
 
 								Example:
 								SHOW(Author: $author, Date: $date\n)
@@ -270,8 +261,11 @@ Urtext includes some built-in metadata keys. Built-in keys all begin with an und
 
 
 Still needed: 
-settings to specify keys will have numeric, alpha, or date values:
-nested (multi-dimension) sorting for keys
-
+project_settings to specify keys will have numeric, alpha, or date values:
+nested (multi-dimension) sorting for keys : 
+	add to SORT():
+		secondary_keyname	[example] - provides a secondary sort key
+ability to have timestamps/ranges as values in INCLUDE(), EXCLUDE()
+Fuzzy search -- implementation of `~`
 
 ID::znj
