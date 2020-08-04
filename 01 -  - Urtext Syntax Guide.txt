@@ -74,12 +74,12 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 										Outputs a tree showing the hierarchy of nested nodes, with the root nodes specified in INCLUDE | Trees >00h)
 
 										TARGET(>er3 -tree)
-
-										- SORT()
 										
 										Accepts:
 										-rr or -recursive
 										Includes all nodes pointed to by the root file, recursively.
+
+										Ignores SORT()
 
 									-interlinks
 
@@ -94,7 +94,7 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 										specificied in INCLUDE()
 
 									-plaintext or -txt	
-									
+
 										TARGET(>er5 -plaintext)
 										Outputs the node specified by `source` (required) as plaintext.
 										(Strips all Urtext syntax, including metadata and dynamic definitions)
@@ -128,6 +128,8 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 									`?` means "contains"
 									INCLUDE(_contents ? some text or content)
+									Includes al nodes containing "some text or content" in their text contents.
+									(See also -search)
 
 									Use semicolon or newline to separate entries, as everwhere in Urtext.
 
@@ -189,17 +191,9 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 									-r					Reverse sort order 
 									)								
 
-								Note this system-assigned keys that indicates when the node was last accessed
-								is also available in SORT():
-								_last_accesssed		
-
-								Sort flags:
-
-								-alpha or -a
-								Sorts alphabetically (default)
-
-							  	-num or -n
-							  	Sort numerically, if applicable
+								Note system-assigned keys are also available in SORT(), including:
+									_last_accesssed
+									_contents
 
 								-timestamp or -t
 							    Sorts by the timestamp, rather than the value(s) of the provided key(s).
@@ -244,9 +238,6 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 									)
 		
-				METADATA()		Applies the given metadata to the output node. Accepts any number of key/value
-								pairs with optional timestamps.
-
 				FORMAT()		Specificies global formatting of the output. 
 
 								Primarily intended for formatting export, but can be applied to any output. 
@@ -276,6 +267,11 @@ Urtext includes some built-in metadata keys. Built-in keys all begin with an und
 	_flags  				Sets node behavior. More info:| `flags` >cwb
 
 
+
+
+Still needed: 
+settings to specify keys will have numeric, alpha, or date values:
+nested (multi-dimension) sorting for keys
 
 
 ID::znj

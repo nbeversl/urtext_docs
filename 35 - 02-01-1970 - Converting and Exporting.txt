@@ -13,14 +13,13 @@ Converting and Exporting
 
 {{  Example : Urtext Documentation Exported in Markdown to a File
 
-    The following dynamic definition exports this entire documentation (from its root node | Urtext  Version: 0.2.0-alpha >a5m ) in Markdown format to a file called documentation.md:
+    The following dynamic definition exports this entire documentation (from its root node | Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m ) in Markdown format to a file called documentation.md:
 
     [[ 
-        FILE(README.md)
-        EXPORT(source:a5m markdown)
+        TARGET(f>README.md -md)
+        INCLUDE(id = a5m)
         FORMAT(preformat)
      ]]
-
 
 
 id::m9d }}
@@ -28,11 +27,7 @@ id::m9d }}
 {{  Example : Fragment Exported to HTML
 
     The following Dynamic Definition exports the | Links and Pointers >00j section of the documentation to HTML, into a node inside this one:
-
-
-
-ID::baq
-defined in::>plg}}
+ID::baq; defined in::>plg }}
 
 
 

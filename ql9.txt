@@ -1,5 +1,5 @@
 {{
-ID::4fb; def::>ql9; }}
+def::>ql9; ID::4fb; }}
 
 [[ ID(4fb -collection)
 	INCLUDE(tags = urtext)

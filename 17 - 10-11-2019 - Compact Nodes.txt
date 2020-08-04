@@ -10,7 +10,7 @@ ID::xlc
 ID::hiz
 
 {{
-ID::ucj; def::>frm; }}
+def::>frm; ID::ucj; }}
 
 [[ ID(ucj)
 	TREE(j6t)

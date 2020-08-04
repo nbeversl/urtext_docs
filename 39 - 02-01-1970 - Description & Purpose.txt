@@ -139,7 +139,7 @@ flags::exclude_from_tree }}
         Here is the compiled node defined by the definition above. Changing the dynamic definition and/or the contents or metadata of the source nodes will update the dynamic node. Saving is necessary to trigger the update.
 
 {{
-ID::016; def::>01r; }}
+def::>01r; ID::016; }}
                                                                                               
 
 
@@ -149,11 +149,13 @@ index::08}}
 
 {{ Example 2 : Tree 
 
-    Here is the dynamic definition that actually generates the table of contents for this documentation:
+    Here is the dynamic definition that generates the table of contents for this documentation:
 
-        [[  ID(e5j -tree root:a5m)
-            INCLUDE(-all)
-            METADATA(flags:exclude_from_tree title:"Table of Contents")
+        [[  ID(>e5j -tree)
+            INCLUDE(id=a5m)
+            FOOTER(
+            flags::exclude_from_tree 
+            title::Table of Contents)
          ]]  
 
     Changing the titles or structure of sections in this documentation will dynamically update the table of contents tree.

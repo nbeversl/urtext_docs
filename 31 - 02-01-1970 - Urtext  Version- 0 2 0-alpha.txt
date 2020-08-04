@@ -10,7 +10,7 @@ Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m
 ├── Urtext  Version: 0.4.0-alpha  Usage Guide and References >e5j
 ├── Quick Start, Guides and Examples >z7t
 │   ├── Installation and Setup (Desktop) >6cd
-│   ├── Urtext Syntax Guide >znj
+│   ├── Urtext Syntax >znj
 │   ├── Urtext Operations Guide >e1x
 │   └── Sublime Text Interface Tips >003
 │       ├── Syntax Highlighting >01d
@@ -88,7 +88,7 @@ Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m
     ├── Development >01o
     │   └── Make Installation Easier >mh8
     └── File History >prp
-ID::e5j; def::>029; }}
+def::>029; ID::e5j; }}
 
 {{  Quick Start, Guides and Examples
 
