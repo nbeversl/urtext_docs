@@ -1,24 +1,24 @@
 
-{{  Sublime Text Interface Tips
+{  Sublime Text Interface Tips
 	
 	Here are some tips for best leveraging Sublime's great UI features.
 
-	{{ Syntax Highlighting
+	{ Syntax Highlighting
 
 		This package comes with a .YML file (`sublime_urtext.sublime_syntax`) defining the Urtext syntax, along with two color schemes that provide syntax highlighting. Syntax highlighting makes everything easier by showing depth of node nesting and dimming certain elements of the syntax. Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ... 
 
 		Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.) 
-ID::01d}}
+ID::01d}
 
-	{{	Hiding Tabs
+	{	Hiding Tabs
 
 			If you prefer a clean, terminal-like view, hide tabs: View -> Hide Tabs
 			This preference can also be set on a per-(Sublime)-project basis. See the Sublime documentation.  
 
 				
-ID::015 }}
+ID::015 }
 
-	{{  Hiding Line Numbers
+	{  Hiding Line Numbers
 
 			For an extra-clean look, hide line numbers by adding:
 				"settings" : {
@@ -28,16 +28,16 @@ ID::015 }}
 			... to your Sublime project settings file.
 			
 			
-ID::01e }}
+ID::01e }
 
-	{{  Full Screen / Distraction Free Mode
+	{  Full Screen / Distraction Free Mode
 
 			Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode
 
 		
-ID::002 }}
+ID::002 }
 
-	{{ Disable Prompts for File Reload
+	{ Disable Prompts for File Reload
 
 			 Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
 				 "settings" : {
@@ -45,9 +45,9 @@ ID::002 }}
 				},
 		
 		 
-ID::023 }}
+ID::023 }
 
-	{{  Remove Indent Guides
+	{  Remove Indent Guides
 
 			Formatting plaintext using tab indentions can look messy if indent guides are on. To turn them off, add to your Sublime project settings file:
 
@@ -56,27 +56,27 @@ ID::023 }}
 			}
 
 	
-id::1rc }}
+id::1rc }
 
-	{{  Save on Focus Lost
+	{  Save on Focus Lost
 
 			Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:
 
 			{ "save_on_focus_lost": true }
 
 	
-id::sqq }}
+id::sqq }
 
 
 
-	{{  Using a Sublime Project for an Urtext Project
+	{  Using a Sublime Project for an Urtext Project
 	
 			( see https://www.sublimetext.com/docs/3/projects.html )
 
 			You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.  
 
 		
-id::c3n }}
+id::c3n }
 
 
 ID::003

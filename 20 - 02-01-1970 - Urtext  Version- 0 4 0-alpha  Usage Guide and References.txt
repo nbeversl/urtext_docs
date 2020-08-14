@@ -1,0 +1,58 @@
+Urtext | Version: 0.4.0-alpha | Usage Guide and References
+License: GNU General Public License 3.0
+
+This is a documentation of Urtext, written in Urtext. If you're reading this as a `README.MD` (on Github, etc.), this file was generated from the text files in this repository. The repository is an Urtext project. Clone or download it to use it as both a reference and an example project. If you are reading this in an Urtext implementation, such as in Sublime Text, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
+  - Control-Shift-/ to follow any link
+  - Control-Shift-h at any time to return to this "home" node.
+  
+{Urtext  Version: 0.4.0-alpha  Usage Guide and References >>a5m
+
+            flags::exclude_from_tree 
+            title::Table of Contents
+ID::e5j
+def::>029
+}
+
+{  Quick Start, Guides and Examples
+
+This documentation is in progress, still contains many formatting issues, and is somewhat behind development and features. Please post any questions as issues (https://github.com/nbeversl/urtext-docs/issues).
+
+| Installation and Setup >>6cd
+| Using Urtext in iOS with Pythonista >os4
+| Urtext Syntax Guide >>znj
+| Urtext Operations Guide >>e1x
+| Sublime Text Interface Tips >>003
+
+
+id::z7t }
+
+{ Reference
+
+| About Urtext >>013
+
+| Making a New Project >>dce
+| Nodes >>01j
+| Metadata >>00x
+
+{ User Interface Elements
+| The Node Browser >>01i
+
+
+
+ 
+Updated::<Thu., Jun. 11, 2020, 04:04 PM>
+d::y2n }
+
+| Collection / Timeline View >>00k
+| Trees >>00h
+| Links and Pointers >>00j
+| Using Multiple Projects at a Time >>ipy
+| Converting and Exporting >>ezg
+| Search >>k67
+| Filenames >>01m
+| Development >>01o
+| File History >>prp
+
+
+id::ac5 } 
+ID::a5m

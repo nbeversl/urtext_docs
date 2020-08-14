@@ -1,0 +1,11 @@
+{ID::npf
+def::>ko8
+}
+
+[[ ID(>npf)
+INCLUDE(-all)
+
+ ]]
+
+ss
+from::wwci-00407.local; id::ko8; created::<Tue., Aug. 04, 2020, 11:29 AM>; 

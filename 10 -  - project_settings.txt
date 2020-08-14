@@ -12,18 +12,18 @@ title::project_settings
 project_title::Urtext Documentation
 tags::
 index::100
-console_log::False
+console_log::True
 
 This node now has special reserved metadata keys that will be parsed as follows:
 
-{{ Home Node
+{ Home Node
 
 The Home page is accessible anywhere in the project by pressing Ctrl-Shift-H. Specify the node ID you want this shortcut to jump to. 
-ID::00c }}
+ID::00c }
 
-{{ Filename formats 
-ID::00i }}
+{ Filename formats 
+ID::00i }
 
-{{ Timestamp Formats 
-ID::00n }}
+{ Timestamp Formats 
+ID::00n }
 

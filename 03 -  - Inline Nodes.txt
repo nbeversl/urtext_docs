@@ -2,10 +2,10 @@ Inline Nodes
 	 
     Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. The syntax for inline nodes is to wrap the content in double curly braces like this:
 
-      {{ Example Inline Node 
-ID::00e }}
+      { Example Inline Node 
+ID::00e }
 
-    Create an inline nodes with `Ctrl-Shift-{`. Inside the inserted double curly braces is a new node with an auto-generated ID. 
+    Create an inline nodes with `Ctrl-Shift-squiggly-bracker. Inside the inserted double curly braces is a new node with an auto-generated ID. 
           
     To wrap existing content into an inline node, first select the content and use the same keypress.
           
@@ -17,13 +17,13 @@ ID::00e }}
 
     For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
 
-    {{  Syntax Highlighting
+    {  Syntax Highlighting
 
         When syntax highlighting is used 
 
 
         ( see  | |  ?  >d), inline nodes are colored to showing nesting. 
-id::koe }}
+id::koe }
 
 
 

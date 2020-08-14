@@ -1,0 +1,274 @@
+Urtext Syntax
+
+Basic Text Syntax
+
+	All text is plain content unless inside a timetamp wrapper or dynamic definition wrapper. 
+	The following syntax applies:
+
+	 >0y2	Link to another node by ID. 
+	 		More information: | Links >0y2
+
+	 | 		Placed before a node link, dynamically populates the linked node title.
+	 		Example and more info: | Dynamically Titled Links >4vu
+
+
+	 ^		Compact Node marker. Must be the first non-whitespace character on a line.
+	 		More information: |  ?  >j6t
+
+	{  }	Subnode	wrappers. Can appear anywhere. Can be nested aribrarily deep.
+			More information: | Inline Nodes >004
+		
+	 >>ttt	Node Pointer
+	 		Embeds the specified node as though it were included inline using wrappers { } (see above)
+	 		More information: | Pointers >lmu
+
+	< > 	Timestamp enclosure. Accepts and parses user-defined datetime strings, with some default formats built in.
+			Example: <Tue., Jul. 28, 2020, 03:43 PM>
+			More information: | Timestamps >005
+
+	::		Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right, anywhere inside node contents. 
+			
+			Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline.
+			Example: example_key::example value for the key <Tue., Jul. 28, 2020, 03:39 PM>
+			
+			The pipe character (`|`) separates multiple values.
+			Example: some_key::one value | another value
+
+			Metadata entries remember their location and can serve as anchors to their 
+
+			More information | Metadata >00x
+
+
+Dynamic Definitions
+
+Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere inside node content. It is not necessary to store the definition in the same file to which it refers.
+
+	Dynamic definitions are wrapped using double left and right square brackets:
+
+	[[ ]]	Dynamic Definition Wrapper
+			
+			Note the dynamic definitions ignore whitespace and arbitrary text outside of functions.
+			The order of functions within a definition is unimportant; they are evaluated as a group.
+			
+			[[ 	TARGET() 		Target node or external file to dynamically populate with output.
+								Accepts a link to either a node (>eee) or file( f>example.file)
+								
+								Accepts any one of the following flags, some with corresponding keys/values:
+
+									-list (default)
+
+										Outputs a list of nodes specificed by INCLUDE() and EXCLUDE() (see below).
+										The list output will include only unique entries, no duplicates.
+
+										Example:
+										TARGET(>er3 -list)
+										
+									-collection
+
+										TARGET(>er5 -collection)		
+										Returns a list of all metadata tags and their context, as specified in INCLUDE().
+										The output will be every tag instance, even when individual nodes are duplicated.
+
+									-tree
+
+										Outputs a tree showing the hierarchy of nested nodes, with the root nodes specified in INCLUDE | Trees >00h)
+
+										TARGET(>er3 -tree)
+										
+										Accepts:
+										-rr or -recursive
+										Includes all nodes pointed to by the root file, recursively.
+
+										Ignores SORT()
+
+									-interlinks
+
+										TARGET(>er5 -interlinks)
+										Returns a double tree representing the entire network of nodes linking into and out
+										of node specified in INCLUDE().
+
+									-search 
+
+										TARGET(>er5 -search)
+										Performs a full-text search of the project and returns instances of the search term(s)
+										specificied in INCLUDE()
+
+									-plaintext or -txt	
+
+										TARGET(>er5 -plaintext)
+										Outputs the node specified by `source` (required) as plaintext.
+										(Strips all Urtext syntax, including metadata and dynamic definitions)
+										Can be used, for instance, to export a node or nodes to a non-Urtext file.
+
+									-markdown or -md	
+
+										TARGET(>er5 -markdown)
+										Outputs a Markdown representaion of the node(s) specified in INCLUDE().\\
+										Will include all hierarchically nested nodes with Markdown heading format.
+										See FORMAT() for ways to preformat the output.
+									
+										Accepts:
+										-rr or -recursive
+										Includes all nodes pointed to by the root file, recursively.
+
+									-html			
+
+										Outputs the node specified by `source` (required) as Markdown. 
+										Accepts:
+										-rr or -recursive
+										Includes all nodes pointed to by the root file, recursively.
+
+				INCLUDE()  		Nodes to include. Accepts one or multiple parameters.
+
+								Comparisons:
+
+									`=` means equal to
+									INCLUDE(key = value)	
+									Includes all nodes with the given value in the given key
+
+									`?` means "contains"
+									INCLUDE(_contents ? some text or content)
+									Includes al nodes containing "some text or content" in their text contents.
+									(See also -search)
+
+									Use semicolon or newline to separate entries, as everwhere in Urtext.
+
+								Comparison Flags:
+
+									-or (default)
+									INCLUDE(key:value -or other_key:other_value)
+									Includes any nodes matching either or both of `key::value` and `other_key::other_value`
+
+									-and or -&
+									INCLUDE(key = value -and other_key = other_value)
+									Includes nodes matching both `key::value` and `other_key::other_value`
+								
+									Note that comparison flags substitute for semicolons/newlines as separators between entries.
+
+								Additional Flags:
+
+									Additional flags can be included in 
+
+									-all or -*
+									INCLUDE(-all)	
+									Includes all nodes in the project									
+
+									-all_projects or -*p
+									INCLUDE(-all_projects)
+									Expands included nodes to include all projects in the project list.
+
+									Note these additional flags substitute for semicolons/newlines as separators between entries.
+
+								System keys
+
+									Urtext includes some built-in keys whose values are generated automatically. 
+									These may also be used in INCLUDE(): 
+										
+										_links_to			
+										INCLUDE(_links_to = 46d)
+										Includes all nodes that contain links to node ID `46d`
+
+										_links_from
+										INCLUDE(_links_from = 46d)
+										Includes all nodes to which node ID `46d` links
+
+										_contents : Refers to a node's text contents. 
+										Can be used, for instance, for full text search or comparison.
+										INCLUDE(_contents ? Western Civilization)
+										Includes any node that contents the text "Western Civilization"
+
+				EXCLUDE()		Accepts all the same parameters as INCLUDE()
+								Always evaluated after INCLUDE(), excludes the specified nodes from the result.
+
+				SORT()			Sorts the results. Entries can be keynames (include system-defined ones, see below)
+								or flags, with multiple keys separated by semicolon or newline.
+	
+								SORT(
+									key_name				Sorts by the value of the given key.
+									-timestamp or -t   		Sorts by the timestamp, rather than the value(s) of the provided key(s).
+									-reverse or -r			Reverses sort order 
+									)								
+
+								Note that system-assigned keys are also available in SORT():
+									_last_accesssed
+									_contents	    
+
+				LIMIT()			Limits the output to the specified number of results.
+
+								Example:
+								LIMIT(30)
+								Will only show 30 results of nodes with the specified parameters.
+
+				SHOW()			Supplies a template for the output. 
+								Accepts keynames denoted with `$`, arbitrary text, and newline characters (\n, \r).
+
+								Words preceded by `$` are are evaluated as metadata keys, replaced in the output by their value(s).
+								Note that key names themselves are not displayed in the output. Add keynames manually if you want them included.
+
+								Example:
+								SHOW(Author: $author, Date: $date\n)
+
+								In addition to all user-defined metadata keys, the following tokens are included:
+
+								SHOW(
+
+									$_title 
+									Displays the node title, default or via the `title` meta key
+
+									$_link
+									Displays a link to the node
+
+									$_date 
+									Displays the node's date in the project's default timestamp format
+
+									$_meta
+									Shorthand to show all metadata for every node, formatted as by "consolidate metadata"
+
+									$_contents:120
+									Displays the contents of the node. Optional excerpt/length specifier after the colon
+
+									)
+		
+				FORMAT()		Specificies global formatting of the output. 
+
+								Primarily intended for formatting export, but can be applied to any output. 
+								Accepts one or more predefined flags:
+								
+								-preformat or -pre
+								Wraps preformatted text (trees, etc.) in backticks to preserve preformatting, 
+								for instance, for Markdown contenxts.
+
+								-multiline_meta or -mm
+								Places dynamic node metadata on separate lines instead of separated by;
+
+								-indent() or -i()
+								Indents the dynamic node by the number of spaces specified in parentheses.
+								Example: `-indent(20)
+
+			]] 
+
+
+
+	
+Urtext includes some built-in metadata keys. Built-in keys all begin with an underscore character `_`
+
+	_title  				Overrides the Node Title. 
+							more info:  TO BE ADDED 
+
+	_flags  				Sets node behavior. More info:| `flags` >cwb
+
+
+
+
+Still needed: 
+project_settings to specify keys will have numeric, alpha, or date values:
+nested (multi-dimension) sorting for keys : 
+	add to SORT():
+		secondary_keyname	[example] - provides a secondary sort key
+ability to have timestamps/ranges as values in INCLUDE(), EXCLUDE()
+Fuzzy search -- implementation of `~`
+HEADER()
+FOOTER()
+
+
+ID::znj

@@ -4,7 +4,7 @@ Every node can have an unlimited number of metadata entries. Metadata is indexed
 
 Metadata can be added to text in two ways: using wrapped blocks, or using inline notation:
 
-{{ Wrapped
+{ Wrapped
 
     Wrapped metadata blocks can be inserted arbitrarily anywhere inside a node. Metadata blocks open with a forward-slash followed by two dashes and close with two dashes followed by a forward slash: 
   
@@ -24,10 +24,10 @@ Metadata can be added to text in two ways: using wrapped blocks, or using inline
 
     -   If no colon is present, the entry is read as a value with the default key `comment`.
 
-    -   A timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. iy7}}
+    -   A timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. iy7}
 
 
-{{ Inline
+{ Inline
     
     Individual metadata key/value pairs can also be inserted anywhere in the text without a wrapper, using a double colon (` :: `) notation. 
       example_key::example_value. 
@@ -36,18 +36,18 @@ Metadata can be added to text in two ways: using wrapped blocks, or using inline
 
     Inline metadata entries do not include the option of timestamps. Instead, you may insert inline timestamp notation. See | Timestamps >005
 
-     gmk}}
+     gmk}
   
   | Timestamps >>005
 
-    {{  Case-sensitivity
+    {  Case-sensitivity
 
         -   Values are not case-sensitive, except those with the following keys:
 
-            `title`             Manually overrides the node's title. {{ **Needs edit/organization here about Node Titles. 
+            `title`             Manually overrides the node's title. { **Needs edit/organization here about Node Titles. 
 id::hof
 tags::edit
-created::<Thu., Jun. 11, 2020, 04:40 PM> }}
+created::<Thu., Jun. 11, 2020, 04:40 PM> }
             `comments           ( This key is assumed when no key is present; used for freeform comments. )
             `notes`             ( as for `comments` )
             `weblink`           ( used for HTTP/S links. See | Linking to outside resources >00q )
@@ -61,13 +61,13 @@ created::<Thu., Jun. 11, 2020, 04:40 PM> }}
             `timestamp_format`
 
           
-id::l36 }}
+id::l36 }
 
-   {{ Reserved Keys
+   { Reserved Keys
 
       There are two reserved keys that Urtext interprets in a special way:
 
-        {{   `index`
+        {   `index`
       
            Provides a way to give nodes a sort order in | The Node Browser >01i.  Indexed nodes will sort before (above) the others, lowest numbers appearing first. To utilize, add a two-digit sort index (00-99) to a node, such as: 
 index::03    
@@ -77,30 +77,30 @@ index::03
            Unindexed nodes will display underneath indexed nodes, by timestamp, newest first.        
 
            
-ID::00z }}
+ID::00z }
 
-       {{  `flags`
+       {  `flags`
 
            Used to set node behavior for specific purposes withing Urtext. At present only the following exists:
 
-           - {{  `exclude_from_tree`
+           - {  `exclude_from_tree`
 
                Excludes a node from being included in a tree. For an example, see Example 2 in "Dynamic Nodes" | Example 2 : Tree >029. For more on tree, see | Trees >00h  
 
            
-id::1e3 }}
+id::1e3 }
 
 
-            - {{ `exclude_from_export`
+            - { `exclude_from_export`
 
                 Excludes a node from being exported, when project content is exported. See | Converting and Exporting >ezg.
 
 
-             id: vv7;  --/ }}
+             id: vv7;  --/ }
        
-id::cwb }}
+id::cwb }
      
-id::fo2 }}
+id::fo2 }
 
 
 

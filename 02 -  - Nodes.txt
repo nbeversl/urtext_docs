@@ -8,14 +8,14 @@ Each node's ID is generated automatically on creation and placed into its initia
 
 Node IDs are assigned in random order and have no special meaning except as a unique identifier. | More About Node IDs >01q .
  
-{{ Files
+{ Files
 
 	The most basic node is a single file. It may or may not contain other nodes nested inside it.
 
 	To create a new file, press `Urtext-;`. A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
 
 	
-id::ekz }}
+id::ekz }
 
 By default, the first non-whitespace line of any node is the node's title. 
 

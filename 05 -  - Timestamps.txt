@@ -1,0 +1,34 @@
+Timestamps                                                                                  
+
+   	Reliance on the operating system's file-created or file-modified date metadata is avoided, since it can be too easily and involuntarily overwritten under ordinary file system operations, such as copying and moving files or folders. 
+   
+    Text between two angled brackets (<  >) is interpreted as a timestamp. 
+
+    To insert a timestamp in Sublime, press Control-Shift-O. 
+
+    Node timestamps are part of metadata (see Metadata >00x). Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed.
+
+    Timestamps are read and written utilizing Python's `strftime` directives. The default format is:
+
+    	%%-PYTHON
+    	`.%a., %b. %d, %Y, %I:%M %p`
+    	%%-END
+
+    which creates timestamps like: <Tue., Jun. 04, 2019, 08:51 PM>. The format can be customized in the project_settings node (see project_settings >00l). For more information on `strftime` directives and options, see https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior.
+    
+    
+| Timeline View >>00k
+  
+
+    { 	Time Zones  
+id::7w6
+
+    	Time zones are not required in timestamps. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing and comparison purposes. To modify this default, set the `timezone` key in project settings to another valid value. (Timezone List >>zh1)
+    	
+     }
+
+
+ID::005
+Timestamp::<Fri., Jun. 07, 2019, 04:30 PM>
+tags::
+index::06

@@ -1,6 +1,6 @@
 Development
 
-{{  Make Installation Easier
+{  Make Installation Easier
 	
 	The way Sublime Text is currently set up, manually installing all the dependency modules is the easiest way to get it set up. Alternatives such as using git subtrees, wrapping each individual dependency in a separate Sublime Package and then making those Packages dependencies of the Urtext Package, etc., all end up involving both more maintenance and more legwork for the end user than just manually installing everything.
 
@@ -19,7 +19,7 @@ Development
 		https://github.com/packagecontrol/requests
 
 
-id::mh8 }}
+id::mh8 }
 
 
 

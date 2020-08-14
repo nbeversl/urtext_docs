@@ -1,0 +1,17 @@
+Other dynamic instructions
+
+Some dynamic instructions do things other than populate or modify contents of nodes.	
+
+{  	tag_all
+
+		tag_all:(key):(value):recursive?
+
+		The `tag_all` instruction tags all children of the target node with the key/value pair specified. If `:recursive` is appended, it will tag all descendents, not just the children. This will affect not just existing children/descendants, but all subsequently added ones as well. When the dynamic definition is removed, the tags are removed from the children/descendants. 
+
+		Note that metadata tags do not actually get added to the inline text of the the children/descendants as a result of this instruction, only that they acquire the specified key/value metadata pair for all purposes metadata serves within Urtext.
+
+ 
+id::yin }
+
+
+ID::x0c

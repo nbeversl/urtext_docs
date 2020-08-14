@@ -1,0 +1,70 @@
+Details on the Sublime Implementation
+
+    The Urtext package for Sublime Text utilizes Sublime's embedded Python 3.3 interpreter both to run the Urtext interpreter/compiler and to add features to Sublime that make working with Urtext easy:
+
+        - binds many Urtext operations to the Sublime command palette
+        - adds key bindings (hotkeys) as shortcuts for some features
+        - leverages the built-in Sublime browser/palette for Urtext project navigation
+        - defines a syntax for use with Sublime's color schemes
+        - adds Urtext syntax highlighting to two of Sublime's default color schemes (Monokai and Sixteen)
+        - adds filebrowser-like project navigation using | Traverse Mode >00w
+
+    Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation. Features that are specific to Sublime are tagged with the keyword `sublime`.
+
+{  Dependencies and Installation
+
+    The decision has been made not to include Urtext or its dependencies in the Urtext package for Sublime. It is necessary to install everything manually into Sublime's Python 3.3 environment. This is in fact less complicated than the alternatives considered. For developers, see | Make Installation Easier >mh8.
+
+    To use Urtext in Sublime Text:
+
+        - Install Sublime Text ( https://www.sublimetext.com/ )
+
+        - Clone or download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ). Place it in your Packages folder (Sublime Text 3/Packages). The package is not available in Package Control. 
+
+        - Add Urtext and all its dependencies to Sublime's Python interpreter. There are two options for doing this:
+
+        {  Download and Install Dependencies Manually
+
+                - anytree
+                    https://github.com/c0fec0de/anytree
+                    The folder needed is `anytree` inside this download; add it to `Sublime Text 3/Lib/python3.3`.
+  
+                - pytz
+                    https://pypi.org/project/pytz/
+                    The folder needed is `pytz`; add it to `Sublime Text 3/Lib/python3.3`.
+
+                - six
+                    https://pypi.org/project/six/
+                    The only FILE needed is `six.py`, nothing else; add this directly to `Sublime Text 3/Lib/python3.3`.
+
+                - urtext 
+                    https://github.com/nbeversl/urtext
+                    This is Urtext itself. Put the entire folder (`urtext`) into `Sublime Text 3/Lib/python3.3`.
+
+                - fuzzywuzzy 
+                    https://github.com/seatgeek/fuzzywuzzy
+                    The folder needed is `fuzzywuzzy`; add it to `Sublime Text 3/Lib/python3.3`.
+                
+                - diff-match-patch
+                    The folder needed is `diff_match_patch`; add it to `Sublime Text 3/Lib/python3.3`.
+                    https://pypi.org/project/diff-match-patch/ 
+                    
+id::774 }
+
+    {  Download Dependencies from a Monorepo
+
+            As a convenience, all of the above depenencies are (for now) maintained in recent versions at https://github.com/nbeversl/urtext_deps, with all files in the path locations described above. You can either download this repository as a .ZIP file and unzip it, or if you want to maintain version control, use:
+                 `git clone --recurse-submodules https://github.com/nbeversl/urtext_deps`
+
+            Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your `Sublime Text 3/Lib/python3.3` folder.
+
+     
+id::arl }
+
+        Close and reopen Sublime Text. Urtext is now ready to use.
+
+    
+id::2fn }        
+
+
+ID::01u

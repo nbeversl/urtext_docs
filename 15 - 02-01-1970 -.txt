@@ -1,0 +1,59 @@
+{
+tags :: coming >00p:0 
+ Files
+        
+       COMING.
+
+tags :: edit >hof:0 
+ **Needs edit/organization here about Node Titles.
+
+tags :: key_command_question >01i:0 
+ The Node Browser
+Opening the Node List
+Ctrl-Shift-E 
+In Sublime Text there is also the alternative of using the UI dropdown. Press Control-Shift-E or select "Urtext: Node List" from the Sublime command palette (Shift-Super-P).
+
+tags :: nate >n05:0 
+ 
+
+tags :: python >xor:256 
+ Returns:
+               string: the contents of the new node, which can then be manually inserted using a text editor.
+			"""
+			%%-END
+
+tags :: pythonista >iy8:0 
+ Pythonista 
+        Use the `>` key when the cursor is on any line containing a link.
+
+tags :: sublime >00w:0 
+ Traverse Mode   
+This feature is currently implemented in Sublime Text only.
+    You can navigate a node tree or list of nodes by turning on Traverse mode (Shift-Ctrl-R). This will open another pane next t
+
+tags :: sublime >00m:0 
+ Sublime Text tools to help with linking 
+        Two Sublime Command Palette commands can make linking quick and easy:
+     
+        Urtext : Link To ...
+            Links from the currently viewed node t
+
+tags :: sublime >osu:50 
+ aining a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point.
+
+tags :: sublime >00f:182 
+ is will add a new split view to the left side of the current view in Sublime, containing a tree with the selected node as root.
+
+tags :: sublime >00g:151 
+ tree will include everything back to the node's root. If the tree extends upward beyond the current file, that will also be included.
+
+tags :: urtext_documentation >003:46 
+ ips for best leveraging Sublime's great UI features.
+
+def::>qgz; ID::i40; }
+
+[[ ID(i40 -collection)
+INCLUDE(-all tags)
+ ]]
+
+id::qgz; created::<Mon., Aug. 03, 2020, 12:26 AM>; from::wwci-00407.local; 
