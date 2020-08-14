@@ -1,12 +1,11 @@
 {{
-**Needs edit/organization here about Node Titles.
->>hof
+>>8l0
+
+>>ko8
 
 >>vvn
-TARGET( node or filename ) (recognized by pattern)
->>uh9
-
->>8l0
+**Needs edit/organization here about Node Titles.
+>>hof
 0.1.11-alpha
 >>01l
 0.1.12-alpha
@@ -101,8 +100,6 @@ In-Progress / Experimental / Wish List
 >>014
 Inline
 >>gmk
-Inline Nodes
->>004
 Inserting a Node ID manually
 >>04s
 Installation and Setup (Desktop)
@@ -172,11 +169,13 @@ Sublime Text tools to help with linking
 Synchronator Setup
 >>01z
 Syntax Highlighting
->>01d
-Syntax Highlighting
 >>koe
+Syntax Highlighting
+>>01d
 Syntaxes :
 >>r0w
+TARGET( node or filename ) (recognized by pattern)
+>>uh9
 The Node Browser
 >>01i
 This node is just here as a destination from the node pointer in  Urtext Syntax Guide
@@ -199,6 +198,8 @@ Urtext Operations Guide
 >>e1x
 Urtext Syntax
 >>znj
+User Interface Elements
+>>y2n
 Uses
 >>lhs
 Using Multiple Projects at a Time
@@ -217,6 +218,8 @@ Word Wrap in Traverse Mode
 >>xci
 Wrapped
 >>iy7
+`. Inside the inserted double curly braces is a new node with an auto-generated ID.
+>>004
 `exclude_from_tree`
 >>1e3
 `flags`
@@ -232,12 +235,14 @@ project_settings
 tag_all
 >>yin
 tags :: coming :0
+>>i40
+tags :: coming :0
 >>40g
 tags :: coming :0
 >>xks
-tags :: coming :0
->>i40
-def::>qxg; ID::swy; }}
+def::>qxg
+ID::swy
+}}
 
 [[ ID(>swy)
 INCLUDE(_contents ? s)

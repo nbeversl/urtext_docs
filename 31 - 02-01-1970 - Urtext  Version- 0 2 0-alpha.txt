@@ -49,6 +49,8 @@ Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m
     │       ├── `index` >00z
     │       └── `flags` >cwb
     │           └── `exclude_from_tree` >1e3
+    ├── User Interface Elements >y2n
+    │   └── The Node Browser >01i
     ├── Collection / Timeline View >00k
     ├── Trees >00h
     │   ├── From any given node >00f
@@ -88,7 +90,9 @@ Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m
     ├── Development >01o
     │   └── Make Installation Easier >mh8
     └── File History >prp
-def::>029; ID::e5j; }}
+
+            flags::exclude_from_tree 
+            title::Table of ContentsID::e5j; def::>029; }}
 
 {{  Quick Start, Guides and Examples
 

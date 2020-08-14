@@ -267,5 +267,8 @@ nested (multi-dimension) sorting for keys :
 		secondary_keyname	[example] - provides a secondary sort key
 ability to have timestamps/ranges as values in INCLUDE(), EXCLUDE()
 Fuzzy search -- implementation of `~`
+HEADER()
+FOOTER()
+
 
 ID::znj

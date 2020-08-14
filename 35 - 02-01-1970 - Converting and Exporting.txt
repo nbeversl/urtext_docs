@@ -1,0 +1,30 @@
+Converting and Exporting
+
+    Urtext can convert (export) nodes, and sets of nodes, to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within the same project. Like other dynamic functions, exporting is dynamic ; that is, when changes are made to the source nodes, exports are immediately updated, whether they are in a project node or an external file.
+
+    Exporting is not implemented in user-interface menus/buttons. Instead, export by utilizing dynamic definitions.
+
+    The export command has three components:
+
+    	export : (format) : ( source_node_id )
+
+        (format) : One of `plaintext`, `markdown` or `html`
+        (source_id): The source node to export.
+
+{{  Example : Urtext Documentation Exported in Markdown to a File
+
+    The following dynamic definition exports this entire documentation (from its root node | Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m ) in Markdown format to a file called documentation.md:
+
+    [[ 
+        TARGET(f>README.md -md)
+        INCLUDE(id = a5m)
+        FORMAT(preformat)
+     ]]
+    m9d}}
+
+{{  Example : Fragment Exported to HTML
+
+    The following Dynamic Definition exports the | Links and Pointers >00j section of the documentation to HTML, into a node inside this one:
+ID::baq; defined in::>plg }}
+
+id::ezg
