@@ -1,24 +1,24 @@
 About Urtext
 
-    {{ Description
+    { Description
         
         Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A collection of nodes constitutes a "project"; the interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The syntax permits embedding of structural and instructional code into the text itself. 
      
         The present interpreter for Urtext is in Python and can be used wherever Python is running. Equivalent or variant interpreters could be created in any language or editing environment. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS). 
  
         
-ID::yv2 }}
+ID::yv2 }
 
-    {{ Comparison To Other Tools
+    { Comparison To Other Tools
         
         Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for organizing text.
     
         Urtext consolidates content, markup and instructions (scripting) into a single compilable syntax. Though it can hyperlink many documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible content. Everything the interpreter reads is visible at all times.
 
          
-ID::h8z }}
+ID::h8z }
 
-    {{  Uses
+    {  Uses
         
         Urtext has many uses, including but limited to:
     
@@ -34,9 +34,9 @@ ID::h8z }}
             - any other writing or information management that can be done in text form
  
      
-ID::lhs }}
+ID::lhs }
 
-    {{  Requirements and Features 
+    {  Requirements and Features 
 
         Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they cannot be found together in one single existing tool; this was the motivation for creating Urtext.
 
@@ -71,7 +71,7 @@ ID::lhs }}
             - Version control (using Git, for example).
 
         
-ID::006}}
+ID::006}
 
                                                                            
 

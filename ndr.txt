@@ -1,0 +1,14 @@
+{
+tags :: coming :0 >40g
+tags :: coming :0 >xks
+Time Zones >7w6
+tags :: coming :0 >i40
+Urtext Syntax >znj
+Urtext Operations Guide >e1x
+def::>ndr; ID::vlc; }
+[[ ID(>vlc -search)
+INCLUDE(nate)
+ ]]
+
+
+created::<Mon., Aug. 03, 2020, 03:42 PM>; from::wwci-00407.local; id::ndr; 

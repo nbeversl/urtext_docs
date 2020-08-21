@@ -1,0 +1,57 @@
+Pointers          
+
+    You can extend trees beyond the file level to create node relationships spanning many files. Preceding a link to a node with two right angle brackets instead of one creates a Pointer. In addition to being a hyperlink, this connects the targeted node, and all of its subchildren, as children of the node containing the Pointer. Example:
+
+    Here is an example Child Node:
+
+        | Example Child Node Using a Node Pointer >>001 
+
+    The example Pointer above becomes a child of this node, visible in the |  ?  >01a or using the other tree views described in | Trees >00h.
+
+    The advantages to Node Pointers are many, including:
+
+        - The tree represents a hierachy of actual content, rather than the files containing the content.
+
+        - The tree permits nesting both within and beyond file level.
+   
+        - The tree can be displayed from any arbitrary starting point, whether or not its branches are within or beyond a particular file.
+
+{ Duplicate Pointers 
+    
+    Node Pointers may point more than once to the same node, so that content can be reused or referenced across multiple trees within the same project:
+    
+    Here is the same example child node from above: | Example Child Node Using a Node Pointer >>001 
+
+
+    
+ID::00t }
+
+
+{  Recursive Node Pointers
+
+    Recursive Node Pointers would be ones that point to one of their containing node's own ancestors, causing a circular reference.
+
+    These are not prohibited, but the recursion will not be drawn if it is already contained in the tree. Instead, the point of recursion will show RECURSION, with a link to the Node ID of the node causing the recursion.
+
+    For example, this Node Pointer points back to the root node of the table of contents: | Urtext  Version: 0.4.0-alpha  Usage Guide and References >>a5m. Instead of the table of contents being drawn recursively from this node, you can see the recursion point in the table of contents.
+
+    Note, however, that if you view the entire tree with another node as root, one full iteration will still appear, with the point of recursion falling elsewhere in the tree. For instance, below is the table of contents with the node "Pointers" (| Pointers >lmu) as root. See Dynamic Nodes (|  ?  >e82) for more information on how to generate trees like this in dynamic nodes.
+
+    
+
+{
+def::>6ct; ID::01n; }
+    
+    [[ 
+    ID(01n)
+    TREE(lmu)
+    METADATA(title:"Example Recursive Node Tree")
+    ]]
+
+
+ID::6ct }
+
+
+ID::lmu
+
+

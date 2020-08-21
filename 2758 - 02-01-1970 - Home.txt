@@ -1,0 +1,34 @@
+
+Current Projects:  ------------------------------
+{index::01
+ID::vze
+def::>02o
+}
+{"Urtext Documentation"}
+{"Nuclear Weapons"}
+
+[[ ID(>vze) +(tags = project; tags=current) SORT(timestamp  -t -r -alpha) FOOTER(index::01) ]]
+ 
+ REMINDERS -----------------------
+{ID::0l2
+def::>02o
+}
+[[ ID(>0l2) -- 
+INCLUDE(tags=reminder)
+SORT(timestamp -t -r)
+EXCLUDE(waiting_for=all)
+EXCLUDE(tags=done)
+EXCLUDE(tags=removed) 
+SHOW($title $link\n$date\n\n) ]]
+
+--------------------------------------------
+Pinned Nodes:
+{ID::z6c
+def::>02o
+}
+[[ ID(>z6c) +(tags=pin) ]] >>z6c
+
+
+ID::02o
+index::00
+Title::Home

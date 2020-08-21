@@ -7,9 +7,9 @@ Note that, like all nodes, a compact node must contain an ID, and can contain an
 To create a new compact node, use Urtext-^
 
 	^ Example Compact Node 
-ID::d7b  {{  Example inline node within the compact node 
+ID::d7b  {  Example inline node within the compact node 
 timestamp::<Thu., Oct. 31, 2019, 12:13 PM>
-id::9up }}
+id::9up }
 
 
 

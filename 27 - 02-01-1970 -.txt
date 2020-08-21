@@ -1,0 +1,9 @@
+{{def::>ndr
+ID::vlc
+}
+[[ ID(>vlc -search)
+INCLUDE(nate)
+ ]]
+
+
+created::<Mon., Aug. 03, 2020, 03:42 PM>; from::wwci-00407.local; id::ndr; 
