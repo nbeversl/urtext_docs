@@ -98,9 +98,9 @@ Urtext  Version: 0.4.0-alpha  Usage Guide and References >a5m
 
 This documentation is in progress, still contains many formatting issues, and is somewhat behind development and features. Please post any questions as issues (https://github.com/nbeversl/urtext-docs/issues).
 
-| Installation and Setup >>6cd
+| Installation and Setup (Desktop) >>6cd
 | Using Urtext in iOS with Pythonista >os4
-| Urtext Syntax Guide >>znj
+| Urtext Syntax >>znj
 | Urtext Operations Guide >>e1x
 | Sublime Text Interface Tips >>003
 

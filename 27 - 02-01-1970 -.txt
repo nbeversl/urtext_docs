@@ -1,9 +1,5 @@
-{{tags :: coming :0 >i40
-Urtext Syntax >znj
-Time Zones >7w6
-Urtext Operations Guide >e1x
+{{def::>ndr
 ID::vlc
-def::>ndr
 }
 [[ ID(>vlc -search)
 INCLUDE(nate)

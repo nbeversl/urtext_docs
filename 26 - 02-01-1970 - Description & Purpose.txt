@@ -128,12 +128,12 @@ flags::exclude_from_tree }
     Here is an example dynamic node definition targeting node ID >016
 
         [[ ID(016)
-            INCLUDE( tag:example_node )
-            EXCLUDE ( tag:exclude_this )
+            INCLUDE(tag=example_node)
+            EXCLUDE( tag=exclude_this )
             SORT(index)
-            metadata:title:Example Dynamic Node Title
-            metadata:flags:exclude_from_tree
-            indent:4
+            FOOTER(title::Example Dynamic Node Title
+                flags::exclude_from_tree
+                )
         ]] >016
 
         Here is the compiled node defined by the definition above. Changing the dynamic definition and/or the contents or metadata of the source nodes will update the dynamic node. Saving is necessary to trigger the update.
@@ -151,11 +151,10 @@ index::08}
 
     Here is the dynamic definition that generates the table of contents for this documentation:
 
-        [[  ID(>e5j -tree)
-            INCLUDE(id=a5m)
-            FOOTER(
-            flags::exclude_from_tree 
-            title::Table of Contents)
+        [[  TARGET(>e5j)
+            +(ID=z7t) +(ID=ac5)
+            DEPTH(20)
+            FOOTER(title::Table of Contents)
          ]]  
 
     Changing the titles or structure of sections in this documentation will dynamically update the table of contents tree.

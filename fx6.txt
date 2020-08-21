@@ -1,0 +1,6 @@
+{ID::lom
+def::>fx6
+}
+
+
+from::Nathaniels-MacBook-Air.local; id::fx6; 
