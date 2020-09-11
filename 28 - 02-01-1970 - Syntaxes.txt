@@ -1,14 +1,12 @@
+<!!
+Warning: Node missing ID at position 74
+!!>
+
 Syntaxes :
 
-
-	The { {  and } } wrapper are within the ranges of the CONTAINING node, not the node they enclose.
+	The {  and  } wrapper are within the ranges of the CONTAINING node, not the node they enclose.
 	The ^ character also gets included in its PARENT.
-
 	The % character gets included in the range of the node FOLLOWING it.
 	
-
-
-
-
 ID::r0w
 Timestamp::<Thu., Dec. 12, 2019, 09:02 AM>

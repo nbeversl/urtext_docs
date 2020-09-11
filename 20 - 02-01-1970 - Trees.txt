@@ -1,0 +1,26 @@
+Trees
+
+ In Sublime Text, you can view a tree of node hierarchies in two ways:         
+
+ { From any given node
+
+    Position the cursor in the node you want to see as root (outermost) and select "Urtext: Show Tree From Current Node" from the Sublime Command Palette. This will add a new split view to the left side of the current view in Sublime, containing a tree with the selected node as root. 
+ 
+	implementation::sublime; 00f}
+
+ {  From the root
+
+     Position the cursor anywhere in the node/file and select "Urtext: Show Tree From Root". This will do the same as above, but the tree will include everything back to the node's root. If the tree extends upward beyond the current file, that will also be included.
+        
+	implementation::sublime; 00g}
+ 
+Note that each branch of the resulting file tree contains Node ID that works like a link. You can navigate the links on the tree using Shift-Control-/ (see | Links >0y2) or using | Traverse Mode >00w.
+
+File trees are displayed in Sublime's scratch views, meaning they will never report as being "dirty" (unsaved). They are intended for one-time/temporary use, will not have a filename, and will not update when a node/file changes. To make permanent and dynamically updated trees, see |  ?  >e82.
+
+You can extend node trees beyond the file level by using | Pointers >lmu.
+
+Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
+
+
+ID::00h

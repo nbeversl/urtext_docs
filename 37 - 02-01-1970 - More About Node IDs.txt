@@ -1,4 +1,4 @@
-More About Node IDs
+Node IDs
 
 The purpose of Node IDs is to uniquely identify each piece of content (node) in a project.
 

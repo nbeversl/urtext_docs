@@ -21,7 +21,7 @@ id::tgp }
 
 	You may also link from one project to another within the text. To so this, use the following syntax:
 	
-	{"name or path of the other project"} >idj
+	=>"name or path of the other project">idj
        (This link is only an example and is non-functioning)
 
 	Following this link will change the project context to the named project and open its specified node. 

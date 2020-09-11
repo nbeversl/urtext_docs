@@ -1,33 +1,32 @@
 Inline Nodes                                                                 
 	 
-    Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. The syntax for inline nodes is to wrap the content in double curly braces like this:
+    The syntax for inline nodes is to wrap the content in curly braces:
 
-      { Example Inline Node 
-ID::00e }
+      { Example Inline Node  id::00e }
 
-    Create an inline nodes with `Ctrl-Shift-squiggly-bracker. Inside the inserted double curly braces is a new node with an auto-generated ID. 
-          
+    Create an inline nodes with `Ctrl-Shift-squiggly-brace. Inside the inserted double curly braces is a new node with an auto-generated ID.   
+
     To wrap existing content into an inline node, first select the content and use the same keypress.
-          
-    Like everything in Urtext syntax, you can do this manually by typing the curly braces and generating a new metadata region with an ID by pressing Ctrl-Shift-i. 
 
-    Urtext requires attention to syntax. Every opening doubly curly bracket must be closed in the same file and requires an ID metadata tag between its opening an closing brackets.
+    Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. When syntax highlighting is active, inline node wrappers are tinted to showing nesting level:
+        
+        {  Example first level 
+            { second level 
+                { third level
+                    { fourth level 
+                        {   fifth level  
+                        5pq}  
+                    80d}  
+               6qj}  
+            8fv}  
+        y9t}
 
-    NOTE that nodes at the file level (see | Files >ekz) do not use curly-braces, as their region boundaries are defined by the file itself.
+    Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use | Trailing Node IDs >2a3. You can also use regular | Metadata >00x as at the bottom of this file.
 
-    For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
+    Note that nodes at the file level (| Files >ekz) do not use curly-braces, as their region boundaries are defined by the file itself.
 
-    {  Syntax Highlighting
-
-        When syntax highlighting is used 
-
-
-        ( see  | |  ?  >d), inline nodes are colored to showing nesting. 
-id::koe }
-
-
+    For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.    
 
 ID::004
-Timestamp::<Fri., Jun. 07, 2019, 04:14 PM>
-tags::
+updated::<Thu., Sep. 10, 2020, 05:24 PM>
 index::04

@@ -2,18 +2,22 @@ Compact Nodes
 
 	For nodes that can fit on a single line, such as items in a list, short phrases, word definitions, and so on, you can use a simplified node syntax. Begin the line with the caret symbol (^); the closing wrapper then becomes the next newline (the end of the same line). Like other nodes:
 
-^ require an ID 
-id::frm
-^ can have arbitrary other metadata 
-ID::xlc
-^ become child nodes of their containing node. 
-ID::hiz
+^ require an ID  id::frm
+^ can have arbitrary other metadata ID::xlc
+^ become child nodes of their containing node. ID::hiz
 
-{
-def::>frm; ID::ucj; }
+{ Compact Nodes >j6t
+├── require an ID >frm
+├── can have arbitrary other metadata >xlc
+├── become child nodes of their containing node. >hiz
+└──  >ucj
+ID::ucj
+def::>j6t
+}
 
-[[ ID(ucj)
-	TREE(j6t)
+[[ ID(>ucj)
+	+(id=j6t)
+	DEPTH(5)
  ]]
 
 

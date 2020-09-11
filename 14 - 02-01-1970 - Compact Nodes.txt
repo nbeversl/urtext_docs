@@ -1,8 +1,3 @@
-<!!
-node ID >9up exists in f>14 - 02-01-1970 - Compact Nodes.txt
-node ID >kpz exists in f>14 - 02-01-1970 - Compact Nodes.txt
-node ID >d7b exists in f>14 - 02-01-1970 - Compact Nodes.txt
-!!>
 Compact Nodes
 
 For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the ^ character appears, with the closing wrapper being the end of the same line. 

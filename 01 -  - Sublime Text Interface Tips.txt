@@ -17,14 +17,18 @@
 	{  Hiding Line Numbers
 
 			For an extra-clean look, hide line numbers by adding:
+				
+				%%-JSON
+				
 				"settings" : {
 					 "line_numbers": false,
 				},
+				
+				%%-END-JSON
 
-			... to your Sublime project settings file.
-			
-			
-01e}
+			... to your Sublime project settings file. (Ignore the JSON syntax pass makers above beginning with `%%`
+			See | Pass Markers and Embedded Syntaxes >oy5 )
+	01e}
 
 	{  Full Screen / Distraction Free Mode
 
@@ -33,32 +37,34 @@
 	{ Disable Prompts for File Reload
 
 			 Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
+				 %%-JSON
 				 "settings" : {
 					"always_prompt_for_file_reload": false,
 				},
-		
+				%%-END-JSON		
 		 
-ID::023 }
+	023}
 
 	{  Remove Indent Guides
 
 			Formatting plaintext using tab indentions can look messy if indent guides are on. To turn them off, add to your Sublime project settings file:
-
+			%%-JSON
 			 "settings" : {
 				"draw_indent_guides": false,
 			}
+			%%-END-JSON
 
 	
-id::1rc }
+	1rc}
 
 	{  Save on Focus Lost
 
 			Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:
-
+			%%-JSON
 			{ "save_on_focus_lost": true }
-
+			%%-END-JSON
 	
-id::sqq }
+	sqq}
 
 
 
@@ -69,10 +75,9 @@ id::sqq }
 			You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.  
 
 		
-id::c3n }
+	c3n}
 
 
 ID::003
-Timestamp::<Fri., Jun. 07, 2019, 04:12 PM>
 tags::urtext_documentation
 index::02

@@ -1,3 +1,4 @@
+
 Search
 
    {  Full Text Search 
@@ -6,18 +7,11 @@ Search
     
 	{	Searching
 
-		^ Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes. 
-id::k8v
-timestamp::<Mon., Feb. 24, 2020, 01:05 PM>
-		
-id::mzj
+		^ Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes. id::k8v
 
-        ^ Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. 
-id::q8j
-timestamp::<Mon., Feb. 24, 2020, 02:19 PM>
+        ^ Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. id::q8j
 
-
-         }	
+         rr3}	
 
 	{ 	Search Using Dynamic Nodes
 
@@ -27,13 +21,15 @@ timestamp::<Mon., Feb. 24, 2020, 02:19 PM>
 
         For example, the following definition targets node >3x3 (below) and populates it with all nodes containing the word "urtext".
         [[ 
-        ID(3x3)
-        METADATA(title:"Example Search Results" flags:exclude_from_tree)
-        SEARCH(urtext)
+            ID(>3x3)
+            HEADER(title::Example Search Results; flags::exclude_from_treesss)
+            INCLUDE(contents ? urtext)
         ]]
 
-        {
-def::>uy4; ID::3x3; }
+        { title::Example Search Results; flags::exclude_from_treesss
+ID::3x3
+def::>uy4
+}
 
  
 id::uy4 }

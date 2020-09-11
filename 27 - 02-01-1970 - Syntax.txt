@@ -1,12 +1,6 @@
-<!!
-node ID >83g exists in f>27 - 02-01-1970 - Syntax.txt
-node ID >znj exists in f>27 - 02-01-1970 - Syntax.txt
-node ID >ibo exists in f>27 - 02-01-1970 - Syntax.txt
-node ID >87g exists in f>27 - 02-01-1970 - Syntax.txt
-!!>
 Syntax
-
-{  ( <- This is a node wrapper that opens the node titled "Basic Syntax" > )	
+tags::exclude_from_export
+{  ( <- This is a node wrapper that opens the node titled "Basic Syntax" )	
 	
 	title::Basic Syntax
 
@@ -35,13 +29,13 @@ Syntax
 	 		More information: | Pointers >lmu
 
 	< > 	Timestamp enclosure. Parses user-defined datetime strings, with some default formats built in.
-			Example: <Tue., Jul. 28, 2020, 03:43 PM>
+			Example: <Tue., Jul. 28, 2020, 07:43 PM>
 			More information: | Timestamps >005
 
 	::		Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 			Metadata may appear anywhere in text.
 			Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline.
-			Example: example_key::example value for the key <Tue., Jul. 28, 2020, 03:39 PM>;
+			Example: example_key::example value for the key <Tue., Jul. 28, 2020, 73:39 PM>;
 			
 			The pipe character (`|`) separates multiple values.
 			Example: some_key::one value | another value
@@ -56,7 +50,9 @@ Syntax
 			
 			%%-END-DOC 
 
-			( The following is a trailing node ID that closes the node titled "Basic Syntax" --> ) 33j} 
+			( The following is a trailing node ID that closes the node titled "Basic Syntax" --> ) 
+		
+		flags::keep_syntax; 33j} 
 
 { 	Dynamic Definitions
 

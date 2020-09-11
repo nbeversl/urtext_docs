@@ -1,6 +1,9 @@
-Urtext Operations Guide
+Operations
 
-Urtext has some built-in operations that bound to either hotkeys or to UI menus. They are described here with their suggested hotkey:
+Built-in operations are bound to either hotkeys or to UI menus.
+
+Hotkeys differ among operating systems and can be reassigned according to your preference by
+modifiying
 
 Project Management:
 
@@ -13,7 +16,6 @@ Project Management:
 	Initialize Project
 	Pop Node
 	Move File to Other Project
-
 
 Navigation: 
 
@@ -31,9 +33,6 @@ Navigation:
 
 	`*`		Global Node List:
 			Show a quick search bar of all nodes in all known projects.
-
-	(none) 	Jump to Source:
-			When attempting to type or modify any dynamic node (export, tree, search, etc), the editor will jump to the source node of the text at the cursor's position.
 
 Insertions:
 
@@ -56,12 +55,12 @@ Editing:
 
 Scratch Views
 	
-Several outputs performed by dynamic definitions (see | Urtext Syntax Guide >znj) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
+Several outputs performed by dynamic definitions (see | Syntax >znj) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
 
 	(menu)	Timeline
 	
 	`n`		Search:
-			See "SEARCH()" in | Urtext Syntax Guide >znj
+			See "SEARCH()" in | Syntax >znj
 	
 	(menu)	Interlinks
 		
@@ -73,12 +72,6 @@ Sublime Text Only:
 	Traverse Mode
 
 
-
-
 Node Access History
 
-
-
 id::e1x
-from::wwci-00407.local
-timestamp::<Thu., Apr. 30, 2020, 01:13 PM>

@@ -1,13 +1,10 @@
+
 Dynamic Nodes 
 ID::qjl
 
-    ^ Dynamic nodes can compile and update content in real time from other nodes. Dynamic nodes can display complete contents or lists of titles of other nodes, as well as display tree diagrams of relationships among nodes, across many files.  
-id::h0y
-title::Description & Purpose
+    ^ Dynamic nodes can compile and update content in real time from other nodes. Dynamic nodes can display complete contents or lists of titles of other nodes, as well as display tree diagrams of relationships among nodes, across many files.  id::h0y; title::Description & Purpose
 
-    ^ Dynamic node definitions are enclosed in double square brackets and can be inserted into any node arbitrarily. 
-id::igk
-title::Syntax
+    ^ Dynamic node definitions are enclosed in double square brackets and can be inserted into any node arbitrarily. id::igk; title::Syntax
     
     { Creating a Dynamic Node
 
@@ -151,10 +148,11 @@ index::08}
 
     Here is the dynamic definition that generates the table of contents for this documentation:
 
-        [[  TARGET(>e5j)
-            +(ID=z7t) +(ID=ac5)
+        [[  ID(>e5j)
+            +(ID=z7t) +(ID=ac5) -(tags=exclude_from_export)
             DEPTH(20)
             FOOTER(title::Table of Contents)
+            EXPORT(f>README.md -markdown -preformat)
          ]]  
 
     Changing the titles or structure of sections in this documentation will dynamically update the table of contents tree.
