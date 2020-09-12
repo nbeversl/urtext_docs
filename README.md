@@ -81,7 +81,7 @@ See also:
 ## Syntax Quick-Reference
 ### Basic Syntax 
 
-%%-DOC (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
+``` (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
 for documentation purposes. For details see [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes))
 
 
@@ -125,7 +125,7 @@ Trailing node ID:
 The last three characters of a node, if they are preceded by whitespace, can serve as the `id` metadata
 value of that node, to make them less obtrusive while reading/editing text.
 
-%%-END-DOC 
+``` 
 
 ( The following is a trailing node ID that closes the node titled "Basic Syntax" --> ) 
 
@@ -147,7 +147,7 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 Dynamic definitions are wrapped using double left and right square brackets:
 
 
-%%-DOC
+```
 
 Dynamic Definition Wrapper
 
@@ -156,7 +156,7 @@ The order of functions within a definition is unimportant; they are evaluated as
 
 
 
-%%-END-DOC
+```
 
 ## Operations
 
@@ -247,13 +247,13 @@ This preference can also be set on a per-(Sublime)-project basis. See the Sublim
 
 For an extra-clean look, hide line numbers by adding:
 
-%%-JSON
+```
 
 "settings" : 
 "line_numbers": false,
 ,
 
-%%-END-JSON
+```
 
 ... to your Sublime project settings file. (Ignore the JSON syntax pass makers above beginning with `%%`
 See [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes) )
@@ -263,25 +263,25 @@ Since you can navigate entirely from within files, Urtext works great in Sublime
 ### Disable Prompts for File Reload 
 
 Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
-%%-JSON
+```
 "settings" : 
 "always_prompt_for_file_reload": false,
 ,
-%%-END-JSON
+```
 ### Remove Indent Guides  
 
 Formatting plaintext using tab indentions can look messy if indent guides are on. To turn them off, add to your Sublime project settings file:
-%%-JSON
+```
 "settings" : 
 "draw_indent_guides": false,
 
-%%-END-JSON
+```
 ### Save on Focus Lost  
 
 Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:
-%%-JSON
+```
 "save_on_focus_lost": true 
-%%-END-JSON
+```
 ### Using a Sublime Project for an Urtext Project  
 
 ( see https://www.sublimetext.com/docs/3/projects.html )
@@ -467,33 +467,45 @@ Text between two angled brackets () is parsed as a timestamp.  To insert the cur
 
 Timestamps are read and written utilizing Python's `strftime` directives. The following formats are included by default:
 
-%%-PYTHON # (<- for info about this marker see [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes) )
-```        # Sat., Sep. 12, 2020, 09:35 AM
+``` # (<- for info about this marker see [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes) )
+
+# Sat., Sep. 12, 2020, 09:35 AM
 '%a., %b. %d, %Y, %I:%M %p'           
+
 # September 12, 2020
 '%B %-d, %Y' 
+
 # September 2020
 '%B %Y'
+
 # 09-12-2020
 '%m-%d-%Y'
+
 # Sat., Sep. 12, 2020, 09:35 AM '
 '%a., %b. %d, %Y, %I:%M %p %z' 
+
 # Sat., Sep. 12, 2020, 09:35 AM'
 '%a., %b. %d, %Y, %I:%M %p'
+
 # Saturday, September 12, 2020, 09:35 AM'
 '%A, %B %d, %Y, %I:%M %p'
+
 # 'September 12, 2020, 09:35 AM'
 '%B %d, %Y, %I:%M %p'
+
 # 'September 12, 2020, 09:35AM'
 '%B %d, %Y, %I:%M%p'
+
 # 2020
 '%Y'
+
 # September 12, 2020'
 '%B %d, %Y'
+
 # Saturday, September 12, 2020, 09:35AM
 '%A, %B %d, %Y, %I:%M%p'
-```
-%%-END-PYTHON 
+
+``` 
 
 Additional formats can be added in the [project_settings](#project_settings) node.
 Node timestamps are part of metadata (see [Metadata](#metadata)). 
@@ -858,7 +870,7 @@ See also:
 ####### Syntax Quick-Reference
 ######## Basic Syntax 
 
-%%-DOC (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
+``` (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
 for documentation purposes. For details see [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes))
 
 
@@ -902,7 +914,7 @@ Trailing node ID:
 The last three characters of a node, if they are preceded by whitespace, can serve as the `id` metadata
 value of that node, to make them less obtrusive while reading/editing text.
 
-%%-END-DOC 
+``` 
 
 ( The following is a trailing node ID that closes the node titled "Basic Syntax" --> ) 
 
@@ -924,7 +936,7 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 Dynamic definitions are wrapped using double left and right square brackets:
 
 
-%%-DOC
+```
 
 Dynamic Definition Wrapper
 
@@ -933,7 +945,7 @@ The order of functions within a definition is unimportant; they are evaluated as
 
 
 
-%%-END-DOC
+```
 
 ####### Operations
 
@@ -1024,13 +1036,13 @@ This preference can also be set on a per-(Sublime)-project basis. See the Sublim
 
 For an extra-clean look, hide line numbers by adding:
 
-%%-JSON
+```
 
 "settings" : 
 "line_numbers": false,
 ,
 
-%%-END-JSON
+```
 
 ... to your Sublime project settings file. (Ignore the JSON syntax pass makers above beginning with `%%`
 See [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes) )
@@ -1040,25 +1052,25 @@ Since you can navigate entirely from within files, Urtext works great in Sublime
 ######## Disable Prompts for File Reload 
 
 Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
-%%-JSON
+```
 "settings" : 
 "always_prompt_for_file_reload": false,
 ,
-%%-END-JSON
+```
 ######## Remove Indent Guides  
 
 Formatting plaintext using tab indentions can look messy if indent guides are on. To turn them off, add to your Sublime project settings file:
-%%-JSON
+```
 "settings" : 
 "draw_indent_guides": false,
 
-%%-END-JSON
+```
 ######## Save on Focus Lost  
 
 Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:
-%%-JSON
+```
 "save_on_focus_lost": true 
-%%-END-JSON
+```
 ######## Using a Sublime Project for an Urtext Project  
 
 ( see https://www.sublimetext.com/docs/3/projects.html )

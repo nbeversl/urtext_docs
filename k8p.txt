@@ -27,10 +27,10 @@ There are two main kinds of dynamic output: lists and collections: "Lists" are e
 		FORMAT(indent:15) 
 		]]
 
-{                 >yoc
-                >aoq
+{                 >c1x
+                >yoc
                 >pxp
-               : --> >c1x
+                >aoq
                == Current Projects == >vze
                === Reminders === >0l2
                About Compact Nodes >ucj
@@ -42,8 +42,8 @@ There are two main kinds of dynamic output: lists and collections: "Lists" are e
                Built-in Metadata Keys >ibo
                Case-sensitivity >l36
                Collections >00k
-               Compact Nodes >j6t
                Compact Nodes >kpz
+               Compact Nodes >j6t
                Comparison To Other Tools >h8z
                Creating a Dynamic Node >yon
                Definition keys/values >37h
@@ -68,16 +68,16 @@ There are two main kinds of dynamic output: lists and collections: "Lists" are e
 		]]
 
 
-{                : --> >yoc
+{                : --> >m1r
+
+               -
+               : --> >yoc
 
                -
                : --> >pxp
 
                -
                : --> >aoq
-
-               -
-               : --> >m1r
 
                -
                == Current Projects ==: --> >vze
