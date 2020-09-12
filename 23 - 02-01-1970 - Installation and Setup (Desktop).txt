@@ -12,13 +12,11 @@ For desktop use (PC/Mac/Linux) Urtext is implemented in Sublime Text.
 
 Once the Sublime package is installed, it will always look for any files with the .txt extension in open folders and attempt to compile them into a project. To open an existing Urtext project, open the folder, a file in the folder, or a Sublime project that includes the folder, and any feature described in this documentation will work.
 
-To make a new project, open an empty folder and select Select `Urtext : Initialize Project` from the Sublime Command Palette. For more information, see | Making a New Project >dce.
+To make a new project, open an empty folder and select Select `Urtext : Initialize Project` from the Sublime Command Palette. For more information, see | Projects >dce.
 
 See also:
 
 | Sublime Text Interface Tips >003
-| Details on the Sublime Implementation >01u
-| Using Urtext in iOS with Pythonista >os4
 
 
 id::6cd

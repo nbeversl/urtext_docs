@@ -1,6 +1,7 @@
 <!!
-node ID >znj exists in f>27 - 02-01-1970 - Syntax.txt
+node ID >87g exists in f>87g.txt
 node ID >ibo exists in f>27 - 02-01-1970 - Syntax.txt
+node ID >znj exists in f>27 - 02-01-1970 - Syntax.txt
 node ID >83g exists in f>27 - 02-01-1970 - Syntax.txt
 !!>
 Syntax

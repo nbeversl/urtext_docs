@@ -8,8 +8,8 @@ Collections are for "collecting" metadata entries, along with their context, in 
      LIMIT(5)
      ]]
 
-{ ID::aoq
-def::>00k
+{ def::>00k
+ID::aoq
 }
 
 

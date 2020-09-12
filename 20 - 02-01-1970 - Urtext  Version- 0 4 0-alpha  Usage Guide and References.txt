@@ -71,9 +71,9 @@ Reference >ac5
 ├── Dynamic Nodes >k8p
 │   ├── Lists >twz
 │   │   ├──  >m1r
-│   │   └── : --> >c1x
+│   │   └──  >c1x
 │   └── Collections >00k
-│       └── (untitled) >aoq
+│       └──  >aoq
 ├── Links and Pointers >00j
 │   ├── Links >0y2
 │   │   └── Sublime Text tools to help with linking >00m
@@ -89,8 +89,9 @@ Reference >ac5
 │       ├── Duplicate Pointers >00t
 │       │   └── Example Child Node Using a Node Pointer >001
 │       └── Recursive Node Pointers >6ct
-│           ├── ! RECURSION 3:
+│           ├── ! RECURSION (node in own ancestors): >a5m
 │           └── Example Recursive Node Tree >01n
+├── Pass Markers and Embedded Syntaxes >oy5
 ├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 │   └── Example : Fragment Exported to HTML >baq
@@ -101,10 +102,15 @@ Reference >ac5
 ├── Using Multiple Projects at a Time >ipy
 │   ├── Project Naming (Identification) >tgp
 │   └── Linking Between Projects >7lx
-└── User Interface Elements >3n6
-    ├── The Node Browser >01i
-    └── Traverse Mode >00w
-        └── Word Wrap in Traverse Mode >xci
+├── User Interface Elements >3n6
+│   ├── The Node Browser >01i
+│   └── Traverse Mode >00w
+│       └── Word Wrap in Traverse Mode >xci
+├── Details on the Sublime Implementation >01u
+│   └── Dependencies and Installation >2fn
+│       ├── Download and Install Dependencies Manually >774
+│       └── Download Dependencies from a Monorepo >arl
+└── Using Urtext in iOS with Pythonista >os4
 title::Table of Contents
 def::>029
 ID::e5j
@@ -126,10 +132,10 @@ z7t}
 	| Nodes >>01j
 	| Metadata >>00x
 
-
 | Dynamic Nodes >>k8p
 	
 	| Links and Pointers >>00j
+  | Pass Markers and Embedded Syntaxes >>oy5
 	| Exporting >>ezg
 	| Filenames >>01m
 	| Development >>01o
@@ -140,6 +146,9 @@ z7t}
 | The Node Browser >>01i
 | Traverse Mode >>00w
   3n6}
+  | Details on the Sublime Implementation >>01u
+  | Using Urtext in iOS with Pythonista >>os4
+
 ac5}
 
 

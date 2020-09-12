@@ -1,8 +1,6 @@
 Syntax
 
-{  ( <- This is a node wrapper that opens the node titled "Basic Syntax" )	
-	
-	title::Basic Syntax
+{ Basic Syntax
 
 	%%-DOC (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
 	for documentation purposes. For details see | Pass Markers and Embedded Syntaxes >oy5)

@@ -20,14 +20,10 @@ To make a new project, open an empty folder and select Select `Urtext : Initiali
 See also:
 
 [Sublime Text Interface Tips](#sublime-text-interface-tips)
-[Details on the Sublime Implementation](#details-on-the-sublime-implementation)
-[Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
 
 [Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
 ## Syntax
-### Basic Syntax  ( <- This is a node wrapper that opens the node titled "Basic Syntax" )	
-
-title::Basic Syntax
+### Basic Syntax 
 
 %%-DOC (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
 for documentation purposes. For details see [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes))
@@ -504,7 +500,6 @@ Excludes a node from being included in a tree. For an example, see Example 2 in 
 Excludes a node from being exported, when project content is exported. See [Exporting](#exporting).
 
 
-
 ## Dynamic Nodes
 
 Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. Dynamic content remains up to date with its source content at all times. Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
@@ -515,9 +510,8 @@ This section illustrates more generally the use and purpose of dynamic nodes, wi
 
 There are two main kinds of dynamic output: lists and collections: "Lists" are exactly that: lists of nodes, with each node displayed not more than once once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list. Collections, on the other hand, show metadata entries with their context; the same node may appear many times in a colelction if it contains many metadata entries matching the queried parameters.
 ### Lists
-####                 [](#)[](#)
-(untitled)[(untitled)](#untitled)
-: -->[: -->](#:--->)
+####                 [](#)[](#)[](#)
+: -->[](#)
 == Current Projects ==[== Current Projects ==](#==-current-projects-==)
 === Reminders ===[=== Reminders ===](#===-reminders-===)
 About Compact Nodes[About Compact Nodes](#about-compact-nodes)
@@ -535,13 +529,13 @@ Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
 Creating a Dynamic Node[Creating a Dynamic Node](#creating-a-dynamic-node)
 Definition keys/values[Definition keys/values](#definition-keys/values)
 Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
-#### : -->                [](#)
+####                 : -->[](#)
 
 -
 : -->[](#)
 
 -
-: -->[(untitled)](#untitled)
+: -->[](#)
 
 -
 : -->[](#)
@@ -565,7 +559,7 @@ Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plain
 ### Collections
 
 Collections are for "collecting" metadata entries, along with their context, in order to gain a range of views into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view.
-#### (untitled)
+####
 
 
 
@@ -705,9 +699,9 @@ Reference[Reference](#reference)
 ├── Dynamic Nodes[Dynamic Nodes](#dynamic-nodes)
 │   ├── Lists[Lists](#lists)
 │   │   ├── [](#)
-│   │   └── : -->[: -->](#:--->)
+│   │   └── [](#)
 │   └── Collections[Collections](#collections)
-│       └── (untitled)[(untitled)](#untitled)
+│       └── [](#)
 ├── Links and Pointers[Links and Pointers](#links-and-pointers)
 │   ├── Links[Links](#links)
 │   │   └── Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
@@ -723,8 +717,9 @@ Reference[Reference](#reference)
 │       ├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
 │       │   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
 │       └── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-│           ├── ! RECURSION 3:
+│           ├── ! RECURSION (node in own ancestors):[Urtext  Version: 0.5-alpha  Usage Guide and References](#urtext--version:-0.5-alpha--usage-guide-and-references)
 │           └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
+├── Pass Markers and Embedded Syntaxes[Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes)
 ├── Exporting[Exporting](#exporting)
 │   ├── Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
 │   └── Example : Fragment Exported to HTML[Example : Fragment Exported to HTML](#example-:-fragment-exported-to-html)
@@ -735,10 +730,15 @@ Reference[Reference](#reference)
 ├── Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
 │   ├── Project Naming (Identification)[Project Naming (Identification)](#project-naming-identification)
 │   └── Linking Between Projects[Linking Between Projects](#linking-between-projects)
-└── User Interface Elements[User Interface Elements](#user-interface-elements)
-    ├── The Node Browser[The Node Browser](#the-node-browser)
-    └── Traverse Mode[Traverse Mode](#traverse-mode)
-        └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
+├── User Interface Elements[User Interface Elements](#user-interface-elements)
+│   ├── The Node Browser[The Node Browser](#the-node-browser)
+│   └── Traverse Mode[Traverse Mode](#traverse-mode)
+│       └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
+├── Details on the Sublime Implementation[Details on the Sublime Implementation](#details-on-the-sublime-implementation)
+│   └── Dependencies and Installation[Dependencies and Installation](#dependencies-and-installation)
+│       ├── Download and Install Dependencies Manually[Download and Install Dependencies Manually](#download-and-install-dependencies-manually)
+│       └── Download Dependencies from a Monorepo[Download Dependencies from a Monorepo](#download-dependencies-from-a-monorepo)
+└── Using Urtext in iOS with Pythonista[Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
 ###### Quick Start, Guides and Examples  
 
 ####### Installation and Setup (Desktop)
@@ -760,14 +760,10 @@ To make a new project, open an empty folder and select Select `Urtext : Initiali
 See also:
 
 [Sublime Text Interface Tips](#sublime-text-interface-tips)
-[Details on the Sublime Implementation](#details-on-the-sublime-implementation)
-[Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
 
 [Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
 ####### Syntax
-######## Basic Syntax  ( <- This is a node wrapper that opens the node titled "Basic Syntax" )	
-
-title::Basic Syntax
+######## Basic Syntax 
 
 %%-DOC (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
 for documentation purposes. For details see [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes))
@@ -979,6 +975,8 @@ Pointers[Pointers](#pointers)
 See [Dynamic Definitions](#dynamic-definitions) for more information on how to generate trees like this in dynamic nodes.
 
 
+## Pass Markers and Embedded Syntaxes
+
 ## Exporting
 
 Urtext can convert (export) nodes, and sets of nodes, to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within the same project. Like other dynamic functions, exporting is dynamic ; that is, when changes are made to the source nodes, exports are immediately updated, whether they are in a project node or an external file.
@@ -1105,4 +1103,76 @@ This feature is not built into Urtext; it is a feature of the Sublime package on
 Since Traverse Mode splits the window into two or more panes, it is suggested to set Word Wrap Column to "Auto" in Sublime Settings. This will cause the edited views to wrap correctly no matter the screen or window/pane size, as well as in Sublime's Distraction Free Mode.
 
 Whenever Traverse Mode is enabled on a view, word wrap for that view is turned off altogether to prevent awkward wrapping of trees. It is restored when Traverse Mode is turned off.
+
+## Details on the Sublime Implementation
+
+The Urtext package for Sublime Text utilizes Sublime's embedded Python 3.3 interpreter both to run the Urtext interpreter/compiler and to add features to Sublime that make working with Urtext easy:
+
+- binds many Urtext operations to the Sublime command palette
+- adds key bindings (hotkeys) as shortcuts for some features
+- leverages the built-in Sublime browser/palette for Urtext project navigation
+- defines a syntax for use with Sublime's color schemes
+- adds Urtext syntax highlighting to two of Sublime's default color schemes (Monokai and Sixteen)
+- adds filebrowser-like project navigation using [Traverse Mode](#traverse-mode)
+
+Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation. Features that are specific to Sublime are tagged with the keyword `sublime`.
+### Dependencies and Installation  
+
+The decision has been made not to include Urtext or its dependencies in the Urtext package for Sublime. It is necessary to install everything manually into Sublime's Python 3.3 environment. This is in fact less complicated than the alternatives considered. For developers, see [Make Installation Easier](#make-installation-easier).
+
+To use Urtext in Sublime Text:
+
+- Install Sublime Text ( https://www.sublimetext.com/ )
+
+- Clone or download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ). Place it in your Packages folder (Sublime Text 3/Packages). The package is not available in Package Control. 
+
+- Add Urtext and all its dependencies to Sublime's Python interpreter. There are two options for doing this:
+#### Download and Install Dependencies Manually  
+
+- anytree
+https://github.com/c0fec0de/anytree
+The folder needed is `anytree` inside this download; add it to `Sublime Text 3/Lib/python3.3`.
+
+- pytz
+https://pypi.org/project/pytz/
+The folder needed is `pytz`; add it to `Sublime Text 3/Lib/python3.3`.
+
+- six
+https://pypi.org/project/six/
+The only FILE needed is `six.py`, nothing else; add this directly to `Sublime Text 3/Lib/python3.3`.
+
+- urtext 
+https://github.com/nbeversl/urtext
+This is Urtext itself. Put the entire folder (`urtext`) into `Sublime Text 3/Lib/python3.3`.
+
+- fuzzywuzzy 
+https://github.com/seatgeek/fuzzywuzzy
+The folder needed is `fuzzywuzzy`; add it to `Sublime Text 3/Lib/python3.3`.
+
+- diff-match-patch
+The folder needed is `diff_match_patch`; add it to `Sublime Text 3/Lib/python3.3`.
+https://pypi.org/project/diff-match-patch/
+#### Download Dependencies from a Monorepo  
+
+As a convenience, all of the above depenencies are (for now) maintained in recent versions at https://github.com/nbeversl/urtext_deps, with all files in the path locations described above. You can either download this repository as a .ZIP file and unzip it, or if you want to maintain version control, use:
+`git clone --recurse-submodules https://github.com/nbeversl/urtext_deps`
+
+Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your `Sublime Text 3/Lib/python3.3` folder.
+Close and reopen Sublime Text. Urtext is now ready to use.
+
+## Using Urtext in iOS with Pythonista
+
+Urtext can be run on iOS devices using Pythonista, which provides a full Python interpreter inside of iOS. It is available in the iOS App Store.
+
+This implementation utilizes the native iOS user interface to create a basic text editor view, along with buttons bound to Urtext's functions (similar to the keyboard shortcut bindings in Sublime), project navigation funtions, and syntax highlighting matching those found in the Sublime Text implementation. Using iCloud, projects can be synced among iOS devices and other devices (desktops, laptops). Once synced, a copy of the project resides fully on the device and is not dependent on a live data connection (see [Requirements and Features](#requirements-and-features)).
+
+To set it up:
+
+- Install Pythonista (http://omz-software.com/pythonista/)
+
+- Clone or download the Urtext-Pythonista package (https://github.com/nbeversl/urtext_pythonista).
+
+- Install all the Python dependencies into your Pythonista environment. The requirements are the same as for Sublime Text ([Dependencies and Installation](#dependencies-and-installation) )
+
+- (optional) To enabling launching or switching to Urtext using an app icon, use the Shortcuts app.
 
