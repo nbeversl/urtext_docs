@@ -72,9 +72,9 @@ Reference >ac5
 ├── Dynamic Nodes >k8p
 │   ├── Lists >twz
 │   │   ├──  >m1r
-│   │   └── : --> >c1x
+│   │   └──  >c1x
 │   └── Collections >00k
-│       └── (untitled) >aoq
+│       └──  >aoq
 ├── Links and Pointers >00j
 │   ├── Links >0y2
 │   │   └── Sublime Text tools to help with linking >00m
@@ -90,7 +90,7 @@ Reference >ac5
 │       ├── Duplicate Pointers >00t
 │       │   └── Example Child Node Using a Node Pointer >001
 │       └── Recursive Node Pointers >6ct
-│           ├── ! RECURSION 3:
+│           ├── ! RECURSION (node in own ancestors): >a5m
 │           └── Example Recursive Node Tree >01n
 ├── Pass Markers and Embedded Syntaxes >oy5
 ├── Exporting >ezg
@@ -113,8 +113,8 @@ Reference >ac5
 │       └── Download Dependencies from a Monorepo >arl
 └── Using Urtext in iOS with Pythonista >os4
 title::Table of Contents
-ID::e5j
 def::>029
+ID::e5j
 } 
 
 | About Urtext >>013

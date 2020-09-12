@@ -175,7 +175,10 @@ Navigation:
 `h` 	Home  
 Go to the designated home page of the project. Define the home node in [project_settings](#project_settings)
 
-`` 	Navigate Forward 
+`<` 	Navigate Back
+Go to the previously visited node (web-browser-like navigation)
+
+`>` 	Navigate Forward 
 Go to the next visited node (web-browser-like navigation)
 
 `e`		Node List :
@@ -456,7 +459,7 @@ yoc
 ### Timestamps
 #### Syntax and Format   
 
-Text between two angled brackets () is parsed as a timestamp.  To insert the current date and time anywhere, press Control-Shift-t: 
+Text between two angled brackets (<  >) is parsed as a timestamp.  To insert the current date and time anywhere, press Control-Shift-t: 
 
 Timestamps are read and written utilizing Python's `strftime` directives. The following formats are included by default:
 
@@ -552,8 +555,7 @@ This section illustrates more generally the use and purpose of dynamic nodes, wi
 
 There are two main kinds of dynamic output: lists and collections: "Lists" are exactly that: lists of nodes, with each node displayed not more than once once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list. Collections, on the other hand, show metadata entries with their context; the same node may appear many times in a colelction if it contains many metadata entries matching the queried parameters.
 ### Lists
-####                 [(untitled)](#untitled)[](#)[](#)
-: -->[: -->](#:--->)
+####                 [](#)[](#)[](#)[](#)
 == Current Projects ==[== Current Projects ==](#==-current-projects-==)
 === Reminders ===[=== Reminders ===](#===-reminders-===)
 About Compact Nodes[About Compact Nodes](#about-compact-nodes)
@@ -571,7 +573,7 @@ Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
 Creating a Dynamic Node[Creating a Dynamic Node](#creating-a-dynamic-node)
 Definition keys/values[Definition keys/values](#definition-keys/values)
 Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
-#### : -->                [(untitled)](#untitled)
+####                 : -->[](#)
 
 -
 : -->[](#)
@@ -601,7 +603,7 @@ Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plain
 ### Collections
 
 Collections are for "collecting" metadata entries, along with their context, in order to gain a range of views into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view.
-#### (untitled)
+####
 
 
 
@@ -742,9 +744,9 @@ Reference[Reference](#reference)
 ├── Dynamic Nodes[Dynamic Nodes](#dynamic-nodes)
 │   ├── Lists[Lists](#lists)
 │   │   ├── [](#)
-│   │   └── : -->[: -->](#:--->)
+│   │   └── [](#)
 │   └── Collections[Collections](#collections)
-│       └── (untitled)[(untitled)](#untitled)
+│       └── [](#)
 ├── Links and Pointers[Links and Pointers](#links-and-pointers)
 │   ├── Links[Links](#links)
 │   │   └── Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
@@ -760,7 +762,7 @@ Reference[Reference](#reference)
 │       ├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
 │       │   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
 │       └── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-│           ├── ! RECURSION 3:
+│           ├── ! RECURSION (node in own ancestors):[Urtext  Version: 0.5-alpha  Usage Guide and References](#urtext--version:-0.5-alpha--usage-guide-and-references)
 │           └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
 ├── Pass Markers and Embedded Syntaxes[Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes)
 ├── Exporting[Exporting](#exporting)
@@ -958,7 +960,10 @@ Navigation:
 `h` 	Home  
 Go to the designated home page of the project. Define the home node in [project_settings](#project_settings)
 
-`` 	Navigate Forward 
+`<` 	Navigate Back
+Go to the previously visited node (web-browser-like navigation)
+
+`>` 	Navigate Forward 
 Go to the next visited node (web-browser-like navigation)
 
 `e`		Node List :
