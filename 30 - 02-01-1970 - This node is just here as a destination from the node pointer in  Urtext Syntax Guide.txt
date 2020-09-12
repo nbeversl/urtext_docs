@@ -3,4 +3,4 @@ Note it has the `exclude_from_tree` flag, which prevents it from showing up in t
 
 id::ttt
 flags::exclude_from_tree
-flags::exclude_from_export
+tags::exclude_from_export

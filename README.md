@@ -100,8 +100,6 @@ Example and more info: [Dynamically Titled Links](#dynamically-titled-links)
 ^		Compact Node marker. Must be the first non-whitespace character on a line. id::83g
 More information: [Compact Nodes](#compact-nodes)
 
-#### This node is just here as a destination from the node pointer in  Syntax Quick-ReferenceThis node is just here as a destination from the node pointer in [Syntax Quick-Reference](#syntax-quick-reference)
-Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
 	Node Pointer
 Embeds the specified node as though it were included inline using wrappers { } (see above)
 More information: [Pointers](#pointers)
@@ -874,8 +872,6 @@ Example and more info: [Dynamically Titled Links](#dynamically-titled-links)
 ^		Compact Node marker. Must be the first non-whitespace character on a line. id::83g
 More information: [Compact Nodes](#compact-nodes)
 
-######### This node is just here as a destination from the node pointer in  Syntax Quick-ReferenceThis node is just here as a destination from the node pointer in [Syntax Quick-Reference](#syntax-quick-reference)
-Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
 	Node Pointer
 Embeds the specified node as though it were included inline using wrappers { } (see above)
 More information: [Pointers](#pointers)
