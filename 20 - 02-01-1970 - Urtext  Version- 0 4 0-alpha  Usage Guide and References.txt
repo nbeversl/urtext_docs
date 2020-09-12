@@ -14,7 +14,7 @@ s=s
 └── Requirements and Features >006
 Quick Start, Guides and Examples >z7t
 ├── Installation and Setup (Desktop) >6cd
-├── Syntax Quick-Reference >znj
+├── Syntax >znj
 │   ├── Basic Syntax >83g
 │   └── Built-in Metadata Keys >ibo
 ├── Dynamic Definitions Quick-Reference >87g
@@ -103,6 +103,10 @@ Reference >ac5
 ├── Using Multiple Projects at a Time >ipy
 │   ├── Project Naming (Identification) >tgp
 │   └── Linking Between Projects >7lx
+├── project_settings >00l
+│   ├── Home Node >00c
+│   ├── Filename formats >00i
+│   └── Timestamp Formats >00n
 ├── User Interface Elements >3n6
 │   ├── The Node Browser >01i
 │   └── Traverse Mode >00w
@@ -142,7 +146,8 @@ z7t}
 	| Development >>01o
 	| File History >>prp
 	| Using Multiple Projects at a Time >>ipy
-	
+	| project_settings >>00l
+
 {  User Interface Elements
 | The Node Browser >>01i
 | Traverse Mode >>00w

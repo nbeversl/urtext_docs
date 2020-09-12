@@ -2,7 +2,7 @@
 # About Urtext
 ## Description 
 
-Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Syntax Quick-Reference](#syntax-quick-reference) permits embedding of structural and instructional code into the text itself. 
+Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Syntax](#syntax) permits embedding of structural and instructional code into the text itself. 
 
 The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
 
@@ -78,9 +78,10 @@ See also:
 [Sublime Text Interface Tips](#sublime-text-interface-tips)
 
 [Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
-## Syntax Quick-Reference
+## Syntax 
+(Quick-Reference)
 ### Basic Syntax 
-```
+
 
 (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
 for documentation purposes. For details see [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes))
@@ -126,7 +127,7 @@ Trailing node ID:
 The last three characters of a node, if they are preceded by whitespace, can serve as the `id` metadata
 value of that node, to make them less obtrusive while reading/editing text.
 
-```
+
 flags::keep_syntax; 33j
 ### Built-in Metadata Keys  
 
@@ -208,12 +209,12 @@ Consolidates all metadata tags in the node of the current cursor position, into 
 
 Scratch Views
 
-Several outputs performed by dynamic definitions (see [Syntax Quick-Reference](#syntax-quick-reference)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
+Several outputs performed by dynamic definitions (see [Syntax](#syntax)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
 
 (menu)	Timeline
 
 `n`		Search:
-See "SEARCH()" in [Syntax Quick-Reference](#syntax-quick-reference)
+See "SEARCH()" in [Syntax](#syntax)
 
 (menu)	Interlinks
 
@@ -555,7 +556,8 @@ This section illustrates more generally the use and purpose of dynamic nodes, wi
 
 There are two main kinds of dynamic output: lists and collections: "Lists" are exactly that: lists of nodes, with each node displayed not more than once once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list. Collections, on the other hand, show metadata entries with their context; the same node may appear many times in a colelction if it contains many metadata entries matching the queried parameters.
 ### Lists
-####                 [](#)[](#)[](#)[](#)
+####                 [](#)[](#)[](#)
+: -->[](#)
 == Current Projects ==[== Current Projects ==](#==-current-projects-==)
 === Reminders ===[=== Reminders ===](#===-reminders-===)
 About Compact Nodes[About Compact Nodes](#about-compact-nodes)
@@ -686,7 +688,7 @@ s=s
 └── Requirements and Features[Requirements and Features](#requirements-and-features)
 Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
 ├── Installation and Setup (Desktop)[Installation and Setup (Desktop)](#installation-and-setup-desktop)
-├── Syntax Quick-Reference[Syntax Quick-Reference](#syntax-quick-reference)
+├── Syntax[Syntax](#syntax)
 │   ├── Basic Syntax[Basic Syntax](#basic-syntax)
 │   └── Built-in Metadata Keys[Built-in Metadata Keys](#built-in-metadata-keys)
 ├── Dynamic Definitions Quick-Reference[Dynamic Definitions Quick-Reference](#dynamic-definitions-quick-reference)
@@ -775,6 +777,10 @@ Reference[Reference](#reference)
 ├── Using Multiple Projects at a Time[Using Multiple Projects at a Time](#using-multiple-projects-at-a-time)
 │   ├── Project Naming (Identification)[Project Naming (Identification)](#project-naming-identification)
 │   └── Linking Between Projects[Linking Between Projects](#linking-between-projects)
+├── project_settings[project_settings](#project_settings)
+│   ├── Home Node[Home Node](#home-node)
+│   ├── Filename formats[Filename formats](#filename-formats)
+│   └── Timestamp Formats[Timestamp Formats](#timestamp-formats)
 ├── User Interface Elements[User Interface Elements](#user-interface-elements)
 │   ├── The Node Browser[The Node Browser](#the-node-browser)
 │   └── Traverse Mode[Traverse Mode](#traverse-mode)
@@ -787,7 +793,7 @@ Reference[Reference](#reference)
 ###### About Urtext
 ####### Description 
 
-Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Syntax Quick-Reference](#syntax-quick-reference) permits embedding of structural and instructional code into the text itself. 
+Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Syntax](#syntax) permits embedding of structural and instructional code into the text itself. 
 
 The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
 
@@ -863,9 +869,10 @@ See also:
 [Sublime Text Interface Tips](#sublime-text-interface-tips)
 
 [Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
-####### Syntax Quick-Reference
+####### Syntax 
+(Quick-Reference)
 ######## Basic Syntax 
-```
+
 
 (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
 for documentation purposes. For details see [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes))
@@ -911,7 +918,7 @@ Trailing node ID:
 The last three characters of a node, if they are preceded by whitespace, can serve as the `id` metadata
 value of that node, to make them less obtrusive while reading/editing text.
 
-```
+
 flags::keep_syntax; 33j
 ######## Built-in Metadata Keys  
 
@@ -993,12 +1000,12 @@ Consolidates all metadata tags in the node of the current cursor position, into 
 
 Scratch Views
 
-Several outputs performed by dynamic definitions (see [Syntax Quick-Reference](#syntax-quick-reference)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
+Several outputs performed by dynamic definitions (see [Syntax](#syntax)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
 
 (menu)	Timeline
 
 `n`		Search:
-See "SEARCH()" in [Syntax Quick-Reference](#syntax-quick-reference)
+See "SEARCH()" in [Syntax](#syntax)
 
 (menu)	Interlinks
 
@@ -1079,6 +1086,8 @@ See [Dynamic Definitions Quick-Reference](#dynamic-definitions-quick-reference) 
 
 
 ## Pass Markers and Embedded Syntaxes
+
+(to be added)
 
 ## Exporting
 
@@ -1170,6 +1179,36 @@ You may also link from one project to another within the text. To so this, use t
 (This link is only an example and is non-functioning)
 
 Following this link will change the project context to the named project and open its specified node.
+
+## project_settingsThe `project_settings` Node
+
+This is the `project_settings` node for the "Urtext Documentation" Urtext project. In the metadata for this node you can specify a handful of settings for the project. (The text content of the node does not matter.)
+
+The `project_settings` node is optional. To create one, make a node and use metadata to give it the title `project_settings`:
+
+
+
+
+
+
+
+
+
+
+
+
+This node now has special reserved metadata keys that will be parsed as follows:
+### Home Node 
+
+The Home page is accessible anywhere in the project by pressing Ctrl-Shift-H. Specify the node ID you want this shortcut to jump to.
+### Filename formats
+### Timestamp Formats  
+
+For more information on `strftime` directives and options, see https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior.
+
+For a list of all timezones ___ ADD SOME RESOURCE ____
+
+Changing the default node_date_timestamp name and bevahior
 
 ## User Interface Elements  
 ### The Node Browser
