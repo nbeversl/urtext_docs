@@ -6,12 +6,13 @@ This is a documentation of Urtext, written in Urtext. If you're reading this as 
   - Control-Shift-h at any time to return to this "home" node.
 
 f>./README.md
-{ Quick Start, Guides and Examples >z7t
-├── About Urtext >013
-│   ├── Description >yv2
-│   ├── Comparison To Other Tools >h8z
-│   ├── Uses >lhs
-│   └── Requirements and Features >006
+
+{ About Urtext >013
+├── Description >yv2
+├── Comparison To Other Tools >h8z
+├── Uses >lhs
+└── Requirements and Features >006
+Quick Start, Guides and Examples >z7t
 ├── Installation and Setup (Desktop) >6cd
 ├── Syntax >znj
 │   ├── Basic Syntax >83g
@@ -28,11 +29,6 @@ f>./README.md
     ├── Save on Focus Lost >sqq
     └── Using a Sublime Project for an Urtext Project >c3n
 Reference >ac5
-├── About Urtext >013
-│   ├── Description >yv2
-│   ├── Comparison To Other Tools >h8z
-│   ├── Uses >lhs
-│   └── Requirements and Features >006
 ├── Projects >dce
 │   └── Using/Adding Existing Files >rij
 ├── Nodes >01j
@@ -121,18 +117,18 @@ def::>029
 ID::e5j
 } 
 
-{  Quick Start, Guides and Examples
 | About Urtext >>013
+{  Quick Start, Guides and Examples
 | Installation and Setup (Desktop) >>6cd
 | Using Urtext in iOS with Pythonista >os4
 | Syntax >>znj
 | Dynamic Definitions >>87g
 | Operations >>e1x
 | Sublime Text Interface Tips >>003
+
 z7t}
 
 { 	Reference
-	| About Urtext >>013
 	| Projects >>dce
 	| Nodes >>01j
 	| Metadata >>00x

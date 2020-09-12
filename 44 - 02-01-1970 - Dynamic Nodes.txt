@@ -148,7 +148,7 @@ index::08}
     Here is the dynamic definition that generates the table of contents for this documentation:
 
         [[  ID(>e5j)
-            +(ID=z7t) +(ID=ac5) -(tags=exclude_from_export)
+            +(ID=013) +(ID=z7t) +(ID=ac5) -(tags=exclude_from_export)
             DEPTH(20)
             FOOTER(title::Table of Contents)
             EXPORT(f>README.md -markdown -preformat)
@@ -156,7 +156,7 @@ index::08}
 
     Changing the titles or structure of sections in this documentation will dynamically update the table of contents tree.
 
-    For more information on trees, see | Lists >00h
+    For more information on trees, see |  ?  >00h
 
      
 ID::029}

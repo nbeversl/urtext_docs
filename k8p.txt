@@ -68,13 +68,13 @@ There are two main kinds of dynamic output: lists and collections: "Lists" are e
 		]]
 
 
-{                : --> >aoq
+{                : --> >m1r
+
+               -
+               : --> >aoq
 
                -
                : --> >yoc
-
-               -
-               : --> >m1r
 
                -
                : --> >pxp
