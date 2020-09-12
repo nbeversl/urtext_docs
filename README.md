@@ -90,7 +90,8 @@ The following syntax applies:
 
 {  }	Subnode	wrappers. Can appear anywhere. Can be nested aribrarily deep.
 More information: [Inline Nodes](#inline-nodes)
-[Links](#links)	Link to another node by ID. 
+
+>		Link to another node by ID. 
 More information: [Links](#links)
 
 | 		Placed before a node link, dynamically populates the linked node title.
@@ -100,7 +101,7 @@ Example and more info: [Dynamically Titled Links](#dynamically-titled-links)
 ^		Compact Node marker. Must be the first non-whitespace character on a line. id::83g
 More information: [Compact Nodes](#compact-nodes)
 
-	Node Pointer
+>>		Node Pointer
 Embeds the specified node as though it were included inline using wrappers { } (see above)
 More information: [Pointers](#pointers)
 
@@ -432,17 +433,33 @@ Keys must be single words, with characters such as dash and underscore allowed. 
 Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed.
 ### Applying Metadata to Children and Descendants  
 
+
 To apply metadata to all immediate children of a node, precede the key name immediately with an asterisk (`*`):
-####
-##### This node will have the value `todo` for the `example` key.
-##### So will this one.
+####   
+*example::todo
+
+{
+##### This node will have the value `todo` for the `example` key.     ucs
+{
+##### So will this one.    fna
 Note that the asterisk applies the tag ONLY to the children. To apply the tag also to the outer node, give it a separate entry without an asterisk.
+
+pxp
 To apply metadata to all descendants of a node recursively, precede the key name immediately with two asterisks:
-####
-##### This node will have the value `todo` for the `example` key.
-###### So will this one
-####### And this one.
+####   
+
+{
+##### This node will have the value `todo` for the `example` key.  
+{
+###### So will this one  
+{
+####### And this one.    eq5
+ep2
+6r4
+**example::todo
 Note that it doesn't matter where in the "parent" node the metadata entry appears. Metadata entries can be placed anywhere in a node, with the same effect.
+
+yoc
 ### Timestamps
 #### Syntax and Format   
 
@@ -451,43 +468,31 @@ Text between two angled brackets () is parsed as a timestamp.  To insert the cur
 Timestamps are read and written utilizing Python's `strftime` directives. The following formats are included by default:
 
 %%-PYTHON # (<- for info about this marker see [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes) )
-
-# Sat., Sep. 12, 2020, 09:35 AM
-'%a., %b. %d, %Y, %I:%M %p' 
-
+`         # Sat., Sep. 12, 2020, 09:35 AM
+'%a., %b. %d, %Y, %I:%M %p'           
 # September 12, 2020
 '%B %-d, %Y' 
-
 # September 2020
 '%B %Y'
-
 # 09-12-2020
 '%m-%d-%Y'
-
 # Sat., Sep. 12, 2020, 09:35 AM '
 '%a., %b. %d, %Y, %I:%M %p %z' 
-
 # Sat., Sep. 12, 2020, 09:35 AM'
 '%a., %b. %d, %Y, %I:%M %p'
-
 # Saturday, September 12, 2020, 09:35 AM'
 '%A, %B %d, %Y, %I:%M %p'
-
 # 'September 12, 2020, 09:35 AM'
 '%B %d, %Y, %I:%M %p'
-
 # 'September 12, 2020, 09:35AM'
 '%B %d, %Y, %I:%M%p'
-
 # 2020
 '%Y'
-
 # September 12, 2020'
 '%B %d, %Y'
-
 # Saturday, September 12, 2020, 09:35AM
 '%A, %B %d, %Y, %I:%M%p'
-
+`
 %%-END-PYTHON 
 
 Additional formats can be added in the [project_settings](#project_settings) node.
@@ -862,7 +867,8 @@ The following syntax applies:
 
 {  }	Subnode	wrappers. Can appear anywhere. Can be nested aribrarily deep.
 More information: [Inline Nodes](#inline-nodes)
-[Links](#links)	Link to another node by ID. 
+
+>		Link to another node by ID. 
 More information: [Links](#links)
 
 | 		Placed before a node link, dynamically populates the linked node title.
@@ -872,7 +878,7 @@ Example and more info: [Dynamically Titled Links](#dynamically-titled-links)
 ^		Compact Node marker. Must be the first non-whitespace character on a line. id::83g
 More information: [Compact Nodes](#compact-nodes)
 
-	Node Pointer
+>>		Node Pointer
 Embeds the specified node as though it were included inline using wrappers { } (see above)
 More information: [Pointers](#pointers)
 

@@ -20,6 +20,7 @@ Metadata
 
 {  Applying Metadata to Children and Descendants
 
+  **flags::keep_syntax
   To apply metadata to all immediate children of a node, precede the key name immediately with an asterisk (`*`):
 
       {  
@@ -60,43 +61,31 @@ Metadata
       Timestamps are read and written utilizing Python's `strftime` directives. The following formats are included by default:
 
           %%-PYTHON # (<- for info about this marker see | Pass Markers and Embedded Syntaxes >oy5 )
-
-          # Sat., Sep. 12, 2020, 09:35 AM
-          '%a., %b. %d, %Y, %I:%M %p' 
-          
+`         # Sat., Sep. 12, 2020, 09:35 AM
+          '%a., %b. %d, %Y, %I:%M %p'           
           # September 12, 2020
           '%B %-d, %Y' 
-
           # September 2020
           '%B %Y'
-
           # 09-12-2020
           '%m-%d-%Y'
-          
           # Sat., Sep. 12, 2020, 09:35 AM '
           '%a., %b. %d, %Y, %I:%M %p %z' 
-
           # Sat., Sep. 12, 2020, 09:35 AM'
           '%a., %b. %d, %Y, %I:%M %p'
-
           # Saturday, September 12, 2020, 09:35 AM'
           '%A, %B %d, %Y, %I:%M %p'
-
           # 'September 12, 2020, 09:35 AM'
           '%B %d, %Y, %I:%M %p'
-
           # 'September 12, 2020, 09:35AM'
           '%B %d, %Y, %I:%M%p'
-
           # 2020
           '%Y'
-
           # September 12, 2020'
           '%B %d, %Y'
-
           # Saturday, September 12, 2020, 09:35AM
           '%A, %B %d, %Y, %I:%M%p'
-
+`
       %%-END-PYTHON 
 
       Additional formats can be added in the | project_settings >00l node.  hg7}

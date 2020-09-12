@@ -27,9 +27,9 @@ There are two main kinds of dynamic output: lists and collections: "Lists" are e
 		FORMAT(indent:15) 
 		]]
 
-{                 >aoq
-                >yoc
+{                 >yoc
                 >pxp
+                >aoq
                : --> >c1x
                == Current Projects == >vze
                === Reminders === >0l2
@@ -68,16 +68,16 @@ There are two main kinds of dynamic output: lists and collections: "Lists" are e
 		]]
 
 
-{                : --> >aoq
-
-               -
-               : --> >yoc
-
-               -
-               : --> >m1r
+{                : --> >yoc
 
                -
                : --> >pxp
+
+               -
+               : --> >aoq
+
+               -
+               : --> >m1r
 
                -
                == Current Projects ==: --> >vze

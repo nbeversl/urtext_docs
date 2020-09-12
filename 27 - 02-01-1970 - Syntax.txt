@@ -12,7 +12,7 @@ Syntax Quick-Reference
 	{  }	Subnode	wrappers. Can appear anywhere. Can be nested aribrarily deep.
 			More information: | Inline Nodes >004
 
-	 >0y2	Link to another node by ID. 
+	 >		Link to another node by ID. 
 	 		More information: | Links >0y2
 
 	 | 		Placed before a node link, dynamically populates the linked node title.
@@ -22,7 +22,7 @@ Syntax Quick-Reference
 	 ^		Compact Node marker. Must be the first non-whitespace character on a line. id::83g
 	 		More information: | Compact Nodes >j6t
 		
-	 >>ttt	Node Pointer
+	>>		Node Pointer
 	 		Embeds the specified node as though it were included inline using wrappers { } (see above)
 	 		More information: | Pointers >lmu
 
