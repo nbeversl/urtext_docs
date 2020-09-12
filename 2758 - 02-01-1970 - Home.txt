@@ -1,0 +1,45 @@
+title::Home
+
+{  == Current Projects ==
+index::01
+ID::vze
+def::>02o
+}ss
+
+
+| == Books == >vpr
+| === ACCESS HISTORY == >6fp
+| === TIMELINE === >d4g
+| === SOMEDAY / MAYBE LIST == >jds
+| === UPCOMING PROJECTS FOR CONSIDERATION === >set
+| === Life Overview === >1bj
+| == Psychoanalysis >jxp
+| Query >3ja
+
+{  === Reminders === 
+ID::0l2
+def::>02o
+}
+
+
+
+[[ ID(>0l2) -- 
++(tags=reminder -include-dynamic) +(waiting_for=all)
+-(tags=done) -(tags=removed) 
+SORT(timestamp -t -r)
+HEADER( === Reminders === \n)
+SHOW($title $link\n$date\n\n) ]]
+
+
+
+[[ ID(>vze) +(tags = project; tags=current) 
+SORT(timestamp  -t -r -alpha) 
+FOOTER(index::01) 
+HEADER( == Current Projects ==\n) DEPTH(1) 
+SHOW($title $link\n) ]]
+
+id::02o
+index::00
+title::Home
+
+

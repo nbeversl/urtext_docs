@@ -1,0 +1,189 @@
+Dynamic Definitions
+
+Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
+
+Dynamic definitions are wrapped using double left and right square brackets:
+
+[[ ]]	Dynamic Definition Wrapper
+		
+	Note the dynamic definitions ignore whitespace and arbitrary text outside of functions.
+	The order of functions within a definition is unimportant; they are evaluated as a group.
+	
+	[[ 	ID() 			Target node to dynamically populate with output.
+						Accepts a link to a node (>eee)
+
+		INCLUDE()  		Nodes to include. Accepts one or multiple parameters.
+		or +()
+						Comparisons:
+
+						`=` means equal to
+						INCLUDE(key = value)	
+						Includes all nodes with the given key containing the given value
+
+						`?` means "contains"
+						INCLUDE(_contents ? some text or content)
+						Includes all nodes containing "some text or content" in their text contents.
+						(See also -search)
+
+						`*` means "anything"
+						INCLUDE(index = *)
+						Includes all nodes containing the key `index`
+
+						Use semicolon or newline to separate entries, as everywhere in Urtext.
+				
+						Additional Flags:
+
+							Additional flags can be included in 
+
+							INCLUDE(*) or +(*)
+							Includes all nodes in the project									
+
+							-all_projects or *p
+							INCLUDE(-all_projects) or +(*p)
+							Expands included nodes to include all projects in the project list.
+
+							Note these additional flags substitute for semicolons/newlines as separators between entries.
+
+						System keys
+
+							Urtext includes some built-in keys whose values are generated automatically. 
+							These may also be used in INCLUDE(): 
+								
+								_links_to			
+								INCLUDE(_links_to = 46d)
+								Includes all nodes that contain links to node ID `46d`
+
+								_links_from
+								INCLUDE(_links_from = 46d)
+								Includes all nodes to which node ID `46d` links
+
+								_contents : Refers to a node's text contents. 
+								Can be used, for instance, for full text search or comparison.
+								INCLUDE(_contents ? Western Civilization)
+								Includes any node that contents the text "Western Civilization"
+								(comparisons are case-insensitive)
+
+		EXCLUDE()		Accepts all the same parameters as INCLUDE()
+		or -()			Always evaluated after INCLUDE(), excludes the specified nodes from the result.
+						
+		
+
+		SORT()			Sorts the results. Entries can be keynames (include system-defined ones, see below)
+						or flags, with multiple keys separated by semicolon or newline.
+
+						SORT(
+							key_name			Sorts by the value of the given key. Default is alphabetical.
+																
+
+						  	-num or -n  		Sorts the results numerically if possible.
+						  						The default sort is alphabetical.
+
+							-timestamp or -t  	Sort by timestamp
+
+						    -reverse or -r 		Reverses the sort order. Applicable to any of the above.
+
+						    Note that system-assigned keys are also available:
+							_last_accesssed
+							_contents
+
+							)
+
+						Example:
+						SORT(title -reverse)
+
+		LIMIT()			Limits the output to the specified number of results.
+						Limit is applied after SORT().
+
+						Example:
+						LIMIT(30)
+						Will only show 30 results of nodes with the specified INCLUDE()/EXCLUDE() parameters.
+
+
+		DEPTH()			By default, the dynamic output will be a list of (unique) nodes specified by the
+						combination of INCLUDE() with EXCLUDE(). To see instead a tree representation of each node and its 
+						descendants, if any, provide a levels of depth. Example: DEPTH(5).
+
+						To see infinite levels (until recursion occurs) use DEPTH(*). 
+
+		COLLECT()		To
+							
+
+
+		SHOW()			Supplies a template for the output of each result. 
+						Accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
+
+						Words preceded by `$` are are evaluated as metadata keys, replaced in the output by their value(s).
+						Note that key names themselves are not displayed in the output. Add keynames manually if you want them included.
+
+						Example:
+						SHOW(Author: $author, Date: $date\n)
+
+						In addition to all user-defined metadata keys, the following tokens are included:
+
+						SHOW(
+
+							$title 
+							Displays the node title, default or via the `title` meta key
+
+							$link
+							Displays a link to the node
+
+							$date 
+							Displays the node's date in the project's default timestamp format
+
+							$meta
+							Shorthand to show all metadata for every node, formatted as by "consolidate metadata"
+
+							$contents:120
+							Displays the contents of the node. Optional excerpt/length specifier after the colon
+							)
+		
+		HEADER()		Adds additional arbitrary/freeform text to the beginning of the output. This can include any syntax 
+						valid inside Urtext nodes, including metadata.
+		
+		FOOTER()		Adds additional arbitrary/freeform text to the end of the output. Same as for HEADER().
+	
+		EXPORT()		Exports the output to a Plaintext, Markdown, or HTML, into another node or into an external file.
+						Accepts one or more semicolon- or newline-separated links to nodes or files (see | Linking to outside 
+						resources >00q), such as: 
+
+							EXPORT(f>filename.txt; >id4)								
+
+						To include all nodes pointed to from the root file, recursively, use the flag:
+						-rr or -recursive
+
+						It also accepts one of the following flags to specify the output:
+
+						-plaintext or -txt	
+
+							This is the default.
+							Strips all Urtext syntax, including metadata and dynamic definitions.
+							Can be used, for instance, to export a node or nodes to a non-Urtext text file.
+
+						-markdown or -md	
+
+							Outputs a Markdown representaion of the node(s).
+							Will include all hierarchically nested nodes using Markdown heading format.
+							See FORMAT() for ways to preformat the output.
+						
+						-html
+
+							Outputs HTML
+
+		FORMAT()		Specificies additional global formatting of the output. There are intended primarily for formatting 
+						exported text, but can be applied to any output. Accepts one or more predefined flags:
+						
+						-preformat or -pre
+						Wraps preformatted text (trees, etc.) in backticks to preserve preformatting, 
+						for instance, for Markdown contenxts.
+
+						-multiline_meta or -mm
+						Places dynamic node metadata on separate lines instead of separated by;
+
+						-indent: or -i
+						Indents the dynamic node by the number of spaces specified in parentheses.
+						Example: FORMAT(-indent:20)
+
+]]  
+
+id::87g; 

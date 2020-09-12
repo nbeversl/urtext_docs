@@ -1,0 +1,7 @@
+File Nodes
+
+The most basic node is a single file. It may or may not contain other nodes nested inside it.
+
+To create a new file, press `Urtext-;`. A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
+
+id::ekz

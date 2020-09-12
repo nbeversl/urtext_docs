@@ -46,7 +46,7 @@ Links and Pointers
 
 | Linking to outside resources >>00q
 | Pointers >>lmu
-| Traverse Mode >>00w
+
 
 
 ID::00j

@@ -75,7 +75,7 @@ title::tree
                 (format) : One of `plaintext`, `markdown` or `html`
                 (source_id): The source node to export.
 
-                See | Converting and Exporting >ezg
+                See | Exporting >ezg
                 
                 
 ID::l2c
@@ -135,8 +135,7 @@ flags::exclude_from_tree }
 
         Here is the compiled node defined by the definition above. Changing the dynamic definition and/or the contents or metadata of the source nodes will update the dynamic node. Saving is necessary to trigger the update.
 
-{
-def::>01r; ID::016; }
+
                                                                                               
 
 
@@ -157,7 +156,7 @@ index::08}
 
     Changing the titles or structure of sections in this documentation will dynamically update the table of contents tree.
 
-    For more information on trees, see | Trees >00h
+    For more information on trees, see | Lists >00h
 
      
 ID::029}

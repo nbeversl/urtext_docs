@@ -9,8 +9,8 @@ This is a documentation of Urtext, written in Urtext. If you're reading this as 
 ├── Installation and Setup (Desktop) >6cd
 ├── Syntax >znj
 │   ├── Basic Syntax >83g
-│   ├── Dynamic Definitions >87g
 │   └── Built-in Metadata Keys >ibo
+├── Dynamic Definitions >87g
 ├── Operations >e1x
 └── Sublime Text Interface Tips >003
     ├── Syntax Highlighting >01d
@@ -30,34 +30,49 @@ Reference >ac5
 ├── Projects >dce
 │   └── Using/Adding Existing Files >rij
 ├── Nodes >01j
-│   ├── Files >ekz
+│   ├── File Nodes >ekz
 │   ├── Inline Nodes >004
 │   │   ├── Example Inline Node >00e
-│   │   └── Example first level >y9t
-│   │       └── second level >8fv
-│   │           └── third level >6qj
-│   │               └── fourth level >80d
-│   │                   └── fifth level >5pq
+│   │   ├── Example first level >y9t
+│   │   │   └── second level >8fv
+│   │   │       └── third level >6qj
+│   │   │           └── fourth level >80d
+│   │   │               └── fifth level >5pq
+│   │   └── Uses for inline nodes, >ia5
 │   ├── Compact Nodes >kpz
 │   │   └── Example Compact Node >d7b
 │   │       └── Example inline node within the compact node. >9up
-│   └── Generating a node ID manually >rfp
+│   ├── Node Titles >ue2
+│   └── Node IDs >01q
+│       ├── Inserting a Node ID manually >04s
+│       ├── Accidental Duplicate Node IDs >bzv
+│       └── Generating a node ID manually >rfp
 ├── Metadata >00x
 │   ├── Syntax >kga
+│   ├── Applying Metadata to Children and Descendants >mnp
+│   │   ├──  >pxp
+│   │   │   ├── This node will have the value `todo` for the `example` key. >ucs
+│   │   │   └── So will this one. >fna
+│   │   └──  >yoc
+│   │       └── This node will have the value `todo` for the `example` key. >6r4
+│   │           └── So will this one >ep2
+│   │               └── And this one. >eq5
+│   ├── Timestamps >005
+│   │   ├── Syntax and Format >hg7
+│   │   ├── Tracking Node Dates and Times >m58
+│   │   └── Time Zones >7w6
 │   ├── Case-sensitivity >l36
-│   ├── Reserved Keys >fo2
-│   │   ├── `index` >00z
-│   │   └── `_flags` >cwb
-│   │       ├── `exclude_from_tree` >1e3
-│   │       └── `exclude_from_export` >vv7
-│   └── Timestamps >005
-│       ├── Syntax and Format >hg7
-│       ├── Tracking Node Dates and Times >m58
-│       └── Time Zones >7w6
-├── Collection >00k
-├── Trees >00h
-│   ├── From any given node >00f
-│   └── From the root >00g
+│   └── Reserved Keys >fo2
+│       ├── `index` >00z
+│       └── `_flags` >cwb
+│           ├── `exclude_from_tree` >1e3
+│           └── `exclude_from_export` >vv7
+├── Dynamic Nodes >k8p
+│   ├── Lists >twz
+│   │   ├──  >m1r
+│   │   └──  >c1x
+│   └── Collections >00k
+│       └──  >aoq
 ├── Links and Pointers >00j
 │   ├── Links >0y2
 │   │   └── Sublime Text tools to help with linking >00m
@@ -68,34 +83,27 @@ Reference >ac5
 │   ├── Linking to outside resources >00q
 │   │   ├── Web / HTTP(S) >00o
 │   │   └── Files >00p
-│   ├── Pointers >lmu
-│   │   ├── Example Child Node Using a Node Pointer >001
-│   │   ├── Duplicate Pointers >00t
-│   │   │   └── Example Child Node Using a Node Pointer >001
-│   │   └── Recursive Node Pointers >6ct
-│   │       ├── ! RECURSION 3:
-│   │       └── Example Recursive Node Tree >01n
-│   └── Traverse Mode >00w
-│       └── Word Wrap in Traverse Mode >xci
-├── Using Multiple Projects at a Time >ipy
-│   ├── Project Naming (Identification) >tgp
-│   └── Linking Between Projects >7lx
-├── Converting and Exporting >ezg
+│   └── Pointers >lmu
+│       ├── Example Child Node Using a Node Pointer >001
+│       ├── Duplicate Pointers >00t
+│       │   └── Example Child Node Using a Node Pointer >001
+│       └── Recursive Node Pointers >6ct
+│           ├── ! RECURSION (node in own ancestors): >a5m
+│           └── Example Recursive Node Tree >01n
+├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 │   └── Example : Fragment Exported to HTML >baq
-├── Search >k67
-│   └── Full Text Search >4p9
-│       ├── Searching >rr3
-│       │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lo >k8v
-│       │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind th >q8j
-│       └── Search Using Dynamic Nodes >uy4
-│           └── Example Search Results >3x3
 ├── Filenames >01m
 ├── Development >01o
 │   └── Make Installation Easier >mh8
 ├── File History >prp
+├── Using Multiple Projects at a Time >ipy
+│   ├── Project Naming (Identification) >tgp
+│   └── Linking Between Projects >7lx
 └── User Interface Elements >3n6
-    └── The Node Browser >01i
+    ├── The Node Browser >01i
+    └── Traverse Mode >00w
+        └── Word Wrap in Traverse Mode >xci
 title::Table of Contents
 ID::e5j
 def::>029
@@ -106,6 +114,7 @@ def::>029
 | Installation and Setup (Desktop) >>6cd
 | Using Urtext in iOS with Pythonista >os4
 | Syntax >>znj
+| Dynamic Definitions >>87g
 | Operations >>e1x
 | Sublime Text Interface Tips >>003
 z7t}
@@ -115,18 +124,20 @@ z7t}
 	| Projects >>dce
 	| Nodes >>01j
 	| Metadata >>00x
-	| Collection >>00k
-	| Trees >>00h
+
+
+| Dynamic Nodes >>k8p
+	
 	| Links and Pointers >>00j
-	| Using Multiple Projects at a Time >>ipy
-	| Converting and Exporting >>ezg
-	| Search >>k67
+	| Exporting >>ezg
 	| Filenames >>01m
 	| Development >>01o
 	| File History >>prp
+	| Using Multiple Projects at a Time >>ipy
 	
 {  User Interface Elements
 | The Node Browser >>01i
+| Traverse Mode >>00w
   3n6}
 ac5}
 

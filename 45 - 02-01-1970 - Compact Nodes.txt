@@ -6,11 +6,12 @@ Compact Nodes
 ^ can have arbitrary other metadata ID::xlc
 ^ become child nodes of their containing node. ID::hiz
 
-{ Compact Nodes >j6t
+{ About Compact Nodes
+Compact Nodes >j6t
 ├── require an ID >frm
 ├── can have arbitrary other metadata >xlc
 ├── become child nodes of their containing node. >hiz
-└──  >ucj
+└── About Compact Nodes >ucj
 ID::ucj
 def::>j6t
 }
@@ -18,6 +19,7 @@ def::>j6t
 [[ ID(>ucj)
 	+(id=j6t)
 	DEPTH(5)
+	HEADER(About Compact Nodes)
  ]]
 
 

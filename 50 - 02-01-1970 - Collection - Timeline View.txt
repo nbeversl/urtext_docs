@@ -1,8 +1,0 @@
-Collection
-
-Urtext will parse node timestamps along with inline timestamps into a project timeline. Press Ctrl-Shift-T or select Urtext: Show Timeline in the Sublime command palette. Each node and inline timestamp is shown in chronological order with nearby text. You can try it with this example project, but note that since many nodes in this document are undated, they have a default date of Thu., Jan. 01, 1970, 12:00AM.
-
-As everywhere in a project, node IDs shown are links that can be opened using Ctrl-Shift-/.
-
-
-ID::00k

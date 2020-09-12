@@ -1,0 +1,17 @@
+Collections
+
+Collections are for "collecting" metadata entries, along with their context, in order to gain a range of views into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view. 
+
+[[   ID(>aoq)
+     +(*) <- In order to return anything, we must include some nodes in the query. Here we have included all nodes.
+     COLLECT(implementation=*)
+     LIMIT(5)
+     ]]
+
+{ ID::aoq
+def::>00k
+}
+
+
+
+id::00k; 
