@@ -5,6 +5,7 @@ This is a documentation of Urtext, written in Urtext. If you're reading this as 
   - Control-Shift-/ to follow any link
   - Control-Shift-h at any time to return to this "home" node.
 
+f>./README.md
 { Quick Start, Guides and Examples >z7t
 ├── Installation and Setup (Desktop) >6cd
 ├── Syntax >znj
@@ -70,9 +71,9 @@ Reference >ac5
 ├── Dynamic Nodes >k8p
 │   ├── Lists >twz
 │   │   ├──  >m1r
-│   │   └──  >c1x
+│   │   └── : --> >c1x
 │   └── Collections >00k
-│       └──  >aoq
+│       └── (untitled) >aoq
 ├── Links and Pointers >00j
 │   ├── Links >0y2
 │   │   └── Sublime Text tools to help with linking >00m
@@ -88,7 +89,7 @@ Reference >ac5
 │       ├── Duplicate Pointers >00t
 │       │   └── Example Child Node Using a Node Pointer >001
 │       └── Recursive Node Pointers >6ct
-│           ├── ! RECURSION (node in own ancestors): >a5m
+│           ├── ! RECURSION 3:
 │           └── Example Recursive Node Tree >01n
 ├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
@@ -105,8 +106,8 @@ Reference >ac5
     └── Traverse Mode >00w
         └── Word Wrap in Traverse Mode >xci
 title::Table of Contents
-ID::e5j
 def::>029
+ID::e5j
 } 
 
 {  Quick Start, Guides and Examples

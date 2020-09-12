@@ -2,8 +2,8 @@ title::Home
 
 {  == Current Projects ==
 index::01
-ID::vze
 def::>02o
+ID::vze
 }ss
 
 
@@ -17,8 +17,8 @@ def::>02o
 | Query >3ja
 
 {  === Reminders === 
-ID::0l2
 def::>02o
+ID::0l2
 }
 
 
