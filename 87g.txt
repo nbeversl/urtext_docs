@@ -1,4 +1,4 @@
-Dynamic Definitions
+Dynamic Definitions Quick-Reference
 
 Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 

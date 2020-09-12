@@ -2,7 +2,7 @@
 # About Urtext
 ## Description 
 
-Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Syntax](#syntax) permits embedding of structural and instructional code into the text itself. 
+Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Syntax Quick-Reference](#syntax-quick-reference) permits embedding of structural and instructional code into the text itself. 
 
 The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
 
@@ -78,7 +78,7 @@ See also:
 [Sublime Text Interface Tips](#sublime-text-interface-tips)
 
 [Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
-## Syntax
+## Syntax Quick-Reference
 ### Basic Syntax 
 
 %%-DOC (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
@@ -100,7 +100,7 @@ Example and more info: [Dynamically Titled Links](#dynamically-titled-links)
 ^		Compact Node marker. Must be the first non-whitespace character on a line. id::83g
 More information: [Compact Nodes](#compact-nodes)
 
-#### This node is just here as a destination from the node pointer in  Urtext Syntax GuideThis node is just here as a destination from the node pointer in [Syntax](#syntax)
+#### This node is just here as a destination from the node pointer in  Urtext Syntax GuideThis node is just here as a destination from the node pointer in [Syntax Quick-Reference](#syntax-quick-reference)
 Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
 	Node Pointer
 Embeds the specified node as though it were included inline using wrappers { } (see above)
@@ -141,7 +141,7 @@ _flags  				Sets node behavior. More info:[`_flags`](#`_flags`)
 
 A few additional keys are reserved, but only for nodes containing project settings. See [project_settings](#project_settings).
 
-## Dynamic Definitions
+## Dynamic Definitions Quick-Reference
 
 Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
@@ -213,12 +213,12 @@ Consolidates all metadata tags in the node of the current cursor position, into 
 
 Scratch Views
 
-Several outputs performed by dynamic definitions (see [Syntax](#syntax)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
+Several outputs performed by dynamic definitions (see [Syntax Quick-Reference](#syntax-quick-reference)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
 
 (menu)	Timeline
 
 `n`		Search:
-See "SEARCH()" in [Syntax](#syntax)
+See "SEARCH()" in [Syntax Quick-Reference](#syntax-quick-reference)
 
 (menu)	Interlinks
 
@@ -330,12 +330,17 @@ To create a new file, press `Urtext-;`. A new file is created, named and saved a
 ### Inline Nodes                                                                 
 
 The syntax for inline nodes is to wrap the content in curly braces:
+
+{
 #### Example Inline Node
 Create an inline nodes with `Ctrl-Shift-squiggly-brace. Inside the inserted double curly braces is a new node with an auto-generated ID.   
 
 To wrap existing content into an inline node, first select the content and use the same keypress.
 
 Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. When syntax highlighting is active, inline node wrappers are tinted to showing nesting level:
+
+
+{
 #### Example first level
 ##### second level
 ###### third level
@@ -345,11 +350,19 @@ Note that every opening doubly curly bracket must be closed in the same file and
 
 Note that nodes at the file level ([File Nodes](#file-nodes)) do not use curly-braces, as their region boundaries are defined by the file itself.
 
-For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
+For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.    
+
+
+
+{
 #### Uses for inline nodes, 
 
 such as adding comments/edits, tracking anchors and pointers in documents.  
 Also that the title is the first line of text.
+ID::004
+updated::<Thu., Sep. 10, 2020, 05:24 PM>
+index::04
+flags::keep_syntax
 
 ### Compact Nodes
 
@@ -510,7 +523,7 @@ Excludes a node from being exported, when project content is exported. See [Expo
 
 Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. Dynamic content remains up to date with its source content at all times. Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-The complete parameters and syntax are here : [Dynamic Definitions](#dynamic-definitions)
+The complete parameters and syntax are here : [Dynamic Definitions Quick-Reference](#dynamic-definitions-quick-reference)
 
 This section illustrates more generally the use and purpose of dynamic nodes, with examples.
 
@@ -647,10 +660,10 @@ f>./README.md
 └── Requirements and Features[Requirements and Features](#requirements-and-features)
 Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
 ├── Installation and Setup (Desktop)[Installation and Setup (Desktop)](#installation-and-setup-desktop)
-├── Syntax[Syntax](#syntax)
+├── Syntax Quick-Reference[Syntax Quick-Reference](#syntax-quick-reference)
 │   ├── Basic Syntax[Basic Syntax](#basic-syntax)
 │   └── Built-in Metadata Keys[Built-in Metadata Keys](#built-in-metadata-keys)
-├── Dynamic Definitions[Dynamic Definitions](#dynamic-definitions)
+├── Dynamic Definitions Quick-Reference[Dynamic Definitions Quick-Reference](#dynamic-definitions-quick-reference)
 ├── Operations[Operations](#operations)
 └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
     ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
@@ -748,7 +761,7 @@ Reference[Reference](#reference)
 ###### About Urtext
 ####### Description 
 
-Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Syntax](#syntax) permits embedding of structural and instructional code into the text itself. 
+Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Syntax Quick-Reference](#syntax-quick-reference) permits embedding of structural and instructional code into the text itself. 
 
 The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
 
@@ -824,7 +837,7 @@ See also:
 [Sublime Text Interface Tips](#sublime-text-interface-tips)
 
 [Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
-####### Syntax
+####### Syntax Quick-Reference
 ######## Basic Syntax 
 
 %%-DOC (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
@@ -846,7 +859,7 @@ Example and more info: [Dynamically Titled Links](#dynamically-titled-links)
 ^		Compact Node marker. Must be the first non-whitespace character on a line. id::83g
 More information: [Compact Nodes](#compact-nodes)
 
-######### This node is just here as a destination from the node pointer in  Urtext Syntax GuideThis node is just here as a destination from the node pointer in [Syntax](#syntax)
+######### This node is just here as a destination from the node pointer in  Urtext Syntax GuideThis node is just here as a destination from the node pointer in [Syntax Quick-Reference](#syntax-quick-reference)
 Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
 	Node Pointer
 Embeds the specified node as though it were included inline using wrappers { } (see above)
@@ -887,7 +900,7 @@ _flags  				Sets node behavior. More info:[`_flags`](#`_flags`)
 
 A few additional keys are reserved, but only for nodes containing project settings. See [project_settings](#project_settings).
 
-####### Dynamic Definitions
+####### Dynamic Definitions Quick-Reference
 
 Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
@@ -959,12 +972,12 @@ Consolidates all metadata tags in the node of the current cursor position, into 
 
 Scratch Views
 
-Several outputs performed by dynamic definitions (see [Syntax](#syntax)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
+Several outputs performed by dynamic definitions (see [Syntax Quick-Reference](#syntax-quick-reference)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
 
 (menu)	Timeline
 
 `n`		Search:
-See "SEARCH()" in [Syntax](#syntax)
+See "SEARCH()" in [Syntax Quick-Reference](#syntax-quick-reference)
 
 (menu)	Interlinks
 
@@ -1041,7 +1054,7 @@ Instead of the table of contents being drawn recursively from this node, you can
 Note that if you view the entire tree with another node selected as root, one full iteration will still appear, with the point of recursion falling elsewhere in the tree. Below is the Table of Contents with [Pointers](#pointers) as root.
 ##### Example Recursive Node Tree           
 Pointers[Pointers](#pointers)
-See [Dynamic Definitions](#dynamic-definitions) for more information on how to generate trees like this in dynamic nodes.
+See [Dynamic Definitions Quick-Reference](#dynamic-definitions-quick-reference) for more information on how to generate trees like this in dynamic nodes.
 
 
 ## Pass Markers and Embedded Syntaxes

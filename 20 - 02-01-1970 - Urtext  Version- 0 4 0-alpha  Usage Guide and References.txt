@@ -14,10 +14,10 @@ f>./README.md
 └── Requirements and Features >006
 Quick Start, Guides and Examples >z7t
 ├── Installation and Setup (Desktop) >6cd
-├── Syntax >znj
+├── Syntax Quick-Reference >znj
 │   ├── Basic Syntax >83g
 │   └── Built-in Metadata Keys >ibo
-├── Dynamic Definitions >87g
+├── Dynamic Definitions Quick-Reference >87g
 ├── Operations >e1x
 └── Sublime Text Interface Tips >003
     ├── Syntax Highlighting >01d

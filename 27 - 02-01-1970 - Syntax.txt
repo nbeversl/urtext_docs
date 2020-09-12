@@ -1,4 +1,4 @@
-Syntax
+Syntax Quick-Reference
 
 { Basic Syntax
 
