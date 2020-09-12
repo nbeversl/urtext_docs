@@ -7,6 +7,11 @@ This is a documentation of Urtext, written in Urtext. If you're reading this as 
 
 f>./README.md
 { Quick Start, Guides and Examples >z7t
+├── About Urtext >013
+│   ├── Description >yv2
+│   ├── Comparison To Other Tools >h8z
+│   ├── Uses >lhs
+│   └── Requirements and Features >006
 ├── Installation and Setup (Desktop) >6cd
 ├── Syntax >znj
 │   ├── Basic Syntax >83g
@@ -117,7 +122,7 @@ ID::e5j
 } 
 
 {  Quick Start, Guides and Examples
-
+| About Urtext >>013
 | Installation and Setup (Desktop) >>6cd
 | Using Urtext in iOS with Pythonista >os4
 | Syntax >>znj

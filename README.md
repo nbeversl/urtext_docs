@@ -1,5 +1,61 @@
 
 # Quick Start, Guides and Examples  
+## About Urtext
+### Description 
+
+Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Syntax](#syntax) permits embedding of structural and instructional code into the text itself. 
+
+The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
+
+Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).
+### Comparison To Other Tools 
+
+Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for writing, connecting and organizing text.
+
+Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user at all times.
+### Uses  
+
+Urtext has many uses, including but limited to:    
+- prose writing
+- research
+- documentation
+- knowledge/information base
+- journaling
+- Zettelkasten
+- project/personal organization
+- notetaking
+- lightweight database
+- any other writing or information management that can be done in text form
+### Requirements and Features   
+
+Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they are not currently found together in one single existing tool; this was the motivation for creating Urtext.
+
+- It uses plain text files. Plaintext is fast, human-readable, flexible, cross-platform, device-portable, and future-proof.
+
+- It is usable across multiple platforms and devices.
+
+- Cascading complexity; use only the parts you need. Does not take months/years to learn.
+
+- Being open source, Urtext is extensible, hackable and customizable to specific needs.
+
+- It can compile, organize, and link content spread across hundreds or thousands of files. Files and content elements can be linked to one another in tree-like, recursive (tangled), and other non-hierarchical ways.
+
+- It has customizable and extensible metadata that does not rely on the file system.
+
+- It is decoupled from any particular text editor or interface ; it can be incorporated into any environment that runs Python, including any scriptable text editor or Python-scriptable environment capable of displaying a text editing view.
+
+- It can incorporate (embed) other plaintext syntaxes, including other markup languages and other programming language syntaxes.
+
+- There is no need to interact directly with the file system (creating, naming, saving, organizing files). File creation, naming and management is handled for you.
+
+- Future-proof. No reliance on anything that may not exist in 5 or 1000 years. Urtext files themselves are in plaintext, which is future-proof. The interpreter/compiler could be implemented in any sufficiently capable language desired, current, past or future.
+
+- Does not depend on a cloud service. Though cloud services can be used to sync project files among devices, the interpreter itself is made to operate locally; content wholly resides on the device being used.
+
+Being in plaintext and having a syntax specification, it can also be used with:
+
+- Themes and syntax highlighting.
+- Version control (Git, for example).
 
 ## Installation and Setup (Desktop)
 
@@ -91,10 +147,17 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 Dynamic definitions are wrapped using double left and right square brackets:
 
+
+%%-DOC
+
 Dynamic Definition Wrapper
 
 Note the dynamic definitions ignore whitespace and arbitrary text outside of functions.
 The order of functions within a definition is unimportant; they are evaluated as a group.
+
+
+
+%%-END-DOC
 
 ## Operations
 
@@ -635,6 +698,11 @@ This is a documentation of Urtext, written in Urtext. If you're reading this as 
 
 f>./README.md
 ###### Table of Contents Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
+├── About Urtext[About Urtext](#about-urtext)
+│   ├── Description[Description](#description)
+│   ├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
+│   ├── Uses[Uses](#uses)
+│   └── Requirements and Features[Requirements and Features](#requirements-and-features)
 ├── Installation and Setup (Desktop)[Installation and Setup (Desktop)](#installation-and-setup-desktop)
 ├── Syntax[Syntax](#syntax)
 │   ├── Basic Syntax[Basic Syntax](#basic-syntax)
@@ -740,7 +808,7 @@ Reference[Reference](#reference)
 │       └── Download Dependencies from a Monorepo[Download Dependencies from a Monorepo](#download-dependencies-from-a-monorepo)
 └── Using Urtext in iOS with Pythonista[Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
 ###### Quick Start, Guides and Examples  
-
+| About Urtext >>013
 ####### Installation and Setup (Desktop)
 
 For desktop use (PC/Mac/Linux) Urtext is implemented in Sublime Text.
@@ -831,10 +899,17 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 Dynamic definitions are wrapped using double left and right square brackets:
 
+
+%%-DOC
+
 Dynamic Definition Wrapper
 
 Note the dynamic definitions ignore whitespace and arbitrary text outside of functions.
 The order of functions within a definition is unimportant; they are evaluated as a group.
+
+
+
+%%-END-DOC
 
 ####### Operations
 

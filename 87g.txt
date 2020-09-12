@@ -4,6 +4,9 @@ Dynamic definitions contain instructions for dynamically building nodes from the
 
 Dynamic definitions are wrapped using double left and right square brackets:
 
+
+%%-DOC
+
 [[ ]]	Dynamic Definition Wrapper
 		
 	Note the dynamic definitions ignore whitespace and arbitrary text outside of functions.
@@ -186,4 +189,5 @@ Dynamic definitions are wrapped using double left and right square brackets:
 
 ]]  
 
+%%-END-DOC
 id::87g; 
