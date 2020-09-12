@@ -7,15 +7,15 @@ modifiying
 
 Project Management:
 
-	Multiple Projects
-	Import Project
-	Reload Project
-	Reindex All Files
-	Rename File(s) from Meta
-	Delete This Node
-	Initialize Project
-	Pop Node
-	Move File to Other Project
+Multiple Projects
+Import Project
+Reload Project
+Reindex All Files
+Rename File(s) from Meta
+Delete This Node
+Initialize Project
+Pop Node
+Move File to Other Project
 
 Navigation: 
 
@@ -55,12 +55,12 @@ Editing:
 
 Scratch Views
 	
-Several outputs performed by dynamic definitions (see | Syntax >znj) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
+Several outputs performed by dynamic definitions (see | Syntax Quick-Reference >znj) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
 
 	(menu)	Timeline
 	
 	`n`		Search:
-			See "SEARCH()" in | Syntax >znj
+			See "SEARCH()" in | Syntax Quick-Reference >znj
 	
 	(menu)	Interlinks
 		

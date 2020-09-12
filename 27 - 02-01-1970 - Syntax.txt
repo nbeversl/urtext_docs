@@ -1,8 +1,9 @@
 Syntax Quick-Reference
 
 { Basic Syntax
-
-	%%-DOC (<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
+	%%-DOC
+	
+	(<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
 	for documentation purposes. For details see | Pass Markers and Embedded Syntaxes >oy5)
 
 	
@@ -46,14 +47,11 @@ Syntax Quick-Reference
 			The last three characters of a node, if they are preceded by whitespace, can serve as the `id` metadata
 			value of that node, to make them less obtrusive while reading/editing text.
 			
-			%%-END-DOC 
-
-			( The following is a trailing node ID that closes the node titled "Basic Syntax" --> ) 
-		
+		%%-END-DOC
 		flags::keep_syntax; 33j} 
 
 
-
+	
 
 
 {  Built-in Metadata Keys

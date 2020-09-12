@@ -6,7 +6,7 @@ This is a documentation of Urtext, written in Urtext. If you're reading this as 
   - Control-Shift-h at any time to return to this "home" node.
 
 f>./README.md
-
+s=s
 { About Urtext >013
 ├── Description >yv2
 ├── Comparison To Other Tools >h8z
@@ -113,16 +113,16 @@ Reference >ac5
 │       └── Download Dependencies from a Monorepo >arl
 └── Using Urtext in iOS with Pythonista >os4
 title::Table of Contents
-ID::e5j
 def::>029
+ID::e5j
 } 
 
 | About Urtext >>013
 {  Quick Start, Guides and Examples
 | Installation and Setup (Desktop) >>6cd
 | Using Urtext in iOS with Pythonista >os4
-| Syntax >>znj
-| Dynamic Definitions >>87g
+| Syntax Quick-Reference >>znj
+| Dynamic Definitions Quick-Reference >>87g
 | Operations >>e1x
 | Sublime Text Interface Tips >>003
 

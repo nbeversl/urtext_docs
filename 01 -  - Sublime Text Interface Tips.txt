@@ -49,8 +49,8 @@
 
 			Formatting plaintext using tab indentions can look messy if indent guides are on. To turn them off, add to your Sublime project settings file:
 			%%-JSON
-			 "settings" : {
-				"draw_indent_guides": false,
+			 "settings" : {{ }}
+				"draw_indent _guides": false,
 			}
 			%%-END-JSON
 
