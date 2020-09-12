@@ -332,7 +332,7 @@ To create a new file, press `Urtext-;`. A new file is created, named and saved a
 The syntax for inline nodes is to wrap the content in curly braces:
 
 {
-#### Example Inline Node
+#### Example Inline Node   id::00e
 Create an inline nodes with `Ctrl-Shift-squiggly-brace. Inside the inserted double curly braces is a new node with an auto-generated ID.   
 
 To wrap existing content into an inline node, first select the content and use the same keypress.
@@ -341,11 +341,20 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 
 
 {
-#### Example first level
-##### second level
-###### third level
-####### fourth level
-######## fifth level
+#### Example first level   
+{
+##### second level  
+{
+###### third level 
+{
+####### fourth level  
+{
+######## fifth level     
+5pq
+80d
+6qj
+8fv
+y9t
 Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Metadata](#metadata) as at the bottom of this file.
 
 Note that nodes at the file level ([File Nodes](#file-nodes)) do not use curly-braces, as their region boundaries are defined by the file itself.
@@ -355,14 +364,18 @@ For all purposes in Urtext, inline nodes' identity is unique from their containi
 
 
 {
-#### Uses for inline nodes, 
+#### Uses for inline nodes, tags::todo
 
 such as adding comments/edits, tracking anchors and pointers in documents.  
 Also that the title is the first line of text.
+
+ia5
+**flags::keep_syntax
+flags::keep_syntax
+
 ID::004
 updated::<Thu., Sep. 10, 2020, 05:24 PM>
 index::04
-flags::keep_syntax
 
 ### Compact Nodes
 

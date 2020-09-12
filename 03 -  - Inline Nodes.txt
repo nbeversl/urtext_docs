@@ -20,6 +20,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
                 80d}  
            6qj}  
         8fv}  
+
     y9t}
 
 Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use | Trailing Node IDs >2a3. You can also use regular | Metadata >00x as at the bottom of this file.
@@ -37,7 +38,10 @@ For all purposes in Urtext, inline nodes' identity is unique from their containi
 
      ia5}
 
+**flags::keep_syntax
+flags::keep_syntax
+      
 ID::004
 updated::<Thu., Sep. 10, 2020, 05:24 PM>
 index::04
-flags::keep_syntax
+
