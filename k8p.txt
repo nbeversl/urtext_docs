@@ -28,8 +28,8 @@ There are two main kinds of dynamic output: lists and collections: "Lists" are e
 		]]
 
 {                 >yoc
-                >pxp
                 >aoq
+                >pxp
                : --> >c1x
                == Current Projects == >vze
                === Reminders === >0l2

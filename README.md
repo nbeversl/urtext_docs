@@ -468,7 +468,7 @@ Text between two angled brackets () is parsed as a timestamp.  To insert the cur
 Timestamps are read and written utilizing Python's `strftime` directives. The following formats are included by default:
 
 %%-PYTHON # (<- for info about this marker see [Pass Markers and Embedded Syntaxes](#pass-markers-and-embedded-syntaxes) )
-`         # Sat., Sep. 12, 2020, 09:35 AM
+```        # Sat., Sep. 12, 2020, 09:35 AM
 '%a., %b. %d, %Y, %I:%M %p'           
 # September 12, 2020
 '%B %-d, %Y' 
@@ -492,7 +492,7 @@ Timestamps are read and written utilizing Python's `strftime` directives. The fo
 '%B %d, %Y'
 # Saturday, September 12, 2020, 09:35AM
 '%A, %B %d, %Y, %I:%M%p'
-`
+```
 %%-END-PYTHON 
 
 Additional formats can be added in the [project_settings](#project_settings) node.
