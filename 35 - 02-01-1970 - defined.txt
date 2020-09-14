@@ -1,5 +1,5 @@
-  >m1r
-: --> >c1x
+  >c1x
+ >m1r
 == Current Projects == >vze
 === Reminders === >0l2
 About Compact Nodes >ucj
@@ -82,9 +82,9 @@ Project Management >9u0
 Project Naming (Identification) >tgp
 Projects >dce
 Projects, Structure and Compiling >01x
+Python >xor
 Python >ljr
 Python >eea
-Python >xor
 Pythonista >iy8
 Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind th >q8j
 Quick Start, Guides and Examples >z7t
@@ -115,8 +115,8 @@ Time Zones >7w6
 Timestamp Formats >00n
 Timestamps >005
 Tracking Node Dates and Times >m58
-Trailing Node IDs >2a3
 Trailing Node IDs >xo9
+Trailing Node IDs >2a3
 Traverse Mode >00w
 Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
 User Interface Elements >3n6

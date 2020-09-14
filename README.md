@@ -282,13 +282,8 @@ Create an inline nodes with `Ctrl-Shift-squiggly-brace. Inside the inserted doub
 To wrap existing content into an inline node, first select the content and use the same keypress.
 
 Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. When syntax highlighting is active, inline node wrappers are tinted to showing nesting level:
-#### Example first level
-##### second level
-###### third level
-####### fourth level
-######## fifth level
+(The above example will not display correctly in Markdown export, so the following screenshot is provided instead):
 ![./files/node-nesting-example.png](./files/node-nesting-example.png)
-
 
 Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Metadata](#metadata) as at the bottom of this file.
 
@@ -468,7 +463,7 @@ Dynamic Definitions can be written anywhere; it is not necessary to store the de
 There are two main kinds of dynamic output: lists and collections: "Lists" are exactly that: lists of nodes, with each node displayed not more than once once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list. Collections, on the other hand, show metadata entries with their context; the same node may appear many times in a colelction if it contains many metadata entries matching the queried parameters.
 
 ### Lists
-####                 [](#)[: -->](#:--->)
+####                 [](#)[](#)
 == Current Projects ==[== Current Projects ==](#==-current-projects-==)
 === Reminders ===[=== Reminders ===](#===-reminders-===)
 About Compact Nodes[About Compact Nodes](#about-compact-nodes)
@@ -488,7 +483,7 @@ Download Dependencies from a Monorepo[Download Dependencies from a Monorepo](#do
 Download and Install Dependencies Manually[Download and Install Dependencies Manually](#download-and-install-dependencies-manually)
 Duplicate Node IDs[Duplicate Node IDs](#duplicate-node-ids)
 Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
-#### : -->                [](#)
+####                 : -->[](#)
 
 -
 : -->[](#)
@@ -532,7 +527,7 @@ id :: 003[Sublime Text Interface Tips](#sublime-text-interface-tips):137
 Here are some tips for best leveraging Sublime's great UI features.
 
 
-id :: 004[Inline Nodes](#inline-nodes):1222 
+id :: 004[Inline Nodes](#inline-nodes):1339 
 For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
 
 
@@ -660,7 +655,7 @@ id :: 01m[Filenames](#filenames):915
 This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
 
 
-id :: 01n[Example Recursive Node Tree](#example-recursive-node-tree):93 
+id :: 01n[Example Recursive Node Tree](#example-recursive-node-tree):73 
 Pointers[Pointers](#pointers)
 
 
@@ -827,7 +822,7 @@ id :: bzv[Duplicate Node IDs](#duplicate-node-ids):497
 To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
 
 
-id :: c1x[: -->](#:--->):294 
+id :: c1x[](#):294 
 -
 
 
@@ -847,7 +842,7 @@ id :: e1x[Operations](#operations):197
 modifiying
 
 
-id :: e5j[Table of Contents](#table-of-contents):3059 
+id :: e5j[Table of Contents](#table-of-contents):2891 
  └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
 
 
@@ -1079,7 +1074,7 @@ id :: xxx[](#):3898
 third level[third level](#third-level)
 
 
-id :: y9t[Example first level](#example-first-level):38 
+id :: y9t[Example first level](#example-first-level):70 
 Example first level
 
 
@@ -1200,11 +1195,6 @@ Reference[Reference](#reference)
 │   ├── File Nodes[File Nodes](#file-nodes)
 │   ├── Inline Nodes[Inline Nodes](#inline-nodes)
 │   │   ├── Example Inline Node[Example Inline Node](#example-inline-node)
-│   │   ├── Example first level[Example first level](#example-first-level)
-│   │   │   └── second level[second level](#second-level)
-│   │   │       └── third level[third level](#third-level)
-│   │   │           └── fourth level[fourth level](#fourth-level)
-│   │   │               └── fifth level[fifth level](#fifth-level)
 │   │   └── Uses for inline nodes[Uses for inline nodes](#uses-for-inline-nodes)
 │   ├── Compact Nodes[Compact Nodes](#compact-nodes)
 │   │   └── Example Compact Node[Example Compact Node](#example-compact-node)
@@ -1228,7 +1218,7 @@ Reference[Reference](#reference)
 ├── Dynamic Nodes[Dynamic Nodes](#dynamic-nodes)
 │   ├── Lists[Lists](#lists)
 │   │   ├── [](#)
-│   │   └── : -->[: -->](#:--->)
+│   │   └── [](#)
 │   └── Collections[Collections](#collections)
 │       └── Example Collection[Example Collection](#example-collection)
 ├── Links and Pointers[Links and Pointers](#links-and-pointers)
@@ -1246,7 +1236,7 @@ Reference[Reference](#reference)
 │       ├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
 │       │   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
 │       └── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-│           ├── ! RECURSION 3:
+│           ├── ! RECURSION (node in own ancestors):[Urtext  Version: 0.5-alpha  Usage Guide and References](#urtext--version:-0.5-alpha--usage-guide-and-references)
 │           └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
 ├── Exporting[Exporting](#exporting)
 │   ├── Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)

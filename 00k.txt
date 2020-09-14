@@ -21,7 +21,7 @@ id :: 003 >003:137
  Here are some tips for best leveraging Sublime's great UI features.
 
 
-id :: 004 >004:1222 
+id :: 004 >004:1337 
  For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
 
 
@@ -149,7 +149,7 @@ id :: 01m >01m:915
  This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
 
 
-id :: 01n >01n:93 
+id :: 01n >01n:73 
  Pointers >lmu
 
 
@@ -221,7 +221,7 @@ id :: 3n6 >3n6:189
  | Traverse Mode >00w
 
 
-id :: 3x3 >3x3:70 
+id :: 3x3 >3x3:60 
  
 
 
@@ -337,7 +337,7 @@ id :: e1x >e1x:197
  modifiying
 
 
-id :: e5j >e5j:3064 
+id :: e5j >e5j:2891 
  └── Word Wrap in Traverse Mode >xci
 
 
@@ -429,7 +429,7 @@ id :: lwg >lwg:19
  User-Defined
 
 
-id :: m1r >m1r:839 
+id :: m1r >m1r:814 
  Duplicate Node IDs >bzv
 
 
@@ -529,7 +529,7 @@ id :: uy4 >uy4:299
  For example, the following definition targets node >3x3 (below) and populates it with all nodes containing the word "urtext".
 
 
-id :: vze >vze:45 
+id :: vze >vze:35 
  == Current Projects ==
 
 
@@ -565,11 +565,11 @@ id :: xsh >xsh:83
  HTML
 
 
-id :: xxx >xxx:3903 
+id :: xxx >xxx:3898 
  third level >6qj
 
 
-id :: y9t >y9t:38 
+id :: y9t >y9t:70 
  Example first level
 
 
