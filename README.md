@@ -287,7 +287,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 ###### third level
 ####### fourth level
 ######## fifth level
-![./files/node-nesting-example.png][./files/node-nesting-example.png]
+![./files/node-nesting-example.png](./files/node-nesting-example.png)
 
 
 Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Metadata](#metadata) as at the bottom of this file.
@@ -581,7 +581,7 @@ Example: pressing Ctrl/Command-Shift-/ on this line below will open the link: ht
 
 
 id :: 00p[Files](#files):170 
-Example:   ![./README.md][./README.md]
+Example:   ![./README.md](./README.md)
 
 
 id :: 00q[Linking to outside resources](#linking-to-outside-resources):136 
@@ -707,7 +707,7 @@ id :: 04s[Inserting a Node ID manually](#inserting-a-node-id-manually):163
 Control-Shift-I will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually
 
 
-id :: 0l2[=== Reminders ===](#===-reminders-===):31 
+id :: 0l2[=== Reminders ===](#===-reminders-===):21 
 === Reminders ===
 
 
@@ -731,7 +731,7 @@ id :: 3n6[User Interface Elements](#user-interface-elements):189
 [Traverse Mode](#traverse-mode)
 
 
-id :: 3x3[Example Search Results](#example-search-results):70 
+id :: 3x3[Example Search Results](#example-search-results):60 
 
 
 
@@ -827,7 +827,7 @@ id :: bzv[Duplicate Node IDs](#duplicate-node-ids):497
 To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
 
 
-id :: c1x[: -->](#:--->):319 
+id :: c1x[: -->](#:--->):294 
 -
 
 
@@ -847,7 +847,7 @@ id :: e1x[Operations](#operations):197
 modifiying
 
 
-id :: e5j[Table of Contents](#table-of-contents):3095 
+id :: e5j[Table of Contents](#table-of-contents):3059 
  └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
 
 
@@ -939,7 +939,7 @@ id :: lwg[User-Defined](#user-defined):19
 User-Defined
 
 
-id :: m1r[](#):839 
+id :: m1r[](#):814 
 Duplicate Node IDs[Duplicate Node IDs](#duplicate-node-ids)
 
 
@@ -1023,7 +1023,7 @@ id :: twz[Lists](#lists):893
 Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
 
 
-id :: ucj[About Compact Nodes](#about-compact-nodes):199 
+id :: ucj[About Compact Nodes](#about-compact-nodes):189 
  └── About Compact Nodes[About Compact Nodes](#about-compact-nodes)
 
 
@@ -1039,7 +1039,7 @@ id :: uy4[Search Using Dynamic Nodes](#search-using-dynamic-nodes):299
 For example, the following definition targets node[Example Search Results](#example-search-results) (below) and populates it with all nodes containing the word "urtext".
 
 
-id :: vze[== Current Projects ==](#==-current-projects-==):45 
+id :: vze[== Current Projects ==](#==-current-projects-==):35 
 == Current Projects ==
 
 
@@ -1075,7 +1075,7 @@ id :: xsh[HTML](#html):83
 HTML
 
 
-id :: xxx[](#):3908 
+id :: xxx[](#):3898 
 third level[third level](#third-level)
 
 
@@ -1134,8 +1134,8 @@ HTTP(S) links are recognized automatically and will open in the default browser.
 Example: pressing Ctrl/Command-Shift-/ on this line below will open the link: http://github.com
 #### Files 
 
-Links to files can be made by writing ![ , followed immediately with a file path relative to the folder of the project:][ , followed immediately with a file path relative to the folder of the project:]
-Example:   ![./README.md][./README.md]
+Links to files can be made by writing ![ , followed immediately with a file path relative to the folder of the project:]( , followed immediately with a file path relative to the folder of the project:)
+Example:   ![./README.md](./README.md)
 
 ### Pointers          
 
