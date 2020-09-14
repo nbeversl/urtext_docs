@@ -5,19 +5,20 @@ Built-in operations are bound to either hotkeys or to UI menus.
 Hotkeys differ among operating systems and can be reassigned according to your preference by
 modifiying
 
-Project Management:
+{ Project Management
 
-Multiple Projects
-Import Project
-Reload Project
-Reindex All Files
-Rename File(s) from Meta
-Delete This Node
-Initialize Project
-Pop Node
-Move File to Other Project
+	Multiple Projects
+	Import Project
+	Reload Project
+	Reindex All Files
+	Rename File(s) from Meta
+	Delete This Node
+	Initialize Project
+	Pop Node
+	Move File to Other Project   
+	9u0}
 
-Navigation: 
+{ Navigation
 
 	`h` 	Home  `
 			Go to the designated home page of the project. Define the home node in | project_settings >00l
@@ -33,17 +34,18 @@ Navigation:
 
 	`*`		Global Node List:
 			Show a quick search bar of all nodes in all known projects.
+   omh}
 
-Insertions:
+{ Insertions
 
 	`t` 	Timestamp:
 			Insert a timestamp at the cursor's location, in the project's default format. For setting timestamp format defaults, see | project_settings >00l
 
 	`i` 	ID:
 			Insert an arbitrary (unallocated) Node ID with metadata wrapper at the cursor position.
+   wjj}
 
-
-Editing:
+{ Editing
 	
 	`g`: 	Editing History
 			View the editing history for the currently viewed file.
@@ -51,27 +53,10 @@ Editing:
 	
 	(menu)	Consolidate Metadata
 			Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
+   xba}
 
-
-Scratch Views
-	
-Several outputs performed by dynamic definitions (see | Syntax >znj) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
-
-	(menu)	Timeline
-	
-	`n`		Search:
-			See "SEARCH()" in | Syntax >znj
-	
-	(menu)	Interlinks
-		
-	(menu)	Tree
-
-
-
-Sublime Text Only:
+{ Sublime Text Only
 	Traverse Mode
-
-
-Node Access History
+   3xv}
 
 id::e1x

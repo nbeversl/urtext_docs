@@ -21,7 +21,7 @@ id :: 003 >003:137
  Here are some tips for best leveraging Sublime's great UI features.
 
 
-id :: 004 >004:1198 
+id :: 004 >004:1222 
  For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
 
 
@@ -149,7 +149,7 @@ id :: 01m >01m:915
  This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
 
 
-id :: 01n >01n:73 
+id :: 01n >01n:93 
  Pointers >lmu
 
 
@@ -185,7 +185,7 @@ id :: 023 >023:346
  Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
 
 
-id :: 029 >029:310 
+id :: 029 >029:324 
  For more information on trees, see |  ?  >00h
 
 
@@ -221,8 +221,12 @@ id :: 3n6 >3n6:189
  | Traverse Mode >00w
 
 
-id :: 3x3 >3x3:60 
+id :: 3x3 >3x3:70 
  
+
+
+id :: 3xv >3xv:37 
+ Traverse Mode
 
 
 id :: 4p9 >4p9:271 
@@ -273,8 +277,16 @@ id :: 8dw >8dw:1181
  Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexe
 
 
-id :: 8fv >8fv:38 
+id :: 8e5 >8e5:399 
+ The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node. More information: | Embedded Syntaxes and Pass Markers >oy
+
+
+id :: 8fv >8fv:37 
  second level
+
+
+id :: 9u0 >9u0:197 
+ Move File to Other Project
 
 
 id :: 9up >9up:47 
@@ -321,11 +333,11 @@ id :: dce >dce:386
  - The folder how has one Urtext file and a `history` folder for tracking edits. (See | File History >prp )
 
 
-id :: e1x >e1x:1765 
- Node Access History
+id :: e1x >e1x:197 
+ modifiying
 
 
-id :: e5j >e5j:2955 
+id :: e5j >e5j:3064 
  └── Word Wrap in Traverse Mode >xci
 
 
@@ -361,7 +373,7 @@ id :: hiz >hiz:46
  become child nodes of their containing node.
 
 
-id :: ia5 >ia5:178 
+id :: ia5 >ia5:176 
  Also that the title is the first line of text.
 
 
@@ -417,7 +429,7 @@ id :: lwg >lwg:19
  User-Defined
 
 
-id :: m1r >m1r:819 
+id :: m1r >m1r:839 
  Duplicate Node IDs >bzv
 
 
@@ -431,6 +443,10 @@ id :: m9d >m9d:282
 
 id :: njo >njo:89 
  JSON
+
+
+id :: omh >omh:472 
+ Show a quick search bar of all nodes in all known projects.
 
 
 id :: ooe >ooe:295 
@@ -513,12 +529,20 @@ id :: uy4 >uy4:299
  For example, the following definition targets node >3x3 (below) and populates it with all nodes containing the word "urtext".
 
 
-id :: vze >vze:35 
+id :: vze >vze:45 
  == Current Projects ==
+
+
+id :: wjj >wjj:283 
+ Insert an arbitrary (unallocated) Node ID with metadata wrapper at the cursor position.
 
 
 id :: x0c >x0c:119 
  Some dynamic instructions do things other than populate or modify contents of nodes.
+
+
+id :: xba >xba:276 
+ Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
 
 
 id :: xci >xci:506 
@@ -541,11 +565,11 @@ id :: xsh >xsh:83
  HTML
 
 
-id :: xxx >xxx:3702 
+id :: xxx >xxx:3903 
  third level >6qj
 
 
-id :: y9t >y9t:39 
+id :: y9t >y9t:38 
  Example first level
 
 
@@ -553,7 +577,7 @@ id :: yin >yin:669
  Note that metadata tags do not actually get added to the inline text of the the children/descendants as a result of this instruction, only that they acquire the specified key/value metadata pair for all purposes metadata serves within Urtext.
 
 
-id :: yv2 >yv2:991 
+id :: yv2 >yv2:997 
  Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).
 
 
@@ -561,8 +585,8 @@ id :: z7t >z7t:248
  | Sublime Text Interface Tips >0
 
 
-id :: znj >znj:2132 
- `  (Closing pass marker. See above)
+id :: znj >znj:1809 
+ (Closing pass marker. See above)
 
 
 ID::aoq

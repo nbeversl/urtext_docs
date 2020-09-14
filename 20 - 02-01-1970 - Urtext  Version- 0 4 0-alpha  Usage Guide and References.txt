@@ -15,6 +15,11 @@ Quick Start, Guides and Examples >z7t
 ├── Basic Syntax >znj
 ├── Dynamic Definitions : Syntax and Parameters >87g
 ├── Operations >e1x
+│   ├── Project Management >9u0
+│   ├── Navigation >omh
+│   ├── Insertions >wjj
+│   ├── Editing >xba
+│   └── Sublime Text Only >3xv
 └── Sublime Text Interface Tips >003
     ├── Syntax Highlighting >01d
     ├── Hiding Tabs >015
@@ -36,7 +41,7 @@ Reference >ac5
 │   │   │       └── third level >6qj
 │   │   │           └── fourth level >80d
 │   │   │               └── fifth level >5pq
-│   │   └── Uses for inline nodes, >ia5
+│   │   └── Uses for inline nodes >ia5
 │   ├── Compact Nodes >kpz
 │   │   └── Example Compact Node >d7b
 │   │       └── Example inline node within the compact node. >9up
@@ -59,7 +64,7 @@ Reference >ac5
 ├── Dynamic Nodes >k8p
 │   ├── Lists >twz
 │   │   ├──  >m1r
-│   │   └──  >c1x
+│   │   └── : --> >c1x
 │   └── Collections >00k
 │       └── Example Collection >aoq
 ├── Links and Pointers >00j
@@ -77,7 +82,7 @@ Reference >ac5
 │       ├── Duplicate Pointers >00t
 │       │   └── Example Child Node Using a Node Pointer >001
 │       └── Recursive Node Pointers >6ct
-│           ├── ! RECURSION (node in own ancestors): >a5m
+│           ├── ! RECURSION 3:
 │           └── Example Recursive Node Tree >01n
 ├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d

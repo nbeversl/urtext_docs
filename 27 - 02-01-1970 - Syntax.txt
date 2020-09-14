@@ -1,10 +1,8 @@
 Basic Syntax
 
-All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname. 
+All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname. { The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node. More information: | Embedded Syntaxes and Pass Markers >oy5 flags::exclude_from_tree | exclude_from_export; 8e5}
 
-`%%-DOC`
-Pass Marker. Tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node.
-More information: | Embedded Syntaxes and Pass Markers >oy5
+%%-DOC
 
 `{  }` 
 Inline Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.

@@ -1,5 +1,5 @@
-  >c1x
- >m1r
+  >m1r
+: --> >c1x
 == Current Projects == >vze
 === Reminders === >0l2
 About Compact Nodes >ucj
@@ -23,6 +23,7 @@ Dynamic Definitions : Syntax and Parameters >87g
 Dynamic Nodes >k8p
 Dynamic Nodes - OLD >qjl
 Dynamic Titles >4vu
+Editing >xba
 Embedded Syntaxes and Pass Markers >oy5
 Errors and Warnings >bpk
 Example 1 : List >01r
@@ -59,6 +60,7 @@ Home Node >00c
 In-Progress / Experimental / Wish List >014
 Inline Nodes >004
 Inserting a Node ID manually >04s
+Insertions >wjj
 Installation and Setup (Desktop) >6cd
 JSON >njo
 Linking Between Projects >7lx
@@ -67,6 +69,7 @@ Links >0y2
 Links and Pointers >00j
 Lists >twz
 Metadata >00x
+Navigation >omh
 Node IDs >01q
 Node Titles >ue2
 Nodes >01j
@@ -75,12 +78,13 @@ Operations >e1x
 Other dynamic instructions >x0c
 Plaintext >l60
 Pointers >lmu
+Project Management >9u0
 Project Naming (Identification) >tgp
 Projects >dce
 Projects, Structure and Compiling >01x
 Python >ljr
-Python >xor
 Python >eea
+Python >xor
 Pythonista >iy8
 Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind th >q8j
 Quick Start, Guides and Examples >z7t
@@ -97,6 +101,7 @@ Searching >rr3
 Sublime >osu
 Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lo >k8v
 Sublime Text Interface Tips >003
+Sublime Text Only >3xv
 Sublime Text tools to help with linking >00m
 Synchronator Setup >01z
 Syntax Highlighting >01d
@@ -104,19 +109,20 @@ Syntax and Format >hg7
 TARGET( node or filename ) (recognized by pattern) >uh9
 Table of Contents >e5j
 The Node Browser >01i
+The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 This node is just here as a destination from the node pointer in  Syntax Quick-Reference >ttt
 Time Zones >7w6
 Timestamp Formats >00n
 Timestamps >005
 Tracking Node Dates and Times >m58
-Trailing Node IDs >xo9
 Trailing Node IDs >2a3
+Trailing Node IDs >xo9
 Traverse Mode >00w
 Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
 User Interface Elements >3n6
 User-Defined >lwg
 Uses >lhs
-Uses for inline nodes, >ia5
+Uses for inline nodes >ia5
 Using Multiple Projects at a Time >ipy
 Using Urtext in iOS with Pythonista >os4
 Using a Sublime Project for an Urtext Project >c3n

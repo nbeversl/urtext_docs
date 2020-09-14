@@ -9,20 +9,20 @@ Create an inline nodes with `Ctrl-Shift-squiggly-brace. Inside the inserted doub
 To wrap existing content into an inline node, first select the content and use the same keypress.
 
 Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. When syntax highlighting is active, inline node wrappers are tinted to showing nesting level:
-    
-    `
+
     {  Example first level 
         { second level 
-            { third level
+           { third level
                 { fourth level 
                     {   fifth level  
                     5pq}  
                 80d}  
            6qj}  
         8fv}  
+    y9t}   
 
-    y9t}
-    `
+f>./files/node-nesting-example.png
+
 
 Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use | Trailing Node IDs >2a3. You can also use regular | Metadata >00x as at the bottom of this file.
 
@@ -33,7 +33,7 @@ For all purposes in Urtext, inline nodes' identity is unique from their containi
 
 
 { tags::todo
-    Uses for inline nodes, 
+    Uses for inline nodes
     such as adding comments/edits, tracking anchors and pointers in documents.  
     Also that the title is the first line of text.
 

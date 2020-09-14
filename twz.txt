@@ -17,8 +17,8 @@ Lists
 		FORMAT(indent:15) 
 		]]
 
-{                 >xxx
-               : --> >c1x
+{                 >c1x
+                >xxx
                == Current Projects == >vze
                === Reminders === >0l2
                About Compact Nodes >ucj

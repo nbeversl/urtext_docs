@@ -37,8 +37,8 @@ The advantages to Node Pointers are many, including:
 
 {           Example Recursive Node Tree
           Pointers >lmu
-          ID::01n
           def::>6ct
+          ID::01n
 }
 
     [[ ID(>01n) +(id=lmu) DEPTH(*) HEADER(Example Recursive Node Tree)  FORMAT(indent:10)]]

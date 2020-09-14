@@ -81,11 +81,7 @@ See also:
 [Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
 ## Basic Syntax
 
-All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname. 
-
-``
-Pass Marker. Tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node.
-More information: [Embedded Syntaxes and Pass Markers](#embedded-syntaxes-and-pass-markers)
+All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname.
 
 `{  }` 
 Inline Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.
@@ -110,19 +106,15 @@ More information: [Compact Nodes](#compact-nodes)
 `< >`
 Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
 The first character inside the brackets may not be `!`, '-', or whitespace.
-Example: <Tue., Jul. 28, 2020, 07:43 PM>
+Example: 
 More information: [Timestamps](#timestamps)
 
 `::`
 Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
-Example: example_key::one example value | another example value <Tue., Jul. 28, 2020, 73:39 PM>;
+Example: 
 More information: [Metadata](#metadata)
-
   (Closing pass marker. See above)
-
-flags::keep_syntax; 
-ID::znj
 
 ## Dynamic Definitions : Syntax and Parameters
 
@@ -138,8 +130,7 @@ Built-in operations are bound to either hotkeys or to UI menus.
 
 Hotkeys differ among operating systems and can be reassigned according to your preference by
 modifiying
-
-Project Management:
+### Project Management 
 
 Multiple Projects
 Import Project
@@ -150,8 +141,7 @@ Delete This Node
 Initialize Project
 Pop Node
 Move File to Other Project
-
-Navigation: 
+### Navigation 
 
 `h` 	Home  `
 Go to the designated home page of the project. Define the home node in [project_settings](#project_settings)
@@ -167,17 +157,14 @@ Show a quick search bar of all nodes in the current project
 
 `*`		Global Node List:
 Show a quick search bar of all nodes in all known projects.
-
-Insertions:
+### Insertions 
 
 `t` 	Timestamp:
 Insert a timestamp at the cursor's location, in the project's default format. For setting timestamp format defaults, see [project_settings](#project_settings)
 
 `i` 	ID:
 Insert an arbitrary (unallocated) Node ID with metadata wrapper at the cursor position.
-
-
-Editing:
+### Editing 
 
 `g`: 	Editing History
 View the editing history for the currently viewed file.
@@ -185,28 +172,8 @@ For more informatino see [File History](#file-history)
 
 (menu)	Consolidate Metadata
 Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
-
-
-Scratch Views
-
-Several outputs performed by dynamic definitions (see [Basic Syntax](#basic-syntax)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
-
-(menu)	Timeline
-
-`n`		Search:
-See "SEARCH()" in [Basic Syntax](#basic-syntax)
-
-(menu)	Interlinks
-
-(menu)	Tree
-
-
-
-Sublime Text Only:
+### Sublime Text Only 
 Traverse Mode
-
-
-Node Access History
 
 ## Sublime Text Interface Tips  
 
@@ -309,54 +276,29 @@ To create a new file, press `Urtext-;`. A new file is created, named and saved a
 ### Inline Nodes                                                                 
 
 The syntax for inline nodes is to wrap the content in curly braces:
-
-{
-#### Example Inline Node   id::00e
+#### Example Inline Node
 Create an inline nodes with `Ctrl-Shift-squiggly-brace. Inside the inserted double curly braces is a new node with an auto-generated ID.   
 
 To wrap existing content into an inline node, first select the content and use the same keypress.
 
 Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. When syntax highlighting is active, inline node wrappers are tinted to showing nesting level:
+#### Example first level
+##### second level
+###### third level
+####### fourth level
+######## fifth level
+![./files/node-nesting-example.png][./files/node-nesting-example.png]
 
-`
-{
-#### Example first level   
-{
-##### second level  
-{
-###### third level 
-{
-####### fourth level  
-{
-######## fifth level     
-5pq
-80d
-6qj
-8fv
-y9t
-`
 
 Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Metadata](#metadata) as at the bottom of this file.
 
 Note that nodes at the file level ([File Nodes](#file-nodes)) do not use curly-braces, as their region boundaries are defined by the file itself.
 
-For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.    
-
-
-
-{
-#### Uses for inline nodes, tags::todo
+For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
+#### Uses for inline nodes 
 
 such as adding comments/edits, tracking anchors and pointers in documents.  
 Also that the title is the first line of text.
-
-ia5
-**flags::keep_syntax
-flags::keep_syntax
-
-ID::004
-updated::<Thu., Sep. 10, 2020, 05:24 PM>
-index::04
 
 ### Compact Nodes
 
@@ -526,8 +468,7 @@ Dynamic Definitions can be written anywhere; it is not necessary to store the de
 There are two main kinds of dynamic output: lists and collections: "Lists" are exactly that: lists of nodes, with each node displayed not more than once once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list. Collections, on the other hand, show metadata entries with their context; the same node may appear many times in a colelction if it contains many metadata entries matching the queried parameters.
 
 ### Lists
-####                 [](#)
-: -->[](#)
+####                 [](#)[: -->](#:--->)
 == Current Projects ==[== Current Projects ==](#==-current-projects-==)
 === Reminders ===[=== Reminders ===](#===-reminders-===)
 About Compact Nodes[About Compact Nodes](#about-compact-nodes)
@@ -547,7 +488,7 @@ Download Dependencies from a Monorepo[Download Dependencies from a Monorepo](#do
 Download and Install Dependencies Manually[Download and Install Dependencies Manually](#download-and-install-dependencies-manually)
 Duplicate Node IDs[Duplicate Node IDs](#duplicate-node-ids)
 Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
-####                 : -->[](#)
+#### : -->                [](#)
 
 -
 : -->[](#)
@@ -591,7 +532,7 @@ id :: 003[Sublime Text Interface Tips](#sublime-text-interface-tips):137
 Here are some tips for best leveraging Sublime's great UI features.
 
 
-id :: 004[Inline Nodes](#inline-nodes):1198 
+id :: 004[Inline Nodes](#inline-nodes):1222 
 For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
 
 
@@ -640,7 +581,7 @@ Example: pressing Ctrl/Command-Shift-/ on this line below will open the link: ht
 
 
 id :: 00p[Files](#files):170 
-Example:   f>./README.md
+Example:   ![./README.md][./README.md]
 
 
 id :: 00q[Linking to outside resources](#linking-to-outside-resources):136 
@@ -719,7 +660,7 @@ id :: 01m[Filenames](#filenames):915
 This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
 
 
-id :: 01n[Example Recursive Node Tree](#example-recursive-node-tree):73 
+id :: 01n[Example Recursive Node Tree](#example-recursive-node-tree):93 
 Pointers[Pointers](#pointers)
 
 
@@ -754,7 +695,7 @@ id :: 023[Disable Prompts for File Reload](#disable-prompts-for-file-reload):346
 Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
 
 
-id :: 029[Example 2 : Tree](#example-2-:-tree):310 
+id :: 029[Example 2 : Tree](#example-2-:-tree):324 
 For more information on trees, see [ MISSING LINK : 00h ] 
 
 
@@ -766,7 +707,7 @@ id :: 04s[Inserting a Node ID manually](#inserting-a-node-id-manually):163
 Control-Shift-I will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually
 
 
-id :: 0l2[=== Reminders ===](#===-reminders-===):21 
+id :: 0l2[=== Reminders ===](#===-reminders-===):31 
 === Reminders ===
 
 
@@ -790,8 +731,12 @@ id :: 3n6[User Interface Elements](#user-interface-elements):189
 [Traverse Mode](#traverse-mode)
 
 
-id :: 3x3[Example Search Results](#example-search-results):60 
+id :: 3x3[Example Search Results](#example-search-results):70 
 
+
+
+id :: 3xv[Sublime Text Only](#sublime-text-only):37 
+Traverse Mode
 
 
 id :: 4p9[Full Text Search](#full-text-search):271 
@@ -842,8 +787,16 @@ id :: 8dw[General Syntax](#general-syntax):1181
 Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexe
 
 
-id :: 8fv[second level](#second-level):38 
+id :: 8e5[The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing](#the-symbol-below-is-a-pass-marker,-which-tells-urtext-to-skip-everything-between-it-and-the-closing):399 
+The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node. More information: | Embedded Syntaxes and Pass Markers >oy
+
+
+id :: 8fv[second level](#second-level):37 
 second level
+
+
+id :: 9u0[Project Management](#project-management):197 
+Move File to Other Project
 
 
 id :: 9up[Example inline node within the compact node.](#example-inline-node-within-the-compact-node.):47 
@@ -874,7 +827,7 @@ id :: bzv[Duplicate Node IDs](#duplicate-node-ids):497
 To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
 
 
-id :: c1x[](#):294 
+id :: c1x[: -->](#:--->):319 
 -
 
 
@@ -890,11 +843,11 @@ id :: dce[Projects](#projects):386
 - The folder how has one Urtext file and a `history` folder for tracking edits. (See [File History](#file-history) )
 
 
-id :: e1x[Operations](#operations):1765 
-Node Access History
+id :: e1x[Operations](#operations):197 
+modifiying
 
 
-id :: e5j[Table of Contents](#table-of-contents):2955 
+id :: e5j[Table of Contents](#table-of-contents):3095 
  └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
 
 
@@ -930,7 +883,7 @@ id :: hiz[become child nodes of their containing node.](#become-child-nodes-of-t
 become child nodes of their containing node.
 
 
-id :: ia5[Uses for inline nodes,](#uses-for-inline-nodes,):178 
+id :: ia5[Uses for inline nodes](#uses-for-inline-nodes):176 
 Also that the title is the first line of text.
 
 
@@ -986,7 +939,7 @@ id :: lwg[User-Defined](#user-defined):19
 User-Defined
 
 
-id :: m1r[](#):819 
+id :: m1r[](#):839 
 Duplicate Node IDs[Duplicate Node IDs](#duplicate-node-ids)
 
 
@@ -1000,6 +953,10 @@ The following dynamic definition exports this entire documentation (from its roo
 
 id :: njo[JSON](#json):89 
 JSON
+
+
+id :: omh[Navigation](#navigation):472 
+Show a quick search bar of all nodes in all known projects.
 
 
 id :: ooe[Documentation](#documentation):295 
@@ -1066,7 +1023,7 @@ id :: twz[Lists](#lists):893
 Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
 
 
-id :: ucj[About Compact Nodes](#about-compact-nodes):189 
+id :: ucj[About Compact Nodes](#about-compact-nodes):199 
  └── About Compact Nodes[About Compact Nodes](#about-compact-nodes)
 
 
@@ -1082,12 +1039,20 @@ id :: uy4[Search Using Dynamic Nodes](#search-using-dynamic-nodes):299
 For example, the following definition targets node[Example Search Results](#example-search-results) (below) and populates it with all nodes containing the word "urtext".
 
 
-id :: vze[== Current Projects ==](#==-current-projects-==):35 
+id :: vze[== Current Projects ==](#==-current-projects-==):45 
 == Current Projects ==
+
+
+id :: wjj[Insertions](#insertions):283 
+Insert an arbitrary (unallocated) Node ID with metadata wrapper at the cursor position.
 
 
 id :: x0c[Other dynamic instructions](#other-dynamic-instructions):119 
 Some dynamic instructions do things other than populate or modify contents of nodes.
+
+
+id :: xba[Editing](#editing):276 
+Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
 
 
 id :: xci[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode):506 
@@ -1110,11 +1075,11 @@ id :: xsh[HTML](#html):83
 HTML
 
 
-id :: xxx[](#):3702 
+id :: xxx[](#):3908 
 third level[third level](#third-level)
 
 
-id :: y9t[Example first level](#example-first-level):39 
+id :: y9t[Example first level](#example-first-level):38 
 Example first level
 
 
@@ -1122,7 +1087,7 @@ id :: yin[tag_all](#tag_all):669
 Note that metadata tags do not actually get added to the inline text of the the children/descendants as a result of this instruction, only that they acquire the specified key/value metadata pair for all purposes metadata serves within Urtext.
 
 
-id :: yv2[Description](#description):991 
+id :: yv2[Description](#description):997 
 Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).
 
 
@@ -1130,7 +1095,7 @@ id :: z7t[Quick Start, Guides and Examples](#quick-start,-guides-and-examples):2
 | Sublime Text Interface Tips >0
 
 
-id :: znj[Basic Syntax](#basic-syntax):2130 
+id :: znj[Basic Syntax](#basic-syntax):1809 
 (Closing pass marker. See above)
 
 
@@ -1169,8 +1134,8 @@ HTTP(S) links are recognized automatically and will open in the default browser.
 Example: pressing Ctrl/Command-Shift-/ on this line below will open the link: http://github.com
 #### Files 
 
-Links to files can be made by writing f> , followed immediately with a file path relative to the folder of the project:
-Example:   f>./README.md
+Links to files can be made by writing ![ , followed immediately with a file path relative to the folder of the project:][ , followed immediately with a file path relative to the folder of the project:]
+Example:   ![./README.md][./README.md]
 
 ### Pointers          
 
@@ -1214,6 +1179,11 @@ Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,
 ├── Basic Syntax[Basic Syntax](#basic-syntax)
 ├── Dynamic Definitions : Syntax and Parameters[Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters)
 ├── Operations[Operations](#operations)
+│   ├── Project Management[Project Management](#project-management)
+│   ├── Navigation[Navigation](#navigation)
+│   ├── Insertions[Insertions](#insertions)
+│   ├── Editing[Editing](#editing)
+│   └── Sublime Text Only[Sublime Text Only](#sublime-text-only)
 └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
     ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
     ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
@@ -1235,7 +1205,7 @@ Reference[Reference](#reference)
 │   │   │       └── third level[third level](#third-level)
 │   │   │           └── fourth level[fourth level](#fourth-level)
 │   │   │               └── fifth level[fifth level](#fifth-level)
-│   │   └── Uses for inline nodes,[Uses for inline nodes,](#uses-for-inline-nodes,)
+│   │   └── Uses for inline nodes[Uses for inline nodes](#uses-for-inline-nodes)
 │   ├── Compact Nodes[Compact Nodes](#compact-nodes)
 │   │   └── Example Compact Node[Example Compact Node](#example-compact-node)
 │   │       └── Example inline node within the compact node.[Example inline node within the compact node.](#example-inline-node-within-the-compact-node.)
@@ -1258,7 +1228,7 @@ Reference[Reference](#reference)
 ├── Dynamic Nodes[Dynamic Nodes](#dynamic-nodes)
 │   ├── Lists[Lists](#lists)
 │   │   ├── [](#)
-│   │   └── [](#)
+│   │   └── : -->[: -->](#:--->)
 │   └── Collections[Collections](#collections)
 │       └── Example Collection[Example Collection](#example-collection)
 ├── Links and Pointers[Links and Pointers](#links-and-pointers)
@@ -1276,7 +1246,7 @@ Reference[Reference](#reference)
 │       ├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
 │       │   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
 │       └── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-│           ├── ! RECURSION (node in own ancestors):[Urtext  Version: 0.5-alpha  Usage Guide and References](#urtext--version:-0.5-alpha--usage-guide-and-references)
+│           ├── ! RECURSION 3:
 │           └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
 ├── Exporting[Exporting](#exporting)
 │   ├── Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
@@ -1316,11 +1286,7 @@ See also:
 [Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
 ####### Basic Syntax
 
-All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname. 
-
-``
-Pass Marker. Tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node.
-More information: [Embedded Syntaxes and Pass Markers](#embedded-syntaxes-and-pass-markers)
+All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname.
 
 `{  }` 
 Inline Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.
@@ -1345,19 +1311,15 @@ More information: [Compact Nodes](#compact-nodes)
 `< >`
 Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
 The first character inside the brackets may not be `!`, '-', or whitespace.
-Example: <Tue., Jul. 28, 2020, 07:43 PM>
+Example: 
 More information: [Timestamps](#timestamps)
 
 `::`
 Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
-Example: example_key::one example value | another example value <Tue., Jul. 28, 2020, 73:39 PM>;
+Example: 
 More information: [Metadata](#metadata)
-
   (Closing pass marker. See above)
-
-flags::keep_syntax; 
-ID::znj
 
 ####### Dynamic Definitions : Syntax and Parameters
 
@@ -1373,8 +1335,7 @@ Built-in operations are bound to either hotkeys or to UI menus.
 
 Hotkeys differ among operating systems and can be reassigned according to your preference by
 modifiying
-
-Project Management:
+######## Project Management 
 
 Multiple Projects
 Import Project
@@ -1385,8 +1346,7 @@ Delete This Node
 Initialize Project
 Pop Node
 Move File to Other Project
-
-Navigation: 
+######## Navigation 
 
 `h` 	Home  `
 Go to the designated home page of the project. Define the home node in [project_settings](#project_settings)
@@ -1402,17 +1362,14 @@ Show a quick search bar of all nodes in the current project
 
 `*`		Global Node List:
 Show a quick search bar of all nodes in all known projects.
-
-Insertions:
+######## Insertions 
 
 `t` 	Timestamp:
 Insert a timestamp at the cursor's location, in the project's default format. For setting timestamp format defaults, see [project_settings](#project_settings)
 
 `i` 	ID:
 Insert an arbitrary (unallocated) Node ID with metadata wrapper at the cursor position.
-
-
-Editing:
+######## Editing 
 
 `g`: 	Editing History
 View the editing history for the currently viewed file.
@@ -1420,28 +1377,8 @@ For more informatino see [File History](#file-history)
 
 (menu)	Consolidate Metadata
 Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
-
-
-Scratch Views
-
-Several outputs performed by dynamic definitions (see [Basic Syntax](#basic-syntax)) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
-
-(menu)	Timeline
-
-`n`		Search:
-See "SEARCH()" in [Basic Syntax](#basic-syntax)
-
-(menu)	Interlinks
-
-(menu)	Tree
-
-
-
-Sublime Text Only:
+######## Sublime Text Only 
 Traverse Mode
-
-
-Node Access History
 
 ####### Sublime Text Interface Tips  
 
