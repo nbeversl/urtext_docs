@@ -49,7 +49,7 @@
 
 			Formatting plaintext using tab indentions can look messy if indent guides are on. To turn them off, add to your Sublime project settings file:
 			%%-JSON
-			 "settings" : {{ }}
+			 "settings" : { 
 				"draw_indent _guides": false,
 			}
 			%%-END-JSON
@@ -61,7 +61,9 @@
 
 			Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:
 			%%-JSON
-			{ "save_on_focus_lost": true }
+				"settings" : { 
+				 "save_on_focus_lost": true 
+				}
 			%%-END-JSON
 	
 	sqq}
@@ -79,5 +81,4 @@
 
 
 ID::003
-tags::urtext_documentation
 index::02

@@ -2,23 +2,23 @@ title::Home
 
 {  == Current Projects ==
 index::01
-def::>02o
 ID::vze
-}ss
+def::>02o
+}
 
 
-| == Books == >vpr
-| === ACCESS HISTORY == >6fp
-| === TIMELINE === >d4g
-| === SOMEDAY / MAYBE LIST == >jds
-| === UPCOMING PROJECTS FOR CONSIDERATION === >set
-| === Life Overview === >1bj
-| == Psychoanalysis >jxp
-| Query >3ja
+
+|  ?  >vpr
+|  ?  >6fp
+|  ?  >d4g
+|  ?  >jds
+|  ?  >set
+|  ?  >jxp
+
 
 {  === Reminders === 
-def::>02o
 ID::0l2
+def::>02o
 }
 
 

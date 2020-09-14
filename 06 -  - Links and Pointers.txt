@@ -14,12 +14,10 @@ Links and Pointers
  
         Urtext: Link From ...
             Links TO the current node FROM another node. When you select this command, a link to the current node will be copied to the clipboard. You can then paste the reference into the node you open in the quick panel.
-        00m} 
-
-        
+    00m} 
 0y2}
 
-{  Dynamically Titled Links
+{  Dynamic Titles
 
     Prepending a pipe character to any node link will populate the space between the pipe and link with the node's title, from its metadata or default title. Examples are found throughout this documentation. 
 

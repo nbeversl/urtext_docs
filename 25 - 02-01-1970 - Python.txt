@@ -19,7 +19,7 @@ Python
                 then forward, then backward.
             """
 
-        %%-END
+        %%-END-PYTHON
 
      
 id::eea

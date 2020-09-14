@@ -1,112 +1,24 @@
 Dynamic Nodes
 
-Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. Dynamic content remains up to date with its source content at all times. Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
+Dynamic nodes contain content built from the contents of other nodes. Dynamic content stays up to date with its source content at all times. 
 
-The complete parameters and syntax are here : | Dynamic Definitions >87g
 
-This section illustrates more generally the use and purpose of dynamic nodes, with examples.
+Ctrl-Shift-] creates a new dynamic definition in Sublime.
+
+In Pythonista or other editors, create them manually.
+
+
+In Sublime this will be auto-populated using the shortcut above; however you can also replace it with the ID of another node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. 
+
+
+
+Dynamic are the same as any other node, except that their content is generated automatically from a Dynamic Definition. Dynamic Definitions are surrounded with double square brackets [[ ]], with complete parameters and syntax listed here : | Dynamic Definitions >87g. This section illustrates more generally the use and purpose of dynamic nodes, with examples.
+
+Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
 There are two main kinds of dynamic output: lists and collections: "Lists" are exactly that: lists of nodes, with each node displayed not more than once once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list. Collections, on the other hand, show metadata entries with their context; the same node may appear many times in a colelction if it contains many metadata entries matching the queried parameters.
 
-{ 	Lists
-
-	[[ 		
-		Dynamic definitions can contain arbitrary text, for making notes about the definition or any other purpose. The only parts read by the compiled are the function names with their parameters in parentheses. Like nodes, you can format/indent/comment these definitions any way you want.
-
-		This definition targets ID m1r, which appears immediately below, >k8p.
-		ID(>m1r) 
-
-		The asterisk means to include all nodes in the project. You can also use +() instead of INCLUDE()
-		INCLUDE(*)
-
-		This parameter limits the output to the first 20 results. 
-		Note that the default sort order is alphabetical. Change "20" to another number to see the 
-		LIMIT(20)
-
-		Here the FORMAT parameter is used to indent the output 15 spaces for better appearance.
-		FORMAT(indent:15) 
-		]]
-
-{                 >c1x
-                >aoq
-                >yoc
-                >pxp
-               == Current Projects == >vze
-               === Reminders === >0l2
-               About Compact Nodes >ucj
-               About Urtext >013
-               Accidental Duplicate Node IDs >bzv
-               And this one. >eq5
-               Applying Metadata to Children and Descendants >mnp
-               Basic Syntax >83g
-               Built-in Metadata Keys >ibo
-               Case-sensitivity >l36
-               Collections >00k
-               Compact Nodes >j6t
-               Compact Nodes >kpz
-               Comparison To Other Tools >h8z
-               Creating a Dynamic Node >yon
-               Definition keys/values >37h
-               def::>twz
-               ID::m1r
-}
-
-
-               Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
-
-
-		[[	This definition uses the same parameters as above, targeting the next node below, >c1x.
-
-			We'll use the SHOW() parameter to supply a template for the output of each result.
-			SHOW() accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
-
-			SHOW($title: --> $link\n$updated\n-\n)
-			ID(>c1x) 
-			INCLUDE(*)
-			LIMIT(5)
-			FORMAT(indent:15) 
-		]]
-
-
-{                : --> >aoq
-
-               -
-               : --> >yoc
-
-               -
-               : --> >m1r
-
-               -
-               : --> >pxp
-
-               -
-               == Current Projects ==: --> >vze
-
-               -
-               def::>twz
-               ID::c1x
-}
-
-
-| Links >0y2 or using | Traverse Mode >00w.
-
-
-Urtext will parse node timestamps along with inline timestamps into a project timeline. Press Ctrl-Shift-T or select Urtext: Show Timeline in the Sublime command palette. Each node and inline timestamp is shown in chronological order with nearby text. You can try it with this example project, but note that since many nodes in this document are undated, they have a default date of Thu., Jan. 01, 1970, 12:00AM.
-
-As everywhere in a project, node IDs shown are links that can be opened using Ctrl-Shift-/.
-
-
-
-You can extend node trees beyond the file level by using | Pointers >lmu.
-
-Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
-	twz}
-
-
-
-| Collections >>00k
-
-
-
+	| Lists >>twz
+	| Collections >>00k
 
 id::k8p; 

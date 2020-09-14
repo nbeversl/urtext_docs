@@ -6,9 +6,9 @@ This implementation utilizes the native iOS user interface to create a basic tex
 
 To set it up:
 
-    - Install Pythonista (http://omz-software.com/pythonista/)
+    - Install Pythonista : http://omz-software.com/pythonista/
 
-    - Clone or download the Urtext-Pythonista package (https://github.com/nbeversl/urtext_pythonista).
+    - Clone or download the Urtext-Pythonista package : https://github.com/nbeversl/urtext_pythonista
 
     - Install all the Python dependencies into your Pythonista environment. The requirements are the same as for Sublime Text (| Dependencies and Installation >2fn )
 

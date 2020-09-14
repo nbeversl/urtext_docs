@@ -1,0 +1,93 @@
+Lists
+
+	[[ 		
+		Dynamic definitions can contain arbitrary text, for making notes about the definition or any other purpose. The only parts read by the compiled are the function names with their parameters in parentheses. Like nodes, you can format/indent/comment these definitions any way you want.
+
+		This definition targets ID m1r, which appears immediately below, >k8p.
+		ID(>m1r) 
+
+		The asterisk means to include all nodes in the project. You can also use +() instead of INCLUDE()
+		INCLUDE(*)
+
+		This parameter limits the output to the first 20 results. 
+		Note that the default sort order is alphabetical. Change "20" to another number to see the 
+		LIMIT(20)
+
+		Here the FORMAT parameter is used to indent the output 15 spaces for better appearance.
+		FORMAT(indent:15) 
+		]]
+
+{                 >xxx
+               : --> >c1x
+               == Current Projects == >vze
+               === Reminders === >0l2
+               About Compact Nodes >ucj
+               About Urtext >013
+               Basic Syntax >znj
+               Case-sensitivity >l36
+               Collections >00k
+               Compact Nodes >j6t
+               Compact Nodes >kpz
+               Comparison To Other Tools >h8z
+               Dependencies and Installation >2fn
+               Description >yv2
+               Details on the Sublime Implementation >01u
+               Disable Prompts for File Reload >023
+               Documentation >ooe
+               Download Dependencies from a Monorepo >arl
+               Download and Install Dependencies Manually >774
+               Duplicate Node IDs >bzv
+               ID::m1r
+               def::>twz
+}
+
+
+               Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
+
+
+		[[	This definition uses the same parameters as above, targeting the next node below, >c1x.
+
+			We'll use the SHOW() parameter to supply a template for the output of each result.
+			SHOW() accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
+
+			SHOW($title: --> $link\n$updated\n-\n)
+			ID(>c1x) 
+			INCLUDE(*)
+			LIMIT(5)
+			FORMAT(indent:15) 
+		]]
+
+
+{                : --> >xxx
+
+               -
+               : --> >m1r
+
+               -
+               == Current Projects ==: --> >vze
+
+               -
+               === Reminders ===: --> >0l2
+
+               -
+               About Compact Nodes: --> >ucj
+
+               -
+               ID::c1x
+               def::>twz
+}
+
+
+| Links >0y2 or using | Traverse Mode >00w.
+
+
+Urtext will parse node timestamps along with inline timestamps into a project timeline. Press Ctrl-Shift-T or select Urtext: Show Timeline in the Sublime command palette. Each node and inline timestamp is shown in chronological order with nearby text. You can try it with this example project, but note that since many nodes in this document are undated, they have a default date of Thu., Jan. 01, 1970, 12:00AM.
+
+As everywhere in a project, node IDs shown are links that can be opened using Ctrl-Shift-/.
+
+
+
+You can extend node trees beyond the file level by using | Pointers >lmu.
+
+Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
+id::twz; 

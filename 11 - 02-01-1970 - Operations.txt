@@ -19,7 +19,7 @@ Move File to Other Project
 
 Navigation: 
 
-	`h` 	Home  
+	`h` 	Home  `
 			Go to the designated home page of the project. Define the home node in | project_settings >00l
 
 	`<` 	Navigate Back
@@ -55,12 +55,12 @@ Editing:
 
 Scratch Views
 	
-Several outputs performed by dynamic definitions (see | Syntax Quick-Reference >znj) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
+Several outputs performed by dynamic definitions (see | Syntax >znj) can also be written into "scratch" (unsaved) views for temporary use, with the intention of discarding them afterward.
 
 	(menu)	Timeline
 	
 	`n`		Search:
-			See "SEARCH()" in | Syntax Quick-Reference >znj
+			See "SEARCH()" in | Syntax >znj
 	
 	(menu)	Interlinks
 		

@@ -5,8 +5,6 @@ This is a documentation of Urtext, written in Urtext. If you're reading this as 
   - Control-Shift-/ to follow any link
   - Control-Shift-h at any time to return to this "home" node.
 
-f>./README.md
-s=s
 { About Urtext >013
 ├── Description >yv2
 ├── Comparison To Other Tools >h8z
@@ -14,10 +12,8 @@ s=s
 └── Requirements and Features >006
 Quick Start, Guides and Examples >z7t
 ├── Installation and Setup (Desktop) >6cd
-├── Syntax >znj
-│   ├── Basic Syntax >83g
-│   └── Built-in Metadata Keys >ibo
-├── Dynamic Definitions Quick-Reference >87g
+├── Basic Syntax >znj
+├── Dynamic Definitions : Syntax and Parameters >87g
 ├── Operations >e1x
 └── Sublime Text Interface Tips >003
     ├── Syntax Highlighting >01d
@@ -46,19 +42,12 @@ Reference >ac5
 │   │       └── Example inline node within the compact node. >9up
 │   ├── Node Titles >ue2
 │   └── Node IDs >01q
+│       ├── Trailing Node IDs >xo9
 │       ├── Inserting a Node ID manually >04s
-│       ├── Accidental Duplicate Node IDs >bzv
+│       ├── Duplicate Node IDs >bzv
 │       └── Generating a node ID manually >rfp
 ├── Metadata >00x
-│   ├── Syntax >kga
-│   ├── Applying Metadata to Children and Descendants >mnp
-│   │   ├──  >pxp
-│   │   │   ├── This node will have the value `todo` for the `example` key. >ucs
-│   │   │   └── So will this one. >fna
-│   │   └──  >yoc
-│   │       └── This node will have the value `todo` for the `example` key. >6r4
-│   │           └── So will this one >ep2
-│   │               └── And this one. >eq5
+│   ├── General Syntax >8dw
 │   ├── Timestamps >005
 │   │   ├── Syntax and Format >hg7
 │   │   ├── Tracking Node Dates and Times >m58
@@ -66,19 +55,17 @@ Reference >ac5
 │   ├── Case-sensitivity >l36
 │   └── Reserved Keys >fo2
 │       ├── `index` >00z
-│       └── `_flags` >cwb
-│           ├── `exclude_from_tree` >1e3
-│           └── `exclude_from_export` >vv7
+│       └── `title` >pz3
 ├── Dynamic Nodes >k8p
 │   ├── Lists >twz
 │   │   ├──  >m1r
 │   │   └──  >c1x
 │   └── Collections >00k
-│       └──  >aoq
+│       └── Example Collection >aoq
 ├── Links and Pointers >00j
 │   ├── Links >0y2
 │   │   └── Sublime Text tools to help with linking >00m
-│   ├── Dynamically Titled Links >4vu
+│   ├── Dynamic Titles >4vu
 │   ├── Opening Links >01w
 │   │   ├── Sublime >osu
 │   │   └── Pythonista >iy8
@@ -92,69 +79,51 @@ Reference >ac5
 │       └── Recursive Node Pointers >6ct
 │           ├── ! RECURSION (node in own ancestors): >a5m
 │           └── Example Recursive Node Tree >01n
-├── Pass Markers and Embedded Syntaxes >oy5
 ├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 │   └── Example : Fragment Exported to HTML >baq
 ├── Filenames >01m
-├── Development >01o
-│   └── Make Installation Easier >mh8
 ├── File History >prp
+├── Errors and Warnings >bpk
 ├── Using Multiple Projects at a Time >ipy
 │   ├── Project Naming (Identification) >tgp
 │   └── Linking Between Projects >7lx
-├── project_settings >00l
-│   ├── Home Node >00c
-│   ├── Filename formats >00i
-│   └── Timestamp Formats >00n
-├── User Interface Elements >3n6
-│   ├── The Node Browser >01i
-│   └── Traverse Mode >00w
-│       └── Word Wrap in Traverse Mode >xci
-├── Details on the Sublime Implementation >01u
-│   └── Dependencies and Installation >2fn
-│       ├── Download and Install Dependencies Manually >774
-│       └── Download Dependencies from a Monorepo >arl
-└── Using Urtext in iOS with Pythonista >os4
+└── User Interface Elements >3n6
+    ├── The Node Browser >01i
+    └── Traverse Mode >00w
+        └── Word Wrap in Traverse Mode >xci
 title::Table of Contents
-def::>029
 ID::e5j
+def::>029
 } 
 
-| About Urtext >>013
 {  Quick Start, Guides and Examples
+
 | Installation and Setup (Desktop) >>6cd
 | Using Urtext in iOS with Pythonista >os4
-| Syntax Quick-Reference >>znj
-| Dynamic Definitions Quick-Reference >>87g
+| Basic Syntax >>znj
+| Dynamic Definitions : Syntax and Parameters >>87g
 | Operations >>e1x
 | Sublime Text Interface Tips >>003
-
 z7t}
 
 { 	Reference
 	| Projects >>dce
 	| Nodes >>01j
 	| Metadata >>00x
+  
 
 | Dynamic Nodes >>k8p
 	
 	| Links and Pointers >>00j
-  | Pass Markers and Embedded Syntaxes >>oy5
 	| Exporting >>ezg
 	| Filenames >>01m
-	| Development >>01o
 	| File History >>prp
+  | Errors and Warnings >>bpk
+  | Embedded Syntaxes and Pass Markers >oy5
 	| Using Multiple Projects at a Time >>ipy
-	| project_settings >>00l
-
-{  User Interface Elements
-| The Node Browser >>01i
-| Traverse Mode >>00w
-  3n6}
-  | Details on the Sublime Implementation >>01u
-  | Using Urtext in iOS with Pythonista >>os4
-
+	
+| User Interface Elements >>3n6
 ac5}
 
 

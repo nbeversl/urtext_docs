@@ -1,92 +1,10 @@
 
-Dynamic Nodes 
+Dynamic Nodes - OLD
 ID::qjl
 
-    ^ Dynamic nodes can compile and update content in real time from other nodes. Dynamic nodes can display complete contents or lists of titles of other nodes, as well as display tree diagrams of relationships among nodes, across many files.  id::h0y; title::Description & Purpose
 
-    ^ Dynamic node definitions are enclosed in double square brackets and can be inserted into any node arbitrarily. id::igk; title::Syntax
-    
-    { Creating a Dynamic Node
-
-        Ctrl-Shift-] creates a new dynamic definition in Sublime.
-        In Pythonista or other editors, create them manually.
-
-     
-id::yon }
-
-    { Definition keys/values
-
-        Dynamic definitions accept the following keys:
-          
-        {   
-            - id: 
-    
-                (required) : In Sublime this will be auto-populated using the shortcut above; however you can also replace it with the ID of another node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. 
 
                 Note that in order to work, the target node must exist; dynamic definitions do not create their target nodes. 
-
-                
-id::02t
-title::id
-            
-             - include:metadata:[AND:|OR:](metadata key):(metadata value(s)): 
-    
-                Include nodes with this metadata key and value. Keys and values are chained together and separated by the colon (:) as shown above. Multiple values can be chained together with successive colons. The default operator is "OR"; for "AND", chain this indicator as shown before the tag name.  
-                
-id::a3r
-title::include
-
-            - exclude:metadata:(tag name):(tag values) 
-    
-                Exclude nodes with this metadata key and value. Keys and values are strung together and separated by the colon (:) as shown above. To exclude multiple key/value pairs, write multiple lines. Excluding will always supersede including, no matter the order listed in the definition. 
-                
-id::e18
-title::exclude
- 
-           - sort:(key):(reverse)
-    
-                This specifies how to sort the nodes in the dynamically populated node. The key can be any metadata key in the project, including timestamp. If `:reverse` is appended to the end, the sort order will be reversed.
-                
-id::05f
-title::sort
-
-            - metadata:(tag name):(value) 
-    
-                Metadata to add to the dynamically populated node. This can be any metadata, including the reserved title, index and parent keys.
-                
-id::oa2
-title::metadata
-    
-                Dynamic nodes will always automatically include the metadata key 'defined in' which will point to the node containing its definition.
-    
-
-            - tree:(root id) 
-    
-                (root id) : Populates the node with a tree with the provided node ID as root. For more on trees, see >00h.
-                
-id::4mb
-title::tree
-
-
-             - export:(format):(source id)
-
-                Exports the specified source_id to the target id value in the `id` key field, in the specific format.
-
-                (format) : One of `plaintext`, `markdown` or `html`
-                (source_id): The source node to export.
-
-                See | Exporting >ezg
-                
-                
-ID::l2c
-title::export 
- }
-            | tag_all >>yin
-
-           
-
-    
-id::37h }
 
 
 {    Example 1 : List

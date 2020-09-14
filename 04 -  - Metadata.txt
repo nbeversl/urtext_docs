@@ -1,100 +1,63 @@
 Metadata
 
+{ General Syntax
 
-
-{ Syntax
-
-  Every node can have an unlimited number of metadata entries. Metadata gets indexed and becomes searchable and sortable from anywhere within the project. Metadata entries also "remember" their location in the text, making them operate as contextual markers. Other than a few reserved key/value pairs, metadata keynames and values are user-defined.  
-
-  Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:
+  Every node can have an unlimited number of metadata entries. Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:
 
         purpose::This node describes Metadata in Urtext <Thu., Jun. 11, 2020, 09:09 PM>
         audience::Urtext user 
 
-  Keys must be single words, with characters such as dash and underscore allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon to separate them from other text or other metadata entries. Using the semicolon, several entries may be strung together on a single line:
+  Metadata gets indexed and becomes searchable and sortable from anywhere within the project. Metadata entries also "remember" their location, allowing them to serve as contextual markers or "bookmarks". 
+
+  Other than a few reserved key/value pairs, metadata is user-defined. Keys must be single words, though characters such as dash and underscore are allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line:
 
       one_key::some value; another_key::some_other_value <Thu., Sep. 10, 2020, 05:37 PM>;
       
-  Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed.  kga}
-
-
-{  Applying Metadata to Children and Descendants
-
-  **flags::keep_syntax
-  To apply metadata to all immediate children of a node, precede the key name immediately with an asterisk (`*`):
-
-      {  
-          *example::todo
+  Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. 8dw}
   
-          {  This node will have the value `todo` for the `example` key.   ucs}  
-          {  So will this one.  fna}    
-
-        Note that the asterisk applies the tag ONLY to the children. To apply the tag also to the outer node, give it a separate entry without an asterisk.
- 
-      pxp}
-
-  To apply metadata to all descendants of a node recursively, precede the key name immediately with two asterisks:
-
-      {  
-
-        {  This node will have the value `todo` for the `example` key.
-          {  So will this one
-            {  And this one.  eq5}  
-            ep2}
-         6r4}
-
-         **example::todo
-         Note that it doesn't matter where in the "parent" node the metadata entry appears. Metadata entries can be placed anywhere in a node, with the same effect.
-       
-        yoc}
-      mnp}
-
-
-
-
 { Timestamps                                                                                  
 
   {   Syntax and Format
 
-      Text between two angled brackets (<  >) is parsed as a timestamp.  To insert the current date and time anywhere, press Control-Shift-t: <Thu., Sep. 10, 2020, 05:41 PM>
+      Text between two angled brackets (<  >) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. To insert the current date and time anywhere, press Control-Shift-t: <Thu., Sep. 10, 2020, 05:41 PM>
 
       Timestamps are read and written utilizing Python's `strftime` directives. The following formats are included by default:
 
-          %%-PYTHON # (<- for info about this marker see | Pass Markers and Embedded Syntaxes >oy5 )
-          
+          %%-PYTHON # (<- for info about this marker see | Embedded Syntaxes and Pass Markers >oy5 )
+
           # Sat., Sep. 12, 2020, 09:35 AM
-          '%a., %b. %d, %Y, %I:%M %p'           
+          '%a., %b. %d, %Y, %I:%M %p' 
           
           # September 12, 2020
           '%B %-d, %Y' 
-          
+
           # September 2020
           '%B %Y'
-          
+
           # 09-12-2020
           '%m-%d-%Y'
           
           # Sat., Sep. 12, 2020, 09:35 AM '
           '%a., %b. %d, %Y, %I:%M %p %z' 
-          
+
           # Sat., Sep. 12, 2020, 09:35 AM'
           '%a., %b. %d, %Y, %I:%M %p'
-          
+
           # Saturday, September 12, 2020, 09:35 AM'
           '%A, %B %d, %Y, %I:%M %p'
-          
+
           # 'September 12, 2020, 09:35 AM'
           '%B %d, %Y, %I:%M %p'
-          
+
           # 'September 12, 2020, 09:35AM'
           '%B %d, %Y, %I:%M%p'
-          
+
           # 2020
           '%Y'
-          
+
           # September 12, 2020'
           '%B %d, %Y'
-          
+
           # Saturday, September 12, 2020, 09:35AM
           '%A, %B %d, %Y, %I:%M%p'
 
@@ -105,23 +68,17 @@ Metadata
       Node timestamps are part of metadata (see | Metadata >00x). 
       Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed.
 
-
-
   {   Tracking Node Dates and Times 
 
-      Reliance on the operating system's "created" or "modified" date metadata is avoided entirely in Urtext, since these values can be easily and inadvertently overwritten during ordinary file system operations, such as copying and moving files/folders. Instead, new nodes  receive by default a "timestamp" metadata key when created: timestamp::<Thu., Sep. 10, 2020, 05:42 PM>. This behavior can be changed in | project_settings >00l.  
+      Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created: timestamp::<Thu., Sep. 10, 2020, 05:42 PM>. This behavior can be changed in | project_settings >00l.  
 
       m58}
     
-
-
   { 	Time Zones  
 
   	Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the `timezone` key in | project_settings >00l to another valid value.  7w6}
 
   005}
-
-
 
 {  Case-sensitivity
 
@@ -145,24 +102,13 @@ Metadata
       {   `index`
     
          Provides a way to give nodes a sort order in | The Node Browser >01i.  Indexed nodes will sort before (above) the others, lowest numbers appearing first. To utilize, add a two-digit sort index (00-99) to a node, such as:  index::03    
-         You can give the same index number to multiple nodes; in this case they sort first by index, then by timestamped, newest first.
+         You can give the same index number to multiple nodes; in this case they sort first by index, then by timestamp, newest first.
 
          Unindexed nodes will display underneath indexed nodes, by timestamp, newest first. 00z}
 
-       {  `_flags`
+      { `title`
 
-           Used to set node behavior for specific purposes withing Urtext. At present only the following exists:
-
-            {  `exclude_from_tree`
-
-               Excludes a node from being included in a tree. For an example, see Example 2 in "Dynamic Nodes" | Example 2 : Tree >029. For more on tree, see |  ?  >00h  1e3}
-
-
-            { `exclude_from_export`
-
-                Excludes a node from being exported, when project content is exported. See | Exporting >ezg.   vv7}
-       
-      cwb}
+          Provides a way to override the node title, which is by default the full first non-whitespace line. pz3}
      
   fo2}
 

@@ -1,70 +1,44 @@
-Syntax 
-(Quick-Reference)
+Basic Syntax
 
-{ Basic Syntax
-	%%-DOC
-	
-	(<- This "pass marker" causes the Urtext compiler to ignore all Urtext syntax between here and the closing (END) marker, 
-	for documentation purposes. For details see | Pass Markers and Embedded Syntaxes >oy5)
+All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname. 
 
-	
-	All text is plain content unless inside a timetamp wrapper or dynamic definition wrapper. 
-	The following syntax applies:
+%%-DOC
+Pass Marker. Tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node.
+More information: | Embedded Syntaxes and Pass Markers >oy5
 
-	{  }	Subnode	wrappers. Can appear anywhere. Can be nested aribrarily deep.
-			More information: | Inline Nodes >004
+{  }	
+Inline Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.
+More information: | Inline Nodes >004
 
-	 >		Link to another node by ID. 
-	 		More information: | Links >0y2
+>		
+Node Link. Links to the specified node by ID, like a hyperlink. 
+More information: | Links >0y2
 
-	 | 		Placed before a node link, dynamically populates the linked node title.
-	 		Example and more info: | Dynamically Titled Links >4vu
+>>		
+Node Pointer: Embeds the specified node as though it were included inline using wrappers { } (see above)
+More information: | Pointers >lmu
 
+| 
+Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.
+Example and more info: | Dynamic Titles >4vu
 
-	 ^		Compact Node marker. Must be the first non-whitespace character on a line. id::83g
-	 		More information: | Compact Nodes >j6t
-		
-	>>		Node Pointer
-	 		Embeds the specified node as though it were included inline using wrappers { } (see above)
-	 		More information: | Pointers >lmu
+^
+Compact Node marker. Must be the first non-whitespace character on a line. Must include an ID in order to parse.
+More information: | Compact Nodes >j6t
 
-	< > 	Timestamp enclosure. Parses user-defined datetime strings, with some default formats built in.
-			Example: <Tue., Jul. 28, 2020, 07:43 PM>
-			More information: | Timestamps >005
+< >
+Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
+The first character inside the brackets may not be `!`, '-', or whitespace.
+Example: <Tue., Jul. 28, 2020, 07:43 PM>
+More information: | Timestamps >005
 
-	::		Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
-			Metadata may appear anywhere in text.
-			Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline.
-			Example: example_key::example value for the key <Tue., Jul. 28, 2020, 73:39 PM>;
-			
-			The pipe character (`|`) separates multiple values.
-			Example: some_key::one value | another value
+::
+Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
+Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
+Example: example_key::one example value | another example value <Tue., Jul. 28, 2020, 73:39 PM>;
+More information: | Metadata >00x
 
-			Metadata entries are attached in a general way to their containing (parent) node but also remember their 
-			location and can serve as an anchor to their immediate context.
-			More information: | Metadata >00x
-	
-			Trailing node ID:
-			The last three characters of a node, if they are preceded by whitespace, can serve as the `id` metadata
-			value of that node, to make them less obtrusive while reading/editing text.
-			
-		%%-END-DOC
-		flags::keep_syntax; 33j} 
+%%-END-DOC  (Closing pass marker. See above)
 
-
-	
-
-
-{  Built-in Metadata Keys
-
-	There are some built-in metadata keys. Built-in keys begin with an underscore character `_`.
-
-	_title  				Overrides the Node Title
-
-	_flags  				Sets node behavior. More info:| `_flags` >cwb
-
-	A few additional keys are reserved, but only for nodes containing project settings. See | project_settings >00l.
-
-  ibo}
-
+flags::keep_syntax; 
 ID::znj

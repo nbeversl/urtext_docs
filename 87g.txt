@@ -1,16 +1,11 @@
-Dynamic Definitions Quick-Reference
+Dynamic Definitions : Syntax and Parameters
 
 Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-Dynamic definitions are wrapped using double left and right square brackets:
+Dynamic definitions are wrapped using double left and right square brackets. Note that there are no restrictions on spacing, indentation, newlines, or inclusion of other arbitrary text or whitespace. Dynamic definitions ignore whitespace and arbitrary text outside of defined parameters. The order of parameters within a definition is unimportant; they are evaluated as a group.
 
+The dynamic definition below does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see | Dynamic Nodes >k8p
 
-
-[[ ]]	Dynamic Definition Wrapper
-		
-	Note the dynamic definitions ignore whitespace and arbitrary text outside of functions.
-	The order of functions within a definition is unimportant; they are evaluated as a group.
-	
 	[[ 	ID() 			Target node to dynamically populate with output.
 						Accepts a link to a node (>eee)
 
@@ -149,7 +144,6 @@ Dynamic definitions are wrapped using double left and right square brackets:
 						Accepts one or more semicolon- or newline-separated links to nodes or files (see | Linking to outside 
 						resources >00q), such as: 
 
-							EXPORT(f>filename.txt; >id4)								
 
 						To include all nodes pointed to from the root file, recursively, use the flag:
 						-rr or -recursive
@@ -187,6 +181,5 @@ Dynamic definitions are wrapped using double left and right square brackets:
 						Example: FORMAT(-indent:20)
 
 ]]  
-
 
 id::87g; 

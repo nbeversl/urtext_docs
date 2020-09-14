@@ -5,7 +5,7 @@ An Urtext project is a single folder. The folder must contain at least file with
 To make an new empty project:
 	- make a new folder and open the folder in Sublime Text. 
 	- Select Urtext : Initialize Project from the Sublime Command Palette. 
-	- The folder how has one Urtext file and a `history` folder (for tracking edits. See | File History >prp )
+	- The folder how has one Urtext file and a `history` folder for tracking edits. (See | File History >prp )
 
 { Using/Adding Existing Files
 
@@ -16,8 +16,5 @@ To make an new empty project:
     Note the append will occur without a confirmation dialog, so if you are just experimenting with this system, consider making a copy of your file folder so you can revert without having to manually remove the metadata.
 	
 rij}	
-
-Related:
-| Using Multiple Projects at a Time >ipy
 
 ID::dce 

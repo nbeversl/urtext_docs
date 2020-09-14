@@ -1,5 +1,9 @@
 The Node Browser
 
+The Node browser shows a list of all nodes in the project. It can be implemented in plaintext using a dynamic definition such as: [[ ID(>xxx) +(*) ]]. However, 
+
+ also be implemented 
+
 Opening the Node List
 
 Ctrl-Shift-E 

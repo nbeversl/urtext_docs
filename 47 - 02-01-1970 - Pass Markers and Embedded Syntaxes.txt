@@ -1,6 +1,68 @@
-Pass Markers and Embedded Syntaxes
+Embedded Syntaxes and Pass Markers
 
-(to be added)
+Note that no text content wrapped between pass markers will appear in Urtext dynamic output, since characters in other syntaxes would have unpredictable interactions.
+
+{ HTML
+
+	%%-HTML
+
+		<div class="example">
+			Example HTML
+		</div>
+
+	%%-END-HTML
+   xsh}
+
+
+{ JSON
+
+	%%-JSON
+
+		{ 	"title" : "example JSON ",
+			"example" : [], 
+		}
+
+	%%-END-JSON
+	   njo}
+
+{ Python
+
+	%%-PYTHON
+	
+	# Example
+	def times_ten(i):
+		return i*10
+
+	%%-END-PYTHON   
+	ljr}
+
+
+{ Plaintext
+
+	%%-PLAINTEXT
+
+		This text will get no syntax highlighting.
+
+	%%-END-PLAINTEXT   
+	l60}
+
+
+
+{ Documentation
+	%%-DOC
+
+	The "DOC" pass marker is used in parts of this documentation in order to Urtext syntax highlighting without parse or execute anything, for documentation and example purposes. This wrapper will not return an error messages even it is missing an ID  {  }.
+
+
+	%%-END-DOC   
+	ooe}
+
+{  User-Defined
+
+
+  lwg}
+
+
 
 id::oy5
 from::wwci-00407.local
