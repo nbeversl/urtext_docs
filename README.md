@@ -83,37 +83,37 @@ See also:
 
 All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname. 
 
-
+``
 Pass Marker. Tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node.
 More information: [Embedded Syntaxes and Pass Markers](#embedded-syntaxes-and-pass-markers)
 
-{  }	
+`{  }` 
 Inline Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.
 More information: [Inline Nodes](#inline-nodes)
 
->		
+`>`		
 Node Link. Links to the specified node by ID, like a hyperlink. 
 More information: [Links](#links)
 
->>		
+`>>`		
 Node Pointer: Embeds the specified node as though it were included inline using wrappers { } (see above)
 More information: [Pointers](#pointers)
 
-| 
+`|` 
 Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.
 Example and more info: [Dynamic Titles](#dynamic-titles)
 
-^
+`^`
 Compact Node marker. Must be the first non-whitespace character on a line. Must include an ID in order to parse.
 More information: [Compact Nodes](#compact-nodes)
 
-< >
+`< >`
 Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
 The first character inside the brackets may not be `!`, '-', or whitespace.
 Example: <Tue., Jul. 28, 2020, 07:43 PM>
 More information: [Timestamps](#timestamps)
 
-::
+`::`
 Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 Example: example_key::one example value | another example value <Tue., Jul. 28, 2020, 73:39 PM>;
@@ -894,7 +894,7 @@ id :: e1x[Operations](#operations):1765
 Node Access History
 
 
-id :: e5j[Table of Contents](#table-of-contents):2933 
+id :: e5j[Table of Contents](#table-of-contents):2955 
  └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
 
 
@@ -1110,7 +1110,7 @@ id :: xsh[HTML](#html):83
 HTML
 
 
-id :: xxx[](#):3707 
+id :: xxx[](#):3702 
 third level[third level](#third-level)
 
 
@@ -1130,7 +1130,7 @@ id :: z7t[Quick Start, Guides and Examples](#quick-start,-guides-and-examples):2
 | Sublime Text Interface Tips >0
 
 
-id :: znj[Basic Syntax](#basic-syntax):2116 
+id :: znj[Basic Syntax](#basic-syntax):2130 
 (Closing pass marker. See above)
 
 
@@ -1318,37 +1318,37 @@ See also:
 
 All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname. 
 
-
+``
 Pass Marker. Tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node.
 More information: [Embedded Syntaxes and Pass Markers](#embedded-syntaxes-and-pass-markers)
 
-{  }	
+`{  }` 
 Inline Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.
 More information: [Inline Nodes](#inline-nodes)
 
->		
+`>`		
 Node Link. Links to the specified node by ID, like a hyperlink. 
 More information: [Links](#links)
 
->>		
+`>>`		
 Node Pointer: Embeds the specified node as though it were included inline using wrappers { } (see above)
 More information: [Pointers](#pointers)
 
-| 
+`|` 
 Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.
 Example and more info: [Dynamic Titles](#dynamic-titles)
 
-^
+`^`
 Compact Node marker. Must be the first non-whitespace character on a line. Must include an ID in order to parse.
 More information: [Compact Nodes](#compact-nodes)
 
-< >
+`< >`
 Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
 The first character inside the brackets may not be `!`, '-', or whitespace.
 Example: <Tue., Jul. 28, 2020, 07:43 PM>
 More information: [Timestamps](#timestamps)
 
-::
+`::`
 Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 Example: example_key::one example value | another example value <Tue., Jul. 28, 2020, 73:39 PM>;
