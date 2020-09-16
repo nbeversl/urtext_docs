@@ -18,9 +18,7 @@ Lists
 		]]
 
 {                 >xxx
-                >c1x
-               == Current Projects == >vze
-               === Reminders === >0l2
+               "Table of Contents" Dynamic Definition >v7r
                About Compact Nodes >ucj
                About Urtext >013
                Basic Syntax >znj
@@ -37,6 +35,8 @@ Lists
                Download Dependencies from a Monorepo >arl
                Download and Install Dependencies Manually >774
                Duplicate Node IDs >bzv
+               Duplicate Pointers >00t
+               Dynamic Definitions : Syntax and Parameters >87g
                ID::m1r
                def::>twz
 }
@@ -44,38 +44,6 @@ Lists
 
                Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
 
-
-		[[	This definition uses the same parameters as above, targeting the next node below, >c1x.
-
-			We'll use the SHOW() parameter to supply a template for the output of each result.
-			SHOW() accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
-
-			SHOW($title: --> $link\n$updated\n-\n)
-			ID(>c1x) 
-			INCLUDE(*)
-			LIMIT(5)
-			FORMAT(indent:15) 
-		]]
-
-
-{                : --> >xxx
-
-               -
-               : --> >m1r
-
-               -
-               == Current Projects ==: --> >vze
-
-               -
-               === Reminders ===: --> >0l2
-
-               -
-               About Compact Nodes: --> >ucj
-
-               -
-               ID::c1x
-               def::>twz
-}
 
 
 | Links >0y2 or using | Traverse Mode >00w.

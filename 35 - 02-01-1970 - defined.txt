@@ -1,7 +1,5 @@
-  >c1x
- >m1r
-== Current Projects == >vze
-=== Reminders === >0l2
+  >m1r
+"Table of Contents" Dynamic Definition >v7r
 About Compact Nodes >ucj
 About Urtext >013
 Basic Syntax >znj
@@ -34,6 +32,8 @@ Example Child Node Using a Node Pointer >001
 Example Collection >aoq
 Example Compact Node >d7b
 Example Inline Node >00e
+Example List 2 >c1x
+Example List 3 >nc6
 Example Recursive Node Tree >01n
 Example Search Results >3x3
 Example Source Node 1 >017
@@ -43,6 +43,7 @@ Example Source Node 4 >01c
 Example first level >y9t
 Example inline node within the compact node. >9up
 Exporting >ezg
+Extending Node Lists Into Trees using DEPTH >thz
 File History >prp
 File Nodes >ekz
 Filename formats >00i
@@ -55,7 +56,6 @@ Generating a node ID manually >rfp
 HTML >xsh
 Hiding Line Numbers >01e
 Hiding Tabs >015
-Home >02o
 Home Node >00c
 In-Progress / Experimental / Wish List >014
 Inline Nodes >004
@@ -73,6 +73,7 @@ Navigation >omh
 Node IDs >01q
 Node Titles >ue2
 Nodes >01j
+Nodes Excluded from the Table of Contents >jkl
 Opening Links >01w
 Operations >e1x
 Other dynamic instructions >x0c
@@ -108,6 +109,7 @@ Syntax Highlighting >01d
 Syntax and Format >hg7
 TARGET( node or filename ) (recognized by pattern) >uh9
 Table of Contents >e5j
+Templating the Output with the SHOW parameter >8p5
 The Node Browser >01i
 The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 This node is just here as a destination from the node pointer in  Syntax Quick-Reference >ttt
@@ -115,8 +117,8 @@ Time Zones >7w6
 Timestamp Formats >00n
 Timestamps >005
 Tracking Node Dates and Times >m58
-Trailing Node IDs >xo9
 Trailing Node IDs >2a3
+Trailing Node IDs >xo9
 Traverse Mode >00w
 Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
 User Interface Elements >3n6

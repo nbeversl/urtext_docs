@@ -46,7 +46,7 @@ id :: 00i >00i:19
 
 
 id :: 00j >00j:87 
- | Pointers >lmu
+ | Pointers >>lmu
 
 
 id :: 00k >00k:361 
@@ -78,7 +78,7 @@ id :: 00q >00q:136
 
 
 id :: 00t >00t:286 
- Here is the same example child node from above: | Example Child Node Using a Node Pointer >001
+ Here is the same example child node from above: | Example Child Node Using a Node Pointer >>001
 
 
 id :: 00u >00u:1004 
@@ -142,7 +142,7 @@ id :: 01i >01i:626
 
 
 id :: 01j >01j:908 
- | Node IDs >01q
+ | Node IDs >>01q
 
 
 id :: 01m >01m:915 
@@ -170,7 +170,7 @@ id :: 01w >01w:177
 
 
 id :: 01x >01x:614 
- >00l
+ >>00l
 
 
 id :: 01y >01y:1567 
@@ -189,16 +189,8 @@ id :: 029 >029:324
  For more information on trees, see |  ?  >00h
 
 
-id :: 02o >02o:97 
- |  ?  >jxp
-
-
 id :: 04s >04s:163 
  Control-Shift-I will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually
-
-
-id :: 0l2 >0l2:21 
- === Reminders ===
 
 
 id :: 0y2 >0y2:255 
@@ -218,7 +210,7 @@ id :: 2fn >2fn:860
 
 
 id :: 3n6 >3n6:189 
- | Traverse Mode >00w
+ | Traverse Mode >>00w
 
 
 id :: 3x3 >3x3:60 
@@ -285,6 +277,10 @@ id :: 8fv >8fv:37
  second level
 
 
+id :: 8p5 >8p5:62 
+ Templating the Output with the SHOW parameter
+
+
 id :: 9u0 >9u0:197 
  Move File to Other Project
 
@@ -298,7 +294,7 @@ id :: a5m >a5m:684
 
 
 id :: ac5 >ac5:330 
- | User Interface Elements >3
+ | User Interface Elements >>3
 
 
 id :: arl >arl:610 
@@ -317,7 +313,7 @@ id :: bzv >bzv:497
  To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
 
 
-id :: c1x >c1x:294 
+id :: c1x >c1x:166 
  -
 
 
@@ -337,7 +333,7 @@ id :: e1x >e1x:197
  modifiying
 
 
-id :: e5j >e5j:2891 
+id :: e5j >e5j:2848 
  └── Word Wrap in Traverse Mode >xci
 
 
@@ -389,12 +385,16 @@ id :: j6t >j6t:313
  For nodes that can fit on a single line, such as items in a list, short phrases, word definitions, and so on, you can use a simplified node syntax. Begin the line with the caret symbol (^); the closing wrapper then becomes the next newline (the end of the same line). Like other nodes:
 
 
+id :: jkl >jkl:375 
+ This node is just here as a destination from the node pointer in  Syntax Quick-Reference >ttt
+
+
 id :: k67 >k67:18 
  Search
 
 
 id :: k8p >k8p:1709 
- | Collections >00k
+ | Collections >>00k
 
 
 id :: k8v >k8v:272 
@@ -439,6 +439,10 @@ id :: m58 >m58:407
 
 id :: m9d >m9d:282 
  The following dynamic definition exports this entire documentation (from its root node | Urtext  Version: 0.5-alpha  Usage Guide and References >a5m ) in Markdown format to a file called documentation.md:
+
+
+id :: nc6 >nc6:21260 
+ └── fifth level >5pq
 
 
 id :: njo >njo:89 
@@ -505,11 +509,15 @@ id :: tgp >tgp:364
  Unlike nodes, projects are uniquely identified by name. For this reason, each project must have an unique name within the running instance of Urtext. Projects can be named using the project_title key in the project's project_settings node. If no name is present, the project's name becomes its absolute path in the file system.
 
 
+id :: thz >thz:254 
+ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can expand these to hierarchical nested nodes up to arbitrary depth, whether from | Inline Nodes >004 or from | Pointers >lmu.
+
+
 id :: ttt >ttt:198 
  Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
 
 
-id :: twz >twz:893 
+id :: twz >twz:885 
  Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
 
 
@@ -529,8 +537,8 @@ id :: uy4 >uy4:299
  For example, the following definition targets node >3x3 (below) and populates it with all nodes containing the word "urtext".
 
 
-id :: vze >vze:35 
- == Current Projects ==
+id :: v7r >v7r:315 
+ | Example : Urtext Documentation Exported in Markdown to a File >m9d
 
 
 id :: wjj >wjj:283 
@@ -565,7 +573,7 @@ id :: xsh >xsh:83
  HTML
 
 
-id :: xxx >xxx:3898 
+id :: xxx >xxx:4062 
  third level >6qj
 
 
@@ -582,7 +590,7 @@ id :: yv2 >yv2:997
 
 
 id :: z7t >z7t:248 
- | Sublime Text Interface Tips >0
+ | Sublime Text Interface Tips >>0
 
 
 id :: znj >znj:1809 
