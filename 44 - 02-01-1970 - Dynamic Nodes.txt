@@ -72,12 +72,6 @@ index::08}
          ]]  
 
 
-        [[  +(ID=013) +(ID=z7t) +(ID=ac5) -(flags=exclude_from_export)
-            DEPTH(20)
-            FOOTER(title::Table of Contents)
-            EXPORT(f>README.md -markdown -preformat)
-         ]]  
-
 
     Changing the titles or structure of sections in this documentation will dynamically update the table of contents tree.
 

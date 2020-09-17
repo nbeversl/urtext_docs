@@ -27,7 +27,7 @@
 				%%-END-JSON
 
 			... to your Sublime project settings file. (Ignore the JSON syntax pass makers above beginning with `%%`
-			See | Pass Markers and Embedded Syntaxes >oy5 )
+			See | Embedded Syntaxes and Pass Markers >oy5 )
 	01e}
 
 	{  Full Screen / Distraction Free Mode

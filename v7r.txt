@@ -8,9 +8,8 @@ Here is the dynamic definition that generates the | Table of Contents >e5j for t
     +(ID=013) | About Urtext >013
     +(ID=z7t) | Quick Start, Guides and Examples >z7t
     +(ID=ac5) | Reference >ac5
-
+    -(flags=exclude_from_toc)
     For this documentation, we created a user-defined keyname `flags` in order to be able to exclude certain nodes that would clutter the dynamic output, since they are just examples/illustrations. These have been marked with the value `exclude_from_tree`. The following parameters excludes them from the Table of Contents output:
-
     
     Here we use `*` for DEPTH, which means unlimited depth.
     DEPTH(20)
@@ -24,7 +23,7 @@ Here is the dynamic definition that generates the | Table of Contents >e5j for t
 	As a curiosity, we can see all the nodes that have been excluded from the Table of Contents:
 	+(flags=exclude_from_tree -include-dynamic)
 	HEADER(Nodes Excluded from the Table of Contents)
-	FOOTER(flags::exclude_from_tree)
+	FOOTER(flags::exclude_from_toc)
 	ID(>jkl)
 
  ]]
@@ -36,10 +35,9 @@ Example Source Node 3 >01b
 Example Source Node 4 >01c
 The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 This node is just here as a destination from the node pointer in  Syntax Quick-Reference >ttt
-flags::exclude_from_tree
-ID::jkl
+flags::exclude_from_toc
 def::>v7r
-}
+ID::jkl }
 
 
 See also the definition that dynamically creates the README.md version of this documentation:

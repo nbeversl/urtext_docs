@@ -14,6 +14,7 @@ About Urtext >013
 Quick Start, Guides and Examples >z7t
 ├── Installation and Setup (Desktop) >6cd
 ├── Basic Syntax >znj
+│   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 ├── Dynamic Definitions : Syntax and Parameters >87g
 ├── Operations >e1x
 │   ├── Project Management >9u0
@@ -56,9 +57,11 @@ Reference >ac5
 │   ├── Case-sensitivity >l36
 │   └── Reserved Keys >fo2
 │       ├── `index` >00z
-│       └── `title` >pz3
+│       ├── `title` >pz3
+│       └── `def` >5cq
 ├── Dynamic Nodes >k8p
 │   ├── Lists >twz
+│   │   └──  >m1r
 │   └── Collections >00k
 │       └── Example Collection >aoq
 ├── Links and Pointers >00j
@@ -76,7 +79,7 @@ Reference >ac5
 │       ├── Duplicate Pointers >00t
 │       │   └── Example Child Node Using a Node Pointer >001
 │       └── Recursive Node Pointers >6ct
-│           ├── ! RECURSION (node in own ancestors): >a5m
+│           ├── ! RECURSION : Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
 │           └── Example Recursive Node Tree >01n
 ├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
@@ -91,9 +94,8 @@ Reference >ac5
     ├── The Node Browser >01i
     └── Traverse Mode >00w
         └── Word Wrap in Traverse Mode >xci
-ID::e5j
 def::>v7r
-} 
+ID::e5j } 
 
 {  Quick Start, Guides and Examples
 

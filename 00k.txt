@@ -21,7 +21,7 @@ id :: 003 >003:137
  Here are some tips for best leveraging Sublime's great UI features.
 
 
-id :: 004 >004:1337 
+id :: 004 >004:1287 
  For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
 
 
@@ -46,7 +46,7 @@ id :: 00i >00i:19
 
 
 id :: 00j >00j:87 
- | Pointers >>lmu
+ | Pointers >lmu
 
 
 id :: 00k >00k:361 
@@ -78,7 +78,7 @@ id :: 00q >00q:136
 
 
 id :: 00t >00t:286 
- Here is the same example child node from above: | Example Child Node Using a Node Pointer >>001
+ Here is the same example child node from above: | Example Child Node Using a Node Pointer >001
 
 
 id :: 00u >00u:1004 
@@ -134,23 +134,23 @@ id :: 01d >01d:683
 
 
 id :: 01e >01e:337 
- See | Pass Markers and Embedded Syntaxes >oy5
+ See | Embedded Syntaxes and Pass Markers >oy5
 
 
 id :: 01i >01i:626 
  In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see | `index` >00z).
 
 
-id :: 01j >01j:908 
- | Node IDs >>01q
+id :: 01j >01j:912 
+ ss
 
 
 id :: 01m >01m:915 
  This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
 
 
-id :: 01n >01n:73 
- Pointers >lmu
+id :: 01n >01n:5061 
+ └── Example Recursive Node Tree >01n
 
 
 id :: 01q >01q:379 
@@ -170,7 +170,7 @@ id :: 01w >01w:177
 
 
 id :: 01x >01x:614 
- >>00l
+ >00l
 
 
 id :: 01y >01y:1567 
@@ -185,7 +185,7 @@ id :: 023 >023:346
  Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
 
 
-id :: 029 >029:324 
+id :: 029 >029:312 
  For more information on trees, see |  ?  >00h
 
 
@@ -210,10 +210,10 @@ id :: 2fn >2fn:860
 
 
 id :: 3n6 >3n6:189 
- | Traverse Mode >>00w
+ | Traverse Mode >00w
 
 
-id :: 3x3 >3x3:60 
+id :: 3x3 >3x3:70 
  
 
 
@@ -229,20 +229,24 @@ id :: 4vu >4vu:314
  Titled links are updated at the single file level whenever that file is saved.
 
 
-id :: 5pq >5pq:37 
- fifth level
+id :: 5cq >5cq:18 
+ `def`
 
 
-id :: 6cd >6cd:1442 
- | Sublime Text Interface Tips >003
+id :: 5pq >5pq:61 
+ test fourth level
+
+
+id :: 6cd >6cd:1444 
+ ss
 
 
 id :: 6ct >6ct:1050 
  See | Dynamic Definitions >87g for more information on how to generate trees like this in dynamic nodes.
 
 
-id :: 6qj >6qj:43 
- third level
+id :: 6qj >6qj:50 
+ test test second level
 
 
 id :: 774 >774:1227 
@@ -257,8 +261,8 @@ id :: 7w6 >7w6:266
  Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the `timezone` key in | project_settings >00l to another valid value
 
 
-id :: 80d >80d:54 
- fourth level
+id :: 80d >80d:48 
+ third level
 
 
 id :: 87g >87g:942 
@@ -273,8 +277,8 @@ id :: 8e5 >8e5:399
  The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node. More information: | Embedded Syntaxes and Pass Markers >oy
 
 
-id :: 8fv >8fv:37 
- second level
+id :: 8fv >8fv:222 
+ See | "Table of Contents" Dynamic Definition >v7r for information)
 
 
 id :: 8p5 >8p5:62 
@@ -294,7 +298,7 @@ id :: a5m >a5m:684
 
 
 id :: ac5 >ac5:330 
- | User Interface Elements >>3
+ | User Interface Elements >3
 
 
 id :: arl >arl:610 
@@ -313,7 +317,7 @@ id :: bzv >bzv:497
  To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
 
 
-id :: c1x >c1x:166 
+id :: c1x >c1x:179 
  -
 
 
@@ -333,7 +337,7 @@ id :: e1x >e1x:197
  modifiying
 
 
-id :: e5j >e5j:2848 
+id :: e5j >e5j:3044 
  └── Word Wrap in Traverse Mode >xci
 
 
@@ -349,7 +353,7 @@ id :: ezg >ezg:721
  (source_id): The source node to export.
 
 
-id :: fo2 >fo2:115 
+id :: fo2 >fo2:123 
  There are two reserved keys that Urtext interprets in a special way:
 
 
@@ -385,7 +389,7 @@ id :: j6t >j6t:313
  For nodes that can fit on a single line, such as items in a list, short phrases, word definitions, and so on, you can use a simplified node syntax. Begin the line with the caret symbol (^); the closing wrapper then becomes the next newline (the end of the same line). Like other nodes:
 
 
-id :: jkl >jkl:375 
+id :: jkl >jkl:384 
  This node is just here as a destination from the node pointer in  Syntax Quick-Reference >ttt
 
 
@@ -394,7 +398,7 @@ id :: k67 >k67:18
 
 
 id :: k8p >k8p:1709 
- | Collections >>00k
+ | Collections >00k
 
 
 id :: k8v >k8v:272 
@@ -429,8 +433,8 @@ id :: lwg >lwg:19
  User-Defined
 
 
-id :: m1r >m1r:814 
- Duplicate Node IDs >bzv
+id :: m1r >m1r:634 
+ Dynamic Definitions : Syntax and Parameters >87g
 
 
 id :: m58 >m58:407 
@@ -441,8 +445,8 @@ id :: m9d >m9d:282
  The following dynamic definition exports this entire documentation (from its root node | Urtext  Version: 0.5-alpha  Usage Guide and References >a5m ) in Markdown format to a file called documentation.md:
 
 
-id :: nc6 >nc6:21260 
- └── fifth level >5pq
+id :: nc6 >nc6:20264 
+ └── test fifth level >xc9
 
 
 id :: njo >njo:89 
@@ -517,11 +521,11 @@ id :: ttt >ttt:198
  Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
 
 
-id :: twz >twz:885 
+id :: twz >twz:873 
  Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
 
 
-id :: ucj >ucj:189 
+id :: ucj >ucj:199 
  └── About Compact Nodes >ucj
 
 
@@ -553,6 +557,10 @@ id :: xba >xba:276
  Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
 
 
+id :: xc9 >xc9:20 
+ test fifth leve
+
+
 id :: xci >xci:506 
  Whenever Traverse Mode is enabled on a view, word wrap for that view is turned off altogether to prevent awkward wrapping of trees. It is restored when Traverse Mode is turned off.
 
@@ -573,12 +581,8 @@ id :: xsh >xsh:83
  HTML
 
 
-id :: xxx >xxx:4062 
- third level >6qj
-
-
-id :: y9t >y9t:70 
- Example first level
+id :: xxx >xxx:4103 
+ third level >80d
 
 
 id :: yin >yin:669 
@@ -590,16 +594,15 @@ id :: yv2 >yv2:997
 
 
 id :: z7t >z7t:248 
- | Sublime Text Interface Tips >>0
+ | Sublime Text Interface Tips >0
 
 
 id :: znj >znj:1809 
  (Closing pass marker. See above)
 
 
-ID::aoq
 def::>00k
-}
+ID::aoq }
 
 
 

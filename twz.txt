@@ -14,35 +14,35 @@ Lists
 		LIMIT(20)
 
 		Here the FORMAT parameter is used to indent the output 15 spaces for better appearance.
-		FORMAT(indent:15) 
+		FORMAT(indent:3) 
 		]]
 
-{                 >xxx
-               "Table of Contents" Dynamic Definition >v7r
-               About Compact Nodes >ucj
-               About Urtext >013
-               Basic Syntax >znj
-               Case-sensitivity >l36
-               Collections >00k
-               Compact Nodes >j6t
-               Compact Nodes >kpz
-               Comparison To Other Tools >h8z
-               Dependencies and Installation >2fn
-               Description >yv2
-               Details on the Sublime Implementation >01u
-               Disable Prompts for File Reload >023
-               Documentation >ooe
-               Download Dependencies from a Monorepo >arl
-               Download and Install Dependencies Manually >774
-               Duplicate Node IDs >bzv
-               Duplicate Pointers >00t
-               Dynamic Definitions : Syntax and Parameters >87g
-               ID::m1r
-               def::>twz
-}
+{
+			>xxx
+			"Table of Contents" Dynamic Definition >v7r
+			About Compact Nodes >ucj
+			About Urtext >013
+			Basic Syntax >znj
+			Case-sensitivity >l36
+			Collections >00k
+			Compact Nodes >j6t
+			Compact Nodes >kpz
+			Comparison To Other Tools >h8z
+			Dependencies and Installation >2fn
+			Description >yv2
+			Details on the Sublime Implementation >01u
+			Disable Prompts for File Reload >023
+			Documentation >ooe
+			Download Dependencies from a Monorepo >arl
+			Download and Install Dependencies Manually >774
+			Duplicate Node IDs >bzv
+			Duplicate Pointers >00t
+			Dynamic Definitions : Syntax and Parameters >87g
+			def::>twz
+			ID::m1r }
 
 
-               Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
+   Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
 
 
 

@@ -17,6 +17,6 @@ To make a new project, open an empty folder and select Select `Urtext : Initiali
 See also:
 
 | Sublime Text Interface Tips >003
-
+ss
 
 id::6cd

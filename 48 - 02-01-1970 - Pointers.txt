@@ -35,11 +35,17 @@ The advantages to Node Pointers are many, including:
     Note that if you view the entire tree with another node selected as root, one full iteration will still appear, with the point of recursion falling elsewhere in the tree. Below is the Table of Contents with | Pointers >lmu as root. 
 
 
-{           Example Recursive Node Tree
-          Pointers >lmu
-          ID::01n
-          def::>6ct
-}
+{
+										Example Recursive Node Tree
+										Pointers >lmu
+										├── Example Child Node Using a Node Pointer >001
+										├── Duplicate Pointers >00t
+										│   └── Example Child Node Using a Node Pointer >001
+										└── Recursive Node Pointers >6ct
+										    ├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+										    └── Example Recursive Node Tree >01n
+										def::>6ct
+										ID::01n }
 
     [[ ID(>01n) +(id=lmu) DEPTH(*) HEADER(Example Recursive Node Tree)  FORMAT(indent:10)]]
 

@@ -13,19 +13,19 @@ Templating the Output with the SHOW parameter
 	FORMAT(indent:3) 
 ]]
 
-          {    Example List 2
-   : >xxx
-   -
-   : >m1r
-   -
-   "Table of Contents" Dynamic Definition: >v7r
-   -
-   About Compact Nodes: >ucj
-   -
-   About Urtext: >013
-   -
-   ID::c1x
-   def::>8p5
-}
+          {
+			Example List 2
+			: >m1r
+			-
+			: >xxx
+			-
+			"Table of Contents" Dynamic Definition: >v7r
+			-
+			About Compact Nodes: >ucj
+			-
+			About Urtext: >013
+			-
+			def::>8p5
+			ID::c1x }
 
 id::8p5
