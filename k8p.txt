@@ -1,24 +1,25 @@
 Dynamic Nodes
 
-Dynamic nodes contain content built from the contents of other nodes. Dynamic content stays up to date with its source content at all times. 
+Dynamic nodes contain content aggregated from the contents of other nodes. Dynamic content stays up to date with its source content "dynamically" (on file save). A dynamic node can be seen as a "view into" other content. 
 
-
-Ctrl-Shift-] creates a new dynamic definition in Sublime.
-
-In Pythonista or other editors, create them manually.
-
-
-In Sublime this will be auto-populated using the shortcut above; however you can also replace it with the ID of another node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. 
-
-
-
-Dynamic are the same as any other node, except that their content is generated automatically from a Dynamic Definition. Dynamic Definitions are surrounded with double square brackets [[ ]], with complete parameters and syntax listed here : | Dynamic Definitions >87g. This section illustrates more generally the use and purpose of dynamic nodes, with examples.
+Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets [[ ]], and have there own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference | Dynamic Definitions : Syntax and Parameters >87g.
 
 Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-There are two main kinds of dynamic output: lists and collections: "Lists" are exactly that: lists of nodes, with each node displayed not more than once once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list. Collections, on the other hand, show metadata entries with their context; the same node may appear many times in a colelction if it contains many metadata entries matching the queried parameters.
+In Sublime Text, Ctrl-Shift-] creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.
+
+There are two main kinds of dynamic output, Lists and Collections:
+
+"Lists" are lists of nodes, with each node displayed not more than once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list.
 
 	| Lists >>twz
+
+Lists can be expanded into trees that show the outline of many nodes across many files at any specified depth, up to. In fact, a list is just a tree with a depth of "1".
+
+	| Trees >>w8u
+
+"Collections", on the other hand, aggregate metadata entries with their context; the same node may appear many times in a collection if it contains many metadata entries matching the queried parameters.
+
 	| Collections >>00k
 
-id::k8p; 
+id::k8p 

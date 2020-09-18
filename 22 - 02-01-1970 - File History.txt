@@ -1,13 +1,9 @@
-File History
+History
 
-Urtext files, being in plaintext, can be versioned using tools such as Git, Subversion, Mercurial, and others. Those tools are intended mainly for coding, when it is generally considered bad practice to commit non-working/non-compiling iterations of a project. Though Urtext files do compile, their actual text content is not a factor in this, so is reasonable to track changes at all stages of a project, even at granular levels.
+Though use of powerful version control tools (such as Git, Mercurial ,etc.) is not discouraged, Urtext has a lighter built-in versioning system that tracks edits at intervals. It is not necessary to make explicit "commits" in order to utilize this. Urtext creates a single, linear, nondestructive history of each file's content, with each snapshot being a "diff", or record of changes, since the previous snapshot. When a previous state is restored, no "checkout" or "rewind" occurs; rather, the newly restored state is appended to the history. Therefore, in addition to functioning as version control, the feature can also be used as an infinite and non-destructive "undo/redo" editing history that saves state when the file is closed. The default interval is 10 seconds, and can be modified in project_settings. 
 
-Though use of powerful version control tools is not discouraged, Urtext has its own, lighter versioning system that tracks edits in the background at discrete intervals so it is not necessary to make explicit "commits" to have access to file history. Urtext creates a single, linear, nondestructive history of each file's content, with each snapshot being a "diff", or record of changes since the previous snapshot. When a previous state is restored, no "checkout" or "rewind" occurs; rather, the newly restored state is appended to the end of the history. Therefore, in addition to functioning as version control, the feature can also be used as a non-destructive "undo/redo" editing history that saves state after the file is closed.
+To access a file's history, use Control-Shift-G in Sublime Text.
 
-The default interval is 10 seconds, and can be modified in project_settings. 
-To access a file's timeline, use Control-Shift-G in Sublime Text. 
-
-Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories. 
-
+Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories.
 
 ID::prp

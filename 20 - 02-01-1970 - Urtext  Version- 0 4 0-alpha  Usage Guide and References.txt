@@ -14,7 +14,6 @@ About Urtext >013
 Quick Start, Guides and Examples >z7t
 ├── Installation and Setup (Desktop) >6cd
 ├── Basic Syntax >znj
-│   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 ├── Dynamic Definitions : Syntax and Parameters >87g
 ├── Operations >e1x
 │   ├── Project Management >9u0
@@ -61,7 +60,12 @@ Reference >ac5
 │       └── `def` >5cq
 ├── Dynamic Nodes >k8p
 │   ├── Lists >twz
-│   │   └──  >m1r
+│   │   └── Example: Nodes from the Documentation >m1r
+│   ├── Trees >w8u
+│   │   ├── Expanding a List with the DEPTH Parameter >h6l
+│   │   │   └── Example Tree >4gr
+│   │   └── "Table of Contents" Dynamic Definition >v7r
+│   │       └── Nodes Excluded from the Table of Contents >jkl
 │   └── Collections >00k
 │       └── Example Collection >aoq
 ├── Links and Pointers >00j
@@ -84,8 +88,8 @@ Reference >ac5
 ├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 │   └── Example : Fragment Exported to HTML >baq
-├── Filenames >01m
-├── File History >prp
+├── File Naming >01m
+├── History >prp
 ├── Errors and Warnings >bpk
 ├── Using Multiple Projects at a Time >ipy
 │   ├── Project Naming (Identification) >tgp
@@ -94,8 +98,8 @@ Reference >ac5
     ├── The Node Browser >01i
     └── Traverse Mode >00w
         └── Word Wrap in Traverse Mode >xci
-def::>v7r
-ID::e5j } 
+ID::e5j
+def::>v7r } 
 
 {  Quick Start, Guides and Examples
 
@@ -107,22 +111,22 @@ ID::e5j }
 | Sublime Text Interface Tips >>003
 z7t}
 
-{ 	Reference
-	| Projects >>dce
-	| Nodes >>01j
-	| Metadata >>00x
+{   Reference
+  | Projects >>dce
+  | Nodes >>01j
+  | Metadata >>00x
   
 
 | Dynamic Nodes >>k8p
-	
-	| Links and Pointers >>00j
-	| Exporting >>ezg
-	| Filenames >>01m
-	| File History >>prp
+  
+  | Links and Pointers >>00j
+  | Exporting >>ezg
+  | File Naming >>01m
+  | History >>prp
   | Errors and Warnings >>bpk
   | Embedded Syntaxes and Pass Markers >oy5
-	| Using Multiple Projects at a Time >>ipy
-	
+  | Using Multiple Projects at a Time >>ipy
+  
 | User Interface Elements >>3n6
 ac5}
 

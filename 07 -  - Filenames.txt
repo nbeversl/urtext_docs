@@ -1,5 +1,5 @@
 
-Filenames                                                                                 
+File Naming                                                                                
 
 Since node identities are independent of their containing filenames, you can use any naming convention you want. Urtext can also rename files automatically in convenient formats based on their title and/or index. Renaming by index is useful, for instance, if you want file-level nodes easily readable inside a file system, mobile app, or other file browser.
 

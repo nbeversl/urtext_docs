@@ -3,14 +3,14 @@ Linking to outside resources
 { Web / HTTP(S)
 
         HTTP(S) links are recognized automatically and will open in the default browser.    
-        Example: pressing Ctrl/Command-Shift-/ on this line below will open the link: http://github.com
+        Example: pressing Ctrl/Command-Shift-/ on this line will open the link: http://github.com
         
 00o}
 
 { Files
         
 		Links to files can be made by writing f> , followed immediately with a file path relative to the folder of the project:
-		Example:   f>./README.md
+		Example:  f>./README.md
     
 00p}
                                                                                                

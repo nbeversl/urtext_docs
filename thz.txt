@@ -15,8 +15,6 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 
 {
 		Example List 3
-		 >m1r
-		 >xxx
 		"Table of Contents" Dynamic Definition >v7r
 		└── Nodes Excluded from the Table of Contents >jkl
 		About Compact Nodes >ucj
@@ -57,7 +55,12 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Dynamic Definitions : Syntax and Parameters >87g
 		Dynamic Nodes >k8p
 		├── Lists >twz
-		│   └──  >m1r
+		│   └── Example: Nodes from the Documentation >m1r
+		├── Trees >w8u
+		│   ├── Expanding a List with the DEPTH Parameter >h6l
+		│   │   └── Example Tree >4gr
+		│   └── "Table of Contents" Dynamic Definition >v7r
+		│       └── Nodes Excluded from the Table of Contents >jkl
 		└── Collections >00k
 		    └── Example Collection >aoq
 		Dynamic Nodes - OLD >qjl
@@ -97,21 +100,24 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Example Source Node 2 >00v
 		Example Source Node 3 >01b
 		Example Source Node 4 >01c
+		Example Tree >4gr
 		Example first level >8fv
 		└── test test second level >6qj
 		    └── third level >80d
 		        └── test fourth level >5pq
 		            └── test fifth level >xc9
 		Example inline node within the compact node. >9up
+		Example: Nodes from the Documentation >m1r
+		Expanding a List with the DEPTH Parameter >h6l
+		└── Example Tree >4gr
 		Exporting >ezg
 		├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 		└── Example : Fragment Exported to HTML >baq
 		Extending Node Lists Into Trees using DEPTH >thz
 		└── Example List 3 >nc6
-		File History >prp
+		File Naming >01m
 		File Nodes >ekz
 		Filename formats >00i
-		Filenames >01m
 		Files >00p
 		Full Screen / Distraction Free Mode >002
 		Full Text Search >4p9
@@ -125,6 +131,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		HTML >xsh
 		Hiding Line Numbers >01e
 		Hiding Tabs >015
+		History >prp
 		Home Node >00c
 		In-Progress / Experimental / Wish List >014
 		└── iPhone/iPad/iOS >01y
@@ -167,7 +174,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		        │   └── Reference >ac5
 		        └── Example Recursive Node Tree >01n
 		Lists >twz
-		└──  >m1r
+		└── Example: Nodes from the Documentation >m1r
 		Metadata >00x
 		├── General Syntax >8dw
 		├── Timestamps >005
@@ -236,8 +243,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │       ├── Dynamic Nodes >k8p
 		    │       ├── Links and Pointers >00j
 		    │       ├── Exporting >ezg
-		    │       ├── Filenames >01m
-		    │       ├── File History >prp
+		    │       ├── File Naming >01m
+		    │       ├── History >prp
 		    │       ├── Errors and Warnings >bpk
 		    │       ├── Using Multiple Projects at a Time >ipy
 		    │       └── User Interface Elements >3n6
@@ -252,8 +259,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    ├── Filename formats >00i
 		    └── Timestamp Formats >00n
 		Python >xor
-		Python >eea
 		Python >ljr
+		Python >eea
 		Pythonista >iy8
 		Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind th >q8j
 		Quick Start, Guides and Examples >z7t
@@ -315,6 +322,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       │   └── Reserved Keys >fo2
 		│       ├── Dynamic Nodes >k8p
 		│       │   ├── Lists >twz
+		│       │   ├── Trees >w8u
 		│       │   └── Collections >00k
 		│       ├── Links and Pointers >00j
 		│       │   ├── Links >0y2
@@ -325,8 +333,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       ├── Exporting >ezg
 		│       │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 		│       │   └── Example : Fragment Exported to HTML >baq
-		│       ├── Filenames >01m
-		│       ├── File History >prp
+		│       ├── File Naming >01m
+		│       ├── History >prp
 		│       ├── Errors and Warnings >bpk
 		│       ├── Using Multiple Projects at a Time >ipy
 		│       │   ├── Project Naming (Identification) >tgp
@@ -367,7 +375,12 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       └── `def` >5cq
 		├── Dynamic Nodes >k8p
 		│   ├── Lists >twz
-		│   │   └──  >m1r
+		│   │   └── Example: Nodes from the Documentation >m1r
+		│   ├── Trees >w8u
+		│   │   ├── Expanding a List with the DEPTH Parameter >h6l
+		│   │   │   └── Example Tree >4gr
+		│   │   └── "Table of Contents" Dynamic Definition >v7r
+		│   │       └── Nodes Excluded from the Table of Contents >jkl
 		│   └── Collections >00k
 		│       └── Example Collection >aoq
 		├── Links and Pointers >00j
@@ -390,8 +403,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Exporting >ezg
 		│   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 		│   └── Example : Fragment Exported to HTML >baq
-		├── Filenames >01m
-		├── File History >prp
+		├── File Naming >01m
+		├── History >prp
 		├── Errors and Warnings >bpk
 		├── Using Multiple Projects at a Time >ipy
 		│   ├── Project Naming (Identification) >tgp
@@ -442,7 +455,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Example List 2 >c1x
 		The Node Browser >01i
 		The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
-		This node is just here as a destination from the node pointer in  Syntax Quick-Reference >ttt
+		This node is just here as a destination from the node pointer in  Basic Syntax >ttt
 		Time Zones >7w6
 		Timestamp Formats >00n
 		Timestamps >005
@@ -454,6 +467,11 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Trailing Node IDs >2a3
 		Traverse Mode >00w
 		└── Word Wrap in Traverse Mode >xci
+		Trees >w8u
+		├── Expanding a List with the DEPTH Parameter >h6l
+		│   └── Example Tree >4gr
+		└── "Table of Contents" Dynamic Definition >v7r
+		    └── Nodes Excluded from the Table of Contents >jkl
 		Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
 		├── Table of Contents >e5j
 		├── Quick Start, Guides and Examples >z7t
@@ -506,7 +524,10 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │       └── `def` >5cq
 		    ├── Dynamic Nodes >k8p
 		    │   ├── Lists >twz
-		    │   │   └──  >m1r
+		    │   │   └── Example: Nodes from the Documentation >m1r
+		    │   ├── Trees >w8u
+		    │   │   ├── Expanding a List with the DEPTH Parameter >h6l
+		    │   │   └── "Table of Contents" Dynamic Definition >v7r
 		    │   └── Collections >00k
 		    │       └── Example Collection >aoq
 		    ├── Links and Pointers >00j
@@ -526,8 +547,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    ├── Exporting >ezg
 		    │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 		    │   └── Example : Fragment Exported to HTML >baq
-		    ├── Filenames >01m
-		    ├── File History >prp
+		    ├── File Naming >01m
+		    ├── History >prp
 		    ├── Errors and Warnings >bpk
 		    ├── Using Multiple Projects at a Time >ipy
 		    │   ├── Project Naming (Identification) >tgp
@@ -575,8 +596,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		third level >80d
 		└── test fourth level >5pq
 		    └── test fifth level >xc9
-		def::>thz
-		ID::nc6 }
+		ID::nc6
+		def::>thz }
 
 id::thz
 from::wwci-00407.local

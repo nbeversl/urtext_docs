@@ -15,17 +15,17 @@ Templating the Output with the SHOW parameter
 
           {
 			Example List 2
-			: >m1r
-			-
-			: >xxx
-			-
 			"Table of Contents" Dynamic Definition: >v7r
 			-
 			About Compact Nodes: >ucj
 			-
 			About Urtext: >013
 			-
-			def::>8p5
-			ID::c1x }
+			Basic Syntax: >znj
+			-
+			Case-sensitivity: >l36
+			-
+			ID::c1x
+			def::>8p5 }
 
 id::8p5

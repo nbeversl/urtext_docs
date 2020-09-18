@@ -1,6 +1,6 @@
 Collections
 
-Collections are for "collecting" metadata entries, along with their context, in order to gain a range of views into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view. 
+Collections are for "collecting" metadata entries, along with their context, in order to gain a "view" into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view. 
 
 [[   ID(>aoq)
      +(*) <- In order to return anything, we must include some nodes in the query. Here we have included all nodes.
@@ -49,8 +49,8 @@ id :: 00j >00j:87
  | Pointers >lmu
 
 
-id :: 00k >00k:361 
- Collections are for "collecting" metadata entries, along with their context, in order to gain a range of views into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view.
+id :: 00k >00k:353 
+ Collections are for "collecting" metadata entries, along with their context, in order to gain a "view" into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view.
 
 
 id :: 00l >00l:376 
@@ -65,20 +65,20 @@ id :: 00n >00n:284
  Changing the default node_date_timestamp name and bevahior
 
 
-id :: 00o >00o:222 
- Example: pressing Ctrl/Command-Shift-/ on this line below will open the link: http://github.com
+id :: 00o >00o:216 
+ Example: pressing Ctrl/Command-Shift-/ on this line will open the link: http://github.com
 
 
-id :: 00p >00p:170 
- Example:   f>./README.md
+id :: 00p >00p:169 
+ Example:  f>./README.md
 
 
 id :: 00q >00q:136 
  Linking to outside resources
 
 
-id :: 00t >00t:286 
- Here is the same example child node from above: | Example Child Node Using a Node Pointer >001
+id :: 00t >00t:436 
+ Note that it appears twice in the Table of Contents, once as a child of this node and once as a child of this node's parent node ( | Pointers >lmu).
 
 
 id :: 00u >00u:1004 
@@ -145,11 +145,11 @@ id :: 01j >01j:912
  ss
 
 
-id :: 01m >01m:915 
+id :: 01m >01m:916 
  This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
 
 
-id :: 01n >01n:5061 
+id :: 01n >01n:4087 
  └── Example Recursive Node Tree >01n
 
 
@@ -213,7 +213,7 @@ id :: 3n6 >3n6:189
  | Traverse Mode >00w
 
 
-id :: 3x3 >3x3:70 
+id :: 3x3 >3x3:56 
  
 
 
@@ -221,12 +221,16 @@ id :: 3xv >3xv:37
  Traverse Mode
 
 
+id :: 4gr >4gr:1889 
+ └── Example Collection >aoq
+
+
 id :: 4p9 >4p9:271 
  Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments.
 
 
-id :: 4vu >4vu:314 
- Titled links are updated at the single file level whenever that file is saved.
+id :: 4vu >4vu:305 
+ Prepending a pipe character to any node link will populate the space between the pipe and link with the node's title, from its metadata or default title. Examples are found throughout this documentation. Titled links are updated at the single file level whenever the file is saved
 
 
 id :: 5cq >5cq:18 
@@ -241,8 +245,8 @@ id :: 6cd >6cd:1444
  ss
 
 
-id :: 6ct >6ct:1050 
- See | Dynamic Definitions >87g for more information on how to generate trees like this in dynamic nodes.
+id :: 6ct >6ct:887 
+ (See | Trees >w8u for more information on how to generate trees like this in dynamic nodes.)
 
 
 id :: 6qj >6qj:50 
@@ -273,7 +277,7 @@ id :: 8dw >8dw:1181
  Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexe
 
 
-id :: 8e5 >8e5:399 
+id :: 8e5 >8e5:398 
  The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node. More information: | Embedded Syntaxes and Pass Markers >oy
 
 
@@ -297,7 +301,7 @@ id :: a5m >a5m:684
  - Control-Shift-h at any time to return to this "home" node.
 
 
-id :: ac5 >ac5:330 
+id :: ac5 >ac5:338 
  | User Interface Elements >3
 
 
@@ -317,7 +321,7 @@ id :: bzv >bzv:497
  To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
 
 
-id :: c1x >c1x:179 
+id :: c1x >c1x:194 
  -
 
 
@@ -337,7 +341,7 @@ id :: e1x >e1x:197
  modifiying
 
 
-id :: e5j >e5j:3044 
+id :: e5j >e5j:3186 
  └── Word Wrap in Traverse Mode >xci
 
 
@@ -349,8 +353,8 @@ id :: ekz >ekz:322
  To create a new file, press `Urtext-;`. A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
 
 
-id :: ezg >ezg:721 
- (source_id): The source node to export.
+id :: ezg >ezg:390 
+ Urtext can export nodes, and sets of nodes, to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within the same project. Like other dynamic functions, exporting is dynamic ; that is, when changes are made to the source nodes, exports are immediately updated, whether they are in a project node or an external file.
 
 
 id :: fo2 >fo2:123 
@@ -359,6 +363,10 @@ id :: fo2 >fo2:123
 
 id :: frm >frm:16 
  require an ID
+
+
+id :: h6l >h6l:527 
+ Expanding a List with the DEPTH Parameter
 
 
 id :: h8z >h8z:720 
@@ -381,23 +389,23 @@ id :: ipy >ipy:1522
  In Pythonista, use "Switch Projects" from the feature menu.
 
 
-id :: iy8 >iy8:124 
- Use the `/` key when the cursor is on any line containing a link.
+id :: iy8 >iy8:127 
+ Use the `/` botton when the cursor is on any line containing a link.
 
 
 id :: j6t >j6t:313 
  For nodes that can fit on a single line, such as items in a list, short phrases, word definitions, and so on, you can use a simplified node syntax. Begin the line with the caret symbol (^); the closing wrapper then becomes the next newline (the end of the same line). Like other nodes:
 
 
-id :: jkl >jkl:384 
- This node is just here as a destination from the node pointer in  Syntax Quick-Reference >ttt
+id :: jkl >jkl:299 
+ This node is just here as a destination from the node pointer in  Basic Syntax >ttt
 
 
 id :: k67 >k67:18 
  Search
 
 
-id :: k8p >k8p:1709 
+id :: k8p >k8p:2186 
  | Collections >00k
 
 
@@ -421,11 +429,11 @@ id :: lhs >lhs:448
  - any other writing or information management that can be done in text form
 
 
-id :: ljr >ljr:86 
+id :: ljr >ljr:85 
  Python
 
 
-id :: lmu >lmu:911 
+id :: lmu >lmu:895 
  - The tree can be displayed from any arbitrary starting point, whether or not its branches are within or beyond a particular file.
 
 
@@ -433,23 +441,23 @@ id :: lwg >lwg:19
  User-Defined
 
 
-id :: m1r >m1r:634 
- Dynamic Definitions : Syntax and Parameters >87g
+id :: m1r >m1r:676 
+ Dynamic Nodes >k8p
 
 
 id :: m58 >m58:407 
  Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created:
 
 
-id :: m9d >m9d:282 
- The following dynamic definition exports this entire documentation (from its root node | Urtext  Version: 0.5-alpha  Usage Guide and References >a5m ) in Markdown format to a file called documentation.md:
+id :: m9d >m9d:278 
+ The following dynamic definition exports this entire documentation from its root node | Urtext  Version: 0.5-alpha  Usage Guide and References >a5m ) in Markdown format to a file called f>./README.md:
 
 
-id :: nc6 >nc6:20264 
+id :: nc6 >nc6:18169 
  └── test fifth level >xc9
 
 
-id :: njo >njo:89 
+id :: njo >njo:85 
  JSON
 
 
@@ -473,7 +481,7 @@ id :: oy5 >oy5:228
  Note that no text content wrapped between pass markers will appear in Urtext dynamic output, since characters in other syntaxes would have unpredictable interactions.
 
 
-id :: prp >prp:1680 
+id :: prp >prp:1240 
  Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories.
 
 
@@ -517,15 +525,15 @@ id :: thz >thz:254
  By default, Node lists are "one-dimensional". With the DEPTH parameter, you can expand these to hierarchical nested nodes up to arbitrary depth, whether from | Inline Nodes >004 or from | Pointers >lmu.
 
 
-id :: ttt >ttt:198 
+id :: ttt >ttt:188 
  Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
 
 
-id :: twz >twz:873 
- Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
+id :: twz >twz:138 
+ Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
 
 
-id :: ucj >ucj:199 
+id :: ucj >ucj:189 
  └── About Compact Nodes >ucj
 
 
@@ -541,8 +549,12 @@ id :: uy4 >uy4:299
  For example, the following definition targets node >3x3 (below) and populates it with all nodes containing the word "urtext".
 
 
-id :: v7r >v7r:315 
+id :: v7r >v7r:319 
  | Example : Urtext Documentation Exported in Markdown to a File >m9d
+
+
+id :: w8u >w8u:277 
+ Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
 
 
 id :: wjj >wjj:283 
@@ -581,10 +593,6 @@ id :: xsh >xsh:83
  HTML
 
 
-id :: xxx >xxx:4103 
- third level >80d
-
-
 id :: yin >yin:669 
  Note that metadata tags do not actually get added to the inline text of the the children/descendants as a result of this instruction, only that they acquire the specified key/value metadata pair for all purposes metadata serves within Urtext.
 
@@ -597,12 +605,12 @@ id :: z7t >z7t:248
  | Sublime Text Interface Tips >0
 
 
-id :: znj >znj:1809 
- (Closing pass marker. See above)
+id :: znj >znj:1799 
+ (Closing pass marker.)
 
 
-def::>00k
-ID::aoq }
+ID::aoq
+def::>00k }
 
 
 

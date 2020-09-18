@@ -19,11 +19,7 @@ Links and Pointers
 
 {  Dynamic Titles
 
-    Prepending a pipe character to any node link will populate the space between the pipe and link with the node's title, from its metadata or default title. Examples are found throughout this documentation. 
-
-    Titled links are updated at the single file level whenever that file is saved.  
-
-4vu}
+    Prepending a pipe character to any node link will populate the space between the pipe and link with the node's title, from its metadata or default title. Examples are found throughout this documentation. Titled links are updated at the single file level whenever the file is saved.  4vu}
 
 { Opening Links 
     
@@ -34,7 +30,7 @@ Links and Pointers
 
     { Pythonista 
 
-        Use the `/` key when the cursor is on any line containing a link.
+        Use the `/` botton when the cursor is on any line containing a link.
         implementation::pythonista; iy8}
 
     Note that Urtext reads node regions on every save, so cursor location may be imprecise if the file has been altered since the last save. 

@@ -23,7 +23,7 @@ Note that no text content wrapped between pass markers will appear in Urtext dyn
 		}
 
 	%%-END-JSON
-	   njo}
+njo}
 
 { Python
 
@@ -34,7 +34,7 @@ Note that no text content wrapped between pass markers will appear in Urtext dyn
 		return i*10
 
 	%%-END-PYTHON   
-	ljr}
+ljr}
 
 
 { Plaintext
