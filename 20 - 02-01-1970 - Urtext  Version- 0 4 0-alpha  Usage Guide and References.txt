@@ -83,17 +83,24 @@ Reference >ac5
 │       ├── Duplicate Pointers >00t
 │       │   └── Example Child Node Using a Node Pointer >001
 │       └── Recursive Node Pointers >6ct
-│           ├── ! RECURSION : Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
 │           └── Example Recursive Node Tree >01n
 ├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 │   └── Example : Fragment Exported to HTML >baq
 ├── File Naming >01m
+│   └── Reindex All Files >pz9
 ├── History >prp
+├── project_settings >00l
+│   ├── `title` >egg
+│   ├── `project_title` >xqu
+│   ├── `home` >d6u
+│   ├── `console_log` >1lz
+│   ├── `filenames` >lch
+│   └── `timestamp_format` >00n
 ├── Errors and Warnings >bpk
-├── Using Multiple Projects at a Time >ipy
+├── Using Multiple Projects >ipy
 │   ├── Project Naming (Identification) >tgp
-│   └── Linking Between Projects >7lx
+│   └── Cross-Project Linking >7lx
 └── User Interface Elements >3n6
     ├── The Node Browser >01i
     └── Traverse Mode >00w
@@ -103,31 +110,28 @@ def::>v7r }
 
 {  Quick Start, Guides and Examples
 
-| Installation and Setup (Desktop) >>6cd
-| Using Urtext in iOS with Pythonista >os4
-| Basic Syntax >>znj
-| Dynamic Definitions : Syntax and Parameters >>87g
-| Operations >>e1x
-| Sublime Text Interface Tips >>003
+  | Installation and Setup (Desktop) >>6cd
+  | Using Urtext in iOS with Pythonista >os4
+  | Basic Syntax >>znj
+  | Dynamic Definitions : Syntax and Parameters >>87g
+  | Operations >>e1x
+  | Sublime Text Interface Tips >>003
 z7t}
 
 {   Reference
   | Projects >>dce
   | Nodes >>01j
   | Metadata >>00x
-  
-
-| Dynamic Nodes >>k8p
-  
+  | Dynamic Nodes >>k8p
   | Links and Pointers >>00j
   | Exporting >>ezg
   | File Naming >>01m
   | History >>prp
+  | project_settings >>00l
   | Errors and Warnings >>bpk
   | Embedded Syntaxes and Pass Markers >oy5
-  | Using Multiple Projects at a Time >>ipy
-  
-| User Interface Elements >>3n6
+  | Using Multiple Projects >>ipy
+  | User Interface Elements >>3n6
 ac5}
 
 

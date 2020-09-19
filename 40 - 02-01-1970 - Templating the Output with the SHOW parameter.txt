@@ -15,15 +15,25 @@ Templating the Output with the SHOW parameter
 
           {
 			Example List 2
+			Compact Nodes: >j6t
+			-
+			├── require an ID: >frm
+			-
+			├── can have arbitrary other metadata: >xlc
+			-
+			├── become child nodes of their containing node.: >hiz
+			-
+			└── About Compact Nodes: >ucj
+			-
 			"Table of Contents" Dynamic Definition: >v7r
 			-
+			└── Nodes Excluded from the Table of Contents: >jkl
+			-
+			(untitled): >l7o
+			-
+			(untitled): >z2s
+			-
 			About Compact Nodes: >ucj
-			-
-			About Urtext: >013
-			-
-			Basic Syntax: >znj
-			-
-			Case-sensitivity: >l36
 			-
 			ID::c1x
 			def::>8p5 }

@@ -20,26 +20,44 @@ Lists
 
 			{
 			Example: Nodes from the Documentation
+			Compact Nodes >j6t
+			├── require an ID >frm
+			├── can have arbitrary other metadata >xlc
+			├── become child nodes of their containing node. >hiz
+			└── About Compact Nodes >ucj
 			"Table of Contents" Dynamic Definition >v7r
+			└── Nodes Excluded from the Table of Contents >jkl
+			(untitled) >l7o
+			(untitled) >z2s
 			About Compact Nodes >ucj
 			About Urtext >013
+			├── Description >yv2
+			├── Comparison To Other Tools >h8z
+			├── Uses >lhs
+			└── Requirements and Features >006
 			Basic Syntax >znj
+			└── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 			Case-sensitivity >l36
 			Collections >00k
-			Compact Nodes >j6t
+			└── Example Collection >aoq
 			Compact Nodes >kpz
+			└── Example Compact Node >d7b
+			    └── Example inline node within the compact node. >9up
 			Comparison To Other Tools >h8z
+			Cross-Project Linking >7lx
 			Dependencies and Installation >2fn
+			├── Download and Install Dependencies Manually >774
+			└── Download Dependencies from a Monorepo >arl
 			Description >yv2
 			Details on the Sublime Implementation >01u
+			└── Dependencies and Installation >2fn
+			    ├── Download and Install Dependencies Manually >774
+			    └── Download Dependencies from a Monorepo >arl
 			Disable Prompts for File Reload >023
 			Documentation >ooe
 			Download Dependencies from a Monorepo >arl
 			Download and Install Dependencies Manually >774
 			Duplicate Node IDs >bzv
-			Duplicate Pointers >00t
-			Dynamic Definitions : Syntax and Parameters >87g
-			Dynamic Nodes >k8p
 			ID::m1r
 			def::>twz }
 

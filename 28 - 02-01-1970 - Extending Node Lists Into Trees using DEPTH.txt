@@ -15,8 +15,15 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 
 {
 		Example List 3
+		Compact Nodes >j6t
+		├── require an ID >frm
+		├── can have arbitrary other metadata >xlc
+		├── become child nodes of their containing node. >hiz
+		└── About Compact Nodes >ucj
 		"Table of Contents" Dynamic Definition >v7r
 		└── Nodes Excluded from the Table of Contents >jkl
+		(untitled) >l7o
+		(untitled) >z2s
 		About Compact Nodes >ucj
 		About Urtext >013
 		├── Description >yv2
@@ -28,15 +35,11 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Case-sensitivity >l36
 		Collections >00k
 		└── Example Collection >aoq
-		Compact Nodes >j6t
-		├── require an ID >frm
-		├── can have arbitrary other metadata >xlc
-		├── become child nodes of their containing node. >hiz
-		└── About Compact Nodes >ucj
 		Compact Nodes >kpz
 		└── Example Compact Node >d7b
 		    └── Example inline node within the compact node. >9up
 		Comparison To Other Tools >h8z
+		Cross-Project Linking >7lx
 		Dependencies and Installation >2fn
 		├── Download and Install Dependencies Manually >774
 		└── Download Dependencies from a Monorepo >arl
@@ -102,10 +105,10 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Example Source Node 4 >01c
 		Example Tree >4gr
 		Example first level >8fv
-		└── test test second level >6qj
-		    └── third level >80d
+		└── second level >6qj
+		    └── third test level >80d
 		        └── test fourth level >5pq
-		            └── test fifth level >xc9
+		            └── fifth level >xc9
 		Example inline node within the compact node. >9up
 		Example: Nodes from the Documentation >m1r
 		Expanding a List with the DEPTH Parameter >h6l
@@ -116,8 +119,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Extending Node Lists Into Trees using DEPTH >thz
 		└── Example List 3 >nc6
 		File Naming >01m
+		└── Reindex All Files >pz9
 		File Nodes >ekz
-		Filename formats >00i
 		Files >00p
 		Full Screen / Distraction Free Mode >002
 		Full Text Search >4p9
@@ -132,22 +135,21 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Hiding Line Numbers >01e
 		Hiding Tabs >015
 		History >prp
-		Home Node >00c
 		In-Progress / Experimental / Wish List >014
 		└── iPhone/iPad/iOS >01y
 		    └── Synchronator Setup >01z
 		Inline Nodes >004
 		├── Example Inline Node >00e
 		├── Example first level >8fv
-		│   └── test test second level >6qj
-		│       └── third level >80d
+		│   └── second level >6qj
+		│       └── third test level >80d
 		│           └── test fourth level >5pq
+		│               └── fifth level >xc9
 		└── Uses for inline nodes >ia5
 		Inserting a Node ID manually >04s
 		Insertions >wjj
 		Installation and Setup (Desktop) >6cd
 		JSON >njo
-		Linking Between Projects >7lx
 		Linking to outside resources >00q
 		├── Web / HTTP(S) >00o
 		└── Files >00p
@@ -171,7 +173,82 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		        ├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
 		        │   ├── Table of Contents >e5j
 		        │   ├── Quick Start, Guides and Examples >z7t
+		        │   │   ├── Installation and Setup (Desktop) >6cd
+		        │   │   ├── Basic Syntax >znj
+		        │   │   │   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
+		        │   │   ├── Dynamic Definitions : Syntax and Parameters >87g
+		        │   │   ├── Operations >e1x
+		        │   │   │   ├── Project Management >9u0
+		        │   │   │   ├── Navigation >omh
+		        │   │   │   ├── Insertions >wjj
+		        │   │   │   ├── Editing >xba
+		        │   │   │   └── Sublime Text Only >3xv
+		        │   │   └── Sublime Text Interface Tips >003
+		        │   │       ├── Syntax Highlighting >01d
+		        │   │       ├── Hiding Tabs >015
+		        │   │       ├── Hiding Line Numbers >01e
+		        │   │       ├── Full Screen / Distraction Free Mode >002
+		        │   │       ├── Disable Prompts for File Reload >023
+		        │   │       ├── Remove Indent Guides >1rc
+		        │   │       ├── Save on Focus Lost >sqq
+		        │   │       └── Using a Sublime Project for an Urtext Project >c3n
 		        │   └── Reference >ac5
+		        │       ├── Projects >dce
+		        │       │   └── Using/Adding Existing Files >rij
+		        │       ├── Nodes >01j
+		        │       │   ├── File Nodes >ekz
+		        │       │   ├── Inline Nodes >004
+		        │       │   │   ├── Example Inline Node >00e
+		        │       │   │   ├── Example first level >8fv
+		        │       │   │   │   └── second level >6qj
+		        │       │   │   │       └── third test level >80d
+		        │       │   │   │           └── test fourth level >5pq
+		        │       │   │   │               └── fifth level >xc9
+		        │       │   │   └── Uses for inline nodes >ia5
+		        │       │   ├── Compact Nodes >kpz
+		        │       │   │   └── Example Compact Node >d7b
+		        │       │   │       └── Example inline node within the compact node. >9up
+		        │       │   ├── Node Titles >ue2
+		        │       │   └── Node IDs >01q
+		        │       │       ├── Trailing Node IDs >xo9
+		        │       │       ├── Inserting a Node ID manually >04s
+		        │       │       ├── Duplicate Node IDs >bzv
+		        │       │       └── Generating a node ID manually >rfp
+		        │       ├── Metadata >00x
+		        │       │   ├── General Syntax >8dw
+		        │       │   ├── Timestamps >005
+		        │       │   │   ├── Syntax and Format >hg7
+		        │       │   │   ├── Tracking Node Dates and Times >m58
+		        │       │   │   └── Time Zones >7w6
+		        │       │   ├── Case-sensitivity >l36
+		        │       │   └── Reserved Keys >fo2
+		        │       │       ├── `index` >00z
+		        │       │       ├── `title` >pz3
+		        │       │       └── `def` >5cq
+		        │       ├── Dynamic Nodes >k8p
+		        │       │   ├── Lists >twz
+		        │       │   │   └── Example: Nodes from the Documentation >m1r
+		        │       │   ├── Trees >w8u
+		        │       │   │   ├── Expanding a List with the DEPTH Parameter >h6l
+		        │       │   │   │   └── Example Tree >4gr
+		        │       │   │   └── "Table of Contents" Dynamic Definition >v7r
+		        │       │   │       └── Nodes Excluded from the Table of Contents >jkl
+		        │       │   └── Collections >00k
+		        │       │       └── Example Collection >aoq
+		        │       ├── Exporting >ezg
+		        │       │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+		        │       │   └── Example : Fragment Exported to HTML >baq
+		        │       ├── File Naming >01m
+		        │       │   └── Reindex All Files >pz9
+		        │       ├── History >prp
+		        │       ├── Errors and Warnings >bpk
+		        │       ├── Using Multiple Projects >ipy
+		        │       │   ├── Project Naming (Identification) >tgp
+		        │       │   └── Cross-Project Linking >7lx
+		        │       └── User Interface Elements >3n6
+		        │           ├── The Node Browser >01i
+		        │           └── Traverse Mode >00w
+		        │               └── Word Wrap in Traverse Mode >xci
 		        └── Example Recursive Node Tree >01n
 		Lists >twz
 		└── Example: Nodes from the Documentation >m1r
@@ -198,8 +275,10 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Inline Nodes >004
 		│   ├── Example Inline Node >00e
 		│   ├── Example first level >8fv
-		│   │   └── test test second level >6qj
-		│   │       └── third level >80d
+		│   │   └── second level >6qj
+		│   │       └── third test level >80d
+		│   │           └── test fourth level >5pq
+		│   │               └── fifth level >xc9
 		│   └── Uses for inline nodes >ia5
 		├── Compact Nodes >kpz
 		│   └── Example Compact Node >d7b
@@ -233,21 +312,97 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │   ├── Quick Start, Guides and Examples >z7t
 		    │   │   ├── Installation and Setup (Desktop) >6cd
 		    │   │   ├── Basic Syntax >znj
+		    │   │   │   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 		    │   │   ├── Dynamic Definitions : Syntax and Parameters >87g
 		    │   │   ├── Operations >e1x
+		    │   │   │   ├── Project Management >9u0
+		    │   │   │   ├── Navigation >omh
+		    │   │   │   ├── Insertions >wjj
+		    │   │   │   ├── Editing >xba
+		    │   │   │   └── Sublime Text Only >3xv
 		    │   │   └── Sublime Text Interface Tips >003
+		    │   │       ├── Syntax Highlighting >01d
+		    │   │       ├── Hiding Tabs >015
+		    │   │       ├── Hiding Line Numbers >01e
+		    │   │       ├── Full Screen / Distraction Free Mode >002
+		    │   │       ├── Disable Prompts for File Reload >023
+		    │   │       ├── Remove Indent Guides >1rc
+		    │   │       ├── Save on Focus Lost >sqq
+		    │   │       └── Using a Sublime Project for an Urtext Project >c3n
 		    │   └── Reference >ac5
 		    │       ├── Projects >dce
+		    │       │   └── Using/Adding Existing Files >rij
 		    │       ├── Nodes >01j
+		    │       │   ├── File Nodes >ekz
+		    │       │   ├── Inline Nodes >004
+		    │       │   │   ├── Example Inline Node >00e
+		    │       │   │   ├── Example first level >8fv
+		    │       │   │   │   └── second level >6qj
+		    │       │   │   │       └── third test level >80d
+		    │       │   │   │           └── test fourth level >5pq
+		    │       │   │   │               └── fifth level >xc9
+		    │       │   │   └── Uses for inline nodes >ia5
+		    │       │   ├── Compact Nodes >kpz
+		    │       │   │   └── Example Compact Node >d7b
+		    │       │   │       └── Example inline node within the compact node. >9up
+		    │       │   ├── Node Titles >ue2
+		    │       │   └── Node IDs >01q
+		    │       │       ├── Trailing Node IDs >xo9
+		    │       │       ├── Inserting a Node ID manually >04s
+		    │       │       ├── Duplicate Node IDs >bzv
+		    │       │       └── Generating a node ID manually >rfp
 		    │       ├── Metadata >00x
+		    │       │   ├── General Syntax >8dw
+		    │       │   ├── Timestamps >005
+		    │       │   │   ├── Syntax and Format >hg7
+		    │       │   │   ├── Tracking Node Dates and Times >m58
+		    │       │   │   └── Time Zones >7w6
+		    │       │   ├── Case-sensitivity >l36
+		    │       │   └── Reserved Keys >fo2
+		    │       │       ├── `index` >00z
+		    │       │       ├── `title` >pz3
+		    │       │       └── `def` >5cq
 		    │       ├── Dynamic Nodes >k8p
+		    │       │   ├── Lists >twz
+		    │       │   │   └── Example: Nodes from the Documentation >m1r
+		    │       │   ├── Trees >w8u
+		    │       │   │   ├── Expanding a List with the DEPTH Parameter >h6l
+		    │       │   │   │   └── Example Tree >4gr
+		    │       │   │   └── "Table of Contents" Dynamic Definition >v7r
+		    │       │   │       └── Nodes Excluded from the Table of Contents >jkl
+		    │       │   └── Collections >00k
+		    │       │       └── Example Collection >aoq
 		    │       ├── Links and Pointers >00j
+		    │       │   ├── Links >0y2
+		    │       │   │   └── Sublime Text tools to help with linking >00m
+		    │       │   ├── Dynamic Titles >4vu
+		    │       │   ├── Opening Links >01w
+		    │       │   │   ├── Sublime >osu
+		    │       │   │   └── Pythonista >iy8
+		    │       │   ├── Linking to outside resources >00q
+		    │       │   │   ├── Web / HTTP(S) >00o
+		    │       │   │   └── Files >00p
 		    │       ├── Exporting >ezg
+		    │       │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+		    │       │   └── Example : Fragment Exported to HTML >baq
 		    │       ├── File Naming >01m
+		    │       │   └── Reindex All Files >pz9
 		    │       ├── History >prp
+		    │       ├── project_settings >00l
+		    │       │   ├── `title` >egg
+		    │       │   ├── `project_title` >xqu
+		    │       │   ├── `home` >d6u
+		    │       │   ├── `console_log` >1lz
+		    │       │   ├── `filenames` >lch
+		    │       │   └── `timestamp_format` >00n
 		    │       ├── Errors and Warnings >bpk
-		    │       ├── Using Multiple Projects at a Time >ipy
+		    │       ├── Using Multiple Projects >ipy
+		    │       │   ├── Project Naming (Identification) >tgp
+		    │       │   └── Cross-Project Linking >7lx
 		    │       └── User Interface Elements >3n6
+		    │           ├── The Node Browser >01i
+		    │           └── Traverse Mode >00w
+		    │               └── Word Wrap in Traverse Mode >xci
 		    └── Example Recursive Node Tree >01n
 		Project Management >9u0
 		Project Naming (Identification) >tgp
@@ -255,12 +410,10 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Using/Adding Existing Files >rij
 		Projects, Structure and Compiling >01x
 		└── project_settings >00l
-		    ├── Home Node >00c
-		    ├── Filename formats >00i
-		    └── Timestamp Formats >00n
+		    └── `timestamp_format` >00n
+		Python >eea
 		Python >xor
 		Python >ljr
-		Python >eea
 		Pythonista >iy8
 		Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind th >q8j
 		Quick Start, Guides and Examples >z7t
@@ -312,36 +465,74 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       ├── Nodes >01j
 		│       │   ├── File Nodes >ekz
 		│       │   ├── Inline Nodes >004
+		│       │   │   ├── Example Inline Node >00e
+		│       │   │   ├── Example first level >8fv
+		│       │   │   │   └── second level >6qj
+		│       │   │   │       └── third test level >80d
+		│       │   │   │           └── test fourth level >5pq
+		│       │   │   │               └── fifth level >xc9
+		│       │   │   └── Uses for inline nodes >ia5
 		│       │   ├── Compact Nodes >kpz
+		│       │   │   └── Example Compact Node >d7b
+		│       │   │       └── Example inline node within the compact node. >9up
 		│       │   ├── Node Titles >ue2
 		│       │   └── Node IDs >01q
+		│       │       ├── Trailing Node IDs >xo9
+		│       │       ├── Inserting a Node ID manually >04s
+		│       │       ├── Duplicate Node IDs >bzv
+		│       │       └── Generating a node ID manually >rfp
 		│       ├── Metadata >00x
 		│       │   ├── General Syntax >8dw
 		│       │   ├── Timestamps >005
+		│       │   │   ├── Syntax and Format >hg7
+		│       │   │   ├── Tracking Node Dates and Times >m58
+		│       │   │   └── Time Zones >7w6
 		│       │   ├── Case-sensitivity >l36
 		│       │   └── Reserved Keys >fo2
+		│       │       ├── `index` >00z
+		│       │       ├── `title` >pz3
+		│       │       └── `def` >5cq
 		│       ├── Dynamic Nodes >k8p
 		│       │   ├── Lists >twz
+		│       │   │   └── Example: Nodes from the Documentation >m1r
 		│       │   ├── Trees >w8u
+		│       │   │   ├── Expanding a List with the DEPTH Parameter >h6l
+		│       │   │   │   └── Example Tree >4gr
+		│       │   │   └── "Table of Contents" Dynamic Definition >v7r
+		│       │   │       └── Nodes Excluded from the Table of Contents >jkl
 		│       │   └── Collections >00k
+		│       │       └── Example Collection >aoq
 		│       ├── Links and Pointers >00j
 		│       │   ├── Links >0y2
+		│       │   │   └── Sublime Text tools to help with linking >00m
 		│       │   ├── Dynamic Titles >4vu
 		│       │   ├── Opening Links >01w
+		│       │   │   ├── Sublime >osu
+		│       │   │   └── Pythonista >iy8
 		│       │   ├── Linking to outside resources >00q
-		│       │   └── ! RECURSION : Pointers >lmu
+		│       │   │   ├── Web / HTTP(S) >00o
+		│       │   │   └── Files >00p
 		│       ├── Exporting >ezg
 		│       │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 		│       │   └── Example : Fragment Exported to HTML >baq
 		│       ├── File Naming >01m
+		│       │   └── Reindex All Files >pz9
 		│       ├── History >prp
+		│       ├── project_settings >00l
+		│       │   ├── `title` >egg
+		│       │   ├── `project_title` >xqu
+		│       │   ├── `home` >d6u
+		│       │   ├── `console_log` >1lz
+		│       │   ├── `filenames` >lch
+		│       │   └── `timestamp_format` >00n
 		│       ├── Errors and Warnings >bpk
-		│       ├── Using Multiple Projects at a Time >ipy
+		│       ├── Using Multiple Projects >ipy
 		│       │   ├── Project Naming (Identification) >tgp
-		│       │   └── Linking Between Projects >7lx
+		│       │   └── Cross-Project Linking >7lx
 		│       └── User Interface Elements >3n6
 		│           ├── The Node Browser >01i
 		│           └── Traverse Mode >00w
+		│               └── Word Wrap in Traverse Mode >xci
 		└── Example Recursive Node Tree >01n
 		Reference >ac5
 		├── Projects >dce
@@ -351,7 +542,10 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── Inline Nodes >004
 		│   │   ├── Example Inline Node >00e
 		│   │   ├── Example first level >8fv
-		│   │   │   └── test test second level >6qj
+		│   │   │   └── second level >6qj
+		│   │   │       └── third test level >80d
+		│   │   │           └── test fourth level >5pq
+		│   │   │               └── fifth level >xc9
 		│   │   └── Uses for inline nodes >ia5
 		│   ├── Compact Nodes >kpz
 		│   │   └── Example Compact Node >d7b
@@ -398,22 +592,30 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       ├── Duplicate Pointers >00t
 		│       │   └── Example Child Node Using a Node Pointer >001
 		│       └── Recursive Node Pointers >6ct
-		│           ├── ! RECURSION : Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
 		│           └── Example Recursive Node Tree >01n
 		├── Exporting >ezg
 		│   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 		│   └── Example : Fragment Exported to HTML >baq
 		├── File Naming >01m
+		│   └── Reindex All Files >pz9
 		├── History >prp
+		├── project_settings >00l
+		│   ├── `title` >egg
+		│   ├── `project_title` >xqu
+		│   ├── `home` >d6u
+		│   ├── `console_log` >1lz
+		│   ├── `filenames` >lch
+		│   └── `timestamp_format` >00n
 		├── Errors and Warnings >bpk
-		├── Using Multiple Projects at a Time >ipy
+		├── Using Multiple Projects >ipy
 		│   ├── Project Naming (Identification) >tgp
-		│   └── Linking Between Projects >7lx
+		│   └── Cross-Project Linking >7lx
 		└── User Interface Elements >3n6
 		    ├── The Node Browser >01i
 		    └── Traverse Mode >00w
 		        └── Word Wrap in Traverse Mode >xci
 		Reference: Key Bindings >018
+		Reindex All Files >pz9
 		Remove Indent Guides >1rc
 		Requirements and Features >006
 		Reserved Keys >fo2
@@ -457,14 +659,13 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 		This node is just here as a destination from the node pointer in  Basic Syntax >ttt
 		Time Zones >7w6
-		Timestamp Formats >00n
 		Timestamps >005
 		├── Syntax and Format >hg7
 		├── Tracking Node Dates and Times >m58
 		└── Time Zones >7w6
 		Tracking Node Dates and Times >m58
-		Trailing Node IDs >xo9
 		Trailing Node IDs >2a3
+		Trailing Node IDs >xo9
 		Traverse Mode >00w
 		└── Word Wrap in Traverse Mode >xci
 		Trees >w8u
@@ -502,9 +703,14 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │   ├── Inline Nodes >004
 		    │   │   ├── Example Inline Node >00e
 		    │   │   ├── Example first level >8fv
+		    │   │   │   └── second level >6qj
+		    │   │   │       └── third test level >80d
+		    │   │   │           └── test fourth level >5pq
+		    │   │   │               └── fifth level >xc9
 		    │   │   └── Uses for inline nodes >ia5
 		    │   ├── Compact Nodes >kpz
 		    │   │   └── Example Compact Node >d7b
+		    │   │       └── Example inline node within the compact node. >9up
 		    │   ├── Node Titles >ue2
 		    │   └── Node IDs >01q
 		    │       ├── Trailing Node IDs >xo9
@@ -527,7 +733,9 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │   │   └── Example: Nodes from the Documentation >m1r
 		    │   ├── Trees >w8u
 		    │   │   ├── Expanding a List with the DEPTH Parameter >h6l
+		    │   │   │   └── Example Tree >4gr
 		    │   │   └── "Table of Contents" Dynamic Definition >v7r
+		    │   │       └── Nodes Excluded from the Table of Contents >jkl
 		    │   └── Collections >00k
 		    │       └── Example Collection >aoq
 		    ├── Links and Pointers >00j
@@ -543,16 +751,26 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │   └── Pointers >lmu
 		    │       ├── Example Child Node Using a Node Pointer >001
 		    │       ├── Duplicate Pointers >00t
+		    │       │   └── Example Child Node Using a Node Pointer >001
 		    │       └── Recursive Node Pointers >6ct
+		    │           └── Example Recursive Node Tree >01n
 		    ├── Exporting >ezg
 		    │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 		    │   └── Example : Fragment Exported to HTML >baq
 		    ├── File Naming >01m
+		    │   └── Reindex All Files >pz9
 		    ├── History >prp
+		    ├── project_settings >00l
+		    │   ├── `title` >egg
+		    │   ├── `project_title` >xqu
+		    │   ├── `home` >d6u
+		    │   ├── `console_log` >1lz
+		    │   ├── `filenames` >lch
+		    │   └── `timestamp_format` >00n
 		    ├── Errors and Warnings >bpk
-		    ├── Using Multiple Projects at a Time >ipy
+		    ├── Using Multiple Projects >ipy
 		    │   ├── Project Naming (Identification) >tgp
-		    │   └── Linking Between Projects >7lx
+		    │   └── Cross-Project Linking >7lx
 		    └── User Interface Elements >3n6
 		        ├── The Node Browser >01i
 		        └── Traverse Mode >00w
@@ -564,38 +782,47 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		User-Defined >lwg
 		Uses >lhs
 		Uses for inline nodes >ia5
-		Using Multiple Projects at a Time >ipy
+		Using Multiple Projects >ipy
 		├── Project Naming (Identification) >tgp
-		└── Linking Between Projects >7lx
+		└── Cross-Project Linking >7lx
 		Using Urtext in iOS with Pythonista >os4
 		Using a Sublime Project for an Urtext Project >c3n
 		Using/Adding Existing Files >rij
 		Viewing Linked Relationships >00u
 		Web / HTTP(S) >00o
 		Word Wrap in Traverse Mode >xci
+		`console_log` >1lz
 		`def` >5cq
+		`filenames` >lch
+		`home` >d6u
 		`index` >00z
+		`project_title` >xqu
+		`timestamp_format` >00n
 		`title` >pz3
+		`title` >egg
 		become child nodes of their containing node. >hiz
 		can have arbitrary other metadata >xlc
+		fifth level >xc9
 		iPhone/iPad/iOS >01y
 		└── Synchronator Setup >01z
 		project_settings >00l
-		├── Home Node >00c
-		├── Filename formats >00i
-		└── Timestamp Formats >00n
+		├── `title` >egg
+		├── `project_title` >xqu
+		├── `home` >d6u
+		├── `console_log` >1lz
+		├── `filenames` >lch
+		└── `timestamp_format` >00n
 		require an ID >frm
-		tag_all >yin
-		test fifth level >xc9
-		test fourth level >5pq
-		└── test fifth level >xc9
-		test test second level >6qj
-		└── third level >80d
+		second level >6qj
+		└── third test level >80d
 		    └── test fourth level >5pq
-		        └── test fifth level >xc9
-		third level >80d
+		        └── fifth level >xc9
+		tag_all >yin
+		test fourth level >5pq
+		└── fifth level >xc9
+		third test level >80d
 		└── test fourth level >5pq
-		    └── test fifth level >xc9
+		    └── fifth level >xc9
 		ID::nc6
 		def::>thz }
 

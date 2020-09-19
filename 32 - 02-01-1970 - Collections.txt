@@ -6,6 +6,7 @@ Collections are for "collecting" metadata entries, along with their context, in 
      +(*) <- In order to return anything, we must include some nodes in the query. Here we have included all nodes.
      COLLECT(id=*)
      HEADER(Example Collection)
+     FOOTER(flags::exclude_from_export | exclude_from_toc)
      ]]
 
 { Example Collection
@@ -13,15 +14,15 @@ id :: 001 >001:40
  Example Child Node Using a Node Pointer
 
 
-id :: 002 >002:186 
+id :: 002 >002:185 
  Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode
 
 
-id :: 003 >003:137 
- Here are some tips for best leveraging Sublime's great UI features.
+id :: 003 >003:154 
+ Here are some tips for best leveraging Sublime's great UI features while using Urtext.
 
 
-id :: 004 >004:1287 
+id :: 004 >004:1284 
  For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
 
 
@@ -33,16 +34,8 @@ id :: 006 >006:2333
  - Version control (Git, for example).
 
 
-id :: 00c >00c:146 
- The Home page is accessible anywhere in the project by pressing Ctrl-Shift-H. Specify the node ID you want this shortcut to jump to.
-
-
 id :: 00e >00e:22 
  Example Inline Node
-
-
-id :: 00i >00i:19 
- Filename formats
 
 
 id :: 00j >00j:87 
@@ -53,7 +46,7 @@ id :: 00k >00k:353
  Collections are for "collecting" metadata entries, along with their context, in order to gain a "view" into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view.
 
 
-id :: 00l >00l:376 
+id :: 00l >00l:795 
  This node now has special reserved metadata keys that will be parsed as follows:
 
 
@@ -62,7 +55,7 @@ id :: 00m >00m:653
 
 
 id :: 00n >00n:284 
- Changing the default node_date_timestamp name and bevahior
+ Changing the default node_date_timestamp name and bevahi
 
 
 id :: 00o >00o:216 
@@ -109,7 +102,7 @@ id :: 014 >014:110
  Import/Export to/from: Markdown, HTML, pure plain text, JSON
 
 
-id :: 015 >015:190 
+id :: 015 >015:189 
  This preference can also be set on a per-(Sublime)-project basis. See the Sublime documentation
 
 
@@ -129,27 +122,27 @@ id :: 01c >01c:35
  Example Source Node 4
 
 
-id :: 01d >01d:683 
- Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (You can undo this later by repeating the same but selecting Plain Text.
+id :: 01d >01d:688 
+ Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (This can be undone by repeating the same but selecting Plain Text.
 
 
-id :: 01e >01e:337 
- See | Embedded Syntaxes and Pass Markers >oy5
+id :: 01e >01e:340 
+ (Ignore the JSON syntax pass markers above beginning with `%%`. See | Embedded Syntaxes and Pass Markers >oy5
 
 
 id :: 01i >01i:626 
  In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see | `index` >00z).
 
 
-id :: 01j >01j:912 
- ss
+id :: 01j >01j:910 
+ | Node IDs >01q
 
 
-id :: 01m >01m:916 
- This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
+id :: 01m >01m:444 
+ Since node identities are independent of their filenames, you can use any naming convention you want. Urtext can also rename files automatically in convenient formats based on their title and/or index. Renaming by index is useful, for instance, if you want file-level nodes easily readable inside a file system, mobile app, or other file browser.
 
 
-id :: 01n >01n:4087 
+id :: 01n >01n:4993 
  └── Example Recursive Node Tree >01n
 
 
@@ -181,7 +174,7 @@ id :: 01z >01z:50
  DOCUMENTATION COMING
 
 
-id :: 023 >023:346 
+id :: 023 >023:345 
  Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
 
 
@@ -195,6 +188,10 @@ id :: 04s >04s:163
 
 id :: 0y2 >0y2:255 
  To make a "hyperlink" from one node to another, use the right angle bracket (>) followed immediately by a node ID. Linking does not require a filename or any other information, only the node ID. Any other surrounding text is ignored.
+
+
+id :: 1lz >1lz:166 
+ (Press Control-tilde(~)  to open the console
 
 
 id :: 1rc >1rc:257 
@@ -221,8 +218,8 @@ id :: 3xv >3xv:37
  Traverse Mode
 
 
-id :: 4gr >4gr:1889 
- └── Example Collection >aoq
+id :: 4gr >4gr:1447 
+ Duplicate Node IDs >bzv
 
 
 id :: 4p9 >4p9:271 
@@ -241,23 +238,23 @@ id :: 5pq >5pq:61
  test fourth level
 
 
-id :: 6cd >6cd:1444 
- ss
+id :: 6cd >6cd:1442 
+ | Sublime Text Interface Tips >003
 
 
 id :: 6ct >6ct:887 
  (See | Trees >w8u for more information on how to generate trees like this in dynamic nodes.)
 
 
-id :: 6qj >6qj:50 
- test test second level
+id :: 6qj >6qj:40 
+ second level
 
 
 id :: 774 >774:1227 
  https://pypi.org/project/diff-match-patch/
 
 
-id :: 7lx >7lx:341 
+id :: 7lx >7lx:338 
  Following this link will change the project context to the named project and open its specified node.
 
 
@@ -265,8 +262,8 @@ id :: 7w6 >7w6:266
  Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the `timezone` key in | project_settings >00l to another valid value
 
 
-id :: 80d >80d:48 
- third level
+id :: 80d >80d:53 
+ third test level
 
 
 id :: 87g >87g:942 
@@ -301,7 +298,7 @@ id :: a5m >a5m:684
  - Control-Shift-h at any time to return to this "home" node.
 
 
-id :: ac5 >ac5:338 
+id :: ac5 >ac5:349 
  | User Interface Elements >3
 
 
@@ -309,11 +306,11 @@ id :: arl >arl:610
  Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your `Sublime Text 3/Lib/python3.3` folder.
 
 
-id :: baq >baq:181 
- defined
+id :: baq >baq:183 
+ The following Dynamic Definition exports the | Links and Pointers >00j section of the documentation to HTML, into a node inside this one:
 
 
-id :: bpk >bpk:22 
+id :: bpk >bpk:24 
  Errors and Warnings
 
 
@@ -321,32 +318,40 @@ id :: bzv >bzv:497
  To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
 
 
-id :: c1x >c1x:194 
+id :: c1x >c1x:432 
  -
 
 
-id :: c3n >c3n:376 
+id :: c3n >c3n:371 
  You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.
+
+
+id :: d6u >d6u:81 
+ Identifies the home node for the project, connected to the "Home" ke
 
 
 id :: d7b >d7b:22 
  Example Compact Node
 
 
-id :: dce >dce:386 
- - The folder how has one Urtext file and a `history` folder for tracking edits. (See | File History >prp )
+id :: dce >dce:381 
+ - The folder how has one Urtext file and a `history` folder for tracking edits. (See | History >prp )
 
 
 id :: e1x >e1x:197 
  modifiying
 
 
-id :: e5j >e5j:3186 
+id :: e5j >e5j:3293 
  └── Word Wrap in Traverse Mode >xci
 
 
 id :: eea >eea:909 
  Pass the current line contents and cursor position (within the line) to the UrtextProject. The method returns the best link match. Find the filename as described in >h8c and open it at the start_position returned from get_link(). See the open_urtext_node() function in the Sublime Text package for an example.
+
+
+id :: egg >egg:105 
+ Reserved key for every node, used here to specificy this node as containing project setting
 
 
 id :: ekz >ekz:322 
@@ -365,12 +370,12 @@ id :: frm >frm:16
  require an ID
 
 
-id :: h6l >h6l:527 
+id :: h6l >h6l:541 
  Expanding a List with the DEPTH Parameter
 
 
-id :: h8z >h8z:720 
- Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user at all time
+id :: h8z >h8z:707 
+ Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the 
 
 
 id :: hg7 >hg7:1434 
@@ -385,7 +390,7 @@ id :: ia5 >ia5:176
  Also that the title is the first line of text.
 
 
-id :: ipy >ipy:1522 
+id :: ipy >ipy:1512 
  In Pythonista, use "Switch Projects" from the feature menu.
 
 
@@ -397,7 +402,7 @@ id :: j6t >j6t:313
  For nodes that can fit on a single line, such as items in a list, short phrases, word definitions, and so on, you can use a simplified node syntax. Begin the line with the caret symbol (^); the closing wrapper then becomes the next newline (the end of the same line). Like other nodes:
 
 
-id :: jkl >jkl:299 
+id :: jkl >jkl:431 
  This node is just here as a destination from the node pointer in  Basic Syntax >ttt
 
 
@@ -405,7 +410,7 @@ id :: k67 >k67:18
  Search
 
 
-id :: k8p >k8p:2186 
+id :: k8p >k8p:2154 
  | Collections >00k
 
 
@@ -425,6 +430,14 @@ id :: l60 >l60:95
  Plaintext
 
 
+id :: l7o >l7o:26 
+ 
+
+
+id :: lch >lch:83 
+ Specifies format for filenames when using | Reindex All Files >pz
+
+
 id :: lhs >lhs:448 
  - any other writing or information management that can be done in text form
 
@@ -441,20 +454,20 @@ id :: lwg >lwg:19
  User-Defined
 
 
-id :: m1r >m1r:676 
- Dynamic Nodes >k8p
+id :: m1r >m1r:1472 
+ Duplicate Node IDs >bzv
 
 
 id :: m58 >m58:407 
  Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created:
 
 
-id :: m9d >m9d:278 
+id :: m9d >m9d:1124 
  The following dynamic definition exports this entire documentation from its root node | Urtext  Version: 0.5-alpha  Usage Guide and References >a5m ) in Markdown format to a file called f>./README.md:
 
 
-id :: nc6 >nc6:18169 
- └── test fifth level >xc9
+id :: nc6 >nc6:31142 
+ └── fifth level >xc9
 
 
 id :: njo >njo:85 
@@ -489,6 +502,10 @@ id :: pz3 >pz3:119
  Provides a way to override the node title, which is by default the full first non-whitespace 
 
 
+id :: pz9 >pz9:490 
+ This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
+
+
 id :: q8j >q8j:162 
  Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field.
 
@@ -513,11 +530,11 @@ id :: rr3 >rr3:25
  Searching
 
 
-id :: sqq >sqq:232 
+id :: sqq >sqq:234 
  Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:
 
 
-id :: tgp >tgp:364 
+id :: tgp >tgp:365 
  Unlike nodes, projects are uniquely identified by name. For this reason, each project must have an unique name within the running instance of Urtext. Projects can be named using the project_title key in the project's project_settings node. If no name is present, the project's name becomes its absolute path in the file system.
 
 
@@ -549,7 +566,7 @@ id :: uy4 >uy4:299
  For example, the following definition targets node >3x3 (below) and populates it with all nodes containing the word "urtext".
 
 
-id :: v7r >v7r:319 
+id :: v7r >v7r:330 
  | Example : Urtext Documentation Exported in Markdown to a File >m9d
 
 
@@ -565,12 +582,12 @@ id :: x0c >x0c:119
  Some dynamic instructions do things other than populate or modify contents of nodes.
 
 
-id :: xba >xba:276 
+id :: xba >xba:271 
  Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
 
 
-id :: xc9 >xc9:20 
- test fifth leve
+id :: xc9 >xc9:15 
+ fifth leve
 
 
 id :: xci >xci:506 
@@ -589,6 +606,10 @@ id :: xor >xor:426
  Python
 
 
+id :: xqu >xqu:59 
+ Provides a title for the entire proje
+
+
 id :: xsh >xsh:83 
  HTML
 
@@ -601,7 +622,11 @@ id :: yv2 >yv2:997
  Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).
 
 
-id :: z7t >z7t:248 
+id :: z2s >z2s:26 
+ 
+
+
+id :: z7t >z7t:260 
  | Sublime Text Interface Tips >0
 
 
@@ -609,6 +634,7 @@ id :: znj >znj:1799
  (Closing pass marker.)
 
 
+flags::exclude_from_export | exclude_from_toc
 ID::aoq
 def::>00k }
 

@@ -7,13 +7,24 @@ Trees
 	This definition is mostly the same as the one in | Lists >twz. It targets the inline node below, | Example Tree >4gr. The difference is that we use the DEPTH parameter to indicate that under each list item, we would like to see the outline of nodes nested within it, up to 5 levels deep: DEPTH(5)
 
 	It does not matter how you format the parameters; here they are strung together on a single line:
-	ID(>4gr) +(*) LIMIT(20) FORMAT(indent:3) HEADER(Example Tree)
+	ID(>4gr) 
+	INCLUDE(*) 
+	LIMIT(20) 
+	FORMAT(indent:3) 
+	HEADER(Example Tree)
 	]]
 
 			{
 			Example Tree
+			Compact Nodes >j6t
+			├── require an ID >frm
+			├── can have arbitrary other metadata >xlc
+			├── become child nodes of their containing node. >hiz
+			└── About Compact Nodes >ucj
 			"Table of Contents" Dynamic Definition >v7r
 			└── Nodes Excluded from the Table of Contents >jkl
+			(untitled) >z2s
+			(untitled) >l7o
 			About Compact Nodes >ucj
 			About Urtext >013
 			├── Description >yv2
@@ -25,15 +36,11 @@ Trees
 			Case-sensitivity >l36
 			Collections >00k
 			└── Example Collection >aoq
-			Compact Nodes >j6t
-			├── require an ID >frm
-			├── can have arbitrary other metadata >xlc
-			├── become child nodes of their containing node. >hiz
-			└── About Compact Nodes >ucj
 			Compact Nodes >kpz
 			└── Example Compact Node >d7b
 			    └── Example inline node within the compact node. >9up
 			Comparison To Other Tools >h8z
+			Cross-Project Linking >7lx
 			Dependencies and Installation >2fn
 			├── Download and Install Dependencies Manually >774
 			└── Download Dependencies from a Monorepo >arl
@@ -47,19 +54,6 @@ Trees
 			Download Dependencies from a Monorepo >arl
 			Download and Install Dependencies Manually >774
 			Duplicate Node IDs >bzv
-			Duplicate Pointers >00t
-			└── Example Child Node Using a Node Pointer >001
-			Dynamic Definitions : Syntax and Parameters >87g
-			Dynamic Nodes >k8p
-			├── Lists >twz
-			│   └── Example: Nodes from the Documentation >m1r
-			├── Trees >w8u
-			│   ├── Expanding a List with the DEPTH Parameter >h6l
-			│   │   └── Example Tree >4gr
-			│   └── "Table of Contents" Dynamic Definition >v7r
-			│       └── Nodes Excluded from the Table of Contents >jkl
-			└── Collections >00k
-			    └── Example Collection >aoq
 			ID::4gr
 			def::>h6l }
 

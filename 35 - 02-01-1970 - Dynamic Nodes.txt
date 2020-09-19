@@ -14,11 +14,11 @@ There are two main kinds of dynamic output, Lists and Collections:
 
 	| Lists >>twz
 
-Lists can be expanded into trees that show the outline of many nodes across many files at any specified depth, up to. In fact, a list is just a tree with a depth of "1".
+Lists can be expanded into trees that show the outline of many nodes across many files at any specified depth, up to. In fact, a list is a tree with depth 1.
 
 	| Trees >>w8u
 
-"Collections", on the other hand, aggregate metadata entries with their context; the same node may appear many times in a collection if it contains many metadata entries matching the queried parameters.
+"Collections" aggregate metadata entries with their context; the same node may appear many times in a collection if it contains many metadata entries matching the queried parameters.
 
 	| Collections >>00k
 

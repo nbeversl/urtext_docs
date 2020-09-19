@@ -12,7 +12,7 @@ About Urtext
         
         Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for writing, connecting and organizing text.
     
-        Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user at all times. h8z}
+        Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user. h8z}
 
     {  Uses
         
@@ -63,4 +63,4 @@ About Urtext
 
 ID::013
 index::01
-Updated::<Thu., Sep. 10, 2020, 05:17 PM>
+Updated::<Sat., Sep. 19, 2020, 01:25 PM>

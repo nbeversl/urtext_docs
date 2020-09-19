@@ -4,17 +4,18 @@ Here is the dynamic definition that generates the | Table of Contents >e5j for t
 
 [[  ID(>e5j) (The target ID is the | Table of Contents >e5j)
 	
-	We include three specific root nodes by ID:
+	We include three 7specific root nodes by ID:
     +(ID=013) | About Urtext >013
     +(ID=z7t) | Quick Start, Guides and Examples >z7t
     +(ID=ac5) | Reference >ac5
 
-    Here we use `*` for DEPTH, which means unlimited depth. Note that using | Pointers >lmu it is possible to create recursive trees. In this case, the tree will be drawn only to the first point of recursion. See | Recursive Node Pointers >6ct for more information. 
-    DEPTH(*)
-
     For this documentation, we created a user-defined keyname `flags` to identify nodes that are examples/illustrations. We mark them for exclusion from the Table of Contents with they key `exclude_from_toc`. The following parameters accomplishes this:
-    -(flags=exclude_from_toc)    
+   
 
+    Here we use `*` for DEPTH, which means unlimited depth. Note that using | Pointers >lmu it is possible to create recursive trees. In this case, the tree will be drawn only to the first point of recursion. See | Recursive Node Pointers >6ct for more information. 
+   
+    DEPTH(*)   
+ 	-(flags=exclude_from_toc)
     Finally, we add a header, which also will also automatically set the node title. 
     HEADER(Table of Contents)
  ]]  
@@ -24,22 +25,26 @@ Here is the dynamic definition that generates the | Table of Contents >e5j for t
 	As a curiosity, we can see all the nodes that have been excluded from the Table of Contents:
 	+(flags=exclude_from_toc)
 	HEADER(Nodes Excluded from the Table of Contents)
-	FOOTER(flags::exclude_from_toc)
 	ID(>jkl)
     FORMAT(indent:3)
+    FOOTER(flags::exclude_from_toc)
 
  ]]
 
-    {
+        {
 			Nodes Excluded from the Table of Contents
 			Example first level >8fv
+			└── second level >6qj
+			    └── third test level >80d
+			        └── test fourth level >5pq
+			            └── fifth level >xc9
 			The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 			This node is just here as a destination from the node pointer in  Basic Syntax >ttt
 			flags::exclude_from_toc
 			ID::jkl
 			def::>v7r }
 
-
+Relate:
 See also the definition that dynamically creates the README.md version of this documentation:
 | Example : Urtext Documentation Exported in Markdown to a File >m9d
 

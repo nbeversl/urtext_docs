@@ -1,5 +1,5 @@
 <!!
-node ID >rfp exists in f>44 - 02-01-1970 - Generating a node ID manually.txt
+node ID >rfp exists in f>08 - 02-01-1970 - Generating a node ID manually.txt
 !!>
 Generating a node ID manually 
 If you accidentally delete a Node ID or need to insert one arbitrarily, press Urtext-i. 

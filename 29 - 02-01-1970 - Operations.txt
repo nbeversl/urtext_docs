@@ -49,7 +49,7 @@ modifiying
 	
 	`g`: 	Editing History
 			View the editing history for the currently viewed file.
-			For more informatino see | File History >prp
+			For more informatino see | History >prp
 	
 	(menu)	Consolidate Metadata
 			Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.

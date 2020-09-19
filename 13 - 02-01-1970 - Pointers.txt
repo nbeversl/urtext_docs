@@ -42,8 +42,14 @@ The advantages to Node Pointers include:
 			    │   ├── Quick Start, Guides and Examples >z7t
 			    │   │   ├── Installation and Setup (Desktop) >6cd
 			    │   │   ├── Basic Syntax >znj
+			    │   │   │   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 			    │   │   ├── Dynamic Definitions : Syntax and Parameters >87g
 			    │   │   ├── Operations >e1x
+			    │   │   │   ├── Project Management >9u0
+			    │   │   │   ├── Navigation >omh
+			    │   │   │   ├── Insertions >wjj
+			    │   │   │   ├── Editing >xba
+			    │   │   │   └── Sublime Text Only >3xv
 			    │   │   └── Sublime Text Interface Tips >003
 			    │   │       ├── Syntax Highlighting >01d
 			    │   │       ├── Hiding Tabs >015
@@ -55,15 +61,16 @@ The advantages to Node Pointers include:
 			    │   │       └── Using a Sublime Project for an Urtext Project >c3n
 			    │   └── Reference >ac5
 			    │       ├── Projects >dce
+			    │       │   └── Using/Adding Existing Files >rij
 			    │       ├── Nodes >01j
 			    │       │   ├── File Nodes >ekz
 			    │       │   ├── Inline Nodes >004
 			    │       │   │   ├── Example Inline Node >00e
 			    │       │   │   ├── Example first level >8fv
-			    │       │   │   │   └── test test second level >6qj
-			    │       │   │   │       └── third level >80d
+			    │       │   │   │   └── second level >6qj
+			    │       │   │   │       └── third test level >80d
 			    │       │   │   │           └── test fourth level >5pq
-			    │       │   │   │               └── test fifth level >xc9
+			    │       │   │   │               └── fifth level >xc9
 			    │       │   │   └── Uses for inline nodes >ia5
 			    │       │   ├── Compact Nodes >kpz
 			    │       │   │   └── Example Compact Node >d7b
@@ -105,15 +112,27 @@ The advantages to Node Pointers include:
 			    │       │   ├── Linking to outside resources >00q
 			    │       │   │   ├── Web / HTTP(S) >00o
 			    │       │   │   └── Files >00p
-			    │       │   └── ! RECURSION : Pointers >lmu
 			    │       ├── Exporting >ezg
 			    │       │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 			    │       │   └── Example : Fragment Exported to HTML >baq
 			    │       ├── File Naming >01m
+			    │       │   └── Reindex All Files >pz9
 			    │       ├── History >prp
+			    │       ├── project_settings >00l
+			    │       │   ├── `title` >egg
+			    │       │   ├── `project_title` >xqu
+			    │       │   ├── `home` >d6u
+			    │       │   ├── `console_log` >1lz
+			    │       │   ├── `filenames` >lch
+			    │       │   └── `timestamp_format` >00n
 			    │       ├── Errors and Warnings >bpk
-			    │       ├── Using Multiple Projects at a Time >ipy
+			    │       ├── Using Multiple Projects >ipy
+			    │       │   ├── Project Naming (Identification) >tgp
+			    │       │   └── Cross-Project Linking >7lx
 			    │       └── User Interface Elements >3n6
+			    │           ├── The Node Browser >01i
+			    │           └── Traverse Mode >00w
+			    │               └── Word Wrap in Traverse Mode >xci
 			    └── Example Recursive Node Tree >01n
 			ID::01n
 			def::>6ct }
