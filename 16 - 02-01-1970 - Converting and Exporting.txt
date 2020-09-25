@@ -1,6 +1,11 @@
+<!!
+node ID >baq exists in f>26 - 02-01-1970 - Exporting.txt
+node ID >m9d exists in f>26 - 02-01-1970 - Exporting.txt
+node ID >ezg exists in f>26 - 02-01-1970 - Exporting.txt
+!!>
 Exporting
 
-Urtext can export to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within. Like other dynamic functions, exporting is dynamic; when changes are made to the source nodes, exports are immediately updated.
+Urtext can export nodes, and sets of nodes, to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within the same project. Like other dynamic functions, exporting is dynamic ; that is, when changes are made to the source nodes, exports are immediately updated, whether they are in a project node or an external file.
 
 {  Example : Urtext Documentation Exported in Markdown to a File
 
@@ -17,7 +22,6 @@ Urtext can export to plaintext, Markdown and HTML. Results can be either output 
 
         For this documentation, we created a user-defined keyname `flags` to identify nodes that are examples/illustrations. We mark them for exclusion from the Table of Contents with they key `exclude_from_toc`. The following parameters accomplishes this:
         -(flags=exclude_from_export)    
-        FORMAT( -preformat)
         EXPORT(f>README.md; -markdown)
      ]]
 

@@ -1,31 +1,29 @@
-Project Settings
-
 The `project_settings` node is optional. To create one, make a node and use metadata to give it the title `project_settings`:
 
 This is the `project_settings` node for the "Urtext Documentation" Urtext project. In the metadata for this node you can specify a handful of settings for the project. (The text content of the node does not matter.)
 
-
+title::project_settings
 {  `title`
 	Reserved key for every node, used here to specificy this node as containing project settings  egg}
-title::project_settings
 
+project_title::Urtext Documentation
 {  `project_title`
 	Provides a title for the entire project xqu}
-project_title::Urtext Documentation
 
+home::a5m
 {  `home`
 	Identifies the home node for the project, connected to the "Home" key  d6u}
-home::a5m
 
+console_log::True
 {  `console_log`
 	(True or False): Sets whether Urtext will log updates, errors, messages to Sublime's Python console.
 	(Press Control-tilde(~)  to open the console)  1lz}
-console_log::True
 
+filenames::PREFIX | DATE %m-%d-%Y | TITLE
 {  `filenames`
 	Specifies format for filenames when using | Reindex All Files >pz9  lch}
-filenames::PREFIX | DATE %m-%d-%Y | TITLE
 
+timestamp_format::%a., %b. %d, %Y, %I:%M %p %z | %B %d, %Y, %I:%M %p
 { `timestamp_format`
 	
 	For more information on `strftime` directives and options, see https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior.
@@ -33,7 +31,6 @@ filenames::PREFIX | DATE %m-%d-%Y | TITLE
     For a list of all timezones ___ ADD SOME RESOURCE ____
 
 	Changing the default node_date_timestamp name and bevahior 00n}
-timestamp_format::%a., %b. %d, %Y, %I:%M %p %z | %B %d, %Y, %I:%M %p
 
 autoindex::true
 
@@ -49,6 +46,7 @@ log_id::hbe
 
 index::100
 
+history_interval::
 
 This node now has special reserved metadata keys that will be parsed as follows:
 

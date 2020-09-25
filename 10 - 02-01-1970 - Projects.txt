@@ -16,5 +16,4 @@ To make an new empty project:
     Note the append will occur without a confirmation dialog, so if you are just experimenting with this system, consider making a copy of your file folder so you can revert without having to manually remove the metadata.
 	
 rij}	
-
 ID::dce 

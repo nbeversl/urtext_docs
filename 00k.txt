@@ -1,3 +1,7 @@
+<!!
+node ID >aoq exists in f>32 - 02-01-1970 - Collections.txt
+node ID >00k exists in f>32 - 02-01-1970 - Collections.txt
+!!>
 Collections
 
 Collections are for "collecting" metadata entries, along with their context, in order to gain a "view" into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view. 
@@ -18,8 +22,8 @@ id :: 002 >002:185
  Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode
 
 
-id :: 003 >003:158 
- ssss
+id :: 003 >003:156 
+ Here are some tips for best leveraging Sublime's great UI features while using Urtext.
 
 
 id :: 004 >004:1284 
@@ -34,11 +38,19 @@ id :: 006 >006:2333
  - Version control (Git, for example).
 
 
+id :: 00c >00c:146 
+ The Home page is accessible anywhere in the project by pressing Ctrl-Shift-H. Specify the node ID you want this shortcut to jump to.
+
+
 id :: 00e >00e:22 
  Example Inline Node
 
 
-id :: 00j >00j:84 
+id :: 00i >00i:19 
+ Filename formats
+
+
+id :: 00j >00j:87 
  | Pointers >lmu
 
 
@@ -46,7 +58,7 @@ id :: 00k >00k:353
  Collections are for "collecting" metadata entries, along with their context, in order to gain a "view" into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view.
 
 
-id :: 00l >00l:795 
+id :: 00l >00l:376 
  This node now has special reserved metadata keys that will be parsed as follows:
 
 
@@ -54,8 +66,8 @@ id :: 00m >00m:653
  Links TO the current node FROM another node. When you select this command, a link to the current node will be copied to the clipboard. You can then paste the reference into the node you open in the quick panel.
 
 
-id :: 00n >00n:287 
- Changing the default node_date_timestamp name and bevahi
+id :: 00n >00n:284 
+ Changing the default node_date_timestamp name and bevahior
 
 
 id :: 00o >00o:216 
@@ -142,8 +154,8 @@ id :: 01m >01m:904
  This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
 
 
-id :: 01n >01n:4961 
- +-- Example Recursive Node Tree >01n
+id :: 01n >01n:4676 
+ └── Example Recursive Node Tree >01n
 
 
 id :: 01q >01q:379 
@@ -186,16 +198,8 @@ id :: 04s >04s:163
  Control-Shift-I will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually
 
 
-id :: 0vp >0vp:19 
- Project Settings
-
-
 id :: 0y2 >0y2:255 
  To make a "hyperlink" from one node to another, use the right angle bracket (>) followed immediately by a node ID. Linking does not require a filename or any other information, only the node ID. Any other surrounding text is ignored.
-
-
-id :: 1lz >1lz:166 
- (Press Control-tilde(~)  to open the console
 
 
 id :: 1rc >1rc:257 
@@ -214,7 +218,7 @@ id :: 3n6 >3n6:189
  | Traverse Mode >00w
 
 
-id :: 3x3 >3x3:56 
+id :: 3x3 >3x3:66 
  
 
 
@@ -222,8 +226,8 @@ id :: 3xv >3xv:37
  Traverse Mode
 
 
-id :: 4gr >4gr:2554 
- +-- `def` >5cq
+id :: 4gr >4gr:1460 
+ Duplicate Node IDs >bzv
 
 
 id :: 4p9 >4p9:271 
@@ -298,12 +302,12 @@ id :: 9up >9up:47
  Example inline node within the compact node.
 
 
-id :: a5m >a5m:682 
+id :: a5m >a5m:684 
  - Control-Shift-h at any time to return to this "home" node.
 
 
-id :: ac5 >ac5:361 
- | User Interface Elements >3n6
+id :: ac5 >ac5:332 
+ | User Interface Elements >3
 
 
 id :: arl >arl:610 
@@ -322,7 +326,7 @@ id :: bzv >bzv:497
  To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
 
 
-id :: c1x >c1x:233 
+id :: c1x >c1x:400 
  -
 
 
@@ -330,15 +334,11 @@ id :: c3n >c3n:371
  You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.
 
 
-id :: d6u >d6u:81 
- Identifies the home node for the project, connected to the "Home" ke
-
-
 id :: d7b >d7b:22 
  Example Compact Node
 
 
-id :: dce >dce:380 
+id :: dce >dce:381 
  - The folder how has one Urtext file and a `history` folder for tracking edits. (See | History >prp )
 
 
@@ -346,24 +346,20 @@ id :: e1x >e1x:197
  modifiying
 
 
-id :: e5j >e5j:3273 
- +-- Word Wrap in Traverse Mode >xci
+id :: e5j >e5j:3093 
+ └── Word Wrap in Traverse Mode >xci
 
 
 id :: eea >eea:909 
  Pass the current line contents and cursor position (within the line) to the UrtextProject. The method returns the best link match. Find the filename as described in >h8c and open it at the start_position returned from get_link(). See the open_urtext_node() function in the Sublime Text package for an example.
 
 
-id :: egg >egg:105 
- Reserved key for every node, used here to specificy this node as containing project setting
-
-
 id :: ekz >ekz:322 
  To create a new file, press `Urtext-;`. A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
 
 
-id :: ezg >ezg:281 
- Urtext can export to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within. Like other dynamic functions, exporting is dynamic; when changes are made to the source nodes, exports are immediately updated.
+id :: ezg >ezg:390 
+ Urtext can export nodes, and sets of nodes, to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within the same project. Like other dynamic functions, exporting is dynamic ; that is, when changes are made to the source nodes, exports are immediately updated, whether they are in a project node or an external file.
 
 
 id :: fo2 >fo2:123 
@@ -438,10 +434,6 @@ id :: l7o >l7o:26
  
 
 
-id :: lch >lch:83 
- Specifies format for filenames when using | Reindex All Files >pz
-
-
 id :: lhs >lhs:448 
  - any other writing or information management that can be done in text form
 
@@ -458,20 +450,20 @@ id :: lwg >lwg:19
  User-Defined
 
 
-id :: m1r >m1r:641 
- Metadata >00x
+id :: m1r >m1r:1485 
+ Duplicate Node IDs >bzv
 
 
 id :: m58 >m58:407 
  Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created:
 
 
-id :: m9d >m9d:1152 
+id :: m9d >m9d:1124 
  The following dynamic definition exports this entire documentation from its root node | Urtext  Version: 0.5-alpha  Usage Guide and References >a5m ) in Markdown format to a file called f>./README.md:
 
 
-id :: nc6 >nc6:22046 
- └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
+id :: nc6 >nc6:30879 
+ └── fifth level >xc9
 
 
 id :: njo >njo:85 
@@ -498,7 +490,7 @@ id :: oy5 >oy5:228
  Note that no text content wrapped between pass markers will appear in Urtext dynamic output, since characters in other syntaxes would have unpredictable interactions.
 
 
-id :: prp >prp:1217 
+id :: prp >prp:1240 
  Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories.
 
 
@@ -551,7 +543,7 @@ id :: twz >twz:138
 
 
 id :: ucj >ucj:199 
- +-- About Compact Nodes >ucj
+ └── About Compact Nodes >ucj
 
 
 id :: ue2 >ue2:150 
@@ -566,11 +558,11 @@ id :: uy4 >uy4:299
  For example, the following definition targets node >3x3 (below) and populates it with all nodes containing the word "urtext".
 
 
-id :: v7r >v7r:322 
+id :: v7r >v7r:330 
  | Example : Urtext Documentation Exported in Markdown to a File >m9d
 
 
-id :: w8u >w8u:284 
+id :: w8u >w8u:277 
  Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
 
 
@@ -606,10 +598,6 @@ id :: xor >xor:426
  Python
 
 
-id :: xqu >xqu:59 
- Provides a title for the entire proje
-
-
 id :: xsh >xsh:83 
  HTML
 
@@ -626,8 +614,8 @@ id :: z2s >z2s:26
  
 
 
-id :: z7t >z7t:272 
- | Sublime Text Interface Tips >003
+id :: z7t >z7t:260 
+ | Sublime Text Interface Tips >0
 
 
 id :: znj >znj:1799 

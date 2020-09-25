@@ -15,27 +15,17 @@ Templating the Output with the SHOW parameter
 
           {
 			Example List 2
-			Compact Nodes: >j6t
+			Example Child Node Using a Node Pointer: >001
 			-
-			├── require an ID: >frm
+			Full Screen / Distraction Free Mode: >002
 			-
-			├── can have arbitrary other metadata: >xlc
+			Sublime Text Interface Tips: >003
 			-
-			├── become child nodes of their containing node.: >hiz
+			Inline Nodes: >004
 			-
-			└── About Compact Nodes: >ucj
+			Timestamps: >005
 			-
-			"Table of Contents" Dynamic Definition: >v7r
-			-
-			└── Nodes Excluded from the Table of Contents: >jkl
-			-
-			(untitled): >l7o
-			-
-			(untitled): >z2s
-			-
-			About Compact Nodes: >ucj
-			-
-			ID::c1x
-			def::>8p5 }
+			def::>8p5
+			ID::c1x }
 
 id::8p5
