@@ -134,7 +134,7 @@ The advantages to Node Pointers include:
 			    │       │   ├── Opening Links >01w
 			    │       │   │   ├── Sublime >osu
 			    │       │   │   └── Pythonista >iy8
-			    │       │   ├── Linking to outside resources >00q
+			    │       │   ├── Linking to Files and Other Resources >00q
 			    │       │   │   ├── Web / HTTP(S) >00o
 			    │       │   │   └── Files >00p
 			    │       ├── Exporting >ezg

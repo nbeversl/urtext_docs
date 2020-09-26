@@ -46,7 +46,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Opening Links >01w
 		│   ├── Sublime >osu
 		│   └── Pythonista >iy8
-		├── Linking to outside resources >00q
+		├── Linking to Files and Other Resources >00q
 		│   ├── Web / HTTP(S) >00o
 		│   └── Files >00p
 		└── Pointers >lmu
@@ -72,7 +72,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		`timestamp_format` >00n
 		Web / HTTP(S) >00o
 		Files >00p
-		Linking to outside resources >00q
+		Linking to Files and Other Resources >00q
 		├── Web / HTTP(S) >00o
 		└── Files >00p
 		Duplicate Pointers >00t
@@ -237,7 +237,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       │   ├── Links >0y2
 		│       │   ├── Dynamic Titles >4vu
 		│       │   ├── Opening Links >01w
-		│       │   ├── Linking to outside resources >00q
+		│       │   ├── Linking to Files and Other Resources >00q
 		│       ├── Exporting >ezg
 		│       │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
 		│       │   └── Example : Fragment Exported to HTML >baq
@@ -372,7 +372,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │   ├── Opening Links >01w
 		    │   │   ├── Sublime >osu
 		    │   │   └── Pythonista >iy8
-		    │   ├── Linking to outside resources >00q
+		    │   ├── Linking to Files and Other Resources >00q
 		    │   │   ├── Web / HTTP(S) >00o
 		    │   │   └── Files >00p
 		    │   └── Pointers >lmu
@@ -446,7 +446,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── Opening Links >01w
 		│   │   ├── Sublime >osu
 		│   │   └── Pythonista >iy8
-		│   ├── Linking to outside resources >00q
+		│   ├── Linking to Files and Other Resources >00q
 		│   │   ├── Web / HTTP(S) >00o
 		│   │   └── Files >00p
 		│   └── Pointers >lmu

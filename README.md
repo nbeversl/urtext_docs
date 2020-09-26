@@ -3,6 +3,8 @@
 
 This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. The documentation is a versioned-controlled Urtext project kept in a public repository at https://github.com/nbeversl/urtext-docs. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
 
+Since many of the examples rely on syntax, formatting, and highlighting, screenshots are provided for the Markdown export when necessary, using the ![ notation ([Linking to Files and Other Resources](#linking-to-files-and-other-resources))]( notation ([Linking to Files and Other Resources](#linking-to-files-and-other-resources)))
+
 # About Urtext
 ## Description 
 
@@ -496,7 +498,7 @@ Links and Pointers[Links and Pointers](#links-and-pointers)
 			├── Opening Links[Opening Links](#opening-links)
 			│   ├── Sublime[Sublime](#sublime)
 			│   └── Pythonista[Pythonista](#pythonista)
-			├── Linking to outside resources[Linking to outside resources](#linking-to-outside-resources)
+			├── Linking to outside resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
 			│   ├── Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
 			│   └── Files[Files](#files)
 			└── Pointers[Pointers](#pointers)
@@ -522,7 +524,7 @@ Sublime Text tools to help with linking[Sublime Text tools to help with linking]
 `timestamp_format`[`timestamp_format`](#`timestamp_format`)
 Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
 Files[Files](#files)
-Linking to outside resources[Linking to outside resources](#linking-to-outside-resources)
+Linking to outside resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
 			├── Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
 			└── Files[Files](#files)
 Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
@@ -619,7 +621,7 @@ Press Shift-Ctrl-/ on a line containing a link to open the node with the linked 
 
 Use the `/` botton when the cursor is on any line containing a link.
 Note that Urtext reads node regions on every save, so cursor location may be imprecise if the file has been altered since the last save.
-### Linking to outside resources
+### Linking to Files and Other Resources
 #### Web / HTTP(S) 
 
 HTTP(S) links are recognized automatically and will open in the default browser.    
@@ -726,7 +728,7 @@ Reference[Reference](#reference)
 │   ├── Opening Links[Opening Links](#opening-links)
 │   │   ├── Sublime[Sublime](#sublime)
 │   │   └── Pythonista[Pythonista](#pythonista)
-│   ├── Linking to outside resources[Linking to outside resources](#linking-to-outside-resources)
+│   ├── Linking to Files and Other Resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
 │   │   ├── Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
 │   │   └── Files[Files](#files)
 │   └── Pointers[Pointers](#pointers)
@@ -1043,7 +1045,7 @@ Pointers[Pointers](#pointers)
 			    │       │   ├── Opening Links[Opening Links](#opening-links)
 			    │       │   │   ├── Sublime[Sublime](#sublime)
 			    │       │   │   └── Pythonista[Pythonista](#pythonista)
-			    │       │   ├── Linking to outside resources[Linking to outside resources](#linking-to-outside-resources)
+			    │       │   ├── Linking to outside resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
 			    │       │   │   ├── Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
 			    │       │   │   └── Files[Files](#files)
 			    │       ├── Exporting[Exporting](#exporting)

@@ -1,4 +1,4 @@
-Linking to outside resources
+Linking to Files and Other Resources
 
 { Web / HTTP(S)
 

@@ -47,7 +47,7 @@ Trees
 			├── Opening Links >01w
 			│   ├── Sublime >osu
 			│   └── Pythonista >iy8
-			├── Linking to outside resources >00q
+			├── Linking to Files and Other Resources >00q
 			│   ├── Web / HTTP(S) >00o
 			│   └── Files >00p
 			└── Pointers >lmu
@@ -73,7 +73,7 @@ Trees
 			`timestamp_format` >00n
 			Web / HTTP(S) >00o
 			Files >00p
-			Linking to outside resources >00q
+			Linking to Files and Other Resources >00q
 			├── Web / HTTP(S) >00o
 			└── Files >00p
 			Duplicate Pointers >00t
