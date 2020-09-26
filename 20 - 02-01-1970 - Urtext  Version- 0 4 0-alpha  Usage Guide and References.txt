@@ -113,8 +113,8 @@ def::>v7r }
   | Using Urtext in iOS with Pythonista >os4
   | Basic Syntax >>znj
   | Dynamic Definitions : Syntax and Parameters >>87g
-  | Operations >>e1x
-  | Key Bindings >>tx6
+  |  ?  >>e1x
+  | Key Bindings and Operations >>tx6
   | Sublime Text Interface Tips >>003
   index::02
 z7t}

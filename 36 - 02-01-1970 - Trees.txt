@@ -9,7 +9,7 @@ Trees
 	It does not matter how you format the parameters; here they are strung together on a single line:
 	ID(>4gr) 
 	INCLUDE(*) 
-	LIMIT(20) 
+	LIMIT(10) 
 	FORMAT(indent:3) 
 	HEADER(Example Tree)
 	]]
@@ -69,37 +69,12 @@ Trees
 			├── `console_log` >1lz
 			├── `filenames` >lch
 			└── `timestamp_format` >00n
-			Sublime Text tools to help with linking >00m
-			`timestamp_format` >00n
-			Web / HTTP(S) >00o
-			Files >00p
-			Linking to Files and Other Resources >00q
-			├── Web / HTTP(S) >00o
-			└── Files >00p
-			Duplicate Pointers >00t
-			└── Example Child Node Using a Node Pointer >001
-			Viewing Linked Relationships >00u
-			Traverse Mode >00w
-			└── Word Wrap in Traverse Mode >xci
-			Metadata >00x
-			├── General Syntax >8dw
-			├── Timestamps >005
-			│   ├── Syntax and Format >hg7
-			│   ├── Tracking Node Dates and Times >m58
-			│   └── Time Zones >7w6
-			├── Case-sensitivity >l36
-			└── Reserved Keys >fo2
-			    ├── `index` >00z
-			    ├── `title` >pz3
-			    └── `def` >5cq
-			`index` >00z
 			ID::4gr
 			def::>h6l }
 
    h6l}
-sssssss
-In practice most of these nodes have only a 2-3 levels of nesting. For an example of a larger tree, look at the | "Table of Contents" Dynamic Definition >>v7r
 
+In practice most of these nodes have only a 2-3 levels of nesting. For an example of a larger tree, look at the | "Table of Contents" Dynamic Definition >>v7r
 
 Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
 

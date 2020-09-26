@@ -32,7 +32,7 @@ Here is the dynamic definition that generates the | Table of Contents >e5j for t
 	ID(>jkl)
     FORMAT(indent:3)
     DEPTH(*)
-    FOOTER(flags::exclude_from_toc)
+    FOOTER(flags::exclude_from_toc | exclude_from_export)
 
  ]]
 
@@ -69,9 +69,13 @@ Here is the dynamic definition that generates the | Table of Contents >e5j for t
 			Nav Forward 							ctrl + shift + . >yan
 			Node Browser: Forward Links 			ctrl + shift + 2 >ylo
 			Quick Tag from Other 					ctrl + shift + 0 >zep
-			flags::exclude_from_toc
+			flags::exclude_from_toc | exclude_from_export
 			ID::jkl
 			def::>v7r }
+
+f>./files/toc-dynamic-definition.png
+f>./files/excluded-from-toc-definition.png
+f>./files/excluded-from-toc-list.png
 
 See also the definition that dynamically creates the README.md version of this documentation:
 | Example : Urtext Documentation Exported in Markdown to a File >m9d

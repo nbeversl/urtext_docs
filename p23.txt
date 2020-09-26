@@ -2,7 +2,7 @@ About This Documentation
 
 This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. The documentation is a versioned-controlled Urtext project kept in a public repository at https://github.com/nbeversl/urtext-docs. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
 
-Many of the examples rely on syntax, formatting, and highlighting, which is stripped out in export to Markdown. These replaced with screenshots for the Markdown export as necessary, linked from Urtext using the f> notation (see | Linking to Files and Other Resources >00q and | Exporting >ezg)
+Many of the examples rely on syntax, formatting, and highlighting, which is stripped out in export to Markdown. In export (README.MD) these are replaced with linked screenshots as necessary (see | Linking to Files and Other Resources >00q and | Exporting >ezg)
 
 id::p23
 index::0

@@ -3,7 +3,7 @@
 
 This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. The documentation is a versioned-controlled Urtext project kept in a public repository at https://github.com/nbeversl/urtext-docs. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
 
-Since many of the examples rely on syntax, formatting, and highlighting, screenshots are provided for the Markdown export when necessary, using the ![ notation ([Linking to Files and Other Resources](#linking-to-files-and-other-resources))]( notation ([Linking to Files and Other Resources](#linking-to-files-and-other-resources)))
+Many of the examples rely on syntax, formatting, and highlighting, which is stripped out in export to Markdown. In export (README.MD) these are replaced with linked screenshots as necessary (see [Linking to Files and Other Resources](#linking-to-files-and-other-resources) and [Exporting](#exporting))
 
 # About Urtext
 ## Description 
@@ -130,7 +130,7 @@ Dynamic definitions are wrapped using double left and right square brackets. Not
 
 The dynamic definition below does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see [Dynamic Nodes](#dynamic-nodes)
 
-| Operations >>e1x
+|  ?  >>e1x
 ## Key Bindings and Operations
 ### Navigation
 #### Toggle Traverse Mode 					ctrl + shift + r
@@ -498,7 +498,7 @@ Links and Pointers[Links and Pointers](#links-and-pointers)
 			├── Opening Links[Opening Links](#opening-links)
 			│   ├── Sublime[Sublime](#sublime)
 			│   └── Pythonista[Pythonista](#pythonista)
-			├── Linking to outside resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
+			├── Linking to Files and Other Resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
 			│   ├── Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
 			│   └── Files[Files](#files)
 			└── Pointers[Pointers](#pointers)
@@ -520,70 +520,11 @@ project_settings[project_settings](#project_settings)
 			├── `console_log`[`console_log`](#`console_log`)
 			├── `filenames`[`filenames`](#`filenames`)
 			└── `timestamp_format`[`timestamp_format`](#`timestamp_format`)
-Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
-`timestamp_format`[`timestamp_format`](#`timestamp_format`)
-Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
-Files[Files](#files)
-Linking to outside resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
-			├── Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
-			└── Files[Files](#files)
-Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
-			└── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
-Viewing Linked Relationships[Viewing Linked Relationships](#viewing-linked-relationships)
-Traverse Mode[Traverse Mode](#traverse-mode)
-			└── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
-Metadata[Metadata](#metadata)
-			├── General Syntax[General Syntax](#general-syntax)
-			├── Timestamps[Timestamps](#timestamps)
-			│   ├── Syntax and Format[Syntax and Format](#syntax-and-format)
-			│   ├── Tracking Node Dates and Times[Tracking Node Dates and Times](#tracking-node-dates-and-times)
-			│   └── Time Zones[Time Zones](#time-zones)
-			├── Case-sensitivity[Case-sensitivity](#case-sensitivity)
-			└── Reserved Keys[Reserved Keys](#reserved-keys)
-			    ├── `index`[`index`](#`index`)
-			    ├── `title`[`title`](#`title`)
-			    └── `def`[`def`](#`def`)
-`index`[`index`](#`index`)
-sssssss
 In practice most of these nodes have only a 2-3 levels of nesting. For an example of a larger tree, look at the #### "Table of Contents" Dynamic Definition
 
 Here is the dynamic definition that generates the [Table of Contents](#table-of-contents) for this documentation.
-##### Nodes Excluded from the Table of Contents
-
-Copy Link to this Node With Title  		ctrl + shift + super + c[Copy Link to this Node With Title  		ctrl + shift + super + c](#copy-link-to-this-node-with-title--		ctrl-+-shift-+-super-+-c)
-Node Browser: Backlinks					ctrl + shift + 1[Node Browser: Backlinks					ctrl + shift + 1](#node-browser:-backlinks					ctrl-+-shift-+-1)
-Insert Compact Node 					ctrl + shift + ^[Insert Compact Node 					ctrl + shift + ^](#insert-compact-node-					ctrl-+-shift-+-^)
-Nav Backward 							ctrl + shift + ,[Nav Backward 							ctrl + shift + ,](#nav-backward-							ctrl-+-shift-+-,)
-Home Node 								ctrl + shift + h[Home Node 								ctrl + shift + h](#home-node-								ctrl-+-shift-+-h)
-Rename File???			ctrl+shift+s,[Rename File???			ctrl+shift+s,](#rename-file???			ctrl+shift+s,)
-Insert Timestamp 						ctrl + shift + t[Insert Timestamp 						ctrl + shift + t](#insert-timestamp-						ctrl-+-shift-+-t)
-The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing[The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing](#the-symbol-below-is-a-pass-marker,-which-tells-urtext-to-skip-everything-between-it-and-the-closing)
-Example first level[Example first level](#example-first-level)
-			└── second level[second level](#second-level)
-			    └── third test level[third test level](#third-test-level)
-			        └── test fourth level[test fourth level](#test-fourth-level)
-			            └── fifth level[fifth level](#fifth-level)
-Insert Inline Node, minimal (trailing node ID, single line, no other metadata):[Insert Inline Node, minimal (trailing node ID, single line, no other metadata):](#insert-inline-node,-minimal-trailing-node-id,-single-line,-no-other-metadata:)
-List Projects 							ctrl + shift + o[List Projects 							ctrl + shift + o](#list-projects-							ctrl-+-shift-+-o)
-Add Node ID 							ctrl + shift + i[Add Node ID 							ctrl + shift + i](#add-node-id-							ctrl-+-shift-+-i)
-Toggle Traverse Mode 					ctrl + shift + r[Toggle Traverse Mode 					ctrl + shift + r](#toggle-traverse-mode-					ctrl-+-shift-+-r)
-Node Browser, Include All Projects 		ctrl + shift + *[Node Browser, Include All Projects 		ctrl + shift + *](#node-browser,-include-all-projects-		ctrl-+-shift-+-*)
-Insert Dynamic Definition with Node 	ctrl + shift + ][Insert Dynamic Definition with Node 	ctrl + shift + ]](#insert-dynamic-definition-with-node-	ctrl-+-shift-+-])
-Toggle History Traverse					ctrl + shift + g[Toggle History Traverse					ctrl + shift + g](#toggle-history-traverse					ctrl-+-shift-+-g)
-Open Urtext Link 						ctrl + shift + /[Open Urtext Link 						ctrl + shift + /](#open-urtext-link-						ctrl-+-shift-+-/)
-Open Random Node 						ctrl + shift + f[Open Random Node 						ctrl + shift + f](#open-random-node-						ctrl-+-shift-+-f)
-Insert Inline Node   					ctrl + shift + [[Insert Inline Node   					ctrl + shift + [](#insert-inline-node---					ctrl-+-shift-+-[)
-Insert Link to New Node  				ctrl + shift + '[Insert Link to New Node  				ctrl + shift + '](#insert-link-to-new-node--				ctrl-+-shift-+-')
-This node is just here as a destination from the node pointer in  Basic Syntax[This node is just here as a destination from the node pointer in  Basic Syntax](#this-node-is-just-here-as-a-destination-from-the-node-pointer-in--basic-syntax)
-Node Browser 							ctrl + shift + e[Node Browser 							ctrl + shift + e](#node-browser-							ctrl-+-shift-+-e)
-New Node 								ctrl + shift + ;[New Node 								ctrl + shift + ;](#new-node-								ctrl-+-shift-+-;)
-Copy Link to this Node  				ctrl + shift + c[Copy Link to this Node  				ctrl + shift + c](#copy-link-to-this-node--				ctrl-+-shift-+-c)
-Nav Forward 							ctrl + shift + .[Nav Forward 							ctrl + shift + .](#nav-forward-							ctrl-+-shift-+-.)
-Node Browser: Forward Links 			ctrl + shift + 2[Node Browser: Forward Links 			ctrl + shift + 2](#node-browser:-forward-links-			ctrl-+-shift-+-2)
-Quick Tag from Other 					ctrl + shift + 0[Quick Tag from Other 					ctrl + shift + 0](#quick-tag-from-other-					ctrl-+-shift-+-0)
 See also the definition that dynamically creates the README.md version of this documentation:
 [Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
-
 
 
 Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
@@ -825,7 +766,7 @@ Dynamic definitions are wrapped using double left and right square brackets. Not
 
 The dynamic definition below does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see [Dynamic Nodes](#dynamic-nodes)
 
-| Operations >>e1x
+|  ?  >>e1x
 ####### Key Bindings and Operations
 ######## Navigation
 ######### Toggle Traverse Mode 					ctrl + shift + r
@@ -1045,7 +986,7 @@ Pointers[Pointers](#pointers)
 			    │       │   ├── Opening Links[Opening Links](#opening-links)
 			    │       │   │   ├── Sublime[Sublime](#sublime)
 			    │       │   │   └── Pythonista[Pythonista](#pythonista)
-			    │       │   ├── Linking to outside resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
+			    │       │   ├── Linking to Files and Other Resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
 			    │       │   │   ├── Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
 			    │       │   │   └── Files[Files](#files)
 			    │       ├── Exporting[Exporting](#exporting)
