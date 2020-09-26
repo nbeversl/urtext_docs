@@ -284,13 +284,6 @@ Create an inline nodes with `Ctrl-Shift-squiggly-brace. Inside the inserted doub
 To wrap existing content into an inline node, first select the content and use the same keypress.
 
 Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. When syntax highlighting is active, inline node wrappers are tinted to showing nesting level:
-#### Example first level
-##### second level
-###### third test level
-####### test fourth level
-######## fifth level
-(The metadata entry above excludes this example from the Table of Contents tree.
-See ["Table of Contents" Dynamic Definition](#"table-of-contents"-dynamic-definition) for information)
 (For Markdown export, a screenshot is provided showing indentation and highlighting:)
 ![./files/node-nesting-example.png](./files/node-nesting-example.png)
 
@@ -460,6 +453,9 @@ There are two main kinds of dynamic output, Lists and Collections:
 "Lists" are lists of nodes, with each node displayed not more than once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list.
 
 ### Lists
+![./files/example-list-1-definition.png](./files/example-list-1-definition.png)
+![./files/example-list-1.png](./files/example-list-1.png)
+
 Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
 
 

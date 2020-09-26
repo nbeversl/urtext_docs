@@ -18,7 +18,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
                     5pq}  
                 80d}  
            6qj}  
-    flags::exclude_from_toc | exclude_from _export
+    flags::exclude_from_toc | exclude_from_export
     (The metadata entry above excludes this example from the Table of Contents tree.
     See | "Table of Contents" Dynamic Definition >v7r for information)
     8fv}  
