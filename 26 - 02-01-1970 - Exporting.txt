@@ -11,9 +11,12 @@ Urtext can export to plaintext, Markdown and HTML. Results can be either output 
         +(ID=013) | About Urtext >013
         +(ID=z7t) | Quick Start, Guides and Examples >z7t
         +(ID=ac5) | Reference >ac5
+        
 
         Here we use `*` for DEPTH, which means unlimited depth. Note that using | Pointers >lmu it is possible to create recursive trees (circular references). In this case, the tree will be drawn only to the first point of recursion. See | Recursive Node Pointers >6ct for more information. 
         DEPTH(*)
+
+        SORT(index)
 
         For this documentation, we created a user-defined keyname `flags` to identify nodes that are examples/illustrations. We mark them for exclusion from the Table of Contents with they key `exclude_from_toc`. The following parameters accomplishes this:
         -(flags=exclude_from_export)    

@@ -1,9 +1,0 @@
-<!!
-node ID >bpk exists in f>43 - 02-01-1970 - Errors and Warnings.txt
-!!>
-
-Errors and Warnings
-
-
-
-id::bpk

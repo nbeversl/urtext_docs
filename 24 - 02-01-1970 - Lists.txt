@@ -38,11 +38,11 @@ Lists
 			Linking to outside resources >00q
 			Duplicate Pointers >00t
 			Viewing Linked Relationships >00u
-			Example Source Node 2 >00v
 			Traverse Mode >00w
 			Metadata >00x
-			def::>twz
-			ID::m1r }
+			`index` >00z
+			ID::m1r
+			def::>twz }
 
    Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
 

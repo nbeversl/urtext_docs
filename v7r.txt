@@ -39,14 +39,14 @@ Here is the dynamic definition that generates the | Table of Contents >e5j for t
 			Nodes Excluded from the Table of Contents
 			The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 			Example first level >8fv
-			+-- second level >6qj
-			    +-- third test level >80d
-			        +-- test fourth level >5pq
-			            +-- fifth level >xc9
+			└── second level >6qj
+			    └── third test level >80d
+			        └── test fourth level >5pq
+			            └── fifth level >xc9
 			This node is just here as a destination from the node pointer in  Basic Syntax >ttt
 			flags::exclude_from_toc
-			def::>v7r
-			ID::jkl }
+			ID::jkl
+			def::>v7r }
 
 See also the definition that dynamically creates the README.md version of this documentation:
 | Example : Urtext Documentation Exported in Markdown to a File >m9d
