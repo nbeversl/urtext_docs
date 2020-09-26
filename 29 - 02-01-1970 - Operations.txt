@@ -1,6 +1,5 @@
 Operations
 
-Built-in operations are bound to either hotkeys or to UI menus.
 
 Hotkeys differ among operating systems and can be reassigned according to your preference by
 modifiying
@@ -18,42 +17,7 @@ modifiying
 	Move File to Other Project   
 	9u0}
 
-{ Navigation
 
-	`h` 	Home  `
-			Go to the designated home page of the project. Define the home node in | project_settings >00l
-
-	`<` 	Navigate Back
-			Go to the previously visited node (web-browser-like navigation)
-
-	`>` 	Navigate Forward 
-			Go to the next visited node (web-browser-like navigation)
-
-	`e`		Node List :
-			Show a quick search bar of all nodes in the current project
-
-	`*`		Global Node List:
-			Show a quick search bar of all nodes in all known projects.
-   omh}
-
-{ Insertions
-
-	`t` 	Timestamp:
-			Insert a timestamp at the cursor's location, in the project's default format. For setting timestamp format defaults, see | project_settings >00l
-
-	`i` 	ID:
-			Insert an arbitrary (unallocated) Node ID with metadata wrapper at the cursor position.
-   wjj}
-
-{ Editing
-	
-	`g`: 	Editing History
-			View the editing history for the currently viewed file.
-			For more informatino see | History >prp
-	
-	(menu)	Consolidate Metadata
-			Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
-   xba}
 
 { Sublime Text Only
 	Traverse Mode

@@ -1,0 +1,7 @@
+About This Documentation
+
+This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. The documentation is a versioned-controlled Urtext project kept in a public repository at https://github.com/nbeversl/urtext-docs. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
+
+id::p23
+index::0
+updated::<Sat., Sep. 26, 2020, 04:55 PM +0000>

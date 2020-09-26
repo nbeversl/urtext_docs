@@ -1,0 +1,52 @@
+Key Bindings
+
+
+{  Navigation
+
+	{  	Toggle Traverse Mode 					ctrl + shift + r  					hcf}
+	{  	Open Urtext Link 						ctrl + shift + /					ngh}
+	{  	Nav Forward 							ctrl + shift + .   					yan}
+	{  	Nav Backward 							ctrl + shift + ,  					3hy}
+	{  	Node Browser, Include All Projects 		ctrl + shift + *					hyh}
+	{  	Node Browser: Backlinks					ctrl + shift + 1    				1ea}
+	{  	Node Browser: Forward Links 			ctrl + shift + 2    				ylo}
+	{  	Home Node 								ctrl + shift + h 					5ab}
+	{  	Node Browser 							ctrl + shift + e  					vdr}
+	{  	Open Random Node 						ctrl + shift + f 					q5f}
+	{  	List Projects 							ctrl + shift + o 					g5a}
+														*flags::exclude_from_toc; v6a}
+
+{  Content Insertions
+
+	{  	New Node 								ctrl + shift + ; 					ve3}
+	{  	Add Node ID 							ctrl + shift + i 					gv9}
+	{  	Insert Timestamp 						ctrl + shift + t   					7b8}
+	{  	Insert Compact Node 					ctrl + shift + ^  					1qq}
+	{  	Insert Inline Node   					ctrl + shift + [ 					rzx}
+	{  	Insert Inline Node, minimal (trailing node ID, single line, no other metadata):
+												ctrl + shift + p (OSX)   	
+												alt  + shift + p (Windows, Linux)	9zp}
+	{  	Insert Dynamic Definition with Node 	ctrl + shift + ]					jsc}
+	{  	Insert Link to New Node  				ctrl + shift + '					sxk}
+	{  	Quick Tag from Other 					ctrl + shift + 0  					zep}
+	 													*flags::exclude_from_toc; 35a}
+
+{  Copy Links
+
+	{  	Copy Link to this Node  				ctrl + shift + c 					vel}
+	{  	Copy Link to this Node With Title  		ctrl + shift + super + c 			05x}
+  														*flags::exclude_from_toc; zjz}
+
+{  History
+
+	{  	Toggle History Traverse					ctrl + shift + g 					ndc}
+														*flags::exclude_from_toc; e24}
+
+{  File Management
+
+	{  Rename File???			ctrl+shift+s,   5qr}
+	  n8z}														
+
+
+id::tx6
+updated::<Sat., Sep. 26, 2020, 03:48 PM +0000>

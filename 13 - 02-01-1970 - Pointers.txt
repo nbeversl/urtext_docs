@@ -37,7 +37,7 @@ The advantages to Node Pointers include:
 			├── Duplicate Pointers >00t
 			│   └── Example Child Node Using a Node Pointer >001
 			└── Recursive Node Pointers >6ct
-			    ├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+			    ├── xUrtext  Version: 0.5-alpha  Usage Guide and References >a5m
 			    │   ├── Table of Contents >e5j
 			    │   ├── Quick Start, Guides and Examples >z7t
 			    │   │   ├── Installation and Setup (Desktop) >6cd
@@ -46,10 +46,37 @@ The advantages to Node Pointers include:
 			    │   │   ├── Dynamic Definitions : Syntax and Parameters >87g
 			    │   │   ├── Operations >e1x
 			    │   │   │   ├── Project Management >9u0
-			    │   │   │   ├── Navigation >omh
-			    │   │   │   ├── Insertions >wjj
-			    │   │   │   ├── Editing >xba
 			    │   │   │   └── Sublime Text Only >3xv
+			    │   │   ├── Key Bindings >tx6
+			    │   │   │   ├── Navigation >v6a
+			    │   │   │   │   ├── Toggle Traverse Mode 					ctrl + shift + r >hcf
+			    │   │   │   │   ├── Open Urtext Link 						ctrl + shift + / >ngh
+			    │   │   │   │   ├── Nav Forward 							ctrl + shift + . >yan
+			    │   │   │   │   ├── Nav Backward 							ctrl + shift + , >3hy
+			    │   │   │   │   ├── Node Browser, Include All Projects 		ctrl + shift + * >hyh
+			    │   │   │   │   ├── Node Browser: Backlinks					ctrl + shift + 1 >1ea
+			    │   │   │   │   ├── Node Browser: Forward Links 			ctrl + shift + 2 >ylo
+			    │   │   │   │   ├── Home Node 								ctrl + shift + h >5ab
+			    │   │   │   │   ├── Node Browser 							ctrl + shift + e >vdr
+			    │   │   │   │   ├── Open Random Node 						ctrl + shift + f >q5f
+			    │   │   │   │   └── List Projects 							ctrl + shift + o >g5a
+			    │   │   │   ├── Content Insertions >35a
+			    │   │   │   │   ├── New Node 								ctrl + shift + ; >ve3
+			    │   │   │   │   ├── Add Node ID 							ctrl + shift + i >gv9
+			    │   │   │   │   ├── Insert Timestamp 						ctrl + shift + t >7b8
+			    │   │   │   │   ├── Insert Compact Node 					ctrl + shift + ^ >1qq
+			    │   │   │   │   ├── Insert Inline Node   					ctrl + shift + [ >rzx
+			    │   │   │   │   ├── Insert Inline Node, minimal (trailing node ID, single line, no other metadata): >9zp
+			    │   │   │   │   ├── Insert Dynamic Definition with Node 	ctrl + shift + ] >jsc
+			    │   │   │   │   ├── Insert Link to New Node  				ctrl + shift + ' >sxk
+			    │   │   │   │   └── Quick Tag from Other 					ctrl + shift + 0 >zep
+			    │   │   │   ├── Copy Links >zjz
+			    │   │   │   │   ├── Copy Link to this Node  				ctrl + shift + c >vel
+			    │   │   │   │   └── Copy Link to this Node With Title  		ctrl + shift + super + c >05x
+			    │   │   │   ├── History >e24
+			    │   │   │   │   └── Toggle History Traverse					ctrl + shift + g >ndc
+			    │   │   │   └── File Management >n8z
+			    │   │   │       └── Rename File???			ctrl+shift+s, >5qr
 			    │   │   └── Sublime Text Interface Tips >003
 			    │   │       ├── Syntax Highlighting >01d
 			    │   │       ├── Hiding Tabs >015

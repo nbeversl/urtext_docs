@@ -1,4 +1,8 @@
 
+# About This Documentation
+
+This documentation is in progress and may be incomplete or behind features and functionality of Urtext. The repository is itself an Urtext project at https://github.com/nbeversl/urtext-docs. Edits and additions and encouraged in the form of issues/pull requests.
+
 # About Urtext
 ## Description 
 
@@ -126,7 +130,6 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 ## Operations
 
-Built-in operations are bound to either hotkeys or to UI menus.
 
 Hotkeys differ among operating systems and can be reassigned according to your preference by
 modifiying
@@ -141,39 +144,41 @@ Delete This Node
 Initialize Project
 Pop Node
 Move File to Other Project
-### Navigation 
-
-`h` 	Home  `
-Go to the designated home page of the project. Define the home node in [project_settings](#project_settings)
-
-`<` 	Navigate Back
-Go to the previously visited node (web-browser-like navigation)
-
-`>` 	Navigate Forward 
-Go to the next visited node (web-browser-like navigation)
-
-`e`		Node List :
-Show a quick search bar of all nodes in the current project
-
-`*`		Global Node List:
-Show a quick search bar of all nodes in all known projects.
-### Insertions 
-
-`t` 	Timestamp:
-Insert a timestamp at the cursor's location, in the project's default format. For setting timestamp format defaults, see [project_settings](#project_settings)
-
-`i` 	ID:
-Insert an arbitrary (unallocated) Node ID with metadata wrapper at the cursor position.
-### Editing 
-
-`g`: 	Editing History
-View the editing history for the currently viewed file.
-For more informatino see [History](#history)
-
-(menu)	Consolidate Metadata
-Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
 ### Sublime Text Only 
 Traverse Mode
+
+## Key Bindings
+### Navigation
+#### Toggle Traverse Mode 					ctrl + shift + r
+#### Open Urtext Link 						ctrl + shift + /
+#### Nav Forward 							ctrl + shift + .
+#### Nav Backward 							ctrl + shift + ,
+#### Node Browser, Include All Projects 		ctrl + shift + *
+#### Node Browser: Backlinks					ctrl + shift + 1
+#### Node Browser: Forward Links 			ctrl + shift + 2
+#### Home Node 								ctrl + shift + h
+#### Node Browser 							ctrl + shift + e
+#### Open Random Node 						ctrl + shift + f
+#### List Projects 							ctrl + shift + o
+### Content Insertions
+#### New Node 								ctrl + shift + ;
+#### Add Node ID 							ctrl + shift + i
+#### Insert Timestamp 						ctrl + shift + t
+#### Insert Compact Node 					ctrl + shift + ^
+#### Insert Inline Node   					ctrl + shift + [
+#### Insert Inline Node, minimal (trailing node ID, single line, no other metadata):  	
+ctrl + shift + p (OSX)   	
+alt  + shift + p (Windows, Linux)
+#### Insert Dynamic Definition with Node 	ctrl + shift + ]
+#### Insert Link to New Node  				ctrl + shift + '
+#### Quick Tag from Other 					ctrl + shift + 0
+### Copy Links
+#### Copy Link to this Node  				ctrl + shift + c
+#### Copy Link to this Node With Title  		ctrl + shift + super + c
+### History
+#### Toggle History Traverse					ctrl + shift + g
+### File Management
+#### Rename File???			ctrl+shift+s,
 
 ## Sublime Text Interface Tips  
 
@@ -537,7 +542,7 @@ Links and Pointers[Links and Pointers](#links-and-pointers)
 			    ├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
 			    │   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
 			    └── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-			        ├── Urtext  Version: 0.5-alpha  Usage Guide and References[Urtext  Version: 0.5-alpha  Usage Guide and References](#urtext--version:-0.5-alpha--usage-guide-and-references)
+			        ├── xUrtext  Version: 0.5-alpha  Usage Guide and References[xUrtext  Version: 0.5-alpha  Usage Guide and References](#xurtext--version:-0.5-alpha--usage-guide-and-references)
 			        │   ├── Table of Contents[Table of Contents](#table-of-contents)
 			        │   ├── Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
 			        │   └── Reference[Reference](#reference)
@@ -581,13 +586,36 @@ In practice most of these nodes have only a 2-3 levels of nesting. For an exampl
 Here is the dynamic definition that generates the [Table of Contents](#table-of-contents) for this documentation.
 ##### Nodes Excluded from the Table of Contents
 
+Copy Link to this Node With Title  		ctrl + shift + super + c[Copy Link to this Node With Title  		ctrl + shift + super + c](#copy-link-to-this-node-with-title--		ctrl-+-shift-+-super-+-c)
+Node Browser: Backlinks					ctrl + shift + 1[Node Browser: Backlinks					ctrl + shift + 1](#node-browser:-backlinks					ctrl-+-shift-+-1)
+Insert Compact Node 					ctrl + shift + ^[Insert Compact Node 					ctrl + shift + ^](#insert-compact-node-					ctrl-+-shift-+-^)
+Nav Backward 							ctrl + shift + ,[Nav Backward 							ctrl + shift + ,](#nav-backward-							ctrl-+-shift-+-,)
+Home Node 								ctrl + shift + h[Home Node 								ctrl + shift + h](#home-node-								ctrl-+-shift-+-h)
+Insert Timestamp 						ctrl + shift + t[Insert Timestamp 						ctrl + shift + t](#insert-timestamp-						ctrl-+-shift-+-t)
 The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing[The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing](#the-symbol-below-is-a-pass-marker,-which-tells-urtext-to-skip-everything-between-it-and-the-closing)
 Example first level[Example first level](#example-first-level)
 			└── second level[second level](#second-level)
 			    └── third test level[third test level](#third-test-level)
 			        └── test fourth level[test fourth level](#test-fourth-level)
 			            └── fifth level[fifth level](#fifth-level)
+Insert Inline Node, minimal (trailing node ID, single line, no other metadata):[Insert Inline Node, minimal (trailing node ID, single line, no other metadata):](#insert-inline-node,-minimal-trailing-node-id,-single-line,-no-other-metadata:)
+List Projects 							ctrl + shift + o[List Projects 							ctrl + shift + o](#list-projects-							ctrl-+-shift-+-o)
+Add Node ID 							ctrl + shift + i[Add Node ID 							ctrl + shift + i](#add-node-id-							ctrl-+-shift-+-i)
+Toggle Traverse Mode 					ctrl + shift + r[Toggle Traverse Mode 					ctrl + shift + r](#toggle-traverse-mode-					ctrl-+-shift-+-r)
+Node Browser, Include All Projects 		ctrl + shift + *[Node Browser, Include All Projects 		ctrl + shift + *](#node-browser,-include-all-projects-		ctrl-+-shift-+-*)
+Insert Dynamic Definition with Node 	ctrl + shift + ][Insert Dynamic Definition with Node 	ctrl + shift + ]](#insert-dynamic-definition-with-node-	ctrl-+-shift-+-])
+Toggle History Traverse					ctrl + shift + g[Toggle History Traverse					ctrl + shift + g](#toggle-history-traverse					ctrl-+-shift-+-g)
+Open Urtext Link 						ctrl + shift + /[Open Urtext Link 						ctrl + shift + /](#open-urtext-link-						ctrl-+-shift-+-/)
+Open Random Node 						ctrl + shift + f[Open Random Node 						ctrl + shift + f](#open-random-node-						ctrl-+-shift-+-f)
+Insert Inline Node   					ctrl + shift + [[Insert Inline Node   					ctrl + shift + [](#insert-inline-node---					ctrl-+-shift-+-[)
+Insert Link to New Node  				ctrl + shift + '[Insert Link to New Node  				ctrl + shift + '](#insert-link-to-new-node--				ctrl-+-shift-+-')
 This node is just here as a destination from the node pointer in  Basic Syntax[This node is just here as a destination from the node pointer in  Basic Syntax](#this-node-is-just-here-as-a-destination-from-the-node-pointer-in--basic-syntax)
+Node Browser 							ctrl + shift + e[Node Browser 							ctrl + shift + e](#node-browser-							ctrl-+-shift-+-e)
+New Node 								ctrl + shift + ;[New Node 								ctrl + shift + ;](#new-node-								ctrl-+-shift-+-;)
+Copy Link to this Node  				ctrl + shift + c[Copy Link to this Node  				ctrl + shift + c](#copy-link-to-this-node--				ctrl-+-shift-+-c)
+Nav Forward 							ctrl + shift + .[Nav Forward 							ctrl + shift + .](#nav-forward-							ctrl-+-shift-+-.)
+Node Browser: Forward Links 			ctrl + shift + 2[Node Browser: Forward Links 			ctrl + shift + 2](#node-browser:-forward-links-			ctrl-+-shift-+-2)
+Quick Tag from Other 					ctrl + shift + 0[Quick Tag from Other 					ctrl + shift + 0](#quick-tag-from-other-					ctrl-+-shift-+-0)
 See also the definition that dynamically creates the README.md version of this documentation:
 [Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
 
@@ -659,13 +687,14 @@ Note that it appears twice in the Table of Contents, once as a child of this nod
 #### Recursive Node Pointers  
 
 If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point incidating "RECURSION" and a link to the node causing the recursion. For example, this Node Pointer points  to the root node of the table of contents: 
-##### Urtext  Version: 0.5-alpha  Usage Guide and ReferencesUrtext | Version: 0.5-alpha | Usage Guide and References
+##### xUrtext  Version: 0.5-alpha  Usage Guide and ReferencesxUrtext | Version: 0.5-alpha | Usage Guide and References
 License: GNU General Public License 3.0
 
 This is a documentation of Urtext, written in Urtext. If you're reading this as a `README.MD` (on Github, etc.), this file was generated from the text files in this repository. The repository is an Urtext project. Clone or download it to use it as both a reference and an example project. If you are reading this in an Urtext implementation, such as in Sublime Text, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
 - Control-Shift-/ to follow any link
 - Control-Shift-h at any time to return to this "home" node.
 ###### Table of Contents 
+About This Documentation[About This Documentation](#about-this-documentation)
 About Urtext[About Urtext](#about-urtext)
 ├── Description[Description](#description)
 ├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
@@ -677,10 +706,14 @@ Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,
 ├── Dynamic Definitions : Syntax and Parameters[Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters)
 ├── Operations[Operations](#operations)
 │   ├── Project Management[Project Management](#project-management)
-│   ├── Navigation[Navigation](#navigation)
-│   ├── Insertions[Insertions](#insertions)
-│   ├── Editing[Editing](#editing)
 │   └── Sublime Text Only[Sublime Text Only](#sublime-text-only)
+├── Key Bindings[Key Bindings](#key-bindings)
+│   ├── Navigation[Navigation](#navigation)
+│   ├── Content Insertions[Content Insertions](#content-insertions)
+│   ├── Copy Links[Copy Links](#copy-links)
+│   ├── History[History](#history)
+│   └── File Management[File Management](#file-management)
+│       └── Rename File???			ctrl+shift+s,[Rename File???			ctrl+shift+s,](#rename-file???			ctrl+shift+s,)
 └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
     ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
     ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
@@ -832,7 +865,6 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 ####### Operations
 
-Built-in operations are bound to either hotkeys or to UI menus.
 
 Hotkeys differ among operating systems and can be reassigned according to your preference by
 modifiying
@@ -847,39 +879,41 @@ Delete This Node
 Initialize Project
 Pop Node
 Move File to Other Project
-######## Navigation 
-
-`h` 	Home  `
-Go to the designated home page of the project. Define the home node in [project_settings](#project_settings)
-
-`<` 	Navigate Back
-Go to the previously visited node (web-browser-like navigation)
-
-`>` 	Navigate Forward 
-Go to the next visited node (web-browser-like navigation)
-
-`e`		Node List :
-Show a quick search bar of all nodes in the current project
-
-`*`		Global Node List:
-Show a quick search bar of all nodes in all known projects.
-######## Insertions 
-
-`t` 	Timestamp:
-Insert a timestamp at the cursor's location, in the project's default format. For setting timestamp format defaults, see [project_settings](#project_settings)
-
-`i` 	ID:
-Insert an arbitrary (unallocated) Node ID with metadata wrapper at the cursor position.
-######## Editing 
-
-`g`: 	Editing History
-View the editing history for the currently viewed file.
-For more informatino see [History](#history)
-
-(menu)	Consolidate Metadata
-Consolidates all metadata tags in the node of the current cursor position, into a single wrapper.
 ######## Sublime Text Only 
 Traverse Mode
+
+####### Key Bindings
+######## Navigation
+######### Toggle Traverse Mode 					ctrl + shift + r
+######### Open Urtext Link 						ctrl + shift + /
+######### Nav Forward 							ctrl + shift + .
+######### Nav Backward 							ctrl + shift + ,
+######### Node Browser, Include All Projects 		ctrl + shift + *
+######### Node Browser: Backlinks					ctrl + shift + 1
+######### Node Browser: Forward Links 			ctrl + shift + 2
+######### Home Node 								ctrl + shift + h
+######### Node Browser 							ctrl + shift + e
+######### Open Random Node 						ctrl + shift + f
+######### List Projects 							ctrl + shift + o
+######## Content Insertions
+######### New Node 								ctrl + shift + ;
+######### Add Node ID 							ctrl + shift + i
+######### Insert Timestamp 						ctrl + shift + t
+######### Insert Compact Node 					ctrl + shift + ^
+######### Insert Inline Node   					ctrl + shift + [
+######### Insert Inline Node, minimal (trailing node ID, single line, no other metadata):  	
+ctrl + shift + p (OSX)   	
+alt  + shift + p (Windows, Linux)
+######### Insert Dynamic Definition with Node 	ctrl + shift + ]
+######### Insert Link to New Node  				ctrl + shift + '
+######### Quick Tag from Other 					ctrl + shift + 0
+######## Copy Links
+######### Copy Link to this Node  				ctrl + shift + c
+######### Copy Link to this Node With Title  		ctrl + shift + super + c
+######## History
+######### Toggle History Traverse					ctrl + shift + g
+######## File Management
+######### Rename File???			ctrl+shift+s,
 
 ####### Sublime Text Interface Tips  
 
@@ -959,7 +993,7 @@ Pointers[Pointers](#pointers)
 			├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
 			│   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
 			└── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-			    ├── Urtext  Version: 0.5-alpha  Usage Guide and References[Urtext  Version: 0.5-alpha  Usage Guide and References](#urtext--version:-0.5-alpha--usage-guide-and-references)
+			    ├── xUrtext  Version: 0.5-alpha  Usage Guide and References[xUrtext  Version: 0.5-alpha  Usage Guide and References](#xurtext--version:-0.5-alpha--usage-guide-and-references)
 			    │   ├── Table of Contents[Table of Contents](#table-of-contents)
 			    │   ├── Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
 			    │   │   ├── Installation and Setup (Desktop)[Installation and Setup (Desktop)](#installation-and-setup-desktop)
@@ -968,10 +1002,37 @@ Pointers[Pointers](#pointers)
 			    │   │   ├── Dynamic Definitions : Syntax and Parameters[Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters)
 			    │   │   ├── Operations[Operations](#operations)
 			    │   │   │   ├── Project Management[Project Management](#project-management)
-			    │   │   │   ├── Navigation[Navigation](#navigation)
-			    │   │   │   ├── Insertions[Insertions](#insertions)
-			    │   │   │   ├── Editing[Editing](#editing)
 			    │   │   │   └── Sublime Text Only[Sublime Text Only](#sublime-text-only)
+			    │   │   ├── Key Bindings[Key Bindings](#key-bindings)
+			    │   │   │   ├── Navigation[Navigation](#navigation)
+			    │   │   │   │   ├── Toggle Traverse Mode 					ctrl + shift + r[Toggle Traverse Mode 					ctrl + shift + r](#toggle-traverse-mode-					ctrl-+-shift-+-r)
+			    │   │   │   │   ├── Open Urtext Link 						ctrl + shift + /[Open Urtext Link 						ctrl + shift + /](#open-urtext-link-						ctrl-+-shift-+-/)
+			    │   │   │   │   ├── Nav Forward 							ctrl + shift + .[Nav Forward 							ctrl + shift + .](#nav-forward-							ctrl-+-shift-+-.)
+			    │   │   │   │   ├── Nav Backward 							ctrl + shift + ,[Nav Backward 							ctrl + shift + ,](#nav-backward-							ctrl-+-shift-+-,)
+			    │   │   │   │   ├── Node Browser, Include All Projects 		ctrl + shift + *[Node Browser, Include All Projects 		ctrl + shift + *](#node-browser,-include-all-projects-		ctrl-+-shift-+-*)
+			    │   │   │   │   ├── Node Browser: Backlinks					ctrl + shift + 1[Node Browser: Backlinks					ctrl + shift + 1](#node-browser:-backlinks					ctrl-+-shift-+-1)
+			    │   │   │   │   ├── Node Browser: Forward Links 			ctrl + shift + 2[Node Browser: Forward Links 			ctrl + shift + 2](#node-browser:-forward-links-			ctrl-+-shift-+-2)
+			    │   │   │   │   ├── Home Node 								ctrl + shift + h[Home Node 								ctrl + shift + h](#home-node-								ctrl-+-shift-+-h)
+			    │   │   │   │   ├── Node Browser 							ctrl + shift + e[Node Browser 							ctrl + shift + e](#node-browser-							ctrl-+-shift-+-e)
+			    │   │   │   │   ├── Open Random Node 						ctrl + shift + f[Open Random Node 						ctrl + shift + f](#open-random-node-						ctrl-+-shift-+-f)
+			    │   │   │   │   └── List Projects 							ctrl + shift + o[List Projects 							ctrl + shift + o](#list-projects-							ctrl-+-shift-+-o)
+			    │   │   │   ├── Content Insertions[Content Insertions](#content-insertions)
+			    │   │   │   │   ├── New Node 								ctrl + shift + ;[New Node 								ctrl + shift + ;](#new-node-								ctrl-+-shift-+-;)
+			    │   │   │   │   ├── Add Node ID 							ctrl + shift + i[Add Node ID 							ctrl + shift + i](#add-node-id-							ctrl-+-shift-+-i)
+			    │   │   │   │   ├── Insert Timestamp 						ctrl + shift + t[Insert Timestamp 						ctrl + shift + t](#insert-timestamp-						ctrl-+-shift-+-t)
+			    │   │   │   │   ├── Insert Compact Node 					ctrl + shift + ^[Insert Compact Node 					ctrl + shift + ^](#insert-compact-node-					ctrl-+-shift-+-^)
+			    │   │   │   │   ├── Insert Inline Node   					ctrl + shift + [[Insert Inline Node   					ctrl + shift + [](#insert-inline-node---					ctrl-+-shift-+-[)
+			    │   │   │   │   ├── Insert Inline Node, minimal (trailing node ID, single line, no other metadata):[Insert Inline Node, minimal (trailing node ID, single line, no other metadata):](#insert-inline-node,-minimal-trailing-node-id,-single-line,-no-other-metadata:)
+			    │   │   │   │   ├── Insert Dynamic Definition with Node 	ctrl + shift + ][Insert Dynamic Definition with Node 	ctrl + shift + ]](#insert-dynamic-definition-with-node-	ctrl-+-shift-+-])
+			    │   │   │   │   ├── Insert Link to New Node  				ctrl + shift + '[Insert Link to New Node  				ctrl + shift + '](#insert-link-to-new-node--				ctrl-+-shift-+-')
+			    │   │   │   │   └── Quick Tag from Other 					ctrl + shift + 0[Quick Tag from Other 					ctrl + shift + 0](#quick-tag-from-other-					ctrl-+-shift-+-0)
+			    │   │   │   ├── Copy Links[Copy Links](#copy-links)
+			    │   │   │   │   ├── Copy Link to this Node  				ctrl + shift + c[Copy Link to this Node  				ctrl + shift + c](#copy-link-to-this-node--				ctrl-+-shift-+-c)
+			    │   │   │   │   └── Copy Link to this Node With Title  		ctrl + shift + super + c[Copy Link to this Node With Title  		ctrl + shift + super + c](#copy-link-to-this-node-with-title--		ctrl-+-shift-+-super-+-c)
+			    │   │   │   ├── History[History](#history)
+			    │   │   │   │   └── Toggle History Traverse					ctrl + shift + g[Toggle History Traverse					ctrl + shift + g](#toggle-history-traverse					ctrl-+-shift-+-g)
+			    │   │   │   └── File Management[File Management](#file-management)
+			    │   │   │       └── Rename File???			ctrl+shift+s,[Rename File???			ctrl+shift+s,](#rename-file???			ctrl+shift+s,)
 			    │   │   └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
 			    │   │       ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
 			    │   │       ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
@@ -1062,7 +1123,7 @@ Pointers[Pointers](#pointers)
 Urtext can export to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within. Like other dynamic functions, exporting is dynamic; when changes are made to the source nodes, exports are immediately updated.
 ### Example : Urtext Documentation Exported in Markdown to a File  
 
-The following dynamic definition exports this entire documentation from its root node [Urtext  Version: 0.5-alpha  Usage Guide and References](#urtext--version:-0.5-alpha--usage-guide-and-references) ) in Markdown format to a file called ![./README.md:](./README.md:)
+The following dynamic definition exports this entire documentation from its root node [xUrtext  Version: 0.5-alpha  Usage Guide and References](#xurtext--version:-0.5-alpha--usage-guide-and-references) ) in Markdown format to a file called ![./README.md:](./README.md:)
 ### Example : Fragment Exported to HTML  
 
 The following Dynamic Definition exports the [Links and Pointers](#links-and-pointers) section of the documentation to HTML, into a node inside this one:

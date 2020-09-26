@@ -1,4 +1,4 @@
-Urtext | Version: 0.5-alpha | Usage Guide and References
+xUrtext | Version: 0.5-alpha | Usage Guide and References
 License: GNU General Public License 3.0
 
 This is a documentation of Urtext, written in Urtext. If you're reading this as a `README.MD` (on Github, etc.), this file was generated from the text files in this repository. The repository is an Urtext project. Clone or download it to use it as both a reference and an example project. If you are reading this in an Urtext implementation, such as in Sublime Text, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
@@ -6,6 +6,7 @@ This is a documentation of Urtext, written in Urtext. If you're reading this as 
   - Control-Shift-h at any time to return to this "home" node.
 
 { Table of Contents
+About This Documentation >p23
 About Urtext >013
 ├── Description >yv2
 ├── Comparison To Other Tools >h8z
@@ -17,10 +18,14 @@ Quick Start, Guides and Examples >z7t
 ├── Dynamic Definitions : Syntax and Parameters >87g
 ├── Operations >e1x
 │   ├── Project Management >9u0
-│   ├── Navigation >omh
-│   ├── Insertions >wjj
-│   ├── Editing >xba
 │   └── Sublime Text Only >3xv
+├── Key Bindings >tx6
+│   ├── Navigation >v6a
+│   ├── Content Insertions >35a
+│   ├── Copy Links >zjz
+│   ├── History >e24
+│   └── File Management >n8z
+│       └── Rename File???			ctrl+shift+s, >5qr
 └── Sublime Text Interface Tips >003
     ├── Syntax Highlighting >01d
     ├── Hiding Tabs >015
@@ -112,8 +117,9 @@ def::>v7r }
   | Basic Syntax >>znj
   | Dynamic Definitions : Syntax and Parameters >>87g
   | Operations >>e1x
+  | Key Bindings >>tx6
   | Sublime Text Interface Tips >>003
-  index::01
+  index::02
 z7t}
 
 {   Reference
@@ -130,7 +136,7 @@ z7t}
   | Embedded Syntaxes and Pass Markers >oy5
   | Using Multiple Projects >>ipy
   | User Interface Elements >>3n6
-  index::02
+  index::03
 ac5}
 
 id::a5m

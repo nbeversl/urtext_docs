@@ -54,7 +54,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    ├── Duplicate Pointers >00t
 		    │   └── Example Child Node Using a Node Pointer >001
 		    └── Recursive Node Pointers >6ct
-		        ├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		        ├── xUrtext  Version: 0.5-alpha  Usage Guide and References >a5m
 		        │   ├── Table of Contents >e5j
 		        │   ├── Quick Start, Guides and Examples >z7t
 		        │   └── Reference >ac5
@@ -149,15 +149,29 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Synchronator Setup >01z
 		Disable Prompts for File Reload >023
 		Inserting a Node ID manually >04s
+		Copy Link to this Node With Title  		ctrl + shift + super + c >05x
 		Project Settings >0vp
 		Links >0y2
 		└── Sublime Text tools to help with linking >00m
+		Node Browser: Backlinks					ctrl + shift + 1 >1ea
 		`console_log` >1lz
+		Insert Compact Node 					ctrl + shift + ^ >1qq
 		Remove Indent Guides >1rc
 		Trailing Node IDs >2a3
 		Dependencies and Installation >2fn
 		├── Download and Install Dependencies Manually >774
 		└── Download Dependencies from a Monorepo >arl
+		Content Insertions >35a
+		├── New Node 								ctrl + shift + ; >ve3
+		├── Add Node ID 							ctrl + shift + i >gv9
+		├── Insert Timestamp 						ctrl + shift + t >7b8
+		├── Insert Compact Node 					ctrl + shift + ^ >1qq
+		├── Insert Inline Node   					ctrl + shift + [ >rzx
+		├── Insert Inline Node, minimal (trailing node ID, single line, no other metadata): >9zp
+		├── Insert Dynamic Definition with Node 	ctrl + shift + ] >jsc
+		├── Insert Link to New Node  				ctrl + shift + ' >sxk
+		└── Quick Tag from Other 					ctrl + shift + 0 >zep
+		Nav Backward 							ctrl + shift + , >3hy
 		User Interface Elements >3n6
 		├── The Node Browser >01i
 		└── Traverse Mode >00w
@@ -172,12 +186,14 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Search Using Dynamic Nodes >uy4
 		    └── Example Search Results >3x3
 		Dynamic Titles >4vu
+		Home Node 								ctrl + shift + h >5ab
 		`def` >5cq
 		test fourth level >5pq
 		└── fifth level >xc9
+		Rename File???			ctrl+shift+s, >5qr
 		Installation and Setup (Desktop) >6cd
 		Recursive Node Pointers >6ct
-		├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		├── xUrtext  Version: 0.5-alpha  Usage Guide and References >a5m
 		│   ├── Table of Contents >e5j
 		│   ├── Quick Start, Guides and Examples >z7t
 		│   │   ├── Installation and Setup (Desktop) >6cd
@@ -186,10 +202,13 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   │   ├── Dynamic Definitions : Syntax and Parameters >87g
 		│   │   ├── Operations >e1x
 		│   │   │   ├── Project Management >9u0
-		│   │   │   ├── Navigation >omh
-		│   │   │   ├── Insertions >wjj
-		│   │   │   ├── Editing >xba
 		│   │   │   └── Sublime Text Only >3xv
+		│   │   ├── Key Bindings >tx6
+		│   │   │   ├── Navigation >v6a
+		│   │   │   ├── Content Insertions >35a
+		│   │   │   ├── Copy Links >zjz
+		│   │   │   ├── History >e24
+		│   │   │   └── File Management >n8z
 		│   │   └── Sublime Text Interface Tips >003
 		│   │       ├── Syntax Highlighting >01d
 		│   │       ├── Hiding Tabs >015
@@ -247,6 +266,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    └── test fourth level >5pq
 		        └── fifth level >xc9
 		Download and Install Dependencies Manually >774
+		Insert Timestamp 						ctrl + shift + t >7b8
 		Cross-Project Linking >7lx
 		Time Zones >7w6
 		third test level >80d
@@ -264,7 +284,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Example List 2 >c1x
 		Project Management >9u0
 		Example inline node within the compact node. >9up
-		Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		Insert Inline Node, minimal (trailing node ID, single line, no other metadata): >9zp
+		xUrtext  Version: 0.5-alpha  Usage Guide and References >a5m
 		├── Table of Contents >e5j
 		├── Quick Start, Guides and Examples >z7t
 		│   ├── Installation and Setup (Desktop) >6cd
@@ -273,10 +294,37 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── Dynamic Definitions : Syntax and Parameters >87g
 		│   ├── Operations >e1x
 		│   │   ├── Project Management >9u0
-		│   │   ├── Navigation >omh
-		│   │   ├── Insertions >wjj
-		│   │   ├── Editing >xba
 		│   │   └── Sublime Text Only >3xv
+		│   ├── Key Bindings >tx6
+		│   │   ├── Navigation >v6a
+		│   │   │   ├── Toggle Traverse Mode 					ctrl + shift + r >hcf
+		│   │   │   ├── Open Urtext Link 						ctrl + shift + / >ngh
+		│   │   │   ├── Nav Forward 							ctrl + shift + . >yan
+		│   │   │   ├── Nav Backward 							ctrl + shift + , >3hy
+		│   │   │   ├── Node Browser, Include All Projects 		ctrl + shift + * >hyh
+		│   │   │   ├── Node Browser: Backlinks					ctrl + shift + 1 >1ea
+		│   │   │   ├── Node Browser: Forward Links 			ctrl + shift + 2 >ylo
+		│   │   │   ├── Home Node 								ctrl + shift + h >5ab
+		│   │   │   ├── Node Browser 							ctrl + shift + e >vdr
+		│   │   │   ├── Open Random Node 						ctrl + shift + f >q5f
+		│   │   │   └── List Projects 							ctrl + shift + o >g5a
+		│   │   ├── Content Insertions >35a
+		│   │   │   ├── New Node 								ctrl + shift + ; >ve3
+		│   │   │   ├── Add Node ID 							ctrl + shift + i >gv9
+		│   │   │   ├── Insert Timestamp 						ctrl + shift + t >7b8
+		│   │   │   ├── Insert Compact Node 					ctrl + shift + ^ >1qq
+		│   │   │   ├── Insert Inline Node   					ctrl + shift + [ >rzx
+		│   │   │   ├── Insert Inline Node, minimal (trailing node ID, single line, no other metadata): >9zp
+		│   │   │   ├── Insert Dynamic Definition with Node 	ctrl + shift + ] >jsc
+		│   │   │   ├── Insert Link to New Node  				ctrl + shift + ' >sxk
+		│   │   │   └── Quick Tag from Other 					ctrl + shift + 0 >zep
+		│   │   ├── Copy Links >zjz
+		│   │   │   ├── Copy Link to this Node  				ctrl + shift + c >vel
+		│   │   │   └── Copy Link to this Node With Title  		ctrl + shift + super + c >05x
+		│   │   ├── History >e24
+		│   │   │   └── Toggle History Traverse					ctrl + shift + g >ndc
+		│   │   └── File Management >n8z
+		│   │       └── Rename File???			ctrl+shift+s, >5qr
 		│   └── Sublime Text Interface Tips >003
 		│       ├── Syntax Highlighting >01d
 		│       ├── Hiding Tabs >015
@@ -446,10 +494,9 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Using/Adding Existing Files >rij
 		Operations >e1x
 		├── Project Management >9u0
-		├── Navigation >omh
-		├── Insertions >wjj
-		├── Editing >xba
 		└── Sublime Text Only >3xv
+		History >e24
+		└── Toggle History Traverse					ctrl + shift + g >ndc
 		Table of Contents >e5j
 		`title` >egg
 		File Nodes >ekz
@@ -461,11 +508,15 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── `title` >pz3
 		└── `def` >5cq
 		require an ID >frm
+		List Projects 							ctrl + shift + o >g5a
+		Add Node ID 							ctrl + shift + i >gv9
 		Expanding a List with the DEPTH Parameter >h6l
 		└── Example Tree >4gr
 		Comparison To Other Tools >h8z
+		Toggle Traverse Mode 					ctrl + shift + r >hcf
 		Syntax and Format >hg7
 		become child nodes of their containing node. >hiz
+		Node Browser, Include All Projects 		ctrl + shift + * >hyh
 		Uses for inline nodes >ia5
 		Using Multiple Projects >ipy
 		├── Project Naming (Identification) >tgp
@@ -477,6 +528,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── become child nodes of their containing node. >hiz
 		└── About Compact Nodes >ucj
 		Nodes Excluded from the Table of Contents >jkl
+		Insert Dynamic Definition with Node 	ctrl + shift + ] >jsc
 		Search >k67
 		└── Full Text Search >4p9
 		    ├── Searching >rr3
@@ -508,13 +560,14 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Duplicate Pointers >00t
 		│   └── Example Child Node Using a Node Pointer >001
 		└── Recursive Node Pointers >6ct
-		    ├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		    ├── xUrtext  Version: 0.5-alpha  Usage Guide and References >a5m
 		    │   ├── Table of Contents >e5j
 		    │   ├── Quick Start, Guides and Examples >z7t
 		    │   │   ├── Installation and Setup (Desktop) >6cd
 		    │   │   ├── Basic Syntax >znj
 		    │   │   ├── Dynamic Definitions : Syntax and Parameters >87g
 		    │   │   ├── Operations >e1x
+		    │   │   ├── Key Bindings >tx6
 		    │   │   └── Sublime Text Interface Tips >003
 		    │   └── Reference >ac5
 		    │       ├── Projects >dce
@@ -534,8 +587,11 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Example: Nodes from the Documentation >m1r
 		Tracking Node Dates and Times >m58
 		Example : Urtext Documentation Exported in Markdown to a File >m9d
+		File Management >n8z
+		└── Rename File???			ctrl+shift+s, >5qr
+		Toggle History Traverse					ctrl + shift + g >ndc
+		Open Urtext Link 						ctrl + shift + / >ngh
 		JSON >njo
-		Navigation >omh
 		Documentation >ooe
 		Using Urtext in iOS with Pythonista >os4
 		Sublime >osu
@@ -546,43 +602,93 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Plaintext >l60
 		├── Documentation >ooe
 		└── User-Defined >lwg
+		About This Documentation >p23
 		History >prp
 		`title` >pz3
+		Open Random Node 						ctrl + shift + f >q5f
 		Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind th >q8j
 		Generating a node ID manually >rfp
 		Using/Adding Existing Files >rij
 		Searching >rr3
 		├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lo >k8v
 		└── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind th >q8j
+		Insert Inline Node   					ctrl + shift + [ >rzx
 		Save on Focus Lost >sqq
+		Insert Link to New Node  				ctrl + shift + ' >sxk
 		Project Naming (Identification) >tgp
 		Extending Node Lists Into Trees using DEPTH >thz
 		└── Example List 3 >nc6
 		This node is just here as a destination from the node pointer in  Basic Syntax >ttt
 		Lists >twz
 		└── Example: Nodes from the Documentation >m1r
+		Key Bindings >tx6
+		├── Navigation >v6a
+		│   ├── Toggle Traverse Mode 					ctrl + shift + r >hcf
+		│   ├── Open Urtext Link 						ctrl + shift + / >ngh
+		│   ├── Nav Forward 							ctrl + shift + . >yan
+		│   ├── Nav Backward 							ctrl + shift + , >3hy
+		│   ├── Node Browser, Include All Projects 		ctrl + shift + * >hyh
+		│   ├── Node Browser: Backlinks					ctrl + shift + 1 >1ea
+		│   ├── Node Browser: Forward Links 			ctrl + shift + 2 >ylo
+		│   ├── Home Node 								ctrl + shift + h >5ab
+		│   ├── Node Browser 							ctrl + shift + e >vdr
+		│   ├── Open Random Node 						ctrl + shift + f >q5f
+		│   └── List Projects 							ctrl + shift + o >g5a
+		├── Content Insertions >35a
+		│   ├── New Node 								ctrl + shift + ; >ve3
+		│   ├── Add Node ID 							ctrl + shift + i >gv9
+		│   ├── Insert Timestamp 						ctrl + shift + t >7b8
+		│   ├── Insert Compact Node 					ctrl + shift + ^ >1qq
+		│   ├── Insert Inline Node   					ctrl + shift + [ >rzx
+		│   ├── Insert Inline Node, minimal (trailing node ID, single line, no other metadata): >9zp
+		│   ├── Insert Dynamic Definition with Node 	ctrl + shift + ] >jsc
+		│   ├── Insert Link to New Node  				ctrl + shift + ' >sxk
+		│   └── Quick Tag from Other 					ctrl + shift + 0 >zep
+		├── Copy Links >zjz
+		│   ├── Copy Link to this Node  				ctrl + shift + c >vel
+		│   └── Copy Link to this Node With Title  		ctrl + shift + super + c >05x
+		├── History >e24
+		│   └── Toggle History Traverse					ctrl + shift + g >ndc
+		└── File Management >n8z
+		    └── Rename File???			ctrl+shift+s, >5qr
 		About Compact Nodes >ucj
 		Node Titles >ue2
 		Search Using Dynamic Nodes >uy4
 		└── Example Search Results >3x3
+		Navigation >v6a
+		├── Toggle Traverse Mode 					ctrl + shift + r >hcf
+		├── Open Urtext Link 						ctrl + shift + / >ngh
+		├── Nav Forward 							ctrl + shift + . >yan
+		├── Nav Backward 							ctrl + shift + , >3hy
+		├── Node Browser, Include All Projects 		ctrl + shift + * >hyh
+		├── Node Browser: Backlinks					ctrl + shift + 1 >1ea
+		├── Node Browser: Forward Links 			ctrl + shift + 2 >ylo
+		├── Home Node 								ctrl + shift + h >5ab
+		├── Node Browser 							ctrl + shift + e >vdr
+		├── Open Random Node 						ctrl + shift + f >q5f
+		└── List Projects 							ctrl + shift + o >g5a
 		"Table of Contents" Dynamic Definition >v7r
 		└── Nodes Excluded from the Table of Contents >jkl
+		Node Browser 							ctrl + shift + e >vdr
+		New Node 								ctrl + shift + ; >ve3
+		Copy Link to this Node  				ctrl + shift + c >vel
 		Trees >w8u
 		├── Expanding a List with the DEPTH Parameter >h6l
 		│   └── Example Tree >4gr
 		└── "Table of Contents" Dynamic Definition >v7r
 		    └── Nodes Excluded from the Table of Contents >jkl
-		Insertions >wjj
 		Other dynamic instructions >x0c
 		└── tag_all >yin
-		Editing >xba
 		fifth level >xc9
 		Word Wrap in Traverse Mode >xci
 		can have arbitrary other metadata >xlc
 		Trailing Node IDs >xo9
 		`project_title` >xqu
 		HTML >xsh
+		Nav Forward 							ctrl + shift + . >yan
 		tag_all >yin
+		Node Browser: Forward Links 			ctrl + shift + 2 >ylo
+		test >yqp
 		Description >yv2
 		Quick Start, Guides and Examples >z7t
 		├── Installation and Setup (Desktop) >6cd
@@ -591,10 +697,37 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Dynamic Definitions : Syntax and Parameters >87g
 		├── Operations >e1x
 		│   ├── Project Management >9u0
-		│   ├── Navigation >omh
-		│   ├── Insertions >wjj
-		│   ├── Editing >xba
 		│   └── Sublime Text Only >3xv
+		├── Key Bindings >tx6
+		│   ├── Navigation >v6a
+		│   │   ├── Toggle Traverse Mode 					ctrl + shift + r >hcf
+		│   │   ├── Open Urtext Link 						ctrl + shift + / >ngh
+		│   │   ├── Nav Forward 							ctrl + shift + . >yan
+		│   │   ├── Nav Backward 							ctrl + shift + , >3hy
+		│   │   ├── Node Browser, Include All Projects 		ctrl + shift + * >hyh
+		│   │   ├── Node Browser: Backlinks					ctrl + shift + 1 >1ea
+		│   │   ├── Node Browser: Forward Links 			ctrl + shift + 2 >ylo
+		│   │   ├── Home Node 								ctrl + shift + h >5ab
+		│   │   ├── Node Browser 							ctrl + shift + e >vdr
+		│   │   ├── Open Random Node 						ctrl + shift + f >q5f
+		│   │   └── List Projects 							ctrl + shift + o >g5a
+		│   ├── Content Insertions >35a
+		│   │   ├── New Node 								ctrl + shift + ; >ve3
+		│   │   ├── Add Node ID 							ctrl + shift + i >gv9
+		│   │   ├── Insert Timestamp 						ctrl + shift + t >7b8
+		│   │   ├── Insert Compact Node 					ctrl + shift + ^ >1qq
+		│   │   ├── Insert Inline Node   					ctrl + shift + [ >rzx
+		│   │   ├── Insert Inline Node, minimal (trailing node ID, single line, no other metadata): >9zp
+		│   │   ├── Insert Dynamic Definition with Node 	ctrl + shift + ] >jsc
+		│   │   ├── Insert Link to New Node  				ctrl + shift + ' >sxk
+		│   │   └── Quick Tag from Other 					ctrl + shift + 0 >zep
+		│   ├── Copy Links >zjz
+		│   │   ├── Copy Link to this Node  				ctrl + shift + c >vel
+		│   │   └── Copy Link to this Node With Title  		ctrl + shift + super + c >05x
+		│   ├── History >e24
+		│   │   └── Toggle History Traverse					ctrl + shift + g >ndc
+		│   └── File Management >n8z
+		│       └── Rename File???			ctrl+shift+s, >5qr
 		└── Sublime Text Interface Tips >003
 		    ├── Syntax Highlighting >01d
 		    ├── Hiding Tabs >015
@@ -604,6 +737,10 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    ├── Remove Indent Guides >1rc
 		    ├── Save on Focus Lost >sqq
 		    └── Using a Sublime Project for an Urtext Project >c3n
+		Quick Tag from Other 					ctrl + shift + 0 >zep
+		Copy Links >zjz
+		├── Copy Link to this Node  				ctrl + shift + c >vel
+		└── Copy Link to this Node With Title  		ctrl + shift + super + c >05x
 		Basic Syntax >znj
 		└── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 		ID::nc6
