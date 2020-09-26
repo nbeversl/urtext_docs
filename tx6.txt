@@ -1,4 +1,4 @@
-Key Bindings
+Key Bindings and Operations
 
 
 {  Navigation
@@ -45,7 +45,21 @@ Key Bindings
 {  File Management
 
 	{  Rename File???			ctrl+shift+s,   5qr}
-	  n8z}														
+					  *flags::exclude_from_toc; n8z}														
+
+{ Menu Operations
+
+	Multiple Projects
+	Import Project
+	Reload Project
+	Reindex All Files
+	Rename File(s) from Meta
+	Delete This Node
+	Initialize Project
+	Pop Node
+	Move File to Other Project   
+
+	9u0}
 
 
 id::tx6

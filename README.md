@@ -1,7 +1,7 @@
 
 # About This Documentation
 
-This documentation is in progress and may be incomplete or behind features and functionality of Urtext. The repository is itself an Urtext project at https://github.com/nbeversl/urtext-docs. Edits and additions and encouraged in the form of issues/pull requests.
+This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. The documentation is a versioned-controlled Urtext project kept in a public repository at https://github.com/nbeversl/urtext-docs. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
 
 # About Urtext
 ## Description 
@@ -128,26 +128,8 @@ Dynamic definitions are wrapped using double left and right square brackets. Not
 
 The dynamic definition below does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see [Dynamic Nodes](#dynamic-nodes)
 
-## Operations
-
-
-Hotkeys differ among operating systems and can be reassigned according to your preference by
-modifiying
-### Project Management 
-
-Multiple Projects
-Import Project
-Reload Project
-Reindex All Files
-Rename File(s) from Meta
-Delete This Node
-Initialize Project
-Pop Node
-Move File to Other Project
-### Sublime Text Only 
-Traverse Mode
-
-## Key Bindings
+| Operations >>e1x
+## Key Bindings and Operations
 ### Navigation
 #### Toggle Traverse Mode 					ctrl + shift + r
 #### Open Urtext Link 						ctrl + shift + /
@@ -179,6 +161,17 @@ alt  + shift + p (Windows, Linux)
 #### Toggle History Traverse					ctrl + shift + g
 ### File Management
 #### Rename File???			ctrl+shift+s,
+### Menu Operations 
+
+Multiple Projects
+Import Project
+Reload Project
+Reindex All Files
+Rename File(s) from Meta
+Delete This Node
+Initialize Project
+Pop Node
+Move File to Other Project
 
 ## Sublime Text Interface Tips  
 
@@ -298,7 +291,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 ######## fifth level
 (The metadata entry above excludes this example from the Table of Contents tree.
 See ["Table of Contents" Dynamic Definition](#"table-of-contents"-dynamic-definition) for information)
-(The above example will not display correctly in Markdown export, so a screenshot is provided instead): 
+(For Markdown export, a screenshot is provided showing indentation and highlighting:)
 ![./files/node-nesting-example.png](./files/node-nesting-example.png)
 
 Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Metadata](#metadata) as at the bottom of this file.
@@ -316,8 +309,7 @@ Also that the title is the first line of text.
 For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the ^ character appears, with the closing wrapper being the end of the same line. 
 
 Like all nodes, a compact node requires an ID. Like all nodes, it can contain metadata and even inline nodes, as long as the entire contents, including wrappers and metadata, are contained on a single line. (Note that "line" in this case refers to consecutive characters between explicit line breaks, and not to lines in the editor, which may be arbitrarily wrapped.)
-#### Example Compact Node
-##### Example inline node within the compact node.
+![./files/example-compact-node.png](./files/example-compact-node.png)
 
 ### Node Titles 
 
@@ -332,6 +324,8 @@ Node IDs are generated automatically by Urtext; every newly created node is assi
 
 <- This is not just an example; it specifies the ID of this node.
 
+![./files/example-node-id.png](./files/example-node-id.png)
+
 Note that the node ID entry can appear anywhere in a node. If you want to keep node ID's out of the way, such as at the end or beginning of each node, or separate from the rest of your metadata, this will not affect their functionality.
 #### Trailing Node IDs  
 
@@ -339,7 +333,9 @@ To keep IDs even more out of sight, they can also be specified as the last three
 
 Note that trailing node IDs must be preceded by a space.  
 
-In Sublime Text, press Ctrl-Shift-P to create a new inline node using this convention.
+In Sublime Text, press Ctrl-Shift-P to create a new inline node using this convention.	
+
+![./files/example-trailing-id.png](./files/example-trailing-id.png)
 IDs have no special meaning, do not represent the order of node creation within a project, and are not related to or "hashed from" node content. They are assigned in random order so the probability of accidentally creating two nodes with the same ID is minimal when using the project across many devices that may not always be in sync.
 
 When an ID is deleted from a project, new nodes are later assigned to vacant node IDs.
@@ -355,7 +351,7 @@ If two nodes end up with the same ID, only one (the first one found) will be ass
 
 To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
 #### Generating a node ID manually 
-If you accidentally delete a Node ID or need to insert one arbitrarily, press Urtext-i.
+If you accidentally delete a Node ID or need to insert one arbitrarily, press node control-shift-i.
 
 
 
@@ -432,17 +428,7 @@ Reliance on the operating system's "created" or "modified" date metadata is avoi
 Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the `timezone` key in [project_settings](#project_settings) to another valid value.
 ### Case-sensitivity  
 
--   Values are not case-sensitive, except those with the following keys:
-
-`title`             Manually overrides the node's title. 
-
-The rest are used only in the project_settings node (see [project_settings](#project_settings)) :
-
-`timestamp_format`  
-`filenames`         
-`project_title`
-`timezone`
-`timestamp_format`
+For comparison/filtering/sorting purposes, values are not case-sensitive.
 ### Reserved Keys 
 
 There are two reserved keys that Urtext interprets in a special way:
@@ -454,8 +440,10 @@ You can give the same index number to multiple nodes; in this case they sort fir
 Unindexed nodes will display underneath indexed nodes, by timestamp, newest first.
 #### `title` 
 
-Provides a way to override the node title, which is by default the full first non-whitespace line.
-#### `def`
+Overrides the node title, which is by default the full first non-whitespace line.
+#### `def`  
+
+Generated automatically in a dynamic node, contains a link to the node containing the definition.
 
 ## Dynamic Nodes
 
@@ -472,28 +460,6 @@ There are two main kinds of dynamic output, Lists and Collections:
 "Lists" are lists of nodes, with each node displayed not more than once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list.
 
 ### Lists
-#### Example: Nodes from the Documentation
-
-Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
-Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
-Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
-Inline Nodes[Inline Nodes](#inline-nodes)
-Timestamps[Timestamps](#timestamps)
-Requirements and Features[Requirements and Features](#requirements-and-features)
-Example Inline Node[Example Inline Node](#example-inline-node)
-Links and Pointers[Links and Pointers](#links-and-pointers)
-Collections[Collections](#collections)
-project_settings[project_settings](#project_settings)
-Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
-`timestamp_format`[`timestamp_format`](#`timestamp_format`)
-Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
-Files[Files](#files)
-Linking to outside resources[Linking to outside resources](#linking-to-outside-resources)
-Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
-Viewing Linked Relationships[Viewing Linked Relationships](#viewing-linked-relationships)
-Traverse Mode[Traverse Mode](#traverse-mode)
-Metadata[Metadata](#metadata)
-`index`[`index`](#`index`)
 Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
 
 
@@ -591,6 +557,7 @@ Node Browser: Backlinks					ctrl + shift + 1[Node Browser: Backlinks					ctrl + 
 Insert Compact Node 					ctrl + shift + ^[Insert Compact Node 					ctrl + shift + ^](#insert-compact-node-					ctrl-+-shift-+-^)
 Nav Backward 							ctrl + shift + ,[Nav Backward 							ctrl + shift + ,](#nav-backward-							ctrl-+-shift-+-,)
 Home Node 								ctrl + shift + h[Home Node 								ctrl + shift + h](#home-node-								ctrl-+-shift-+-h)
+Rename File???			ctrl+shift+s,[Rename File???			ctrl+shift+s,](#rename-file???			ctrl+shift+s,)
 Insert Timestamp 						ctrl + shift + t[Insert Timestamp 						ctrl + shift + t](#insert-timestamp-						ctrl-+-shift-+-t)
 The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing[The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing](#the-symbol-below-is-a-pass-marker,-which-tells-urtext-to-skip-everything-between-it-and-the-closing)
 Example first level[Example first level](#example-first-level)
@@ -704,16 +671,13 @@ Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,
 ├── Installation and Setup (Desktop)[Installation and Setup (Desktop)](#installation-and-setup-desktop)
 ├── Basic Syntax[Basic Syntax](#basic-syntax)
 ├── Dynamic Definitions : Syntax and Parameters[Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters)
-├── Operations[Operations](#operations)
-│   ├── Project Management[Project Management](#project-management)
-│   └── Sublime Text Only[Sublime Text Only](#sublime-text-only)
-├── Key Bindings[Key Bindings](#key-bindings)
+├── Key Bindings and Operations[Key Bindings and Operations](#key-bindings-and-operations)
 │   ├── Navigation[Navigation](#navigation)
 │   ├── Content Insertions[Content Insertions](#content-insertions)
 │   ├── Copy Links[Copy Links](#copy-links)
 │   ├── History[History](#history)
-│   └── File Management[File Management](#file-management)
-│       └── Rename File???			ctrl+shift+s,[Rename File???			ctrl+shift+s,](#rename-file???			ctrl+shift+s,)
+│   ├── File Management[File Management](#file-management)
+│   └── Menu Operations[Menu Operations](#menu-operations)
 └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
     ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
     ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
@@ -863,26 +827,8 @@ Dynamic definitions are wrapped using double left and right square brackets. Not
 
 The dynamic definition below does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see [Dynamic Nodes](#dynamic-nodes)
 
-####### Operations
-
-
-Hotkeys differ among operating systems and can be reassigned according to your preference by
-modifiying
-######## Project Management 
-
-Multiple Projects
-Import Project
-Reload Project
-Reindex All Files
-Rename File(s) from Meta
-Delete This Node
-Initialize Project
-Pop Node
-Move File to Other Project
-######## Sublime Text Only 
-Traverse Mode
-
-####### Key Bindings
+| Operations >>e1x
+####### Key Bindings and Operations
 ######## Navigation
 ######### Toggle Traverse Mode 					ctrl + shift + r
 ######### Open Urtext Link 						ctrl + shift + /
@@ -914,6 +860,17 @@ alt  + shift + p (Windows, Linux)
 ######### Toggle History Traverse					ctrl + shift + g
 ######## File Management
 ######### Rename File???			ctrl+shift+s,
+######## Menu Operations 
+
+Multiple Projects
+Import Project
+Reload Project
+Reindex All Files
+Rename File(s) from Meta
+Delete This Node
+Initialize Project
+Pop Node
+Move File to Other Project
 
 ####### Sublime Text Interface Tips  
 
@@ -1000,10 +957,7 @@ Pointers[Pointers](#pointers)
 			    │   │   ├── Basic Syntax[Basic Syntax](#basic-syntax)
 			    │   │   │   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing[The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing](#the-symbol-below-is-a-pass-marker,-which-tells-urtext-to-skip-everything-between-it-and-the-closing)
 			    │   │   ├── Dynamic Definitions : Syntax and Parameters[Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters)
-			    │   │   ├── Operations[Operations](#operations)
-			    │   │   │   ├── Project Management[Project Management](#project-management)
-			    │   │   │   └── Sublime Text Only[Sublime Text Only](#sublime-text-only)
-			    │   │   ├── Key Bindings[Key Bindings](#key-bindings)
+			    │   │   ├── Key Bindings and Operations[Key Bindings and Operations](#key-bindings-and-operations)
 			    │   │   │   ├── Navigation[Navigation](#navigation)
 			    │   │   │   │   ├── Toggle Traverse Mode 					ctrl + shift + r[Toggle Traverse Mode 					ctrl + shift + r](#toggle-traverse-mode-					ctrl-+-shift-+-r)
 			    │   │   │   │   ├── Open Urtext Link 						ctrl + shift + /[Open Urtext Link 						ctrl + shift + /](#open-urtext-link-						ctrl-+-shift-+-/)
@@ -1031,8 +985,9 @@ Pointers[Pointers](#pointers)
 			    │   │   │   │   └── Copy Link to this Node With Title  		ctrl + shift + super + c[Copy Link to this Node With Title  		ctrl + shift + super + c](#copy-link-to-this-node-with-title--		ctrl-+-shift-+-super-+-c)
 			    │   │   │   ├── History[History](#history)
 			    │   │   │   │   └── Toggle History Traverse					ctrl + shift + g[Toggle History Traverse					ctrl + shift + g](#toggle-history-traverse					ctrl-+-shift-+-g)
-			    │   │   │   └── File Management[File Management](#file-management)
-			    │   │   │       └── Rename File???			ctrl+shift+s,[Rename File???			ctrl+shift+s,](#rename-file???			ctrl+shift+s,)
+			    │   │   │   ├── File Management[File Management](#file-management)
+			    │   │   │   │   └── Rename File???			ctrl+shift+s,[Rename File???			ctrl+shift+s,](#rename-file???			ctrl+shift+s,)
+			    │   │   │   └── Menu Operations[Menu Operations](#menu-operations)
 			    │   │   └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
 			    │   │       ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
 			    │   │       ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)

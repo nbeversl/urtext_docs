@@ -23,7 +23,7 @@ id :: 003 >003:158
  ssss
 
 
-id :: 004 >004:1284 
+id :: 004 >004:1264 
  For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
 
 

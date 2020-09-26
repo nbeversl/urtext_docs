@@ -43,6 +43,7 @@ Here is the dynamic definition that generates the | Table of Contents >e5j for t
 			Insert Compact Node 					ctrl + shift + ^ >1qq
 			Nav Backward 							ctrl + shift + , >3hy
 			Home Node 								ctrl + shift + h >5ab
+			Rename File???			ctrl+shift+s, >5qr
 			Insert Timestamp 						ctrl + shift + t >7b8
 			The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 			Example first level >8fv

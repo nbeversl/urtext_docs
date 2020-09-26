@@ -18,13 +18,12 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
                     5pq}  
                 80d}  
            6qj}  
-    flags::exclude_from_toc
+    flags::exclude_from_toc | exclude_from _export
     (The metadata entry above excludes this example from the Table of Contents tree.
     See | "Table of Contents" Dynamic Definition >v7r for information)
     8fv}  
 
-
-(The above example will not display correctly in Markdown export, so a screenshot is provided instead): 
+(For Markdown export, a screenshot is provided showing indentation and highlighting:)
 f>./files/node-nesting-example.png
 
 Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use | Trailing Node IDs >2a3. You can also use regular | Metadata >00x as at the bottom of this file.

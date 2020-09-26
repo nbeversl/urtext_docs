@@ -82,17 +82,8 @@ Metadata
 
 {  Case-sensitivity
 
-      -   Values are not case-sensitive, except those with the following keys:
+    For comparison/filtering/sorting purposes, values are not case-sensitive.
 
-          `title`             Manually overrides the node's title. 
-
-          The rest are used only in the project_settings node (see | project_settings >00l) :
-
-          `timestamp_format`  
-          `filenames`         
-          `project_title`
-          `timezone`
-          `timestamp_format`
   l36}
 
  { Reserved Keys
@@ -107,11 +98,12 @@ Metadata
          Unindexed nodes will display underneath indexed nodes, by timestamp, newest first. 00z}
 
       { `title`
-
-          Provides a way to override the node title, which is by default the full first non-whitespace line. pz3}
+        
+        Overrides the node title, which is by default the full first non-whitespace line. pz3}
 
       {  `def`
-          5cq}
+
+        Generated automatically in a dynamic node, contains a link to the node containing the definition. 5cq}
      
   fo2}
 

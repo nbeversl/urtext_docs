@@ -44,10 +44,7 @@ The advantages to Node Pointers include:
 			    │   │   ├── Basic Syntax >znj
 			    │   │   │   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 			    │   │   ├── Dynamic Definitions : Syntax and Parameters >87g
-			    │   │   ├── Operations >e1x
-			    │   │   │   ├── Project Management >9u0
-			    │   │   │   └── Sublime Text Only >3xv
-			    │   │   ├── Key Bindings >tx6
+			    │   │   ├── Key Bindings and Operations >tx6
 			    │   │   │   ├── Navigation >v6a
 			    │   │   │   │   ├── Toggle Traverse Mode 					ctrl + shift + r >hcf
 			    │   │   │   │   ├── Open Urtext Link 						ctrl + shift + / >ngh
@@ -75,8 +72,9 @@ The advantages to Node Pointers include:
 			    │   │   │   │   └── Copy Link to this Node With Title  		ctrl + shift + super + c >05x
 			    │   │   │   ├── History >e24
 			    │   │   │   │   └── Toggle History Traverse					ctrl + shift + g >ndc
-			    │   │   │   └── File Management >n8z
-			    │   │   │       └── Rename File???			ctrl+shift+s, >5qr
+			    │   │   │   ├── File Management >n8z
+			    │   │   │   │   └── Rename File???			ctrl+shift+s, >5qr
+			    │   │   │   └── Menu Operations >9u0
 			    │   │   └── Sublime Text Interface Tips >003
 			    │   │       ├── Syntax Highlighting >01d
 			    │   │       ├── Hiding Tabs >015
