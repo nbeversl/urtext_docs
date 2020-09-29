@@ -54,7 +54,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    ├── Duplicate Pointers >00t
 		    │   └── Example Child Node Using a Node Pointer >001
 		    └── Recursive Node Pointers >6ct
-		        ├── xUrtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		        ├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		        │   ├── About This Documentation >p23
 		        │   ├── Table of Contents >e5j
 		        │   ├── Quick Start, Guides and Examples >z7t
 		        │   └── Reference >ac5
@@ -189,10 +190,11 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		`def` >5cq
 		test fourth level >5pq
 		└── fifth level >xc9
-		Rename File???			ctrl+shift+s, >5qr
+		Rename File???							ctrl + shift + s, >5qr
 		Installation and Setup (Desktop) >6cd
 		Recursive Node Pointers >6ct
-		├── xUrtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		│   ├── About This Documentation >p23
 		│   ├── Table of Contents >e5j
 		│   ├── Quick Start, Guides and Examples >z7t
 		│   │   ├── Installation and Setup (Desktop) >6cd
@@ -282,7 +284,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Menu Operations >9u0
 		Example inline node within the compact node. >9up
 		Insert Inline Node, minimal (trailing node ID, single line, no other metadata): >9zp
-		xUrtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		├── About This Documentation >p23
 		├── Table of Contents >e5j
 		├── Quick Start, Guides and Examples >z7t
 		│   ├── Installation and Setup (Desktop) >6cd
@@ -318,7 +321,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   │   ├── History >e24
 		│   │   │   └── Toggle History Traverse					ctrl + shift + g >ndc
 		│   │   ├── File Management >n8z
-		│   │   │   └── Rename File???			ctrl+shift+s, >5qr
+		│   │   │   └── Rename File???							ctrl + shift + s, >5qr
 		│   │   └── Menu Operations >9u0
 		│   └── Sublime Text Interface Tips >003
 		│       ├── Syntax Highlighting >01d
@@ -552,7 +555,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Duplicate Pointers >00t
 		│   └── Example Child Node Using a Node Pointer >001
 		└── Recursive Node Pointers >6ct
-		    ├── xUrtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		    ├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+		    │   ├── About This Documentation >p23
 		    │   ├── Table of Contents >e5j
 		    │   ├── Quick Start, Guides and Examples >z7t
 		    │   │   ├── Installation and Setup (Desktop) >6cd
@@ -579,7 +583,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Tracking Node Dates and Times >m58
 		Example : Urtext Documentation Exported in Markdown to a File >m9d
 		File Management >n8z
-		└── Rename File???			ctrl+shift+s, >5qr
+		└── Rename File???							ctrl + shift + s, >5qr
 		Toggle History Traverse					ctrl + shift + g >ndc
 		Open Urtext Link 						ctrl + shift + / >ngh
 		JSON >njo
@@ -641,7 +645,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── History >e24
 		│   └── Toggle History Traverse					ctrl + shift + g >ndc
 		├── File Management >n8z
-		│   └── Rename File???			ctrl+shift+s, >5qr
+		│   └── Rename File???							ctrl + shift + s, >5qr
 		└── Menu Operations >9u0
 		About Compact Nodes >ucj
 		Node Titles >ue2
@@ -680,7 +684,6 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Nav Forward 							ctrl + shift + . >yan
 		tag_all >yin
 		Node Browser: Forward Links 			ctrl + shift + 2 >ylo
-		test >yqp
 		Description >yv2
 		Quick Start, Guides and Examples >z7t
 		├── Installation and Setup (Desktop) >6cd
@@ -716,7 +719,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── History >e24
 		│   │   └── Toggle History Traverse					ctrl + shift + g >ndc
 		│   ├── File Management >n8z
-		│   │   └── Rename File???			ctrl+shift+s, >5qr
+		│   │   └── Rename File???							ctrl + shift + s, >5qr
 		│   └── Menu Operations >9u0
 		└── Sublime Text Interface Tips >003
 		    ├── Syntax Highlighting >01d

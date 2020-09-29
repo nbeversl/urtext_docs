@@ -37,7 +37,8 @@ The advantages to Node Pointers include:
 			├── Duplicate Pointers >00t
 			│   └── Example Child Node Using a Node Pointer >001
 			└── Recursive Node Pointers >6ct
-			    ├── xUrtext  Version: 0.5-alpha  Usage Guide and References >a5m
+			    ├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
+			    │   ├── About This Documentation >p23
 			    │   ├── Table of Contents >e5j
 			    │   ├── Quick Start, Guides and Examples >z7t
 			    │   │   ├── Installation and Setup (Desktop) >6cd
@@ -73,7 +74,7 @@ The advantages to Node Pointers include:
 			    │   │   │   ├── History >e24
 			    │   │   │   │   └── Toggle History Traverse					ctrl + shift + g >ndc
 			    │   │   │   ├── File Management >n8z
-			    │   │   │   │   └── Rename File???			ctrl+shift+s, >5qr
+			    │   │   │   │   └── Rename File???							ctrl + shift + s, >5qr
 			    │   │   │   └── Menu Operations >9u0
 			    │   │   └── Sublime Text Interface Tips >003
 			    │   │       ├── Syntax Highlighting >01d

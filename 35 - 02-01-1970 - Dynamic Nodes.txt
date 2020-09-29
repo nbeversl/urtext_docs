@@ -1,3 +1,6 @@
+
+
+
 Dynamic Nodes
 
 Dynamic nodes contain content aggregated from the contents of other nodes. Dynamic content stays up to date with its source content "dynamically" (on file save). A dynamic node can be seen as a "view into" other content. 

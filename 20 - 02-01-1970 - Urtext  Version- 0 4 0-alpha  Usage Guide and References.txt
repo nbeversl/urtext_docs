@@ -1,9 +1,17 @@
-xUrtext | Version: 0.5-alpha | Usage Guide and References
+Urtext | Version: 0.5-alpha | Usage Guide and References
 License: GNU General Public License 3.0
 
-This is a documentation of Urtext, written in Urtext. If you're reading this as a `README.MD` (on Github, etc.), this file was generated from the text files in this repository. The repository is an Urtext project. Clone or download it to use it as both a reference and an example project. If you are reading this in an Urtext implementation, such as in Sublime Text, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
+{ About This Documentation
+  
+  This is a documentation of Urtext, written in Urtext. If you're reading it as a `README.MD` (on Github, etc.), it was compiled from the text files in this repository. Clone or download the respository to use it as both a reference and an example project. 
+
+  This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
+
+  Many of the examples rely on syntax, formatting, and highlighting, which is stripped out in export to Markdown. Where necessary these are replaced with linked screenshots as necessary (see | Linking to Files and Other Resources >00q and | Exporting >ezg)
+
+  Inside an Urtext implementation, such as the Sublime Text with the Urtext package, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
   - Control-Shift-/ to follow any link
-  - Control-Shift-h at any time to return to this "home" node.
+  - Control-Shift-h at any time to return to this "home" node.  p23}
 
 { Table of Contents
 About This Documentation >p23
@@ -113,7 +121,6 @@ def::>v7r }
   | Using Urtext in iOS with Pythonista >os4
   | Basic Syntax >>znj
   | Dynamic Definitions : Syntax and Parameters >>87g
-  |  ?  >>e1x
   | Key Bindings and Operations >>tx6
   | Sublime Text Interface Tips >>003
   index::02
