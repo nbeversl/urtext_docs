@@ -25,7 +25,7 @@ Templating the Output with the SHOW parameter
 			-
 			Timestamps: >005
 			-
-			def::>8p5
-			ID::c1x }
+			ID::c1x
+			def::>8p5 }
 
 id::8p5

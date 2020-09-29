@@ -736,8 +736,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Copy Link to this Node With Title  		ctrl + shift + super + c >05x
 		Basic Syntax >znj
 		└── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
-		def::>thz
-		ID::nc6 }
+		ID::nc6
+		def::>thz }
 
 id::thz
 from::wwci-00407.local

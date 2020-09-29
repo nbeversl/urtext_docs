@@ -70,8 +70,8 @@ Here is the dynamic definition that generates the | Table of Contents >e5j for t
 			Node Browser: Forward Links 			ctrl + shift + 2 >ylo
 			Quick Tag from Other 					ctrl + shift + 0 >zep
 			flags::exclude_from_toc | exclude_from_export
-			def::>v7r
-			ID::jkl }
+			ID::jkl
+			def::>v7r }
 
 f>./files/toc-dynamic-definition.png
 f>./files/excluded-from-toc-definition.png
