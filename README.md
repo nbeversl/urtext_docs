@@ -180,7 +180,7 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 ### Navigation  
 
-- Toggsssle Traverse Mode 				ctrl + shift + r  		  
+- Toggle Traverse Mode 					ctrl + shift + r  		  
 
 - Open Urtext Link						ctrl + shift + /		  
 
@@ -188,19 +188,19 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 - Nav Backward 							ctrl + shift + ,  		  
 
-- Node Browser, Include All Projects 		ctrl + shift + *		  
+- Node Browser, Include All Projects 	ctrl + shift + *		  
 
-- Node Browser: Backlinks					ctrl + shift + 1    	  
+- Node Browser: Backlinks				ctrl + shift + 1    	  
 
 - Node Browser: Forward Links 			ctrl + shift + 2    	  
 
-- Home Node 								ctrl + shift + h 		  
+- Home Node 							ctrl + shift + h 		  
 
 - Node Browser 							ctrl + shift + e  		  
 
 - Open Random Node 						ctrl + shift + f 		  
 
-- List Projects 						ctrl + shift + o 			  
+- List Projects 						ctrl + shift + o 		  
 
 
 
@@ -208,52 +208,65 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 ### Content Insertions  
 
-- New Node 								ctrl + shift + ; 					  
 
-- Add Node ID 							ctrl + shift + i 					  
 
-- Insert Timestamp 						ctrl + shift + t   					  
+#### New Node 								ctrl + shift + ;  					
 
-- Insert Compact Node 					ctrl + shift + ^  					  
 
-- Insert Inline Node   					ctrl + shift + [ 					  
+#### Add Node ID 							ctrl + shift + i  					
 
-- Insert Inline Node, minimal (trailing node ID, single line, no other metadata):
-- 											ctrl + shift + p (OSX)   	
-- 											alt  + shift + p (Windows, Linux)	  
 
-- Insert Dynamic Definition with Node 	ctrl + shift + ]					  
+#### Insert Timestamp 						ctrl + shift + t    					
 
-- Insert Link to New Node  				ctrl + shift + '					  
 
-- Quick Tag from Other 					ctrl + shift + 0  					  
+#### Insert Compact Node 					ctrl + shift + ^   					
 
+
+#### Insert Inline Node   					ctrl + shift + [  					
+
+
+#### Insert Inline Node, minimal (trailing node ID, single line, no other metadata): 
+ctrl + shift + p (OSX)   	
+alt  + shift + p (Windows, Linux)	
+
+
+#### Insert Dynamic Definition with Node 	ctrl + shift + ] 					
+
+
+#### Insert Link to New Node  				ctrl + shift + ' 					
+
+
+#### Quick Tag from Other 					ctrl + shift + 0   					
 
 
 
 
 ### Copy Links  
 
-- Copy Link to this Node  				ctrl + shift + c 					  
 
-- Copy Link to this Node With Title  		ctrl + shift + super + c 		  
 
+#### Copy Link to this Node  				ctrl + shift + c  					
+
+
+#### Copy Link to this Node With Title  		ctrl + shift + super + c  		
 
 
 
 
 ### History  
 
-Toggle History Traverse					ctrl + shift + g 				  
 
+
+#### Toggle History Traverse					ctrl + shift + g  	 
 
 
 
 
 ### File Management  
 
-Rename File???							ctrl + shift + s,   			  
 
+
+#### Rename File???							ctrl + shift + s,     			
 
 
 
@@ -1115,7 +1128,7 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 ######## Navigation  
 
-- Toggsssle Traverse Mode 				ctrl + shift + r  		  
+- Toggle Traverse Mode 					ctrl + shift + r  		  
 
 - Open Urtext Link						ctrl + shift + /		  
 
@@ -1123,19 +1136,19 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 - Nav Backward 							ctrl + shift + ,  		  
 
-- Node Browser, Include All Projects 		ctrl + shift + *		  
+- Node Browser, Include All Projects 	ctrl + shift + *		  
 
-- Node Browser: Backlinks					ctrl + shift + 1    	  
+- Node Browser: Backlinks				ctrl + shift + 1    	  
 
 - Node Browser: Forward Links 			ctrl + shift + 2    	  
 
-- Home Node 								ctrl + shift + h 		  
+- Home Node 							ctrl + shift + h 		  
 
 - Node Browser 							ctrl + shift + e  		  
 
 - Open Random Node 						ctrl + shift + f 		  
 
-- List Projects 						ctrl + shift + o 			  
+- List Projects 						ctrl + shift + o 		  
 
 
 
@@ -1143,52 +1156,65 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 ######## Content Insertions  
 
-- New Node 								ctrl + shift + ; 					  
 
-- Add Node ID 							ctrl + shift + i 					  
 
-- Insert Timestamp 						ctrl + shift + t   					  
+######### New Node 								ctrl + shift + ;  					
 
-- Insert Compact Node 					ctrl + shift + ^  					  
 
-- Insert Inline Node   					ctrl + shift + [ 					  
+######### Add Node ID 							ctrl + shift + i  					
 
-- Insert Inline Node, minimal (trailing node ID, single line, no other metadata):
-- 											ctrl + shift + p (OSX)   	
-- 											alt  + shift + p (Windows, Linux)	  
 
-- Insert Dynamic Definition with Node 	ctrl + shift + ]					  
+######### Insert Timestamp 						ctrl + shift + t    					
 
-- Insert Link to New Node  				ctrl + shift + '					  
 
-- Quick Tag from Other 					ctrl + shift + 0  					  
+######### Insert Compact Node 					ctrl + shift + ^   					
 
+
+######### Insert Inline Node   					ctrl + shift + [  					
+
+
+######### Insert Inline Node, minimal (trailing node ID, single line, no other metadata): 
+ctrl + shift + p (OSX)   	
+alt  + shift + p (Windows, Linux)	
+
+
+######### Insert Dynamic Definition with Node 	ctrl + shift + ] 					
+
+
+######### Insert Link to New Node  				ctrl + shift + ' 					
+
+
+######### Quick Tag from Other 					ctrl + shift + 0   					
 
 
 
 
 ######## Copy Links  
 
-- Copy Link to this Node  				ctrl + shift + c 					  
 
-- Copy Link to this Node With Title  		ctrl + shift + super + c 		  
 
+######### Copy Link to this Node  				ctrl + shift + c  					
+
+
+######### Copy Link to this Node With Title  		ctrl + shift + super + c  		
 
 
 
 
 ######## History  
 
-Toggle History Traverse					ctrl + shift + g 				  
 
+
+######### Toggle History Traverse					ctrl + shift + g  	 
 
 
 
 
 ######## File Management  
 
-Rename File???							ctrl + shift + s,   			  
 
+
+######### Rename File???							ctrl + shift + s,     			
 
 
 
@@ -1342,17 +1368,17 @@ Pointers[Pointers](#pointers)
 			    │   │   ├── Dynamic Definitions : Syntax and Parameters[Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters)
 			    │   │   ├── Key Bindings and Operations[Key Bindings and Operations](#key-bindings-and-operations)
 			    │   │   │   ├── Navigation[Navigation](#navigation)
-			    │   │   │   │   ├── Toggsssle Traverse Mode : ctrl + shift + r[Toggsssle Traverse Mode 				ctrl + shift + r](#toggsssle-traverse-mode-				ctrl-+-shift-+-r)
-			    │   │   │   │   ├── Open Urtext Link :	ctrl + shift + /[Open Urtext Link						ctrl + shift + /](#open-urtext-link						ctrl-+-shift-+-/)
-			    │   │   │   │   ├── Nav Forward 							ctrl + shift + .[Nav Forward 							ctrl + shift + .](#nav-forward-							ctrl-+-shift-+-.)
-			    │   │   │   │   ├── Nav Backward 							ctrl + shift + ,[Nav Backward 							ctrl + shift + ,](#nav-backward-							ctrl-+-shift-+-,)
-			    │   │   │   │   ├── Node Browser, Include All Projects 	ctrl + shift + *[Node Browser, Include All Projects 		ctrl + shift + *](#node-browser,-include-all-projects-		ctrl-+-shift-+-*)
-			    │   │   │   │   ├── Node Browser: Backlinks				ctrl + shift + 1[Node Browser: Backlinks					ctrl + shift + 1](#node-browser:-backlinks					ctrl-+-shift-+-1)
-			    │   │   │   │   ├── Node Browser: Forward Links 			ctrl + shift + 2[Node Browser: Forward Links 			ctrl + shift + 2](#node-browser:-forward-links-			ctrl-+-shift-+-2)
-			    │   │   │   │   ├── Home Node 							ctrl + shift + h[Home Node 								ctrl + shift + h](#home-node-								ctrl-+-shift-+-h)
-			    │   │   │   │   ├── Node Browser 							ctrl + shift + e[Node Browser 							ctrl + shift + e](#node-browser-							ctrl-+-shift-+-e)
-			    │   │   │   │   ├── Open Random Node 						ctrl + shift + f[Open Random Node 						ctrl + shift + f](#open-random-node-						ctrl-+-shift-+-f)
-			    │   │   │   │   └── List Projects 						ctrl + shift + o[List Projects 						ctrl + shift + o](#list-projects-						ctrl-+-shift-+-o)
+			    │   │   │   │   ├── - Toggle Traverse Mode 					ctrl + shift + r[- Toggle Traverse Mode 					ctrl + shift + r](#--toggle-traverse-mode-					ctrl-+-shift-+-r)
+			    │   │   │   │   ├── - Open Urtext Link						ctrl + shift + /[- Open Urtext Link						ctrl + shift + /](#--open-urtext-link						ctrl-+-shift-+-/)
+			    │   │   │   │   ├── - Nav Forward 							ctrl + shift + .[- Nav Forward 							ctrl + shift + .](#--nav-forward-							ctrl-+-shift-+-.)
+			    │   │   │   │   ├── - Nav Backward 							ctrl + shift + ,[- Nav Backward 							ctrl + shift + ,](#--nav-backward-							ctrl-+-shift-+-,)
+			    │   │   │   │   ├── - Node Browser, Include All Projects 	ctrl + shift + *[- Node Browser, Include All Projects 	ctrl + shift + *](#--node-browser,-include-all-projects-	ctrl-+-shift-+-*)
+			    │   │   │   │   ├── - Node Browser: Backlinks				ctrl + shift + 1[- Node Browser: Backlinks				ctrl + shift + 1](#--node-browser:-backlinks				ctrl-+-shift-+-1)
+			    │   │   │   │   ├── - Node Browser: Forward Links 			ctrl + shift + 2[- Node Browser: Forward Links 			ctrl + shift + 2](#--node-browser:-forward-links-			ctrl-+-shift-+-2)
+			    │   │   │   │   ├── - Home Node 							ctrl + shift + h[- Home Node 							ctrl + shift + h](#--home-node-							ctrl-+-shift-+-h)
+			    │   │   │   │   ├── - Node Browser 							ctrl + shift + e[- Node Browser 							ctrl + shift + e](#--node-browser-							ctrl-+-shift-+-e)
+			    │   │   │   │   ├── - Open Random Node 						ctrl + shift + f[- Open Random Node 						ctrl + shift + f](#--open-random-node-						ctrl-+-shift-+-f)
+			    │   │   │   │   └── - List Projects 						ctrl + shift + o[- List Projects 						ctrl + shift + o](#--list-projects-						ctrl-+-shift-+-o)
 			    │   │   │   ├── Content Insertions[Content Insertions](#content-insertions)
 			    │   │   │   │   ├── New Node 								ctrl + shift + ;[New Node 								ctrl + shift + ;](#new-node-								ctrl-+-shift-+-;)
 			    │   │   │   │   ├── Add Node ID 							ctrl + shift + i[Add Node ID 							ctrl + shift + i](#add-node-id-							ctrl-+-shift-+-i)

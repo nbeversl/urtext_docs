@@ -1,0 +1,15 @@
+{ Navigation
+ID::bac
+def::>tzk }
+
+[[ ID(>bac)
+	HEADER(Navigation)
+	INCLUDE(flags=nav)
+	DEPTH(*)
+	SHOW(- $title\n)
+ ]]
+
+
+from::wwci-00407.local
+id::tzk
+timestamp::<Tue., Sep. 29, 2020, 12:21 PM +0000>
