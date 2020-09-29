@@ -167,7 +167,7 @@ Copy Link to this Node With Title  		ctrl + shift + super + c
 ### History
 Toggle History Traverse					ctrl + shift + g
 ### File Management
-#### Rename File???							ctrl + shift + s,
+Rename File???							ctrl + shift + s,
 ### Menu Operations 
 
 Multiple Projects
@@ -179,7 +179,6 @@ Delete This Node
 Initialize Project
 Pop Node
 Move File to Other Project
-ssss
 
 ## Sublime Text Interface Tips  
 
@@ -447,6 +446,9 @@ Overrides the node title, which is by default the full first non-whitespace line
 Generated automatically in a dynamic node, contains a link to the node containing the definition.
 
 ## Dynamic Nodes
+
+
+
 
 Dynamic nodes contain content aggregated from the contents of other nodes. Dynamic content stays up to date with its source content "dynamically" (on file save). A dynamic node can be seen as a "view into" other content. 
 
@@ -759,7 +761,7 @@ Copy Link to this Node With Title  		ctrl + shift + super + c
 ######## History
 Toggle History Traverse					ctrl + shift + g
 ######## File Management
-######### Rename File???							ctrl + shift + s,
+Rename File???							ctrl + shift + s,
 ######## Menu Operations 
 
 Multiple Projects
@@ -771,7 +773,6 @@ Delete This Node
 Initialize Project
 Pop Node
 Move File to Other Project
-ssss
 
 ####### Sublime Text Interface Tips  
 
