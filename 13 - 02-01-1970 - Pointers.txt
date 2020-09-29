@@ -159,8 +159,8 @@ The advantages to Node Pointers include:
 			    │           └── Traverse Mode >00w
 			    │               └── Word Wrap in Traverse Mode >xci
 			    └── Example Recursive Node Tree >01n
-			ID::01n
-			def::>6ct }
+			def::>6ct
+			ID::01n }
     6ct}
 
 ID::lmu

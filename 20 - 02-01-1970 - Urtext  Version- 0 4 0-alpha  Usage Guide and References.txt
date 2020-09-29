@@ -112,8 +112,8 @@ Reference >ac5
     ├── The Node Browser >01i
     └── Traverse Mode >00w
         └── Word Wrap in Traverse Mode >xci
-ID::e5j
-def::>v7r } 
+def::>v7r
+ID::e5j } 
 
 {  Quick Start, Guides and Examples
 
