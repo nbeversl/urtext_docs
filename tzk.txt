@@ -1,6 +1,5 @@
 { Navigation
-ID::bac
-def::>tzk }
+ID::bac; def::>tzk; }
 
 [[ ID(>bac)
 	HEADER(Navigation)

@@ -24,13 +24,11 @@ Quick Start, Guides and Examples >z7t
 ├── Installation and Setup (Desktop) >6cd
 ├── Basic Syntax >znj
 ├── Dynamic Definitions : Syntax and Parameters >87g
-├── Key Bindings and Operations >tx6
-│   ├── Navigation >v6a
-│   ├── Content Insertions >35a
-│   ├── Copy Links >zjz
-│   ├── History >e24
-│   ├── File Management >n8z
-│   └── Menu Operations >9u0
+├── Key Bindings and Operations >1vs
+│   ├── Navigation >k7b
+│   ├── Content Insertion >kxh
+│   ├── Copy Links >kqz
+│   └── History >a8q
 └── Sublime Text Interface Tips >003
     ├── Syntax Highlighting >01d
     ├── Hiding Tabs >015
@@ -112,8 +110,7 @@ Reference >ac5
     ├── The Node Browser >01i
     └── Traverse Mode >00w
         └── Word Wrap in Traverse Mode >xci
-ID::e5j
-def::>v7r } 
+ID::e5j; def::>v7r; } 
 
 {  Quick Start, Guides and Examples
 
@@ -121,7 +118,7 @@ def::>v7r }
   | Using Urtext in iOS with Pythonista >os4
   | Basic Syntax >>znj
   | Dynamic Definitions : Syntax and Parameters >>87g
-  | Key Bindings and Operations >>tx6
+  | Key Bindings and Operations >>1vs
   | Sublime Text Interface Tips >>003
   index::02
 z7t}

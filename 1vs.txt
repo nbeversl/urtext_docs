@@ -1,0 +1,48 @@
+Key Bindings and Operations
+
+{ Navigation
+- Node Browser, Backlinks: `ctrl + shift + 1`
+- Nav Backward: ctrl + shift + ,
+- Home Node: `ctrl + shift + h`
+- List Projects: `ctrl + shift + o`
+- Toggle Traverse Mode: ctrl + shift + r
+- Node Browser, Include All Projects: ctrl + shift + *
+- Open Urtext Link:	ctrl + shift + /
+- Open Random Node: `ctrl + shift + f`
+- Node Browser: `ctrl + shift + e`
+- Nav Forward: ctrl + shift + .
+- Node Browser, Forward Links: `ctrl + shift + 2`
+ID::k7b; def::>1vs; } 
+
+
+{ Content Insertion
+- Insert Compact Node: ctrl + shift + ^
+- Insert Timestamp: ctrl + shift + t
+- Insert Inline Node, minimal: ctrl + shift + p (OSX), alt  + shift + p (Windows, Linux)
+- Add Node ID: ctrl + shift + i
+- Insert Dynamic Definition with Node: ctrl + shift + ]
+- Insert Inline Node: ctrl + shift + [
+- Insert Link to New Node: ctrl + shift + '
+- New Node: ctrl + shift + ;
+- Quick Tag from Other: ctrl + shift + 0
+ID::kxh; def::>1vs; }
+
+{ Copy Links
+- Copy Link to this Node With Title: ctrl + shift + super + c
+- Copy Link to this Node: ctrl + shift + c
+ID::kqz; def::>1vs; }
+
+{ History
+- Toggle History Traverse: ctrl + shift + g
+ID::a8q; def::>1vs; }
+
+See also | Key Bindings and Operations - Definitions >tx6
+
+[[ ID(>k7b) HEADER(Navigation) INCLUDE(tags=navigation) SHOW(- $title\n) ]]
+[[ ID(>kxh) HEADER(Content Insertion) INCLUDE(tags=content_insertion) SHOW(- $title\n) ]]
+[[ ID(>kqz) HEADER(Copy Links) INCLUDE(tags=copy_links) SHOW(- $title\n) ]]
+[[ ID(>a8q) HEADER(History) INCLUDE(tags=history) SHOW(- $title\n) ]]
+
+from::wwci-00407.local
+id::1vs
+timestamp::<Tue., Sep. 29, 2020, 12:40 PM +0000>

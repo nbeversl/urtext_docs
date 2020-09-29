@@ -178,110 +178,50 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 
 
-### Navigation  
+### Navigation 
+- Node Browser, Backlinks: `ctrl + shift + 1`
+- Nav Backward: ctrl + shift + ,
+- Home Node: `ctrl + shift + h`
+- List Projects: `ctrl + shift + o`
+- Toggle Traverse Mode: ctrl + shift + r
+- Node Browser, Include All Projects: ctrl + shift + *
+- Open Urtext Link:	ctrl + shift + /
+- Open Random Node: `ctrl + shift + f`
+- Node Browser: `ctrl + shift + e`
+- Nav Forward: ctrl + shift + .
+- Node Browser, Forward Links: `ctrl + shift + 2`
 
-- Toggle Traverse Mode 					ctrl + shift + r  		  
-
-- Open Urtext Link						ctrl + shift + /		  
-
-- Nav Forward 							ctrl + shift + .		  
-
-- Nav Backward 							ctrl + shift + ,  		  
-
-- Node Browser, Include All Projects 	ctrl + shift + *		  
-
-- Node Browser: Backlinks				ctrl + shift + 1    	  
-
-- Node Browser: Forward Links 			ctrl + shift + 2    	  
-
-- Home Node 							ctrl + shift + h 		  
-
-- Node Browser 							ctrl + shift + e  		  
-
-- Open Random Node 						ctrl + shift + f 		  
-
-- List Projects 						ctrl + shift + o 		  
+ss
 
 
-
-
-
-### Content Insertions  
-
-
-
-#### New Node 								ctrl + shift + ;  					
-
-
-#### Add Node ID 							ctrl + shift + i  					
-
-
-#### Insert Timestamp 						ctrl + shift + t    					
-
-
-#### Insert Compact Node 					ctrl + shift + ^   					
-
-
-#### Insert Inline Node   					ctrl + shift + [  					
-
-
-#### Insert Inline Node, minimal (trailing node ID, single line, no other metadata): 
-ctrl + shift + p (OSX)   	
-alt  + shift + p (Windows, Linux)	
-
-
-#### Insert Dynamic Definition with Node 	ctrl + shift + ] 					
-
-
-#### Insert Link to New Node  				ctrl + shift + ' 					
-
-
-#### Quick Tag from Other 					ctrl + shift + 0   					
+### Content Insertion 
+- Insert Compact Node: ctrl + shift + ^
+- Insert Timestamp: ctrl + shift + t
+- Insert Inline Node, minimal: ctrl + shift + p (OSX), alt  + shift + p (Windows, Linux)
+- Add Node ID: ctrl + shift + i
+- Insert Dynamic Definition with Node: ctrl + shift + ]
+- Insert Inline Node: ctrl + shift + [
+- Insert Link to New Node: ctrl + shift + '
+- New Node: ctrl + shift + ;
+- Quick Tag from Other: ctrl + shift + 0
 
 
 
 
-### Copy Links  
-
-
-
-#### Copy Link to this Node  				ctrl + shift + c  					
-
-
-#### Copy Link to this Node With Title  		ctrl + shift + super + c  		
+### Copy Links 
+- Copy Link to this Node With Title: ctrl + shift + super + c
+- Copy Link to this Node: ctrl + shift + c
 
 
 
 
-### History  
-
-
-
-#### Toggle History Traverse					ctrl + shift + g  	 
-
-
-
-
-### File Management  
-
-
-
-#### Rename File???							ctrl + shift + s,     			
+### History 
+- Toggle History Traverse: ctrl + shift + g
 
 
 
 
-### Menu Operations 
 
-Multiple Projects
-Import Project
-Reload Project
-Reindex All Files
-Rename File(s) from Meta
-Delete This Node
-Initialize Project
-Pop Node
-Move File to Other Project   
 
 
 
@@ -947,11 +887,9 @@ Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,
 ├── Dynamic Definitions : Syntax and Parameters[Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters)
 ├── Key Bindings and Operations[Key Bindings and Operations](#key-bindings-and-operations)
 │   ├── Navigation[Navigation](#navigation)
-│   ├── Content Insertions[Content Insertions](#content-insertions)
+│   ├── Content Insertion[Content Insertion](#content-insertion)
 │   ├── Copy Links[Copy Links](#copy-links)
-│   ├── History[History](#history)
-│   ├── File Management[File Management](#file-management)
-│   └── Menu Operations[Menu Operations](#menu-operations)
+│   └── History[History](#history)
 └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
     ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
     ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
@@ -1126,110 +1064,50 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 
 
-######## Navigation  
+######## Navigation 
+- Node Browser, Backlinks: `ctrl + shift + 1`
+- Nav Backward: ctrl + shift + ,
+- Home Node: `ctrl + shift + h`
+- List Projects: `ctrl + shift + o`
+- Toggle Traverse Mode: ctrl + shift + r
+- Node Browser, Include All Projects: ctrl + shift + *
+- Open Urtext Link:	ctrl + shift + /
+- Open Random Node: `ctrl + shift + f`
+- Node Browser: `ctrl + shift + e`
+- Nav Forward: ctrl + shift + .
+- Node Browser, Forward Links: `ctrl + shift + 2`
 
-- Toggle Traverse Mode 					ctrl + shift + r  		  
-
-- Open Urtext Link						ctrl + shift + /		  
-
-- Nav Forward 							ctrl + shift + .		  
-
-- Nav Backward 							ctrl + shift + ,  		  
-
-- Node Browser, Include All Projects 	ctrl + shift + *		  
-
-- Node Browser: Backlinks				ctrl + shift + 1    	  
-
-- Node Browser: Forward Links 			ctrl + shift + 2    	  
-
-- Home Node 							ctrl + shift + h 		  
-
-- Node Browser 							ctrl + shift + e  		  
-
-- Open Random Node 						ctrl + shift + f 		  
-
-- List Projects 						ctrl + shift + o 		  
+ss
 
 
-
-
-
-######## Content Insertions  
-
-
-
-######### New Node 								ctrl + shift + ;  					
-
-
-######### Add Node ID 							ctrl + shift + i  					
-
-
-######### Insert Timestamp 						ctrl + shift + t    					
-
-
-######### Insert Compact Node 					ctrl + shift + ^   					
-
-
-######### Insert Inline Node   					ctrl + shift + [  					
-
-
-######### Insert Inline Node, minimal (trailing node ID, single line, no other metadata): 
-ctrl + shift + p (OSX)   	
-alt  + shift + p (Windows, Linux)	
-
-
-######### Insert Dynamic Definition with Node 	ctrl + shift + ] 					
-
-
-######### Insert Link to New Node  				ctrl + shift + ' 					
-
-
-######### Quick Tag from Other 					ctrl + shift + 0   					
+######## Content Insertion 
+- Insert Compact Node: ctrl + shift + ^
+- Insert Timestamp: ctrl + shift + t
+- Insert Inline Node, minimal: ctrl + shift + p (OSX), alt  + shift + p (Windows, Linux)
+- Add Node ID: ctrl + shift + i
+- Insert Dynamic Definition with Node: ctrl + shift + ]
+- Insert Inline Node: ctrl + shift + [
+- Insert Link to New Node: ctrl + shift + '
+- New Node: ctrl + shift + ;
+- Quick Tag from Other: ctrl + shift + 0
 
 
 
 
-######## Copy Links  
-
-
-
-######### Copy Link to this Node  				ctrl + shift + c  					
-
-
-######### Copy Link to this Node With Title  		ctrl + shift + super + c  		
+######## Copy Links 
+- Copy Link to this Node With Title: ctrl + shift + super + c
+- Copy Link to this Node: ctrl + shift + c
 
 
 
 
-######## History  
-
-
-
-######### Toggle History Traverse					ctrl + shift + g  	 
-
-
-
-
-######## File Management  
-
-
-
-######### Rename File???							ctrl + shift + s,     			
+######## History 
+- Toggle History Traverse: ctrl + shift + g
 
 
 
 
-######## Menu Operations 
 
-Multiple Projects
-Import Project
-Reload Project
-Reindex All Files
-Rename File(s) from Meta
-Delete This Node
-Initialize Project
-Pop Node
-Move File to Other Project   
 
 
 
@@ -1368,35 +1246,9 @@ Pointers[Pointers](#pointers)
 			    │   │   ├── Dynamic Definitions : Syntax and Parameters[Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters)
 			    │   │   ├── Key Bindings and Operations[Key Bindings and Operations](#key-bindings-and-operations)
 			    │   │   │   ├── Navigation[Navigation](#navigation)
-			    │   │   │   │   ├── - Toggle Traverse Mode 					ctrl + shift + r[- Toggle Traverse Mode 					ctrl + shift + r](#--toggle-traverse-mode-					ctrl-+-shift-+-r)
-			    │   │   │   │   ├── - Open Urtext Link						ctrl + shift + /[- Open Urtext Link						ctrl + shift + /](#--open-urtext-link						ctrl-+-shift-+-/)
-			    │   │   │   │   ├── - Nav Forward 							ctrl + shift + .[- Nav Forward 							ctrl + shift + .](#--nav-forward-							ctrl-+-shift-+-.)
-			    │   │   │   │   ├── - Nav Backward 							ctrl + shift + ,[- Nav Backward 							ctrl + shift + ,](#--nav-backward-							ctrl-+-shift-+-,)
-			    │   │   │   │   ├── - Node Browser, Include All Projects 	ctrl + shift + *[- Node Browser, Include All Projects 	ctrl + shift + *](#--node-browser,-include-all-projects-	ctrl-+-shift-+-*)
-			    │   │   │   │   ├── - Node Browser: Backlinks				ctrl + shift + 1[- Node Browser: Backlinks				ctrl + shift + 1](#--node-browser:-backlinks				ctrl-+-shift-+-1)
-			    │   │   │   │   ├── - Node Browser: Forward Links 			ctrl + shift + 2[- Node Browser: Forward Links 			ctrl + shift + 2](#--node-browser:-forward-links-			ctrl-+-shift-+-2)
-			    │   │   │   │   ├── - Home Node 							ctrl + shift + h[- Home Node 							ctrl + shift + h](#--home-node-							ctrl-+-shift-+-h)
-			    │   │   │   │   ├── - Node Browser 							ctrl + shift + e[- Node Browser 							ctrl + shift + e](#--node-browser-							ctrl-+-shift-+-e)
-			    │   │   │   │   ├── - Open Random Node 						ctrl + shift + f[- Open Random Node 						ctrl + shift + f](#--open-random-node-						ctrl-+-shift-+-f)
-			    │   │   │   │   └── - List Projects 						ctrl + shift + o[- List Projects 						ctrl + shift + o](#--list-projects-						ctrl-+-shift-+-o)
-			    │   │   │   ├── Content Insertions[Content Insertions](#content-insertions)
-			    │   │   │   │   ├── New Node 								ctrl + shift + ;[New Node 								ctrl + shift + ;](#new-node-								ctrl-+-shift-+-;)
-			    │   │   │   │   ├── Add Node ID 							ctrl + shift + i[Add Node ID 							ctrl + shift + i](#add-node-id-							ctrl-+-shift-+-i)
-			    │   │   │   │   ├── Insert Timestamp 						ctrl + shift + t[Insert Timestamp 						ctrl + shift + t](#insert-timestamp-						ctrl-+-shift-+-t)
-			    │   │   │   │   ├── Insert Compact Node 					ctrl + shift + ^[Insert Compact Node 					ctrl + shift + ^](#insert-compact-node-					ctrl-+-shift-+-^)
-			    │   │   │   │   ├── Insert Inline Node   					ctrl + shift + [[Insert Inline Node   					ctrl + shift + [](#insert-inline-node---					ctrl-+-shift-+-[)
-			    │   │   │   │   ├── Insert Inline Node, minimal (trailing node ID, single line, no other metadata):[Insert Inline Node, minimal (trailing node ID, single line, no other metadata):](#insert-inline-node,-minimal-trailing-node-id,-single-line,-no-other-metadata:)
-			    │   │   │   │   ├── Insert Dynamic Definition with Node 	ctrl + shift + ][Insert Dynamic Definition with Node 	ctrl + shift + ]](#insert-dynamic-definition-with-node-	ctrl-+-shift-+-])
-			    │   │   │   │   ├── Insert Link to New Node  				ctrl + shift + '[Insert Link to New Node  				ctrl + shift + '](#insert-link-to-new-node--				ctrl-+-shift-+-')
-			    │   │   │   │   └── Quick Tag from Other 					ctrl + shift + 0[Quick Tag from Other 					ctrl + shift + 0](#quick-tag-from-other-					ctrl-+-shift-+-0)
+			    │   │   │   ├── Content Insertion[Content Insertion](#content-insertion)
 			    │   │   │   ├── Copy Links[Copy Links](#copy-links)
-			    │   │   │   │   ├── Copy Link to this Node  				ctrl + shift + c[Copy Link to this Node  				ctrl + shift + c](#copy-link-to-this-node--				ctrl-+-shift-+-c)
-			    │   │   │   │   └── Copy Link to this Node With Title  		ctrl + shift + super + c[Copy Link to this Node With Title  		ctrl + shift + super + c](#copy-link-to-this-node-with-title--		ctrl-+-shift-+-super-+-c)
-			    │   │   │   ├── History[History](#history)
-			    │   │   │   │   └── Toggle History Traverse					ctrl + shift + g[Toggle History Traverse					ctrl + shift + g](#toggle-history-traverse					ctrl-+-shift-+-g)
-			    │   │   │   ├── File Management[File Management](#file-management)
-			    │   │   │   │   └── Rename File???							ctrl + shift + s,[Rename File???							ctrl + shift + s,](#rename-file???							ctrl-+-shift-+-s,)
-			    │   │   │   └── Menu Operations[Menu Operations](#menu-operations)
+			    │   │   │   └── History[History](#history)
 			    │   │   └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
 			    │   │       ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
 			    │   │       ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)

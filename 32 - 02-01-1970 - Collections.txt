@@ -52,8 +52,7 @@ id :: 00l >00l:795
 
 
 flags::exclude_from_toc | exclude_from_export 
-ID::aoq
-def::>00k }
+ID::aoq; def::>00k; }
 
 
 
