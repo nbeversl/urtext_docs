@@ -47,17 +47,17 @@ The advantages to Node Pointers include:
 			    │   │   ├── Dynamic Definitions : Syntax and Parameters >87g
 			    │   │   ├── Key Bindings and Operations >tx6
 			    │   │   │   ├── Navigation >v6a
-			    │   │   │   │   ├── Toggle Traverse Mode 					ctrl + shift + r >hcf
-			    │   │   │   │   ├── Open Urtext Link 						ctrl + shift + / >ngh
+			    │   │   │   │   ├── Toggle Traverse Mode : ctrl + shift + r >hcf
+			    │   │   │   │   ├── Open Urtext Link :	ctrl + shift + / >ngh
 			    │   │   │   │   ├── Nav Forward 							ctrl + shift + . >yan
 			    │   │   │   │   ├── Nav Backward 							ctrl + shift + , >3hy
-			    │   │   │   │   ├── Node Browser, Include All Projects 		ctrl + shift + * >hyh
-			    │   │   │   │   ├── Node Browser: Backlinks					ctrl + shift + 1 >1ea
+			    │   │   │   │   ├── Node Browser, Include All Projects 	ctrl + shift + * >hyh
+			    │   │   │   │   ├── Node Browser: Backlinks				ctrl + shift + 1 >1ea
 			    │   │   │   │   ├── Node Browser: Forward Links 			ctrl + shift + 2 >ylo
-			    │   │   │   │   ├── Home Node 								ctrl + shift + h >5ab
+			    │   │   │   │   ├── Home Node 							ctrl + shift + h >5ab
 			    │   │   │   │   ├── Node Browser 							ctrl + shift + e >vdr
 			    │   │   │   │   ├── Open Random Node 						ctrl + shift + f >q5f
-			    │   │   │   │   └── List Projects 							ctrl + shift + o >g5a
+			    │   │   │   │   └── List Projects 						ctrl + shift + o >g5a
 			    │   │   │   ├── Content Insertions >35a
 			    │   │   │   │   ├── New Node 								ctrl + shift + ; >ve3
 			    │   │   │   │   ├── Add Node ID 							ctrl + shift + i >gv9

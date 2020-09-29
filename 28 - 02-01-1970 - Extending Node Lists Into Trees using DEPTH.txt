@@ -154,7 +154,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Project Settings >0vp
 		Links >0y2
 		└── Sublime Text tools to help with linking >00m
-		Node Browser: Backlinks					ctrl + shift + 1 >1ea
+		Node Browser: Backlinks				ctrl + shift + 1 >1ea
 		`console_log` >1lz
 		Insert Compact Node 					ctrl + shift + ^ >1qq
 		Remove Indent Guides >1rc
@@ -186,7 +186,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Search Using Dynamic Nodes >uy4
 		    └── Example Search Results >3x3
 		Dynamic Titles >4vu
-		Home Node 								ctrl + shift + h >5ab
+		Home Node 							ctrl + shift + h >5ab
 		`def` >5cq
 		test fourth level >5pq
 		└── fifth level >xc9
@@ -294,17 +294,17 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── Dynamic Definitions : Syntax and Parameters >87g
 		│   ├── Key Bindings and Operations >tx6
 		│   │   ├── Navigation >v6a
-		│   │   │   ├── Toggle Traverse Mode 					ctrl + shift + r >hcf
-		│   │   │   ├── Open Urtext Link 						ctrl + shift + / >ngh
+		│   │   │   ├── Toggle Traverse Mode : ctrl + shift + r >hcf
+		│   │   │   ├── Open Urtext Link :	ctrl + shift + / >ngh
 		│   │   │   ├── Nav Forward 							ctrl + shift + . >yan
 		│   │   │   ├── Nav Backward 							ctrl + shift + , >3hy
-		│   │   │   ├── Node Browser, Include All Projects 		ctrl + shift + * >hyh
-		│   │   │   ├── Node Browser: Backlinks					ctrl + shift + 1 >1ea
+		│   │   │   ├── Node Browser, Include All Projects 	ctrl + shift + * >hyh
+		│   │   │   ├── Node Browser: Backlinks				ctrl + shift + 1 >1ea
 		│   │   │   ├── Node Browser: Forward Links 			ctrl + shift + 2 >ylo
-		│   │   │   ├── Home Node 								ctrl + shift + h >5ab
+		│   │   │   ├── Home Node 							ctrl + shift + h >5ab
 		│   │   │   ├── Node Browser 							ctrl + shift + e >vdr
 		│   │   │   ├── Open Random Node 						ctrl + shift + f >q5f
-		│   │   │   └── List Projects 							ctrl + shift + o >g5a
+		│   │   │   └── List Projects 						ctrl + shift + o >g5a
 		│   │   ├── Content Insertions >35a
 		│   │   │   ├── New Node 								ctrl + shift + ; >ve3
 		│   │   │   ├── Add Node ID 							ctrl + shift + i >gv9
@@ -503,15 +503,15 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── `title` >pz3
 		└── `def` >5cq
 		require an ID >frm
-		List Projects 							ctrl + shift + o >g5a
+		List Projects 						ctrl + shift + o >g5a
 		Add Node ID 							ctrl + shift + i >gv9
 		Expanding a List with the DEPTH Parameter >h6l
 		└── Example Tree >4gr
 		Comparison To Other Tools >h8z
-		Toggle Traverse Mode 					ctrl + shift + r >hcf
+		Toggle Traverse Mode : ctrl + shift + r >hcf
 		Syntax and Format >hg7
 		become child nodes of their containing node. >hiz
-		Node Browser, Include All Projects 		ctrl + shift + * >hyh
+		Node Browser, Include All Projects 	ctrl + shift + * >hyh
 		Uses for inline nodes >ia5
 		Using Multiple Projects >ipy
 		├── Project Naming (Identification) >tgp
@@ -585,7 +585,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		File Management >n8z
 		└── Rename File???							ctrl + shift + s, >5qr
 		Toggle History Traverse					ctrl + shift + g >ndc
-		Open Urtext Link 						ctrl + shift + / >ngh
+		Open Urtext Link :	ctrl + shift + / >ngh
 		JSON >njo
 		Documentation >ooe
 		Using Urtext in iOS with Pythonista >os4
@@ -618,17 +618,17 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Example: Nodes from the Documentation >m1r
 		Key Bindings and Operations >tx6
 		├── Navigation >v6a
-		│   ├── Toggle Traverse Mode 					ctrl + shift + r >hcf
-		│   ├── Open Urtext Link 						ctrl + shift + / >ngh
+		│   ├── Toggle Traverse Mode : ctrl + shift + r >hcf
+		│   ├── Open Urtext Link :	ctrl + shift + / >ngh
 		│   ├── Nav Forward 							ctrl + shift + . >yan
 		│   ├── Nav Backward 							ctrl + shift + , >3hy
-		│   ├── Node Browser, Include All Projects 		ctrl + shift + * >hyh
-		│   ├── Node Browser: Backlinks					ctrl + shift + 1 >1ea
+		│   ├── Node Browser, Include All Projects 	ctrl + shift + * >hyh
+		│   ├── Node Browser: Backlinks				ctrl + shift + 1 >1ea
 		│   ├── Node Browser: Forward Links 			ctrl + shift + 2 >ylo
-		│   ├── Home Node 								ctrl + shift + h >5ab
+		│   ├── Home Node 							ctrl + shift + h >5ab
 		│   ├── Node Browser 							ctrl + shift + e >vdr
 		│   ├── Open Random Node 						ctrl + shift + f >q5f
-		│   └── List Projects 							ctrl + shift + o >g5a
+		│   └── List Projects 						ctrl + shift + o >g5a
 		├── Content Insertions >35a
 		│   ├── New Node 								ctrl + shift + ; >ve3
 		│   ├── Add Node ID 							ctrl + shift + i >gv9
@@ -652,17 +652,17 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Search Using Dynamic Nodes >uy4
 		└── Example Search Results >3x3
 		Navigation >v6a
-		├── Toggle Traverse Mode 					ctrl + shift + r >hcf
-		├── Open Urtext Link 						ctrl + shift + / >ngh
+		├── Toggle Traverse Mode : ctrl + shift + r >hcf
+		├── Open Urtext Link :	ctrl + shift + / >ngh
 		├── Nav Forward 							ctrl + shift + . >yan
 		├── Nav Backward 							ctrl + shift + , >3hy
-		├── Node Browser, Include All Projects 		ctrl + shift + * >hyh
-		├── Node Browser: Backlinks					ctrl + shift + 1 >1ea
+		├── Node Browser, Include All Projects 	ctrl + shift + * >hyh
+		├── Node Browser: Backlinks				ctrl + shift + 1 >1ea
 		├── Node Browser: Forward Links 			ctrl + shift + 2 >ylo
-		├── Home Node 								ctrl + shift + h >5ab
+		├── Home Node 							ctrl + shift + h >5ab
 		├── Node Browser 							ctrl + shift + e >vdr
 		├── Open Random Node 						ctrl + shift + f >q5f
-		└── List Projects 							ctrl + shift + o >g5a
+		└── List Projects 						ctrl + shift + o >g5a
 		"Table of Contents" Dynamic Definition >v7r
 		└── Nodes Excluded from the Table of Contents >jkl
 		Node Browser 							ctrl + shift + e >vdr
@@ -692,17 +692,17 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Dynamic Definitions : Syntax and Parameters >87g
 		├── Key Bindings and Operations >tx6
 		│   ├── Navigation >v6a
-		│   │   ├── Toggle Traverse Mode 					ctrl + shift + r >hcf
-		│   │   ├── Open Urtext Link 						ctrl + shift + / >ngh
+		│   │   ├── Toggle Traverse Mode : ctrl + shift + r >hcf
+		│   │   ├── Open Urtext Link :	ctrl + shift + / >ngh
 		│   │   ├── Nav Forward 							ctrl + shift + . >yan
 		│   │   ├── Nav Backward 							ctrl + shift + , >3hy
-		│   │   ├── Node Browser, Include All Projects 		ctrl + shift + * >hyh
-		│   │   ├── Node Browser: Backlinks					ctrl + shift + 1 >1ea
+		│   │   ├── Node Browser, Include All Projects 	ctrl + shift + * >hyh
+		│   │   ├── Node Browser: Backlinks				ctrl + shift + 1 >1ea
 		│   │   ├── Node Browser: Forward Links 			ctrl + shift + 2 >ylo
-		│   │   ├── Home Node 								ctrl + shift + h >5ab
+		│   │   ├── Home Node 							ctrl + shift + h >5ab
 		│   │   ├── Node Browser 							ctrl + shift + e >vdr
 		│   │   ├── Open Random Node 						ctrl + shift + f >q5f
-		│   │   └── List Projects 							ctrl + shift + o >g5a
+		│   │   └── List Projects 						ctrl + shift + o >g5a
 		│   ├── Content Insertions >35a
 		│   │   ├── New Node 								ctrl + shift + ; >ve3
 		│   │   ├── Add Node ID 							ctrl + shift + i >gv9
