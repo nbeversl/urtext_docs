@@ -140,8 +140,8 @@ The dynamic definition below does not actually do anything. It rather lists ever
 ### Navigation
 Toggle Traverse Mode : ctrl + shift + r
 Open Urtext Link :	ctrl + shift + /
-Nav Forward : ctrl + shift + .
-Nav Backward : ctrl + shift + ,
+Nav Forward 							ctrl + shift + .
+Nav Backward 							ctrl + shift + ,
 Node Browser, Include All Projects 	ctrl + shift + *
 Node Browser: Backlinks				ctrl + shift + 1
 Node Browser: Forward Links 			ctrl + shift + 2
