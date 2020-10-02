@@ -19,49 +19,9 @@ Metadata
 
   {   Syntax and Format
 
-      Text between two angled brackets (<  >) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. To insert the current date and time anywhere, press Control-Shift-t: <Thu., Sep. 10, 2020, 05:41 PM>
+      Key: | Insert Timestamp: `ctrl + shift + t` >7b8 to insert the current date and time anywhere.
 
-      Timestamps are read and written utilizing Python's `strftime` directives. The following formats are included by default:
-
-          %%-PYTHON # (<- for info about this marker see | Embedded Syntaxes and Pass Markers >oy5 )
-
-          # Sat., Sep. 12, 2020, 09:35 AM
-          '%a., %b. %d, %Y, %I:%M %p' 
-          
-          # September 12, 2020
-          '%B %-d, %Y' 
-
-          # September 2020
-          '%B %Y'
-
-          # 09-12-2020
-          '%m-%d-%Y'
-          
-          # Sat., Sep. 12, 2020, 09:35 AM '
-          '%a., %b. %d, %Y, %I:%M %p %z' 
-
-          # Sat., Sep. 12, 2020, 09:35 AM'
-          '%a., %b. %d, %Y, %I:%M %p'
-
-          # Saturday, September 12, 2020, 09:35 AM'
-          '%A, %B %d, %Y, %I:%M %p'
-
-          # 'September 12, 2020, 09:35 AM'
-          '%B %d, %Y, %I:%M %p'
-
-          # 'September 12, 2020, 09:35AM'
-          '%B %d, %Y, %I:%M%p'
-
-          # 2020
-          '%Y'
-
-          # September 12, 2020'
-          '%B %d, %Y'
-
-          # Saturday, September 12, 2020, 09:35AM
-          '%A, %B %d, %Y, %I:%M%p'
-
-      %%-END-PYTHON 
+      Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. 
 
       Additional formats can be added in the | project_settings >00l node.  hg7}
 
@@ -70,21 +30,18 @@ Metadata
 
   {   Tracking Node Dates and Times 
 
-      Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created: timestamp::<Thu., Sep. 10, 2020, 05:42 PM>. This behavior can be changed in | project_settings >00l.  
-
+      Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created: timestamp::<Thu., Sep. 10, 2020, 05:42 PM>. This behavior can be changed in | project_settings >00l.   
       m58}
     
-  { 	Time Zones  
+  {   Time Zones  
 
-  	Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the `timezone` key in | project_settings >00l to another valid value.  7w6}
+      Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the | `timezone` >boe  key in project_settings to another valid value.  7w6}
 
-  005}
+005}
 
 {  Case-sensitivity
 
-    For comparison/filtering/sorting purposes, values are not case-sensitive.
-
-  l36}
+    For comparison/filtering/sorting purposes, values are not case-sensitive. l36}
 
  { Reserved Keys
 

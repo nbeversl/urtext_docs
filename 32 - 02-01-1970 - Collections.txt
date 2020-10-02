@@ -1,58 +1,65 @@
 Collections
 
-Collections are for "collecting" metadata entries, along with their context, in order to gain a "view" into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view. 
+Collections "collect" metadata entries. 
+
+Metadata entries remember their position in their node and so can be used as anchors or "bookmarks". There are no "prescribed" uses for this functionality; metadata entries could be used in any given project as anchors only, metadata only, or in combination.
+
+For instance, metadata could be used to insert 
+
+Collections return links that include the exact character location of each metadata entry. This is 
+
+Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view. 
 
 [[   ID(>aoq)
      +(*) <- In order to return anything, we must include some nodes in the query. Here we have included all nodes.
-     COLLECT(id=*)
-     HEADER(Example Collection)
+     COLLECT(updated=*)
+     HEADER(Example Collection : "Last Updated"\n\n)
      FOOTER(flags::exclude_from_toc | exclude_from_export )
-     LIMIT(10)
-     ]]
+     SORT(updated -t -r)
+     SHOW(Date Updated: $values\n$title $link\n$contents\n\n)
+     FORMAT(indent:2)
+ ]]
 
-{ Example Collection
-id :: 001 >001:40 
- Example Child Node Using a Node Pointer
+		{
+		Example Collection : "Last Updated"
 
-
-id :: 002 >002:185 
- Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode
-
-
-id :: 003 >003:158 
- ssss
+		Date Updated: Tue., Sep. 29, 2020, 12:40 PM +0000
+		Key Bindings and Operations >1vs:114
+		See also | Key Bindings and Operations - Definitions >tx6
 
 
-id :: 004 >004:1264 
- For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
+		Date Updated: Sat., Sep. 26, 2020, 03:48 PM +0000
+		Key Bindings and Operations - Definitions >tx6:289
+		These nodes contain the key bindings used throughout the documentation and are not linked to the Table of Contents or included for export. The Table of Contents list is | Key Bindings and Operations >1vs
 
 
-id :: 005 >005:319 
- Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed.
+		Date Updated: Sat., Sep. 19, 2020, 01:25 PM
+		About Urtext >013:136
+		About Urtext
 
 
-id :: 006 >006:2333 
- - Version control (Git, for example).
+		Date Updated: Sat., Sep. 19, 2020, 01:21 PM
+		File Naming >01m:912
+		This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
 
 
-id :: 00e >00e:22 
- Example Inline Node
+		Date Updated: Thu., Sep. 10, 2020, 05:32 PM
+		Compact Nodes >kpz:804
+		f>./files/example-compact-node.png
 
 
-id :: 00j >00j:84 
- | Pointers >lmu
+		Date Updated: Thu., Sep. 10, 2020, 05:24 PM
+		Inline Nodes >004:1291
+		For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
 
 
-id :: 00k >00k:353 
- Collections are for "collecting" metadata entries, along with their context, in order to gain a "view" into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view.
+		Date Updated: Thu., Sep. 10, 2020, 05:20 PM
+		Nodes >01j:842
+		| Node IDs >01q
 
 
-id :: 00l >00l:795 
- This node now has special reserved metadata keys that will be parsed as follows:
-
-
-flags::exclude_from_toc | exclude_from_export 
-ID::aoq; def::>00k; }
+		flags::exclude_from_toc | exclude_from_export 
+		def::>00k; ID::aoq; }
 
 
 

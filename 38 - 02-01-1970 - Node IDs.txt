@@ -18,7 +18,7 @@ Note that the node ID entry can appear anywhere in a node. If you want to keep n
 
 	Note that trailing node IDs must be preceded by a space.  
 
-	In Sublime Text, press Ctrl-Shift-P to create a new inline node using this convention.	
+	Key: | Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >9zp
 
 	f>./files/example-trailing-id.png
 
@@ -41,7 +41,7 @@ If more than one Node ID appears in a node, only the first one is used as the No
 
 	If two nodes end up with the same ID, only one (the first one found) will be assigned the ID. The entire second file containing the node with the duplicate ID will contain a warning message. See | Errors and Warnings >bpk
 
-	To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
+	To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use | Add Node ID: `ctrl + shift + i` >gv9 for this (as described above), after the rest of the project is compiled.
 	
 bzv}
 

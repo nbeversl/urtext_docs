@@ -4,11 +4,11 @@ These nodes contain the key bindings used throughout the documentation and are n
 
 {  Navigation *tags::navigation
 
-	{ Toggle Traverse Mode: ctrl + shift + r  			hcf}
-	{ Open Urtext Link:	ctrl + shift + /				ngh}
-	{ Nav Forward: ctrl + shift + .						yan}
-	{ Nav Backward: ctrl + shift + ,  					3hy}
-	{ Node Browser, Include All Projects: ctrl + shift + * hyh}
+	{ Toggle Traverse Mode: `ctrl + shift + r`  			hcf}
+	{ Open Urtext Link:	`ctrl + shift + /`				ngh}
+	{ Nav Forward: `ctrl + shift + .`						yan}
+	{ Nav Backward: `ctrl + shift + ,`  					3hy}
+	{ Node Browser, Include All Projects: `ctrl + shift + *` hyh}
 	{ Node Browser, Backlinks: `ctrl + shift + 1`    	1ea}
 	{ Node Browser, Forward Links: `ctrl + shift + 2`  	ylo}
 	{ Home Node: `ctrl + shift + h` 					5ab}
@@ -18,29 +18,29 @@ These nodes contain the key bindings used throughout the documentation and are n
 
 {  Content Insertions *tags::content_insertion
 
-	{ New Node: ctrl + shift + ; 					ve3}
-	{ Add Node ID: ctrl + shift + i 				gv9}
-	{ Insert Timestamp: ctrl + shift + t   			7b8}
-	{ Insert Compact Node: ctrl + shift + ^  		1qq}
-	{ Insert Inline Node: ctrl + shift + [ 			rzx}
-	{ Insert Inline Node, minimal: ctrl + shift + p (OSX), alt  + shift + p (Windows, Linux)
+	{ New Node: `ctrl + shift + ;` 					ve3}
+	{ Add Node ID: `ctrl + shift + i` 				gv9}
+	{ Insert Timestamp: `ctrl + shift + t`   			7b8}
+	{ Insert Compact Node: `ctrl + shift + ^`  		1qq}
+	{ Insert Inline Node: `ctrl + shift + [` 			rzx}
+	{ Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)
 		(trailing node ID, single line, no other metadata) 9zp}
-	{ Insert Dynamic Definition with Node: ctrl + shift + ]	jsc}
-	{ Insert Link to New Node: ctrl + shift + '		sxk}
-	{ Quick Tag from Other: ctrl + shift + 0		zep} 35a}
+	{ Insert Dynamic Definition with Node: `ctrl + shift + ]`	jsc}
+	{ Insert Link to New Node: `ctrl + shift + '`		sxk}
+	{ Quick Tag from Other: `ctrl + shift + 0`		zep} 35a}
 
 {  Copy Links *tags::copy_links
 
-	{ Copy Link to this Node: ctrl + shift + c 	vel}
-	{ Copy Link to this Node With Title: ctrl + shift + super + c 	05x}  zjz}
+	{ Copy Link to this Node: `ctrl + shift + c` 	vel}
+	{ Copy Link to this Node With Title: `ctrl + shift + super + c` 	05x}  zjz}
 
 {  History *tags::history
 
-	{  	Toggle History Traverse: ctrl + shift + g ndc}  e24}
+	{  	Toggle History Traverse: `ctrl + shift + g` ndc}  e24}
 
 {  File Management *tags::file_management
 
-	{  Rename File???: ctrl + shift + s 5qr} n8z}														
+	{  Rename File???: `ctrl + shift + s` 5qr} n8z}														
 
 { Menu Operations
 

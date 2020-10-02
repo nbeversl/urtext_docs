@@ -42,13 +42,12 @@ Reference >ac5
 ├── Projects >dce
 │   └── Using/Adding Existing Files >rij
 ├── Nodes >01j
-│   ├── File Nodes >ekz
-│   ├── Inline Nodes >004
-│   │   ├── Example Inline Node >00e
-│   │   └── Uses for inline nodes >ia5
-│   ├── Compact Nodes >kpz
-│   │   └── Example Compact Node >d7b
-│   │       └── Example inline node within the compact node. >9up
+│   ├── Types of Nodes >07q
+│   │   ├── File Nodes >ekz
+│   │   ├── Inline Nodes >004
+│   │   │   ├── Example Inline Node >00e
+│   │   │   └── Uses for inline nodes >ia5
+│   │   └── Compact Nodes >kpz
 │   ├── Node Titles >ue2
 │   └── Node IDs >01q
 │       ├── Trailing Node IDs >xo9
@@ -101,7 +100,8 @@ Reference >ac5
 │   ├── `home` >d6u
 │   ├── `console_log` >1lz
 │   ├── `filenames` >lch
-│   └── `timestamp_format` >00n
+│   ├── `timestamp_format` >00n
+│   └── `timezone` >boe
 ├── Errors and Warnings >bpk
 ├── Using Multiple Projects >ipy
 │   ├── Project Naming (Identification) >tgp
@@ -110,7 +110,7 @@ Reference >ac5
     ├── The Node Browser >01i
     └── Traverse Mode >00w
         └── Word Wrap in Traverse Mode >xci
-ID::e5j; def::>v7r; } 
+def::>v7r; ID::e5j; } 
 
 {  Quick Start, Guides and Examples
 

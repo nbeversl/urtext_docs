@@ -180,46 +180,46 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 ### Navigation 
 - Node Browser, Backlinks: `ctrl + shift + 1`
-- Nav Backward: ctrl + shift + ,
+- Nav Backward: `ctrl + shift + ,`
 - Home Node: `ctrl + shift + h`
 - List Projects: `ctrl + shift + o`
-- Toggle Traverse Mode: ctrl + shift + r
-- Node Browser, Include All Projects: ctrl + shift + *
-- Open Urtext Link:	ctrl + shift + /
+- Toggle Traverse Mode: `ctrl + shift + r`
+- Node Browser, Include All Projects: `ctrl + shift + *`
+- Open Urtext Link:	`ctrl + shift + /`
 - Open Random Node: `ctrl + shift + f`
 - Node Browser: `ctrl + shift + e`
-- Nav Forward: ctrl + shift + .
+- Nav Forward: `ctrl + shift + .`
 - Node Browser, Forward Links: `ctrl + shift + 2`
 
-ss
+
 
 
 ### Content Insertion 
-- Insert Compact Node: ctrl + shift + ^
-- Insert Timestamp: ctrl + shift + t
-- Insert Inline Node, minimal: ctrl + shift + p (OSX), alt  + shift + p (Windows, Linux)
-- Add Node ID: ctrl + shift + i
-- Insert Dynamic Definition with Node: ctrl + shift + ]
-- Insert Inline Node: ctrl + shift + [
-- Insert Link to New Node: ctrl + shift + '
-- New Node: ctrl + shift + ;
-- Quick Tag from Other: ctrl + shift + 0
+- Insert Compact Node: `ctrl + shift + ^`
+- Insert Timestamp: `ctrl + shift + t`
+- Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)
+- Add Node ID: `ctrl + shift + i`
+- Insert Dynamic Definition with Node: `ctrl + shift + ]`
+- Insert Inline Node: `ctrl + shift + [`
+- Insert Link to New Node: `ctrl + shift + '`
+- New Node: `ctrl + shift + ;`
+- Quick Tag from Other: `ctrl + shift + 0`
 
 
 
 
 ### Copy Links 
-- Copy Link to this Node With Title: ctrl + shift + super + c
-- Copy Link to this Node: ctrl + shift + c
+- Copy Link to this Node With Title: `ctrl + shift + super + c`
+- Copy Link to this Node: `ctrl + shift + c`
 
 
 
 
 ### History 
-- Toggle History Traverse: ctrl + shift + g
+- Toggle History Traverse: `ctrl + shift + g`
 
 
-
+See also [Key Bindings and Operations - Definitions](#key-bindings-and-operations---definitions)
 
 
 
@@ -312,7 +312,7 @@ Urtext recompiles your project every time a file changes. To make this more auto
 ```
 
 
-ssss
+
 
 
 ### Using a Sublime Project for an Urtext Project  
@@ -369,28 +369,29 @@ It is possible to use files containing no IDs in an Urtext project, but then mos
 
 Node IDs are assigned in random order and have no special meaning except as a unique identifier. For more information see [Node IDs](#node-ids).
 
-Types of nodes:
 
 
+### Types of Nodes  
 
-### File Nodes
+
+#### File Nodes
 
 The most basic node is a single file. It may or may not contain other nodes nested inside it.
 
-To create a new file, press `Urtext-;`. A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
+To create a new file-level node: [New Node: `ctrl + shift + ;`](#new-node:-`ctrl-+-shift-+-;`). A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
 
 
 
 
-### Inline Nodes                                                                 
+#### Inline Nodes                                                                 
 
 The syntax for inline nodes is to wrap the content in curly braces:
 
 
 
-#### Example Inline Node   
+##### Example Inline Node   
 
-Create an inline nodes with `Ctrl-Shift-squiggly-brace. Inside the inserted double curly braces is a new node with an auto-generated ID.   
+Create an inline nodes with [Insert Inline Node: `ctrl + shift + [`](#insert-inline-node:-`ctrl-+-shift-+-[`). Inside the inserted double curly braces is a new node with an auto-generated ID.   
 
 To wrap existing content into an inline node, first select the content and use the same keypress.
 
@@ -410,7 +411,7 @@ For all purposes in Urtext, inline nodes' identity is unique from their containi
 
 
 
-#### Uses for inline nodes 
+##### Uses for inline nodes 
 
 such as adding comments/edits, tracking anchors and pointers in documents.  
 Also that the title is the first line of text.
@@ -422,7 +423,9 @@ Also that the title is the first line of text.
 
 
 
-### Compact Nodes
+#### Compact Nodes
+
+Key: [Insert Compact Node: `ctrl + shift + ^`](#insert-compact-node:-`ctrl-+-shift-+-^`)
 
 For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the ^ character appears, with the closing wrapper being the end of the same line. 
 
@@ -430,10 +433,11 @@ Like all nodes, a compact node requires an ID. Like all nodes, it can contain me
 
 
 
+
 ![./files/example-compact-node.png](./files/example-compact-node.png)
 
 
-
+   
 
 
 
@@ -466,7 +470,7 @@ To keep IDs even more out of sight, they can also be specified as the last three
 
 Note that trailing node IDs must be preceded by a space.  
 
-In Sublime Text, press Ctrl-Shift-P to create a new inline node using this convention.	
+Key: [Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)](#insert-inline-node,-minimal:-`ctrl-+-shift-+-p`-osx,-`alt--+-shift-+-p`-windows,-linux)
 
 ![./files/example-trailing-id.png](./files/example-trailing-id.png)
 
@@ -493,7 +497,7 @@ If more than one Node ID appears in a node, only the first one is used as the No
 
 If two nodes end up with the same ID, only one (the first one found) will be assigned the ID. The entire second file containing the node with the duplicate ID will contain a warning message. See [Errors and Warnings](#errors-and-warnings)
 
-To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use control-shift-I for this (as described above), after the rest of the project is compiled.
+To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use [Add Node ID: `ctrl + shift + i`](#add-node-id:-`ctrl-+-shift-+-i`) for this (as described above), after the rest of the project is compiled.
 
 
 
@@ -501,7 +505,6 @@ To correct the problem, it is necessary to manually change the duplicate ID to a
 
 #### Generating a node ID manually 
 If you accidentally delete a Node ID or need to insert one arbitrarily, press node control-shift-i. 
-
 
 
 
@@ -542,49 +545,9 @@ Note that a timestamp anywhere in the value will be indexed as the timestamp for
 
 #### Syntax and Format   
 
-Text between two angled brackets (<  >) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. To insert the current date and time anywhere, press Control-Shift-t: 
+Key: [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`) to insert the current date and time anywhere.
 
-Timestamps are read and written utilizing Python's `strftime` directives. The following formats are included by default:
-
-``` # (<- for info about this marker see [Embedded Syntaxes and Pass Markers](#embedded-syntaxes-and-pass-markers) )
-
-# Sat., Sep. 12, 2020, 09:35 AM
-'%a., %b. %d, %Y, %I:%M %p' 
-
-# September 12, 2020
-'%B %-d, %Y' 
-
-# September 2020
-'%B %Y'
-
-# 09-12-2020
-'%m-%d-%Y'
-
-# Sat., Sep. 12, 2020, 09:35 AM '
-'%a., %b. %d, %Y, %I:%M %p %z' 
-
-# Sat., Sep. 12, 2020, 09:35 AM'
-'%a., %b. %d, %Y, %I:%M %p'
-
-# Saturday, September 12, 2020, 09:35 AM'
-'%A, %B %d, %Y, %I:%M %p'
-
-# 'September 12, 2020, 09:35 AM'
-'%B %d, %Y, %I:%M %p'
-
-# 'September 12, 2020, 09:35AM'
-'%B %d, %Y, %I:%M%p'
-
-# 2020
-'%Y'
-
-# September 12, 2020'
-'%B %d, %Y'
-
-# Saturday, September 12, 2020, 09:35AM
-'%A, %B %d, %Y, %I:%M%p'
-
-``` 
+Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. 
 
 Additional formats can be added in the [project_settings](#project_settings) node.  
 
@@ -600,10 +563,9 @@ Reliance on the operating system's "created" or "modified" date metadata is avoi
 
 
 
+#### Time Zones     
 
-#### Time Zones 	  
-
-Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the `timezone` key in [project_settings](#project_settings) to another valid value.  
+Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the [`timezone`](#`timezone`)  key in project_settings to another valid value.  
 
 
 
@@ -611,9 +573,7 @@ Time zones are not required. If no time zone is present, Coordinated Universal T
 
 ### Case-sensitivity  
 
-For comparison/filtering/sorting purposes, values are not case-sensitive.
-
-
+For comparison/filtering/sorting purposes, values are not case-sensitive. 
 
 
 
@@ -650,16 +610,13 @@ Generated automatically in a dynamic node, contains a link to the node containin
 
 ## Dynamic Nodes
 
-
-
-
 Dynamic nodes contain content aggregated from the contents of other nodes. Dynamic content stays up to date with its source content "dynamically" (on file save). A dynamic node can be seen as a "view into" other content. 
 
 Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets , and have there own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference [Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters).
 
 Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-In Sublime Text, Ctrl-Shift-] creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.
+[Insert Dynamic Definition with Node: `ctrl + shift + ]`](#insert-dynamic-definition-with-node:-`ctrl-+-shift-+-]`) creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.
 
 There are two main kinds of dynamic output, Lists and Collections:
 
@@ -732,7 +689,15 @@ Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plain
 
 ### Collections
 
-Collections are for "collecting" metadata entries, along with their context, in order to gain a "view" into the text content of a project. A common use for this would be to create a timeline from datetimestamps. Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view. 
+Collections "collect" metadata entries. 
+
+Metadata entries remember their position in their node and so can be used as anchors or "bookmarks". There are no "prescribed" uses for this functionality; metadata entries could be used in any given project as anchors only, metadata only, or in combination.
+
+For instance, metadata could be used to insert 
+
+Collections return links that include the exact character location of each metadata entry. This is 
+
+Another use would be to collect all metadata entries of a given key, and optionally a given value, into a single view. 
 
 
 
@@ -781,8 +746,7 @@ Prepending a pipe character to any node link will populate the space between the
 
 
 #### Sublime 
-
-Press Shift-Ctrl-/ on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
+Key : [Open Urtext Link:	`ctrl + shift + /`](#open-urtext-link:	`ctrl-+-shift-+-/`) on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
 
 
 
@@ -805,7 +769,7 @@ Note that Urtext reads node regions on every save, so cursor location may be imp
 #### Web / HTTP(S) 
 
 HTTP(S) links are recognized automatically and will open in the default browser.    
-Example: pressing Ctrl/Command-Shift-/ on this line will open the link: http://github.com
+Example: pressing [Open Urtext Link:	`ctrl + shift + /`](#open-urtext-link:	`ctrl-+-shift-+-/`) on this line will open the link: http://github.com
 
 
 
@@ -852,373 +816,7 @@ Note that it appears twice in the Table of Contents, once as a child of this nod
 
 #### Recursive Node Pointers  
 
-If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point incidating "RECURSION" and a link to the node causing the recursion. For example, this Node Pointer points  to the root node of the table of contents: 
-
-
-##### Urtext  Version: 0.5-alpha  Usage Guide and ReferencesUrtext | Version: 0.5-alpha | Usage Guide and References
-License: GNU General Public License 3.0
-
-
-
-###### About This Documentation 
-
-This is a documentation of Urtext, written in Urtext. If you're reading it as a `README.MD` (on Github, etc.), it was compiled from the text files in this repository. Clone or download the respository to use it as both a reference and an example project. 
-
-This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
-
-Many of the examples rely on syntax, formatting, and highlighting, which is stripped out in export to Markdown. Where necessary these are replaced with linked screenshots as necessary (see [Linking to Files and Other Resources](#linking-to-files-and-other-resources) and [Exporting](#exporting))
-
-Inside an Urtext implementation, such as the Sublime Text with the Urtext package, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
-- Control-Shift-/ to follow any link
-- Control-Shift-h at any time to return to this "home" node.  
-
-
-
-###### Table of Contents 
-About This Documentation[About This Documentation](#about-this-documentation)
-About Urtext[About Urtext](#about-urtext)
-├── Description[Description](#description)
-├── Comparison To Other Tools[Comparison To Other Tools](#comparison-to-other-tools)
-├── Uses[Uses](#uses)
-└── Requirements and Features[Requirements and Features](#requirements-and-features)
-Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
-├── Installation and Setup (Desktop)[Installation and Setup (Desktop)](#installation-and-setup-desktop)
-├── Basic Syntax[Basic Syntax](#basic-syntax)
-├── Dynamic Definitions : Syntax and Parameters[Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters)
-├── Key Bindings and Operations[Key Bindings and Operations](#key-bindings-and-operations)
-│   ├── Navigation[Navigation](#navigation)
-│   ├── Content Insertion[Content Insertion](#content-insertion)
-│   ├── Copy Links[Copy Links](#copy-links)
-│   └── History[History](#history)
-└── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
-    ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
-    ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
-    ├── Hiding Line Numbers[Hiding Line Numbers](#hiding-line-numbers)
-    ├── Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
-    ├── Disable Prompts for File Reload[Disable Prompts for File Reload](#disable-prompts-for-file-reload)
-    ├── Remove Indent Guides[Remove Indent Guides](#remove-indent-guides)
-    ├── Save on Focus Lost[Save on Focus Lost](#save-on-focus-lost)
-    └── Using a Sublime Project for an Urtext Project[Using a Sublime Project for an Urtext Project](#using-a-sublime-project-for-an-urtext-project)
-Reference[Reference](#reference)
-├── Projects[Projects](#projects)
-│   └── Using/Adding Existing Files[Using/Adding Existing Files](#using/adding-existing-files)
-├── Nodes[Nodes](#nodes)
-│   ├── File Nodes[File Nodes](#file-nodes)
-│   ├── Inline Nodes[Inline Nodes](#inline-nodes)
-│   │   ├── Example Inline Node[Example Inline Node](#example-inline-node)
-│   │   └── Uses for inline nodes[Uses for inline nodes](#uses-for-inline-nodes)
-│   ├── Compact Nodes[Compact Nodes](#compact-nodes)
-│   │   └── Example Compact Node[Example Compact Node](#example-compact-node)
-│   │       └── Example inline node within the compact node.[Example inline node within the compact node.](#example-inline-node-within-the-compact-node.)
-│   ├── Node Titles[Node Titles](#node-titles)
-│   └── Node IDs[Node IDs](#node-ids)
-│       ├── Trailing Node IDs[Trailing Node IDs](#trailing-node-ids)
-│       ├── Inserting a Node ID manually[Inserting a Node ID manually](#inserting-a-node-id-manually)
-│       ├── Duplicate Node IDs[Duplicate Node IDs](#duplicate-node-ids)
-│       └── Generating a node ID manually[Generating a node ID manually](#generating-a-node-id-manually)
-├── Metadata[Metadata](#metadata)
-│   ├── General Syntax[General Syntax](#general-syntax)
-│   ├── Timestamps[Timestamps](#timestamps)
-│   │   ├── Syntax and Format[Syntax and Format](#syntax-and-format)
-│   │   ├── Tracking Node Dates and Times[Tracking Node Dates and Times](#tracking-node-dates-and-times)
-│   │   └── Time Zones[Time Zones](#time-zones)
-│   ├── Case-sensitivity[Case-sensitivity](#case-sensitivity)
-│   └── Reserved Keys[Reserved Keys](#reserved-keys)
-│       ├── `index`[`index`](#`index`)
-│       ├── `title`[`title`](#`title`)
-│       └── `def`[`def`](#`def`)
-├── Dynamic Nodes[Dynamic Nodes](#dynamic-nodes)
-│   ├── Lists[Lists](#lists)
-│   │   └── Example: Nodes from the Documentation[Example: Nodes from the Documentation](#example:-nodes-from-the-documentation)
-│   ├── Trees[Trees](#trees)
-│   │   ├── Expanding a List with the DEPTH Parameter[Expanding a List with the DEPTH Parameter](#expanding-a-list-with-the-depth-parameter)
-│   │   │   └── Example Tree[Example Tree](#example-tree)
-│   │   └── "Table of Contents" Dynamic Definition["Table of Contents" Dynamic Definition](#"table-of-contents"-dynamic-definition)
-│   └── Collections[Collections](#collections)
-├── Links and Pointers[Links and Pointers](#links-and-pointers)
-│   ├── Links[Links](#links)
-│   │   └── Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
-│   ├── Dynamic Titles[Dynamic Titles](#dynamic-titles)
-│   ├── Opening Links[Opening Links](#opening-links)
-│   │   ├── Sublime[Sublime](#sublime)
-│   │   └── Pythonista[Pythonista](#pythonista)
-│   ├── Linking to Files and Other Resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
-│   │   ├── Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
-│   │   └── Files[Files](#files)
-│   └── Pointers[Pointers](#pointers)
-│       ├── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
-│       ├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
-│       │   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
-│       └── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-│           └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
-├── Exporting[Exporting](#exporting)
-│   ├── Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
-│   └── Example : Fragment Exported to HTML[Example : Fragment Exported to HTML](#example-:-fragment-exported-to-html)
-├── File Naming[File Naming](#file-naming)
-├── History[History](#history)
-├── project_settings[project_settings](#project_settings)
-│   ├── `title`[`title`](#`title`)
-│   ├── `project_title`[`project_title`](#`project_title`)
-│   ├── `home`[`home`](#`home`)
-│   ├── `console_log`[`console_log`](#`console_log`)
-│   ├── `filenames`[`filenames`](#`filenames`)
-│   └── `timestamp_format`[`timestamp_format`](#`timestamp_format`)
-├── Errors and Warnings[Errors and Warnings](#errors-and-warnings)
-├── Using Multiple Projects[Using Multiple Projects](#using-multiple-projects)
-│   ├── Project Naming (Identification)[Project Naming (Identification)](#project-naming-identification)
-│   └── Cross-Project Linking[Cross-Project Linking](#cross-project-linking)
-└── User Interface Elements[User Interface Elements](#user-interface-elements)
-    ├── The Node Browser[The Node Browser](#the-node-browser)
-    └── Traverse Mode[Traverse Mode](#traverse-mode)
-        └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
-
-
-
-
-
-###### Quick Start, Guides and Examples  
-
-
-
-####### Installation and Setup (Desktop)
-
-For desktop use (PC/Mac/Linux) Urtext is implemented in Sublime Text.
-
-1. Download Sublime Text. (https://www.sublimetext.com/).
-
-2. Download Urtext and all its dependencies from the monorepo at `https://github.com/nbeversl/urtext_deps`. You can either download this repository as a .ZIP file and unzip it, or if you want to maintain version control, use `git clone --recurse-submodules https://github.com/nbeversl/urtext_deps`. Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your `Sublime Text 3/Lib/python3.3` folder.
-
-3. Download the Sublime Urtext package at `https://github.com/nbeversl/urtext_sublime`. Place it in your Packages folder (Sublime Text 3/Packages)
-
-4. Clone/download this documentation repository and open its folder in Sublime. It will automatically be read as an Urtext project.
-
-Once the Sublime package is installed, it will always look for any files with the .txt extension in open folders and attempt to compile them into a project. To open an existing Urtext project, open the folder, a file in the folder, or a Sublime project that includes the folder, and any feature described in this documentation will work.
-
-To make a new project, open an empty folder and select Select `Urtext : Initialize Project` from the Sublime Command Palette. For more information, see [Projects](#projects).
-
-See also:
-
-[Sublime Text Interface Tips](#sublime-text-interface-tips)
-
-
-
-[Using Urtext in iOS with Pythonista](#using-urtext-in-ios-with-pythonista)
-
-
-####### Basic Syntax
-
-All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname. 
-
-
-`{  }` 
-Inline Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.
-More information: [Inline Nodes](#inline-nodes)
-
-`>`		
-Node Link. Links to the specified node by ID, like a hyperlink. 
-More information: [Links](#links)
-
-`>>`		
-Node Pointer: Embeds the specified node as though it were included inline using wrappers { } (see above)
-More information: [Pointers](#pointers)
-
-`|` 
-Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.
-Example and more info: [Dynamic Titles](#dynamic-titles)
-
-`^`
-Compact Node marker. Must be the first non-whitespace character on a line. Must include an ID in order to parse.
-More information: [Compact Nodes](#compact-nodes)
-
-`< >`
-Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
-The first character inside the brackets may not be `!`, '-', or whitespace.
-Example: 
-More information: [Timestamps](#timestamps)
-
-`::`
-Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
-Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
-Example: 
-More information: [Metadata](#metadata)
-  (Closing pass marker.)
-
-
-
-
-
-####### Dynamic Definitions : Syntax and Parameters
-
-Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
-
-Dynamic definitions are wrapped using double left and right square brackets. Note that there are no restrictions on spacing, indentation, newlines, or inclusion of other arbitrary text or whitespace. Dynamic definitions ignore whitespace and arbitrary text outside of defined parameters. The order of parameters within a definition is unimportant; they are evaluated as a group.
-
-The dynamic definition below does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see [Dynamic Nodes](#dynamic-nodes)
-
-
-
-
-
-
-####### Key Bindings and Operations
-
-
-
-######## Navigation 
-- Node Browser, Backlinks: `ctrl + shift + 1`
-- Nav Backward: ctrl + shift + ,
-- Home Node: `ctrl + shift + h`
-- List Projects: `ctrl + shift + o`
-- Toggle Traverse Mode: ctrl + shift + r
-- Node Browser, Include All Projects: ctrl + shift + *
-- Open Urtext Link:	ctrl + shift + /
-- Open Random Node: `ctrl + shift + f`
-- Node Browser: `ctrl + shift + e`
-- Nav Forward: ctrl + shift + .
-- Node Browser, Forward Links: `ctrl + shift + 2`
-
-ss
-
-
-######## Content Insertion 
-- Insert Compact Node: ctrl + shift + ^
-- Insert Timestamp: ctrl + shift + t
-- Insert Inline Node, minimal: ctrl + shift + p (OSX), alt  + shift + p (Windows, Linux)
-- Add Node ID: ctrl + shift + i
-- Insert Dynamic Definition with Node: ctrl + shift + ]
-- Insert Inline Node: ctrl + shift + [
-- Insert Link to New Node: ctrl + shift + '
-- New Node: ctrl + shift + ;
-- Quick Tag from Other: ctrl + shift + 0
-
-
-
-
-######## Copy Links 
-- Copy Link to this Node With Title: ctrl + shift + super + c
-- Copy Link to this Node: ctrl + shift + c
-
-
-
-
-######## History 
-- Toggle History Traverse: ctrl + shift + g
-
-
-
-
-
-
-
-
-
-
-
-
-
-####### Sublime Text Interface Tips  
-
-Here are some tips for best leveraging Sublime's great UI features while using Urtext.
-
-
-
-######## Syntax Highlighting 
-
-The Sublime Text package includes a syntax definition file in YML format (`sublime_urtext.sublime_syntax`), along with two color schemes that provide syntax highlighting. Syntax highlighting makes everything easier by showing depth of node nesting and dimming certain elements of the syntax. Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ... 
-
-Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (This can be undone by repeating the same but selecting Plain Text.)  
-
-
-
-######## Hiding Tabs	
-
-If you prefer a spare, terminal-like view, hide tabs: View -> Hide Tabs.
-This preference can also be set on a per-(Sublime)-project basis. See the Sublime documentation.  
-
-
-
-######## Hiding Line Numbers  
-
-For an extra-clean look, hide line numbers by adding:
-
-```
-
-"settings" : {
-"line_numbers": false,
-},
-
-```
-
-... to your Sublime project settings file. 
-
-(Ignore the JSON syntax pass markers above beginning with `%%`. See [Embedded Syntaxes and Pass Markers](#embedded-syntaxes-and-pass-markers) ) 
-
-
-
-######## Full Screen / Distraction Free Mode  
-
-Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode.  
-
-
-
-######## Disable Prompts for File Reload 
-
-Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
-```
-"settings" : {
-"always_prompt_for_file_reload": false,
-},
-```		
-
-
-
-
-
-######## Remove Indent Guides  
-
-Formatting plaintext using tab indentions can look messy if indent guides are on. To turn them off, add to your Sublime project settings file:
-
-```
-"settings" : { 
-"draw_indent _guides": false,
-}
-```
-
-
-
-
-######## Save on Focus Lost  
-
-Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:
-
-```
-"settings" : { 
-"save_on_focus_lost": true 
-}
-```
-
-
-ssss
-
-
-######## Using a Sublime Project for an Urtext Project  
-
-( see https://www.sublimetext.com/docs/3/projects.html )
-
-You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.  
-
-
-
-
-
-
-
-
-
-
-
-
-. 
+If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point. For example, this Node Pointer points  to the root node of the table of contents: 
 
 You can see the recursion point in the table of contents.
 
@@ -1236,103 +834,7 @@ Pointers[Pointers](#pointers)
 			├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
 			│   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
 			└── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
-			    ├── Urtext  Version: 0.5-alpha  Usage Guide and References[Urtext  Version: 0.5-alpha  Usage Guide and References](#urtext--version:-0.5-alpha--usage-guide-and-references)
-			    │   ├── About This Documentation[About This Documentation](#about-this-documentation)
-			    │   ├── Table of Contents[Table of Contents](#table-of-contents)
-			    │   ├── Quick Start, Guides and Examples[Quick Start, Guides and Examples](#quick-start,-guides-and-examples)
-			    │   │   ├── Installation and Setup (Desktop)[Installation and Setup (Desktop)](#installation-and-setup-desktop)
-			    │   │   ├── Basic Syntax[Basic Syntax](#basic-syntax)
-			    │   │   │   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing[The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing](#the-symbol-below-is-a-pass-marker,-which-tells-urtext-to-skip-everything-between-it-and-the-closing)
-			    │   │   ├── Dynamic Definitions : Syntax and Parameters[Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters)
-			    │   │   ├── Key Bindings and Operations[Key Bindings and Operations](#key-bindings-and-operations)
-			    │   │   │   ├── Navigation[Navigation](#navigation)
-			    │   │   │   ├── Content Insertion[Content Insertion](#content-insertion)
-			    │   │   │   ├── Copy Links[Copy Links](#copy-links)
-			    │   │   │   └── History[History](#history)
-			    │   │   └── Sublime Text Interface Tips[Sublime Text Interface Tips](#sublime-text-interface-tips)
-			    │   │       ├── Syntax Highlighting[Syntax Highlighting](#syntax-highlighting)
-			    │   │       ├── Hiding Tabs[Hiding Tabs](#hiding-tabs)
-			    │   │       ├── Hiding Line Numbers[Hiding Line Numbers](#hiding-line-numbers)
-			    │   │       ├── Full Screen / Distraction Free Mode[Full Screen / Distraction Free Mode](#full-screen-/-distraction-free-mode)
-			    │   │       ├── Disable Prompts for File Reload[Disable Prompts for File Reload](#disable-prompts-for-file-reload)
-			    │   │       ├── Remove Indent Guides[Remove Indent Guides](#remove-indent-guides)
-			    │   │       ├── Save on Focus Lost[Save on Focus Lost](#save-on-focus-lost)
-			    │   │       └── Using a Sublime Project for an Urtext Project[Using a Sublime Project for an Urtext Project](#using-a-sublime-project-for-an-urtext-project)
-			    │   └── Reference[Reference](#reference)
-			    │       ├── Projects[Projects](#projects)
-			    │       │   └── Using/Adding Existing Files[Using/Adding Existing Files](#using/adding-existing-files)
-			    │       ├── Nodes[Nodes](#nodes)
-			    │       │   ├── File Nodes[File Nodes](#file-nodes)
-			    │       │   ├── Inline Nodes[Inline Nodes](#inline-nodes)
-			    │       │   │   ├── Example Inline Node[Example Inline Node](#example-inline-node)
-			    │       │   │   ├── Example first level[Example first level](#example-first-level)
-			    │       │   │   │   └── second level[second level](#second-level)
-			    │       │   │   │       └── third test level[third test level](#third-test-level)
-			    │       │   │   │           └── test fourth level[test fourth level](#test-fourth-level)
-			    │       │   │   │               └── fifth level[fifth level](#fifth-level)
-			    │       │   │   └── Uses for inline nodes[Uses for inline nodes](#uses-for-inline-nodes)
-			    │       │   ├── Compact Nodes[Compact Nodes](#compact-nodes)
-			    │       │   │   └── Example Compact Node[Example Compact Node](#example-compact-node)
-			    │       │   │       └── Example inline node within the compact node.[Example inline node within the compact node.](#example-inline-node-within-the-compact-node.)
-			    │       │   ├── Node Titles[Node Titles](#node-titles)
-			    │       │   └── Node IDs[Node IDs](#node-ids)
-			    │       │       ├── Trailing Node IDs[Trailing Node IDs](#trailing-node-ids)
-			    │       │       ├── Inserting a Node ID manually[Inserting a Node ID manually](#inserting-a-node-id-manually)
-			    │       │       ├── Duplicate Node IDs[Duplicate Node IDs](#duplicate-node-ids)
-			    │       │       └── Generating a node ID manually[Generating a node ID manually](#generating-a-node-id-manually)
-			    │       ├── Metadata[Metadata](#metadata)
-			    │       │   ├── General Syntax[General Syntax](#general-syntax)
-			    │       │   ├── Timestamps[Timestamps](#timestamps)
-			    │       │   │   ├── Syntax and Format[Syntax and Format](#syntax-and-format)
-			    │       │   │   ├── Tracking Node Dates and Times[Tracking Node Dates and Times](#tracking-node-dates-and-times)
-			    │       │   │   └── Time Zones[Time Zones](#time-zones)
-			    │       │   ├── Case-sensitivity[Case-sensitivity](#case-sensitivity)
-			    │       │   └── Reserved Keys[Reserved Keys](#reserved-keys)
-			    │       │       ├── `index`[`index`](#`index`)
-			    │       │       ├── `title`[`title`](#`title`)
-			    │       │       └── `def`[`def`](#`def`)
-			    │       ├── Dynamic Nodes[Dynamic Nodes](#dynamic-nodes)
-			    │       │   ├── Lists[Lists](#lists)
-			    │       │   │   └── Example: Nodes from the Documentation[Example: Nodes from the Documentation](#example:-nodes-from-the-documentation)
-			    │       │   ├── Trees[Trees](#trees)
-			    │       │   │   ├── Expanding a List with the DEPTH Parameter[Expanding a List with the DEPTH Parameter](#expanding-a-list-with-the-depth-parameter)
-			    │       │   │   │   └── Example Tree[Example Tree](#example-tree)
-			    │       │   │   └── "Table of Contents" Dynamic Definition["Table of Contents" Dynamic Definition](#"table-of-contents"-dynamic-definition)
-			    │       │   │       └── Nodes Excluded from the Table of Contents[Nodes Excluded from the Table of Contents](#nodes-excluded-from-the-table-of-contents)
-			    │       │   └── Collections[Collections](#collections)
-			    │       │       └── Example Collection[Example Collection](#example-collection)
-			    │       ├── Links and Pointers[Links and Pointers](#links-and-pointers)
-			    │       │   ├── Links[Links](#links)
-			    │       │   │   └── Sublime Text tools to help with linking[Sublime Text tools to help with linking](#sublime-text-tools-to-help-with-linking)
-			    │       │   ├── Dynamic Titles[Dynamic Titles](#dynamic-titles)
-			    │       │   ├── Opening Links[Opening Links](#opening-links)
-			    │       │   │   ├── Sublime[Sublime](#sublime)
-			    │       │   │   └── Pythonista[Pythonista](#pythonista)
-			    │       │   ├── Linking to Files and Other Resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)
-			    │       │   │   ├── Web / HTTP(S)[Web / HTTP(S)](#web-/-https)
-			    │       │   │   └── Files[Files](#files)
-			    │       ├── Exporting[Exporting](#exporting)
-			    │       │   ├── Example : Urtext Documentation Exported in Markdown to a File[Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
-			    │       │   └── Example : Fragment Exported to HTML[Example : Fragment Exported to HTML](#example-:-fragment-exported-to-html)
-			    │       ├── File Naming[File Naming](#file-naming)
-			    │       ├── History[History](#history)
-			    │       ├── project_settings[project_settings](#project_settings)
-			    │       │   ├── `title`[`title`](#`title`)
-			    │       │   ├── `project_title`[`project_title`](#`project_title`)
-			    │       │   ├── `home`[`home`](#`home`)
-			    │       │   ├── `console_log`[`console_log`](#`console_log`)
-			    │       │   ├── `filenames`[`filenames`](#`filenames`)
-			    │       │   └── `timestamp_format`[`timestamp_format`](#`timestamp_format`)
-			    │       ├── Errors and Warnings[Errors and Warnings](#errors-and-warnings)
-			    │       ├── Using Multiple Projects[Using Multiple Projects](#using-multiple-projects)
-			    │       │   ├── Project Naming (Identification)[Project Naming (Identification)](#project-naming-identification)
-			    │       │   └── Cross-Project Linking[Cross-Project Linking](#cross-project-linking)
-			    │       └── User Interface Elements[User Interface Elements](#user-interface-elements)
-			    │           ├── The Node Browser[The Node Browser](#the-node-browser)
-			    │           └── Traverse Mode[Traverse Mode](#traverse-mode)
-			    │               └── Word Wrap in Traverse Mode[Word Wrap in Traverse Mode](#word-wrap-in-traverse-mode)
 			    └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
-
 
 
 
@@ -1399,7 +901,7 @@ This system preserves automatic numerical sorting within the filesystem, such th
 
 Though use of powerful version control tools (such as Git, Mercurial, etc.) is possible, Urtext has a lighter built-in versioning system that tracks edits at intervals. It is not necessary to make explicit "commits" in order to utilize this. Urtext creates a single, linear history of each file's content, with each snapshot being a "diff", or record of changes, since the previous snapshot. When a previous state is restored, no "checkout" or "rewind" occurs; rather, the newly restored state is appended to the history. Therefore, in addition to functioning as version control, the feature can also be used as an infinite and non-destructive "undo/redo" editing history that saves state when the file is closed. The default interval is 10 seconds, and can be modified in project_settings. 
 
-To access a file's history, use Control-Shift-G in Sublime Text.
+To access a file's history, use [Toggle History Traverse: `ctrl + shift + g`](#toggle-history-traverse:-`ctrl-+-shift-+-g`).
 
 Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories.
 
@@ -1447,17 +949,21 @@ Specifies format for filenames when using [ MISSING LINK : pz9 ]
 
 ### `timestamp_format` 
 
-For more information on `strftime` directives and options, see https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior.
-
-For a list of all timezones ___ ADD SOME RESOURCE ____
-
-Changing the default node_date_timestamp name and bevahior 
+Set the format of the timestamp when using [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`)
+This accepts a Python `strftime` directive. For more information, see https://strftime.org/.
 
 
 
 
 
 
+
+
+
+
+### `timezone`   
+
+For a list of all timezones ___ ADD SOME RESOURCE ____  
 
 
 

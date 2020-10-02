@@ -20,120 +20,24 @@ The advantages to Node Pointers include:
 
 {  Recursive Node Pointers
 
-    If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point incidating "RECURSION" and a link to the node causing the recursion. For example, this Node Pointer points  to the root node of the table of contents: 
-        | Urtext  Version: 0.5-alpha  Usage Guide and References >>a5m. 
+    If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point. For example, this Node Pointer points  to the root node of the table of contents: 
 
     You can see the recursion point in the table of contents.
 
     Note that if you view the entire tree with another node selected as root, one full iteration will still appear, with the point of recursion falling elsewhere. Below is the Table of Contents turned "inside out", with | Pointers >lmu as root. 
        
-        [[ ID(>01n) +(id=lmu) DEPTH(*) HEADER(Example Recursive Node Tree)  FORMAT(indent:3)]]
+        [[ ID(>01n) +(id=lmu) DEPTH(5) HEADER(Example Recursive Node Tree)  FORMAT(indent:3)]]
         (See | Trees >w8u for more information on how to generate trees like this in dynamic nodes.)
 
-    {
+    		{
 			Example Recursive Node Tree
 			Pointers >lmu
 			├── Example Child Node Using a Node Pointer >001
 			├── Duplicate Pointers >00t
 			│   └── Example Child Node Using a Node Pointer >001
 			└── Recursive Node Pointers >6ct
-			    ├── Urtext  Version: 0.5-alpha  Usage Guide and References >a5m
-			    │   ├── About This Documentation >p23
-			    │   ├── Table of Contents >e5j
-			    │   ├── Quick Start, Guides and Examples >z7t
-			    │   │   ├── Installation and Setup (Desktop) >6cd
-			    │   │   ├── Basic Syntax >znj
-			    │   │   │   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
-			    │   │   ├── Dynamic Definitions : Syntax and Parameters >87g
-			    │   │   ├── Key Bindings and Operations >1vs
-			    │   │   │   ├── Navigation >k7b
-			    │   │   │   ├── Content Insertion >kxh
-			    │   │   │   ├── Copy Links >kqz
-			    │   │   │   └── History >a8q
-			    │   │   └── Sublime Text Interface Tips >003
-			    │   │       ├── Syntax Highlighting >01d
-			    │   │       ├── Hiding Tabs >015
-			    │   │       ├── Hiding Line Numbers >01e
-			    │   │       ├── Full Screen / Distraction Free Mode >002
-			    │   │       ├── Disable Prompts for File Reload >023
-			    │   │       ├── Remove Indent Guides >1rc
-			    │   │       ├── Save on Focus Lost >sqq
-			    │   │       └── Using a Sublime Project for an Urtext Project >c3n
-			    │   └── Reference >ac5
-			    │       ├── Projects >dce
-			    │       │   └── Using/Adding Existing Files >rij
-			    │       ├── Nodes >01j
-			    │       │   ├── File Nodes >ekz
-			    │       │   ├── Inline Nodes >004
-			    │       │   │   ├── Example Inline Node >00e
-			    │       │   │   ├── Example first level >8fv
-			    │       │   │   │   └── second level >6qj
-			    │       │   │   │       └── third test level >80d
-			    │       │   │   │           └── test fourth level >5pq
-			    │       │   │   │               └── fifth level >xc9
-			    │       │   │   └── Uses for inline nodes >ia5
-			    │       │   ├── Compact Nodes >kpz
-			    │       │   │   └── Example Compact Node >d7b
-			    │       │   │       └── Example inline node within the compact node. >9up
-			    │       │   ├── Node Titles >ue2
-			    │       │   └── Node IDs >01q
-			    │       │       ├── Trailing Node IDs >xo9
-			    │       │       ├── Inserting a Node ID manually >04s
-			    │       │       ├── Duplicate Node IDs >bzv
-			    │       │       └── Generating a node ID manually >rfp
-			    │       ├── Metadata >00x
-			    │       │   ├── General Syntax >8dw
-			    │       │   ├── Timestamps >005
-			    │       │   │   ├── Syntax and Format >hg7
-			    │       │   │   ├── Tracking Node Dates and Times >m58
-			    │       │   │   └── Time Zones >7w6
-			    │       │   ├── Case-sensitivity >l36
-			    │       │   └── Reserved Keys >fo2
-			    │       │       ├── `index` >00z
-			    │       │       ├── `title` >pz3
-			    │       │       └── `def` >5cq
-			    │       ├── Dynamic Nodes >k8p
-			    │       │   ├── Lists >twz
-			    │       │   │   └── Example: Nodes from the Documentation >m1r
-			    │       │   ├── Trees >w8u
-			    │       │   │   ├── Expanding a List with the DEPTH Parameter >h6l
-			    │       │   │   │   └── Example Tree >4gr
-			    │       │   │   └── "Table of Contents" Dynamic Definition >v7r
-			    │       │   │       └── Nodes Excluded from the Table of Contents >jkl
-			    │       │   └── Collections >00k
-			    │       │       └── Example Collection >aoq
-			    │       ├── Links and Pointers >00j
-			    │       │   ├── Links >0y2
-			    │       │   │   └── Sublime Text tools to help with linking >00m
-			    │       │   ├── Dynamic Titles >4vu
-			    │       │   ├── Opening Links >01w
-			    │       │   │   ├── Sublime >osu
-			    │       │   │   └── Pythonista >iy8
-			    │       │   ├── Linking to Files and Other Resources >00q
-			    │       │   │   ├── Web / HTTP(S) >00o
-			    │       │   │   └── Files >00p
-			    │       ├── Exporting >ezg
-			    │       │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
-			    │       │   └── Example : Fragment Exported to HTML >baq
-			    │       ├── File Naming >01m
-			    │       ├── History >prp
-			    │       ├── project_settings >00l
-			    │       │   ├── `title` >egg
-			    │       │   ├── `project_title` >xqu
-			    │       │   ├── `home` >d6u
-			    │       │   ├── `console_log` >1lz
-			    │       │   ├── `filenames` >lch
-			    │       │   └── `timestamp_format` >00n
-			    │       ├── Errors and Warnings >bpk
-			    │       ├── Using Multiple Projects >ipy
-			    │       │   ├── Project Naming (Identification) >tgp
-			    │       │   └── Cross-Project Linking >7lx
-			    │       └── User Interface Elements >3n6
-			    │           ├── The Node Browser >01i
-			    │           └── Traverse Mode >00w
-			    │               └── Word Wrap in Traverse Mode >xci
 			    └── Example Recursive Node Tree >01n
-			ID::01n; def::>6ct; }
+			def::>6ct; ID::01n; }
     6ct}
 
 ID::lmu

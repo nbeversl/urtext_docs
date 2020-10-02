@@ -10,19 +10,18 @@ It is possible to use files containing no IDs in an Urtext project, but then mos
 
 
 Node IDs are assigned in random order and have no special meaning except as a unique identifier. For more information see | Node IDs >01q.
- 
-Types of nodes:
 
+{  Types of Nodes
   	| File Nodes >>ekz
   	| Inline Nodes >>004
-	| Compact Nodes >>kpz
+	| Compact Nodes >>kpz   
+	07q}
 
 { Node Titles
 
 	By default, the full first non-whitespace line of any node is the node's title. This can be overridden using the `title` metadata key. ue2}
 
 | Node IDs >>01q
-
 
 ID::01j
 index::03

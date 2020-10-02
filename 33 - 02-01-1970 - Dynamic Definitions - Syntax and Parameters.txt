@@ -35,9 +35,12 @@ The dynamic definition below does not actually do anything. It rather lists ever
 							INCLUDE(*) or +(*)
 							Includes all nodes in the project									
 
-							-all_projects or *p
+							`-all_projects` or `*p`
 							INCLUDE(-all_projects) or +(*p)
 							Expands included nodes to include all projects in the project list.
+							
+							`-blank`
+							Includes all nodes that contain only whitespace as their content
 
 							Note these additional flags substitute for semicolons/newlines as separators between entries.
 

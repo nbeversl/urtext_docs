@@ -3,7 +3,7 @@ Linking to Files and Other Resources
 { Web / HTTP(S)
 
         HTTP(S) links are recognized automatically and will open in the default browser.    
-        Example: pressing Ctrl/Command-Shift-/ on this line will open the link: http://github.com
+        Example: pressing | Open Urtext Link:	`ctrl + shift + /` >ngh on this line will open the link: http://github.com
         
 00o}
 

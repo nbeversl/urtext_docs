@@ -4,7 +4,7 @@ The syntax for inline nodes is to wrap the content in curly braces:
 
   { Example Inline Node  id::00e }
 
-Create an inline nodes with `Ctrl-Shift-squiggly-brace. Inside the inserted double curly braces is a new node with an auto-generated ID.   
+Create an inline nodes with | Insert Inline Node: `ctrl + shift + [` >rzx. Inside the inserted double curly braces is a new node with an auto-generated ID.   
 
 To wrap existing content into an inline node, first select the content and use the same keypress.
 
@@ -37,7 +37,7 @@ For all purposes in Urtext, inline nodes' identity is unique from their containi
     Uses for inline nodes
     such as adding comments/edits, tracking anchors and pointers in documents.  
     Also that the title is the first line of text.
-
+    
      ia5}
 
 ID::004

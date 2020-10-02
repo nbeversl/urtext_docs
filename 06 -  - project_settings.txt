@@ -21,23 +21,24 @@ console_log::True
 
 filenames::PREFIX | DATE %m-%d-%Y | TITLE
 {  `filenames`
-	Specifies format for filenames when using | Reindex All Files >pz9  lch}
+	Specifies format for filenames when using |  ?  >pz9  lch}
 
-timestamp_format::%a., %b. %d, %Y, %I:%M %p %z | %B %d, %Y, %I:%M %p
+timestamp_format::%a., %b. %d, %Y, %I:%M %p %z
 { `timestamp_format`
 	
-	For more information on `strftime` directives and options, see https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior.
+	Set the format of the timestamp when using | Insert Timestamp: `ctrl + shift + t` >7b8
+	This accepts a Python `strftime` directive. For more information, see https://strftime.org/.
 
-    For a list of all timezones ___ ADD SOME RESOURCE ____
-
-	Changing the default node_date_timestamp name and bevahior 00n}
+	 00n}
 
 autoindex::true
 
 autoname::true
 
 timezone::US/Eastern
+{  `timezone` 
 
+	For a list of all timezones ___ ADD SOME RESOURCE ____  boe}
 node_date_keyname::timestamp
 
 numerical_keys::p
@@ -48,6 +49,7 @@ index::100
 
 history_interval::
 
+use_timestamp::updated
 This node now has special reserved metadata keys that will be parsed as follows:
 
 

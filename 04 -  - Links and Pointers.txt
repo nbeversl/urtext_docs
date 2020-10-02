@@ -24,8 +24,7 @@ Links and Pointers
 { Opening Links 
     
     { Sublime
-
-        Press Shift-Ctrl-/ on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
+        Key : | Open Urtext Link: `ctrl + shift + /` >ngh on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
         implementation::sublime; osu}
 
     { Pythonista 
