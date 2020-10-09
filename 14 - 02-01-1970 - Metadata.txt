@@ -33,7 +33,7 @@ Metadata
 
   {   Tracking Node Dates and Times 
 
-      Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created: timestamp::<Thu., Sep. 10, 2020, 05:42 PM>. The default keyname can be changed using the | `node_date_keyname` >8p4 key in project_settings.
+      Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created: timestamp::<Thu., Sep. 10, 2020, 05:42 PM>. The default keyname can be changed using the | `node_date_keyname` >8p4 key in project_settings. cee}
     
   {   Time Zones  
 
@@ -42,7 +42,6 @@ Metadata
   2i4}
 
 {  Case-sensitivity
-
     For comparison/filtering/sorting purposes, values are not case-sensitive. l36}
 
  { Reserved Keys

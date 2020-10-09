@@ -76,9 +76,11 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Viewing Linked Relationships >00u
 		Traverse Mode >00w
 		└── Word Wrap in Traverse Mode >xci
-		Timestamps >00x
-		├── Syntax and Format >005
-		├── Tracking Node Dates and Times >2i4
+		Metadata >00x
+		├── General Syntax >8dw
+		├── Timestamps >2i4
+		│   ├── Syntax and Format >005
+		│   ├── Tracking Node Dates and Times >cee
 		│   └── Time Zones >7w6
 		├── Case-sensitivity >l36
 		└── Reserved Keys >fo2
@@ -136,7 +138,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    ├── `console_log` >1lz
 		    ├── `filenames` >lch
 		    ├── `timestamp_format` >00n
-		    └── `timezone` >boe
+		    ├── `timezone` >boe
+		    └── `node_date_keyname` >8p4
 		iPhone/iPad/iOS >01y
 		└── Synchronator Setup >01z
 		Synchronator Setup >01z
@@ -169,7 +172,9 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Dependencies and Installation >2fn
 		├── Download and Install Dependencies Manually >774
 		└── Download Dependencies from a Monorepo >arl
-		Tracking Node Dates and Times >2i4
+		Timestamps >2i4
+		├── Syntax and Format >005
+		├── Tracking Node Dates and Times >cee
 		└── Time Zones >7w6
 		Content Insertions >35a
 		├── New Node: `ctrl + shift + ;` >ve3
@@ -263,9 +268,11 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │       ├── Inserting a Node ID manually >04s
 		    │       ├── Duplicate Node IDs >bzv
 		    │       └── Generating a node ID manually >rfp
-		    ├── Timestamps >00x
-		    │   ├── Syntax and Format >005
-		    │   ├── Tracking Node Dates and Times >2i4
+		    ├── Metadata >00x
+		    │   ├── General Syntax >8dw
+		    │   ├── Timestamps >2i4
+		    │   │   ├── Syntax and Format >005
+		    │   │   ├── Tracking Node Dates and Times >cee
 		    │   │   └── Time Zones >7w6
 		    │   ├── Case-sensitivity >l36
 		    │   └── Reserved Keys >fo2
@@ -335,9 +342,11 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       ├── Inserting a Node ID manually >04s
 		│       ├── Duplicate Node IDs >bzv
 		│       └── Generating a node ID manually >rfp
-		├── Timestamps >00x
-		│   ├── Syntax and Format >005
-		│   ├── Tracking Node Dates and Times >2i4
+		├── Metadata >00x
+		│   ├── General Syntax >8dw
+		│   ├── Timestamps >2i4
+		│   │   ├── Syntax and Format >005
+		│   │   ├── Tracking Node Dates and Times >cee
 		│   │   └── Time Zones >7w6
 		│   ├── Case-sensitivity >l36
 		│   └── Reserved Keys >fo2
@@ -403,6 +412,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Duplicate Node IDs >bzv
 		Example List 2 >c1x
 		Using a Sublime Project for an Urtext Project >c3n
+		Tracking Node Dates and Times >cee
 		`home` >d6u
 		Example Compact Node >d7b
 		└── Example inline node within the compact node. >9up

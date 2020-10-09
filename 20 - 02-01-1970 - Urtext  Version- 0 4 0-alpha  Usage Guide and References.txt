@@ -54,9 +54,11 @@ Reference >ac5
 │       ├── Inserting a Node ID manually >04s
 │       ├── Duplicate Node IDs >bzv
 │       └── Generating a node ID manually >rfp
-├── Timestamps >00x
-│   ├── Syntax and Format >005
-│   ├── Tracking Node Dates and Times >2i4
+├── Metadata >00x
+│   ├── General Syntax >8dw
+│   ├── Timestamps >2i4
+│   │   ├── Syntax and Format >005
+│   │   ├── Tracking Node Dates and Times >cee
 │   │   └── Time Zones >7w6
 │   ├── Case-sensitivity >l36
 │   └── Reserved Keys >fo2
@@ -87,7 +89,7 @@ Reference >ac5
 │       ├── Duplicate Pointers >00t
 │       │   └── Example Child Node Using a Node Pointer >001
 │       └── Recursive Node Pointers >6ct
-│           ├── ! RECURSION - (from alias) : Pointers >lmu
+│           ├── ! RECURSION (from tree duplication) : Pointers >lmu
 │           └── Example Recursive Node Tree >01n
 ├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
@@ -127,7 +129,7 @@ z7t}
 {   Reference
   | Projects >>dce
   | Nodes >>01j
-  | Timestamps >>00x
+  | Metadata >>00x
   | Dynamic Nodes >>k8p
   | Links and Pointers >>00j
   | Exporting >>ezg

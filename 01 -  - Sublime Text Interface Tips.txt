@@ -1,5 +1,4 @@
-
-{  Sublime Text Interface Tips
+Sublime Text Interface Tips
 	
 	Here are some tips for best leveraging Sublime's great UI features while using Urtext.
 
