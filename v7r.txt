@@ -46,7 +46,7 @@ Here is the dynamic definition that generates the | Table of Contents >e5j for t
 			            └── fifth level >xc9
 			This node is just here as a destination from the node pointer in  Basic Syntax >ttt
 			flags::exclude_from_toc | exclude_from_export
-			def::>v7r; ID::jkl; }
+			ID::jkl; def::>v7r; }
 
 f>./files/toc-dynamic-definition.png
 f>./files/excluded-from-toc-definition.png

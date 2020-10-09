@@ -25,41 +25,45 @@ Another use would be to collect all metadata entries of a given key, and optiona
 
 		Date Updated: Tue., Sep. 29, 2020, 12:40 PM +0000
 		Key Bindings and Operations >1vs:114
-		See also | Key Bindings and Operations - Definitions >tx6
+		$title\n) ]]
+		[[ ID(>kxh) HEADER(Content Insertion) INCLUDE(tags=content_insertion) SHOW(- $title\n) ]]
+		[[ ID(>kqz) HEADER(Copy Links) INCLUDE(tags=copy_links) SHOW(- $title\n) ]]
+		[[ ID(>a8q) HEADER(History) INCLUDE(tags=history) SHOW(- $title\n) ]]
+
 
 
 		Date Updated: Sat., Sep. 26, 2020, 03:48 PM +0000
 		Key Bindings and Operations - Definitions >tx6:289
-		These nodes contain the key bindings used throughout the documentation and are not linked to the Table of Contents or included for export. The Table of Contents list is | Key Bindings and Operations >1vs
+		e
 
 
 		Date Updated: Sat., Sep. 19, 2020, 01:25 PM
 		About Urtext >013:136
-		About Urtext
+		a
 
 
 		Date Updated: Sat., Sep. 19, 2020, 01:21 PM
 		File Naming >01m:912
-		This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
+
 
 
 		Date Updated: Thu., Sep. 10, 2020, 05:32 PM
 		Compact Nodes >kpz:804
-		f>./files/example-compact-node.png
+
 
 
 		Date Updated: Thu., Sep. 10, 2020, 05:24 PM
 		Inline Nodes >004:1291
-		For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.
+		d
 
 
 		Date Updated: Thu., Sep. 10, 2020, 05:20 PM
 		Nodes >01j:842
-		| Node IDs >01q
+		p
 
 
 		flags::exclude_from_toc | exclude_from_export 
-		def::>00k; ID::aoq; }
+		ID::aoq; def::>00k; }
 
 
 

@@ -1,10 +1,10 @@
 Exporting
 
-Urtext can export to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within. Like other dynamic functions, exporting is dynamic; when changes are made to the source nodes, exports are immediately updated.
+Urtext can export to plaintext, Markdown and HTML. Output can be written to a file or back into another node in the project. Exporting is dynamic; when changes are made to the source nodes, exports are immediately updated.
 
 {  Example : Urtext Documentation Exported in Markdown to a File
 
-    The following dynamic definition exports this entire documentation from its root node | Urtext  Version: 0.5-alpha  Usage Guide and References >a5m ) in Markdown format to a file called f>./README.md:
+    This dynamic definition exports the entire documentation from its root node | Urtext  Version: 0.5-alpha  Usage Guide and References >a5m ) in Markdown format to a file called f>./README.md:
 
     [[ 
         We include three specific root nodes by ID:
@@ -13,8 +13,7 @@ Urtext can export to plaintext, Markdown and HTML. Results can be either output 
         +(ID=z7t) | Quick Start, Guides and Examples >z7t
         +(ID=ac5) | Reference >ac5
         
-
-        Here we use `*` for DEPTH, which means unlimited depth. Note that using | Pointers >lmu it is possible to create recursive trees (circular references). In this case, the tree will be drawn only to the first point of recursion. See | Recursive Node Pointers >6ct for more information. 
+        Here we use `*` for DEPTH, which means unlimited that children of each node, inline or from node pointers, will be incorporated. Note again that pointers resulting in recursive trees (circular references) will be drawn only to the first point of recursion. (See | Recursive Node Pointers >6ct.)
         DEPTH(*)
 
         SORT(index)
@@ -29,7 +28,19 @@ Urtext can export to plaintext, Markdown and HTML. Results can be either output 
 
 {  Example : Fragment Exported to HTML
 
-    The following Dynamic Definition exports the | Links and Pointers >00j section of the documentation to HTML, into a node inside this one:
+    The following Dynamic Definition is identical to the above, except it exports to HTML.   
+
+   [[   +(ID=p23) | About This Documentation >p23
+        +(ID=013) | About Urtext >013
+        +(ID=z7t) | Quick Start, Guides and Examples >z7t
+        +(ID=ac5) | Reference >ac5
+        DEPTH(*)
+        SORT(index)
+        FORMAT( -preformat)
+        EXPORT(f>documentation.html; -html)
+
+    ]]
+
 
 
 baq}

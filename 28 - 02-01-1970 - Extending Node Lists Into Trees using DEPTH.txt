@@ -33,8 +33,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       └── third test level >80d
 		│           └── test fourth level >5pq
 		└── Uses for inline nodes >ia5
-		Timestamps >005
-		├── Syntax and Format >hg7
+		Syntax and Format >005
 		├── Tracking Node Dates and Times >m58
 		└── Time Zones >7w6
 		Requirements and Features >006
@@ -54,6 +53,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    ├── Duplicate Pointers >00t
 		    │   └── Example Child Node Using a Node Pointer >001
 		    └── Recursive Node Pointers >6ct
+		        ├── ! RECURSION (from tree duplication) : Pointers >lmu
 		        └── Example Recursive Node Tree >01n
 		Collections >00k
 		└── Example Collection : "Last Updated" >aoq
@@ -64,7 +64,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── `console_log` >1lz
 		├── `filenames` >lch
 		├── `timestamp_format` >00n
-		└── `timezone` >boe
+		└── For a list of all timezones >boe
 		Sublime Text tools to help with linking >00m
 		`timestamp_format` >00n
 		Web / HTTP(S) >00o
@@ -77,10 +77,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Viewing Linked Relationships >00u
 		Traverse Mode >00w
 		└── Word Wrap in Traverse Mode >xci
-		Metadata >00x
-		├── General Syntax >8dw
-		├── Timestamps >005
-		│   ├── Syntax and Format >hg7
+		Timestamps >00x
+		├── Syntax and Format >005
 		│   ├── Tracking Node Dates and Times >m58
 		│   └── Time Zones >7w6
 		├── Case-sensitivity >l36
@@ -139,7 +137,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    ├── `console_log` >1lz
 		    ├── `filenames` >lch
 		    ├── `timestamp_format` >00n
-		    └── `timezone` >boe
+		    └── For a list of all timezones >boe
 		iPhone/iPad/iOS >01y
 		└── Synchronator Setup >01z
 		Synchronator Setup >01z
@@ -200,6 +198,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Rename File???: `ctrl + shift + s` >5qr
 		Installation and Setup (Desktop) >6cd
 		Recursive Node Pointers >6ct
+		├── ! RECURSION - (from alias) : Pointers >lmu
 		└── Example Recursive Node Tree >01n
 		second level >6qj
 		└── third test level >80d
@@ -261,10 +260,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │       ├── Inserting a Node ID manually >04s
 		    │       ├── Duplicate Node IDs >bzv
 		    │       └── Generating a node ID manually >rfp
-		    ├── Metadata >00x
-		    │   ├── General Syntax >8dw
-		    │   ├── Timestamps >005
-		    │   │   ├── Syntax and Format >hg7
+		    ├── Timestamps >00x
+		    │   ├── Syntax and Format >005
 		    │   │   ├── Tracking Node Dates and Times >m58
 		    │   │   └── Time Zones >7w6
 		    │   ├── Case-sensitivity >l36
@@ -306,7 +303,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │   ├── `console_log` >1lz
 		    │   ├── `filenames` >lch
 		    │   ├── `timestamp_format` >00n
-		    │   └── `timezone` >boe
+		    │   └── For a list of all timezones >boe
 		    ├── Errors and Warnings >bpk
 		    ├── Using Multiple Projects >ipy
 		    │   ├── Project Naming (Identification) >tgp
@@ -333,10 +330,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       ├── Inserting a Node ID manually >04s
 		│       ├── Duplicate Node IDs >bzv
 		│       └── Generating a node ID manually >rfp
-		├── Metadata >00x
-		│   ├── General Syntax >8dw
-		│   ├── Timestamps >005
-		│   │   ├── Syntax and Format >hg7
+		├── Timestamps >00x
+		│   ├── Syntax and Format >005
 		│   │   ├── Tracking Node Dates and Times >m58
 		│   │   └── Time Zones >7w6
 		│   ├── Case-sensitivity >l36
@@ -369,6 +364,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       ├── Duplicate Pointers >00t
 		│       │   └── Example Child Node Using a Node Pointer >001
 		│       └── Recursive Node Pointers >6ct
+		│           ├── ! RECURSION - (from alias) : Pointers >lmu
 		│           └── Example Recursive Node Tree >01n
 		├── Exporting >ezg
 		│   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
@@ -382,7 +378,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── `console_log` >1lz
 		│   ├── `filenames` >lch
 		│   ├── `timestamp_format` >00n
-		│   └── `timezone` >boe
+		│   └── For a list of all timezones >boe
 		├── Errors and Warnings >bpk
 		├── Using Multiple Projects >ipy
 		│   ├── Project Naming (Identification) >tgp
@@ -395,7 +391,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Download Dependencies from a Monorepo >arl
 		Navigation >bac
 		Example : Fragment Exported to HTML >baq
-		`timezone` >boe
+		For a list of all timezones >boe
 		Errors and Warnings >bpk
 		Duplicate Node IDs >bzv
 		Example List 2 >c1x
@@ -424,7 +420,6 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Example Tree >4gr
 		Comparison To Other Tools >h8z
 		Toggle Traverse Mode: `ctrl + shift + r` >hcf
-		Syntax and Format >hg7
 		become child nodes of their containing node. >hiz
 		Node Browser, Include All Projects: `ctrl + shift + *` >hyh
 		Uses for inline nodes >ia5
@@ -466,6 +461,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Duplicate Pointers >00t
 		│   └── Example Child Node Using a Node Pointer >001
 		└── Recursive Node Pointers >6ct
+		    ├── ! RECURSION - (from alias) : Pointers >lmu
 		    └── Example Recursive Node Tree >01n
 		User-Defined >lwg
 		Example: Nodes from the Documentation >m1r
@@ -599,7 +595,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Copy Link to this Node With Title: `ctrl + shift + super + c` >05x
 		Basic Syntax >znj
 		└── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
-		def::>thz; ID::nc6; }
+		ID::nc6; def::>thz; }
 
 id::thz
 from::wwci-00407.local

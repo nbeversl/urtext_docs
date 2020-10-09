@@ -35,8 +35,7 @@ Trees
 			│       └── third test level >80d
 			│           └── test fourth level >5pq
 			└── Uses for inline nodes >ia5
-			Timestamps >005
-			├── Syntax and Format >hg7
+			Syntax and Format >005
 			├── Tracking Node Dates and Times >m58
 			└── Time Zones >7w6
 			Requirements and Features >006
@@ -56,6 +55,7 @@ Trees
 			    ├── Duplicate Pointers >00t
 			    │   └── Example Child Node Using a Node Pointer >001
 			    └── Recursive Node Pointers >6ct
+			        ├── ! RECURSION (from tree duplication) : Pointers >lmu
 			        └── Example Recursive Node Tree >01n
 			Collections >00k
 			└── Example Collection : "Last Updated" >aoq
@@ -66,8 +66,8 @@ Trees
 			├── `console_log` >1lz
 			├── `filenames` >lch
 			├── `timestamp_format` >00n
-			└── `timezone` >boe
-			def::>h6l; ID::4gr; }
+			└── For a list of all timezones >boe
+			ID::4gr; def::>h6l; }
 
    h6l}
 

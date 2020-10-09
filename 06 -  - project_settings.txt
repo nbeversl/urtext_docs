@@ -23,13 +23,10 @@ filenames::PREFIX | DATE %m-%d-%Y | TITLE
 {  `filenames`
 	Specifies format for filenames when using |  ?  >pz9  lch}
 
-timestamp_format::%a., %b. %d, %Y, %I:%M %p %z
-{ `timestamp_format`
-	
+timestamp_format::%a., %b. %d, %Y, %I:%M %p
+{ `timestamp_format`	
 	Set the format of the timestamp when using | Insert Timestamp: `ctrl + shift + t` >7b8
-	This accepts a Python `strftime` directive. For more information, see https://strftime.org/.
-
-	 00n}
+	This accepts a Python `strftime` directive. For more information, see https://strftime.org/. 00n}
 
 autoindex::true
 

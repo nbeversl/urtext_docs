@@ -12,7 +12,7 @@ Key Bindings and Operations
 - Node Browser: `ctrl + shift + e`
 - Nav Forward: `ctrl + shift + .`
 - Node Browser, Forward Links: `ctrl + shift + 2`
-def::>1vs; ID::k7b; } 
+ID::k7b; def::>1vs; } 
 
 { Content Insertion
 - Insert Compact Node: `ctrl + shift + ^`
@@ -24,16 +24,16 @@ def::>1vs; ID::k7b; }
 - Insert Link to New Node: `ctrl + shift + '`
 - New Node: `ctrl + shift + ;`
 - Quick Tag from Other: `ctrl + shift + 0`
-def::>1vs; ID::kxh; }
+ID::kxh; def::>1vs; }
 
 { Copy Links
 - Copy Link to this Node With Title: `ctrl + shift + super + c`
 - Copy Link to this Node: `ctrl + shift + c`
-def::>1vs; ID::kqz; }
+ID::kqz; def::>1vs; }
 
 { History
 - Toggle History Traverse: `ctrl + shift + g`
-def::>1vs; ID::a8q; }
+ID::a8q; def::>1vs; }
 
 See also | Key Bindings and Operations - Definitions >tx6
 

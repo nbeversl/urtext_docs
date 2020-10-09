@@ -9,7 +9,7 @@ Compact Nodes
 { About Compact Nodes
 Compact Nodes >j6t
 └── About Compact Nodes >ucj
-def::>j6t; ID::ucj; }
+ID::ucj; def::>j6t; }
 
 [[ ID(>ucj)
 	+(id=j6t)

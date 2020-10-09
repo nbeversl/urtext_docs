@@ -54,10 +54,8 @@ Reference >ac5
 │       ├── Inserting a Node ID manually >04s
 │       ├── Duplicate Node IDs >bzv
 │       └── Generating a node ID manually >rfp
-├── Metadata >00x
-│   ├── General Syntax >8dw
-│   ├── Timestamps >005
-│   │   ├── Syntax and Format >hg7
+├── Timestamps >00x
+│   ├── Syntax and Format >005
 │   │   ├── Tracking Node Dates and Times >m58
 │   │   └── Time Zones >7w6
 │   ├── Case-sensitivity >l36
@@ -88,6 +86,7 @@ Reference >ac5
 │       ├── Duplicate Pointers >00t
 │       │   └── Example Child Node Using a Node Pointer >001
 │       └── Recursive Node Pointers >6ct
+│           ├── ! RECURSION - (from alias) : Pointers >lmu
 │           └── Example Recursive Node Tree >01n
 ├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
@@ -101,7 +100,7 @@ Reference >ac5
 │   ├── `console_log` >1lz
 │   ├── `filenames` >lch
 │   ├── `timestamp_format` >00n
-│   └── `timezone` >boe
+│   └── For a list of all timezones >boe
 ├── Errors and Warnings >bpk
 ├── Using Multiple Projects >ipy
 │   ├── Project Naming (Identification) >tgp
@@ -110,7 +109,7 @@ Reference >ac5
     ├── The Node Browser >01i
     └── Traverse Mode >00w
         └── Word Wrap in Traverse Mode >xci
-def::>v7r; ID::e5j; } 
+ID::e5j; def::>v7r; } 
 
 {  Quick Start, Guides and Examples
 
@@ -126,7 +125,7 @@ z7t}
 {   Reference
   | Projects >>dce
   | Nodes >>01j
-  | Metadata >>00x
+  | Timestamps >>00x
   | Dynamic Nodes >>k8p
   | Links and Pointers >>00j
   | Exporting >>ezg

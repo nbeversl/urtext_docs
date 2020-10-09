@@ -148,13 +148,13 @@ More information: [Compact Nodes](#compact-nodes)
 Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
 The first character inside the brackets may not be `!`, '-', or whitespace.
 Example: 
-More information: [Timestamps](#timestamps)
+More information: [Syntax and Format](#syntax-and-format)
 
 `::`
 Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 Example: 
-More information: [Metadata](#metadata)
+More information: [Timestamps](#timestamps)
   (Closing pass marker.)
 
 
@@ -402,7 +402,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 (For Markdown export, a screenshot is provided showing indentation and highlighting:)
 ![./files/node-nesting-example.png](./files/node-nesting-example.png)
 
-Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Metadata](#metadata) as at the bottom of this file.
+Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Timestamps](#timestamps) as at the bottom of this file.
 
 Note that nodes at the file level ([File Nodes](#file-nodes)) do not use curly-braces, as their region boundaries are defined by the file itself.
 
@@ -518,40 +518,17 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 
 
 
-## Metadata
+## Timestamps                                                                                   
 
 
 
-### General Syntax 
-
-Every node can have an unlimited number of metadata entries. Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:
-
-
-
-
-Metadata gets indexed and becomes searchable and sortable from anywhere within the project. Metadata entries also "remember" their location, allowing them to serve as contextual markers or "bookmarks". 
-
-Other than a few reserved key/value pairs, metadata is user-defined. Keys must be single words, though characters such as dash and underscore are allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line:
-
-
-
-Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. 
-
-
-
-### Timestamps                                                                                   
-
-
-
-#### Syntax and Format   
-
-Key: [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`) to insert the current date and time anywhere.
+### Syntax and Format   
 
 Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. 
 
-Additional formats can be added in the [project_settings](#project_settings) node.  
+Press [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`) to insert the current date and time anywhere.
 
-Node timestamps are part of metadata (see [Metadata](#metadata)). 
+Node timestamps are part of metadata (see [Timestamps](#timestamps)). 
 Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed.
 
 
@@ -565,7 +542,7 @@ Reliance on the operating system's "created" or "modified" date metadata is avoi
 
 #### Time Zones     
 
-Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the [`timezone`](#`timezone`)  key in project_settings to another valid value.  
+Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the [For a list of all timezones](#for-a-list-of-all-timezones)  key in project_settings to another valid value.  
 
 
 
@@ -816,14 +793,12 @@ Note that it appears twice in the Table of Contents, once as a child of this nod
 
 #### Recursive Node Pointers  
 
-If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point. For example, this Node Pointer points  to the root node of the table of contents: 
+If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point with the indication `! RECURSION -` before the node title and link. For example, this Node Pointer points to the parent of this node ([Recursive Node Pointers](#recursive-node-pointers)),  | Pointers >>lmu. You can see the recursion point in the table of contents.
 
-You can see the recursion point in the table of contents.
-
-Note that if you view the entire tree with another node selected as root, one full iteration will still appear, with the point of recursion falling elsewhere. Below is the Table of Contents turned "inside out", with [Pointers](#pointers) as root. 
+Note that if you view the tree with another node selected as root, one full iteration will still appear, with the point of recursion falling elsewhere. The tree below is turned "inside out", with [Pointers](#pointers) as root. 
 
 
-(See [Trees](#trees) for more information on how to generate trees like this in dynamic nodes.)
+(See [Trees](#trees) for how to generate trees like this in dynamic nodes.)
 
 
 
@@ -834,6 +809,7 @@ Pointers[Pointers](#pointers)
 			├── Duplicate Pointers[Duplicate Pointers](#duplicate-pointers)
 			│   └── Example Child Node Using a Node Pointer[Example Child Node Using a Node Pointer](#example-child-node-using-a-node-pointer)
 			└── Recursive Node Pointers[Recursive Node Pointers](#recursive-node-pointers)
+			    ├── ! RECURSION - (from alias) : Pointers[Pointers](#pointers)
 			    └── Example Recursive Node Tree[Example Recursive Node Tree](#example-recursive-node-tree)
 
 
@@ -848,13 +824,13 @@ Pointers[Pointers](#pointers)
 
 ## Exporting
 
-Urtext can export to plaintext, Markdown and HTML. Results can be either output to a file or written back into another node within. Like other dynamic functions, exporting is dynamic; when changes are made to the source nodes, exports are immediately updated.
+Urtext can export to plaintext, Markdown and HTML. Output can be written to a file or back into another node in the project. Exporting is dynamic; when changes are made to the source nodes, exports are immediately updated.
 
 
 
 ### Example : Urtext Documentation Exported in Markdown to a File  
 
-The following dynamic definition exports this entire documentation from its root node [Urtext  Version: 0.5-alpha  Usage Guide and References](#urtext--version:-0.5-alpha--usage-guide-and-references) ) in Markdown format to a file called ![./README.md:](./README.md:)
+This dynamic definition exports the entire documentation from its root node [Urtext  Version: 0.5-alpha  Usage Guide and References](#urtext--version:-0.5-alpha--usage-guide-and-references) ) in Markdown format to a file called ![./README.md:](./README.md:)
 
 
 
@@ -864,7 +840,10 @@ The following dynamic definition exports this entire documentation from its root
 
 ### Example : Fragment Exported to HTML  
 
-The following Dynamic Definition exports the [Links and Pointers](#links-and-pointers) section of the documentation to HTML, into a node inside this one:
+The following Dynamic Definition is identical to the above, except it exports to HTML.   
+
+
+
 
 
 
@@ -961,7 +940,7 @@ This accepts a Python `strftime` directive. For more information, see https://st
 
 
 
-### `timezone`   
+### For a list of all timezones  `timezone` 
 
 For a list of all timezones ___ ADD SOME RESOURCE ____  
 
@@ -1041,9 +1020,6 @@ Urtext is made to require minimal user interface elements. They mostly serve as 
 
 
 
-
-
-
 ### The Node Browser
 
 The Node browser shows a list of all nodes in the project. It can be implemented in plaintext using a dynamic definition such as: . However, 
@@ -1062,8 +1038,6 @@ Ctrl-Shift-E
 In Sublime Text there is also the alternative of using the UI dropdown. Press Control-Shift-E or select "Urtext: Node List" from the Sublime command palette (Shift-Super-P). Here you can find a node by typing part of its title.
 
 In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see [`index`](#`index`)). 
-
-
 
 
 

@@ -20,14 +20,12 @@ The advantages to Node Pointers include:
 
 {  Recursive Node Pointers
 
-    If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point. For example, this Node Pointer points  to the root node of the table of contents: 
+    If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point with the indication `! RECURSION -` before the node title and link. For example, this Node Pointer points to the parent of this node (| Recursive Node Pointers >6ct),  | Pointers >>lmu. You can see the recursion point in the table of contents.
 
-    You can see the recursion point in the table of contents.
-
-    Note that if you view the entire tree with another node selected as root, one full iteration will still appear, with the point of recursion falling elsewhere. Below is the Table of Contents turned "inside out", with | Pointers >lmu as root. 
+    Note that if you view the tree with another node selected as root, one full iteration will still appear, with the point of recursion falling elsewhere. The tree below is turned "inside out", with | Pointers >lmu as root. 
        
-        [[ ID(>01n) +(id=lmu) DEPTH(5) HEADER(Example Recursive Node Tree)  FORMAT(indent:3)]]
-        (See | Trees >w8u for more information on how to generate trees like this in dynamic nodes.)
+        [[ ID(>01n) +(id=lmu) DEPTH(*) HEADER(Example Recursive Node Tree)  FORMAT(indent:3)]]
+        (See | Trees >w8u for how to generate trees like this in dynamic nodes.)
 
     		{
 			Example Recursive Node Tree
@@ -36,8 +34,9 @@ The advantages to Node Pointers include:
 			├── Duplicate Pointers >00t
 			│   └── Example Child Node Using a Node Pointer >001
 			└── Recursive Node Pointers >6ct
+			    ├── ! RECURSION - (from alias) : Pointers >lmu
 			    └── Example Recursive Node Tree >01n
-			def::>6ct; ID::01n; }
+			ID::01n; def::>6ct; }
     6ct}
 
 ID::lmu

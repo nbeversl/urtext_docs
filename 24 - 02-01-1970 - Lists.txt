@@ -28,7 +28,7 @@ Lists
 			Full Screen / Distraction Free Mode >002
 			Sublime Text Interface Tips >003
 			Inline Nodes >004
-			Timestamps >005
+			Syntax and Format >005
 			Requirements and Features >006
 			Example Inline Node >00e
 			Links and Pointers >00j
@@ -42,9 +42,9 @@ Lists
 			Duplicate Pointers >00t
 			Viewing Linked Relationships >00u
 			Traverse Mode >00w
-			Metadata >00x
+			Timestamps >00x
 			`index` >00z
-			def::>twz; ID::m1r; }
+			ID::m1r; def::>twz; }
 
 	f>./files/example-list-1-definition.png
 	f>./files/example-list-1.png
