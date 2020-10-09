@@ -62,7 +62,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── `console_log` >1lz
 		├── `filenames` >lch
 		├── `timestamp_format` >00n
-		└── For a list of all timezones >boe
+		├── `timezone` >boe
+		└── `node_date_keyname` >8p4
 		Sublime Text tools to help with linking >00m
 		`timestamp_format` >00n
 		Web / HTTP(S) >00o
@@ -75,11 +76,9 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Viewing Linked Relationships >00u
 		Traverse Mode >00w
 		└── Word Wrap in Traverse Mode >xci
-		Metadata >00x
-		├── General Syntax >8dw
-		├── Timestamps >2i4
-		│   ├── Syntax and Format >005
-		│   ├── Tracking Node Dates and Times >m58
+		Timestamps >00x
+		├── Syntax and Format >005
+		├── Tracking Node Dates and Times >2i4
 		│   └── Time Zones >7w6
 		├── Case-sensitivity >l36
 		└── Reserved Keys >fo2
@@ -137,7 +136,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    ├── `console_log` >1lz
 		    ├── `filenames` >lch
 		    ├── `timestamp_format` >00n
-		    └── For a list of all timezones >boe
+		    └── `timezone` >boe
 		iPhone/iPad/iOS >01y
 		└── Synchronator Setup >01z
 		Synchronator Setup >01z
@@ -153,6 +152,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   │       └── third test level >80d
 		│   └── Uses for inline nodes >ia5
 		└── Compact Nodes >kpz
+		Dynamic Definitions >07u
 		Project Settings >0vp
 		Links >0y2
 		└── Sublime Text tools to help with linking >00m
@@ -169,9 +169,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Dependencies and Installation >2fn
 		├── Download and Install Dependencies Manually >774
 		└── Download Dependencies from a Monorepo >arl
-		Timestamps >2i4
-		├── Syntax and Format >005
-		├── Tracking Node Dates and Times >m58
+		Tracking Node Dates and Times >2i4
 		└── Time Zones >7w6
 		Content Insertions >35a
 		├── New Node: `ctrl + shift + ;` >ve3
@@ -223,6 +221,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    └── third test level >80d
 		        └── test fourth level >5pq
 		            └── fifth level >xc9
+		`node_date_keyname` >8p4
 		Templating the Output with the SHOW parameter >8p5
 		└── Example List 2 >c1x
 		Menu Operations >9u0
@@ -264,11 +263,9 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │       ├── Inserting a Node ID manually >04s
 		    │       ├── Duplicate Node IDs >bzv
 		    │       └── Generating a node ID manually >rfp
-		    ├── Metadata >00x
-		    │   ├── General Syntax >8dw
-		    │   ├── Timestamps >2i4
-		    │   │   ├── Syntax and Format >005
-		    │   │   ├── Tracking Node Dates and Times >m58
+		    ├── Timestamps >00x
+		    │   ├── Syntax and Format >005
+		    │   ├── Tracking Node Dates and Times >2i4
 		    │   │   └── Time Zones >7w6
 		    │   ├── Case-sensitivity >l36
 		    │   └── Reserved Keys >fo2
@@ -276,6 +273,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │       ├── `title` >pz3
 		    │       └── `def` >5cq
 		    ├── Dynamic Nodes >k8p
+		    │   ├── Dynamic Definitions >07u
 		    │   ├── Lists >twz
 		    │   │   └── Example: Nodes from the Documentation >m1r
 		    │   ├── Trees >w8u
@@ -309,7 +307,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │   ├── `console_log` >1lz
 		    │   ├── `filenames` >lch
 		    │   ├── `timestamp_format` >00n
-		    │   └── For a list of all timezones >boe
+		    │   ├── `timezone` >boe
+		    │   └── `node_date_keyname` >8p4
 		    ├── Errors and Warnings >bpk
 		    ├── Using Multiple Projects >ipy
 		    │   ├── Project Naming (Identification) >tgp
@@ -336,11 +335,9 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       ├── Inserting a Node ID manually >04s
 		│       ├── Duplicate Node IDs >bzv
 		│       └── Generating a node ID manually >rfp
-		├── Metadata >00x
-		│   ├── General Syntax >8dw
-		│   ├── Timestamps >2i4
-		│   │   ├── Syntax and Format >005
-		│   │   ├── Tracking Node Dates and Times >m58
+		├── Timestamps >00x
+		│   ├── Syntax and Format >005
+		│   ├── Tracking Node Dates and Times >2i4
 		│   │   └── Time Zones >7w6
 		│   ├── Case-sensitivity >l36
 		│   └── Reserved Keys >fo2
@@ -348,6 +345,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       ├── `title` >pz3
 		│       └── `def` >5cq
 		├── Dynamic Nodes >k8p
+		│   ├── Dynamic Definitions >07u
 		│   ├── Lists >twz
 		│   │   └── Example: Nodes from the Documentation >m1r
 		│   ├── Trees >w8u
@@ -386,7 +384,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── `console_log` >1lz
 		│   ├── `filenames` >lch
 		│   ├── `timestamp_format` >00n
-		│   └── For a list of all timezones >boe
+		│   ├── `timezone` >boe
+		│   └── `node_date_keyname` >8p4
 		├── Errors and Warnings >bpk
 		├── Using Multiple Projects >ipy
 		│   ├── Project Naming (Identification) >tgp
@@ -399,7 +398,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Download Dependencies from a Monorepo >arl
 		Navigation >bac
 		Example : Fragment Exported to HTML >baq
-		For a list of all timezones >boe
+		`timezone` >boe
 		Errors and Warnings >bpk
 		Duplicate Node IDs >bzv
 		Example List 2 >c1x
@@ -446,6 +445,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		        └── Example Search Results >3x3
 		Navigation >k7b
 		Dynamic Nodes >k8p
+		├── Dynamic Definitions >07u
 		├── Lists >twz
 		│   └── Example: Nodes from the Documentation >m1r
 		├── Trees >w8u
@@ -473,7 +473,6 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    └── Example Recursive Node Tree >01n
 		User-Defined >lwg
 		Example: Nodes from the Documentation >m1r
-		Tracking Node Dates and Times >m58
 		Example : Urtext Documentation Exported in Markdown to a File >m9d
 		File Management >n8z
 		└── Rename File???: `ctrl + shift + s` >5qr

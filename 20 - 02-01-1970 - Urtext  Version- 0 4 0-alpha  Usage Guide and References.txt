@@ -54,11 +54,9 @@ Reference >ac5
 │       ├── Inserting a Node ID manually >04s
 │       ├── Duplicate Node IDs >bzv
 │       └── Generating a node ID manually >rfp
-├── Metadata >00x
-│   ├── General Syntax >8dw
-│   ├── Timestamps >2i4
-│   │   ├── Syntax and Format >005
-│   │   ├── Tracking Node Dates and Times >m58
+├── Timestamps >00x
+│   ├── Syntax and Format >005
+│   ├── Tracking Node Dates and Times >2i4
 │   │   └── Time Zones >7w6
 │   ├── Case-sensitivity >l36
 │   └── Reserved Keys >fo2
@@ -66,6 +64,7 @@ Reference >ac5
 │       ├── `title` >pz3
 │       └── `def` >5cq
 ├── Dynamic Nodes >k8p
+│   ├── Dynamic Definitions >07u
 │   ├── Lists >twz
 │   │   └── Example: Nodes from the Documentation >m1r
 │   ├── Trees >w8u
@@ -102,7 +101,8 @@ Reference >ac5
 │   ├── `console_log` >1lz
 │   ├── `filenames` >lch
 │   ├── `timestamp_format` >00n
-│   └── For a list of all timezones >boe
+│   ├── `timezone` >boe
+│   └── `node_date_keyname` >8p4
 ├── Errors and Warnings >bpk
 ├── Using Multiple Projects >ipy
 │   ├── Project Naming (Identification) >tgp

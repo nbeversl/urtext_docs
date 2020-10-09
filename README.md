@@ -154,7 +154,7 @@ More information: [Syntax and Format](#syntax-and-format)
 Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 Example: 
-More information: [Metadata](#metadata)
+More information: [Timestamps](#timestamps)
   (Closing pass marker.)
 
 
@@ -402,7 +402,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 (For Markdown export, a screenshot is provided showing indentation and highlighting:)
 ![./files/node-nesting-example.png](./files/node-nesting-example.png)
 
-Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Metadata](#metadata) as at the bottom of this file.
+Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Timestamps](#timestamps) as at the bottom of this file.
 
 Note that nodes at the file level ([File Nodes](#file-nodes)) do not use curly-braces, as their region boundaries are defined by the file itself.
 
@@ -518,32 +518,11 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 
 
 
-## Metadata
+## Timestamps                                                                                   
 
 
 
-### General Syntax 
-
-Every node can have an unlimited number of metadata entries. Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:
-
-
-
-
-Metadata gets indexed and becomes searchable and sortable from anywhere within the project. Metadata entries also "remember" their location, allowing them to serve as contextual markers or "bookmarks". 
-
-Other than a few reserved key/value pairs, metadata is user-defined. Keys must be single words, though characters such as dash and underscore are allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line:
-
-
-
-Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. 
-
-
-
-### Timestamps                                                                                   
-
-
-
-#### Syntax and Format   
+### Syntax and Format   
 
 Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext uses the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:
 
@@ -555,20 +534,20 @@ Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the 
 
 Press [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`) to insert the current date and time anywhere. The format of the resulting timestamp is set in project_gettings using the [`timestamp_format`](#`timestamp_format`) key.
 
-Timestamps are one of three elements of metadata (see )
-Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed. 
+Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`. 
 
 
 
-#### Tracking Node Dates and Times    
+### Tracking Node Dates and Times    
 
-Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created: 
+Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created: 
 
 
 
 #### Time Zones     
 
-Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the [For a list of all timezones](#for-a-list-of-all-timezones)  key in project_settings to another valid value.  
+Time zones are not required in timestamps. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the   key in project_settings to another valid value.  
+
 
 
 
@@ -614,11 +593,15 @@ Generated automatically in a dynamic node, contains a link to the node containin
 
 Dynamic nodes contain content aggregated from the contents of other nodes. Dynamic content stays up to date with its source content "dynamically" (on file save). A dynamic node can be seen as a "view into" other content. 
 
+
+
+### Dynamic Definitions Dynamic Definitions _
+
 Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets , and have there own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference [Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters).
 
 Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-[Insert Dynamic Definition with Node: `ctrl + shift + ]`](#insert-dynamic-definition-with-node:-`ctrl-+-shift-+-]`) creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.
+The key [Insert Dynamic Definition with Node: `ctrl + shift + ]`](#insert-dynamic-definition-with-node:-`ctrl-+-shift-+-]`) creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.   
 
 There are two main kinds of dynamic output, Lists and Collections:
 
@@ -962,9 +945,16 @@ This accepts a Python `strftime` directive. For more information, see https://st
 
 
 
-### For a list of all timezones  `timezone` 
+### `timezone`   
 
-For a list of all timezones ___ ADD SOME RESOURCE ____  
+For a list of all timezones 
+ADD SOME RESOURCE   
+
+
+
+
+### `node_date_keyname`  
+
 
 
 

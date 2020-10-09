@@ -42,7 +42,7 @@ Lists
 			Duplicate Pointers >00t
 			Viewing Linked Relationships >00u
 			Traverse Mode >00w
-			Metadata >00x
+			Timestamps >00x
 			`index` >00z
 			ID::m1r; def::>twz; }
 

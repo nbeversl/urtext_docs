@@ -35,8 +35,13 @@ autoname::true
 timezone::US/Eastern
 {  `timezone` 
 
-	For a list of all timezones ___ ADD SOME RESOURCE ____  boe}
+	For a list of all timezones 
+	ADD SOME RESOURCE   boe}
+
 node_date_keyname::timestamp
+{  `node_date_keyname`
+
+  8p4}
 
 numerical_keys::p
 

@@ -181,7 +181,7 @@ More information: <a href="#005">Syntax and Format</a>
 Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 Example: 
-More information: <a href="#00x">Metadata</a>
+More information: <a href="#00x">Timestamps</a>
   (Closing pass marker.)
 
  
@@ -210,7 +210,7 @@ More information: <a href="#00x">Metadata</a>
 <div class="urtext_line">Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.</div>
 <div class="urtext_line">Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.</div>
 <div class="urtext_line">Example:</div>
-<div class="urtext_line">More information: <a href="#00x">Metadata</a></div>
+<div class="urtext_line">More information: <a href="#00x">Timestamps</a></div>
 <div class="urtext_line"  (Closing pass marker.)</div>
 </div>
   <h2>Dynamic Definitions : Syntax and Parameters</h2>
@@ -543,7 +543,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 (For Markdown export, a screenshot is provided showing indentation and highlighting:)
 f>./files/node-nesting-example.png
 
-Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Metadata</a> as at the bottom of this file.
+Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Timestamps</a> as at the bottom of this file.
 
 Note that nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are defined by the file itself.
 
@@ -552,7 +552,7 @@ For all purposes in Urtext, inline nodes' identity is unique from their containi
 
 <div class="urtext_line">(For Markdown export, a screenshot is provided showing indentation and highlighting:)</div>
 <div class="urtext_line">f>./files/node-nesting-example.png</div>
-<div class="urtext_line">Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Metadata</a> as at the bottom of this file.</div>
+<div class="urtext_line">Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Timestamps</a> as at the bottom of this file.</div>
 <div class="urtext_line">Note that nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are defined by the file itself.</div>
 <div class="urtext_line">For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.</div>
 <h5>Uses for inline nodes</h5>
@@ -697,36 +697,11 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 
 <div class="urtext_line"></div>
 </div>
-  <h2>Metadata</h2>
-
-
-<div class="urtext_line"><h2>Metadata</h2></div>
-<h3>General Syntax</h3>
- 
-
-  Every node can have an unlimited number of metadata entries. Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:
-
-        
-        
-
-  Metadata gets indexed and becomes searchable and sortable from anywhere within the project. Metadata entries also "remember" their location, allowing them to serve as contextual markers or "bookmarks". 
-
-  Other than a few reserved key/value pairs, metadata is user-defined. Keys must be single words, though characters such as dash and underscore are allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line:
-
-       
-      
-  Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. <div class="urtext_line"><h3>General Syntax</h3></div>
-<div class="urtext_line">Every node can have an unlimited number of metadata entries. Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:</div>
-<div class="urtext_line">Metadata gets indexed and becomes searchable and sortable from anywhere within the project. Metadata entries also "remember" their location, allowing them to serve as contextual markers or "bookmarks".</div>
-<div class="urtext_line">Other than a few reserved key/value pairs, metadata is user-defined. Keys must be single words, though characters such as dash and underscore are allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line:</div>
-<div class="urtext_line">Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed.</div>
-</div>
-  
-<h3>Timestamps</h3>
+  <h2>Timestamps</h2>
                                                                                    
 
-  <div class="urtext_line"><h3>Timestamps</h3></div>
-<h4>Syntax and Format</h4>
+  <div class="urtext_line"><h2>Timestamps</h2></div>
+<h3>Syntax and Format</h3>
    
 
       Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext uses the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:
@@ -739,28 +714,27 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 
       Press <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a> to insert the current date and time anywhere. The format of the resulting timestamp is set in project_gettings using the <a href="#00n">`timestamp_format`</a> key.
 
-      Timestamps are one of three elements of metadata (see )
-      Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed. <div class="urtext_line"><h4>Syntax and Format</h4></div>
+      Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`. <div class="urtext_line"><h3>Syntax and Format</h3></div>
 <div class="urtext_line">Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext uses the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:</div>
 <div class="urtext_line">... and so on</div>
 <div class="urtext_line">Press <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a> to insert the current date and time anywhere. The format of the resulting timestamp is set in project_gettings using the <a href="#00n">`timestamp_format`</a> key.</div>
-<div class="urtext_line">Timestamps are one of three elements of metadata (see )</div>
-<div class="urtext_line">Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed.</div>
+<div class="urtext_line">Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`.</div>
 </div>
 
-  <h4>Tracking Node Dates and Times</h4>
+  <h3>Tracking Node Dates and Times</h3>
     
 
-      Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created: <div class="urtext_line"><h4>Tracking Node Dates and Times</h4></div>
-<div class="urtext_line">Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created:</div>
-</div>
+      Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created: 
     
-  <h4>Time Zones</h4>
+  <div class="urtext_line"><h3>Tracking Node Dates and Times</h3></div>
+<div class="urtext_line">Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created:</div>
+<h4>Time Zones</h4>
      
 
-      Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the <a href="#boe">For a list of all timezones</a>  key in project_settings to another valid value.  <div class="urtext_line"><h4>Time Zones</h4></div>
-<div class="urtext_line">Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the <a href="#boe">For a list of all timezones</a>  key in project_settings to another valid value.</div>
+      Time zones are not required in timestamps. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the   key in project_settings to another valid value.  <div class="urtext_line"><h4>Time Zones</h4></div>
+<div class="urtext_line">Time zones are not required in timestamps. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the   key in project_settings to another valid value.</div>
 </div>   
+
   </div>
 
 <h3>Case-sensitivity</h3>
@@ -812,11 +786,21 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 
 Dynamic nodes contain content aggregated from the contents of other nodes. Dynamic content stays up to date with its source content "dynamically" (on file save). A dynamic node can be seen as a "view into" other content. 
 
-Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets , and have there own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference <a href="#87g">Dynamic Definitions : Syntax and Parameters</a>.
+<div class="urtext_line"><h2>Dynamic Nodes</h2></div>
+<div class="urtext_line">Dynamic nodes contain content aggregated from the contents of other nodes. Dynamic content stays up to date with its source content "dynamically" (on file save). A dynamic node can be seen as a "view into" other content.</div>
+<h3>Dynamic Definitions</h3>
+ Dynamic Definitions _
+	
+	Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets , and have there own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference <a href="#87g">Dynamic Definitions : Syntax and Parameters</a>.
 
-Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
+	Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-<a href="#jsc">Insert Dynamic Definition with Node: `ctrl + shift + ]`</a> creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.
+	The key <a href="#jsc">Insert Dynamic Definition with Node: `ctrl + shift + ]`</a> creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.   <div class="urtext_line"><h3>Dynamic Definitions</h3></div>
+<div class="urtext_line">Dynamic Definitions _</div>
+<div class="urtext_line">Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets , and have there own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference <a href="#87g">Dynamic Definitions : Syntax and Parameters</a>.</div>
+<div class="urtext_line">Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)</div>
+<div class="urtext_line">The key <a href="#jsc">Insert Dynamic Definition with Node: `ctrl + shift + ]`</a> creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.</div>
+</div>
 
 There are two main kinds of dynamic output, Lists and Collections:
 
@@ -852,7 +836,7 @@ There are two main kinds of dynamic output, Lists and Collections:
 			Duplicate Pointers<a href="#00t">Duplicate Pointers</a>
 			Viewing Linked Relationships<a href="#00u">Viewing Linked Relationships</a>
 			Traverse Mode<a href="#00w">Traverse Mode</a>
-			Metadata<a href="#00x">Metadata</a>
+			Timestamps<a href="#00x">Timestamps</a>
 			`index`<a href="#00z">`index`</a>
 			  <div class="urtext_line"><h4>Example: Nodes from the Documentation</h4></div>
 <div class="urtext_line">Example Child Node Using a Node Pointer<a href="#001">Example Child Node Using a Node Pointer</a></div>
@@ -873,7 +857,7 @@ There are two main kinds of dynamic output, Lists and Collections:
 <div class="urtext_line">Duplicate Pointers<a href="#00t">Duplicate Pointers</a></div>
 <div class="urtext_line">Viewing Linked Relationships<a href="#00u">Viewing Linked Relationships</a></div>
 <div class="urtext_line">Traverse Mode<a href="#00w">Traverse Mode</a></div>
-<div class="urtext_line">Metadata<a href="#00x">Metadata</a></div>
+<div class="urtext_line">Timestamps<a href="#00x">Timestamps</a></div>
 <div class="urtext_line">`index`<a href="#00z">`index`</a></div>
 </div>
 
@@ -951,7 +935,8 @@ Lists can be expanded into trees that show the outline of many nodes across many
 			├── `console_log`<a href="#1lz">`console_log`</a>
 			├── `filenames`<a href="#lch">`filenames`</a>
 			├── `timestamp_format`<a href="#00n">`timestamp_format`</a>
-			└── For a list of all timezones<a href="#boe">For a list of all timezones</a>
+			├── For a list of all timezones<a href="#boe">`timezone`</a>
+			└── `node_date_keyname`<a href="#8p4">`node_date_keyname`</a>
 			  <div class="urtext_line"><h5>Example Tree</h5></div>
 <div class="urtext_line">Example Child Node Using a Node Pointer<a href="#001">Example Child Node Using a Node Pointer</a></div>
 <div class="urtext_line">Full Screen / Distraction Free Mode<a href="#002">Full Screen / Distraction Free Mode</a></div>
@@ -1000,7 +985,8 @@ Lists can be expanded into trees that show the outline of many nodes across many
 <div class="urtext_line">├── `console_log`<a href="#1lz">`console_log`</a></div>
 <div class="urtext_line">├── `filenames`<a href="#lch">`filenames`</a></div>
 <div class="urtext_line">├── `timestamp_format`<a href="#00n">`timestamp_format`</a></div>
-<div class="urtext_line">└── For a list of all timezones<a href="#boe">For a list of all timezones</a></div>
+<div class="urtext_line">├── For a list of all timezones<a href="#boe">`timezone`</a></div>
+<div class="urtext_line">└── `node_date_keyname`<a href="#8p4">`node_date_keyname`</a></div>
 </div>
 
    </div>
@@ -1152,11 +1138,6 @@ Another use would be to collect all metadata entries of a given key, and optiona
 
  </div>
 
-<div class="urtext_line"><h2>Dynamic Nodes</h2></div>
-<div class="urtext_line">Dynamic nodes contain content aggregated from the contents of other nodes. Dynamic content stays up to date with its source content "dynamically" (on file save). A dynamic node can be seen as a "view into" other content.</div>
-<div class="urtext_line">Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets , and have there own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference <a href="#87g">Dynamic Definitions : Syntax and Parameters</a>.</div>
-<div class="urtext_line">Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)</div>
-<div class="urtext_line"><a href="#jsc">Insert Dynamic Definition with Node: `ctrl + shift + ]`</a> creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.</div>
 <div class="urtext_line">There are two main kinds of dynamic output, Lists and Collections:</div>
 <div class="urtext_line">"Lists" are lists of nodes, with each node displayed not more than once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list.</div>
 <div class="urtext_line"></div>
@@ -1472,14 +1453,21 @@ This is the `project_settings` node for the "Urtext Documentation" Urtext projec
 
 
 
-<h3>For a list of all timezones</h3>
-  `timezone` 
+<h3>`timezone`</h3>
+   
 
-	For a list of all timezones ___ ADD SOME RESOURCE ____  <div class="urtext_line"><h3>For a list of all timezones</h3></div>
-<div class="urtext_line">`timezone`</div>
-<div class="urtext_line">For a list of all timezones ___ ADD SOME RESOURCE ____</div>
+	For a list of all timezones 
+	ADD SOME RESOURCE   <div class="urtext_line"><h3>`timezone`</h3></div>
+<div class="urtext_line">For a list of all timezones</div>
+<div class="urtext_line">ADD SOME RESOURCE</div>
 </div>
 
+
+<h3>`node_date_keyname`</h3>
+  
+
+  <div class="urtext_line"><h3>`node_date_keyname`</h3></div>
+</div>
 
 
 
