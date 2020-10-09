@@ -181,7 +181,7 @@ More information: <a href="#005">Syntax and Format</a>
 Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 Example: 
-More information: <a href="#00x">Timestamps</a>
+More information: <a href="#00x">Metadata</a>
   (Closing pass marker.)
 
  
@@ -210,7 +210,7 @@ More information: <a href="#00x">Timestamps</a>
 <div class="urtext_line">Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.</div>
 <div class="urtext_line">Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.</div>
 <div class="urtext_line">Example:</div>
-<div class="urtext_line">More information: <a href="#00x">Timestamps</a></div>
+<div class="urtext_line">More information: <a href="#00x">Metadata</a></div>
 <div class="urtext_line"  (Closing pass marker.)</div>
 </div>
   <h2>Dynamic Definitions : Syntax and Parameters</h2>
@@ -543,7 +543,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 (For Markdown export, a screenshot is provided showing indentation and highlighting:)
 f>./files/node-nesting-example.png
 
-Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Timestamps</a> as at the bottom of this file.
+Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Metadata</a> as at the bottom of this file.
 
 Note that nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are defined by the file itself.
 
@@ -552,7 +552,7 @@ For all purposes in Urtext, inline nodes' identity is unique from their containi
 
 <div class="urtext_line">(For Markdown export, a screenshot is provided showing indentation and highlighting:)</div>
 <div class="urtext_line">f>./files/node-nesting-example.png</div>
-<div class="urtext_line">Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Timestamps</a> as at the bottom of this file.</div>
+<div class="urtext_line">Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Metadata</a> as at the bottom of this file.</div>
 <div class="urtext_line">Note that nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are defined by the file itself.</div>
 <div class="urtext_line">For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.</div>
 <h5>Uses for inline nodes</h5>
@@ -697,30 +697,61 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 
 <div class="urtext_line"></div>
 </div>
-  <h2>Timestamps</h2>
+  <h2>Metadata</h2>
+
+
+<div class="urtext_line"><h2>Metadata</h2></div>
+<h3>General Syntax</h3>
+ 
+
+  Every node can have an unlimited number of metadata entries. Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:
+
+        
+        
+
+  Metadata gets indexed and becomes searchable and sortable from anywhere within the project. Metadata entries also "remember" their location, allowing them to serve as contextual markers or "bookmarks". 
+
+  Other than a few reserved key/value pairs, metadata is user-defined. Keys must be single words, though characters such as dash and underscore are allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line:
+
+       
+      
+  Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. <div class="urtext_line"><h3>General Syntax</h3></div>
+<div class="urtext_line">Every node can have an unlimited number of metadata entries. Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:</div>
+<div class="urtext_line">Metadata gets indexed and becomes searchable and sortable from anywhere within the project. Metadata entries also "remember" their location, allowing them to serve as contextual markers or "bookmarks".</div>
+<div class="urtext_line">Other than a few reserved key/value pairs, metadata is user-defined. Keys must be single words, though characters such as dash and underscore are allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line:</div>
+<div class="urtext_line">Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed.</div>
+</div>
+  
+<h3>Timestamps</h3>
                                                                                    
 
-  <div class="urtext_line"><h2>Timestamps</h2></div>
-<h3>Syntax and Format</h3>
+  <div class="urtext_line"><h3>Timestamps</h3></div>
+<h4>Syntax and Format</h4>
    
 
-      Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. 
+      Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext uses the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:
 
-      Press <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a> to insert the current date and time anywhere.
+            
+            
+            
+            
+            ... and so on
 
-      Node timestamps are part of metadata (see <a href="#00x">Timestamps</a>). 
-      Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed.
+      Press <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a> to insert the current date and time anywhere. The format of the resulting timestamp is set in project_gettings using the <a href="#00n">`timestamp_format`</a> key.
 
-  <div class="urtext_line"><h3>Syntax and Format</h3></div>
-<div class="urtext_line">Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace.</div>
-<div class="urtext_line">Press <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a> to insert the current date and time anywhere.</div>
-<div class="urtext_line">Node timestamps are part of metadata (see <a href="#00x">Timestamps</a>).</div>
+      Timestamps are one of three elements of metadata (see )
+      Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed. <div class="urtext_line"><h4>Syntax and Format</h4></div>
+<div class="urtext_line">Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext uses the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:</div>
+<div class="urtext_line">... and so on</div>
+<div class="urtext_line">Press <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a> to insert the current date and time anywhere. The format of the resulting timestamp is set in project_gettings using the <a href="#00n">`timestamp_format`</a> key.</div>
+<div class="urtext_line">Timestamps are one of three elements of metadata (see )</div>
 <div class="urtext_line">Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed.</div>
-<h4>Tracking Node Dates and Times</h4>
+</div>
+
+  <h4>Tracking Node Dates and Times</h4>
     
 
-      Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created: 
-      <div class="urtext_line"><h4>Tracking Node Dates and Times</h4></div>
+      Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created: <div class="urtext_line"><h4>Tracking Node Dates and Times</h4></div>
 <div class="urtext_line">Reliance on the operating system's "created" or "modified" date metadata is avoided, since these values can be inadvertently overwritten during ordinary file system operations. Instead, new nodes receive by default a "timestamp" metadata key when created:</div>
 </div>
     
@@ -729,9 +760,8 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 
       Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the <a href="#boe">For a list of all timezones</a>  key in project_settings to another valid value.  <div class="urtext_line"><h4>Time Zones</h4></div>
 <div class="urtext_line">Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the <a href="#boe">For a list of all timezones</a>  key in project_settings to another valid value.</div>
-</div>
-
-</div>
+</div>   
+  </div>
 
 <h3>Case-sensitivity</h3>
   
@@ -822,7 +852,7 @@ There are two main kinds of dynamic output, Lists and Collections:
 			Duplicate Pointers<a href="#00t">Duplicate Pointers</a>
 			Viewing Linked Relationships<a href="#00u">Viewing Linked Relationships</a>
 			Traverse Mode<a href="#00w">Traverse Mode</a>
-			Timestamps<a href="#00x">Timestamps</a>
+			Metadata<a href="#00x">Metadata</a>
 			`index`<a href="#00z">`index`</a>
 			  <div class="urtext_line"><h4>Example: Nodes from the Documentation</h4></div>
 <div class="urtext_line">Example Child Node Using a Node Pointer<a href="#001">Example Child Node Using a Node Pointer</a></div>
@@ -843,7 +873,7 @@ There are two main kinds of dynamic output, Lists and Collections:
 <div class="urtext_line">Duplicate Pointers<a href="#00t">Duplicate Pointers</a></div>
 <div class="urtext_line">Viewing Linked Relationships<a href="#00u">Viewing Linked Relationships</a></div>
 <div class="urtext_line">Traverse Mode<a href="#00w">Traverse Mode</a></div>
-<div class="urtext_line">Timestamps<a href="#00x">Timestamps</a></div>
+<div class="urtext_line">Metadata<a href="#00x">Metadata</a></div>
 <div class="urtext_line">`index`<a href="#00z">`index`</a></div>
 </div>
 
@@ -893,8 +923,6 @@ Lists can be expanded into trees that show the outline of many nodes across many
 			│           └── test fourth level<a href="#5pq">test fourth level</a>
 			└── Uses for inline nodes<a href="#ia5">Uses for inline nodes</a>
 			Syntax and Format<a href="#005">Syntax and Format</a>
-			├── Tracking Node Dates and Times<a href="#m58">Tracking Node Dates and Times</a>
-			└── Time Zones<a href="#7w6">Time Zones</a>
 			Requirements and Features<a href="#006">Requirements and Features</a>
 			Example Inline Node<a href="#00e">Example Inline Node</a>
 			Links and Pointers<a href="#00j">Links and Pointers</a>
@@ -944,8 +972,6 @@ Lists can be expanded into trees that show the outline of many nodes across many
 <div class="urtext_line">│           └── test fourth level<a href="#5pq">test fourth level</a></div>
 <div class="urtext_line">└── Uses for inline nodes<a href="#ia5">Uses for inline nodes</a></div>
 <div class="urtext_line">Syntax and Format<a href="#005">Syntax and Format</a></div>
-<div class="urtext_line">├── Tracking Node Dates and Times<a href="#m58">Tracking Node Dates and Times</a></div>
-<div class="urtext_line">└── Time Zones<a href="#7w6">Time Zones</a></div>
 <div class="urtext_line">Requirements and Features<a href="#006">Requirements and Features</a></div>
 <div class="urtext_line">Example Inline Node<a href="#00e">Example Inline Node</a></div>
 <div class="urtext_line">Links and Pointers<a href="#00j">Links and Pointers</a></div>
@@ -1434,12 +1460,9 @@ This is the `project_settings` node for the "Urtext Documentation" Urtext projec
 
 
 <h3>`timestamp_format`</h3>
- 
-	
+ 	
 	Set the format of the timestamp when using <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a>
-	This accepts a Python `strftime` directive. For more information, see https://strftime.org/.
-
-	 <div class="urtext_line"><h3>`timestamp_format`</h3></div>
+	This accepts a Python `strftime` directive. For more information, see https://strftime.org/. <div class="urtext_line"><h3>`timestamp_format`</h3></div>
 <div class="urtext_line">Set the format of the timestamp when using <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a></div>
 <div class="urtext_line">This accepts a Python `strftime` directive. For more information, see https://strftime.org/.</div>
 </div>

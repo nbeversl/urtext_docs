@@ -36,8 +36,6 @@ Trees
 			│           └── test fourth level >5pq
 			└── Uses for inline nodes >ia5
 			Syntax and Format >005
-			├── Tracking Node Dates and Times >m58
-			└── Time Zones >7w6
 			Requirements and Features >006
 			Example Inline Node >00e
 			Links and Pointers >00j

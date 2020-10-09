@@ -154,7 +154,7 @@ More information: [Syntax and Format](#syntax-and-format)
 Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 Example: 
-More information: [Timestamps](#timestamps)
+More information: [Metadata](#metadata)
   (Closing pass marker.)
 
 
@@ -402,7 +402,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 (For Markdown export, a screenshot is provided showing indentation and highlighting:)
 ![./files/node-nesting-example.png](./files/node-nesting-example.png)
 
-Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Timestamps](#timestamps) as at the bottom of this file.
+Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Metadata](#metadata) as at the bottom of this file.
 
 Note that nodes at the file level ([File Nodes](#file-nodes)) do not use curly-braces, as their region boundaries are defined by the file itself.
 
@@ -518,18 +518,45 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 
 
 
-## Timestamps                                                                                   
+## Metadata
 
 
 
-### Syntax and Format   
+### General Syntax 
 
-Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. 
+Every node can have an unlimited number of metadata entries. Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:
 
-Press [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`) to insert the current date and time anywhere.
 
-Node timestamps are part of metadata (see [Timestamps](#timestamps)). 
-Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed.
+
+
+Metadata gets indexed and becomes searchable and sortable from anywhere within the project. Metadata entries also "remember" their location, allowing them to serve as contextual markers or "bookmarks". 
+
+Other than a few reserved key/value pairs, metadata is user-defined. Keys must be single words, though characters such as dash and underscore are allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line:
+
+
+
+Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. 
+
+
+
+### Timestamps                                                                                   
+
+
+
+#### Syntax and Format   
+
+Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext uses the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:
+
+
+
+
+
+... and so on
+
+Press [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`) to insert the current date and time anywhere. The format of the resulting timestamp is set in project_gettings using the [`timestamp_format`](#`timestamp_format`) key.
+
+Timestamps are one of three elements of metadata (see )
+Urtext also utilizes a "loose" parsing of inline timestamps, meaning they can be placed anywhere and will be recognized and parsed. 
 
 
 
@@ -539,11 +566,9 @@ Reliance on the operating system's "created" or "modified" date metadata is avoi
 
 
 
-
 #### Time Zones     
 
 Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default  for parsing and comparison purposes. To modify this default, set the [For a list of all timezones](#for-a-list-of-all-timezones)  key in project_settings to another valid value.  
-
 
 
 
@@ -926,12 +951,9 @@ Specifies format for filenames when using [ MISSING LINK : pz9 ]
 
 
 
-### `timestamp_format` 
-
+### `timestamp_format` 	
 Set the format of the timestamp when using [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`)
-This accepts a Python `strftime` directive. For more information, see https://strftime.org/.
-
-
+This accepts a Python `strftime` directive. For more information, see https://strftime.org/. 
 
 
 

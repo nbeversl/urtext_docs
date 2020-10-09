@@ -54,8 +54,10 @@ Reference >ac5
 │       ├── Inserting a Node ID manually >04s
 │       ├── Duplicate Node IDs >bzv
 │       └── Generating a node ID manually >rfp
-├── Timestamps >00x
-│   ├── Syntax and Format >005
+├── Metadata >00x
+│   ├── General Syntax >8dw
+│   ├── Timestamps >2i4
+│   │   ├── Syntax and Format >005
 │   │   ├── Tracking Node Dates and Times >m58
 │   │   └── Time Zones >7w6
 │   ├── Case-sensitivity >l36
