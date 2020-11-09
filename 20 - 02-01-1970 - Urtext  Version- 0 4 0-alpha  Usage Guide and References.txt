@@ -46,8 +46,11 @@ Reference >ac5
 │   │   ├── File Nodes >ekz
 │   │   ├── Inline Nodes >004
 │   │   │   ├── Example Inline Node >00e
+│   │   │   ├── Escaping Curly Brackets >8a8
 │   │   │   └── Uses for inline nodes >ia5
 │   │   └── Compact Nodes >kpz
+│   │       └── Example Compact Node >d7b
+│   │           └── Example inline node within the compact node. >9up
 │   ├── Node Titles >ue2
 │   └── Node IDs >01q
 │       ├── Trailing Node IDs >xo9
@@ -113,7 +116,7 @@ Reference >ac5
     ├── The Node Browser >01i
     └── Traverse Mode >00w
         └── Word Wrap in Traverse Mode >xci
-ID::e5j; def::>v7r; } 
+def::>v7r; ID::e5j; } 
 
 {  Quick Start, Guides and Examples
 

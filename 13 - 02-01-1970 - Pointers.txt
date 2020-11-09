@@ -36,7 +36,7 @@ The advantages to Node Pointers include:
 			└── Recursive Node Pointers >6ct
 			    ├── ! RECURSION - (from alias) : Pointers >lmu
 			    └── Example Recursive Node Tree >01n
-			ID::01n; def::>6ct; }
+			def::>6ct; ID::01n; }
     6ct}
 
 ID::lmu

@@ -27,7 +27,7 @@ Search
         ]]
 
         { title::Example Search Results; flags::exclude_from_toc
-ID::3x3; def::>uy4; }
+def::>uy4; ID::3x3; }
 
  
 id::uy4 }

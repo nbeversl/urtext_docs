@@ -44,7 +44,7 @@ Lists
 			Traverse Mode >00w
 			Metadata >00x
 			`index` >00z
-			ID::m1r; def::>twz; }
+			def::>twz; ID::m1r; }
 
 	f>./files/example-list-1-definition.png
 	f>./files/example-list-1.png

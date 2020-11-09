@@ -34,6 +34,7 @@ Trees
 			│   └── second level >6qj
 			│       └── third test level >80d
 			│           └── test fourth level >5pq
+			├── Escaping Curly Brackets >8a8
 			└── Uses for inline nodes >ia5
 			Syntax and Format >005
 			Requirements and Features >006
@@ -66,7 +67,7 @@ Trees
 			├── `timestamp_format` >00n
 			├── `timezone` >boe
 			└── `node_date_keyname` >8p4
-			ID::4gr; def::>h6l; }
+			def::>h6l; ID::4gr; }
 
    h6l}
 

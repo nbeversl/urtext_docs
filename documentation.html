@@ -540,21 +540,27 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 <div class="urtext_line">See <a href="#v7r">"Table of Contents" Dynamic Definition</a> for information)</div>
 </div>  
 
-(For Markdown export, a screenshot is provided showing indentation and highlighting:)
-f>./files/node-nesting-example.png
+(For Markdown export, a screenshot is provided showing indentation and highlighting:) f>./files/node-nesting-example.png
 
-Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Metadata</a> as at the bottom of this file.
-
-Note that nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are defined by the file itself.
+Note that every opening curly bracket must be closed in the same file. Every node requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Metadata</a> as at the bottom of this file. Nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are defined by the file itself.
 
 For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.    
 
-
-<div class="urtext_line">(For Markdown export, a screenshot is provided showing indentation and highlighting:)</div>
-<div class="urtext_line">f>./files/node-nesting-example.png</div>
-<div class="urtext_line">Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Metadata</a> as at the bottom of this file.</div>
-<div class="urtext_line">Note that nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are defined by the file itself.</div>
+<div class="urtext_line">(For Markdown export, a screenshot is provided showing indentation and highlighting:) f>./files/node-nesting-example.png</div>
+<div class="urtext_line">Note that every opening curly bracket must be closed in the same file. Every node requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Metadata</a> as at the bottom of this file. Nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are defined by the file itself.</div>
 <div class="urtext_line">For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.</div>
+<h5>Escaping Curly Brackets</h5>
+  
+
+    If you need to use curly brackets in your text, you can escape the Urtext syntax by preceding the bracket with a backward slash; this will prevent them from being parsed: \{ \}
+
+    To ignoring syntax elements more globally, and/or to embed other syntaxes that use Urtext characters, including curly brackets, such as JSON, PHP, and JavaScript, see <a href="#oy5">Embedded Syntaxes and Pass Markers</a>
+
+  <div class="urtext_line"><h5>Escaping Curly Brackets</h5></div>
+<div class="urtext_line">If you need to use curly brackets in your text, you can escape the Urtext syntax by preceding the bracket with a backward slash; this will prevent them from being parsed: \{ \}</div>
+<div class="urtext_line">To ignoring syntax elements more globally, and/or to embed other syntaxes that use Urtext characters, including curly brackets, such as JSON, PHP, and JavaScript, see <a href="#oy5">Embedded Syntaxes and Pass Markers</a></div>
+</div>
+
 <h5>Uses for inline nodes</h5>
  
     
@@ -929,6 +935,7 @@ Lists can be expanded into trees that show the outline of many nodes across many
 			│   └── second level<a href="#6qj">second level</a>
 			│       └── third test level<a href="#80d">third test level</a>
 			│           └── test fourth level<a href="#5pq">test fourth level</a>
+			├── Escaping Curly Brackets<a href="#8a8">Escaping Curly Brackets</a>
 			└── Uses for inline nodes<a href="#ia5">Uses for inline nodes</a>
 			Syntax and Format<a href="#005">Syntax and Format</a>
 			Requirements and Features<a href="#006">Requirements and Features</a>
@@ -979,6 +986,7 @@ Lists can be expanded into trees that show the outline of many nodes across many
 <div class="urtext_line">│   └── second level<a href="#6qj">second level</a></div>
 <div class="urtext_line">│       └── third test level<a href="#80d">third test level</a></div>
 <div class="urtext_line">│           └── test fourth level<a href="#5pq">test fourth level</a></div>
+<div class="urtext_line">├── Escaping Curly Brackets<a href="#8a8">Escaping Curly Brackets</a></div>
 <div class="urtext_line">└── Uses for inline nodes<a href="#ia5">Uses for inline nodes</a></div>
 <div class="urtext_line">Syntax and Format<a href="#005">Syntax and Format</a></div>
 <div class="urtext_line">Requirements and Features<a href="#006">Requirements and Features</a></div>
@@ -1096,6 +1104,15 @@ Another use would be to collect all metadata entries of a given key, and optiona
 
 		
 
+		Date Updated: Tue., Sep. 29, 2020, 12:40 PM +0000
+		Key Bindings and Operations<a href="#1vs">Key Bindings and Operations</a>:114
+		$title\n) ]]
+		
+		
+		
+
+
+
 		Date Updated: Sat., Sep. 26, 2020, 03:48 PM +0000
 		Key Bindings and Operations - Definitions<a href="#tx6">Key Bindings and Operations - Definitions</a>:289
 		e
@@ -1117,8 +1134,8 @@ Another use would be to collect all metadata entries of a given key, and optiona
 
 
 		Date Updated: Thu., Sep. 10, 2020, 05:24 PM
-		Inline Nodes<a href="#004">Inline Nodes</a>:1291
-		d
+		Inline Nodes<a href="#004">Inline Nodes</a>:1283
+		e
 
 
 		Date Updated: Thu., Sep. 10, 2020, 05:20 PM
@@ -1126,17 +1143,11 @@ Another use would be to collect all metadata entries of a given key, and optiona
 		p
 
 
-		Date Updated: Tue., Sep. 29, 2020, 12:40 PM +0000
-		Key Bindings and Operations<a href="#1vs">Key Bindings and Operations</a>:114
-		$title\n) ]]
-		
-		
-		
-
-
-
 		
 		  <div class="urtext_line"><h4>Example Collection : "Last Updated"</h4></div>
+<div class="urtext_line">Date Updated: Tue., Sep. 29, 2020, 12:40 PM +0000</div>
+<div class="urtext_line">Key Bindings and Operations<a href="#1vs">Key Bindings and Operations</a>:114</div>
+<div class="urtext_line">$title\n) ]]</div>
 <div class="urtext_line">Date Updated: Sat., Sep. 26, 2020, 03:48 PM +0000</div>
 <div class="urtext_line">Key Bindings and Operations - Definitions<a href="#tx6">Key Bindings and Operations - Definitions</a>:289</div>
 <div class="urtext_line">e</div>
@@ -1148,14 +1159,11 @@ Another use would be to collect all metadata entries of a given key, and optiona
 <div class="urtext_line">Date Updated: Thu., Sep. 10, 2020, 05:32 PM</div>
 <div class="urtext_line">Compact Nodes<a href="#kpz">Compact Nodes</a>:804</div>
 <div class="urtext_line">Date Updated: Thu., Sep. 10, 2020, 05:24 PM</div>
-<div class="urtext_line">Inline Nodes<a href="#004">Inline Nodes</a>:1291</div>
-<div class="urtext_line">d</div>
+<div class="urtext_line">Inline Nodes<a href="#004">Inline Nodes</a>:1283</div>
+<div class="urtext_line">e</div>
 <div class="urtext_line">Date Updated: Thu., Sep. 10, 2020, 05:20 PM</div>
 <div class="urtext_line">Nodes<a href="#01j">Nodes</a>:842</div>
 <div class="urtext_line">p</div>
-<div class="urtext_line">Date Updated: Tue., Sep. 29, 2020, 12:40 PM +0000</div>
-<div class="urtext_line">Key Bindings and Operations<a href="#1vs">Key Bindings and Operations</a>:114</div>
-<div class="urtext_line">$title\n) ]]</div>
 </div>
 
 

@@ -399,14 +399,20 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 
 
 
-(For Markdown export, a screenshot is provided showing indentation and highlighting:)
-![./files/node-nesting-example.png](./files/node-nesting-example.png)
+(For Markdown export, a screenshot is provided showing indentation and highlighting:) ![./files/node-nesting-example.png](./files/node-nesting-example.png)
 
-Note that every opening doubly curly bracket must be closed in the same file and requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Metadata](#metadata) as at the bottom of this file.
-
-Note that nodes at the file level ([File Nodes](#file-nodes)) do not use curly-braces, as their region boundaries are defined by the file itself.
+Note that every opening curly bracket must be closed in the same file. Every node requires an ID between its opening and closing brackets. The examples above use [Trailing Node IDs](#trailing-node-ids). You can also use regular [Metadata](#metadata) as at the bottom of this file. Nodes at the file level ([File Nodes](#file-nodes)) do not use curly-braces, as their region boundaries are defined by the file itself.
 
 For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.    
+
+
+
+##### Escaping Curly Brackets  
+
+If you need to use curly brackets in your text, you can escape the Urtext syntax by preceding the bracket with a backward slash; this will prevent them from being parsed: \{ \}
+
+To ignoring syntax elements more globally, and/or to embed other syntaxes that use Urtext characters, including curly brackets, such as JSON, PHP, and JavaScript, see [Embedded Syntaxes and Pass Markers](#embedded-syntaxes-and-pass-markers)
+
 
 
 

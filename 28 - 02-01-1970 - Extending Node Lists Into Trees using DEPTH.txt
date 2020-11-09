@@ -32,6 +32,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   └── second level >6qj
 		│       └── third test level >80d
 		│           └── test fourth level >5pq
+		├── Escaping Curly Brackets >8a8
 		└── Uses for inline nodes >ia5
 		Syntax and Format >005
 		Requirements and Features >006
@@ -108,8 +109,11 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   │   ├── Example Inline Node >00e
 		│   │   ├── Example first level >8fv
 		│   │   │   └── second level >6qj
+		│   │   ├── Escaping Curly Brackets >8a8
 		│   │   └── Uses for inline nodes >ia5
 		│   └── Compact Nodes >kpz
+		│       └── Example Compact Node >d7b
+		│           └── Example inline node within the compact node. >9up
 		├── Node Titles >ue2
 		└── Node IDs >01q
 		    ├── Trailing Node IDs >xo9
@@ -153,8 +157,11 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── Example first level >8fv
 		│   │   └── second level >6qj
 		│   │       └── third test level >80d
+		│   ├── Escaping Curly Brackets >8a8
 		│   └── Uses for inline nodes >ia5
 		└── Compact Nodes >kpz
+		    └── Example Compact Node >d7b
+		        └── Example inline node within the compact node. >9up
 		Dynamic Definitions >07u
 		Project Settings >0vp
 		Links >0y2
@@ -195,6 +202,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Example Tree >4gr
 		Full Text Search >4p9
 		├── Searching >rr3
+		│   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lo >k8v
+		│   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind th >q8j
 		└── Search Using Dynamic Nodes >uy4
 		    └── Example Search Results >3x3
 		Dynamic Titles >4vu
@@ -219,6 +228,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── test fourth level >5pq
 		    └── fifth level >xc9
 		Dynamic Definitions : Syntax and Parameters >87g
+		Escaping Curly Brackets >8a8
 		General Syntax >8dw
 		The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 		Example first level >8fv
@@ -334,8 +344,10 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   │   ├── Inline Nodes >004
 		│   │   │   ├── Example Inline Node >00e
 		│   │   │   ├── Example first level >8fv
+		│   │   │   ├── Escaping Curly Brackets >8a8
 		│   │   │   └── Uses for inline nodes >ia5
 		│   │   └── Compact Nodes >kpz
+		│   │       └── Example Compact Node >d7b
 		│   ├── Node Titles >ue2
 		│   └── Node IDs >01q
 		│       ├── Trailing Node IDs >xo9
@@ -445,12 +457,17 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Cross-Project Linking >7lx
 		Pythonista >iy8
 		Compact Nodes >j6t
+		├── require an ID >frm
+		├── can have arbitrary other metadata >xlc
+		├── become child nodes of their containing node. >hiz
 		└── About Compact Nodes >ucj
 		Nodes Excluded from the Table of Contents >jkl
 		Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
 		Search >k67
 		└── Full Text Search >4p9
 		    ├── Searching >rr3
+		    │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lo >k8v
+		    │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind th >q8j
 		    └── Search Using Dynamic Nodes >uy4
 		        └── Example Search Results >3x3
 		Navigation >k7b
@@ -467,6 +484,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    └── Example Collection : "Last Updated" >aoq
 		Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lo >k8v
 		Compact Nodes >kpz
+		└── Example Compact Node >d7b
+		    └── Example inline node within the compact node. >9up
 		Copy Links >kqz
 		Content Insertion >kxh
 		Case-sensitivity >l36
@@ -507,6 +526,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Generating a node ID manually >rfp
 		Using/Adding Existing Files >rij
 		Searching >rr3
+		├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lo >k8v
+		└── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind th >q8j
 		Insert Inline Node: `ctrl + shift + [` >rzx
 		Save on Focus Lost >sqq
 		Insert Link to New Node: `ctrl + shift + '` >sxk
@@ -612,7 +633,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── Copy Link to this Node With Title: `ctrl + shift + super + c` >05x
 		Basic Syntax >znj
 		└── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
-		ID::nc6; def::>thz; }
+		def::>thz; ID::nc6; }
 
 id::thz
 from::wwci-00407.local
