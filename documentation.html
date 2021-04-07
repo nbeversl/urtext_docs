@@ -10,7 +10,7 @@
 
   Inside an Urtext implementation, such as the Sublime Text with the Urtext package, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
   - Control-Shift-/ to follow any link
-  - Control-Shift-h at any time to return to this "home" node.  <div class="urtext_line"><h1>About This Documentation</h1></div>
+  - Control-Shift-h at any time to return to this "home" node. <div class="urtext_line"><h1>About This Documentation</h1></div>
 <div class="urtext_line">This is a documentation of Urtext, written in Urtext. If you're reading it as a `README.MD` (on Github, etc.), it was compiled from the text files in this repository. Clone or download the respository to use it as both a reference and an example project.</div>
 <div class="urtext_line">This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).</div>
 <div class="urtext_line">Many of the examples rely on syntax, formatting, and highlighting, which is stripped out in export to Markdown. Where necessary these are replaced with linked screenshots as necessary (see <a href="#00q">Linking to Files and Other Resources</a> and <a href="#ezg">Exporting</a>)</div>
@@ -28,7 +28,7 @@
      
         The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
 
-        Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).   <div class="urtext_line"><h2>Description</h2></div>
+        Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).  <div class="urtext_line"><h2>Description</h2></div>
 <div class="urtext_line">Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The <a href="#znj">Basic Syntax</a> permits embedding of structural and instructional code into the text itself.</div>
 <div class="urtext_line">The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment.</div>
 <div class="urtext_line">Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).</div>
@@ -39,7 +39,7 @@
         
         Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for writing, connecting and organizing text.
     
-        Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user. <div class="urtext_line"><h2>Comparison To Other Tools</h2></div>
+        Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user.<div class="urtext_line"><h2>Comparison To Other Tools</h2></div>
 <div class="urtext_line">Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for writing, connecting and organizing text.</div>
 <div class="urtext_line">Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user.</div>
 </div>
@@ -58,7 +58,7 @@
             - notetaking
             - lightweight database
             - any other writing or information management that can be done in text form
-        <div class="urtext_line"><h2>Uses</h2></div>
+       <div class="urtext_line"><h2>Uses</h2></div>
 <div class="urtext_line">Urtext has many uses, including but limited to:</div>
 <ul class="urtext-list"><li> prose writing</li><li> research</li><li> documentation</li><li> knowledge/information base</li><li> journaling</li><li> Zettelkasten</li><li> project/personal organization</li><li> notetaking</li><li> lightweight database</li></ul><div class="urtext_line">- any other writing or information management that can be done in text form</div>
 </div>
@@ -93,13 +93,12 @@
             Being in plaintext and having a syntax specification, it can also be used with:
 
             - Themes and syntax highlighting.
-            - Version control (Git, for example).    <div class="urtext_line"><h2>Requirements and Features</h2></div>
+            - Version control (Git, for example).   <div class="urtext_line"><h2>Requirements and Features</h2></div>
 <div class="urtext_line">Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they are not currently found together in one single existing tool; this was the motivation for creating Urtext.</div>
 <ul class="urtext-list"><li> It uses plain text files. Plaintext is fast, human-readable, flexible, cross-platform, device-portable, and future-proof.</li><li> It is usable across multiple platforms and devices.</li><li> Cascading complexity; use only the parts you need. Does not take months/years to learn.</li><li> Being open source, Urtext is extensible, hackable and customizable to specific needs.</li><li> It can compile, organize, and link content spread across hundreds or thousands of files. Files and content elements can be linked to one another in tree-like, recursive (tangled), and other non-hierarchical ways.</li><li> It has customizable and extensible metadata that does not rely on the file system.</li><li> It is decoupled from any particular text editor or interface ; it can be incorporated into any environment that runs Python, including any scriptable text editor or Python-scriptable environment capable of displaying a text editing view.</li><li> It can incorporate (embed) other plaintext syntaxes, including other markup languages and other programming language syntaxes.</li><li> There is no need to interact directly with the file system (creating, naming, saving, organizing files). File creation, naming and management is handled for you.</li><li> Future-proof. No reliance on anything that may not exist in 5 or 1000 years. Urtext files themselves are in plaintext, which is future-proof. The interpreter/compiler could be implemented in any sufficiently capable language desired, current, past or future.</li><li> Does not depend on a cloud service. Though cloud services can be used to sync project files among devices, the interpreter itself is made to operate locally; content wholly resides on the device being used.</li></ul><div class="urtext_line">Being in plaintext and having a syntax specification, it can also be used with:</div>
 <ul class="urtext-list"><li> Themes and syntax highlighting.</li></ul><div class="urtext_line">- Version control (Git, for example).</div>
 </div>
                                                                            
-
 
 
 </div>
@@ -127,7 +126,6 @@ See also:
 
 <a href="#003">Sublime Text Interface Tips</a>
 
-
 <div class="urtext_line"><h2>Installation and Setup (Desktop)</h2></div>
 <div class="urtext_line">For desktop use (PC/Mac/Linux) Urtext is implemented in Sublime Text.</div>
 <div class="urtext_line">1. Download Sublime Text. (https://www.sublimetext.com/).</div>
@@ -139,14 +137,13 @@ See also:
 <div class="urtext_line">See also:</div>
 <div class="urtext_line"><a href="#003">Sublime Text Interface Tips</a></div>
 </div>
-  <a href="#os4">Using Urtext in iOS with Pythonista</a>
   <h2>Basic Syntax</h2>
 
 
 All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname. <div class="urtext_line"><h2>Basic Syntax</h2></div>
 <div class="urtext_line">All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname.</div>
 <h3>The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing</h3>
-  "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node. More information: <a href="#oy5">Embedded Syntaxes and Pass Markers</a>  <div class="urtext_line"><h3>The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing</h3></div>
+  "END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node. More information: <a href="#oy5">Embedded Syntaxes and Pass Markers</a> <div class="urtext_line"><h3>The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing</h3></div>
 <div class="urtext_line">"END" marker. Use for embedding other syntaxes or to otherwise ignore syntax entirely. Here it enables us to document the Urtext syntax without actually using it correctly within this node. More information: <a href="#oy5">Embedded Syntaxes and Pass Markers</a></div>
 </div>
 
@@ -166,8 +163,7 @@ More information: <a href="#lmu">Pointers</a>
 `|` 
 Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.
 Example and more info: <a href="#4vu">Dynamic Titles</a>
-
-`^`
+`
 Compact Node marker. Must be the first non-whitespace character on a line. Must include an ID in order to parse.
 More information: <a href="#j6t">Compact Nodes</a>
 
@@ -184,8 +180,8 @@ Example:
 More information: <a href="#00x">Metadata</a>
   (Closing pass marker.)
 
- 
-<div class="urtext_line"</div>
+
+ <div class="urtext_line"</div>
 <div class="urtext_line">`{  }`</div>
 <div class="urtext_line">Inline Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.</div>
 <div class="urtext_line">More information: <a href="#004">Inline Nodes</a></div>
@@ -198,7 +194,7 @@ More information: <a href="#00x">Metadata</a>
 <div class="urtext_line">`|`</div>
 <div class="urtext_line">Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.</div>
 <div class="urtext_line">Example and more info: <a href="#4vu">Dynamic Titles</a></div>
-<div class="urtext_line">`^`</div>
+<div class="urtext_line">`</div>
 <div class="urtext_line">Compact Node marker. Must be the first non-whitespace character on a line. Must include an ID in order to parse.</div>
 <div class="urtext_line">More information: <a href="#j6t">Compact Nodes</a></div>
 <div class="urtext_line">`< >`</div>
@@ -223,7 +219,6 @@ Dynamic definitions are wrapped using double left and right square brackets. Not
 The dynamic definition below does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see <a href="#k8p">Dynamic Nodes</a>
 
 	  
-
  <div class="urtext_line"><h2>Dynamic Definitions : Syntax and Parameters</h2></div>
 <div class="urtext_line">Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)</div>
 <div class="urtext_line">Dynamic definitions are wrapped using double left and right square brackets. Note that there are no restrictions on spacing, indentation, newlines, or inclusion of other arbitrary text or whitespace. Dynamic definitions ignore whitespace and arbitrary text outside of defined parameters. The order of parameters within a definition is unimportant; they are evaluated as a group.</div>
@@ -235,60 +230,89 @@ The dynamic definition below does not actually do anything. It rather lists ever
 <div class="urtext_line"><h2>Key Bindings and Operations</h2></div>
 <h3>Navigation</h3>
  
-- Node Browser, Backlinks: `ctrl + shift + 1`
-- Nav Backward: `ctrl + shift + ,`
-- Home Node: `ctrl + shift + h`
-- List Projects: `ctrl + shift + o`
-- Toggle Traverse Mode: `ctrl + shift + r`
-- Node Browser, Include All Projects: `ctrl + shift + *`
-- Open Urtext Link:	`ctrl + shift + /`
-- Open Random Node: `ctrl + shift + f`
-- Node Browser: `ctrl + shift + e`
-- Nav Forward: `ctrl + shift + .`
-- Node Browser, Forward Links: `ctrl + shift + 2`
-  <div class="urtext_line"><h3>Navigation</h3></div>
-<ul class="urtext-list"><li> Node Browser, Backlinks: `ctrl + shift + 1`</li><li> Nav Backward: `ctrl + shift + ,`</li><li> Home Node: `ctrl + shift + h`</li><li> List Projects: `ctrl + shift + o`</li><li> Toggle Traverse Mode: `ctrl + shift + r`</li><li> Node Browser, Include All Projects: `ctrl + shift + *`</li><li> Open Urtext Link:	`ctrl + shift + /`</li><li> Open Random Node: `ctrl + shift + f`</li><li> Node Browser: `ctrl + shift + e`</li><li> Nav Forward: `ctrl + shift + .`</li></ul><div class="urtext_line">- Node Browser, Forward Links: `ctrl + shift + 2`</div>
-</div> 
+<div class="urtext_line"><h3>Navigation</h3></div>
+<h4>Node Browser, Backlinks: `ctrl + shift + 1`</h4>
+     <div class="urtext_line"><h4>Node Browser, Backlinks: `ctrl + shift + 1`</h4></div>
+</div>
+<h4>Nav Backward: `ctrl + shift + ,`</h4>
+   			<div class="urtext_line"><h4>Nav Backward: `ctrl + shift + ,`</h4></div>
+</div>
+<h4>Home Node: `ctrl + shift + h`</h4>
+  				<div class="urtext_line"><h4>Home Node: `ctrl + shift + h`</h4></div>
+</div>
+<h4>List Projects: `ctrl + shift + o`</h4>
+  			<div class="urtext_line"><h4>List Projects: `ctrl + shift + o`</h4></div>
+</div>
+<h4>Toggle Traverse Mode: `ctrl + shift + r`</h4>
+   	<div class="urtext_line"><h4>Toggle Traverse Mode: `ctrl + shift + r`</h4></div>
+</div>
+<h4>Node Browser, Include All Projects: `ctrl + shift + *`</h4>
+ <div class="urtext_line"><h4>Node Browser, Include All Projects: `ctrl + shift + *`</h4></div>
+</div>
+<h4>Open Urtext Link:	`ctrl + shift + /`</h4>
+ 			<div class="urtext_line"><h4>Open Urtext Link:	`ctrl + shift + /`</h4></div>
+</div>
+<h4>Open Random Node: `ctrl + shift + f`</h4>
+  			<div class="urtext_line"><h4>Open Random Node: `ctrl + shift + f`</h4></div>
+</div>
+<h4>Node Browser: `ctrl + shift + e`</h4>
+   			<div class="urtext_line"><h4>Node Browser: `ctrl + shift + e`</h4></div>
+</div>
+<h4>Nav Forward: `ctrl + shift + .`</h4>
+ 				<div class="urtext_line"><h4>Nav Forward: `ctrl + shift + .`</h4></div>
+</div>
+<h4>Node Browser, Forward Links: `ctrl + shift + 2`</h4>
+   <div class="urtext_line"><h4>Node Browser, Forward Links: `ctrl + shift + 2`</h4></div>
+</div> </div> 
 
 <h3>Content Insertion</h3>
  
-- Insert Compact Node: `ctrl + shift + ^`
-- Insert Timestamp: `ctrl + shift + t`
-- Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)
-- Add Node ID: `ctrl + shift + i`
-- Insert Dynamic Definition with Node: `ctrl + shift + ]`
-- Insert Inline Node: `ctrl + shift + [`
-- Insert Link to New Node: `ctrl + shift + '`
-- New Node: `ctrl + shift + ;`
-- Quick Tag from Other: `ctrl + shift + 0`
-  <div class="urtext_line"><h3>Content Insertion</h3></div>
-<ul class="urtext-list"><li> Insert Compact Node: `ctrl + shift + ^`</li><li> Insert Timestamp: `ctrl + shift + t`</li><li> Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)</li><li> Add Node ID: `ctrl + shift + i`</li><li> Insert Dynamic Definition with Node: `ctrl + shift + ]`</li><li> Insert Inline Node: `ctrl + shift + [`</li><li> Insert Link to New Node: `ctrl + shift + '`</li><li> New Node: `ctrl + shift + ;`</li></ul><div class="urtext_line">- Quick Tag from Other: `ctrl + shift + 0`</div>
+<div class="urtext_line"><h3>Content Insertion</h3></div>
+<h4>Insert Compact Node: `ctrl + shift + ^`</h4>
+   	<div class="urtext_line"><h4>Insert Compact Node: `ctrl + shift + ^`</h4></div>
 </div>
+<h4>Insert Timestamp: `ctrl + shift + t`</h4>
+    		<div class="urtext_line"><h4>Insert Timestamp: `ctrl + shift + t`</h4></div>
+</div>
+ Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)<div class="urtext_line">Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)</div>
+
+<h4>Add Node ID: `ctrl + shift + i`</h4>
+  			<div class="urtext_line"><h4>Add Node ID: `ctrl + shift + i`</h4></div>
+</div>
+<h4>Insert Dynamic Definition with Node: `ctrl + shift + ]`</h4>
+ <div class="urtext_line"><h4>Insert Dynamic Definition with Node: `ctrl + shift + ]`</h4></div>
+</div>
+<h4>Insert Inline Node: `ctrl + shift + [`</h4>
+  		<div class="urtext_line"><h4>Insert Inline Node: `ctrl + shift + [`</h4></div>
+</div>
+<h4>Insert Link to New Node: `ctrl + shift + '`</h4>
+ 	<div class="urtext_line"><h4>Insert Link to New Node: `ctrl + shift + '`</h4></div>
+</div>
+<h4>New Node: `ctrl + shift + ;`</h4>
+  				<div class="urtext_line"><h4>New Node: `ctrl + shift + ;`</h4></div>
+</div>
+<h4>Quick Tag from Other: `ctrl + shift + 0`</h4>
+ 	<div class="urtext_line"><h4>Quick Tag from Other: `ctrl + shift + 0`</h4></div>
+</div>  </div>
 
 <h3>Copy Links</h3>
  
-- Copy Link to this Node With Title: `ctrl + shift + super + c`
-- Copy Link to this Node: `ctrl + shift + c`
-  <div class="urtext_line"><h3>Copy Links</h3></div>
-<ul class="urtext-list"><li> Copy Link to this Node With Title: `ctrl + shift + super + c`</li></ul><div class="urtext_line">- Copy Link to this Node: `ctrl + shift + c`</div>
+<div class="urtext_line"><h3>Copy Links</h3></div>
+<h4>Copy Link to this Node With Title: `ctrl + shift + super + c`</h4>
+  <div class="urtext_line"><h4>Copy Link to this Node With Title: `ctrl + shift + super + c`</h4></div>
 </div>
+<h4>Copy Link to this Node: `ctrl + shift + c`</h4>
+  <div class="urtext_line"><h4>Copy Link to this Node: `ctrl + shift + c`</h4></div>
+</div>  </div>
 
 <h3>History</h3>
  
-- Toggle History Traverse: `ctrl + shift + g`
-  <div class="urtext_line"><h3>History</h3></div>
-<ul class="urtext-list"></ul><div class="urtext_line">- Toggle History Traverse: `ctrl + shift + g`</div>
-</div>
-
-See also <a href="#tx6"><h2>Key Bindings and Operations</h2> - Definitions</a>
+<div class="urtext_line"><h3>History</h3></div>
+<h4>Toggle History Traverse: `ctrl + shift + g`</h4>
+ <div class="urtext_line"><h4>Toggle History Traverse: `ctrl + shift + g`</h4></div>
+</div> </div>
 
 
-
-
-
-
-
-<div class="urtext_line">See also <a href="#tx6">Key Bindings and Operations - Definitions</a></div>
 </div>
   <h2>Sublime Text Interface Tips</h2>
 
@@ -302,7 +326,7 @@ See also <a href="#tx6"><h2>Key Bindings and Operations</h2> - Definitions</a>
 
 		The Sublime Text package includes a syntax definition file in YML format (`sublime_urtext.sublime_syntax`), along with two color schemes that provide syntax highlighting. Syntax highlighting makes everything easier by showing depth of node nesting and dimming certain elements of the syntax. Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ... 
 
-		Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (This can be undone by repeating the same but selecting Plain Text.)  <div class="urtext_line"><h3>Syntax Highlighting</h3></div>
+		Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (This can be undone by repeating the same but selecting Plain Text.) <div class="urtext_line"><h3>Syntax Highlighting</h3></div>
 <div class="urtext_line">The Sublime Text package includes a syntax definition file in YML format (`sublime_urtext.sublime_syntax`), along with two color schemes that provide syntax highlighting. Syntax highlighting makes everything easier by showing depth of node nesting and dimming certain elements of the syntax. Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ...</div>
 <div class="urtext_line">Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (This can be undone by repeating the same but selecting Plain Text.)</div>
 </div>
@@ -311,7 +335,7 @@ See also <a href="#tx6"><h2>Key Bindings and Operations</h2> - Definitions</a>
 	
 
 		If you prefer a spare, terminal-like view, hide tabs: View -> Hide Tabs.
-		This preference can also be set on a per-(Sublime)-project basis. See the Sublime documentation.  <div class="urtext_line"><h3>Hiding Tabs</h3></div>
+		This preference can also be set on a per-(Sublime)-project basis. See the Sublime documentation. <div class="urtext_line"><h3>Hiding Tabs</h3></div>
 <div class="urtext_line">If you prefer a spare, terminal-like view, hide tabs: View -> Hide Tabs.</div>
 <div class="urtext_line">This preference can also be set on a per-(Sublime)-project basis. See the Sublime documentation.</div>
 </div>
@@ -331,7 +355,7 @@ See also <a href="#tx6"><h2>Key Bindings and Operations</h2> - Definitions</a>
 
 			... to your Sublime project settings file. 
 
-			(Ignore the JSON syntax pass markers above beginning with `%%`. See <a href="#oy5">Embedded Syntaxes and Pass Markers</a> ) <div class="urtext_line"><h3>Hiding Line Numbers</h3></div>
+			(Ignore the JSON syntax pass markers above beginning with `%%`. See <a href="#oy5">Embedded Syntaxes and Pass Markers</a> )<div class="urtext_line"><h3>Hiding Line Numbers</h3></div>
 <div class="urtext_line">For an extra-clean look, hide line numbers by adding:</div>
 <div class="urtext_line">```</div>
 <div class="urtext_line">"settings" : {</div>
@@ -345,7 +369,7 @@ See also <a href="#tx6"><h2>Key Bindings and Operations</h2> - Definitions</a>
 	<h3>Full Screen / Distraction Free Mode</h3>
   
 
-		Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode.  <div class="urtext_line"><h3>Full Screen / Distraction Free Mode</h3></div>
+		Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode. <div class="urtext_line"><h3>Full Screen / Distraction Free Mode</h3></div>
 <div class="urtext_line">Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode.</div>
 </div>
 
@@ -359,7 +383,7 @@ See also <a href="#tx6"><h2>Key Bindings and Operations</h2> - Definitions</a>
 				},
 				```		
 		 
-	<div class="urtext_line"><h3>Disable Prompts for File Reload</h3></div>
+<div class="urtext_line"><h3>Disable Prompts for File Reload</h3></div>
 <div class="urtext_line">Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:</div>
 <div class="urtext_line">```</div>
 <div class="urtext_line">"settings" : {</div>
@@ -378,7 +402,7 @@ See also <a href="#tx6"><h2>Key Bindings and Operations</h2> - Definitions</a>
 				"draw_indent _guides": false,
 			}
 			```
-	<div class="urtext_line"><h3>Remove Indent Guides</h3></div>
+<div class="urtext_line"><h3>Remove Indent Guides</h3></div>
 <div class="urtext_line">Formatting plaintext using tab indentions can look messy if indent guides are on. To turn them off, add to your Sublime project settings file:</div>
 <div class="urtext_line">```</div>
 <div class="urtext_line">"settings" : {</div>
@@ -390,16 +414,16 @@ See also <a href="#tx6"><h2>Key Bindings and Operations</h2> - Definitions</a>
 	<h3>Save on Focus Lost</h3>
   
 
-			Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:
+		Urtext recompiles your project every time a file changes. To make this more automatic, and to reduce the need to manually press save after every edit, add to your Sublime settings file:
+
+		```
+			"settings" : { 
+			 "save_on_focus_lost": true 
+			}
+		```
 	
-			```
-				"settings" : { 
-				 "save_on_focus_lost": true 
-				}
-			```
-	
-	<div class="urtext_line"><h3>Save on Focus Lost</h3></div>
-<div class="urtext_line">Urtext recompiles your project every time a file changes. To make this more automatic, addto your Sublime settings file:</div>
+<div class="urtext_line"><h3>Save on Focus Lost</h3></div>
+<div class="urtext_line">Urtext recompiles your project every time a file changes. To make this more automatic, and to reduce the need to manually press save after every edit, add to your Sublime settings file:</div>
 <div class="urtext_line">```</div>
 <div class="urtext_line">"settings" : {</div>
 <div class="urtext_line">"save_on_focus_lost": true</div>
@@ -414,18 +438,15 @@ See also <a href="#tx6"><h2>Key Bindings and Operations</h2> - Definitions</a>
 
 		You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.  
 
-	<div class="urtext_line"><h3>Using a Sublime Project for an Urtext Project</h3></div>
+<div class="urtext_line"><h3>Using a Sublime Project for an Urtext Project</h3></div>
 <div class="urtext_line">( see https://www.sublimetext.com/docs/3/projects.html )</div>
 <div class="urtext_line">You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.</div>
 </div>
 
 
-
 </div>
-  
-<div class="urtext_line"><h1>Quick Start, Guides and Examples</h1></div>
+  <div class="urtext_line"><h1>Quick Start, Guides and Examples</h1></div>
 <div class="urtext_line"></div>
-<div class="urtext_line"><a href="#os4">Using Urtext in iOS with Pythonista</a></div>
 <div class="urtext_line"></div>
 <div class="urtext_line"></div>
 <div class="urtext_line"></div>
@@ -433,6 +454,91 @@ See also <a href="#tx6"><h2>Key Bindings and Operations</h2> - Definitions</a>
 </div>
 <h1>Reference</h1>
    
+  <h2>About Urtext</h2>
+
+
+    <div class="urtext_line"><h2>About Urtext</h2></div>
+<h3>Description</h3>
+ 
+        
+        Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The <a href="#znj">Basic Syntax</a> permits embedding of structural and instructional code into the text itself. 
+     
+        The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
+
+        Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).  <div class="urtext_line"><h3>Description</h3></div>
+<div class="urtext_line">Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The <a href="#znj">Basic Syntax</a> permits embedding of structural and instructional code into the text itself.</div>
+<div class="urtext_line">The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment.</div>
+<div class="urtext_line">Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext in a text editor requires an additional wrapper to pass messages between the text editor and Urtext. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).</div>
+</div>
+
+    <h3>Comparison To Other Tools</h3>
+ 
+        
+        Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for writing, connecting and organizing text.
+    
+        Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user.<div class="urtext_line"><h3>Comparison To Other Tools</h3></div>
+<div class="urtext_line">Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for writing, connecting and organizing text.</div>
+<div class="urtext_line">Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user.</div>
+</div>
+
+    <h3>Uses</h3>
+  
+        
+        Urtext has many uses, including but limited to:    
+            - prose writing
+            - research
+            - documentation
+            - knowledge/information base
+            - journaling
+            - Zettelkasten
+            - project/personal organization
+            - notetaking
+            - lightweight database
+            - any other writing or information management that can be done in text form
+       <div class="urtext_line"><h3>Uses</h3></div>
+<div class="urtext_line">Urtext has many uses, including but limited to:</div>
+<ul class="urtext-list"><li> prose writing</li><li> research</li><li> documentation</li><li> knowledge/information base</li><li> journaling</li><li> Zettelkasten</li><li> project/personal organization</li><li> notetaking</li><li> lightweight database</li></ul><div class="urtext_line">- any other writing or information management that can be done in text form</div>
+</div>
+
+    <h3>Requirements and Features</h3>
+   
+
+        Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they are not currently found together in one single existing tool; this was the motivation for creating Urtext.
+
+            - It uses plain text files. Plaintext is fast, human-readable, flexible, cross-platform, device-portable, and future-proof.
+
+            - It is usable across multiple platforms and devices.
+ 
+            - Cascading complexity; use only the parts you need. Does not take months/years to learn.
+
+            - Being open source, Urtext is extensible, hackable and customizable to specific needs.
+
+            - It can compile, organize, and link content spread across hundreds or thousands of files. Files and content elements can be linked to one another in tree-like, recursive (tangled), and other non-hierarchical ways.
+
+            - It has customizable and extensible metadata that does not rely on the file system.
+
+            - It is decoupled from any particular text editor or interface ; it can be incorporated into any environment that runs Python, including any scriptable text editor or Python-scriptable environment capable of displaying a text editing view.
+               
+            - It can incorporate (embed) other plaintext syntaxes, including other markup languages and other programming language syntaxes.
+   
+            - There is no need to interact directly with the file system (creating, naming, saving, organizing files). File creation, naming and management is handled for you.
+      
+            - Future-proof. No reliance on anything that may not exist in 5 or 1000 years. Urtext files themselves are in plaintext, which is future-proof. The interpreter/compiler could be implemented in any sufficiently capable language desired, current, past or future.
+   
+            - Does not depend on a cloud service. Though cloud services can be used to sync project files among devices, the interpreter itself is made to operate locally; content wholly resides on the device being used.
+
+            Being in plaintext and having a syntax specification, it can also be used with:
+
+            - Themes and syntax highlighting.
+            - Version control (Git, for example).   <div class="urtext_line"><h3>Requirements and Features</h3></div>
+<div class="urtext_line">Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they are not currently found together in one single existing tool; this was the motivation for creating Urtext.</div>
+<ul class="urtext-list"><li> It uses plain text files. Plaintext is fast, human-readable, flexible, cross-platform, device-portable, and future-proof.</li><li> It is usable across multiple platforms and devices.</li><li> Cascading complexity; use only the parts you need. Does not take months/years to learn.</li><li> Being open source, Urtext is extensible, hackable and customizable to specific needs.</li><li> It can compile, organize, and link content spread across hundreds or thousands of files. Files and content elements can be linked to one another in tree-like, recursive (tangled), and other non-hierarchical ways.</li><li> It has customizable and extensible metadata that does not rely on the file system.</li><li> It is decoupled from any particular text editor or interface ; it can be incorporated into any environment that runs Python, including any scriptable text editor or Python-scriptable environment capable of displaying a text editing view.</li><li> It can incorporate (embed) other plaintext syntaxes, including other markup languages and other programming language syntaxes.</li><li> There is no need to interact directly with the file system (creating, naming, saving, organizing files). File creation, naming and management is handled for you.</li><li> Future-proof. No reliance on anything that may not exist in 5 or 1000 years. Urtext files themselves are in plaintext, which is future-proof. The interpreter/compiler could be implemented in any sufficiently capable language desired, current, past or future.</li><li> Does not depend on a cloud service. Though cloud services can be used to sync project files among devices, the interpreter itself is made to operate locally; content wholly resides on the device being used.</li></ul><div class="urtext_line">Being in plaintext and having a syntax specification, it can also be used with:</div>
+<ul class="urtext-list"><li> Themes and syntax highlighting.</li></ul><div class="urtext_line">- Version control (Git, for example).</div>
+</div>
+                                                                           
+
+
+</div>
   <h2>Projects</h2>
 
 
@@ -455,33 +561,28 @@ To make an new empty project:
 	To do so, select `Urtext : Import Project` from the Sublime Command palette.
 
     Note the append will occur without a confirmation dialog, so if you are just experimenting with this system, consider making a copy of your file folder so you can revert without having to manually remove the metadata.
-	
-<div class="urtext_line"><h3>Using/Adding Existing Files</h3></div>
+	<div class="urtext_line"><h3>Using/Adding Existing Files</h3></div>
 <div class="urtext_line">Once a folder contains at least one file with a node ID, you can add and use existing plaintext files in the project without any modification. However for most of the benefits of Urtext you must minimally an ID (<a href="#01q">Node IDs</a>) in each file.</div>
 <div class="urtext_line">To do so, select `Urtext : Import Project` from the Sublime Command palette.</div>
 <div class="urtext_line">Note the append will occur without a confirmation dialog, so if you are just experimenting with this system, consider making a copy of your file folder so you can revert without having to manually remove the metadata.</div>
-</div>	
-</div>
+</div>	 </div>
   <h2>Nodes</h2>
-
+Nodes _
 
 A node is region, or set of regions, of a file, up to and including the entire file. A file is itself a node. All nodes can contain other nodes.
 
-The identity of an Urtext node persists no matter its containing filename. This is accomplished by assigning each node a unique identifier of alphanumeric characters, providing over 46,000 possible nodes per project. 
+The identity of an Urtext node persists no matter its containing filename. This is accomplished by assigning each unique identifier, providing over 46,000 possible nodes per project. See <a href="#01q">Node IDs</a> for more information.
 
 Urtext generates IDs automatically on creation of new nodes. ID's can be changed without affecting functionality, though links must then be manually updated as well. 
 
 It is possible to use files containing no IDs in an Urtext project, but then most of the features of Urtext are lost.
 
-
-Node IDs are assigned in random order and have no special meaning except as a unique identifier. For more information see <a href="#01q">Node IDs</a>.
-
 <div class="urtext_line"><h2>Nodes</h2></div>
+<div class="urtext_line">Nodes _</div>
 <div class="urtext_line">A node is region, or set of regions, of a file, up to and including the entire file. A file is itself a node. All nodes can contain other nodes.</div>
-<div class="urtext_line">The identity of an Urtext node persists no matter its containing filename. This is accomplished by assigning each node a unique identifier of alphanumeric characters, providing over 46,000 possible nodes per project.</div>
+<div class="urtext_line">The identity of an Urtext node persists no matter its containing filename. This is accomplished by assigning each unique identifier, providing over 46,000 possible nodes per project. See <a href="#01q">Node IDs</a> for more information.</div>
 <div class="urtext_line">Urtext generates IDs automatically on creation of new nodes. ID's can be changed without affecting functionality, though links must then be manually updated as well.</div>
 <div class="urtext_line">It is possible to use files containing no IDs in an Urtext project, but then most of the features of Urtext are lost.</div>
-<div class="urtext_line">Node IDs are assigned in random order and have no special meaning except as a unique identifier. For more information see <a href="#01q">Node IDs</a>.</div>
 <h3>Types of Nodes</h3>
   
   	<h4>File Nodes</h4>
@@ -490,20 +591,21 @@ Node IDs are assigned in random order and have no special meaning except as a un
 The most basic node is a single file. It may or may not contain other nodes nested inside it.
 
 To create a new file-level node: <a href="#ve3">New Node: `ctrl + shift + ;`</a>. A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
-
 <div class="urtext_line"><h4>File Nodes</h4></div>
 <div class="urtext_line">The most basic node is a single file. It may or may not contain other nodes nested inside it.</div>
 <div class="urtext_line">To create a new file-level node: <a href="#ve3">New Node: `ctrl + shift + ;`</a>. A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.</div>
 </div>
   	<h4>Inline Nodes</h4>
-                                                                 
+Inline Nodes _                                                       
 	 
 The syntax for inline nodes is to wrap the content in curly braces:
 
   <div class="urtext_line"><h4>Inline Nodes</h4></div>
+<div class="urtext_line">Inline Nodes _</div>
 <div class="urtext_line">The syntax for inline nodes is to wrap the content in curly braces:</div>
 <h5>Example Inline Node</h5>
-   <div class="urtext_line"><h5>Example Inline Node</h5></div>
+ Example Inline Node _  <div class="urtext_line"><h5>Example Inline Node</h5></div>
+<div class="urtext_line">Example Inline Node _</div>
 </div>
 
 Create an inline nodes with <a href="#rzx">Insert Inline Node: `ctrl + shift + [`</a>. Inside the inserted double curly braces is a new node with an auto-generated ID.   
@@ -516,7 +618,7 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 <div class="urtext_line">To wrap existing content into an inline node, first select the content and use the same keypress.</div>
 <div class="urtext_line">Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. When syntax highlighting is active, inline node wrappers are tinted to showing nesting level:</div>
 <h5>Example first level</h5>
-   
+  
         <div class="urtext_line"><h5>Example first level</h5></div>
 <h6>second level</h6>
   
@@ -524,83 +626,66 @@ Nodes can be nested arbitrarily deep inside other nodes, whether the parent node
 <h7>third test level</h7>
  
                 <div class="urtext_line"><h7>third test level</h7></div>
-<h8>test fourth level</h8>
+<h8>fourth level</h8>
   
-                    <div class="urtext_line"><h8>test fourth level</h8></div>
+                    <div class="urtext_line"><h8>fourth level</h8></div>
 <h9>fifth level</h9>
-    <div class="urtext_line"><h9>fifth level</h9></div>
+   <div class="urtext_line"><h9>fifth level</h9></div>
 </div>
-                    </div>  
-                </div>  
-           </div>  
+                   </div>  
+               </div>  
+          </div>  
+
+    (The metadata entry above excludes this example from the Table of Contents tree. See <a href="#v7r">"Table of Contents" Dynamic Definition</a> for information)
     
-    (The metadata entry above excludes this example from the Table of Contents tree.
-    See <a href="#v7r">"Table of Contents" Dynamic Definition</a> for information)
-    <div class="urtext_line">(The metadata entry above excludes this example from the Table of Contents tree.</div>
-<div class="urtext_line">See <a href="#v7r">"Table of Contents" Dynamic Definition</a> for information)</div>
+   <div class="urtext_line">(The metadata entry above excludes this example from the Table of Contents tree. See <a href="#v7r">"Table of Contents" Dynamic Definition</a> for information)</div>
 </div>  
 
 (For Markdown export, a screenshot is provided showing indentation and highlighting:) f>./files/node-nesting-example.png
 
-Note that every opening curly bracket must be closed in the same file. Every node requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Metadata</a> as at the bottom of this file. Nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are defined by the file itself.
+Note that every opening curly bracket must be closed in the same file. Every node requires an ID between its opening and closing brackets. Nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are the file itself.
 
 For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.    
 
 <div class="urtext_line">(For Markdown export, a screenshot is provided showing indentation and highlighting:) f>./files/node-nesting-example.png</div>
-<div class="urtext_line">Note that every opening curly bracket must be closed in the same file. Every node requires an ID between its opening and closing brackets. The examples above use <a href="#2a3">Trailing Node IDs</a>. You can also use regular <a href="#00x">Metadata</a> as at the bottom of this file. Nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are defined by the file itself.</div>
+<div class="urtext_line">Note that every opening curly bracket must be closed in the same file. Every node requires an ID between its opening and closing brackets. Nodes at the file level (<a href="#ekz">File Nodes</a>) do not use curly-braces, as their region boundaries are the file itself.</div>
 <div class="urtext_line">For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.</div>
 <h5>Escaping Curly Brackets</h5>
   
 
     If you need to use curly brackets in your text, you can escape the Urtext syntax by preceding the bracket with a backward slash; this will prevent them from being parsed: \{ \}
 
-    To ignoring syntax elements more globally, and/or to embed other syntaxes that use Urtext characters, including curly brackets, such as JSON, PHP, and JavaScript, see <a href="#oy5">Embedded Syntaxes and Pass Markers</a>
+    To ignore syntax elements more globally, and/or to embed other syntaxes that use Urtext characters, such as JSON, PHP, and JavaScript, see <a href="#oy5">Embedded Syntaxes and Pass Markers</a>
 
-  <div class="urtext_line"><h5>Escaping Curly Brackets</h5></div>
+ <div class="urtext_line"><h5>Escaping Curly Brackets</h5></div>
 <div class="urtext_line">If you need to use curly brackets in your text, you can escape the Urtext syntax by preceding the bracket with a backward slash; this will prevent them from being parsed: \{ \}</div>
-<div class="urtext_line">To ignoring syntax elements more globally, and/or to embed other syntaxes that use Urtext characters, including curly brackets, such as JSON, PHP, and JavaScript, see <a href="#oy5">Embedded Syntaxes and Pass Markers</a></div>
+<div class="urtext_line">To ignore syntax elements more globally, and/or to embed other syntaxes that use Urtext characters, such as JSON, PHP, and JavaScript, see <a href="#oy5">Embedded Syntaxes and Pass Markers</a></div>
 </div>
-
-<h5>Uses for inline nodes</h5>
- 
-    
-    such as adding comments/edits, tracking anchors and pointers in documents.  
-    Also that the title is the first line of text.
-    
-     <div class="urtext_line"><h5>Uses for inline nodes</h5></div>
-<div class="urtext_line">such as adding comments/edits, tracking anchors and pointers in documents.</div>
-<div class="urtext_line">Also that the title is the first line of text.</div>
-</div>
-
-
-
 </div>
 	<h4>Compact Nodes</h4>
 
 
 Key: <a href="#1qq">Insert Compact Node: `ctrl + shift + ^`</a>
 
-For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the ^ character appears, with the closing wrapper being the end of the same line. 
+For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the character appears, with the closing wrapper being the end of the same line. 
 
 Like all nodes, a compact node requires an ID. Like all nodes, it can contain metadata and even inline nodes, as long as the entire contents, including wrappers and metadata, are contained on a single line. (Note that "line" in this case refers to consecutive characters between explicit line breaks, and not to lines in the editor, which may be arbitrarily wrapped.)
 
 
 <div class="urtext_line"><h4>Compact Nodes</h4></div>
 <div class="urtext_line">Key: <a href="#1qq">Insert Compact Node: `ctrl + shift + ^`</a></div>
-<div class="urtext_line">For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the ^ character appears, with the closing wrapper being the end of the same line.</div>
+<div class="urtext_line">For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the character appears, with the closing wrapper being the end of the same line.</div>
 <div class="urtext_line">Like all nodes, a compact node requires an ID. Like all nodes, it can contain metadata and even inline nodes, as long as the entire contents, including wrappers and metadata, are contained on a single line. (Note that "line" in this case refers to consecutive characters between explicit line breaks, and not to lines in the editor, which may be arbitrarily wrapped.)</div>
 <h5>Example Compact Node</h5>
-   <div class="urtext_line"><h5>Example Compact Node</h5></div>
+  <div class="urtext_line"><h5>Example Compact Node</h5></div>
 <h6>Example inline node within the compact node.</h6>
    <div class="urtext_line"><h6>Example inline node within the compact node.</h6></div>
 </div> </div>
 
 f>./files/example-compact-node.png
 
-
 <div class="urtext_line">f>./files/example-compact-node.png</div>
-</div>   
-	<div class="urtext_line"><h3>Types of Nodes</h3></div>
+</div>   <div class="urtext_line"><h3>Types of Nodes</h3></div>
 <div class="urtext_line"></div>
 <div class="urtext_line"></div>
 <div class="urtext_line"></div>
@@ -609,99 +694,9 @@ f>./files/example-compact-node.png
 <h3>Node Titles</h3>
  
 
-	By default, the full first non-whitespace line of any node is the node's title. This can be overridden using the `title` metadata key. <div class="urtext_line"><h3>Node Titles</h3></div>
-<div class="urtext_line">By default, the full first non-whitespace line of any node is the node's title. This can be overridden using the `title` metadata key.</div>
+	By default, the full first non-whitespace line of any node is the node's title. This can be overridden using the `title` metadata key or by following the desired text with the underscore (`_`) character as used in this document.<div class="urtext_line"><h3>Node Titles</h3></div>
+<div class="urtext_line">By default, the full first non-whitespace line of any node is the node's title. This can be overridden using the `title` metadata key or by following the desired text with the underscore (`_`) character as used in this document.</div>
 </div>
-
-<h3>Node IDs</h3>
-
-
-The purpose of Node IDs is to uniquely identify each node in a project.
-
-Nodes IDs are three characters long and incorporate all ten digits (0 - 9) and all letters a - z, resulting in over 46,000 possible unique identifiers per project.
-
-Node IDs are generated automatically by Urtext; every newly created node is assigned an available unused ID as a metadata entry:
-
-	 <- This is not just an example; it specifies the ID of this node.
-
-f>./files/example-node-id.png
-
-Note that the node ID entry can appear anywhere in a node. If you want to keep node ID's out of the way, such as at the end or beginning of each node, or separate from the rest of your metadata, this will not affect their functionality.
-
-<div class="urtext_line"><h3>Node IDs</h3></div>
-<div class="urtext_line">The purpose of Node IDs is to uniquely identify each node in a project.</div>
-<div class="urtext_line">Nodes IDs are three characters long and incorporate all ten digits (0 - 9) and all letters a - z, resulting in over 46,000 possible unique identifiers per project.</div>
-<div class="urtext_line">Node IDs are generated automatically by Urtext; every newly created node is assigned an available unused ID as a metadata entry:</div>
-<div class="urtext_line"><- This is not just an example; it specifies the ID of this node.</div>
-<div class="urtext_line">f>./files/example-node-id.png</div>
-<div class="urtext_line">Note that the node ID entry can appear anywhere in a node. If you want to keep node ID's out of the way, such as at the end or beginning of each node, or separate from the rest of your metadata, this will not affect their functionality.</div>
-<h4>Trailing Node IDs</h4>
-  
-
-	To keep IDs even more out of sight, they can also be specified as the last three characters of a node, without a key or a double-colon syntax. Syntax highlighting will then shade them to appear unobtrusive. This convention is used throughout most of this documentation. This only works for nodes wrapped in brackets, not for compact or file nodes.
-
-	Note that trailing node IDs must be preceded by a space.  
-
-	Key: <a href="#9zp">Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)</a>
-
-	f>./files/example-trailing-id.png
-
-	<div class="urtext_line"><h4>Trailing Node IDs</h4></div>
-<div class="urtext_line">To keep IDs even more out of sight, they can also be specified as the last three characters of a node, without a key or a double-colon syntax. Syntax highlighting will then shade them to appear unobtrusive. This convention is used throughout most of this documentation. This only works for nodes wrapped in brackets, not for compact or file nodes.</div>
-<div class="urtext_line">Note that trailing node IDs must be preceded by a space.</div>
-<div class="urtext_line">Key: <a href="#9zp">Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)</a></div>
-<div class="urtext_line">f>./files/example-trailing-id.png</div>
-</div>
-
-
-IDs have no special meaning, do not represent the order of node creation within a project, and are not related to or "hashed from" node content. They are assigned in random order so the probability of accidentally creating two nodes with the same ID is minimal when using the project across many devices that may not always be in sync.
-
-When an ID is deleted from a project, new nodes are later assigned to vacant node IDs.
-
-<div class="urtext_line">IDs have no special meaning, do not represent the order of node creation within a project, and are not related to or "hashed from" node content. They are assigned in random order so the probability of accidentally creating two nodes with the same ID is minimal when using the project across many devices that may not always be in sync.</div>
-<div class="urtext_line">When an ID is deleted from a project, new nodes are later assigned to vacant node IDs.</div>
-<h4>Inserting a Node ID manually</h4>
- 
-
-	Control-Shift-I will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually.  <div class="urtext_line"><h4>Inserting a Node ID manually</h4></div>
-<div class="urtext_line">Control-Shift-I will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually.</div>
-</div>
-
-<h3>Node IDs</h3> can also be user-created arbitrarily if for some reason you want to. If you do this, note that node IDs are case-insensitive.
-
-If more than one Node ID appears in a node, only the first one is used as the Node's ID; the rest are treated (indexed) as regular metadata.
-
-<div class="urtext_line">Node IDs can also be user-created arbitrarily if for some reason you want to. If you do this, note that node IDs are case-insensitive.</div>
-<div class="urtext_line">If more than one Node ID appears in a node, only the first one is used as the Node's ID; the rest are treated (indexed) as regular metadata.</div>
-<h4>Duplicate Node IDs</h4>
- 	
-
-	If two nodes end up with the same ID, only one (the first one found) will be assigned the ID. The entire second file containing the node with the duplicate ID will contain a warning message. See <a href="#bpk">Errors and Warnings</a>
-
-	To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use <a href="#gv9">Add Node ID: `ctrl + shift + i`</a> for this (as described above), after the rest of the project is compiled.
-	
-<div class="urtext_line"><h4>Duplicate Node IDs</h4></div>
-<div class="urtext_line">If two nodes end up with the same ID, only one (the first one found) will be assigned the ID. The entire second file containing the node with the duplicate ID will contain a warning message. See <a href="#bpk">Errors and Warnings</a></div>
-<div class="urtext_line">To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use <a href="#gv9">Add Node ID: `ctrl + shift + i`</a> for this (as described above), after the rest of the project is compiled.</div>
-</div>
-
-<h4>Generating a node ID manually</h4>
- 
-If you accidentally delete a Node ID or need to insert one arbitrarily, press node control-shift-i. 
-
-
-<div class="urtext_line"><h4>Generating a node ID manually</h4></div>
-<div class="urtext_line">If you accidentally delete a Node ID or need to insert one arbitrarily, press node control-shift-i.</div>
-</div>
-
-
-
-<div class="urtext_line"></div>
-</div>
-
-
-
-<div class="urtext_line"></div>
 </div>
   <h2>Metadata</h2>
 
@@ -721,7 +716,7 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 
        
       
-  Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. <div class="urtext_line"><h3>General Syntax</h3></div>
+  Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed.<div class="urtext_line"><h3>General Syntax</h3></div>
 <div class="urtext_line">Every node can have an unlimited number of metadata entries. Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:</div>
 <div class="urtext_line">Nodes can be searched and sorted by their metadata using <a href="#07u">Dynamic Definitions</a>. Metadata entries also "remember" their location, allowing them to serve double duty contextual markers or "bookmarks".</div>
 <div class="urtext_line">Other than a few reserved key/value pairs, metadata is user-defined. Keys must be single words, though characters such as dash and underscore are allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line:</div>
@@ -735,7 +730,7 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 <h4>Syntax and Format</h4>
    
 
-      Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext utilizes the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:
+      Text between two angled brackets (`< >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext utilizes the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:
 
             
             
@@ -745,8 +740,8 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
 
       Press <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a> to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the <a href="#00n">`timestamp_format`</a> key.
 
-      Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`. Like all metadata, they remember their position and may function doubly as anchors/bookmarks. <div class="urtext_line"><h4>Syntax and Format</h4></div>
-<div class="urtext_line">Text between two angled brackets (`<  >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext utilizes the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:</div>
+      Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`. Like all metadata, they remember their position and may function doubly as anchors/bookmarks.<div class="urtext_line"><h4>Syntax and Format</h4></div>
+<div class="urtext_line">Text between two angled brackets (`< >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext utilizes the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:</div>
 <div class="urtext_line">... and so on</div>
 <div class="urtext_line">Press <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a> to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the <a href="#00n">`timestamp_format`</a> key.</div>
 <div class="urtext_line">Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`. Like all metadata, they remember their position and may function doubly as anchors/bookmarks.</div>
@@ -762,15 +757,15 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
   <h4>Time Zones</h4>
      
 
-      Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the  <a href="#boe">`timezone`</a> key in project_settings to another valid value. <div class="urtext_line"><h4>Time Zones</h4></div>
+      Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the  <a href="#boe">`timezone`</a> key in project_settings to another valid value.<div class="urtext_line"><h4>Time Zones</h4></div>
 <div class="urtext_line">Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the  <a href="#boe">`timezone`</a> key in project_settings to another valid value.</div>
 </div>   
 
-  </div>
+ </div>
 
 <h3>Case-sensitivity</h3>
   
-    For comparison/filtering/sorting purposes, values are not case-sensitive. <div class="urtext_line"><h3>Case-sensitivity</h3></div>
+    For comparison/filtering/sorting purposes, values are not case-sensitive.<div class="urtext_line"><h3>Case-sensitivity</h3></div>
 <div class="urtext_line">For comparison/filtering/sorting purposes, values are not case-sensitive.</div>
 </div>
 
@@ -787,7 +782,7 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
          Provides a way to give nodes a sort order in <a href="#01i">The Node Browser</a>.  Indexed nodes will sort before (above) the others, lowest numbers appearing first. To utilize, add a two-digit sort index (00-99) to a node, such as:  
          You can give the same index number to multiple nodes; in this case they sort first by index, then by timestamp, newest first.
 
-         Unindexed nodes will display underneath indexed nodes, by timestamp, newest first. <div class="urtext_line"><h4>`index`</h4></div>
+         Unindexed nodes will display underneath indexed nodes, by timestamp, newest first.<div class="urtext_line"><h4>`index`</h4></div>
 <div class="urtext_line">Provides a way to give nodes a sort order in <a href="#01i">The Node Browser</a>.  Indexed nodes will sort before (above) the others, lowest numbers appearing first. To utilize, add a two-digit sort index (00-99) to a node, such as:</div>
 <div class="urtext_line">You can give the same index number to multiple nodes; in this case they sort first by index, then by timestamp, newest first.</div>
 <div class="urtext_line">Unindexed nodes will display underneath indexed nodes, by timestamp, newest first.</div>
@@ -796,19 +791,18 @@ If you accidentally delete a Node ID or need to insert one arbitrarily, press no
       <h4>`title`</h4>
  
         
-        Overrides the node title, which is by default the full first non-whitespace line. <div class="urtext_line"><h4>`title`</h4></div>
+        Overrides the node title, which is by default the full first non-whitespace line.<div class="urtext_line"><h4>`title`</h4></div>
 <div class="urtext_line">Overrides the node title, which is by default the full first non-whitespace line.</div>
 </div>
 
       <h4>`def`</h4>
   
 
-        Generated automatically in a dynamic node, contains a link to the node containing the definition. <div class="urtext_line"><h4>`def`</h4></div>
+        Generated automatically in a dynamic node, contains a link to the node containing the definition.<div class="urtext_line"><h4>`def`</h4></div>
 <div class="urtext_line">Generated automatically in a dynamic node, contains a link to the node containing the definition.</div>
 </div>
      
-  </div>
-
+ </div>
 
 </div>
   <h2>Dynamic Nodes</h2>
@@ -825,7 +819,7 @@ Dynamic nodes contain content aggregated from the contents of other nodes. Dynam
 
 	Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-	The key <a href="#jsc">Insert Dynamic Definition with Node: `ctrl + shift + ]`</a> creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.   <div class="urtext_line"><h3>Dynamic Definitions</h3></div>
+	The key <a href="#jsc">Insert Dynamic Definition with Node: `ctrl + shift + ]`</a> creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.  <div class="urtext_line"><h3>Dynamic Definitions</h3></div>
 <div class="urtext_line">Dynamic Definitions _</div>
 <div class="urtext_line">Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets , and have there own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference <a href="#87g">Dynamic Definitions : Syntax and Parameters</a>.</div>
 <div class="urtext_line">Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)</div>
@@ -841,8 +835,6 @@ There are two main kinds of dynamic output, Lists and Collections:
 
 
 
-
-
 			<div class="urtext_line"><h3>Lists</h3></div>
 <h4>Example: Nodes from the Documentation</h4>
 
@@ -854,7 +846,7 @@ There are two main kinds of dynamic output, Lists and Collections:
 			Inline Nodes<a href="#004">Inline Nodes</a>
 			Syntax and Format<a href="#005">Syntax and Format</a>
 			Requirements and Features<a href="#006">Requirements and Features</a>
-			Example Inline Node<a href="#00e">Example Inline Node</a>
+			Example Tree<a href="#00e">Example Tree</a>
 			Links and Pointers<a href="#00j">Links and Pointers</a>
 			Collections<a href="#00k">Collections</a>
 			project_settings<a href="#00l">project_settings</a>
@@ -868,14 +860,14 @@ There are two main kinds of dynamic output, Lists and Collections:
 			Traverse Mode<a href="#00w">Traverse Mode</a>
 			Metadata<a href="#00x">Metadata</a>
 			`index`<a href="#00z">`index`</a>
-			  <div class="urtext_line"><h4>Example: Nodes from the Documentation</h4></div>
+			 <div class="urtext_line"><h4>Example: Nodes from the Documentation</h4></div>
 <div class="urtext_line">Example Child Node Using a Node Pointer<a href="#001">Example Child Node Using a Node Pointer</a></div>
 <div class="urtext_line">Full Screen / Distraction Free Mode<a href="#002">Full Screen / Distraction Free Mode</a></div>
 <div class="urtext_line">Sublime Text Interface Tips<a href="#003">Sublime Text Interface Tips</a></div>
 <div class="urtext_line">Inline Nodes<a href="#004">Inline Nodes</a></div>
 <div class="urtext_line">Syntax and Format<a href="#005">Syntax and Format</a></div>
 <div class="urtext_line">Requirements and Features<a href="#006">Requirements and Features</a></div>
-<div class="urtext_line">Example Inline Node<a href="#00e">Example Inline Node</a></div>
+<div class="urtext_line">Example Tree<a href="#00e">Example Tree</a></div>
 <div class="urtext_line">Links and Pointers<a href="#00j">Links and Pointers</a></div>
 <div class="urtext_line">Collections<a href="#00k">Collections</a></div>
 <div class="urtext_line">project_settings<a href="#00l">project_settings</a></div>
@@ -895,7 +887,6 @@ There are two main kinds of dynamic output, Lists and Collections:
 	f>./files/example-list-1.png
 
    Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
-
 
  <div class="urtext_line">f>./files/example-list-1-definition.png</div>
 <div class="urtext_line">f>./files/example-list-1.png</div>
@@ -930,16 +921,16 @@ Lists can be expanded into trees that show the outline of many nodes across many
 			├── Save on Focus Lost<a href="#sqq">Save on Focus Lost</a>
 			└── Using a Sublime Project for an Urtext Project<a href="#c3n">Using a Sublime Project for an Urtext Project</a>
 			Inline Nodes<a href="#004">Inline Nodes</a>
-			├── Example Inline Node<a href="#00e">Example Inline Node</a>
+			├── Example Inline Node <a href="#00e">Example Tree</a>
 			├── Example first level<a href="#8fv">Example first level</a>
 			│   └── second level<a href="#6qj">second level</a>
 			│       └── third test level<a href="#80d">third test level</a>
-			│           └── test fourth level<a href="#5pq">test fourth level</a>
+			│           └── test fourth level<a href="#5pq">fourth level</a>
 			├── Escaping Curly Brackets<a href="#8a8">Escaping Curly Brackets</a>
-			└── Uses for inline nodes<a href="#ia5">Uses for inline nodes</a>
+			└── Uses for inline nodes[ MISSING LINK : ia5 ] 
 			Syntax and Format<a href="#005">Syntax and Format</a>
 			Requirements and Features<a href="#006">Requirements and Features</a>
-			Example Inline Node<a href="#00e">Example Inline Node</a>
+			Example Inline Node <a href="#00e">Example Tree</a>
 			Links and Pointers<a href="#00j">Links and Pointers</a>
 			├── Links<a href="#0y2">Links</a>
 			│   └── Sublime Text tools to help with linking<a href="#00m">Sublime Text tools to help with linking</a>
@@ -959,16 +950,8 @@ Lists can be expanded into trees that show the outline of many nodes across many
 			        └── Example Recursive Node Tree<a href="#01n">Example Recursive Node Tree</a>
 			Collections<a href="#00k">Collections</a>
 			└── Example Collection : "Last Updated"<a href="#aoq">Example Collection : "Last Updated"</a>
-			project_settings<a href="#00l">project_settings</a>
-			├── `title`<a href="#egg">`title`</a>
-			├── `project_title`<a href="#xqu">`project_title`</a>
-			├── `home`<a href="#d6u">`home`</a>
-			├── `console_log`<a href="#1lz">`console_log`</a>
-			├── `filenames`<a href="#lch">`filenames`</a>
-			├── `timestamp_format`<a href="#00n">`timestamp_format`</a>
-			├── `timezone`<a href="#boe">`timezone`</a>
-			└── `node_date_keyname`<a href="#8p4">`node_date_keyname`</a>
-			  <div class="urtext_line"><h5>Example Tree</h5></div>
+			Sublime Text tools to help with linking<a href="#00m">Sublime Text tools to help with linking</a>
+		;  <div class="urtext_line"><h5>Example Tree</h5></div>
 <div class="urtext_line">Example Child Node Using a Node Pointer<a href="#001">Example Child Node Using a Node Pointer</a></div>
 <div class="urtext_line">Full Screen / Distraction Free Mode<a href="#002">Full Screen / Distraction Free Mode</a></div>
 <div class="urtext_line">Sublime Text Interface Tips<a href="#003">Sublime Text Interface Tips</a></div>
@@ -981,16 +964,16 @@ Lists can be expanded into trees that show the outline of many nodes across many
 <div class="urtext_line">├── Save on Focus Lost<a href="#sqq">Save on Focus Lost</a></div>
 <div class="urtext_line">└── Using a Sublime Project for an Urtext Project<a href="#c3n">Using a Sublime Project for an Urtext Project</a></div>
 <div class="urtext_line">Inline Nodes<a href="#004">Inline Nodes</a></div>
-<div class="urtext_line">├── Example Inline Node<a href="#00e">Example Inline Node</a></div>
+<div class="urtext_line">├── Example Inline Node <a href="#00e">Example Tree</a></div>
 <div class="urtext_line">├── Example first level<a href="#8fv">Example first level</a></div>
 <div class="urtext_line">│   └── second level<a href="#6qj">second level</a></div>
 <div class="urtext_line">│       └── third test level<a href="#80d">third test level</a></div>
-<div class="urtext_line">│           └── test fourth level<a href="#5pq">test fourth level</a></div>
+<div class="urtext_line">│           └── test fourth level<a href="#5pq">fourth level</a></div>
 <div class="urtext_line">├── Escaping Curly Brackets<a href="#8a8">Escaping Curly Brackets</a></div>
-<div class="urtext_line">└── Uses for inline nodes<a href="#ia5">Uses for inline nodes</a></div>
+<div class="urtext_line">└── Uses for inline nodes[ MISSING LINK : ia5 ] </div>
 <div class="urtext_line">Syntax and Format<a href="#005">Syntax and Format</a></div>
 <div class="urtext_line">Requirements and Features<a href="#006">Requirements and Features</a></div>
-<div class="urtext_line">Example Inline Node<a href="#00e">Example Inline Node</a></div>
+<div class="urtext_line">Example Inline Node <a href="#00e">Example Tree</a></div>
 <div class="urtext_line">Links and Pointers<a href="#00j">Links and Pointers</a></div>
 <div class="urtext_line">├── Links<a href="#0y2">Links</a></div>
 <div class="urtext_line">│   └── Sublime Text tools to help with linking<a href="#00m">Sublime Text tools to help with linking</a></div>
@@ -1010,18 +993,11 @@ Lists can be expanded into trees that show the outline of many nodes across many
 <div class="urtext_line">└── Example Recursive Node Tree<a href="#01n">Example Recursive Node Tree</a></div>
 <div class="urtext_line">Collections<a href="#00k">Collections</a></div>
 <div class="urtext_line">└── Example Collection : "Last Updated"<a href="#aoq">Example Collection : "Last Updated"</a></div>
-<div class="urtext_line">project_settings<a href="#00l">project_settings</a></div>
-<div class="urtext_line">├── `title`<a href="#egg">`title`</a></div>
-<div class="urtext_line">├── `project_title`<a href="#xqu">`project_title`</a></div>
-<div class="urtext_line">├── `home`<a href="#d6u">`home`</a></div>
-<div class="urtext_line">├── `console_log`<a href="#1lz">`console_log`</a></div>
-<div class="urtext_line">├── `filenames`<a href="#lch">`filenames`</a></div>
-<div class="urtext_line">├── `timestamp_format`<a href="#00n">`timestamp_format`</a></div>
-<div class="urtext_line">├── `timezone`<a href="#boe">`timezone`</a></div>
-<div class="urtext_line">└── `node_date_keyname`<a href="#8p4">`node_date_keyname`</a></div>
+<div class="urtext_line">Sublime Text tools to help with linking<a href="#00m">Sublime Text tools to help with linking</a></div>
+<div class="urtext_line">;</div>
 </div>
 
-   </div>
+  </div>
 
 In practice most of these nodes have only a 2-3 levels of nesting. For an example of a larger tree, look at the <h4>"Table of Contents" Dynamic Definition</h4>
 
@@ -1042,18 +1018,19 @@ Here is the dynamic definition that generates the <a href="#e5j">Table of Conten
 			Example first level<a href="#8fv">Example first level</a>
 			└── second level<a href="#6qj">second level</a>
 			    └── third test level<a href="#80d">third test level</a>
-			        └── test fourth level<a href="#5pq">test fourth level</a>
-			            └── fifth level<a href="#xc9">fifth level</a>
+			        └── test fourth level<a href="#5pq">fourth level</a>
+			            └── fifth level <a href="#xc9">Nodes Excluded from the Table of Contents</a>
 			This node is just here as a destination from the node pointer in  Basic Syntax<a href="#ttt">This node is just here as a destination from the node pointer in  Basic Syntax</a>
 			
-			  <div class="urtext_line"><h5>Nodes Excluded from the Table of Contents</h5></div>
+		;  <div class="urtext_line"><h5>Nodes Excluded from the Table of Contents</h5></div>
 <div class="urtext_line">The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing<a href="#8e5">The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing</a></div>
 <div class="urtext_line">Example first level<a href="#8fv">Example first level</a></div>
 <div class="urtext_line">└── second level<a href="#6qj">second level</a></div>
 <div class="urtext_line">└── third test level<a href="#80d">third test level</a></div>
-<div class="urtext_line">└── test fourth level<a href="#5pq">test fourth level</a></div>
-<div class="urtext_line">└── fifth level<a href="#xc9">fifth level</a></div>
+<div class="urtext_line">└── test fourth level<a href="#5pq">fourth level</a></div>
+<div class="urtext_line">└── fifth level <a href="#xc9">Nodes Excluded from the Table of Contents</a></div>
 <div class="urtext_line">This node is just here as a destination from the node pointer in  Basic Syntax<a href="#ttt">This node is just here as a destination from the node pointer in  Basic Syntax</a></div>
+<div class="urtext_line">;</div>
 </div>
 
 f>./files/toc-dynamic-definition.png
@@ -1062,7 +1039,6 @@ f>./files/excluded-from-toc-list.png
 
 See also the definition that dynamically creates the README.md version of this documentation:
 <a href="#m9d">Example : Urtext Documentation Exported in Markdown to a File</a>
-
 <div class="urtext_line">f>./files/toc-dynamic-definition.png</div>
 <div class="urtext_line">f>./files/excluded-from-toc-definition.png</div>
 <div class="urtext_line">f>./files/excluded-from-toc-list.png</div>
@@ -1071,7 +1047,6 @@ See also the definition that dynamically creates the README.md version of this d
 </div>
 
 Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
-
 
 <div class="urtext_line">In practice most of these nodes have only a 2-3 levels of nesting. For an example of a larger tree, look at the </div>
 <div class="urtext_line">Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.</div>
@@ -1104,73 +1079,33 @@ Another use would be to collect all metadata entries of a given key, and optiona
 
 		
 
-		Date Updated: Tue., Sep. 29, 2020, 12:40 PM +0000
-		Key Bindings and Operations<a href="#1vs">Key Bindings and Operations</a>:114
-		$title\n) ]]
-		
-		
-		
+		Date Updated: `node_date_keyname`<a href="#8p4">`node_date_keyname`</a> key in project_settings.
+		Tracking Node Dates and Times<a href="#cee">Tracking Node Dates and Times</a>:306
+		Tracking Node Dates and Times
+		Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created:
 
 
-
-		Date Updated: Sat., Sep. 26, 2020, 03:48 PM +0000
-		Key Bindings and Operations - Definitions<a href="#tx6">Key Bindings and Operations - Definitions</a>:289
-		e
-
-
-		Date Updated: Sat., Sep. 19, 2020, 01:25 PM
-		About Urtext<a href="#013">About Urtext</a>:136
-		a
-
-
-		Date Updated: Sat., Sep. 19, 2020, 01:21 PM
-		File Naming<a href="#01m">File Naming</a>:912
-
-
-
-		Date Updated: Thu., Sep. 10, 2020, 05:32 PM
-		Compact Nodes<a href="#kpz">Compact Nodes</a>:804
-
-
-
-		Date Updated: Thu., Sep. 10, 2020, 05:24 PM
-		Inline Nodes<a href="#004">Inline Nodes</a>:1283
-		e
-
-
-		Date Updated: Thu., Sep. 10, 2020, 05:20 PM
-		Nodes<a href="#01j">Nodes</a>:842
-		p
+		Date Updated: `node_date_keyname`<a href="#8p4">`node_date_keyname`</a> key in project_settings.
+		Tracking Node Dates and Times<a href="#cee">Tracking Node Dates and Times</a>:306
+		Tracking Node Dates and Times
+		Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created:
 
 
 		
-		  <div class="urtext_line"><h4>Example Collection : "Last Updated"</h4></div>
-<div class="urtext_line">Date Updated: Tue., Sep. 29, 2020, 12:40 PM +0000</div>
-<div class="urtext_line">Key Bindings and Operations<a href="#1vs">Key Bindings and Operations</a>:114</div>
-<div class="urtext_line">$title\n) ]]</div>
-<div class="urtext_line">Date Updated: Sat., Sep. 26, 2020, 03:48 PM +0000</div>
-<div class="urtext_line">Key Bindings and Operations - Definitions<a href="#tx6">Key Bindings and Operations - Definitions</a>:289</div>
-<div class="urtext_line">e</div>
-<div class="urtext_line">Date Updated: Sat., Sep. 19, 2020, 01:25 PM</div>
-<div class="urtext_line">About Urtext<a href="#013">About Urtext</a>:136</div>
-<div class="urtext_line">a</div>
-<div class="urtext_line">Date Updated: Sat., Sep. 19, 2020, 01:21 PM</div>
-<div class="urtext_line">File Naming<a href="#01m">File Naming</a>:912</div>
-<div class="urtext_line">Date Updated: Thu., Sep. 10, 2020, 05:32 PM</div>
-<div class="urtext_line">Compact Nodes<a href="#kpz">Compact Nodes</a>:804</div>
-<div class="urtext_line">Date Updated: Thu., Sep. 10, 2020, 05:24 PM</div>
-<div class="urtext_line">Inline Nodes<a href="#004">Inline Nodes</a>:1283</div>
-<div class="urtext_line">e</div>
-<div class="urtext_line">Date Updated: Thu., Sep. 10, 2020, 05:20 PM</div>
-<div class="urtext_line">Nodes<a href="#01j">Nodes</a>:842</div>
-<div class="urtext_line">p</div>
+		 <div class="urtext_line"><h4>Example Collection : "Last Updated"</h4></div>
+<div class="urtext_line">Date Updated: `node_date_keyname`<a href="#8p4">`node_date_keyname`</a> key in project_settings.</div>
+<div class="urtext_line">Tracking Node Dates and Times<a href="#cee">Tracking Node Dates and Times</a>:306</div>
+<div class="urtext_line">Tracking Node Dates and Times</div>
+<div class="urtext_line">Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created:</div>
+<div class="urtext_line">Date Updated: `node_date_keyname`<a href="#8p4">`node_date_keyname`</a> key in project_settings.</div>
+<div class="urtext_line">Tracking Node Dates and Times<a href="#cee">Tracking Node Dates and Times</a>:306</div>
+<div class="urtext_line">Tracking Node Dates and Times</div>
+<div class="urtext_line">Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created:</div>
 </div>
 
 
-
  </div>
-
-<div class="urtext_line">There are two main kinds of dynamic output, Lists and Collections:</div>
+ <div class="urtext_line">There are two main kinds of dynamic output, Lists and Collections:</div>
 <div class="urtext_line">"Lists" are lists of nodes, with each node displayed not more than once. Lists can optionally expand into trees, showing the hierarchy of nested relationships from each root node in the list.</div>
 <div class="urtext_line"></div>
 <div class="urtext_line">Lists can be expanded into trees that show the outline of many nodes across many files at any specified depth, up to. In fact, a list is a tree with depth 1.</div>
@@ -1200,19 +1135,18 @@ Another use would be to collect all metadata entries of a given key, and optiona
  
         Urtext: Link From ...
             Links TO the current node FROM another node. When you select this command, a link to the current node will be copied to the clipboard. You can then paste the reference into the node you open in the quick panel.
-    <div class="urtext_line"><h4>Sublime Text tools to help with linking</h4></div>
+   <div class="urtext_line"><h4>Sublime Text tools to help with linking</h4></div>
 <div class="urtext_line">Two Sublime Command Palette commands can make linking quick and easy:</div>
 <div class="urtext_line">Urtext : Link To ...</div>
 <div class="urtext_line">Links from the currently viewed node to another node which you can select in the selection panel. When you select a node in the quick panel, a link to that node will be inserted at the cursor.</div>
 <div class="urtext_line">Urtext: Link From ...</div>
 <div class="urtext_line">Links TO the current node FROM another node. When you select this command, a link to the current node will be copied to the clipboard. You can then paste the reference into the node you open in the quick panel.</div>
-</div> 
-</div>
+</div> </div>
 
 <h3>Dynamic Titles</h3>
   
 
-    Prepending a pipe character to any node link will populate the space between the pipe and link with the node's title, from its metadata or default title. Examples are found throughout this documentation. Titled links are updated at the single file level whenever the file is saved.  <div class="urtext_line"><h3>Dynamic Titles</h3></div>
+    Prepending a pipe character to any node link will populate the space between the pipe and link with the node's title, from its metadata or default title. Examples are found throughout this documentation. Titled links are updated at the single file level whenever the file is saved. <div class="urtext_line"><h3>Dynamic Titles</h3></div>
 <div class="urtext_line">Prepending a pipe character to any node link will populate the space between the pipe and link with the node's title, from its metadata or default title. Examples are found throughout this documentation. Titled links are updated at the single file level whenever the file is saved.</div>
 </div>
 
@@ -1223,7 +1157,7 @@ Another use would be to collect all metadata entries of a given key, and optiona
 <h4>Sublime</h4>
  
         Key : <a href="#ngh">Open Urtext Link:	`ctrl + shift + /`</a> on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
-         <div class="urtext_line"><h4>Sublime</h4></div>
+        <div class="urtext_line"><h4>Sublime</h4></div>
 <div class="urtext_line">Key : <a href="#ngh">Open Urtext Link:	`ctrl + shift + /`</a> on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point.</div>
 </div>
 
@@ -1231,13 +1165,12 @@ Another use would be to collect all metadata entries of a given key, and optiona
   
 
         Use the `/` botton when the cursor is on any line containing a link.
-         <div class="urtext_line"><h4>Pythonista</h4></div>
+        <div class="urtext_line"><h4>Pythonista</h4></div>
 <div class="urtext_line">Use the `/` botton when the cursor is on any line containing a link.</div>
 </div>
 
     Note that Urtext reads node regions on every save, so cursor location may be imprecise if the file has been altered since the last save. 
- 
-<div class="urtext_line">Note that Urtext reads node regions on every save, so cursor location may be imprecise if the file has been altered since the last save.</div>
+ <div class="urtext_line">Note that Urtext reads node regions on every save, so cursor location may be imprecise if the file has been altered since the last save.</div>
 </div>
 
 <h3>Linking to Files and Other Resources</h3>
@@ -1249,8 +1182,7 @@ Another use would be to collect all metadata entries of a given key, and optiona
 
         HTTP(S) links are recognized automatically and will open in the default browser.    
         Example: pressing <a href="#ngh">Open Urtext Link:	`ctrl + shift + /`</a> on this line will open the link: http://github.com
-        
-<div class="urtext_line"><h4>Web / HTTP(S)</h4></div>
+        <div class="urtext_line"><h4>Web / HTTP(S)</h4></div>
 <div class="urtext_line">HTTP(S) links are recognized automatically and will open in the default browser.</div>
 <div class="urtext_line">Example: pressing <a href="#ngh">Open Urtext Link:	`ctrl + shift + /`</a> on this line will open the link: http://github.com</div>
 </div>
@@ -1258,23 +1190,20 @@ Another use would be to collect all metadata entries of a given key, and optiona
 <h4>Files</h4>
  
         
-		Links to files can be made by writing f> , followed immediately with a file path relative to the folder of the project:
-		Example:  f>./README.md
-    
-<div class="urtext_line"><h4>Files</h4></div>
-<div class="urtext_line">Links to files can be made by writing f> , followed immediately with a file path relative to the folder of the project:</div>
-<div class="urtext_line">Example:  f>./README.md</div>
+		Links to files can be made by writing `f>` , followed immediately with a file path relative to the folder of the project:
+		Example:  f>README.md
+    <div class="urtext_line"><h4>Files</h4></div>
+<div class="urtext_line">Links to files can be made by writing `f>` , followed immediately with a file path relative to the folder of the project:</div>
+<div class="urtext_line">Example:  f>README.md</div>
 </div>
                                                                                                
-    
-</div>
+    </div>
 <h3>Pointers</h3>
           
 
 By preceding a link to a node with two right angle brackets instead of one, you can extend trees beyond the file level to create node relationships spanning many files. In addition to being a hyperlink, this connects the targeted node, and all of its subchildren, as descendants of the node containing the Pointer:
 
     <h5>Example Child Node Using a Node Pointer</h5>
-
 
 <div class="urtext_line"><h5>Example Child Node Using a Node Pointer</h5></div>
 </div> 
@@ -1298,7 +1227,7 @@ The advantages to Node Pointers include:
     Node Pointers may point more than once to the same node, so that content can be reused or referenced across multiple trees within the same project.
     Here is the same example child node from above:  
     Note that it appears twice in the Table of Contents, once as a child of this node and once as a child of this node's parent node ( <a href="#lmu">Pointers</a>).
-    <div class="urtext_line"><h4>Duplicate Pointers</h4></div>
+   <div class="urtext_line"><h4>Duplicate Pointers</h4></div>
 <div class="urtext_line">Node Pointers may point more than once to the same node, so that content can be reused or referenced across multiple trees within the same project.</div>
 <div class="urtext_line">Here is the same example child node from above: </div>
 <div class="urtext_line">Note that it appears twice in the Table of Contents, once as a child of this node and once as a child of this node's parent node ( <a href="#lmu">Pointers</a>).</div>
@@ -1307,7 +1236,7 @@ The advantages to Node Pointers include:
 <h4>Recursive Node Pointers</h4>
   
 
-    If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point with the indication `! RECURSION -` before the node title and link. For example, this Node Pointer points to the parent of this node (<a href="#6ct">Recursive Node Pointers</a>),  | Pointers >>lmu. You can see the recursion point in the table of contents.
+    If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point with the indication `! RECURSION -` before the node title and link. For example, this Node Pointer points to the parent of this node (<a href="#6ct">Recursive Node Pointers</a>),  |  ?  >>lmu. You can see the recursion point in the table of contents.
 
     Note that if you view the tree with another node selected as root, one full iteration will still appear, with the point of recursion falling elsewhere. The tree below is turned "inside out", with <a href="#lmu">Pointers</a> as root. 
        
@@ -1315,7 +1244,7 @@ The advantages to Node Pointers include:
         (See <a href="#w8u">Trees</a> for how to generate trees like this in dynamic nodes.)
 
     		<div class="urtext_line"><h4>Recursive Node Pointers</h4></div>
-<div class="urtext_line">If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point with the indication `! RECURSION -` before the node title and link. For example, this Node Pointer points to the parent of this node (<a href="#6ct">Recursive Node Pointers</a>),  | Pointers >>lmu. You can see the recursion point in the table of contents.</div>
+<div class="urtext_line">If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point with the indication `! RECURSION -` before the node title and link. For example, this Node Pointer points to the parent of this node (<a href="#6ct">Recursive Node Pointers</a>),  |  ?  >>lmu. You can see the recursion point in the table of contents.</div>
 <div class="urtext_line">Note that if you view the tree with another node selected as root, one full iteration will still appear, with the point of recursion falling elsewhere. The tree below is turned "inside out", with <a href="#lmu">Pointers</a> as root.</div>
 <div class="urtext_line">(See <a href="#w8u">Trees</a> for how to generate trees like this in dynamic nodes.)</div>
 <h5>Example Recursive Node Tree</h5>
@@ -1328,7 +1257,7 @@ The advantages to Node Pointers include:
 			└── Recursive Node Pointers<a href="#6ct">Recursive Node Pointers</a>
 			    ├── ! RECURSION - (from alias) : Pointers<a href="#lmu">Pointers</a>
 			    └── Example Recursive Node Tree<a href="#01n">Example Recursive Node Tree</a>
-			  <div class="urtext_line"><h5>Example Recursive Node Tree</h5></div>
+			 <div class="urtext_line"><h5>Example Recursive Node Tree</h5></div>
 <div class="urtext_line">Pointers<a href="#lmu">Pointers</a></div>
 <div class="urtext_line">├── Example Child Node Using a Node Pointer<a href="#001">Example Child Node Using a Node Pointer</a></div>
 <div class="urtext_line">├── Duplicate Pointers<a href="#00t">Duplicate Pointers</a></div>
@@ -1337,10 +1266,8 @@ The advantages to Node Pointers include:
 <div class="urtext_line">├── ! RECURSION - (from alias) : Pointers<a href="#lmu">Pointers</a></div>
 <div class="urtext_line">└── Example Recursive Node Tree<a href="#01n">Example Recursive Node Tree</a></div>
 </div>
-    </div>
-
+   </div>
 </div>
-
 
 
 
@@ -1357,12 +1284,12 @@ Urtext can export to plaintext, Markdown and HTML. Output can be written to a fi
 <h3>Example : Urtext Documentation Exported in Markdown to a File</h3>
   
 
-    This dynamic definition exports the entire documentation from its root node <a href="#a5m">Urtext  Version: 0.5-alpha  Usage Guide and References</a> ) in Markdown format to a file called f>./README.md:
+    This dynamic definition exports the entire documentation from its root node <a href="#a5m">Urtext  Version: 1.0-beta  Usage Guide and References</a> ) in Markdown format to a file called f>./README.md:
 
     
 
-    <div class="urtext_line"><h3>Example : Urtext Documentation Exported in Markdown to a File</h3></div>
-<div class="urtext_line">This dynamic definition exports the entire documentation from its root node <a href="#a5m">Urtext  Version: 0.5-alpha  Usage Guide and References</a> ) in Markdown format to a file called f>./README.md:</div>
+   <div class="urtext_line"><h3>Example : Urtext Documentation Exported in Markdown to a File</h3></div>
+<div class="urtext_line">This dynamic definition exports the entire documentation from its root node <a href="#a5m">Urtext  Version: 1.0-beta  Usage Guide and References</a> ) in Markdown format to a file called f>./README.md:</div>
 </div>
 
 <h3>Example : Fragment Exported to HTML</h3>
@@ -1373,14 +1300,9 @@ Urtext can export to plaintext, Markdown and HTML. Output can be written to a fi
    
 
 
-
 <div class="urtext_line"><h3>Example : Fragment Exported to HTML</h3></div>
 <div class="urtext_line">The following Dynamic Definition is identical to the above, except it exports to HTML.</div>
 </div>
-
-
-
-
 </div>
   <h2>File Naming</h2>
                                                                                 
@@ -1398,7 +1320,6 @@ If no index is present:
      .txt
 
 This system preserves automatic numerical sorting within the filesystem, such that the most recent un-indexed nodes appear first. If you want to use another system, such as putting the title first, you can do so.
-
 
 
 
@@ -1420,7 +1341,6 @@ To access a file's history, use <a href="#ndc">Toggle History Traverse: `ctrl + 
 
 Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories.
 
-
 <div class="urtext_line"><h2>History</h2></div>
 <div class="urtext_line">Though use of powerful version control tools (such as Git, Mercurial, etc.) is possible, Urtext has a lighter built-in versioning system that tracks edits at intervals. It is not necessary to make explicit "commits" in order to utilize this. Urtext creates a single, linear history of each file's content, with each snapshot being a "diff", or record of changes, since the previous snapshot. When a previous state is restored, no "checkout" or "rewind" occurs; rather, the newly restored state is appended to the history. Therefore, in addition to functioning as version control, the feature can also be used as an infinite and non-destructive "undo/redo" editing history that saves state when the file is closed. The default interval is 10 seconds, and can be modified in project_settings.</div>
 <div class="urtext_line">To access a file's history, use <a href="#ndc">Toggle History Traverse: `ctrl + shift + g`</a>.</div>
@@ -1437,21 +1357,21 @@ This is the `project_settings` node for the "Urtext Documentation" Urtext projec
 <div class="urtext_line">This is the `project_settings` node for the "Urtext Documentation" Urtext project. In the metadata for this node you can specify a handful of settings for the project. (The text content of the node does not matter.)</div>
 <h3>`title`</h3>
   
-	Reserved key for every node, used here to specificy this node as containing project settings  <div class="urtext_line"><h3>`title`</h3></div>
+	Reserved key for every node, used here to specificy this node as containing project settings <div class="urtext_line"><h3>`title`</h3></div>
 <div class="urtext_line">Reserved key for every node, used here to specificy this node as containing project settings</div>
 </div>
 
 
 <h3>`project_title`</h3>
   
-	Provides a title for the entire project <div class="urtext_line"><h3>`project_title`</h3></div>
+	Provides a title for the entire project<div class="urtext_line"><h3>`project_title`</h3></div>
 <div class="urtext_line">Provides a title for the entire project</div>
 </div>
 
 
 <h3>`home`</h3>
   
-	Identifies the home node for the project, connected to the "Home" key  <div class="urtext_line"><h3>`home`</h3></div>
+	Identifies the home node for the project, connected to the "Home" key <div class="urtext_line"><h3>`home`</h3></div>
 <div class="urtext_line">Identifies the home node for the project, connected to the "Home" key</div>
 </div>
 
@@ -1459,23 +1379,27 @@ This is the `project_settings` node for the "Urtext Documentation" Urtext projec
 <h3>`console_log`</h3>
   
 	(True or False): Sets whether Urtext will log updates, errors, messages to Sublime's Python console.
-	(Press Control-tilde(~)  to open the console)  <div class="urtext_line"><h3>`console_log`</h3></div>
+	(Press Control-tilde(~)  to open the console) <div class="urtext_line"><h3>`console_log`</h3></div>
 <div class="urtext_line">(True or False): Sets whether Urtext will log updates, errors, messages to Sublime's Python console.</div>
 <div class="urtext_line">(Press Control-tilde(~)  to open the console)</div>
 </div>
 
 
+
 <h3>`filenames`</h3>
   
-	Specifies format for filenames when using [ MISSING LINK : pz9 ]   <div class="urtext_line"><h3>`filenames`</h3></div>
+	Specifies format for filenames when using [ MISSING LINK : pz9 ]  <div class="urtext_line"><h3>`filenames`</h3></div>
 <div class="urtext_line">Specifies format for filenames when using [ MISSING LINK : pz9 ] </div>
 </div>
+
+
+
 
 
 <h3>`timestamp_format`</h3>
  	
 	Set the format of the timestamp when using <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a>
-	This accepts a Python `strftime` directive. For more information, see https://strftime.org/. <div class="urtext_line"><h3>`timestamp_format`</h3></div>
+	This accepts a Python `strftime` directive. For more information, see https://strftime.org/.<div class="urtext_line"><h3>`timestamp_format`</h3></div>
 <div class="urtext_line">Set the format of the timestamp when using <a href="#7b8">Insert Timestamp: `ctrl + shift + t`</a></div>
 <div class="urtext_line">This accepts a Python `strftime` directive. For more information, see https://strftime.org/.</div>
 </div>
@@ -1489,7 +1413,7 @@ This is the `project_settings` node for the "Urtext Documentation" Urtext projec
    
 
 	For a list of all timezones 
-	ADD SOME RESOURCE   <div class="urtext_line"><h3>`timezone`</h3></div>
+	ADD SOME RESOURCE  <div class="urtext_line"><h3>`timezone`</h3></div>
 <div class="urtext_line">For a list of all timezones</div>
 <div class="urtext_line">ADD SOME RESOURCE</div>
 </div>
@@ -1498,9 +1422,8 @@ This is the `project_settings` node for the "Urtext Documentation" Urtext projec
 <h3>`node_date_keyname`</h3>
   
 
-  <div class="urtext_line"><h3>`node_date_keyname`</h3></div>
+ <div class="urtext_line"><h3>`node_date_keyname`</h3></div>
 </div>
-
 
 
 
@@ -1511,17 +1434,16 @@ This is the `project_settings` node for the "Urtext Documentation" Urtext projec
 
 
 This node now has special reserved metadata keys that will be parsed as follows:
-
-
+imestamp
 
 
 
 
 
 <div class="urtext_line">This node now has special reserved metadata keys that will be parsed as follows:</div>
+<div class="urtext_line">imestamp</div>
 </div>
   <h2>Errors and Warnings</h2>
-
 
 
 
@@ -1556,7 +1478,7 @@ In Pythonista, use "Switch Projects" from the feature menu.
 
 Unlike nodes, projects are uniquely identified by name. For this reason, each project must have an unique name within the running instance of Urtext. Projects can be named using the project_title key in the project's project_settings node. If no name is present, the project's name becomes its absolute path in the file system. 
 
-	<div class="urtext_line"><h3>Project Naming (Identification)</h3></div>
+<div class="urtext_line"><h3>Project Naming (Identification)</h3></div>
 <div class="urtext_line">Unlike nodes, projects are uniquely identified by name. For this reason, each project must have an unique name within the running instance of Urtext. Projects can be named using the project_title key in the project's project_settings node. If no name is present, the project's name becomes its absolute path in the file system.</div>
 </div>
 
@@ -1569,14 +1491,12 @@ Unlike nodes, projects are uniquely identified by name. For this reason, each pr
        (This link is only an example and is non-functioning)
 
 	Following this link will change the project context to the named project and open its specified node. 
-
 <div class="urtext_line"><h3>Cross-Project Linking</h3></div>
 <div class="urtext_line">You may also link from one project to another within the text. To so this, use the following syntax:</div>
 <div class="urtext_line">=>"name or path of the other project[ MISSING LINK : idj ] </div>
 <div class="urtext_line">(This link is only an example and is non-functioning)</div>
 <div class="urtext_line">Following this link will change the project context to the named project and open its specified node.</div>
 </div>
-
 
 
 </div>
@@ -1605,7 +1525,6 @@ In Sublime Text there is also the alternative of using the UI dropdown. Press Co
 
 In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see <a href="#00z">`index`</a>). 
 
-
 <div class="urtext_line"><h3>The Node Browser</h3></div>
 <div class="urtext_line">The Node browser shows a list of all nodes in the project. It can be implemented in plaintext using a dynamic definition such as: . However,</div>
 <div class="urtext_line">also be implemented</div>
@@ -1616,7 +1535,6 @@ In the Node List, nodes are sorted by their time of creation, with most recent f
 </div>
 <h3>Traverse Mode</h3>
 Traverse Mode   
-
 
 
 
@@ -1644,18 +1562,17 @@ This feature is currently implemented in Sublime Text only.
 
         Whenever Traverse Mode is enabled on a view, word wrap for that view is turned off altogether to prevent awkward wrapping of trees. It is restored when Traverse Mode is turned off.
 
-    
-<div class="urtext_line"><h4>Word Wrap in Traverse Mode</h4></div>
+     <div class="urtext_line"><h4>Word Wrap in Traverse Mode</h4></div>
 <div class="urtext_line">Since Traverse Mode splits the window into two or more panes, it is suggested to set Word Wrap Column to "Auto" in Sublime Settings. This will cause the edited views to wrap correctly no matter the screen or window/pane size, as well as in Sublime's Distraction Free Mode.</div>
 <div class="urtext_line">Whenever Traverse Mode is enabled on a view, word wrap for that view is turned off altogether to prevent awkward wrapping of trees. It is restored when Traverse Mode is turned off.</div>
 </div></div>
-   <div class="urtext_line"><h2>User Interface Elements</h2></div>
+  <div class="urtext_line"><h2>User Interface Elements</h2></div>
 <div class="urtext_line">Urtext is made to require minimal user interface elements. They mostly serve as conveniences that duplicate</div>
 <div class="urtext_line"></div>
 <div class="urtext_line"></div>
 </div>
-  
-<div class="urtext_line"><h1>Reference</h1></div>
+  <div class="urtext_line"><h1>Reference</h1></div>
+<div class="urtext_line"></div>
 <div class="urtext_line"></div>
 <div class="urtext_line"></div>
 <div class="urtext_line"></div>

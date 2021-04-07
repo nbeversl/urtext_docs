@@ -1,0 +1,169 @@
+
+Urtext | Version: 1.0-beta | Usage Guide and References
+License: GNU General Public License 3.0
+
+{ About This Documentation
+  
+  This is a documentation of Urtext, written in Urtext. If you're reading it as a `README.MD` (on Github, etc.), it was compiled from the text files in this repository. Clone or download the respository to use it as both a reference and an example project. 
+
+  This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
+
+  Many of the examples rely on syntax, formatting, and highlighting, which is stripped out in export to Markdown. Where necessary these are replaced with linked screenshots as necessary (see | Linking to Files and Other Resources >00q and | Exporting >ezg)
+
+  Inside an Urtext implementation, such as the Sublime Text with the Urtext package, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
+  - Control-Shift-/ to follow any link
+  - Control-Shift-h at any time to return to this "home" node.  @p23}
+
+f>readme.md
+
+{ Table of Contents
+About This Documentation >p23
+Quick Start, Guides and Examples >z7t
+├── Installation and Setup (Desktop) >6cd
+├── Basic Syntax >znj
+├── Dynamic Definitions : Syntax and Parameters >87g
+├── Key Bindings and Operations >1vs
+│   ├── Navigation >k7b
+│   │   ├── Node Browser, Backlinks: `ctrl + shift + 1` >1ea
+│   │   ├── Nav Backward: `ctrl + shift + ,` >3hy
+│   │   ├── Home Node: `ctrl + shift + h` >5ab
+│   │   ├── List Projects: `ctrl + shift + o` >g5a
+│   │   ├── Toggle Traverse Mode: `ctrl + shift + r` >hcf
+│   │   ├── Node Browser, Include All Projects: `ctrl + shift + *` >hyh
+│   │   ├── Open Urtext Link:	`ctrl + shift + /` >ngh
+│   │   ├── Open Random Node: `ctrl + shift + f` >q5f
+│   │   ├── Node Browser: `ctrl + shift + e` >vdr
+│   │   ├── Nav Forward: `ctrl + shift + .` >yan
+│   │   └── Node Browser, Forward Links: `ctrl + shift + 2` >ylo
+│   ├── Content Insertion >kxh
+│   │   ├── Insert Compact Node: `ctrl + shift + ^` >1qq
+│   │   ├── Insert Timestamp: `ctrl + shift + t` >7b8
+│   │   ├── Add Node ID: `ctrl + shift + i` >gv9
+│   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
+│   │   ├── Insert Inline Node: `ctrl + shift + [` >rzx
+│   │   ├── Insert Link to New Node: `ctrl + shift + '` >sxk
+│   │   ├── New Node: `ctrl + shift + ;` >ve3
+│   │   └── Quick Tag from Other: `ctrl + shift + 0` >zep
+│   ├── Copy Links >kqz
+│   │   ├── Copy Link to this Node With Title: `ctrl + shift + super + c` >05x
+│   │   └── Copy Link to this Node: `ctrl + shift + c` >vel
+│   └── History >a8q
+│       └── Toggle History Traverse: `ctrl + shift + g` >ndc
+└── Sublime Text Interface Tips >003
+    ├── Syntax Highlighting >01d
+    ├── Hiding Tabs >015
+    ├── Hiding Line Numbers >01e
+    ├── Full Screen / Distraction Free Mode >002
+    ├── Disable Prompts for File Reload >023
+    ├── Remove Indent Guides >1rc
+    ├── Save on Focus Lost >sqq
+    └── Using a Sublime Project for an Urtext Project >c3n
+Reference >ac5
+├── About Urtext >013
+│   ├── Description >yv2
+│   ├── Comparison To Other Tools >h8z
+│   ├── Uses >lhs
+│   └── Requirements and Features >006
+├── Projects >dce
+│   └── Using/Adding Existing Files >rij
+├── Nodes >01j
+│   ├── Types of Nodes >07q
+│   │   ├── File Nodes >ekz
+│   │   ├── Inline Nodes >004
+│   │   │   ├── Example Inline Node >ywi
+│   │   │   └── Escaping Curly Brackets >8a8
+│   │   └── Compact Nodes >kpz
+│   │       └── Example Compact Node >d7b
+│   │           └── Example inline node within the compact node. >9up
+│   └── Node Titles >ue2
+├── Metadata >00x
+│   ├── General Syntax >8dw
+│   ├── Timestamps >2i4
+│   │   ├── Syntax and Format >005
+│   │   ├── Tracking Node Dates and Times >cee
+│   │   └── Time Zones >7w6
+│   ├── Case-sensitivity >l36
+│   └── Reserved Keys >fo2
+│       ├── `index` >00z
+│       ├── `title` >pz3
+│       └── `def` >5cq
+├── Dynamic Nodes >k8p
+│   ├── Dynamic Definitions >07u
+│   ├── Lists >twz
+│   │   └── Example: Nodes from the Documentation >m1r
+│   ├── Trees >w8u
+│   │   ├── Expanding a List with the DEPTH Parameter >h6l
+│   │   │   └── Example Tree >00e
+│   │   └── "Table of Contents" Dynamic Definition >v7r
+│   └── Collections >00k
+├── Links and Pointers >00j
+│   ├── Links >0y2
+│   │   └── Sublime Text tools to help with linking >00m
+│   ├── Dynamic Titles >4vu
+│   ├── Opening Links >01w
+│   │   ├── Sublime >osu
+│   │   └── Pythonista >iy8
+│   ├── Linking to Files and Other Resources >00q
+│   │   ├── Web / HTTP(S) >00o
+│   │   └── Files >00p
+│   └── Pointers >lmu
+│       ├── Example Child Node Using a Node Pointer >001
+│       ├── Duplicate Pointers >00t
+│       │   └── Example Child Node Using a Node Pointer >001
+│       └── Recursive Node Pointers >6ct
+│           ├── ! RECURSION (from tree duplication) : Pointers >lmu
+│           └── Example Recursive Node Tree >01n
+├── Exporting >ezg
+│   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+│   └── Example : Fragment Exported to HTML >baq
+├── File Naming >01m
+├── History >prp
+├── project_settings >00l
+│   ├── `title` >egg
+│   ├── `project_title` >xqu
+│   ├── `home` >d6u
+│   ├── `console_log` >1lz
+│   ├── `filenames` >lch
+│   ├── `timestamp_format` >00n
+│   ├── `timezone` >boe
+│   └── `node_date_keyname` >8p4
+├── Errors and Warnings >bpk
+├── Using Multiple Projects >ipy
+│   ├── Project Naming (Identification) >tgp
+│   └── Cross-Project Linking >7lx
+└── User Interface Elements >3n6
+    ├── The Node Browser >01i
+    └── Traverse Mode >00w
+        └── Word Wrap in Traverse Mode >xci
+def::>v7r; @e5j } 
+
+{  Quick Start, Guides and Examples
+
+  | Installation and Setup (Desktop) >>6cd
+  | Basic Syntax >>znj
+  | Dynamic Definitions : Syntax and Parameters >>87g
+  | Key Bindings and Operations >>1vs
+  | Sublime Text Interface Tips >>003
+  index::02
+@z7t}
+
+{   Reference
+  | About Urtext >>013
+  | Projects >>dce
+  | Nodes >>01j
+  | Metadata >>00x
+  | Dynamic Nodes >>k8p
+  | Links and Pointers >>00j
+  | Exporting >>ezg
+  | File Naming >>01m
+  | History >>prp
+  | project_settings >>00l
+  | Errors and Warnings >>bpk
+  | Embedded Syntaxes and Pass Markers >oy5
+  | Using Multiple Projects >>ipy
+  | User Interface Elements >>3n6
+  index::03
+@ac5}
+
+@a5m
+

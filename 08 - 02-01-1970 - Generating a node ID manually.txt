@@ -1,5 +1,0 @@
-Generating a node ID manually 
-If you accidentally delete a Node ID or need to insert one arbitrarily, press node control-shift-i. 
-
-
-ID::rfp

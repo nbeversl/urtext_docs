@@ -1,0 +1,45 @@
+Links and Pointers
+
+{  Links 
+
+    To make a "hyperlink" from one node to another, use the right angle bracket (>) followed immediately by a node ID. Linking does not require a filename or any other information, only the node ID. Any other surrounding text is ignored.
+
+    {  Sublime Text tools to help with linking 
+        implementation::sublime
+
+        Two Sublime Command Palette commands can make linking quick and easy:
+     
+        Urtext : Link To ...
+            Links from the currently viewed node to another node which you can select in the selection panel. When you select a node in the quick panel, a link to that node will be inserted at the cursor.
+ 
+        Urtext: Link From ...
+            Links TO the current node FROM another node. When you select this command, a link to the current node will be copied to the clipboard. You can then paste the reference into the node you open in the quick panel.
+    @00m} 
+@0y2}
+
+{  Dynamic Titles
+
+    Prepending a pipe character to any node link will populate the space between the pipe and link with the node's title, from its metadata or default title. Examples are found throughout this documentation. Titled links are updated at the single file level whenever the file is saved.  @4vu}
+
+{ Opening Links 
+    
+    { Sublime
+        Key : | Open Urtext Link: `ctrl + shift + /` >ngh on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
+        implementation::sublime; @osu}
+
+    { Pythonista 
+
+        Use the `/` botton when the cursor is on any line containing a link.
+        implementation::pythonista; @iy8}
+
+    Note that Urtext reads node regions on every save, so cursor location may be imprecise if the file has been altered since the last save. 
+ 
+@01w}
+
+| Linking to outside resources >>00q
+| Pointers >>lmu
+
+@00j
+updated::<Fri., Jun. 07, 2019, 05:26 PM>
+tags::
+index::06

@@ -1,0 +1,645 @@
+Extending Node Lists Into Trees using DEPTH
+
+By default, Node lists are "one-dimensional". With the DEPTH parameter, you can expand these to hierarchical nested nodes up to arbitrary depth, whether from | Inline Nodes >004 or from |  ?  >lmu.
+
+[[  
+	These parameters are mostly the same as for the previous examples ( see |  ?  >twz) 
+	Here they are strung together on a single line; recall that formatting does not matter.
+	ID(>nc6) +(*) FORMAT(indent:2) HEADER(Example List 3)
+
+	Here we have omitted the LIMIT parameter, so the definition returns all nodes in this documentation.
+
+	The DEPTH paramter specifies how many levels deep we want to view nested hierachies. We've set it to 5 to avoid an enormous output, but try changing the number (or other parameters in the definition) to see the difference in output. 
+	DEPTH(5)
+]]
+
+{
+		Example List 3
+		Example Child Node Using a Node Pointer >001
+		Full Screen / Distraction Free Mode >002
+		Sublime Text Interface Tips >003
+		├── Syntax Highlighting >01d
+		├── Hiding Tabs >015
+		├── Hiding Line Numbers >01e
+		├── Full Screen / Distraction Free Mode >002
+		├── Disable Prompts for File Reload >023
+		├── Remove Indent Guides >1rc
+		├── Save on Focus Lost >sqq
+		└── Using a Sublime Project for an Urtext Project >c3n
+		Inline Nodes >004
+		├── Example Inline Node >ywi
+		├── Example first level >8fv
+		│   └── second level >6qj
+		│       └── third test level >80d
+		│           └── fourth level >5pq
+		└── Escaping Curly Brackets >8a8
+		Syntax and Format >005
+		Requirements and Features >006
+		Example Tree >00e
+		Links and Pointers >00j
+		├── Links >0y2
+		│   └── Sublime Text tools to help with linking >00m
+		├── Dynamic Titles >4vu
+		├── Opening Links >01w
+		│   ├── Sublime >osu
+		│   └── Pythonista >iy8
+		├── Linking to Files and Other Resources >00q
+		│   ├── Web / HTTP(S) >00o
+		│   └── Files >00p
+		└── Pointers >lmu
+		    ├── Example Child Node Using a Node Pointer >001
+		    ├── Duplicate Pointers >00t
+		    │   └── Example Child Node Using a Node Pointer >001
+		    └── Recursive Node Pointers >6ct
+		        ├── ! RECURSION (from tree duplication) : Pointers >lmu
+		        └── Example Recursive Node Tree >01n
+		Collections >00k
+		└── Example Collection : "Last Updated" >aoq
+		project_settings >00l
+		├── `title` >egg
+		├── `project_title` >xqu
+		├── `home` >d6u
+		├── `console_log` >1lz
+		├── `filenames` >lch
+		├── `timestamp_format` >00n
+		├── `timezone` >boe
+		└── `node_date_keyname` >8p4
+		Sublime Text tools to help with linking >00m
+		`timestamp_format` >00n
+		Web / HTTP(S) >00o
+		Files >00p
+		Linking to Files and Other Resources >00q
+		├── Web / HTTP(S) >00o
+		└── Files >00p
+		Duplicate Pointers >00t
+		└── Example Child Node Using a Node Pointer >001
+		Viewing Linked Relationships >00u
+		Traverse Mode >00w
+		└── Word Wrap in Traverse Mode >xci
+		Metadata >00x
+		├── General Syntax >8dw
+		├── Timestamps >2i4
+		│   ├── Syntax and Format >005
+		│   ├── Tracking Node Dates and Times >cee
+		│   └── Time Zones >7w6
+		├── Case-sensitivity >l36
+		└── Reserved Keys >fo2
+		    ├── `index` >00z
+		    ├── `title` >pz3
+		    └── `def` >5cq
+		`index` >00z
+		About Urtext >013
+		├── Description >yv2
+		├── Comparison To Other Tools >h8z
+		├── Uses >lhs
+		└── Requirements and Features >006
+		In-Progress / Experimental / Wish List >014
+		└── iPhone/iPad/iOS >01y
+		    └── Synchronator Setup >01z
+		Hiding Tabs >015
+		Reference: Key Bindings >018
+		Syntax Highlighting >01d
+		Hiding Line Numbers >01e
+		The Node Browser >01i
+		Nodes >01j
+		├── Types of Nodes >07q
+		│   ├── File Nodes >ekz
+		│   ├── Inline Nodes >004
+		│   │   ├── Example Inline Node >ywi
+		│   │   ├── Example first level >8fv
+		│   │   │   └── second level >6qj
+		│   │   └── Escaping Curly Brackets >8a8
+		│   └── Compact Nodes >kpz
+		│       └── Example Compact Node >d7b
+		│           └── Example inline node within the compact node. >9up
+		└── Node Titles >ue2
+		File Naming >01m
+		Example Recursive Node Tree >01n
+		Node IDs >01q
+		├── Inserting a Node ID manually >04s
+		└── Duplicate Node IDs >bzv
+		Details on the Sublime Implementation >01u
+		└── Dependencies and Installation >2fn
+		    ├── Download and Install Dependencies Manually >774
+		    └── Download Dependencies from a Monorepo >arl
+		Opening Links >01w
+		├── Sublime >osu
+		└── Pythonista >iy8
+		Projects, Structure and Compiling >01x
+		└── project_settings >00l
+		    ├── `title` >egg
+		    ├── `project_title` >xqu
+		    ├── `home` >d6u
+		    ├── `console_log` >1lz
+		    ├── `filenames` >lch
+		    ├── `timestamp_format` >00n
+		    ├── `timezone` >boe
+		    └── `node_date_keyname` >8p4
+		iPhone/iPad/iOS >01y
+		└── Synchronator Setup >01z
+		Synchronator Setup >01z
+		Disable Prompts for File Reload >023
+		Inserting a Node ID manually >04s
+		Copy Link to this Node With Title: `ctrl + shift + super + c` >05x
+		Types of Nodes >07q
+		├── File Nodes >ekz
+		├── Inline Nodes >004
+		│   ├── Example Inline Node >ywi
+		│   ├── Example first level >8fv
+		│   │   └── second level >6qj
+		│   │       └── third test level >80d
+		│   └── Escaping Curly Brackets >8a8
+		└── Compact Nodes >kpz
+		    └── Example Compact Node >d7b
+		        └── Example inline node within the compact node. >9up
+		Dynamic Definitions >07u
+		Links >0y2
+		└── Sublime Text tools to help with linking >00m
+		Node Browser, Backlinks: `ctrl + shift + 1` >1ea
+		`console_log` >1lz
+		Insert Compact Node: `ctrl + shift + ^` >1qq
+		Remove Indent Guides >1rc
+		Key Bindings and Operations >1vs
+		├── Navigation >k7b
+		│   ├── Node Browser, Backlinks: `ctrl + shift + 1` >1ea
+		│   ├── Nav Backward: `ctrl + shift + ,` >3hy
+		│   ├── Home Node: `ctrl + shift + h` >5ab
+		│   ├── List Projects: `ctrl + shift + o` >g5a
+		│   ├── Toggle Traverse Mode: `ctrl + shift + r` >hcf
+		│   ├── Node Browser, Include All Projects: `ctrl + shift + *` >hyh
+		│   ├── Open Urtext Link:	`ctrl + shift + /` >ngh
+		│   ├── Open Random Node: `ctrl + shift + f` >q5f
+		│   ├── Node Browser: `ctrl + shift + e` >vdr
+		│   ├── Nav Forward: `ctrl + shift + .` >yan
+		│   └── Node Browser, Forward Links: `ctrl + shift + 2` >ylo
+		├── Content Insertion >kxh
+		│   ├── Insert Compact Node: `ctrl + shift + ^` >1qq
+		│   ├── Insert Timestamp: `ctrl + shift + t` >7b8
+		│   ├── Add Node ID: `ctrl + shift + i` >gv9
+		│   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
+		│   ├── Insert Inline Node: `ctrl + shift + [` >rzx
+		│   ├── Insert Link to New Node: `ctrl + shift + '` >sxk
+		│   ├── New Node: `ctrl + shift + ;` >ve3
+		│   └── Quick Tag from Other: `ctrl + shift + 0` >zep
+		├── Copy Links >kqz
+		│   ├── Copy Link to this Node With Title: `ctrl + shift + super + c` >05x
+		│   └── Copy Link to this Node: `ctrl + shift + c` >vel
+		└── History >a8q
+		    └── Toggle History Traverse: `ctrl + shift + g` >ndc
+		Trailing Node IDs >2a3
+		Dependencies and Installation >2fn
+		├── Download and Install Dependencies Manually >774
+		└── Download Dependencies from a Monorepo >arl
+		Timestamps >2i4
+		├── Syntax and Format >005
+		├── Tracking Node Dates and Times >cee
+		└── Time Zones >7w6
+		Nav Backward: `ctrl + shift + ,` >3hy
+		User Interface Elements >3n6
+		├── The Node Browser >01i
+		└── Traverse Mode >00w
+		    └── Word Wrap in Traverse Mode >xci
+		Example Search Results >3x3
+		Full Text Search >4p9
+		├── Searching >rr3
+		│   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+		│   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+		└── Search Using Dynamic Nodes >uy4
+		    └── Example Search Results >3x3
+		Dynamic Titles >4vu
+		Home Node: `ctrl + shift + h` >5ab
+		`def` >5cq
+		fourth level >5pq
+		└── fifth level >e5n
+		Installation and Setup (Desktop) >6cd
+		Recursive Node Pointers >6ct
+		├── ! RECURSION - (from alias) : Pointers >lmu
+		└── Example Recursive Node Tree >01n
+		second level >6qj
+		└── third test level >80d
+		    └── fourth level >5pq
+		        └── fifth level >e5n
+		Download and Install Dependencies Manually >774
+		Insert Timestamp: `ctrl + shift + t` >7b8
+		Cross-Project Linking >7lx
+		Time Zones >7w6
+		third test level >80d
+		└── fourth level >5pq
+		    └── fifth level >e5n
+		Dynamic Definitions : Syntax and Parameters >87g
+		Escaping Curly Brackets >8a8
+		General Syntax >8dw
+		The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
+		Example first level >8fv
+		└── second level >6qj
+		    └── third test level >80d
+		        └── fourth level >5pq
+		            └── fifth level >e5n
+		`node_date_keyname` >8p4
+		Templating the Output with the SHOW parameter >8p5
+		└── Example List 2 >c1x
+		Example inline node within the compact node. >9up
+		Urtext  Version: 1.0-beta  Usage Guide and References >a5m
+		├── About This Documentation >p23
+		├── Table of Contents >e5j
+		├── Quick Start, Guides and Examples >z7t
+		│   ├── Installation and Setup (Desktop) >6cd
+		│   ├── Basic Syntax >znj
+		│   │   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
+		│   ├── Dynamic Definitions : Syntax and Parameters >87g
+		│   ├── Key Bindings and Operations >1vs
+		│   │   ├── Navigation >k7b
+		│   │   │   ├── Node Browser, Backlinks: `ctrl + shift + 1` >1ea
+		│   │   │   ├── Nav Backward: `ctrl + shift + ,` >3hy
+		│   │   │   ├── Home Node: `ctrl + shift + h` >5ab
+		│   │   │   ├── List Projects: `ctrl + shift + o` >g5a
+		│   │   │   ├── Toggle Traverse Mode: `ctrl + shift + r` >hcf
+		│   │   │   ├── Node Browser, Include All Projects: `ctrl + shift + *` >hyh
+		│   │   │   ├── Open Urtext Link:	`ctrl + shift + /` >ngh
+		│   │   │   ├── Open Random Node: `ctrl + shift + f` >q5f
+		│   │   │   ├── Node Browser: `ctrl + shift + e` >vdr
+		│   │   │   ├── Nav Forward: `ctrl + shift + .` >yan
+		│   │   │   └── Node Browser, Forward Links: `ctrl + shift + 2` >ylo
+		│   │   ├── Content Insertion >kxh
+		│   │   │   ├── Insert Compact Node: `ctrl + shift + ^` >1qq
+		│   │   │   ├── Insert Timestamp: `ctrl + shift + t` >7b8
+		│   │   │   ├── Add Node ID: `ctrl + shift + i` >gv9
+		│   │   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
+		│   │   │   ├── Insert Inline Node: `ctrl + shift + [` >rzx
+		│   │   │   ├── Insert Link to New Node: `ctrl + shift + '` >sxk
+		│   │   │   ├── New Node: `ctrl + shift + ;` >ve3
+		│   │   │   └── Quick Tag from Other: `ctrl + shift + 0` >zep
+		│   │   ├── Copy Links >kqz
+		│   │   │   ├── Copy Link to this Node With Title: `ctrl + shift + super + c` >05x
+		│   │   │   └── Copy Link to this Node: `ctrl + shift + c` >vel
+		│   │   └── History >a8q
+		│   │       └── Toggle History Traverse: `ctrl + shift + g` >ndc
+		│   └── Sublime Text Interface Tips >003
+		│       ├── Syntax Highlighting >01d
+		│       ├── Hiding Tabs >015
+		│       ├── Hiding Line Numbers >01e
+		│       ├── Full Screen / Distraction Free Mode >002
+		│       ├── Disable Prompts for File Reload >023
+		│       ├── Remove Indent Guides >1rc
+		│       ├── Save on Focus Lost >sqq
+		│       └── Using a Sublime Project for an Urtext Project >c3n
+		└── Reference >ac5
+		    ├── About Urtext >013
+		    │   ├── Description >yv2
+		    │   ├── Comparison To Other Tools >h8z
+		    │   ├── Uses >lhs
+		    │   └── Requirements and Features >006
+		    ├── Projects >dce
+		    │   └── Using/Adding Existing Files >rij
+		    ├── Nodes >01j
+		    │   ├── Types of Nodes >07q
+		    │   │   ├── File Nodes >ekz
+		    │   │   ├── Inline Nodes >004
+		    │   │   └── Compact Nodes >kpz
+		    │   └── Node Titles >ue2
+		    ├── Metadata >00x
+		    │   ├── General Syntax >8dw
+		    │   ├── Timestamps >2i4
+		    │   │   ├── Syntax and Format >005
+		    │   │   ├── Tracking Node Dates and Times >cee
+		    │   │   └── Time Zones >7w6
+		    │   ├── Case-sensitivity >l36
+		    │   └── Reserved Keys >fo2
+		    │       ├── `index` >00z
+		    │       ├── `title` >pz3
+		    │       └── `def` >5cq
+		    ├── Dynamic Nodes >k8p
+		    │   ├── Dynamic Definitions >07u
+		    │   ├── Lists >twz
+		    │   │   └── Example: Nodes from the Documentation >m1r
+		    │   ├── Trees >w8u
+		    │   │   ├── Expanding a List with the DEPTH Parameter >h6l
+		    │   │   └── "Table of Contents" Dynamic Definition >v7r
+		    │   └── Collections >00k
+		    │       └── Example Collection : "Last Updated" >aoq
+		    ├── Links and Pointers >00j
+		    │   ├── Links >0y2
+		    │   │   └── Sublime Text tools to help with linking >00m
+		    │   ├── Dynamic Titles >4vu
+		    │   ├── Opening Links >01w
+		    │   │   ├── Sublime >osu
+		    │   │   └── Pythonista >iy8
+		    │   ├── Linking to Files and Other Resources >00q
+		    │   │   ├── Web / HTTP(S) >00o
+		    │   │   └── Files >00p
+		    │   └── Pointers >lmu
+		    │       ├── Example Child Node Using a Node Pointer >001
+		    │       ├── Duplicate Pointers >00t
+		    │       └── Recursive Node Pointers >6ct
+		    ├── Exporting >ezg
+		    │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+		    │   └── Example : Fragment Exported to HTML >baq
+		    ├── File Naming >01m
+		    ├── History >prp
+		    ├── project_settings >00l
+		    │   ├── `title` >egg
+		    │   ├── `project_title` >xqu
+		    │   ├── `home` >d6u
+		    │   ├── `console_log` >1lz
+		    │   ├── `filenames` >lch
+		    │   ├── `timestamp_format` >00n
+		    │   ├── `timezone` >boe
+		    │   └── `node_date_keyname` >8p4
+		    ├── Errors and Warnings >bpk
+		    ├── Using Multiple Projects >ipy
+		    │   ├── Project Naming (Identification) >tgp
+		    │   └── Cross-Project Linking >7lx
+		    └── User Interface Elements >3n6
+		        ├── The Node Browser >01i
+		        └── Traverse Mode >00w
+		            └── Word Wrap in Traverse Mode >xci
+		History >a8q
+		└── Toggle History Traverse: `ctrl + shift + g` >ndc
+		Reference >ac5
+		├── About Urtext >013
+		│   ├── Description >yv2
+		│   ├── Comparison To Other Tools >h8z
+		│   ├── Uses >lhs
+		│   └── Requirements and Features >006
+		├── Projects >dce
+		│   └── Using/Adding Existing Files >rij
+		├── Nodes >01j
+		│   ├── Types of Nodes >07q
+		│   │   ├── File Nodes >ekz
+		│   │   ├── Inline Nodes >004
+		│   │   │   ├── Example Inline Node >ywi
+		│   │   │   ├── Example first level >8fv
+		│   │   │   └── Escaping Curly Brackets >8a8
+		│   │   └── Compact Nodes >kpz
+		│   │       └── Example Compact Node >d7b
+		│   └── Node Titles >ue2
+		├── Metadata >00x
+		│   ├── General Syntax >8dw
+		│   ├── Timestamps >2i4
+		│   │   ├── Syntax and Format >005
+		│   │   ├── Tracking Node Dates and Times >cee
+		│   │   └── Time Zones >7w6
+		│   ├── Case-sensitivity >l36
+		│   └── Reserved Keys >fo2
+		│       ├── `index` >00z
+		│       ├── `title` >pz3
+		│       └── `def` >5cq
+		├── Dynamic Nodes >k8p
+		│   ├── Dynamic Definitions >07u
+		│   ├── Lists >twz
+		│   │   └── Example: Nodes from the Documentation >m1r
+		│   ├── Trees >w8u
+		│   │   ├── Expanding a List with the DEPTH Parameter >h6l
+		│   │   │   └── Example Tree >00e
+		│   │   └── "Table of Contents" Dynamic Definition >v7r
+		│   │       └── Nodes Excluded from the Table of Contents >xc9
+		│   └── Collections >00k
+		│       └── Example Collection : "Last Updated" >aoq
+		├── Links and Pointers >00j
+		│   ├── Links >0y2
+		│   │   └── Sublime Text tools to help with linking >00m
+		│   ├── Dynamic Titles >4vu
+		│   ├── Opening Links >01w
+		│   │   ├── Sublime >osu
+		│   │   └── Pythonista >iy8
+		│   ├── Linking to Files and Other Resources >00q
+		│   │   ├── Web / HTTP(S) >00o
+		│   │   └── Files >00p
+		│   └── Pointers >lmu
+		│       ├── Example Child Node Using a Node Pointer >001
+		│       ├── Duplicate Pointers >00t
+		│       │   └── Example Child Node Using a Node Pointer >001
+		│       └── Recursive Node Pointers >6ct
+		│           ├── ! RECURSION (from tree duplication) : Pointers >lmu
+		│           └── Example Recursive Node Tree >01n
+		├── Exporting >ezg
+		│   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+		│   └── Example : Fragment Exported to HTML >baq
+		├── File Naming >01m
+		├── History >prp
+		├── project_settings >00l
+		│   ├── `title` >egg
+		│   ├── `project_title` >xqu
+		│   ├── `home` >d6u
+		│   ├── `console_log` >1lz
+		│   ├── `filenames` >lch
+		│   ├── `timestamp_format` >00n
+		│   ├── `timezone` >boe
+		│   └── `node_date_keyname` >8p4
+		├── Errors and Warnings >bpk
+		├── Using Multiple Projects >ipy
+		│   ├── Project Naming (Identification) >tgp
+		│   └── Cross-Project Linking >7lx
+		└── User Interface Elements >3n6
+		    ├── The Node Browser >01i
+		    └── Traverse Mode >00w
+		        └── Word Wrap in Traverse Mode >xci
+		Example Collection : "Last Updated" >aoq
+		Download Dependencies from a Monorepo >arl
+		Example : Fragment Exported to HTML >baq
+		`timezone` >boe
+		Errors and Warnings >bpk
+		Duplicate Node IDs >bzv
+		Example List 2 >c1x
+		Using a Sublime Project for an Urtext Project >c3n
+		Tracking Node Dates and Times >cee
+		`home` >d6u
+		Example Compact Node >d7b
+		└── Example inline node within the compact node. >9up
+		Projects >dce
+		└── Using/Adding Existing Files >rij
+		Table of Contents >e5j
+		fifth level >e5n
+		`title` >egg
+		File Nodes >ekz
+		Exporting >ezg
+		├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+		└── Example : Fragment Exported to HTML >baq
+		Reserved Keys >fo2
+		├── `index` >00z
+		├── `title` >pz3
+		└── `def` >5cq
+		About Compact Nodes >frm
+		List Projects: `ctrl + shift + o` >g5a
+		Add Node ID: `ctrl + shift + i` >gv9
+		Expanding a List with the DEPTH Parameter >h6l
+		└── Example Tree >00e
+		Comparison To Other Tools >h8z
+		Toggle Traverse Mode: `ctrl + shift + r` >hcf
+		become child nodes of their containing node. >hiz
+		Node Browser, Include All Projects: `ctrl + shift + *` >hyh
+		Using Multiple Projects >ipy
+		├── Project Naming (Identification) >tgp
+		└── Cross-Project Linking >7lx
+		Pythonista >iy8
+		Compact Nodes >j6t
+		├── About Compact Nodes >frm
+		├── can have arbitrary other metadata >xlc
+		└── become child nodes of their containing node. >hiz
+		Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
+		Search >k67
+		└── Full Text Search >4p9
+		    ├── Searching >rr3
+		    │   ├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+		    │   └── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+		    └── Search Using Dynamic Nodes >uy4
+		        └── Example Search Results >3x3
+		Navigation >k7b
+		├── Node Browser, Backlinks: `ctrl + shift + 1` >1ea
+		├── Nav Backward: `ctrl + shift + ,` >3hy
+		├── Home Node: `ctrl + shift + h` >5ab
+		├── List Projects: `ctrl + shift + o` >g5a
+		├── Toggle Traverse Mode: `ctrl + shift + r` >hcf
+		├── Node Browser, Include All Projects: `ctrl + shift + *` >hyh
+		├── Open Urtext Link:	`ctrl + shift + /` >ngh
+		├── Open Random Node: `ctrl + shift + f` >q5f
+		├── Node Browser: `ctrl + shift + e` >vdr
+		├── Nav Forward: `ctrl + shift + .` >yan
+		└── Node Browser, Forward Links: `ctrl + shift + 2` >ylo
+		Dynamic Nodes >k8p
+		├── Dynamic Definitions >07u
+		├── Lists >twz
+		│   └── Example: Nodes from the Documentation >m1r
+		├── Trees >w8u
+		│   ├── Expanding a List with the DEPTH Parameter >h6l
+		│   │   └── Example Tree >00e
+		│   └── "Table of Contents" Dynamic Definition >v7r
+		│       └── Nodes Excluded from the Table of Contents >xc9
+		└── Collections >00k
+		    └── Example Collection : "Last Updated" >aoq
+		Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+		Compact Nodes >kpz
+		└── Example Compact Node >d7b
+		    └── Example inline node within the compact node. >9up
+		Copy Links >kqz
+		├── Copy Link to this Node With Title: `ctrl + shift + super + c` >05x
+		└── Copy Link to this Node: `ctrl + shift + c` >vel
+		Content Insertion >kxh
+		├── Insert Compact Node: `ctrl + shift + ^` >1qq
+		├── Insert Timestamp: `ctrl + shift + t` >7b8
+		├── Add Node ID: `ctrl + shift + i` >gv9
+		├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
+		├── Insert Inline Node: `ctrl + shift + [` >rzx
+		├── Insert Link to New Node: `ctrl + shift + '` >sxk
+		├── New Node: `ctrl + shift + ;` >ve3
+		└── Quick Tag from Other: `ctrl + shift + 0` >zep
+		Case-sensitivity >l36
+		Plaintext >l60
+		`filenames` >lch
+		Uses >lhs
+		Python >ljr
+		Pointers >lmu
+		├── Example Child Node Using a Node Pointer >001
+		├── Duplicate Pointers >00t
+		│   └── Example Child Node Using a Node Pointer >001
+		└── Recursive Node Pointers >6ct
+		    ├── ! RECURSION - (from alias) : Pointers >lmu
+		    └── Example Recursive Node Tree >01n
+		User-Defined >lwg
+		Example: Nodes from the Documentation >m1r
+		Example : Urtext Documentation Exported in Markdown to a File >m9d
+		Toggle History Traverse: `ctrl + shift + g` >ndc
+		Open Urtext Link:	`ctrl + shift + /` >ngh
+		JSON >njo
+		Documentation >ooe
+		Sublime >osu
+		Embedded Syntaxes and Pass Markers >oy5
+		├── HTML >xsh
+		├── JSON >njo
+		├── Python >ljr
+		├── Plaintext >l60
+		├── Documentation >ooe
+		└── User-Defined >lwg
+		About This Documentation >p23
+		History >prp
+		`title` >pz3
+		Open Random Node: `ctrl + shift + f` >q5f
+		Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+		Syntaxes : >r0w
+		Generating a node ID manually >rfp
+		Using/Adding Existing Files >rij
+		Searching >rr3
+		├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
+		└── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
+		Insert Inline Node: `ctrl + shift + [` >rzx
+		Save on Focus Lost >sqq
+		Insert Link to New Node: `ctrl + shift + '` >sxk
+		Project Naming (Identification) >tgp
+		Extending Node Lists Into Trees using DEPTH >thz
+		└── Example List 3 >nc6
+		This node is just here as a destination from the node pointer in  Basic Syntax >ttt
+		Lists >twz
+		└── Example: Nodes from the Documentation >m1r
+		Node Titles >ue2
+		Search Using Dynamic Nodes >uy4
+		└── Example Search Results >3x3
+		"Table of Contents" Dynamic Definition >v7r
+		└── Nodes Excluded from the Table of Contents >xc9
+		Node Browser: `ctrl + shift + e` >vdr
+		New Node: `ctrl + shift + ;` >ve3
+		Copy Link to this Node: `ctrl + shift + c` >vel
+		Trees >w8u
+		├── Expanding a List with the DEPTH Parameter >h6l
+		│   └── Example Tree >00e
+		└── "Table of Contents" Dynamic Definition >v7r
+		    └── Nodes Excluded from the Table of Contents >xc9
+		Other dynamic instructions >x0c
+		└── tag_all >yin
+		Nodes Excluded from the Table of Contents >xc9
+		Word Wrap in Traverse Mode >xci
+		can have arbitrary other metadata >xlc
+		`project_title` >xqu
+		HTML >xsh
+		Nav Forward: `ctrl + shift + .` >yan
+		tag_all >yin
+		Node Browser, Forward Links: `ctrl + shift + 2` >ylo
+		Description >yv2
+		Example Inline Node >ywi
+		Quick Start, Guides and Examples >z7t
+		├── Installation and Setup (Desktop) >6cd
+		├── Basic Syntax >znj
+		│   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
+		├── Dynamic Definitions : Syntax and Parameters >87g
+		├── Key Bindings and Operations >1vs
+		│   ├── Navigation >k7b
+		│   │   ├── Node Browser, Backlinks: `ctrl + shift + 1` >1ea
+		│   │   ├── Nav Backward: `ctrl + shift + ,` >3hy
+		│   │   ├── Home Node: `ctrl + shift + h` >5ab
+		│   │   ├── List Projects: `ctrl + shift + o` >g5a
+		│   │   ├── Toggle Traverse Mode: `ctrl + shift + r` >hcf
+		│   │   ├── Node Browser, Include All Projects: `ctrl + shift + *` >hyh
+		│   │   ├── Open Urtext Link:	`ctrl + shift + /` >ngh
+		│   │   ├── Open Random Node: `ctrl + shift + f` >q5f
+		│   │   ├── Node Browser: `ctrl + shift + e` >vdr
+		│   │   ├── Nav Forward: `ctrl + shift + .` >yan
+		│   │   └── Node Browser, Forward Links: `ctrl + shift + 2` >ylo
+		│   ├── Content Insertion >kxh
+		│   │   ├── Insert Compact Node: `ctrl + shift + ^` >1qq
+		│   │   ├── Insert Timestamp: `ctrl + shift + t` >7b8
+		│   │   ├── Add Node ID: `ctrl + shift + i` >gv9
+		│   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
+		│   │   ├── Insert Inline Node: `ctrl + shift + [` >rzx
+		│   │   ├── Insert Link to New Node: `ctrl + shift + '` >sxk
+		│   │   ├── New Node: `ctrl + shift + ;` >ve3
+		│   │   └── Quick Tag from Other: `ctrl + shift + 0` >zep
+		│   ├── Copy Links >kqz
+		│   │   ├── Copy Link to this Node With Title: `ctrl + shift + super + c` >05x
+		│   │   └── Copy Link to this Node: `ctrl + shift + c` >vel
+		│   └── History >a8q
+		│       └── Toggle History Traverse: `ctrl + shift + g` >ndc
+		└── Sublime Text Interface Tips >003
+		    ├── Syntax Highlighting >01d
+		    ├── Hiding Tabs >015
+		    ├── Hiding Line Numbers >01e
+		    ├── Full Screen / Distraction Free Mode >002
+		    ├── Disable Prompts for File Reload >023
+		    ├── Remove Indent Guides >1rc
+		    ├── Save on Focus Lost >sqq
+		    └── Using a Sublime Project for an Urtext Project >c3n
+		Quick Tag from Other: `ctrl + shift + 0` >zep
+		Basic Syntax >znj
+		└── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
+		def::>thz; @nc6 }
+
+@thz
+from::wwci-00407.local

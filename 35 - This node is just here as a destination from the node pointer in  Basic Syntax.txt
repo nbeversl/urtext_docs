@@ -1,0 +1,6 @@
+This node is just here as a destination from the node pointer in | Basic Syntax >znj
+Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
+
+@ttt
+flags::exclude_from_toc
+tags::exclude_from_export

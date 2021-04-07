@@ -1,0 +1,70 @@
+Trees
+
+{  Expanding a List with the DEPTH Parameter
+
+	[[ 		
+
+	This definition is mostly the same as the one in | Lists >twz. It targets the inline node below, | Example Tree >4gr. The difference is that we use the DEPTH parameter to indicate that under each list item, we would like to see the outline of nodes nested within it, up to 5 levels deep: DEPTH(5)
+
+	It does not matter how you format the parameters; here they are strung together on a single line:
+	ID(>4gr) 
+	INCLUDE(*) 
+	LIMIT(10) 
+	FORMAT(indent:3) 
+	HEADER(Example Tree \nflags::exclude_from_export)
+	]]
+
+			{
+			Example Tree
+			flags::exclude_from_export
+			Example Child Node Using a Node Pointer >001
+			Full Screen / Distraction Free Mode >002
+			Sublime Text Interface Tips >003
+			├── Syntax Highlighting >01d
+			├── Hiding Tabs >015
+			├── Hiding Line Numbers >01e
+			├── Full Screen / Distraction Free Mode >002
+			├── Disable Prompts for File Reload >023
+			├── Remove Indent Guides >1rc
+			├── Save on Focus Lost >sqq
+			└── Using a Sublime Project for an Urtext Project >c3n
+			Inline Nodes >004
+			├── Example Inline Node  @00e >00e
+			├── Example first level >8fv
+			│   └── second level >6qj
+			│       └── third test level >80d
+			│           └── test fourth level >5pq
+			├── Escaping Curly Brackets >8a8
+			└── Uses for inline nodes >ia5
+			Syntax and Format >005
+			Requirements and Features >006
+			Example Inline Node  @00e >00e
+			Links and Pointers >00j
+			├── Links >0y2
+			│   └── Sublime Text tools to help with linking >00m
+			├── Dynamic Titles >4vu
+			├── Opening Links >01w
+			│   ├── Sublime >osu
+			│   └── Pythonista >iy8
+			├── Linking to Files and Other Resources >00q
+			│   ├── Web / HTTP(S) >00o
+			│   └── Files >00p
+			└── Pointers >lmu
+			    ├── Example Child Node Using a Node Pointer >001
+			    ├── Duplicate Pointers >00t
+			    │   └── Example Child Node Using a Node Pointer >001
+			    └── Recursive Node Pointers >6ct
+			        ├── ! RECURSION (from tree duplication) : Pointers >lmu
+			        └── Example Recursive Node Tree >01n
+			Collections >00k
+			└── Example Collection : "Last Updated" >aoq
+			Sublime Text tools to help with linking >00m
+			@4gr; def::>h6l; }
+
+   @h6l}
+
+In practice most of these nodes have only a 2-3 levels of nesting. For an example of a larger tree, look at the | "Table of Contents" Dynamic Definition >>v7r
+
+Thanks to the `anytree` module (https://pypi.org/project/anytree/) for the plaintext node tree diagrams.
+
+@w8u
