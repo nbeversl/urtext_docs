@@ -2,19 +2,19 @@
 Urtext | Version: 1.0-beta | Usage Guide and References
 License: GNU General Public License 3.0
 
-{ About This Documentation
+{ About This Documentation _
   
-  This is a documentation of Urtext, written in Urtext. If you're reading it as a `README.MD` (on Github, etc.), it was compiled from the text files in this repository. Clone or download the respository to use it as both a reference and an example project. 
+  This is a documentation of Urtext, written in Urtext. The `README.MD` on it was exported from the text files in this repository. Clone or download the respository to use it as both reference and example project. 
 
-  This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
+  This documentation is in active development. It may be incomplete or behind features/functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (>https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
 
-  Many of the examples rely on syntax, formatting, and highlighting, which is stripped out in export to Markdown. Where necessary these are replaced with linked screenshots as necessary (see | Linking to Files and Other Resources >00q and | Exporting >ezg)
+  Many of the examples rely on syntax and formatting that are stripped out in export to Markdown. These are replaced with screenshots as necessary (see | Linking to Files and Other Resources >00q and | Exporting >ezg)
 
   Inside an Urtext implementation, such as the Sublime Text with the Urtext package, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
   - Control-Shift-/ to follow any link
-  - Control-Shift-h at any time to return to this "home" node.  @p23}
+  - Control-Shift-h at any time to return to this "home" node.  @p23
+  - View the readme: f>readme.md ; }
 
-f>readme.md
 
 { Table of Contents
 About This Documentation >p23
@@ -38,6 +38,7 @@ Quick Start, Guides and Examples >z7t
 │   ├── Content Insertion >kxh
 │   │   ├── Insert Compact Node: `ctrl + shift + ^` >1qq
 │   │   ├── Insert Timestamp: `ctrl + shift + t` >7b8
+│   │   ├── Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
 │   │   ├── Add Node ID: `ctrl + shift + i` >gv9
 │   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
 │   │   ├── Insert Inline Node: `ctrl + shift + [` >rzx
@@ -63,7 +64,7 @@ Reference >ac5
 │   ├── Description >yv2
 │   ├── Comparison To Other Tools >h8z
 │   ├── Uses >lhs
-│   └── Requirements and Features >006
+│   └── Features and Philosophy >006
 ├── Projects >dce
 │   └── Using/Adding Existing Files >rij
 ├── Nodes >01j
@@ -137,7 +138,7 @@ Reference >ac5
         └── Word Wrap in Traverse Mode >xci
 def::>v7r; @e5j } 
 
-{  Quick Start, Guides and Examples
+{  Quick Start, Guides and Examples _
 
   | Installation and Setup (Desktop) >>6cd
   | Basic Syntax >>znj
@@ -147,7 +148,7 @@ def::>v7r; @e5j }
   index::02
 @z7t}
 
-{   Reference
+{   Reference _
   | About Urtext >>013
   | Projects >>dce
   | Nodes >>01j

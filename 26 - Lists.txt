@@ -27,7 +27,7 @@ Lists
 			Sublime Text Interface Tips >003
 			Inline Nodes >004
 			Syntax and Format >005
-			Requirements and Features >006
+			Features and Philosophy >006
 			Example Tree >00e
 			Links and Pointers >00j
 			Collections >00k

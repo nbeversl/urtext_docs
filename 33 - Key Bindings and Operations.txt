@@ -17,7 +17,7 @@ Key Bindings and Operations
 { Content Insertion
 • Insert Compact Node: `ctrl + shift + ^`  		@1qq
 • Insert Timestamp: `ctrl + shift + t`   			@7b8
-• Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)
+• Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) @6ym
 • Add Node ID: `ctrl + shift + i` 				@gv9
 • Insert Dynamic Definition with Node: `ctrl + shift + ]`	@jsc
 • Insert Inline Node: `ctrl + shift + [` 			@rzx
@@ -36,4 +36,3 @@ Key Bindings and Operations
 @a8q }
 
 @1vs
-updated::<Tue., Sep. 29, 2020, 12:40 PM +0000>

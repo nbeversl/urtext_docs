@@ -1,6 +1,14 @@
-Embedded Syntaxes and Pass Markers
-
+Embedded Syntaxes and Pass Markers _
+ 
 Note that no text content wrapped between pass markers will appear in Urtext dynamic output, since characters in other syntaxes would have unpredictable interactions.
+
+
+{  Generic 
+	
+	`Similar to its use in in Markdown, the backtick designates code, plaintext, or preformatted text that should be escaped/ignored.` @6ys}
+
+For larger regions of text, or to embed other syntaxes, us the following:
+
 
 { HTML
 
@@ -49,12 +57,14 @@ Note that no text content wrapped between pass markers will appear in Urtext dyn
 
 
 { Documentation
+
 	%%-DOC
 
 	The "DOC" pass marker is used in parts of this documentation in order to Urtext syntax highlighting without parse or execute anything, for documentation and example purposes. This wrapper will not return an error messages even it is missing an ID  {  }.
 
 
 	%%-END-DOC   
+
 	@ooe}
 
 {  User-Defined
@@ -65,4 +75,3 @@ Note that no text content wrapped between pass markers will appear in Urtext dyn
 
 
 @oy5
-from::wwci-00407.local

@@ -1,13 +1,14 @@
-Projects
+Projects _
 
 An Urtext project is a single folder. The folder must contain at least file with an Urtext Node ID.
 
 To make an new empty project:
+
 	- make a new folder and open the folder in Sublime Text. 
 	- Select Urtext : Initialize Project from the Sublime Command Palette. 
 	- The folder how has one Urtext file and a `history` folder for tracking edits. (See | History >prp )
 
-{ Using/Adding Existing Files
+{ Using/Adding Existing Files _
 
 	Once a folder contains at least one file with a node ID, you can add and use existing plaintext files in the project without any modification. However for most of the benefits of Urtext you must minimally an ID (| Node IDs >01q) in each file.
 	

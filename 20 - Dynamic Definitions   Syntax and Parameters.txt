@@ -1,15 +1,15 @@
-Dynamic Definitions : Syntax and Parameters
+Dynamic Definitions : Syntax and Parameters _
 
-Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
+Dynamic definitions are instructions for dynamically building nodes from other nodes. Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-Dynamic definitions are wrapped using double left and right square brackets. Note that there are no restrictions on spacing, indentation, newlines, or inclusion of other arbitrary text or whitespace. Dynamic definitions ignore whitespace and arbitrary text outside of defined parameters. The order of parameters within a definition is unimportant; they are evaluated as a group.
+Dynamic definitions are wrapped with double left and right square brackets(`[[`,`]]`). There are no restrictions on spacing, indentation, newlines, or other arbitrary text or whitespace. Dynamic definitions ignore whitespace and arbitrary text outside other than defined parameters. The order of parameters within a definition is unimportant; they are evaluated as a group.
 
-The dynamic definition below does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see | Dynamic Nodes >k8p
+The dynamic definition is for documentation and does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see | Dynamic Nodes >k8p
 
 	[[ 	ID() 			Target node to dynamically populate with output.
 						Accepts a link to a node (>eee)
 
-		INCLUDE()  		Nodes to include. Accepts one or multiple parameters.
+		INCLUDE()  		Nodes to include. Accepts one or more key/value pairs and optional parameters.
 		or +()
 						Comparisons:
 
@@ -49,15 +49,15 @@ The dynamic definition below does not actually do anything. It rather lists ever
 							Urtext includes some built-in keys whose values are generated automatically. 
 							These may also be used in INCLUDE(): 
 								
-								_links_to			
+								`_links_to`			
 								INCLUDE(_links_to = 46d)
 								Includes all nodes that contain links to node ID `46d`
 
-								_links_from
+								`_links_from`
 								INCLUDE(_links_from = 46d)
 								Includes all nodes to which node ID `46d` links
 
-								_contents : Refers to a node's text contents. 
+								`_contents` : Refers to a node's text contents. 
 								Can be used, for instance, for full text search or comparison.
 								INCLUDE(_contents ? Western Civilization)
 								Includes any node that contents the text "Western Civilization"
@@ -72,9 +72,9 @@ The dynamic definition below does not actually do anything. It rather lists ever
 						or flags, with multiple keys separated by semicolon or newline.
 
 						SORT(
-							key_name			Sorts by the value of the given key. Default is alphabetical.
-																
 
+							[ key name ]		Sorts by the value of the given key. Default is alphabetical.
+																
 						  	-num or -n  		Sorts the results numerically if possible.
 						  						The default sort is alphabetical.
 
@@ -82,11 +82,12 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 						    -reverse or -r 		Reverses the sort order. Applicable to any of the above.
 
-						    Note that system-assigned keys are also available:
-							`_last_accesssed`
-							_contents
-
 							)
+
+						Note that system-assigned keys are also available:
+
+						`_last_accesssed`
+						`_contents`
 
 						Example:
 						SORT(title -reverse)
@@ -105,9 +106,13 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 						To see infinite levels (until recursion occurs) use DEPTH(*). 
 
-		COLLECT()		To
-							
+		COLLECT()		Aggregates occurrences of metadata, including timestamps, and surrounding contents.
+						Accepts key/value pais 
+						Returns a seperate item for each occurence.
 
+						Example:
+						COLLECT(timestamp=*)
+							
 
 		SHOW()			Supplies a template for the output of each result. 
 						Accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.

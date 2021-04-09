@@ -24,14 +24,14 @@ Another use would be to collect all metadata entries of a given key, and optiona
 		Example Collection : "Last Updated"
 
 		Date Updated: `node_date_keyname` >8p4 key in project_settings.
-		Tracking Node Dates and Times >cee:306
-		Tracking Node Dates and Times
+		Tracking Node Dates and Times >cee:307
+		_
 		Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created:
 
 
 		Date Updated: `node_date_keyname` >8p4 key in project_settings.
-		Tracking Node Dates and Times >cee:306
-		Tracking Node Dates and Times
+		Tracking Node Dates and Times >cee:307
+		_
 		Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created:
 
 

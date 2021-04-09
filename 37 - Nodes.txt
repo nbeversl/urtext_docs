@@ -8,12 +8,12 @@ Urtext generates IDs automatically on creation of new nodes. ID's can be changed
 
 It is possible to use files containing no IDs in an Urtext project, but then most of the features of Urtext are lost.
 
-{  Types of Nodes
+{  Types of Nodes _
   	| File Nodes >>ekz
   	| Inline Nodes >>004
 	| Compact Nodes >>kpz    @07q}
 
-{ Node Titles
+{ Node Titles _
 
 	By default, the full first non-whitespace line of any node is the node's title. This can be overridden using the `title` metadata key or by following the desired text with the underscore (`_`) character as used in this document. @ue2}
 

@@ -1,26 +1,13 @@
 
 
 
-# About This Documentation 
-
-This is a documentation of Urtext, written in Urtext. If you're reading it as a `README.MD` (on Github, etc.), it was compiled from the text files in this repository. Clone or download the respository to use it as both a reference and an example project. 
-
-This documentation is in active development. It may be incomplete or behind features and functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
-
-Many of the examples rely on syntax, formatting, and highlighting, which is stripped out in export to Markdown. Where necessary these are replaced with linked screenshots as necessary (see [Linking to Files and Other Resources](#linking-to-files-and-other-resources) and [Exporting](#exporting))
-
-Inside an Urtext implementation, such as the Sublime Text with the Urtext package, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
-- Control-Shift-/ to follow any link
-- Control-Shift-h at any time to return to this "home" node. 
-
-
 # About Urtext
 
 
 
 ## Description 
 
-Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Basic Syntax](#basic-syntax) permits embedding of structural and instructional code into the text itself. 
+Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is a "project". The Urtext interpreter is aware of all the nodes in a project at once, so nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Basic Syntax](#basic-syntax) permits instructions embedded into the text itself. 
 
 The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
 
@@ -30,7 +17,7 @@ Urtext has no built-in user interface; it only compiles and manages the files. U
 
 ## Comparison To Other Tools 
 
-Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for writing, connecting and organizing text.
+Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can export, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for writing, connecting and organizing text.
 
 Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user.
 
@@ -38,7 +25,6 @@ Urtext consolidates content, structure and instructions (scripting) into a singl
 
 ## Uses  
 
-Urtext has many uses, including but limited to:    
 - prose writing
 - research
 - documentation
@@ -53,19 +39,17 @@ Urtext has many uses, including but limited to:
 
 
 
-## Requirements and Features   
-
-Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they are not currently found together in one single existing tool; this was the motivation for creating Urtext.
+## Features and Philosophy  
 
 - It uses plain text files. Plaintext is fast, human-readable, flexible, cross-platform, device-portable, and future-proof.
 
-- It is usable across multiple platforms and devices.
+- It can compile, organize, and link content spread across hundreds or thousands of files. Files and content elements can be linked to one another in tree-like, recursive (tangled), and other non-hierarchical ways.
 
 - Cascading complexity; use only the parts you need. Does not take months/years to learn.
 
-- Being open source, Urtext is extensible, hackable and customizable to specific needs.
+- It is usable across multiple platforms and devices.
 
-- It can compile, organize, and link content spread across hundreds or thousands of files. Files and content elements can be linked to one another in tree-like, recursive (tangled), and other non-hierarchical ways.
+- Being open source, Urtext is extensible, hackable and customizable to specific needs.
 
 - It has customizable and extensible metadata that does not rely on the file system.
 
@@ -82,11 +66,24 @@ Many of the following features and benefits were core requirements when creating
 Being in plaintext and having a syntax specification, it can also be used with:
 
 - Themes and syntax highlighting.
+
 - Version control (Git, for example).   
 
 
 
 
+# About This Documentation 
+
+This is a documentation of Urtext, written in Urtext. The `README.MD` on it was exported from the text files in this repository. Clone or download the respository to use it as both reference and example project. 
+
+This documentation is in active development. It may be incomplete or behind features/functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (>https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
+
+Many of the examples rely on syntax and formatting that are stripped out in export to Markdown. These are replaced with screenshots as necessary (see [Linking to Files and Other Resources](#linking-to-files-and-other-resources) and [Exporting](#exporting))
+
+Inside an Urtext implementation, such as the Sublime Text with the Urtext package, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
+- Control-Shift-/ to follow any link
+- Control-Shift-h at any time to return to this "home" node. 
+- View the readme: [readme.md ; ](readme.md ; )
 
 
 # Quick Start, Guides and Examples  
@@ -115,28 +112,28 @@ See also:
 
 
 
-
 ## Basic Syntax
 
-All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname. 
 
+All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname.
 
-`{  }` 
+`{  }`
 Inline Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.
 More information: [Inline Nodes](#inline-nodes)
 
-`>`		
+`>`
 Node Link. Links to the specified node by ID, like a hyperlink. 
 More information: [Links](#links)
 
 `>>`		
-Node Pointer: Embeds the specified node as though it were included inline using wrappers { } (see above)
+Node Pointer: Embeds the specified node as though it were included inline using wrappers `{ }` (see above)
 More information: [Pointers](#pointers)
 
-`|` 
+`|`
 Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.
 Example and more info: [Dynamic Titles](#dynamic-titles)
-`
+
+`•`
 Compact Node marker. Must be the first non-whitespace character on a line. Must include an ID in order to parse.
 More information: [Compact Nodes](#compact-nodes)
 
@@ -148,24 +145,205 @@ More information: [Syntax and Format](#syntax-and-format)
 
 `::`
 Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
-Metadata may appear anywhere in text. They attach to their containing (parent) node but also remember their location and can serve as anchors/bookmarks to their context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
+Metadata may appear anywhere. They attach to their containing (parent) node, remember their exact location, and can serve as anchors/bookmarks to context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 Example: 
-More information: [Metadata](#metadata)
-  (Closing pass marker.)
 
+More information: [Metadata](#metadata)
 
 
 
 
 ## Dynamic Definitions : Syntax and Parameters
 
-Dynamic definitions contain instructions for dynamically building nodes from the contents of other nodes. They can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
+Dynamic definitions are instructions for dynamically building nodes from other nodes. Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-Dynamic definitions are wrapped using double left and right square brackets. Note that there are no restrictions on spacing, indentation, newlines, or inclusion of other arbitrary text or whitespace. Dynamic definitions ignore whitespace and arbitrary text outside of defined parameters. The order of parameters within a definition is unimportant; they are evaluated as a group.
+Dynamic definitions are wrapped with double left and right square brackets(``). There are no restrictions on spacing, indentation, newlines, or other arbitrary text or whitespace. Dynamic definitions ignore whitespace and arbitrary text outside other than defined parameters. The order of parameters within a definition is unimportant; they are evaluated as a group.
 
-The dynamic definition below does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see [Dynamic Nodes](#dynamic-nodes)
+The dynamic definition is for documentation and does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see [Dynamic Nodes](#dynamic-nodes)
+
+[[ 	ID() 			Target node to dynamically populate with output.
+Accepts a link to a node [ MISSING LINK : eee ] )
+
+INCLUDE()  		Nodes to include. Accepts one or more key/value pairs and optional parameters.
+or +()
+Comparisons:
+
+`=` means equal to
+INCLUDE(key = value)	
+Includes all nodes with the given key containing the given value
+
+`?` means "contains"
+INCLUDE(_contents ? some text or content)
+Includes all nodes containing "some text or content" in their text contents.
+(See also -search)
+
+`*` means "anything"
+INCLUDE(index = *)
+Includes all nodes containing the key `index`
+
+Use semicolon or newline to separate entries, as everywhere in Urtext.
+
+Additional Flags:
+
+Additional flags can be included in 
+
+INCLUDE(*) or +(*)
+Includes all nodes in the project									
+
+`-all_projects` or `*p`
+INCLUDE(-all_projects) or +(*p)
+Expands included nodes to include all projects in the project list.
+
+`-blank`
+Includes all nodes that contain only whitespace as their content
+
+Note these additional flags substitute for semicolons/newlines as separators between entries.
+
+System keys
+
+Urtext includes some built-in keys whose values are generated automatically. 
+These may also be used in INCLUDE(): 
+
+`_links_to`			
+INCLUDE(_links_to = 46d)
+Includes all nodes that contain links to node ID `46d`
+
+`_links_from`
+INCLUDE(_links_from = 46d)
+Includes all nodes to which node ID `46d` links
+
+`_contents` : Refers to a node's text contents. 
+Can be used, for instance, for full text search or comparison.
+INCLUDE(_contents ? Western Civilization)
+Includes any node that contents the text "Western Civilization"
+(comparisons are case-insensitive)
+
+EXCLUDE()		Accepts all the same parameters as INCLUDE()
+or -()			Always evaluated after INCLUDE(), excludes the specified nodes from the result.
 
 
+
+SORT()			Sorts the results. Entries can be keynames (include system-defined ones, see below)
+or flags, with multiple keys separated by semicolon or newline.
+
+SORT(
+
+[ key name ]		Sorts by the value of the given key. Default is alphabetical.
+
+-num or -n  		Sorts the results numerically if possible.
+The default sort is alphabetical.
+
+-timestamp or -t  	Sort by timestamp
+
+-reverse or -r 		Reverses the sort order. Applicable to any of the above.
+
+)
+
+Note that system-assigned keys are also available:
+
+`_last_accesssed`
+`_contents`
+
+Example:
+SORT(title -reverse)
+
+LIMIT()			Limits the output to the specified number of results.
+Limit is applied after SORT().
+
+Example:
+LIMIT(30)
+Will only show 30 results of nodes with the specified INCLUDE()/EXCLUDE() parameters.
+
+
+DEPTH()			By default, the dynamic output will be a list of (unique) nodes specified by the
+combination of INCLUDE() with EXCLUDE(). To see instead a tree representation of each node and its 
+descendants, if any, provide a levels of depth. Example: DEPTH(5).
+
+To see infinite levels (until recursion occurs) use DEPTH(*). 
+
+COLLECT()		Aggregates occurrences of metadata, including timestamps, and surrounding contents.
+Accepts key/value pais 
+Returns a seperate item for each occurence.
+
+Example:
+COLLECT(timestamp=*)
+
+
+SHOW()			Supplies a template for the output of each result. 
+Accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
+
+Words preceded by `$` are are evaluated as metadata keys, replaced in the output by their value(s).
+Note that key names themselves are not displayed in the output. Add keynames manually if you want them included.
+
+Example:
+SHOW(Author: $author, Date: $date\n)
+
+In addition to all user-defined metadata keys, the following tokens are included:
+
+SHOW(
+
+$title 
+Displays the node title, default or via the `title` meta key
+
+$link
+Displays a link to the node
+
+$date 
+Displays the node's date in the project's default timestamp format
+
+$meta
+Shorthand to show all metadata for every node, formatted as by "consolidate metadata"
+
+$contents:120
+Displays the contents of the node. Optional excerpt/length specifier after the colon
+)
+
+HEADER()		Adds additional arbitrary/freeform text to the beginning of the output. This can include any syntax 
+valid inside Urtext nodes, including metadata.
+
+FOOTER()		Adds additional arbitrary/freeform text to the end of the output. Same as for HEADER().
+
+EXPORT()		Exports the output to a Plaintext, Markdown, or HTML, into another node or into an external file.
+Accepts one or more semicolon- or newline-separated links to nodes or files (see | Linking to outside 
+resources[Linking to Files and Other Resources](#linking-to-files-and-other-resources)), such as: 
+
+
+To include all nodes pointed to from the root file, recursively, use the flag:
+-rr or -recursive
+
+It also accepts one of the following flags to specify the output:
+
+-plaintext or -txt	
+
+This is the default.
+Strips all Urtext syntax, including metadata and dynamic definitions.
+Can be used, for instance, to export a node or nodes to a non-Urtext text file.
+
+-markdown or -md	
+
+Outputs a Markdown representaion of the node(s).
+Will include all hierarchically nested nodes using Markdown heading format.
+See FORMAT() for ways to preformat the output.
+
+-html
+
+Outputs HTML
+
+FORMAT()		Specificies additional global formatting of the output. There are intended primarily for formatting 
+exported text, but can be applied to any output. Accepts one or more predefined flags:
+
+-preformat or -pre
+Wraps preformatted text (trees, etc.) in backticks to preserve preformatting, 
+for instance, for Markdown contenxts.
+
+-multiline_meta or -mm
+Places dynamic node metadata on separate lines instead of separated by;
+
+-indent: or -i
+Indents the dynamic node by the number of spaces specified in parentheses.
+Example: FORMAT(-indent:20)
+
+]]  
 
 
 
@@ -217,7 +395,9 @@ The dynamic definition below does not actually do anything. It rather lists ever
 
 
 #### Insert Timestamp: `ctrl + shift + t`    		
-Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)
+
+
+#### Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) 
 
 
 #### Add Node ID: `ctrl + shift + i`  			
@@ -253,7 +433,6 @@ Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windo
 
 
 #### Toggle History Traverse: `ctrl + shift + g` 
-
 
 
 
@@ -365,7 +544,7 @@ You don't need to define a Sublime Project for the Urtext Project, but if you in
 
 ### Description 
 
-Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is called a "project". The Urtext interpreter is aware of all the nodes in a project at once, so that nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Basic Syntax](#basic-syntax) permits embedding of structural and instructional code into the text itself. 
+Urtext is a syntax and interpreter for plaintext. Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is a "project". The Urtext interpreter is aware of all the nodes in a project at once, so nodes can reference, modify, and organize one another, across hundreds or thousands of files. The [Basic Syntax](#basic-syntax) permits instructions embedded into the text itself. 
 
 The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
 
@@ -375,7 +554,7 @@ Urtext has no built-in user interface; it only compiles and manages the files. U
 
 ### Comparison To Other Tools 
 
-Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can be made to export to HTML, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for writing, connecting and organizing text.
+Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. Though it can export, Urtext is not primarily a document conversion or document generation tool. It is rather a tool for writing, connecting and organizing text.
 
 Urtext consolidates content, structure and instructions (scripting) into a single compilable syntax. Although it can link documents or parts of documents together, unlike HTML, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the user.
 
@@ -383,7 +562,6 @@ Urtext consolidates content, structure and instructions (scripting) into a singl
 
 ### Uses  
 
-Urtext has many uses, including but limited to:    
 - prose writing
 - research
 - documentation
@@ -398,19 +576,17 @@ Urtext has many uses, including but limited to:
 
 
 
-### Requirements and Features   
-
-Many of the following features and benefits were core requirements when creating Urtext. Others came about indirectly. Though many can be found in other tools, they are not currently found together in one single existing tool; this was the motivation for creating Urtext.
+### Features and Philosophy  
 
 - It uses plain text files. Plaintext is fast, human-readable, flexible, cross-platform, device-portable, and future-proof.
 
-- It is usable across multiple platforms and devices.
+- It can compile, organize, and link content spread across hundreds or thousands of files. Files and content elements can be linked to one another in tree-like, recursive (tangled), and other non-hierarchical ways.
 
 - Cascading complexity; use only the parts you need. Does not take months/years to learn.
 
-- Being open source, Urtext is extensible, hackable and customizable to specific needs.
+- It is usable across multiple platforms and devices.
 
-- It can compile, organize, and link content spread across hundreds or thousands of files. Files and content elements can be linked to one another in tree-like, recursive (tangled), and other non-hierarchical ways.
+- Being open source, Urtext is extensible, hackable and customizable to specific needs.
 
 - It has customizable and extensible metadata that does not rely on the file system.
 
@@ -427,9 +603,8 @@ Many of the following features and benefits were core requirements when creating
 Being in plaintext and having a syntax specification, it can also be used with:
 
 - Themes and syntax highlighting.
+
 - Version control (Git, for example).   
-
-
 
 
 
@@ -439,6 +614,7 @@ Being in plaintext and having a syntax specification, it can also be used with:
 An Urtext project is a single folder. The folder must contain at least file with an Urtext Node ID.
 
 To make an new empty project:
+
 - make a new folder and open the folder in Sublime Text. 
 - Select Urtext : Initialize Project from the Sublime Command Palette. 
 - The folder how has one Urtext file and a `history` folder for tracking edits. (See [History](#history) )
@@ -455,7 +631,7 @@ Note the append will occur without a confirmation dialog, so if you are just exp
 
 
 
-## NodesNodes _
+## Nodes
 
 A node is region, or set of regions, of a file, up to and including the entire file. A file is itself a node. All nodes can contain other nodes.
 
@@ -474,31 +650,33 @@ It is possible to use files containing no IDs in an Urtext project, but then mos
 
 The most basic node is a single file. It may or may not contain other nodes nested inside it.
 
-To create a new file-level node: [New Node: `ctrl + shift + ;`](#new-node:-`ctrl-+-shift-+-;`). A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
+To create a new file-level node: [New Node:  ctrl + shift + ; ](#new-node:-`ctrl-+-shift-+-;`). A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
 
 
 
-#### Inline NodesInline Nodes _                                                       
+#### Inline Nodes                                                       
+
+Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. For all purposes in Urtext, inline nodes' identities are unique from their containing files, parent nodes, and child nodes.   
 
 The syntax for inline nodes is to wrap the content in curly braces:
 
 
 
-##### Example Inline Node Example Inline Node _  
+##### Example Inline Node   
 
-Create an inline nodes with [Insert Inline Node: `ctrl + shift + [`](#insert-inline-node:-`ctrl-+-shift-+-[`). Inside the inserted double curly braces is a new node with an auto-generated ID.   
+
+Create an inline nodes with [Insert Inline Node:  ctrl + shift + [ ](#insert-inline-node:-`ctrl-+-shift-+-[`). Inside the inserted double curly braces is a new node with an auto-generated ID.   
 
 To wrap existing content into an inline node, first select the content and use the same keypress.
 
-Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another inline node. When syntax highlighting is active, inline node wrappers are tinted to showing nesting level:
+When syntax highlighting is active, inline node wrappers are tinted to showing nesting level:
 
 
 
-(For Markdown export, a screenshot is provided showing indentation and highlighting:)[>./files/node-nesting-example.png](>./files/node-nesting-example.png)
+(For Markdown export, a screenshot is provided showing indentation and highlighting:) [./files/node-nesting-example.png](./files/node-nesting-example.png)
 
 Note that every opening curly bracket must be closed in the same file. Every node requires an ID between its opening and closing brackets. Nodes at the file level ([File Nodes](#file-nodes)) do not use curly-braces, as their region boundaries are the file itself.
 
-For all purposes in Urtext, inline nodes' identity is unique from their containing file, parent nodes, and child nodes.    
 
 
 
@@ -512,9 +690,10 @@ To ignore syntax elements more globally, and/or to embed other syntaxes that use
 
 
 
+
 #### Compact Nodes
 
-Key: [Insert Compact Node: `ctrl + shift + ^`](#insert-compact-node:-`ctrl-+-shift-+-^`)
+Key: [Insert Compact Node:  ctrl + shift + ^ ](#insert-compact-node:-`ctrl-+-shift-+-^`)
 
 For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the character appears, with the closing wrapper being the end of the same line. 
 
@@ -522,7 +701,8 @@ Like all nodes, a compact node requires an ID. Like all nodes, it can contain me
 
 
 
-[>./files/example-compact-node.png](>./files/example-compact-node.png)
+
+[./files/example-compact-node.png](./files/example-compact-node.png)
 
    
 
@@ -555,7 +735,7 @@ Note that a timestamp anywhere in the value will be indexed as the timestamp for
 
 
 
-### Timestamps                                                                                   
+### Timestamps                                                                  
 
 
 
@@ -569,27 +749,28 @@ Text between two angled brackets (`< >`) is parsed as a timestamp whenever the f
 
 ... and so on
 
-Press [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`) to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the [`timestamp_format`](#`timestamp_format`) key.
+Press [Insert Timestamp:  ctrl + shift + t ](#insert-timestamp:-`ctrl-+-shift-+-t`) to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the [ timestamp_format ](#`timestamp_format`) key.
 
 Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`. Like all metadata, they remember their position and may function doubly as anchors/bookmarks.
 
 
 
-#### Tracking Node Dates and Times    
+#### Tracking Node Dates and Times   
 
 Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created: 
 
 
 
-#### Time Zones     
+#### Time Zones   
 
-Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the  [`timezone`](#`timezone`) key in project_settings to another valid value.
+Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the  [ timezone ](#`timezone`) key in project_settings to another valid value.
 
 
 
 
 
 ### Case-sensitivity  
+
 For comparison/filtering/sorting purposes, values are not case-sensitive.
 
 
@@ -630,13 +811,13 @@ Dynamic nodes contain content aggregated from the contents of other nodes. Dynam
 
 
 
-### Dynamic Definitions Dynamic Definitions _
+### Dynamic Definitions 
 
 Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets , and have there own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference [Dynamic Definitions : Syntax and Parameters](#dynamic-definitions-:-syntax-and-parameters).
 
 Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-The key [Insert Dynamic Definition with Node: `ctrl + shift + ]`](#insert-dynamic-definition-with-node:-`ctrl-+-shift-+-]`) creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.  
+The key [Insert Dynamic Definition with Node:  ctrl + shift + ] ](#insert-dynamic-definition-with-node:-`ctrl-+-shift-+-]`) creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.  
 
 There are two main kinds of dynamic output, Lists and Collections:
 
@@ -649,7 +830,9 @@ There are two main kinds of dynamic output, Lists and Collections:
 
 
 
-[>./files/example-list-1-definition.png](>./files/example-list-1-definition.png)[>./files/example-list-1.png](>./files/example-list-1.png)
+
+[./files/example-list-1-definition.png](./files/example-list-1-definition.png)
+[./files/example-list-1.png](./files/example-list-1.png)
 
 Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
 
@@ -683,7 +866,10 @@ Here is the dynamic definition that generates the [Table of Contents](#table-of-
 
 
 
-[>./files/toc-dynamic-definition.png](>./files/toc-dynamic-definition.png)[>./files/excluded-from-toc-definition.png](>./files/excluded-from-toc-definition.png)[>./files/excluded-from-toc-list.png](>./files/excluded-from-toc-list.png)
+
+[./files/toc-dynamic-definition.png](./files/toc-dynamic-definition.png)
+[./files/excluded-from-toc-definition.png](./files/excluded-from-toc-definition.png)
+[./files/excluded-from-toc-list.png](./files/excluded-from-toc-list.png)
 
 See also the definition that dynamically creates the README.md version of this documentation:
 [Example : Urtext Documentation Exported in Markdown to a File](#example-:-urtext-documentation-exported-in-markdown-to-a-file)
@@ -753,7 +939,7 @@ Prepending a pipe character to any node link will populate the space between the
 
 
 #### Sublime 
-Key : [Open Urtext Link:	`ctrl + shift + /`](#open-urtext-link:	`ctrl-+-shift-+-/`) on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
+Key : [Open Urtext Link:	 ctrl + shift + / ](#open-urtext-link:	`ctrl-+-shift-+-/`) on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
 
 
 
@@ -775,16 +961,15 @@ Note that Urtext reads node regions on every save, so cursor location may be imp
 #### Web / HTTP(S) 
 
 HTTP(S) links are recognized automatically and will open in the default browser.    
-Example: pressing [Open Urtext Link:	`ctrl + shift + /`](#open-urtext-link:	`ctrl-+-shift-+-/`) on this line will open the link: http://github.com
+Example: pressing [Open Urtext Link:	 ctrl + shift + / ](#open-urtext-link:	`ctrl-+-shift-+-/`) on this line will open the link: http://github.com
 
 
 
 
 #### Files 
 
-Links to files can be made by writing `f>` , followed immediately with a file path relative to the folder of the project:
-Example: [>README.md](>README.md)
-
+Links to files can be made by writing `f>`, followed immediately with a file path relative to the folder of the project:
+Example: [README.md](README.md)
 
 
 
@@ -846,14 +1031,13 @@ Pointers[Pointers](#pointers)
 
 
 ## Exporting
-
-Urtext can export to plaintext, Markdown and HTML. Output can be written to a file or back into another node in the project. Exporting is dynamic; when changes are made to the source nodes, exports are immediately updated.
+Urtext can export to plaintext, Markdown and HTML. Output can be written to a file or back into another node in the project. Exporting is dynamic; when changes are made to the source files, exports are immediately updated.
 
 
 
 ### Example : Urtext Documentation Exported in Markdown to a File  
 
-This dynamic definition exports the entire documentation from its root node [Urtext  Version: 1.0-beta  Usage Guide and References](#urtext--version:-1.0-beta--usage-guide-and-references) ) in Markdown format to a file called[>./README.md:](>./README.md:)
+This dynamic definition exports the entire documentation from its root node [Urtext  Version: 1.0-beta  Usage Guide and References](#urtext--version:-1.0-beta--usage-guide-and-references) ) in Markdown format to a file called [./README.md:](./README.md:)
 
 
 
@@ -864,7 +1048,6 @@ This dynamic definition exports the entire documentation from its root node [Urt
 ### Example : Fragment Exported to HTML  
 
 The following Dynamic Definition is identical to the above, except it exports to HTML.   
-
 
 
 
@@ -897,14 +1080,14 @@ This system preserves automatic numerical sorting within the filesystem, such th
 
 Though use of powerful version control tools (such as Git, Mercurial, etc.) is possible, Urtext has a lighter built-in versioning system that tracks edits at intervals. It is not necessary to make explicit "commits" in order to utilize this. Urtext creates a single, linear history of each file's content, with each snapshot being a "diff", or record of changes, since the previous snapshot. When a previous state is restored, no "checkout" or "rewind" occurs; rather, the newly restored state is appended to the history. Therefore, in addition to functioning as version control, the feature can also be used as an infinite and non-destructive "undo/redo" editing history that saves state when the file is closed. The default interval is 10 seconds, and can be modified in project_settings. 
 
-To access a file's history, use [Toggle History Traverse: `ctrl + shift + g`](#toggle-history-traverse:-`ctrl-+-shift-+-g`).
+To access a file's history, use [Toggle History Traverse:  ctrl + shift + g ](#toggle-history-traverse:-`ctrl-+-shift-+-g`).
 
 Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories.
 
 
 
 
-## project_settingsThe `project_settings` node is optional. To create one, make a node and use metadata to give it the title `project_settings`:
+## project_settingsThe `` node is optional. To create one, make a node and use metadata to give it the title `project_settings`:
 
 This is the `project_settings` node for the "Urtext Documentation" Urtext project. In the metadata for this node you can specify a handful of settings for the project. (The text content of the node does not matter.)
 
@@ -947,7 +1130,7 @@ Specifies format for filenames when using [ MISSING LINK : pz9 ]
 
 
 ### `timestamp_format` 	
-Set the format of the timestamp when using [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`)
+Set the format of the timestamp when using [Insert Timestamp:  ctrl + shift + t ](#insert-timestamp:-`ctrl-+-shift-+-t`)
 This accepts a Python `strftime` directive. For more information, see https://strftime.org/.
 
 
@@ -1052,16 +1235,14 @@ Ctrl-Shift-E
 
 
 
-
-
 In Sublime Text there is also the alternative of using the UI dropdown. Press Control-Shift-E or select "Urtext: Node List" from the Sublime command palette (Shift-Super-P). Here you can find a node by typing part of its title.
 
-In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see [`index`](#`index`)). 
+In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see [ index ](#`index`)). 
 
 
 
 
-### Traverse ModeTraverse Mode   
+### Traverse Mode   
 
 
 

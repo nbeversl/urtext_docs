@@ -1,32 +1,34 @@
-Exporting
-
-Urtext can export to plaintext, Markdown and HTML. Output can be written to a file or back into another node in the project. Exporting is dynamic; when changes are made to the source nodes, exports are immediately updated.
+Exporting _
+Urtext can export to plaintext, Markdown and HTML. Output can be written to a file or back into another node in the project. Exporting is dynamic; when changes are made to the source files, exports are immediately updated.
 
 {  Example : Urtext Documentation Exported in Markdown to a File
 
     This dynamic definition exports the entire documentation from its root node | Urtext  Version: 1.0-beta  Usage Guide and References >a5m ) in Markdown format to a file called f>./README.md:
 
     [[ 
-        We include three specific root nodes by ID:
+        We include four specific root nodes by ID:
         +(ID=p23) | About This Documentation >p23
         +(ID=013) | About Urtext >013
         +(ID=z7t) | Quick Start, Guides and Examples >z7t
         +(ID=ac5) | Reference >ac5
         
-        Here we use `*` for DEPTH, which means unlimited that children of each node, inline or from node pointers, will be incorporated. Note again that pointers resulting in recursive trees (circular references) will be drawn only to the first point of recursion. (See | Recursive Node Pointers >6ct.)
         DEPTH(*)
+        The asterisk `*` is used for DEPTH, which will include unlimited children of each node. Note again that pointers resulting in recursive trees (circular references) will be drawn only to the first point of recursion. (See | Recursive Node Pointers >6ct.)
 
         SORT(index)
 
         For this documentation, we created a user-defined keyname `flags` to identify nodes that are examples/illustrations. We mark them for exclusion from the Table of Contents with they key `exclude_from_toc`. The following parameters accomplishes this:
         -(flags=exclude_from_export)    
+
         FORMAT( -preformat)
+
         EXPORT(f>README.md; -markdown)
+
      ]]
 
     @m9d}
 
-{  Example : Fragment Exported to HTML
+{  Example : Fragment Exported to HTML _
 
     The following Dynamic Definition is identical to the above, except it exports to HTML.   
 
@@ -41,8 +43,6 @@ Urtext can export to plaintext, Markdown and HTML. Output can be written to a fi
 
     ]]
 
-
-
-@baq}
+    @baq}
 
 @ezg

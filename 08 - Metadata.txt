@@ -1,6 +1,6 @@
-Metadata
+Metadata _
 
-{ General Syntax
+{ General Syntax _
 
   Every node can have an unlimited number of metadata entries. Metadata is structured in double-colon-separated key/value pairs, with the value (to the right of the colon) containing an optional timestamp. Examples:
 
@@ -15,36 +15,37 @@ Metadata
       
   Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. @8dw}
   
-{ Timestamps                                                                                  
+{ Timestamps _                                                                 
 
-  {   Syntax and Format
+  {   Syntax and Format _
 
       Text between two angled brackets (`< >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext utilizes the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:
 
             <Fri., Oct. 09, 2020, 09:59 AM>
             <February 23, 1848>
-            <March 1960>
+            <May 1946>
             <1066>
             ... and so on
 
-      Press |  ?  >7b8 to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the | `timestamp_format` >00n key.
+      Press | Insert Timestamp: `ctrl + shift + t` >7b8 to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the | `timestamp_format` >00n key.
 
       Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`. Like all metadata, they remember their position and may function doubly as anchors/bookmarks. @005}
 
-  {   Tracking Node Dates and Times 
+  {   Tracking Node Dates and Times _
 
       Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created: updated::<Thu., Sep. 10, 2020, 05:42 PM>. The default keyname can be changed using the | `node_date_keyname` >8p4 key in project_settings. @cee}
     
-  {   Time Zones  
+  {   Time Zones _
 
       Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the  | `timezone` >boe key in project_settings to another valid value. @7w6}   
 
   @2i4}
 
-{  Case-sensitivity
+{  Case-sensitivity _
+
     For comparison/filtering/sorting purposes, values are not case-sensitive. @l36}
 
- { Reserved Keys
+ { Reserved Keys _
 
       There are two reserved keys that Urtext interprets in a special way:
 

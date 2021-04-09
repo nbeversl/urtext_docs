@@ -34,7 +34,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│           └── fourth level >5pq
 		└── Escaping Curly Brackets >8a8
 		Syntax and Format >005
-		Requirements and Features >006
+		Features and Philosophy >006
 		Example Tree >00e
 		Links and Pointers >00j
 		├── Links >0y2
@@ -92,7 +92,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Description >yv2
 		├── Comparison To Other Tools >h8z
 		├── Uses >lhs
-		└── Requirements and Features >006
+		└── Features and Philosophy >006
 		In-Progress / Experimental / Wish List >014
 		└── iPhone/iPad/iOS >01y
 		    └── Synchronator Setup >01z
@@ -175,6 +175,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Content Insertion >kxh
 		│   ├── Insert Compact Node: `ctrl + shift + ^` >1qq
 		│   ├── Insert Timestamp: `ctrl + shift + t` >7b8
+		│   ├── Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
 		│   ├── Add Node ID: `ctrl + shift + i` >gv9
 		│   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
 		│   ├── Insert Inline Node: `ctrl + shift + [` >rzx
@@ -219,6 +220,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		└── third test level >80d
 		    └── fourth level >5pq
 		        └── fifth level >e5n
+		Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
+		Generic >6ys
 		Download and Install Dependencies Manually >774
 		Insert Timestamp: `ctrl + shift + t` >7b8
 		Cross-Project Linking >7lx
@@ -229,7 +232,6 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Dynamic Definitions : Syntax and Parameters >87g
 		Escaping Curly Brackets >8a8
 		General Syntax >8dw
-		The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 		Example first level >8fv
 		└── second level >6qj
 		    └── third test level >80d
@@ -245,7 +247,6 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Quick Start, Guides and Examples >z7t
 		│   ├── Installation and Setup (Desktop) >6cd
 		│   ├── Basic Syntax >znj
-		│   │   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 		│   ├── Dynamic Definitions : Syntax and Parameters >87g
 		│   ├── Key Bindings and Operations >1vs
 		│   │   ├── Navigation >k7b
@@ -263,6 +264,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   │   ├── Content Insertion >kxh
 		│   │   │   ├── Insert Compact Node: `ctrl + shift + ^` >1qq
 		│   │   │   ├── Insert Timestamp: `ctrl + shift + t` >7b8
+		│   │   │   ├── Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
 		│   │   │   ├── Add Node ID: `ctrl + shift + i` >gv9
 		│   │   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
 		│   │   │   ├── Insert Inline Node: `ctrl + shift + [` >rzx
@@ -288,7 +290,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    │   ├── Description >yv2
 		    │   ├── Comparison To Other Tools >h8z
 		    │   ├── Uses >lhs
-		    │   └── Requirements and Features >006
+		    │   └── Features and Philosophy >006
 		    ├── Projects >dce
 		    │   └── Using/Adding Existing Files >rij
 		    ├── Nodes >01j
@@ -360,7 +362,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── Description >yv2
 		│   ├── Comparison To Other Tools >h8z
 		│   ├── Uses >lhs
-		│   └── Requirements and Features >006
+		│   └── Features and Philosophy >006
 		├── Projects >dce
 		│   └── Using/Adding Existing Files >rij
 		├── Nodes >01j
@@ -517,6 +519,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Content Insertion >kxh
 		├── Insert Compact Node: `ctrl + shift + ^` >1qq
 		├── Insert Timestamp: `ctrl + shift + t` >7b8
+		├── Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
 		├── Add Node ID: `ctrl + shift + i` >gv9
 		├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
 		├── Insert Inline Node: `ctrl + shift + [` >rzx
@@ -544,6 +547,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Documentation >ooe
 		Sublime >osu
 		Embedded Syntaxes and Pass Markers >oy5
+		├── Generic >6ys
 		├── HTML >xsh
 		├── JSON >njo
 		├── Python >ljr
@@ -598,7 +602,6 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Quick Start, Guides and Examples >z7t
 		├── Installation and Setup (Desktop) >6cd
 		├── Basic Syntax >znj
-		│   └── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 		├── Dynamic Definitions : Syntax and Parameters >87g
 		├── Key Bindings and Operations >1vs
 		│   ├── Navigation >k7b
@@ -616,6 +619,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── Content Insertion >kxh
 		│   │   ├── Insert Compact Node: `ctrl + shift + ^` >1qq
 		│   │   ├── Insert Timestamp: `ctrl + shift + t` >7b8
+		│   │   ├── Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
 		│   │   ├── Add Node ID: `ctrl + shift + i` >gv9
 		│   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
 		│   │   ├── Insert Inline Node: `ctrl + shift + [` >rzx
@@ -638,7 +642,6 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		    └── Using a Sublime Project for an Urtext Project >c3n
 		Quick Tag from Other: `ctrl + shift + 0` >zep
 		Basic Syntax >znj
-		└── The symbol below is a Pass Marker, which tells Urtext to skip everything between it and the closing >8e5
 		def::>thz; @nc6 }
 
 @thz
