@@ -7,7 +7,7 @@ The syntax for inline nodes is to wrap the content in curly braces:
   { Example Inline Node _  @ywi }
 
 
-Create an inline nodes with | Insert Inline Node: `ctrl + shift + [` >rzx. Inside the inserted double curly braces is a new node with an auto-generated ID.   
+Create an inline nodes with | Insert Inline Node: `ctrl + shift + ` >rzx. Inside the inserted double curly braces is a new node with an auto-generated ID.   
 
 To wrap existing content into an inline node, first select the content and use the same keypress.
 

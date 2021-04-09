@@ -6,6 +6,7 @@ Dynamic definitions are wrapped with double left and right square brackets(`[[`,
 
 The dynamic definition is for documentation and does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see | Dynamic Nodes >k8p
 
+
 	[[ 	ID() 			Target node to dynamically populate with output.
 						Accepts a link to a node (>eee)
 
@@ -189,5 +190,6 @@ The dynamic definition is for documentation and does not actually do anything. I
 						Example: FORMAT(-indent:20)
 
 ]]  
+
 
 @87g 

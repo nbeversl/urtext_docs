@@ -19,8 +19,8 @@ Key Bindings and Operations
 • Insert Timestamp: `ctrl + shift + t`   			@7b8
 • Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) @6ym
 • Add Node ID: `ctrl + shift + i` 				@gv9
-• Insert Dynamic Definition with Node: `ctrl + shift + ]`	@jsc
-• Insert Inline Node: `ctrl + shift + [` 			@rzx
+• Insert Dynamic Definition with Node: `ctrl + shift + }`	@jsc
+• Insert Inline Node: `ctrl + shift + {` 			@rzx
 • Insert Link to New Node: `ctrl + shift + '`		@sxk
 • New Node: `ctrl + shift + ;` 					@ve3
 • Quick Tag from Other: `ctrl + shift + 0`		@zep
@@ -35,4 +35,5 @@ Key Bindings and Operations
 • Toggle History Traverse: `ctrl + shift + g` @ndc
 @a8q }
 
+**_settings::keep_syntax
 @1vs

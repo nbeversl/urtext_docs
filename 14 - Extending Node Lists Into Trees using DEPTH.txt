@@ -177,8 +177,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   ├── Insert Timestamp: `ctrl + shift + t` >7b8
 		│   ├── Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
 		│   ├── Add Node ID: `ctrl + shift + i` >gv9
-		│   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
-		│   ├── Insert Inline Node: `ctrl + shift + [` >rzx
+		│   ├── Insert Dynamic Definition with Node: `ctrl + shift + ` >jsc
+		│   ├── Insert Inline Node: `ctrl + shift + ` >rzx
 		│   ├── Insert Link to New Node: `ctrl + shift + '` >sxk
 		│   ├── New Node: `ctrl + shift + ;` >ve3
 		│   └── Quick Tag from Other: `ctrl + shift + 0` >zep
@@ -266,8 +266,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   │   │   ├── Insert Timestamp: `ctrl + shift + t` >7b8
 		│   │   │   ├── Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
 		│   │   │   ├── Add Node ID: `ctrl + shift + i` >gv9
-		│   │   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
-		│   │   │   ├── Insert Inline Node: `ctrl + shift + [` >rzx
+		│   │   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ` >jsc
+		│   │   │   ├── Insert Inline Node: `ctrl + shift + ` >rzx
 		│   │   │   ├── Insert Link to New Node: `ctrl + shift + '` >sxk
 		│   │   │   ├── New Node: `ctrl + shift + ;` >ve3
 		│   │   │   └── Quick Tag from Other: `ctrl + shift + 0` >zep
@@ -412,7 +412,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│       ├── Duplicate Pointers >00t
 		│       │   └── Example Child Node Using a Node Pointer >001
 		│       └── Recursive Node Pointers >6ct
-		│           ├── ! RECURSION (from tree duplication) : Pointers >lmu
+		│           ├── ! RECURSION - (from alias) : Pointers >lmu
 		│           └── Example Recursive Node Tree >01n
 		├── Exporting >ezg
 		│   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
@@ -478,7 +478,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── About Compact Nodes >frm
 		├── can have arbitrary other metadata >xlc
 		└── become child nodes of their containing node. >hiz
-		Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
+		Insert Dynamic Definition with Node: `ctrl + shift + ` >jsc
 		Search >k67
 		└── Full Text Search >4p9
 		    ├── Searching >rr3
@@ -521,8 +521,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		├── Insert Timestamp: `ctrl + shift + t` >7b8
 		├── Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
 		├── Add Node ID: `ctrl + shift + i` >gv9
-		├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
-		├── Insert Inline Node: `ctrl + shift + [` >rzx
+		├── Insert Dynamic Definition with Node: `ctrl + shift + ` >jsc
+		├── Insert Inline Node: `ctrl + shift + ` >rzx
 		├── Insert Link to New Node: `ctrl + shift + '` >sxk
 		├── New Node: `ctrl + shift + ;` >ve3
 		└── Quick Tag from Other: `ctrl + shift + 0` >zep
@@ -565,7 +565,7 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		Searching >rr3
 		├── Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lowe >k8v
 		└── Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the >q8j
-		Insert Inline Node: `ctrl + shift + [` >rzx
+		Insert Inline Node: `ctrl + shift + ` >rzx
 		Save on Focus Lost >sqq
 		Insert Link to New Node: `ctrl + shift + '` >sxk
 		Project Naming (Identification) >tgp
@@ -621,8 +621,8 @@ By default, Node lists are "one-dimensional". With the DEPTH parameter, you can 
 		│   │   ├── Insert Timestamp: `ctrl + shift + t` >7b8
 		│   │   ├── Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
 		│   │   ├── Add Node ID: `ctrl + shift + i` >gv9
-		│   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
-		│   │   ├── Insert Inline Node: `ctrl + shift + [` >rzx
+		│   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ` >jsc
+		│   │   ├── Insert Inline Node: `ctrl + shift + ` >rzx
 		│   │   ├── Insert Link to New Node: `ctrl + shift + '` >sxk
 		│   │   ├── New Node: `ctrl + shift + ;` >ve3
 		│   │   └── Quick Tag from Other: `ctrl + shift + 0` >zep

@@ -161,6 +161,7 @@ Dynamic definitions are wrapped with double left and right square brackets(``). 
 
 The dynamic definition is for documentation and does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see [Dynamic Nodes](#dynamic-nodes)
 
+
 [[ 	ID() 			Target node to dynamically populate with output.
 Accepts a link to a node [ MISSING LINK : eee ] )
 
@@ -347,6 +348,7 @@ Example: FORMAT(-indent:20)
 
 
 
+
 ## Key Bindings and Operations
 
 
@@ -354,85 +356,90 @@ Example: FORMAT(-indent:20)
 ### Navigation 
 
 
-#### Node Browser, Backlinks: `ctrl + shift + 1`     
+#### Node Browser, Backlinks: `ctrl + shift + 1`     	@1ea
 
 
-#### Nav Backward: `ctrl + shift + ,`   			
+#### Nav Backward: `ctrl + shift + ,`   				@3hy
 
 
-#### Home Node: `ctrl + shift + h`  				
+#### Home Node: `ctrl + shift + h`  					@5ab
 
 
-#### List Projects: `ctrl + shift + o`  			
+#### List Projects: `ctrl + shift + o`  				@g5a
 
 
-#### Toggle Traverse Mode: `ctrl + shift + r`   	
+#### Toggle Traverse Mode: `ctrl + shift + r`   		@hcf
 
 
-#### Node Browser, Include All Projects: `ctrl + shift + *` 
+#### Node Browser, Include All Projects: `ctrl + shift + *`  @hyh
 
 
-#### Open Urtext Link:	`ctrl + shift + /` 			
+#### Open Urtext Link:	`ctrl + shift + /` 				@ngh
 
 
-#### Open Random Node: `ctrl + shift + f`  			
+#### Open Random Node: `ctrl + shift + f`  				@q5f
 
 
-#### Node Browser: `ctrl + shift + e`   			
+#### Node Browser: `ctrl + shift + e`   				@vdr
 
 
-#### Nav Forward: `ctrl + shift + .` 				
+#### Nav Forward: `ctrl + shift + .` 					@yan
 
 
-#### Node Browser, Forward Links: `ctrl + shift + 2`   
+#### Node Browser, Forward Links: `ctrl + shift + 2`   	@ylo
+@k7b 
 
 
 
 ### Content Insertion 
 
 
-#### Insert Compact Node: `ctrl + shift + ^`   	
+#### Insert Compact Node: `ctrl + shift + ^`   		@1qq
 
 
-#### Insert Timestamp: `ctrl + shift + t`    		
+#### Insert Timestamp: `ctrl + shift + t`    			@7b8
 
 
-#### Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) 
+#### Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux)  @6ym
 
 
-#### Add Node ID: `ctrl + shift + i`  			
+#### Add Node ID: `ctrl + shift + i`  				@gv9
 
 
-#### Insert Dynamic Definition with Node: `ctrl + shift + ]` 
+#### Insert Dynamic Definition with Node: `ctrl + shift + ` Insert Dynamic Definition with Node: `ctrl + shift + }`	@jsc
 
 
-#### Insert Inline Node: `ctrl + shift + [`  		
+#### Insert Inline Node: `ctrl + shift + ` Insert Inline Node: `ctrl + shift + {` 			@rzx
 
 
-#### Insert Link to New Node: `ctrl + shift + '` 	
+#### Insert Link to New Node: `ctrl + shift + '` 		@sxk
 
 
-#### New Node: `ctrl + shift + ;`  				
+#### New Node: `ctrl + shift + ;`  					@ve3
 
 
-#### Quick Tag from Other: `ctrl + shift + 0` 	
+#### Quick Tag from Other: `ctrl + shift + 0` 		@zep
+@kxh  
 
 
 
 ### Copy Links 
 
 
-#### Copy Link to this Node With Title: `ctrl + shift + super + c`  
+#### Copy Link to this Node With Title: `ctrl + shift + super + c`  	@05x
 
 
-#### Copy Link to this Node: `ctrl + shift + c`  
+#### Copy Link to this Node: `ctrl + shift + c`  	@vel
+@kqz  
 
 
 
 ### History 
 
 
-#### Toggle History Traverse: `ctrl + shift + g` 
+#### Toggle History Traverse: `ctrl + shift + g`  @ndc
+@a8q 
+
 
 
 
@@ -650,7 +657,7 @@ It is possible to use files containing no IDs in an Urtext project, but then mos
 
 The most basic node is a single file. It may or may not contain other nodes nested inside it.
 
-To create a new file-level node: [New Node:  ctrl + shift + ; ](#new-node:-`ctrl-+-shift-+-;`). A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
+To create a new file-level node: [New Node: `ctrl + shift + ;`](#new-node:-`ctrl-+-shift-+-;`). A new file is created, named and saved automatically. It has whitespace on top and a metadata block at the bottom containing a node ID and (by default) a creation timestamp.
 
 
 
@@ -665,7 +672,7 @@ The syntax for inline nodes is to wrap the content in curly braces:
 ##### Example Inline Node   
 
 
-Create an inline nodes with [Insert Inline Node:  ctrl + shift + [ ](#insert-inline-node:-`ctrl-+-shift-+-[`). Inside the inserted double curly braces is a new node with an auto-generated ID.   
+Create an inline nodes with [Insert Inline Node: `ctrl + shift + `](#insert-inline-node:-`ctrl-+-shift-+-`). Inside the inserted double curly braces is a new node with an auto-generated ID.   
 
 To wrap existing content into an inline node, first select the content and use the same keypress.
 
@@ -693,7 +700,7 @@ To ignore syntax elements more globally, and/or to embed other syntaxes that use
 
 #### Compact Nodes
 
-Key: [Insert Compact Node:  ctrl + shift + ^ ](#insert-compact-node:-`ctrl-+-shift-+-^`)
+Key: [Insert Compact Node: `ctrl + shift + ^`](#insert-compact-node:-`ctrl-+-shift-+-^`)
 
 For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the character appears, with the closing wrapper being the end of the same line. 
 
@@ -749,7 +756,7 @@ Text between two angled brackets (`< >`) is parsed as a timestamp whenever the f
 
 ... and so on
 
-Press [Insert Timestamp:  ctrl + shift + t ](#insert-timestamp:-`ctrl-+-shift-+-t`) to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the [ timestamp_format ](#`timestamp_format`) key.
+Press [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`) to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the [`timestamp_format`](#`timestamp_format`) key.
 
 Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`. Like all metadata, they remember their position and may function doubly as anchors/bookmarks.
 
@@ -763,7 +770,7 @@ Reliance on the operating system's "created" or "modified" file date metadata is
 
 #### Time Zones   
 
-Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the  [ timezone ](#`timezone`) key in project_settings to another valid value.
+Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the  [`timezone`](#`timezone`) key in project_settings to another valid value.
 
 
 
@@ -817,7 +824,7 @@ Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are sp
 
 Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-The key [Insert Dynamic Definition with Node:  ctrl + shift + ] ](#insert-dynamic-definition-with-node:-`ctrl-+-shift-+-]`) creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.  
+The key [Insert Dynamic Definition with Node: `ctrl + shift + `](#insert-dynamic-definition-with-node:-`ctrl-+-shift-+-`) creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.  
 
 There are two main kinds of dynamic output, Lists and Collections:
 
@@ -939,7 +946,7 @@ Prepending a pipe character to any node link will populate the space between the
 
 
 #### Sublime 
-Key : [Open Urtext Link:	 ctrl + shift + / ](#open-urtext-link:	`ctrl-+-shift-+-/`) on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
+Key : [Open Urtext Link:	`ctrl + shift + /`](#open-urtext-link:	`ctrl-+-shift-+-/`) on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
 
 
 
@@ -961,7 +968,7 @@ Note that Urtext reads node regions on every save, so cursor location may be imp
 #### Web / HTTP(S) 
 
 HTTP(S) links are recognized automatically and will open in the default browser.    
-Example: pressing [Open Urtext Link:	 ctrl + shift + / ](#open-urtext-link:	`ctrl-+-shift-+-/`) on this line will open the link: http://github.com
+Example: pressing [Open Urtext Link:	`ctrl + shift + /`](#open-urtext-link:	`ctrl-+-shift-+-/`) on this line will open the link: http://github.com
 
 
 
@@ -1080,7 +1087,7 @@ This system preserves automatic numerical sorting within the filesystem, such th
 
 Though use of powerful version control tools (such as Git, Mercurial, etc.) is possible, Urtext has a lighter built-in versioning system that tracks edits at intervals. It is not necessary to make explicit "commits" in order to utilize this. Urtext creates a single, linear history of each file's content, with each snapshot being a "diff", or record of changes, since the previous snapshot. When a previous state is restored, no "checkout" or "rewind" occurs; rather, the newly restored state is appended to the history. Therefore, in addition to functioning as version control, the feature can also be used as an infinite and non-destructive "undo/redo" editing history that saves state when the file is closed. The default interval is 10 seconds, and can be modified in project_settings. 
 
-To access a file's history, use [Toggle History Traverse:  ctrl + shift + g ](#toggle-history-traverse:-`ctrl-+-shift-+-g`).
+To access a file's history, use [Toggle History Traverse: `ctrl + shift + g`](#toggle-history-traverse:-`ctrl-+-shift-+-g`).
 
 Histories are stored in the /history folder inside the project, as .pkl ("pickle") files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories.
 
@@ -1130,7 +1137,7 @@ Specifies format for filenames when using [ MISSING LINK : pz9 ]
 
 
 ### `timestamp_format` 	
-Set the format of the timestamp when using [Insert Timestamp:  ctrl + shift + t ](#insert-timestamp:-`ctrl-+-shift-+-t`)
+Set the format of the timestamp when using [Insert Timestamp: `ctrl + shift + t`](#insert-timestamp:-`ctrl-+-shift-+-t`)
 This accepts a Python `strftime` directive. For more information, see https://strftime.org/.
 
 
@@ -1237,7 +1244,7 @@ Ctrl-Shift-E
 
 In Sublime Text there is also the alternative of using the UI dropdown. Press Control-Shift-E or select "Urtext: Node List" from the Sublime command palette (Shift-Super-P). Here you can find a node by typing part of its title.
 
-In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see [ index ](#`index`)). 
+In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see [`index`](#`index`)). 
 
 
 

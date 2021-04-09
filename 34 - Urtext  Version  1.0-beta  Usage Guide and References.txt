@@ -40,8 +40,8 @@ Quick Start, Guides and Examples >z7t
 │   │   ├── Insert Timestamp: `ctrl + shift + t` >7b8
 │   │   ├── Insert Inline Node, minimal: `ctrl + shift + p` (OSX), `alt  + shift + p` (Windows, Linux) >6ym
 │   │   ├── Add Node ID: `ctrl + shift + i` >gv9
-│   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc
-│   │   ├── Insert Inline Node: `ctrl + shift + [` >rzx
+│   │   ├── Insert Dynamic Definition with Node: `ctrl + shift + ` >jsc
+│   │   ├── Insert Inline Node: `ctrl + shift + ` >rzx
 │   │   ├── Insert Link to New Node: `ctrl + shift + '` >sxk
 │   │   ├── New Node: `ctrl + shift + ;` >ve3
 │   │   └── Quick Tag from Other: `ctrl + shift + 0` >zep
@@ -75,7 +75,6 @@ Reference >ac5
 │   │   │   └── Escaping Curly Brackets >8a8
 │   │   └── Compact Nodes >kpz
 │   │       └── Example Compact Node >d7b
-│   │           └── Example inline node within the compact node. >9up
 │   └── Node Titles >ue2
 ├── Metadata >00x
 │   ├── General Syntax >8dw
@@ -112,7 +111,7 @@ Reference >ac5
 │       ├── Duplicate Pointers >00t
 │       │   └── Example Child Node Using a Node Pointer >001
 │       └── Recursive Node Pointers >6ct
-│           ├── ! RECURSION (from tree duplication) : Pointers >lmu
+│           ├── ! RECURSION - (from alias) : Pointers >lmu
 │           └── Example Recursive Node Tree >01n
 ├── Exporting >ezg
 │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
