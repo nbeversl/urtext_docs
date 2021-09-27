@@ -21,26 +21,26 @@ Lists
 
 			{ Example: Nodes from the Documentation
  flags::exclude_from_export
-Example first level >8fv
-Links >0y2
-Nav Forward: >yan
-Timestamps >2i4
-tag_all >yin
-Future Proof >xat
-Copy Link to this Node With Title: >05x
-Full Text Search >4p9
-Sublime Text Key Bindings and Operations >1vs
-Provides a title for the entire project >xqu
-Projects >dce
-Plain Text >7rg
-Toggle History Traverse: >ndc
-Exporting >ezg
-Example Bracket Node >ywi
+Dynamic Definitions >07u
+Generating a node ID manually >rfp
+Other Features >kne
 Node Browser, Backlinks: >1ea
-Freeform, Flexible Syntax >wzk
-Insert Timestamp: >7b8
-About Urtext >013
-Bullet Nodes >j6t
+Identifies the home node for the project, connected to the "Home" key >d6u
+Extensibile >gn8
+History >prp
+General Syntax >8dw
+Nav Forward: >yan
+Future Proof >xat
+Download Dependencies from a Monorepo >arl
+Insert Link to New Node: >sxk
+Errors and Warnings >bpk
+Cross-Project Linking >7lx
+History >a8q
+Quick Start, Guides and Examples >z7t
+Search Using Dynamic Nodes >uy4
+Example Compact Node >d7b
+Comparison To Other Tools >h8z
+tag_all >yin
 ((>twz:7)) @m1r}
 
 	f>./files/example-list-1-definition.png

@@ -14,15 +14,15 @@ Templating the Output with the SHOW parameter _
 ]]
 
           { Example List 2
-Example first level: >8fv
+Dynamic Definitions: >07u
 -
-Links: >0y2
+Generating a node ID manually: >rfp
 -
-Nav Forward:: >yan
+Other Features: >kne
 -
-Timestamps: >2i4
+Node Browser, Backlinks:: >1ea
 -
-tag_all: >yin
+Identifies the home node for the project, connected to the "Home" key: >d6u
 -
 ((>8p5:50)) @c1x}
 

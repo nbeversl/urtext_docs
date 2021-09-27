@@ -1,0 +1,162 @@
+Extending Node Lists Into Trees using DEPTH
+
+By default, Node lists are "one-dimensional". With the DEPTH parameter, you can expand these to hierarchical nested nodes up to arbitrary depth, whether from | Inline Nodes >004 or from | Pointers >lmu.
+
+[[  
+	These parameters are mostly the same as for the previous examples ( see | Lists >twz) 
+	Here they are strung together on a single line; recall that formatting does not matter.
+	ID(>nc6) +(*) FORMAT(indent:2) HEADER(Example List 3)
+
+	Here we have omitted the LIMIT parameter, so the definition returns all nodes in this documentation.
+
+	The DEPTH paramter specifies how many levels deep we want to view nested hierachies. We've set it to 5 to avoid an enormous output, but try changing the number (or other parameters in the definition) to see the difference in output. 
+	DEPTH(5)
+]]
+
+{ Example List 3
+Dynamic Definitions >07u
+Generating a node ID manually >rfp
+Other Features >kne
+Node Browser, Backlinks: >1ea
+Identifies the home node for the project, connected to the "Home" key >d6u
+Extensibile >gn8
+History >prp
+General Syntax >8dw
+Nav Forward: >yan
+Future Proof >xat
+Download Dependencies from a Monorepo >arl
+Insert Link to New Node: >sxk
+Errors and Warnings >bpk
+Cross-Project Linking >7lx
+History >a8q
+Quick Start, Guides and Examples >z7t
+Search Using Dynamic Nodes >uy4
+Example Compact Node >d7b
+Comparison To Other Tools >h8z
+tag_all >yin
+Reference >ac5
+Exporting >ezg
+Dependencies and Installation >2fn
+Reserved Keys >fo2
+Provides a title for the entire project >xqu
+Add Node ID: >gv9
+Open Urtext Link: >ngh
+Toggle Traverse Mode: >hcf
+Overrides the node title, which is by default the full first non-whitespace line. >pz3
+(untitled) >b2e
+Home Node: >5ab
+Tracking Node Dates and Times >cee
+Traverse Mode >00w
+third test level >80d
+Command Binding >e8x
+About Compact Nodes >frm
+Duplicate Node IDs >bzv
+Dynamic Nodes >k8p
+Download and Install Dependencies Manually >774
+Inserting a Node ID manually >04s
+Example : Fragment Exported to HTML >baq
+Sublime : select                  from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes. >k8v
+Generated automatically in a dynamic node, contains a link to the node containing the definition. >5cq
+Lists >twz
+Navigation >k7b
+Node Browser, Include All Projects: >hyh
+Using/Adding Existing Files >rij
+fourth level >5pq
+Timestamps >2i4
+Search >k67
+Uses >lhs
+Other dynamic instructions >x0c
+Plain Text >7rg
+Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. >q8j
+Example : Urtext Documentation Exported in Markdown to a File >m9d
+Copy Link to this Node With Title: >05x
+Searching >rr3
+can have arbitrary other metadata >xlc
+Project Naming (Identification) >tgp
+Insert Timestamp: >7b8
+This node is just here as a destination from the node pointer in  Basic Syntax >ttt
+Reserved key for every node, used here to specificy this node as containing project settings >egg
+Nodes Excluded from the Table of Contents >jkl
+Sublime Text Key Bindings and Operations >1vs
+List Projects: >g5a
+second level >6qj
+Node Titles >ue2
+Insert Dynamic Definition with Node: >jsc
+About This Documentation >p23
+project_settings >8p4
+Templating the Output with the SHOW parameter >8p5
+Escaping Curly Brackets >8a8
+Case-sensitivity >l36
+Insert Inline Node: >rzx
+Insert Compact Node: >1qq
+Local >2yx
+Copy Links >kqz
+Quick Tag from Other: >zep
+Insert Bracket Node, minimal:                    (OSX),                    (Windows, Linux) >6ym
+Nav Backward: >3hy
+Sublime >osu
+Urtext  Version: 1.0-alpha  Usage Guide and References >a5m
+Example inline node within compact node. >9up
+Trailing Node IDs >2a3
+fifth level >e5n
+Details on the Sublime Implementation >01u
+Dynamic Definitions : Syntax and Parameters >87g
+Bracket Nodes >004
+Node Browser: >vdr
+Full Text Search >4p9
+Installation and Setup (Sublime Text / Desktop) >6cd
+Links >0y2
+Node Browser, Forward Links: >ylo
+become child nodes of their containing node. >hiz
+Open source >u8o
+Example Bracket Node >ywi
+Basic Syntax >znj
+Description >yv2
+Example first level >8fv
+About Urtext >013
+Toggle History Traverse: >ndc
+In-Progress / Experimental / Wish List >014
+Open Random Node: >q5f
+Viewing Linked Relationships >00u
+Provides a way to give nodes a sort order in  The Node Browser .  Indexed nodes will sort before (above) the others, lowest numbers appearing first. To utilize, add a two-digit sort index (00-99) to a node, such as: >00z
+Reference: Key Bindings >018
+Metadata >00x
+Copy Link to this Node: >vel
+Freeform, Flexible Syntax >wzk
+Word Wrap in Traverse Mode >xci
+Links and Pointers >00j
+New Node: ctrl + shift + ; >ve3
+Using Multiple Projects >ipy
+Web / HTTP(S) >00o
+This node now has special reserved metadata keys that will be parsed as follows: >00l
+Sublime Text tools to help with linking >00m
+Content Insertion >kxh
+Pythonista >iy8
+Compact Nodes >kpz
+Files >00p
+Projects >dce
+Linking to Files and Other Resources >00q
+File Nodes >ekz
+Bullet Nodes >j6t
+Time Zones >7w6
+Dynamic Titles >4vu
+Node IDs >01q
+Example Child Node Using a Node Pointer >001
+Features and Philosophy >006
+User Interface Elements >3n6
+Opening Links >01w
+Syntax and Format >005
+iPhone/iPad/iOS >01y
+Projects, Structure and Compiling >01x
+Synchronator Setup >01z
+Types of Nodes >07q
+Extending Node Lists Into Trees using DEPTH >thz
+Syntaxes : >r0w
+The Node Browser >01i
+Nodes >01j
+File Naming >01m
+Example Recursive Node Tree >01n
+((>thz:249)) @nc6}
+
+@thz
+from::wwci-00407.local
