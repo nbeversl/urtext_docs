@@ -1,0 +1,34 @@
+Metadata  _
+
+Nodes may contain user-defined metadata in key/value pairs, separated by a double-colon, like this:
+
+  example_key::example value;
+
+Multiple values for a key can be separated using dash with a space on both sides ( - ) :
+  
+  example_key::another example value - a third example value
+
+A shorthand way to make single-word metadata values (assigned to a predefined metadata key) is to use the hashtag:
+
+  #examplevalue
+
+  { Timestamps _
+  
+    Timestamps are surrounded on either side by angle brackets (< >) and will parse free-form entries in a variety of formats. Examples:
+
+      <August 1, 2001>
+      <Fri., Aug. 20, 2021, 10:20 AM>
+      <1066>
+
+    To insert the current date and time anywhere, Ctrl-Shift-T. (Try it in this file)
+
+    Timestamps can be used either as components of key/value metadata as described above or as free-form entries anywhere in text, where they are then called "inline" timestamps.
+
+@8w2}
+
+Metadata entries "remember" their location, allowing them to double as contextual markers or "bookmarks". More information can be found in the Urtext Reference guide.
+
+continue to | Dynamic Nodes >>k8p
+
+
+@00x

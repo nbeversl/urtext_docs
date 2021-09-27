@@ -10,7 +10,7 @@ project_title::Urtext Documentation
 {  `project_title`
 	Provides a title for the entire project @xqu}
 
-home::a5m
+home::013
 {  `home`
 	Identifies the home node for the project, connected to the "Home" key  @d6u}
 

@@ -14,15 +14,15 @@ Templating the Output with the SHOW parameter _
 ]]
 
           { Example List 2
-Dynamic Definitions: >07u
+Urtext Usage Guide and Reference: >a5m
 -
-Generating a node ID manually: >rfp
+Provides a title for the entire project: >xqu
 -
-Other Features: >kne
+Exporting: >ezg
 -
-Node Browser, Backlinks:: >1ea
+Toggle Traverse Mode:: >hcf
 -
-Identifies the home node for the project, connected to the "Home" key: >d6u
+Local: >2yx
 -
 ((>8p5:50)) @c1x}
 

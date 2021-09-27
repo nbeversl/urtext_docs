@@ -1,0 +1,18 @@
+Welcome to Urtext _ 
+
+If you have set Urtext's Sublime Text Implementation up correctly, you should be seeing this file with syntax highlighting so that node IDs, such as @a41, and squiggly brackets are shown in different colors than the rest of the text.
+
+Try a few things out:
+
+    Press Ctrl-Shift-E to see all "nodes" (text ranges) in this project in the Sublime Command Palette. Open one or more if you want by pressing return.
+
+    Press Ctrl-Shift-X to see all keywords in this project in the Sublime Command Palette. Selecting any keyword will next show all the nodes containing that keyword. Open one or more if you want (return.
+
+          { issue::Cannot escape out of command palette for keywords; @5pr 
+            status::bug list
+            }
+
+    If you get lost during any navigation, Ctrl-Shift-< (left angle bracket), like the back button on an internet browser, returns to the previous node.
+
+
+The building block of Urtext is a "node". | Nodes >>i81

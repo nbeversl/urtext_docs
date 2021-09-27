@@ -3,7 +3,7 @@ Urtext can export to plaintext, Markdown and HTML. Output can be written to a fi
 
 {  Example : Urtext Documentation Exported in Markdown to a File
 
-    This dynamic definition exports the entire documentation from its root node | Urtext  Version: 1.0-alpha  Usage Guide and References >a5m ) in Markdown format to a file called f>./README.md:
+    This dynamic definition exports the entire documentation from its root node | Urtext Usage Guide and Reference >a5m ) in Markdown format to a file called f>./README.md:
 
     [[ 
         We include four specific root nodes by ID:
@@ -22,10 +22,10 @@ Urtext can export to plaintext, Markdown and HTML. Output can be written to a fi
 
     The following Dynamic Definition is identical to the above, except it exports to HTML.   
 
-   [[   +(ID=p23) | About This Documentation >p23
-        +(ID=013) | About Urtext >013
-        +(ID=z7t) | Quick Start, Guides and Examples >z7t
-        +(ID=ac5) | Reference >ac5
+   [[   +(ID=p23) |  ?  >p23
+        +(ID=013) | About the README.md >013
+        +(ID=z7t) |  ?  >z7t
+        +(ID=ac5) | Urtext Reference >ac5
         DEPTH(*)
         SORT(index)
         FORMAT( -preformat)
@@ -36,4 +36,3 @@ Urtext can export to plaintext, Markdown and HTML. Output can be written to a fi
     @baq}
 
 @ezg
-

@@ -1,0 +1,28 @@
+
+This is the `project_settings` node for the "Urtext Demo" Urtext project. In the metadata for this node you can specify a handful of settings for the project. (The text content of the node does not matter.)
+
+title::project_settings
+{  `title`
+	Reserved key for every node, used here to specificy this node as containing project settings  @egg}
+
+project_title::Urtext Demo Proect
+{  `project_title`
+	Provides a title for the entire project @xqu}
+
+home::6cd
+{  `home`
+	Identifies the home node for the project, connected to the "Home" key  @d6u}
+
+console_log::True`
+{  `console_log`
+	(True or False): Sets whether Urtext will log updates, errors, messages to Sublime's Python console.
+	(Press Control-tilde(~)  to open the console)  @1lz}
+
+timestamp_format::%a., %b. %d, %Y, %I:%M %p
+{ `timestamp_format`	
+	Set the format of the timestamp when using |  ?  >7b8
+	This accepts a Python `strftime` directive. For more information, see https://strftime.org/. @00n}
+
+timezone::US/Eastern
+@00l
+

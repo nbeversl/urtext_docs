@@ -1,0 +1,4 @@
+<Sun., Aug. 15, 2021, 02:19 AM> @dim
+Issue _
+
+issue::If two nodes have the same title, the node browser just usese the title from the dict and takes the first available one which is not always the correct one.

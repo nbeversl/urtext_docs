@@ -8,7 +8,7 @@ Dynamic nodes contain content aggregated from the contents of other nodes. Dynam
 
 	Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-	The key | Insert Dynamic Definition with Node: `ctrl + shift + ]` >jsc creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.   @07u}
+	The key | Insert Dynamic Definition with Node: >jsc creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.   @07u}
 
 There are two main kinds of dynamic output, Lists and Collections:
 
@@ -18,10 +18,10 @@ There are two main kinds of dynamic output, Lists and Collections:
 
 Lists can be expanded into trees that show the outline of many nodes across many files at any specified depth, up to. In fact, a list is a tree with depth 1.
 
-	| Trees >>w8u
+	|  ?  >>w8u
 
 "Collections" aggregate metadata entries with their context; the same node may appear many times in a collection if it contains many metadata entries matching the queried parameters.
 
-	| Collections >>00k
+	|  ?  >>00k
 
 @k8p 

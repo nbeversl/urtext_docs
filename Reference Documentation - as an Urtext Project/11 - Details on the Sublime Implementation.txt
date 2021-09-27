@@ -1,6 +1,6 @@
-Details on the Sublime Implementation
+Installation and Setup for the Sublime Text Implementation _
 
-    The Urtext package for Sublime Text utilizes Sublime's embedded Python 3.3 interpreter both to run the Urtext interpreter/compiler and to add features to Sublime that make working with Urtext easy:
+    The Urtext package for Sublime Text utilizes Sublime's embedded Python interpreter both to run the Urtext interpreter/compiler and to add features to Sublime that make working with Urtext easy:
 
         - binds many Urtext operations to the Sublime command palette
         - adds key bindings (hotkeys) as shortcuts for some features
@@ -11,7 +11,7 @@ Details on the Sublime Implementation
 
     Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation. Features that are specific to Sublime are tagged with the keyword `sublime`.
 
-{  Dependencies and Installation
+{  Dependencies and Installation _
 
     The decision has been made not to include Urtext or its dependencies in the Urtext package for Sublime. It is necessary to install everything manually into Sublime's Python 3.3 environment. This is in fact less complicated than the alternatives considered. For developers, see |  ?  >mh8.
 
@@ -23,7 +23,7 @@ Details on the Sublime Implementation
 
         - Add Urtext and all its dependencies to Sublime's Python interpreter. There are two options for doing this:
 
-        {  Download and Install Dependencies Manually
+        {  Download and Install Dependencies Manually _
 
                 - anytree
                     https://github.com/c0fec0de/anytree
@@ -51,7 +51,7 @@ Details on the Sublime Implementation
                     
 @774 }
 
-    {  Download Dependencies from a Monorepo
+    {  Download Dependencies from a Monorepo _
 
             As a convenience, all of the above depenencies are (for now) maintained in recent versions at https://github.com/nbeversl/urtext_deps, with all files in the path locations described above. You can either download this repository as a .ZIP file and unzip it, or if you want to maintain version control, use:
                  `git clone --recurse-submodules https://github.com/nbeversl/urtext_deps`
@@ -63,7 +63,7 @@ Details on the Sublime Implementation
 
         Close and reopen Sublime Text. Urtext is now ready to use.
 
-    
+        
 @2fn }        
 
 

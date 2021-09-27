@@ -1,0 +1,19 @@
+The Node Browser
+
+The Node browser shows a list of all nodes in the project. It can be implemented in plaintext using a dynamic definition such as: [[ ID(>xxx) +(*) ]]. However, 
+
+ also be implemented 
+
+Opening the Node List
+
+Ctrl-Shift-E 
+
+tags::key_command_question
+
+
+In Sublime Text there is also the alternative of using the UI dropdown. Press Control-Shift-E or select "Urtext: Node List" from the Sublime command palette (Shift-Super-P). Here you can find a node by typing part of its title.
+
+In the Node List, nodes are sorted by their time of creation, with most recent first. They can also be sorted by index (see |  ?  >00z). 
+
+
+@01i

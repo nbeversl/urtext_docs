@@ -3,7 +3,7 @@ Lists
 [[ 		
 	Dynamic definitions can contain arbitrary text. The only parts read by the compiler are the function names with their parameters in parentheses. Like nodes, you can format/indent/comment these definitions any way you want.
 
-	This definition targets ID m1r, which appears immediately below: | ; >m1r.
+	This definition targets ID m1r, which appears immediately below: | Example: Nodes from the Documentation >m1r.
 	ID(>m1r) 
 
 	The asterisk means to include all nodes in the project. 
@@ -21,26 +21,26 @@ Lists
 
 			{ Example: Nodes from the Documentation
  flags::exclude_from_export
-Dynamic Definitions >07u
+Tab Completion >r87
+(untitled) >zje
+(untitled) >nad
+Linking Nodes Together >r9q
+Provides a title for the entire project >xqu
+Re-add title links to tab completions? >ekk
+(untitled) >l8b
+Local >2yx
+Innermost level >e5n
+Reserved key for every node, used here to specificy this node as containing project settings >egg
+Issue >dim
 Generating a node ID manually >rfp
-Other Features >kne
-Node Browser, Backlinks: >1ea
-Identifies the home node for the project, connected to the "Home" key >d6u
-Extensibile >gn8
-History >prp
-General Syntax >8dw
-Nav Forward: >yan
-Future Proof >xat
-Download Dependencies from a Monorepo >arl
-Insert Link to New Node: >sxk
-Errors and Warnings >bpk
-Cross-Project Linking >7lx
-History >a8q
-Quick Start, Guides and Examples >z7t
-Search Using Dynamic Nodes >uy4
+Welcome to Urtext >a41
+Bracket nodes can be nested arbitrarily deep inside one another. >xdd
 Example Compact Node >d7b
-Comparison To Other Tools >h8z
-tag_all >yin
+(untitled) >00l
+project_settings >00n
+Lists >twz
+From Target Node >imr
+Uses >lhs
 ((>twz:7)) @m1r}
 
 	f>./files/example-list-1-definition.png
