@@ -14,15 +14,15 @@ Templating the Output with the SHOW parameter _
 ]]
 
           { Example List 2
-Urtext  Version: 1.0-alpha  Usage Guide and References: >a5m
+Example first level: >8fv
 -
-Add Node ID:: >gv9
+Links: >0y2
 -
-Command Binding: >e8x
+Nav Forward:: >yan
 -
-Overrides the node title, which is by default the full first non-whitespace line.: >pz3
+Timestamps: >2i4
 -
-General Syntax: >8dw
+tag_all: >yin
 -
 ((>8p5:50)) @c1x}
 

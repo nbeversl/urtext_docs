@@ -21,26 +21,26 @@ Lists
 
 			{ Example: Nodes from the Documentation
  flags::exclude_from_export
-Urtext  Version: 1.0-alpha  Usage Guide and References >a5m
-Add Node ID: >gv9
-Command Binding >e8x
-Overrides the node title, which is by default the full first non-whitespace line. >pz3
-General Syntax >8dw
-Reserved Keys >fo2
-Nav Backward: >3hy
-New Node: ctrl + shift + ; >ve3
-Re-add title links to tab completions? >ekk
-Word Wrap in Traverse Mode >xci
-History >prp
-Insert Compact Node: >1qq
-fourth level >5pq
-Copy Links >kqz
-Insert Timestamp: >7b8
-Download Dependencies from a Monorepo >arl
-Generating a node ID manually >rfp
-File Nodes >ekz
+Example first level >8fv
+Links >0y2
+Nav Forward: >yan
+Timestamps >2i4
+tag_all >yin
+Future Proof >xat
+Copy Link to this Node With Title: >05x
+Full Text Search >4p9
+Sublime Text Key Bindings and Operations >1vs
+Provides a title for the entire project >xqu
 Projects >dce
-Dynamic Definitions : Syntax and Parameters >87g
+Plain Text >7rg
+Toggle History Traverse: >ndc
+Exporting >ezg
+Example Bracket Node >ywi
+Node Browser, Backlinks: >1ea
+Freeform, Flexible Syntax >wzk
+Insert Timestamp: >7b8
+About Urtext >013
+Bullet Nodes >j6t
 ((>twz:7)) @m1r}
 
 	f>./files/example-list-1-definition.png

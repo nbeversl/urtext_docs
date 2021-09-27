@@ -18,35 +18,7 @@ License: GNU General Public License 3.0
 { Quick Start, Guides and Examples >z7t
   ├── Installation and Setup (Sublime Text / Desktop) >6cd
   ├── Basic Syntax >znj
-  ├── Dynamic Definitions : Syntax and Parameters >87g
-  └── Sublime Text Key Bindings and Operations >1vs
-      ├── Navigation >k7b
-      │   ├── Node Browser, Backlinks: >1ea
-      │   ├── Nav Backward: >3hy
-      │   ├── Home Node: >5ab
-      │   ├── List Projects: >g5a
-      │   ├── Toggle Traverse Mode: >hcf
-      │   ├── Node Browser, Include All Projects: >hyh
-      │   ├── Open Urtext Link: >ngh
-      │   ├── Open Random Node: >q5f
-      │   ├── Node Browser: >vdr
-      │   ├── Nav Forward: >yan
-      │   └── Node Browser, Forward Links: >ylo
-      ├── Content Insertion >kxh
-      │   ├── Insert Compact Node: >1qq
-      │   ├── Insert Timestamp: >7b8
-      │   ├── Insert Bracket Node, minimal:                    (OSX),                    (Windows, Linux) >6ym
-      │   ├── Add Node ID: >gv9
-      │   ├── Insert Dynamic Definition with Node: >jsc
-      │   ├── Insert Inline Node: >rzx
-      │   ├── Insert Link to New Node: >sxk
-      │   ├── New Node: ctrl + shift + ; >ve3
-      │   └── Quick Tag from Other: >zep
-      ├── Copy Links >kqz
-      │   ├── Copy Link to this Node With Title: >05x
-      │   └── Copy Link to this Node: >vel
-      └── History >a8q
-          └── Toggle History Traverse: >ndc
+  └── Dynamic Definitions : Syntax and Parameters >87g
 Reference >ac5
   ├── About Urtext >013
   │   ├── Description >yv2
@@ -108,7 +80,7 @@ About This Documentation >p23
   | Installation and Setup (Sublime Text / Desktop) >>6cd
   | Basic Syntax >>znj
   | Dynamic Definitions : Syntax and Parameters >>87g
-  | Sublime Text Key Bindings and Operations >>1vs
+  | Sublime Text Key Bindings and Operations >1vs
   index::02
 @z7t}
 
@@ -128,7 +100,11 @@ About This Documentation >p23
   index::03
 @ac5}
 
-[[  ID(>e5j) +(id=z7t) +(id=p23) +(id=ac5) -(kw=omit from TOC) SORT(index) -(flags=exclude_from_toc) LIST(10) ]]
+[[  
+  ID(>e5j) +(id=z7t) +(id=p23) +(id=ac5)  SORT(index) -(flags=exclude_from_toc) LIST(10) ]]
 
-
+[[ 
+ID(>d71)
+MARKDOWN(root=a5m; -as_single_file) 
+]]
 @a5m
