@@ -1,0 +1,134 @@
+Urtext | Version: 1.0-alpha | Usage Guide and References
+License: GNU General Public License 3.0
+
+{ About This Documentation _
+   
+  This is a documentation of Urtext written in Urtext. The `README.MD` on it was exported from the text files in this repository. Clone or download the repository to use it as both reference and example project. 
+
+  This documentation is in active development. It may be incomplete or behind features/functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
+
+  Many of the examples rely on syntax and formatting that are stripped out in export to Markdown. These are replaced with screenshots as necessary (see | Linking to Files and Other Resources >00q and | Exporting >ezg)
+
+  Inside an Urtext implementation, such as the Sublime Text with the Urtext package, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
+
+  - Control-Shift-/ to follow any link
+  - Control-Shift-H at any time to return to this "home" node.  @p23
+  - View the readme: f>readme.md ; }
+
+{ Quick Start, Guides and Examples >z7t
+  ├── Installation and Setup (Sublime Text / Desktop) >6cd
+  ├── Basic Syntax >znj
+  ├── Dynamic Definitions : Syntax and Parameters >87g
+  └── Sublime Text Key Bindings and Operations >1vs
+      ├── Navigation >k7b
+      │   ├── Node Browser, Backlinks: >1ea
+      │   ├── Nav Backward: >3hy
+      │   ├── Home Node: >5ab
+      │   ├── List Projects: >g5a
+      │   ├── Toggle Traverse Mode: >hcf
+      │   ├── Node Browser, Include All Projects: >hyh
+      │   ├── Open Urtext Link: >ngh
+      │   ├── Open Random Node: >q5f
+      │   ├── Node Browser: >vdr
+      │   ├── Nav Forward: >yan
+      │   └── Node Browser, Forward Links: >ylo
+      ├── Content Insertion >kxh
+      │   ├── Insert Compact Node: >1qq
+      │   ├── Insert Timestamp: >7b8
+      │   ├── Insert Bracket Node, minimal:                    (OSX),                    (Windows, Linux) >6ym
+      │   ├── Add Node ID: >gv9
+      │   ├── Insert Dynamic Definition with Node: >jsc
+      │   ├── Insert Inline Node: >rzx
+      │   ├── Insert Link to New Node: >sxk
+      │   ├── New Node: ctrl + shift + ; >ve3
+      │   └── Quick Tag from Other: >zep
+      ├── Copy Links >kqz
+      │   ├── Copy Link to this Node With Title: >05x
+      │   └── Copy Link to this Node: >vel
+      └── History >a8q
+          └── Toggle History Traverse: >ndc
+Reference >ac5
+  ├── About Urtext >013
+  │   ├── Description >yv2
+  │   ├── Comparison To Other Tools >h8z
+  │   ├── Uses >lhs
+  │   └── Features and Philosophy >006
+  │       ├── Plain Text >7rg
+  │       ├── Freeform, Flexible Syntax >wzk
+  │       ├── Open source >u8o
+  │       ├── Extensibile >gn8
+  │       ├── Future Proof >xat
+  │       ├── Local >2yx
+  │       └── Other Features >kne
+  ├── Projects >dce
+  │   └── Using/Adding Existing Files >rij
+  ├── Nodes >01j
+  │   ├── Types of Nodes >07q
+  │   │   ├── File Nodes >ekz
+  │   │   ├── Bracket Nodes >004
+  │   │   │   ├── Example Bracket Node >ywi
+  │   │   │   └── Escaping Curly Brackets >8a8
+  │   │   └── Compact Nodes >kpz
+  │   │       ├── Example Compact Node >d7b
+  │   │       └── Example inline node within compact node. >9up
+  │   └── Node Titles >ue2
+  ├── Dynamic Nodes >k8p
+  │   ├── Dynamic Definitions >07u
+  │   ├── Lists >twz
+  │   │   └── Example: Nodes from the Documentation >m1r
+  ├── Links and Pointers >00j
+  │   ├── Links >0y2
+  │   │   └── Sublime Text tools to help with linking >00m
+  │   ├── Dynamic Titles >4vu
+  │   ├── Opening Links >01w
+  │   │   ├── Sublime >osu
+  │   │   └── Pythonista >iy8
+  │   ├── Linking to Files and Other Resources >00q
+  │   │   ├── Web / HTTP(S) >00o
+  │   │   └── Files >00p
+  ├── Exporting >ezg
+  │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+  │   └── Example : Fragment Exported to HTML >baq
+  ├── File Naming >01m
+  ├── History >prp
+  ├── This node now has special reserved metadata keys that will be parsed as follows: >00l
+  ├── Errors and Warnings >bpk
+  ├── Using Multiple Projects >ipy
+  │   ├── Project Naming (Identification) >tgp
+  │   └── Cross-Project Linking >7lx
+  └── User Interface Elements >3n6
+      ├── The Node Browser >01i
+      └── Traverse Mode >00w
+          └── Word Wrap in Traverse Mode >xci
+About This Documentation >p23
+((>a5m:111)) @e5j} 
+
+{  Quick Start, Guides and Examples _
+
+  | Installation and Setup (Sublime Text / Desktop) >>6cd
+  | Basic Syntax >>znj
+  | Dynamic Definitions : Syntax and Parameters >>87g
+  | Sublime Text Key Bindings and Operations >>1vs
+  index::02
+@z7t}
+
+{   Reference _
+  | About Urtext >>013
+  | Projects >>dce
+  | Nodes >>01j
+  | Dynamic Nodes >>k8p
+  | Links and Pointers >>00j
+  | Exporting >>ezg
+  | File Naming >>01m
+  | History >>prp
+  | This node now has special reserved metadata keys that will be parsed as follows: >>00l
+  | Errors and Warnings >>bpk
+  | Using Multiple Projects >>ipy
+  | User Interface Elements >>3n6
+  index::03
+@ac5}
+
+[[  ID(>e5j) +(id=z7t) +(id=p23) +(id=ac5) -(kw=omit from TOC) SORT(index) -(flags=exclude_from_toc) LIST(10) ]]
+
+
+@a5m

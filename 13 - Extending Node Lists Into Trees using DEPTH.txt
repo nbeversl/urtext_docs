@@ -1,0 +1,171 @@
+<!!
+node ID >nc6 exists in f>42 - Extending Node Lists Into Trees using DEPTH.txt
+node ID >thz exists in f>42 - Extending Node Lists Into Trees using DEPTH.txt
+!!>
+Extending Node Lists Into Trees using DEPTH
+
+By default, Node lists are "one-dimensional". With the DEPTH parameter, you can expand these to hierarchical nested nodes up to arbitrary depth, whether from | Inline Nodes >004 or from | Pointers >lmu.
+
+[[  
+	These parameters are mostly the same as for the previous examples ( see | Lists >twz) 
+	Here they are strung together on a single line; recall that formatting does not matter.
+	ID(>nc6) +(*) FORMAT(indent:2) HEADER(Example List 3)
+
+	Here we have omitted the LIMIT parameter, so the definition returns all nodes in this documentation.
+
+	The DEPTH paramter specifies how many levels deep we want to view nested hierachies. We've set it to 5 to avoid an enormous output, but try changing the number (or other parameters in the definition) to see the difference in output. 
+	DEPTH(5)
+]]
+
+{ Example List 3
+Node Browser: >vdr
+second level >6qj
+In-Progress / Experimental / Wish List >014
+Nav Forward: >yan
+Installation and Setup (Sublime Text / Desktop) >6cd
+Syntaxes : >r0w
+Reference: Key Bindings >018
+Searching >rr3
+About Urtext >013
+Future Proof >xat
+Open Urtext Link: >ngh
+Example : Fragment Exported to HTML >baq
+Provides a title for the entire project >xqu
+Extensibile >gn8
+become child nodes of their containing node. >hiz
+What’s playing now does not work, shows stale info. >wnq
+Basic Syntax >znj
+Opening Links >01w
+Compact Nodes >kpz
+Details on the Sublime Implementation >01u
+Cross-Project Linking >7lx
+fifth level >e5n
+Node IDs >01q
+Quick Start, Guides and Examples >z7t
+Content Insertion >kxh
+Synchronator Setup >01z
+iPhone/iPad/iOS >01y
+Projects, Structure and Compiling >01x
+Example Recursive Node Tree >01n
+File Naming >01m
+Dynamic Titles >4vu
+Generated automatically in a dynamic node, contains a link to the node containing the definition. >5cq
+Nodes >01j
+The Node Browser >01i
+Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. >q8j
+project_settings >8p4
+Templating the Output with the SHOW parameter >8p5
+Time Zones >7w6
+Using Multiple Projects >ipy
+Navigation >k7b
+Open source >u8o
+tag_all >yin
+Search >k67
+Links and Pointers >00j
+This node now has special reserved metadata keys that will be parsed as follows: >00l
+Sublime Text tools to help with linking >00m
+Plain Text >7rg
+Web / HTTP(S) >00o
+Insert Timestamp: >7b8
+Download Dependencies from a Monorepo >arl
+Generating a node ID manually >rfp
+File Nodes >ekz
+Example first level >8fv
+Provides a way to give nodes a sort order in  The Node Browser .  Indexed nodes will sort before (above) the others, lowest numbers appearing first. To utilize, add a two-digit sort index (00-99) to a node, such as: >00z
+Files >00p
+Linking to Files and Other Resources >00q
+Case-sensitivity >l36
+Viewing Linked Relationships >00u
+Re-add title links to tab completions? >ekk
+Exporting >ezg
+List Projects: >g5a
+Node Titles >ue2
+Node Browser, Backlinks: >1ea
+Pythonista >iy8
+MailChimpPassword WWCI >vab
+Sublime Text Key Bindings and Operations >1vs
+Freeform, Flexible Syntax >wzk
+Nodes Excluded from the Table of Contents >jkl
+Dynamic Definitions >07u
+Example Child Node Using a Node Pointer >001
+Using/Adding Existing Files >rij
+Bracket Nodes >004
+Syntax and Format >005
+Features and Philosophy >006
+Urtext  Version: 1.0-alpha  Usage Guide and References >a5m
+Add Node ID: >gv9
+Overrides the node title, which is by default the full first non-whitespace line. >pz3
+Lists >twz
+fourth level >5pq
+History >prp
+Bullet Nodes >j6t
+Nav Backward: >3hy
+Insert Dynamic Definition with Node: >jsc
+Other Features >kne
+Extending Node Lists Into Trees using DEPTH >thz
+Node Browser, Forward Links: >ylo
+Copy Links >kqz
+About Compact Nodes >frm
+Download and Install Dependencies Manually >774
+Other dynamic instructions >x0c
+Types of Nodes >07q
+Description >yv2
+Duplicate Node IDs >bzv
+History >a8q
+Example Compact Node >d7b
+Dependencies and Installation >2fn
+Insert Bracket Node, minimal:                    (OSX),                    (Windows, Linux) >6ym
+Local >2yx
+Copy Link to this Node With Title: >05x
+Reference >ac5
+Metadata >00x
+Sublime >osu
+General Syntax >8dw
+third test level >80d
+Command Binding >e8x
+Project Naming (Identification) >tgp
+Quick Tag from Other: >zep
+Word Wrap in Traverse Mode >xci
+About This Documentation >p23
+New Node: ctrl + shift + ; >ve3
+Insert Compact Node: >1qq
+(untitled) >b2e
+Errors and Warnings >bpk
+Open Random Node: >q5f
+Inserting a Node ID manually >04s
+Tracking Node Dates and Times >cee
+Insert Link to New Node: >sxk
+Comparison To Other Tools >h8z
+Dynamic Nodes >k8p
+Sublime : select                  from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes. >k8v
+Escaping Curly Brackets >8a8
+Identifies the home node for the project, connected to the "Home" key >d6u
+Insert Inline Node: >rzx
+Home Node: >5ab
+Example Bracket Node >ywi
+can have arbitrary other metadata >xlc
+Search Using Dynamic Nodes >uy4
+Projects >dce
+Dynamic Definitions : Syntax and Parameters >87g
+Notes on redevelopment >91o
+Reserved key for every node, used here to specificy this node as containing project settings >egg
+Node Browser, Include All Projects: >hyh
+This node is just here as a destination from the node pointer in  Basic Syntax >ttt
+Timestamps >2i4
+Uses >lhs
+User Interface Elements >3n6
+Full Text Search >4p9
+Copy Link to this Node: >vel
+Toggle Traverse Mode: >hcf
+ACCESS HISTORY >7ne
+Example : Urtext Documentation Exported in Markdown to a File >m9d
+Example inline node within compact node. >9up
+Toggle History Traverse: >ndc
+Reserved Keys >fo2
+Trailing Node IDs >2a3
+Traverse Mode >00w
+Links >0y2
+((>thz:249)) @nc6}
+
+@thz
+from::wwci-00407.local

@@ -1,0 +1,12 @@
+ Nodes Excluded from the Table of Contents
+Example Collection : "Last Updated" >cee
+Example first level >8fv
+└── second level >6qj
+    └── third test level >80d
+        └── fourth level >5pq
+            └── fifth level >e5n
+This node is just here as a destination from the node pointer in  Basic Syntax >ttt
+Example Search Results >3x3
+flags::exclude_from_toc - exclude_from_export
+def::>v7r
+@jkl 

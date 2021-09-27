@@ -1,0 +1,29 @@
+Templating the Output with the SHOW parameter _ 
+
+[[	This definition uses the same parameters as above, targeting the next node below, >c1x.
+
+	We'll illustrate the SHOW parameter by supplying a template for the output of each result.
+	SHOW accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
+
+	SHOW($title: $link\n-\n)
+	ID(>c1x) 
+    HEADER(Example List 2)
+	INCLUDE(*)
+	LIMIT(5)
+	FORMAT(indent:3) 
+]]
+
+          { Example List 2
+Urtext  Version: 1.0-alpha  Usage Guide and References: >a5m
+-
+Add Node ID:: >gv9
+-
+Command Binding: >e8x
+-
+Overrides the node title, which is by default the full first non-whitespace line.: >pz3
+-
+General Syntax: >8dw
+-
+((>8p5:50)) @c1x}
+
+@8p5

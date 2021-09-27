@@ -1,0 +1,52 @@
+Lists
+
+[[ 		
+	Dynamic definitions can contain arbitrary text. The only parts read by the compiler are the function names with their parameters in parentheses. Like nodes, you can format/indent/comment these definitions any way you want.
+
+	This definition targets ID m1r, which appears immediately below: | ; >m1r.
+	ID(>m1r) 
+
+	The asterisk means to include all nodes in the project. 
+	INCLUDE(*)
+
+	The LIMIT parameter limits the output to the specified number of results. 
+	Note that the default sort order is alphabetical. 
+	LIMIT(20)
+
+	FORMAT(indent:3)
+	Here the FORMAT parameter is used to indent the output 3 tabs.
+	HEADER(Example: Nodes from the Documentation\n flags::exclude_from_export)
+
+	]]
+
+			{ Example: Nodes from the Documentation
+ flags::exclude_from_export
+Urtext  Version: 1.0-alpha  Usage Guide and References >a5m
+Add Node ID: >gv9
+Command Binding >e8x
+Overrides the node title, which is by default the full first non-whitespace line. >pz3
+General Syntax >8dw
+Reserved Keys >fo2
+Nav Backward: >3hy
+New Node: ctrl + shift + ; >ve3
+Re-add title links to tab completions? >ekk
+Word Wrap in Traverse Mode >xci
+History >prp
+Insert Compact Node: >1qq
+fourth level >5pq
+Copy Links >kqz
+Insert Timestamp: >7b8
+Download Dependencies from a Monorepo >arl
+Generating a node ID manually >rfp
+File Nodes >ekz
+Projects >dce
+Dynamic Definitions : Syntax and Parameters >87g
+((>twz:7)) @m1r}
+
+	f>./files/example-list-1-definition.png
+	f>./files/example-list-1.png
+
+   Note that the at the bottom of the node is the reserved key `def` which refers to the node containing the definition.
+
+
+@twz 

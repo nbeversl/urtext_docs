@@ -1,42 +1,173 @@
-Pointers          
+<!!
+Warning: Node missing ID at position 5993
+Warning: Node missing ID at position 6198
+Warning: Node missing ID at position 6600
+!!>
 
-By preceding a link to a node with two right angle brackets instead of one, you can extend trees beyond the file level to create node relationships spanning many files. In addition to being a hyperlink, this connects the targeted node, and all of its subchildren, as descendants of the node containing the Pointer:
+Markdown Export
 
-    | Example Child Node Using a Node Pointer >>001 
+{ 
 
-The example Pointer above becomes a child of this node, visible in the | Table of Contents >e5j or using the other tree views described in | Trees >w8u.
+# Urtext  Version: 1.0-beta  Usage Guide and ReferencesUrtext | Version: 1.0-beta | Usage Guide and References
+License: GNU General Public License 3.0
 
-The advantages to Node Pointers include:
-    - The tree represents a hierachy of actual content, rather than the files containing the content.
-    - The tree permits nesting both within and beyond file level.
-    - The tree can be displayed from any arbitrary starting point, whether or not its branches are within or beyond a particular file.
+## About This Documentation
+  
+  This is a documentation of Urtext, written in Urtext. The `README.MD` on it was exported from the text files in this repository. Clone or download the respository to use it as both reference and example project. 
 
-{ Duplicate Pointers 
-    
-    Node Pointers may point more than once to the same node, so that content can be reused or referenced across multiple trees within the same project.
-    Here is the same example child node from above: | Example Child Node Using a Node Pointer >>001 
-    Note that it appears twice in the Table of Contents, once as a child of this node and once as a child of this node's parent node ( |  ?  >lmu).
-    @00t}
+  This documentation is in active development. It may be incomplete or behind features/functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (>https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
 
-{  Recursive Node Pointers
+  Many of the examples rely on syntax and formatting that are stripped out in export to Markdown. These are replaced with screenshots as necessary (see | Linking to Files and Other Resources >00q and | Exporting >ezg)
 
-    If the tree of a Node Pointer includes one of its own ancestors, the tree will stop at the recursion point with the indication `! RECURSION -` before the node title and link. For example, this Node Pointer points to the parent of this node (| Tree >6ct),  |  ?  >>lmu. You can see the recursion point in the table of contents.
+  Inside an Urtext implementation, such as the Sublime Text with the Urtext package, you can navigate the project directly. Most of the key commands utilize Control-Shift as the modifier. 
+  - Control-Shift-/ to follow any link
+  - Control-Shift-h at any time to return to this "home" node. 
+  - View the readme: [readme.md ;](readme.md ;)
 
-    Note that if you view the tree with another node selected as root, one full iteration will still appear, with the point of recursion falling elsewhere. The tree below is turned "inside out", with |  ?  >lmu as root. 
-       
-        [[ ID(>01n) +(id=lmu) DEPTH(*) HEADER(Example Recursive Node Tree)  FORMAT(indent:3)]]
-        (See | Trees >w8u for how to generate trees like this in dynamic nodes.)
+## Table of Contents
+Quick Start, Guides and Examples >z7t
+├── Installation and Setup (Desktop) >6cd
+├── Basic Syntax >znj
+├── Dynamic Definitions : Syntax and Parameters >87g
+├── Key Bindings and Operations >1vs
+│   ├── Navigation >k7b
+│   │   ├── Node Browser, Backlinks: >1ea
+│   │   ├── Nav Backward: >3hy
+│   │   ├── Home Node: >5ab
+│   │   ├── List Projects: >g5a
+│   │   ├── Toggle Traverse Mode: >hcf
+│   │   ├── Node Browser, Include All Projects: >hyh
+│   │   ├── Open Urtext Link: >ngh
+│   │   ├── Open Random Node: >q5f
+│   │   ├── Node Browser: >vdr
+│   │   ├── Nav Forward: >yan
+│   │   └── Node Browser, Forward Links: >ylo
+│   ├── Content Insertion >kxh
+│   │   ├── Insert Compact Node: >1qq
+│   │   ├── Insert Timestamp: >7b8
+│   │   ├── Insert Inline Node, minimal:                    (OSX),                    (Windows, Linux) >6ym
+│   │   ├── Add Node ID: >gv9
+│   │   ├── Insert Dynamic Definition with Node: >jsc
+│   │   ├── Insert Inline Node: >rzx
+│   │   ├── Insert Link to New Node: >sxk
+│   │   ├── New Node: >ve3
+│   │   └── Quick Tag from Other: >zep
+│   ├── Copy Links >kqz
+│   │   ├── Copy Link to this Node With Title: >05x
+│   │   └── Copy Link to this Node: >vel
+│   └── History >a8q
+│       └── Toggle History Traverse: >ndc
+└── Sublime Text Interface Tips >003
+    ├── Syntax Highlighting >01d
+    ├── Hiding Tabs >015
+    ├── Hiding Line Numbers >01e
+    ├── Full Screen / Distraction Free Mode >002
+    ├── Disable Prompts for File Reload >023
+    ├── Remove Indent Guides >1rc
+    ├── Save on Focus Lost >sqq
+    └── Using a Sublime Project for an Urtext Project >c3n
+Reference >ac5
+├── About Urtext >013
+│   ├── Description >yv2
+│   ├── Comparison To Other Tools >h8z
+│   ├── Uses >lhs
+│   └── Features and Philosophy >006
+├── Projects >dce
+│   └── Using/Adding Existing Files >rij
+├── Nodes >01j
+│   ├── Types of Nodes >07q
+│   │   ├── File Nodes s >ekz
+│   │   ├── Inline Nodes >004
+│   │   │   ├── Example Inline Node >ywi
+│   │   │   ├── Example first level >8fv
+│   │   │   │   └── second level >6qj
+│   │   │   │       └── third test level >80d
+│   │   │   │           └── fourth level >5pq
+│   │   │   │               └── fifth level >e5n
+│   │   │   └── Escaping Curly Brackets >8a8
+│   │   └── Compact Nodes >kpz
+│   │       ├── Example Compact Node >d7b
+│   │       └── Example inline node within compact node. >9up
+│   └── Node Titles >ue2
+├── Dynamic Nodes >k8p
+│   ├── Dynamic Definitions >07u
+│   ├── Lists >twz
+│   │   └── Example: Nodes from the Documentation >m1r
+│   ├── Trees >w8u
+│   │   ├── Expanding a List with the DEPTH Parameter >h6l
+│   │   │   └── Example Tree >4gr
+│   │   └── "Table of Contents" Dynamic Definition >v7r
+│   │       └── Nodes Excluded from the Table of Contents >jkl
+│   └── Collections >00k
+│       └── Example Collection : "Last Updated" >cee
+├── Links and Pointers >00j
+│   ├── Links >0y2
+│   │   └── Sublime Text tools to help with linking >00m
+│   ├── Dynamic Titles >4vu
+│   ├── Opening Links >01w
+│   │   ├── Sublime >osu
+│   │   └── Pythonista >iy8
+│   ├── Linking to Files and Other Resources >00q
+│   │   ├── Web / HTTP(S) >00o
+│   │   └── Files >00p
+│   └── Pointers >lmu
+│       ├── Example Child Node Using a Node Pointer >001
+│       ├── Duplicate Pointers >00t
+│       │   └── Example Child Node Using a Node Pointer >001
+│       └── Recursive Node Pointers >6ct
+│           ├── ! RECURSION (from tree duplication) : Pointers >lmu
+│           └── Example Recursive Node Tree >01n
+├── Exporting >ezg
+│   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+│   └── Example : Fragment Exported to HTML >baq
+├── File Naming >01m
+├── History >prp
+├── project_settings >00l
+│   ├── Reserved key for every node, used here to specificy this node as containing project settings >egg
+│   ├── Provides a title for the entire project >xqu
+│   ├── Identifies the home node for the project, connected to the "Home" key >d6u
+│   ├── (True or False): Sets whether Urtext will log updates, errors, messages to Sublime's Python console. >1lz
+│   ├── Specifies format for filenames when using   ? >lch
+│   ├── Set the format of the timestamp when using  Insert Timestamp: >00n
+│   ├── For a list of all timezones >boe
+│   └── (untitled) >8p4
+├── Errors and Warnings >bpk
+├── Using Multiple Projects >ipy
+│   ├── Project Naming (Identification) >tgp
+│   └── Cross-Project Linking >7lx
+└── User Interface Elements >3n6
+    ├── The Node Browser >01i
+    └── Traverse Mode >00w
+        └── Word Wrap in Traverse Mode >xci
+About This Documentation >p237r
+@
 
-    		{
-			Example Recursive Node Tree
-			Pointers >lmu
-			├── Example Child Node Using a Node Pointer >001
-			├── Duplicate Pointers >00t
-			│   └── Example Child Node Using a Node Pointer >001
-			└── Recursive Node Pointers >6ct
-			    ├── ! RECURSION - (from alias) : Pointers >lmu
-			    └── Example Recursive Node Tree >01n
-			def::>6ct; @01n }
-    @6ct}
+## Quick Start, Guides and Examplese5j } 
 
-@lmu
+{  
+
+  | Installation and Setup (Desktop) >>6cd
+  | Basic Syntax >>znj
+  | Dynamic Definitions : Syntax and Parameters >>87g
+  | Key Bindings and Operations >>1vs
+  |  ?  >>003
+  index:02
+
+## Reference}
+
+{   
+  | About Urtext >>013
+  | Projects >>dce
+  | Nodes >>01j
+  | Dynamic Nodes >>k8p
+  | Links and Pointers >>00j
+  | Exporting >>ezg
+  | File Naming >>01m
+  | History >>prp
+  | This node now has special reserved metadata keys that will be parsed as follows: >>00l
+  | Errors and Warnings >>bpk
+  |  ?  >oy5
+  | Using Multiple Projects >>ipy
+  | User Interface Elements >>3n6
+  index:03 def::>qrb }
+@qrb 

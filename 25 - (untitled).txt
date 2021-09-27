@@ -1,0 +1,279 @@
+
+
+
+{ Weather in Pennsylvania _
+%%-JSON
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#"
+        }
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -80.009700600000002,
+                    39.760481200000001
+                ],
+                [
+                    -80.012865099999999,
+                    39.738563900000003
+                ],
+                [
+                    -79.984370299999995,
+                    39.736129400000003
+                ],
+                [
+                    -79.981199799999999,
+                    39.758046400000005
+                ],
+                [
+                    -80.009700600000002,
+                    39.760481200000001
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "updated": "2021-09-27T02:02:58+00:00",
+        "units": "us",
+        "forecastGenerator": "BaselineForecastGenerator",
+        "generatedAt": "2021-09-27T03:11:59+00:00",
+        "updateTime": "2021-09-27T02:02:58+00:00",
+        "validTimes": "2021-09-26T20:00:00+00:00/P7DT16H",
+        "elevation": {
+            "value": 278.892,
+            "unitCode": "unit:m"
+        },
+        "periods": [
+            {
+                "number": 1,
+                "name": "Tonight",
+                "startTime": "2021-09-26T23:00:00-04:00",
+                "endTime": "2021-09-27T06:00:00-04:00",
+                "isDaytime": false,
+                "temperature": 51,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "6 mph",
+                "windDirection": "S",
+                "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+                "shortForecast": "Partly Cloudy",
+                "detailedForecast": "Partly cloudy, with a low around 51. South wind around 6 mph."
+            },
+            {
+                "number": 2,
+                "name": "Monday",
+                "startTime": "2021-09-27T06:00:00-04:00",
+                "endTime": "2021-09-27T18:00:00-04:00",
+                "isDaytime": true,
+                "temperature": 78,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "6 to 13 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
+                "shortForecast": "Sunny",
+                "detailedForecast": "Sunny, with a high near 78. Southwest wind 6 to 13 mph."
+            },
+            {
+                "number": 3,
+                "name": "Monday Night",
+                "startTime": "2021-09-27T18:00:00-04:00",
+                "endTime": "2021-09-28T06:00:00-04:00",
+                "isDaytime": false,
+                "temperature": 59,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "6 to 10 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/night/sct/tsra_hi,40?size=medium",
+                "shortForecast": "Partly Cloudy then Chance Showers And Thunderstorms",
+                "detailedForecast": "A chance of showers and thunderstorms after 3am. Partly cloudy, with a low around 59. Southwest wind 6 to 10 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible."
+            },
+            {
+                "number": 4,
+                "name": "Tuesday",
+                "startTime": "2021-09-28T06:00:00-04:00",
+                "endTime": "2021-09-28T18:00:00-04:00",
+                "isDaytime": true,
+                "temperature": 76,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "7 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/day/tsra_sct,40?size=medium",
+                "shortForecast": "Chance Showers And Thunderstorms",
+                "detailedForecast": "A chance of showers and thunderstorms before 5pm, then a chance of showers and thunderstorms. Partly sunny, with a high near 76. Southwest wind around 7 mph. Chance of precipitation is 40%. New rainfall amounts between a tenth and quarter of an inch possible."
+            },
+            {
+                "number": 5,
+                "name": "Tuesday Night",
+                "startTime": "2021-09-28T18:00:00-04:00",
+                "endTime": "2021-09-29T06:00:00-04:00",
+                "isDaytime": false,
+                "temperature": 50,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "1 to 5 mph",
+                "windDirection": "NW",
+                "icon": "https://api.weather.gov/icons/land/night/tsra_hi,40/tsra_hi,20?size=medium",
+                "shortForecast": "Chance Showers And Thunderstorms then Slight Chance Showers And Thunderstorms",
+                "detailedForecast": "A chance of showers and thunderstorms before 8pm, then a slight chance of showers and thunderstorms between 8pm and 2am. Partly cloudy, with a low around 50. Northwest wind 1 to 5 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible."
+            },
+            {
+                "number": 6,
+                "name": "Wednesday",
+                "startTime": "2021-09-29T06:00:00-04:00",
+                "endTime": "2021-09-29T18:00:00-04:00",
+                "isDaytime": true,
+                "temperature": 74,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "1 to 5 mph",
+                "windDirection": "N",
+                "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
+                "shortForecast": "Sunny",
+                "detailedForecast": "Sunny, with a high near 74."
+            },
+            {
+                "number": 7,
+                "name": "Wednesday Night",
+                "startTime": "2021-09-29T18:00:00-04:00",
+                "endTime": "2021-09-30T06:00:00-04:00",
+                "isDaytime": false,
+                "temperature": 48,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "3 mph",
+                "windDirection": "NE",
+                "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                "shortForecast": "Mostly Clear",
+                "detailedForecast": "Mostly clear, with a low around 48."
+            },
+            {
+                "number": 8,
+                "name": "Thursday",
+                "startTime": "2021-09-30T06:00:00-04:00",
+                "endTime": "2021-09-30T18:00:00-04:00",
+                "isDaytime": true,
+                "temperature": 72,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "1 to 6 mph",
+                "windDirection": "N",
+                "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
+                "shortForecast": "Sunny",
+                "detailedForecast": "Sunny, with a high near 72."
+            },
+            {
+                "number": 9,
+                "name": "Thursday Night",
+                "startTime": "2021-09-30T18:00:00-04:00",
+                "endTime": "2021-10-01T06:00:00-04:00",
+                "isDaytime": false,
+                "temperature": 48,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 mph",
+                "windDirection": "NE",
+                "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                "shortForecast": "Mostly Clear",
+                "detailedForecast": "Mostly clear, with a low around 48."
+            },
+            {
+                "number": 10,
+                "name": "Friday",
+                "startTime": "2021-10-01T06:00:00-04:00",
+                "endTime": "2021-10-01T18:00:00-04:00",
+                "isDaytime": true,
+                "temperature": 72,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 mph",
+                "windDirection": "NE",
+                "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
+                "shortForecast": "Sunny",
+                "detailedForecast": "Sunny, with a high near 72."
+            },
+            {
+                "number": 11,
+                "name": "Friday Night",
+                "startTime": "2021-10-01T18:00:00-04:00",
+                "endTime": "2021-10-02T06:00:00-04:00",
+                "isDaytime": false,
+                "temperature": 50,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "3 mph",
+                "windDirection": "E",
+                "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+                "shortForecast": "Partly Cloudy",
+                "detailedForecast": "Partly cloudy, with a low around 50."
+            },
+            {
+                "number": 12,
+                "name": "Saturday",
+                "startTime": "2021-10-02T06:00:00-04:00",
+                "endTime": "2021-10-02T18:00:00-04:00",
+                "isDaytime": true,
+                "temperature": 71,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "6 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
+                "shortForecast": "Mostly Sunny",
+                "detailedForecast": "Mostly sunny, with a high near 71."
+            },
+            {
+                "number": 13,
+                "name": "Saturday Night",
+                "startTime": "2021-10-02T18:00:00-04:00",
+                "endTime": "2021-10-03T06:00:00-04:00",
+                "isDaytime": false,
+                "temperature": 50,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 mph",
+                "windDirection": "NE",
+                "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+                "shortForecast": "Partly Cloudy",
+                "detailedForecast": "Partly cloudy, with a low around 50."
+            },
+            {
+                "number": 14,
+                "name": "Sunday",
+                "startTime": "2021-10-03T06:00:00-04:00",
+                "endTime": "2021-10-03T18:00:00-04:00",
+                "isDaytime": true,
+                "temperature": 70,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "2 to 6 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/day/bkn/rain_showers?size=medium",
+                "shortForecast": "Partly Sunny then Slight Chance Rain Showers",
+                "detailedForecast": "A slight chance of rain showers after 2pm. Partly sunny, with a high near 70."
+            }
+        ]
+    }
+}
+%%-JSON-END
+((>b2e:6)) @2h4}
+
+[[
+HEADER(Weather in Pennsylvania _)
+ID(>2h4)
+REQUEST(https://api.weather.gov/gridpoints/PBZ/80,34/forecast)
+]]
+
+@b2e
