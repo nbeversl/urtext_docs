@@ -28,9 +28,9 @@ Urtext Reference >ac5
   │   ├── Opening Links >01w
   │   │   ├── Sublime >osu
   │   │   └── Pythonista >iy8
-  │   ├── Linking to Files and Other Resources >00q
-  │   │   ├── Web / HTTP(S) >00o
-  │   │   └── Files >00p
+  │   └── Linking to Files and Other Resources >00q
+  │       ├── Web / HTTP(S) >00o
+  │       └── Files >00p
   ├── Exporting >ezg
   │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
   │   └── Example : Fragment Exported to HTML >baq

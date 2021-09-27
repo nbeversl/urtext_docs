@@ -14,15 +14,15 @@ Templating the Output with the SHOW parameter _
 ]]
 
           { Example List 2
-Tab Completion: >r87
+Lists: >twz
 -
-(untitled): >zje
+Projects: >dce
 -
-(untitled): >nad
+Reserved key for every node, used here to specificy this node as containing project settings: >egg
 -
-Linking Nodes Together: >r9q
+become child nodes of their containing node.: >hiz
 -
-Provides a title for the entire project: >xqu
+Nodes: >i81
 -
 ((>8p5:50)) @c1x}
 

@@ -26,12 +26,12 @@ Dynamic nodes aggregate content from other nodes. Among other things, dynamic no
 
   The output:
 
-  	{ (untitled) >zje
-(untitled) >nad
-(untitled) >l8b
+  	{ (untitled) >5m7
 (untitled) >00l
-(untitled) >5m7
+(untitled) >l8b
 (untitled) >5pr
+(untitled) >nad
+(untitled) >zje
 About Urtext >013
 Another Example Level >5pq
 Another level >80d
@@ -50,12 +50,12 @@ Basic Syntax >znj
     ]]      
 
 
-{ (untitled) >zje
-(untitled) >nad
-(untitled) >l8b
+{ (untitled) >5m7
 (untitled) >00l
-(untitled) >5m7
+(untitled) >l8b
 (untitled) >5pr
+(untitled) >nad
+(untitled) >zje
 About Urtext >013
   ├── Description >yv2
   ├── Comparison To Other Tools >h8z

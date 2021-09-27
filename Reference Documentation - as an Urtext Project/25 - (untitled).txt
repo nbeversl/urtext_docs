@@ -43,12 +43,12 @@
         ]
     },
     "properties": {
-        "updated": "2021-09-27T20:02:58+00:00",
+        "updated": "2021-09-27T21:06:35+00:00",
         "units": "us",
         "forecastGenerator": "BaselineForecastGenerator",
-        "generatedAt": "2021-09-27T20:24:25+00:00",
-        "updateTime": "2021-09-27T20:02:58+00:00",
-        "validTimes": "2021-09-27T14:00:00+00:00/P7DT22H",
+        "generatedAt": "2021-09-27T21:21:37+00:00",
+        "updateTime": "2021-09-27T21:06:35+00:00",
+        "validTimes": "2021-09-27T15:00:00+00:00/P7DT21H",
         "elevation": {
             "value": 278.892,
             "unitCode": "unit:m"
@@ -57,7 +57,7 @@
             {
                 "number": 1,
                 "name": "This Afternoon",
-                "startTime": "2021-09-27T16:00:00-04:00",
+                "startTime": "2021-09-27T17:00:00-04:00",
                 "endTime": "2021-09-27T18:00:00-04:00",
                 "isDaytime": true,
                 "temperature": 78,
@@ -75,14 +75,14 @@
                 "startTime": "2021-09-27T18:00:00-04:00",
                 "endTime": "2021-09-28T06:00:00-04:00",
                 "isDaytime": false,
-                "temperature": 60,
+                "temperature": 62,
                 "temperatureUnit": "F",
                 "temperatureTrend": null,
-                "windSpeed": "7 to 10 mph",
+                "windSpeed": "10 mph",
                 "windDirection": "SW",
                 "icon": "https://api.weather.gov/icons/land/night/sct/tsra_hi,40?size=medium",
-                "shortForecast": "Partly Cloudy then Chance Showers And Thunderstorms",
-                "detailedForecast": "A chance of showers and thunderstorms after 2am. Partly cloudy, with a low around 60. Southwest wind 7 to 10 mph. Chance of precipitation is 40%. New rainfall amounts between a tenth and quarter of an inch possible."
+                "shortForecast": "Partly Cloudy then Slight Chance Showers And Thunderstorms",
+                "detailedForecast": "A slight chance of showers and thunderstorms between 2am and 3am, then a chance of showers and thunderstorms between 3am and 5am, then a chance of showers and thunderstorms. Partly cloudy, with a low around 62. Southwest wind around 10 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible."
             },
             {
                 "number": 3,
@@ -93,11 +93,11 @@
                 "temperature": 75,
                 "temperatureUnit": "F",
                 "temperatureTrend": null,
-                "windSpeed": "8 mph",
-                "windDirection": "W",
+                "windSpeed": "9 mph",
+                "windDirection": "SW",
                 "icon": "https://api.weather.gov/icons/land/day/tsra_sct,50/tsra_sct,40?size=medium",
                 "shortForecast": "Chance Showers And Thunderstorms",
-                "detailedForecast": "A chance of showers and thunderstorms. Mostly cloudy, with a high near 75. West wind around 8 mph. Chance of precipitation is 50%. New rainfall amounts between a quarter and half of an inch possible."
+                "detailedForecast": "A chance of showers and thunderstorms. Partly sunny, with a high near 75. Southwest wind around 9 mph. Chance of precipitation is 50%. New rainfall amounts between a tenth and quarter of an inch possible."
             },
             {
                 "number": 4,
@@ -108,11 +108,11 @@
                 "temperature": 50,
                 "temperatureUnit": "F",
                 "temperatureTrend": null,
-                "windSpeed": "1 to 6 mph",
+                "windSpeed": "1 to 7 mph",
                 "windDirection": "N",
                 "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20/sct?size=medium",
                 "shortForecast": "Slight Chance Showers And Thunderstorms then Partly Cloudy",
-                "detailedForecast": "A slight chance of showers and thunderstorms before 8pm. Partly cloudy, with a low around 50. North wind 1 to 6 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
+                "detailedForecast": "A slight chance of showers and thunderstorms before 8pm. Partly cloudy, with a low around 50. North wind 1 to 7 mph. Chance of precipitation is 20%."
             },
             {
                 "number": 5,

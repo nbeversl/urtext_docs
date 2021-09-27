@@ -21,26 +21,26 @@ Lists
 
 			{ Example: Nodes from the Documentation
  flags::exclude_from_export
-Tab Completion >r87
-(untitled) >zje
-(untitled) >nad
-Linking Nodes Together >r9q
-Provides a title for the entire project >xqu
-Re-add title links to tab completions? >ekk
-(untitled) >l8b
-Local >2yx
-Innermost level >e5n
-Reserved key for every node, used here to specificy this node as containing project settings >egg
-Issue >dim
-Generating a node ID manually >rfp
-Welcome to Urtext >a41
-Bracket nodes can be nested arbitrarily deep inside one another. >xdd
-Example Compact Node >d7b
-(untitled) >00l
-project_settings >00n
 Lists >twz
+Projects >dce
+Reserved key for every node, used here to specificy this node as containing project settings >egg
+become child nodes of their containing node. >hiz
+Nodes >i81
+Other Features >kne
+Future Proof >xat
+Extensibile >gn8
 From Target Node >imr
+(untitled) >5m7
 Uses >lhs
+More Features to Try >q0l
+Bracket Nodes >xgr
+Example inline node within compact node. >9up
+require an ID >frm
+project_settings >00n
+Templating the Output with the SHOW parameter >8p5
+(untitled) >00l
+Dynamic Nodes >k8p
+Example Compact Node >d7b
 ((>twz:7)) @m1r}
 
 	f>./files/example-list-1-definition.png

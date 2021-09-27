@@ -14,15 +14,15 @@ Templating the Output with the SHOW parameter _
 ]]
 
           { Example List 2
-Urtext Usage Guide and Reference: >a5m
+Download and Install Dependencies Manually: >774
 -
-Provides a title for the entire project: >xqu
+Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field.: >q8j
 -
-Exporting: >ezg
+Copy Link to this Node With Title:: >05x
 -
 Toggle Traverse Mode:: >hcf
 -
-Local: >2yx
+Overrides the node title, which is by default the full first non-whitespace line.: >pz3
 -
 ((>8p5:50)) @c1x}
 

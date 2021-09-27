@@ -1,14 +1,12 @@
  
 
-# About the README.md
+# Urtext
 
 ## About Urtext
 
-### Urtext Usage Guide and Reference|  >a5m
-
 ### Description
 
-Urtext is a syntax and interpreter for writing, connecting and organizing text.
+Urtext (pronounced /ˈʊrtekst/) is a syntax and interpreter for writing, connecting and organizing text.
 
 Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is a "project". The Urtext interpreter is aware of all the nodes in a project at once, so nodes can reference, modify, and organize one another, across hundreds or thousands of files. The | Basic Syntax >znj permits instructions embedded into the text itself. 
 
@@ -238,14 +236,7 @@ This walks you through using Urtext through friendly, progressive steps.
 ### Reference Documentation 
 
 This is a component-by-component guide for Urtext's features. After opening this folder in Sublime Text:
-* Ctrl-Shift-H will take you to this home node. 
-* Get to the table of contents for the reference guide by either:
-
-- pressing Ctrl-Shift-E and starting to type "Urtext Usage Guide and Reference" until the node shows up. Press Enter to open it
-
-or 
-
-- Click the "Urtext Usage Guide and Reference" link at the top of this file. Links can be opened by pressing either Ctrl-Shift-/ or holding down Ctrl-Shift while clicking the link with the mouse.
+* Ctrl-Shift-H will take you to the table of contents, linkining to this page at the top.
 
 ## Basic Syntax
 
@@ -282,4 +273,4 @@ Metadata assignment operator. Accepts a user-defined key on the left, and values
 Metadata may appear anywhere. They attach to their containing (parent) node, remember their exact location, and can serve as anchors/bookmarks to context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 Example:
 | Sublime Text Commands and Key Bindings
-| iPhone/iPad/iOS((>013:226)) 
+| iPhone/iPad/iOS((>013:233)) 
