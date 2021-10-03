@@ -1,0 +1,7 @@
+About the README  _
+   
+  This Markdown file is a partial export from the Urtext reference documentation. It explains installation and setup, the basic Urtext syntax, and thed Sublime Text commands and key bindings.  This repository also contains a fuller reference guide and a "walkthrough" project, both fully functioning Urtext projects with which to experiment with Urtext's features. 
+
+  The documentation is in active development. It may be incomplete or behind features/functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
+
+@pjk

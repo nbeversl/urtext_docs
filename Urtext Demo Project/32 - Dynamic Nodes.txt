@@ -27,15 +27,15 @@ Dynamic nodes aggregate content from other nodes. Among other things, dynamic no
   The output:
 
   	{ (untitled) >5m7
-(untitled) >00l
-(untitled) >l8b
-(untitled) >5pr
 (untitled) >nad
+(untitled) >wyi
+(untitled) >5pr
+(untitled) >s04
+(untitled) >l8b
+(untitled) >gfa
 (untitled) >zje
+(untitled) >00l
 About Urtext >013
-Another Example Level >5pq
-Another level >80d
-Basic Syntax >znj
 ((>o13:963)) @9oj}
 
 
@@ -51,11 +51,19 @@ Basic Syntax >znj
 
 
 { (untitled) >5m7
-(untitled) >00l
-(untitled) >l8b
-(untitled) >5pr
 (untitled) >nad
+(untitled) >wyi
+(untitled) >5pr
+(untitled) >s04
+  ├── Some new node >ul0
+  ├── Now I add a second node. Without saving, I try to click ctrl-shift-C >4kp
+  └── (untitled) >gfa
+      └── (untitled) >wyi
+(untitled) >l8b
+(untitled) >gfa
+  └── (untitled) >wyi
 (untitled) >zje
+(untitled) >00l
 About Urtext >013
   ├── Description >yv2
   ├── Comparison To Other Tools >h8z
@@ -68,12 +76,6 @@ About Urtext >013
       ├── Future Proof >xat
       ├── Local >2yx
       └── Other Features >kne
-Another Example Level >5pq
-  └── Innermost level >e5n
-Another level >80d
-  └── Another Example Level >5pq
-      └── Innermost level >e5n
-Basic Syntax >znj
 ((>o13:1639)) @l9t}
 
   @o13}

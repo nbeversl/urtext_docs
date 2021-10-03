@@ -1,9 +1,0 @@
-
-Syntaxes :
-
-	The \{  and  \} wrappers are within the ranges of the CONTAINING node, not the node they enclose.
-	The • character also gets included in its PARENT.
-	The % character gets included in the range of the node FOLLOWING it.
-	
-@r0w
-updated::<Thu., Dec. 12, 2019, 09:02 AM>

@@ -91,7 +91,7 @@ Cloud services can be used to sync project files among devices if desired.
 
 Urtext is designed to make direct interaction with file system mostly unnecessary. Creating, naming, saving, and organizing files is handled for you.
 
-## About the README.md  _
+## About the README  _
 
 This Markdown file is a partial export from the Urtext reference documentation. It explains installation and setup, the basic Urtext syntax, and thed Sublime Text commands and key bindings.  This repository also contains a fuller reference guide and a "walkthrough" project, both fully functioning Urtext projects with which to experiment with Urtext's features. 
 
@@ -184,7 +184,7 @@ For an extra-clean look, hide line numbers by adding:
 
 ... to your Sublime project settings file. 
 
-(Ignore the JSON syntax pass markers above beginning with `%%`. See [ MISSING LINK : oy5 ]  )
+(Ignore the JSON syntax pass markers above beginning with `%%`. See | Embedded Syntaxes and Pass Markers >oy5 )
 
 ### Full Screen / Distraction Free Mode
 
@@ -232,45 +232,12 @@ At this point, clone this repository and open either of its subfolders in Sublim
 ### Urtext Demo Project 
 
 This walks you through using Urtext through friendly, progressive steps.
+After opening this folder (or any file in it) in Sublime Text, press Ctrl-Shift-H which will take you to the start page.
+Follow the text from there.
 
 ### Reference Documentation 
 
 This is a component-by-component guide for Urtext's features. After opening this folder in Sublime Text:
-* Ctrl-Shift-H will take you to the table of contents, linkining to this page at the top.
-
-## Basic Syntax
-
-All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname.
-
-`{  }`
-Bracket Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.
-More information: | Bracket Nodes >004
-
-`>`
-Node Link. Links to the specified node by ID, like a hyperlink. 
-More information: | Links >0y2
-
-`>>`		
-Node Pointer: Embeds the specified node as though it were included bracket using wrappers `{ }` (see above)
-More information: [ MISSING LINK : lmu ] 
-
-`|`
-Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.
-Example and more info: | Dynamic Titles >4vu
-
-`•`
-Bullet Node marker. Must be the first non-whitespace character on a line. Must include an ID in order to parse as a node.
-More information: | Bullet Nodes >j6t
-
-`< >`
-Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
-The first character inside the brackets may not be `!`, '-', or whitespace.
-Example: 
-More information: | Syntax and Format >005
-
-`::`
-Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
-Metadata may appear anywhere. They attach to their containing (parent) node, remember their exact location, and can serve as anchors/bookmarks to context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
-Example:
-| Sublime Text Commands and Key Bindings
-| iPhone/iPad/iOS((>013:233)) 
+* Ctrl-Shift-H will take you to the node that generated the README file. 
+* Scroll to the bottom and you'll find this node (this very text you are reading) at the end of the file.
+* Click _______((>013:151)) 

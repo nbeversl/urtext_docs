@@ -3,7 +3,14 @@ Urtext Installation, Setup, Demo and Tutorial Project _ @6cd
 
 This is an example project that demonstrates and teaches how to use Urtext. Urtext (pronounced /ˈo͝orˌtekst/) is a syntax and interpreter for writing, connecting and organizing text. You can change and modify anything in this project to experiment with the features described.
 
-This project assumes you are using the Sublime Text implementation of Urtext:
+This project assumes you are using the Sublime Text implementation of Urtext.
+
+If you have already followed the installation steps, position the cursor on the line with the "Welcome to Urtext" link below and press Ctrl-Shift-/ (Ctrl-Shift-forwardSlash) or hold Ctrl-Shift and click the mouse. If you get lost, pressing Ctrl-Shift-H at any time will return to this "home" node.
+
+| Welcome to Urtext >a41
+
+=======================================
+... Otherwise:
 
 1.  Download Sublime Text. (https://www.sublimetext.com/).
 
@@ -31,4 +38,4 @@ This project assumes you are using the Sublime Text implementation of Urtext:
 
     If you get lost, pressing Ctrl-Shift-H at any time will return to this "home" node.
 
-| Welcome to Urtext >>a41
+| Welcome to Urtext >a41

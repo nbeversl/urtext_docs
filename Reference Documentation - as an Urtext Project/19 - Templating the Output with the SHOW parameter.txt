@@ -1,0 +1,29 @@
+Templating the Output with the SHOW parameter _ 
+
+[[	This definition uses the same parameters as above, targeting the next node below, >c1x.
+
+	We'll illustrate the SHOW parameter by supplying a template for the output of each result.
+	SHOW accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
+
+	SHOW($title: $link\n-\n)
+	ID(>c1x) 
+    HEADER(Example List 2)
+	INCLUDE(*)
+	LIMIT(5)
+	FORMAT(indent:3) 
+]]
+
+          { Example List 2
+Dynamic Definitions: >07u
+-
+Types of Nodes: >07q
+-
+Dynamic Definitions : Syntax and Parameters: >87g
+-
+Quick Tag from Other:: >zep
+-
+(untitled): >mbm
+-
+((>8p5:50)) @c1x}
+
+@8p5

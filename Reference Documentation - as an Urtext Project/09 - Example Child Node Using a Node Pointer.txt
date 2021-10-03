@@ -1,0 +1,2 @@
+Example Child Node Using a Node Pointer
+@001

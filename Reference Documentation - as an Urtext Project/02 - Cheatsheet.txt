@@ -1,0 +1,10 @@
+<Tue., Sep. 28, 2021, 02:32 PM> @yq8
+Cheatsheet _
+
+| Basic Syntax >>znj
+
+
+(not yet exporting)
+[[ FILE(cheatsheat.md)
+	MARKDOWN(root=yq8; -as_single_file)
+ ]]

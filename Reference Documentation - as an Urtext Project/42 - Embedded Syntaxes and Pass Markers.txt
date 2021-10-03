@@ -1,0 +1,77 @@
+Embedded Syntaxes and Pass Markers _
+ 
+Note that no text content wrapped between pass markers will appear in Urtext dynamic output, since characters in other syntaxes would have unpredictable interactions.
+
+
+{  Generic 
+	
+	`Similar to its use in in Markdown, the backtick designates code, plaintext, or preformatted text that should be escaped/ignored.` @6ys}
+
+For larger regions of text, or to embed other syntaxes, us the following:
+
+
+{ HTML
+
+	%%-HTML
+
+		<div class="example">
+			Example HTML
+		</div>
+
+	%%-HTML-END
+   @xsh}
+
+
+{ JSON
+
+	%%-JSON
+
+		{ 	"title" : "example JSON ",
+			"example" : [], 
+		}
+
+	%%-JSON-END
+@njo}
+
+{ Python
+
+	%%-PYTHON
+	
+	# Example
+	def times_ten(i):
+		return i*10
+
+	%%-PYTHON-END   
+@ljr}
+
+
+{ Plaintext
+
+	%%-PLAINTEXT
+
+		This text will get no syntax highlighting.
+
+	%%-PLAINTEXT-END 
+	@l60}
+
+
+
+{ Documentation
+
+	%%-DOC
+
+	The "DOC" pass marker is used in parts of this documentation in order to Urtext syntax highlighting without parse or execute anything, for documentation and example purposes. This wrapper will not return an error messages even it is missing an ID  {  }.
+
+
+	%%-DOC-END
+
+	@ooe}
+
+{  User-Defined
+
+
+  @lwg}
+
+
+
+@oy5

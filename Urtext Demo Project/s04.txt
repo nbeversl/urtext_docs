@@ -1,0 +1,16 @@
+<Thu., Sep. 30, 2021, 03:13 PM> @s04
+
+{ Some new node
+@ul0}
+
+{ Now I add a second node. Without saving, I try to click ctrl-shift-C
+@4kp}
+
+
+{ 
+
+
+
+{ 
+@wyi}
+@gfa}

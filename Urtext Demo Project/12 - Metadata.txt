@@ -30,5 +30,4 @@ Metadata entries "remember" their location, allowing them to double as contextua
 
 continue to | Dynamic Nodes >>k8p
 
-
 @00x

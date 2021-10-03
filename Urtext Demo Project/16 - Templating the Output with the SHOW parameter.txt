@@ -14,15 +14,15 @@ Templating the Output with the SHOW parameter _
 ]]
 
           { Example List 2
-Lists: >twz
+Dynamic Nodes: >k8p
 -
-Projects: >dce
+More Dynamic Definitions: >87g
 -
-Reserved key for every node, used here to specificy this node as containing project settings: >egg
+Tab Completion: >r87
 -
-become child nodes of their containing node.: >hiz
+Linking Nodes Together: >r9q
 -
-Nodes: >i81
+Freeform, Flexible Syntax: >wzk
 -
 ((>8p5:50)) @c1x}
 

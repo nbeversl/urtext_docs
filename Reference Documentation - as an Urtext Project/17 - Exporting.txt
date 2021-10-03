@@ -23,7 +23,7 @@ Urtext can export to plaintext, Markdown and HTML. Output can be written to a fi
     The following Dynamic Definition is identical to the above, except it exports to HTML.   
 
    [[   +(ID=p23) |  ?  >p23
-        +(ID=013) | About the README.md >013
+        +(ID=013) | Urtext >013
         +(ID=z7t) |  ?  >z7t
         +(ID=ac5) | Urtext Reference >ac5
         DEPTH(*)
