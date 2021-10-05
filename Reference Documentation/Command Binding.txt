@@ -1,0 +1,16 @@
+<!!
+node ID >e8x exists in f>This binds the definition to a specific piece of text, rather than to the output of a node. So when - 04-22-2021.txt
+!!>
+Command Binding  
+  <Thu., Apr. 22, 2021, 12:22 PM> @e8x
+
+
+
+
+
+
+This binds the definition to a specific piece of text, rather than to the output of a node. So when you click on this, anywhere:
+ ##REINDEX FILES
+ ... it runs.
+
+   >>>REINDEX(df) asdfd

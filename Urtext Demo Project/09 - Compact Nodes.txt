@@ -1,0 +1,16 @@
+
+Compact Nodes
+
+Key: |  ?  >1qq
+
+For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the • character appears, with the closing wrapper being the end of the same line. 
+
+Like all nodes, a compact node requires an ID. Like all nodes, it can contain metadata and even inline nodes, as long as the entire contents, including wrappers and metadata, are contained on a single line. (Note that "line" in this case refers to consecutive characters between explicit line breaks, and not to lines in the editor, which may be arbitrarily wrapped.)
+
+
+• Example Compact Node @d7b {  Example inline node within compact node. @9up } flags::exclude_from_export
+
+f>./files/example-compact-node.png
+
+@kpz
+Updated::<Thu., Sep. 10, 2020, 05:32 PM>

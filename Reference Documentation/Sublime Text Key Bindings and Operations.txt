@@ -1,0 +1,44 @@
+Sublime Text Key Bindings and Operations _
+
+{ Navigation _
+
+• Node Browser, Backlinks: ctrl + shift + 1 _  	@1ea
+• Nav Backward: ctrl + shift + , _  				@3hy
+• Home Node: ctrl + shift + h _					@5ab
+• List Projects: ctrl + shift + o _				@g5a
+• Toggle Traverse Mode: ctrl + shift + r _ 		@hcf
+• Node Browser, Include All Projects: ctrl + shift + * _ @hyh
+• Open Urtext Link:	ctrl + shift + / _				@ngh
+• Open Random Node: ctrl + shift + f _				@q5f
+• Node Browser: ctrl + shift + e _ 				@vdr
+• Nav Forward: ctrl + shift + .	_				@yan
+• Node Browser, Forward Links: ctrl + shift + 2 _ 	@ylo
+@k7b } 
+
+{ Content Insertion _
+
+• Insert Compact Node: ctrl + shift + ^ _  		@1qq
+• Insert Timestamp: ctrl + shift + t _  			@7b8
+• Insert Bracket Node, minimal: ctrl + shift + p (OSX), alt  + shift + p (Windows, Linux) _ @6ym
+• Add Node ID: ctrl + shift + i _ 				@gv9
+• Insert Dynamic Definition with Node: ctrl + shift + \} _ @jsc
+• Insert Inline Node: ctrl + shift + \{  _			@rzx
+• Insert Link to New Node: ctrl + shift + ' _		@sxk
+• New Node: ctrl + shift + ; _ 					@ve3
+• Quick Tag from Other: ctrl + shift + 0 _		@zep
+@kxh  }
+
+{ Copy Links _
+
+• Copy Link to this Node With Title: ctrl + shift + super + c _ 	@05x
+• Copy Link to this Node: ctrl + shift + c _ 	@vel
+@kqz  }
+
+{ History
+• Toggle History Traverse: ctrl + shift + g  _@ndc
+@a8q }
+
+**_settings::keep_syntax
+*kw::omit from TOC
+
+@1vs

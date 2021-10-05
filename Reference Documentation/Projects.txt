@@ -1,0 +1,16 @@
+Projects _
+
+An Urtext project is a single folder. The folder must contain at least one file with an Urtext Node ID. 
+
+To make an new empty project, select "Urtext : New Project" from the Sublime Command Palette. Sublime will ask for a folder location and a new project will be created in the specified location.
+
+{ Using/Adding Existing Files _
+
+	Once a folder contains at least one file with a node ID, you can add and use existing plaintext files in the project without any modification. However for most of the benefits of Urtext you must minimally an ID (| Node IDs >01q) in each file.
+	
+	To do so, select `Urtext : Import Project` from the Sublime Command palette.
+
+    Note the append will occur without a confirmation dialog, so if you are just experimenting with this system, consider making a copy of your file folder so you can revert without having to manually remove the metadata.
+	
+@rij}	
+@dce 

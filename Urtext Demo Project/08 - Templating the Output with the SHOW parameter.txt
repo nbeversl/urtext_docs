@@ -1,0 +1,29 @@
+Templating the Output with the SHOW parameter _ 
+
+[[	This definition uses the same parameters as above, targeting the next node below, >c1x.
+
+	We'll illustrate the SHOW parameter by supplying a template for the output of each result.
+	SHOW accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
+
+	SHOW($title: $link\n-\n)
+	ID(>c1x) 
+    HEADER(Example List 2)
+	INCLUDE(*)
+	LIMIT(5)
+	FORMAT(indent:3) 
+]]
+
+          { Example List 2
+Future Proof: >xat
+-
+(untitled): >5pr
+-
+Another level: >80d
+-
+Lists: >twz
+-
+(untitled): >5m7
+-
+((>8p5:50)) @c1x}
+
+@8p5

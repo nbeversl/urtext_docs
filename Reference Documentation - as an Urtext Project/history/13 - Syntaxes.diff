@@ -1,1 +1,0 @@
-{"1633274865": "\nSyntaxes _\n\n\tThe \\{  and  \\} wrappers are within the ranges of the CONTAINING node, not the node they enclose.\n\tThe \u2022 character also gets included in its PARENT.\n\tThe % character gets included in the range of the node FOLLOWING it.\n\t\n@r0w\nupdated::<Thu., Dec. 12, 2019, 09:02 AM>"}

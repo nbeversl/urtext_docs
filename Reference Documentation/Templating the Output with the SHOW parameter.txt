@@ -1,0 +1,29 @@
+Templating the Output with the SHOW parameter _ 
+
+[[	This definition uses the same parameters as above, targeting the next node below, >c1x.
+
+	We'll illustrate the SHOW parameter by supplying a template for the output of each result.
+	SHOW accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
+
+	SHOW($title: $link\n-\n)
+	ID(>c1x) 
+    HEADER(Example List 2)
+	INCLUDE(*)
+	LIMIT(5)
+	FORMAT(indent:3) 
+]]
+
+          { Example List 2
+Word Wrap in Traverse Mode: >xci
+-
+third test level: >80d
+-
+Trailing Node IDs: >2a3
+-
+Copy Link to this Node: ctrl + shift + c: >vel
+-
+Using a Sublime Project for an Urtext Project: >c3n
+-
+((>8p5:50)) @c1x}
+
+@8p5
