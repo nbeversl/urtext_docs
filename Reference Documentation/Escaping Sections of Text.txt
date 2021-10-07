@@ -1,6 +1,6 @@
-Embedded Syntaxes and Pass Markers _
+Escaping Sections of Text _
  
-Note that no text content wrapped between pass markers will appear in Urtext dynamic output, since characters in other syntaxes would have unpredictable interactions.
+Urtext allows for embedded syntaxes and pass markers to escape sections of text from both urtext parsing and Sublime Text syntax highlighting. Note that no text content wrapped between pass markers will appear in Urtext dynamic output, since characters in other syntaxes would have unpredictable interactions.
 
 
 {  Generic 
@@ -66,12 +66,6 @@ For larger regions of text, or to embed other syntaxes, us the following:
 	%%-DOC-END
 
 	@ooe}
-
-{  User-Defined
-
-
-  @lwg}
-
 
 
 @oy5

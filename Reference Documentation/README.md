@@ -97,6 +97,8 @@ The documentation is in active development. It may be incomplete or behind featu
 
 ## Installation and Setup for the Sublime Text Implementation
 
+
+
 The Urtext package for Sublime Text utilizes Sublime's embedded Python interpreter both to run the Urtext interpreter/compiler and to add features to Sublime that make working with Urtext easy:
 
 - binds many Urtext operations to the Sublime command palette
@@ -106,11 +108,14 @@ The Urtext package for Sublime Text utilizes Sublime's embedded Python interpret
 - adds Urtext syntax highlighting to two of Sublime's default color schemes (Monokai and Sixteen)
 - adds filebrowser-like project navigation using | Traverse Mode >00w
 
-Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation. Features that are specific to Sublime are tagged with the keyword `sublime`.
+Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation. Features that are specific to Sublime are tagged with the keyword "sublime".
 
 ### Dependencies and Installation
 
-The decision has been made not to include Urtext or its dependencies in the Urtext package for Sublime. It is necessary to install everything manually into Sublime's Python 3.3 environment. This is in fact less complicated than the alternatives considered. For developers, see [ MISSING LINK : mh8 ] .
+Urtext and its dependencies are not included in the Urtext package for Sublime. 
+
+Install everything manually into Sublime's Python 3.3 environment. 
+
 
 To use Urtext in Sublime Text:
 
@@ -124,36 +129,36 @@ To use Urtext in Sublime Text:
 
 - anytree
 https://github.com/c0fec0de/anytree
-The folder needed is `anytree` inside this download; add it to `Sublime Text 4/Lib/python33`.
+The folder needed is "anytree" inside this download; add it to "Sublime Text 4/Lib/python33".
 
 - pytz
 https://pypi.org/project/pytz/
-The folder needed is `pytz`; add it to `Sublime Text 4/Lib/python33`.
+The folder needed is "pytz"; add it to "Sublime Text 4/Lib/python33".
 
 - six
 https://pypi.org/project/six/
-The only FILE needed is `six.py`, nothing else; add this directly to `Sublime Text 4/Lib/python33`.
+The only FILE needed is "six.py", nothing else; add this directly to "Sublime Text 4/Lib/python33".
 
 - dateutil
 https://pypi.org/project/python-dateutil/
-The folder needed is `pytz`; add it to `Sublime Text 4/Lib/python33`.
+The folder needed is "pytz"; add it to "Sublime Text 4/Lib/python33".
 
 - diff-match-patch
-The folder needed is `diff_match_patch`; add it to `Sublime Text 4/Lib/python33`.
+The folder needed is "diff_match_patch"; add it to "Sublime Text 4/Lib/python33".
 https://pypi.org/project/diff-match-patch/ 
 
 and:
 
 - urtext 
 https://github.com/nbeversl/urtext
-This is Urtext itself. Put the entire folder (`urtext`) into `Sublime Text 4/Lib/python33`.
+This is Urtext itself. Put the entire folder ("urtext") into "Sublime Text 4/Lib/python33".
 
 #### Download Dependencies from a Monorepo
 
 As a convenience, all of the above depenencies are (for now) maintained in recent versions at https://github.com/nbeversl/urtext_deps, with all files in the path locations described above. You can either download this repository as a .ZIP file and unzip it, or if you want to maintain version control, use:
-`git clone --recurse-submodules https://github.com/nbeversl/urtext_deps`
+"git clone --recurse-submodules https://github.com/nbeversl/urtext_deps"
 
-Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your `Sublime Text 3/Lib/python3.3` folder.Close and reopen Sublime Text. Urtext is now ready to use.   
+Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your "Sublime Text 3/Lib/python3.3" folder.Close and reopen Sublime Text. Urtext is now ready to use.   
 
 
 ## Sublime Text Interface Tips
@@ -183,7 +188,7 @@ For an extra-clean look, hide line numbers by adding:
 
 ... to your Sublime project settings file. 
 
-(Ignore the JSON syntax pass markers above beginning with `%%`. See | Embedded Syntaxes and Pass Markers >oy5 )
+(Ignore the JSON syntax pass markers above beginning with `%%`. See | Escaping Sections of Text >oy5 )
 
 ### Full Screen / Distraction Free Mode
 

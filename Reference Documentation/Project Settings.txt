@@ -1,4 +1,3 @@
-
 Project Settings _
 
 { 
@@ -15,7 +14,7 @@ Project Settings _
 	(True or False): Sets whether Urtext will log updates, errors, messages to Sublime's Python console.
 	(Press Control-tilde(~)  to open the console)
 
-	filenames::PREFIX - index - title - _oldest_timestamp
+	filenames::PREFIX - index - title
 	Specifies format for filenames when using | Reindex Files >qd2
 
 	file_index_sort::index - _oldest_timestamp
@@ -53,12 +52,13 @@ Project Settings _
 	open_with_system::pdf 
 	File extensions to always open using the default system application.
 
-	new_file_node_format::$timestamp $id $cursor
+	new_file_node_format::$cursor \r $timestamp $id
 	Spcifies the default format for new file nodes. The following values can be string together in any way:
 		$timestamp
 		$id (required)
 		$device_keyname
 		$cursor - where to position the cursor
+		any Unicode characters are valid — arbitrary text, newlines (\r), etc.
 
 	contents_strip_outer_whitespace::True
 	When including contents in dynamic nodes, determines whether leading or trailing whitespace gets stripped from the dynamic output.
@@ -80,7 +80,7 @@ Project Settings _
 	filename_datestamp_format::%m-%d-%Y
 	Specifies how dates will be formatted in filenames when using 
 
-	node_browser_sort::_oldest_timestamp| Reindex Files >qd2
+	node_browser_sort::index - oldest_timestamp
 	Specifies the key order by which nodes will sort in the Node Browser dropdown
 
 	breadcrumb_key::

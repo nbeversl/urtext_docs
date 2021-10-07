@@ -1,5 +1,6 @@
 Node IDs _
 
+
 Node IDs uniquely identify each node in a project. Nodes IDs are preceded by the `@` sign and then three alphanumberic (0-9, a-z) characters, resulting in over 46,000 unique identifiers per project. Node IDs are generated automatically by Urtext; every newly created node is assigned an available unused ID as a metadata entry:
 
 	@01q <- This is not an example; it specifies the ID of this node.
@@ -16,7 +17,7 @@ When an ID is deleted from a project, new nodes are later assigned to vacant nod
 
 { Inserting a Node ID manually
 
-	| Add Node ID: >gv9  will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually.  @04s}
+	| Add Node ID: ctrl + shift + i >gv9  will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually.  @04s}
 
 Node IDs can also be user-created arbitrarily if for some reason you want to. If you do this, note that node IDs are case-insensitive.
 
@@ -24,6 +25,12 @@ Node IDs can also be user-created arbitrarily if for some reason you want to. If
 
 	If two nodes end up with the same ID, only one (the first one found) will be assigned the ID. The entire second file containing the node with the duplicate ID will contain a warning message. See | Errors and Warnings >bpk
 
-	To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use | Add Node ID: >gv9 for this (as described above), after the rest of the project is compiled.
+	To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use | Add Node ID: ctrl + shift + i >gv9 for this (as described above), after the rest of the project is compiled.
 	
+
+{Generating a node ID manually _
+
+If you accidentally delete a Node ID or need to insert one arbitrarily, press "ctrl-shift-i". 
+
+@rfp}	
 @bzv}

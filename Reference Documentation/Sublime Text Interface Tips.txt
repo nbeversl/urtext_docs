@@ -27,7 +27,7 @@ Sublime Text Interface Tips _
 
 			... to your Sublime project settings file. 
 
-			(Ignore the JSON syntax pass markers above beginning with `%%`. See | Embedded Syntaxes and Pass Markers >oy5 ) @01e}
+			(Ignore the JSON syntax pass markers above beginning with `%%`. See | Escaping Sections of Text >oy5 ) @01e}
 
 	{  Full Screen / Distraction Free Mode
 

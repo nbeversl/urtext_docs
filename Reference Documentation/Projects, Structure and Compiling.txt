@@ -1,4 +1,4 @@
-Projects, Structure and Compiling
+Projects, Structure and Compiling _
 
 	A project is a collection of files containing Urtext nodes. 
 
@@ -6,7 +6,8 @@ Projects, Structure and Compiling
 
   Filenaming is arbitrary but can be automated. 
   
-	>>00l
+
+	| Project Settings >>00l
 	
 
 @01x

@@ -34,6 +34,7 @@ Metadata assignment operator. Accepts a user-defined key on the left, and values
 Metadata may appear anywhere. They attach to their containing (parent) node, remember their exact location, and can serve as anchors/bookmarks to context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 
 
+
 [[ FILE(Basic Syntax.md)
 	MARKDOWN(root=znj)
 	

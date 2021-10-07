@@ -1,4 +1,4 @@
-Dynamic Definitions : Syntax and Parameters _
+Dynamic Definitions - Syntax and Parameters _
 
 Dynamic definitions are instructions for dynamically building nodes from other nodes. Definitions can be written anywhere; it is not necessary to store a definition in the same file to which it refers. (Definitions cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
