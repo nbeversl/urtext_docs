@@ -90,11 +90,6 @@ Urtext Reference Tree >ac5
       │   │   │   ├── can have arbitrary other metadata >xlc
       │   │   │   └── become child nodes of their containing node. >hiz
       │   │   └── Bracket Nodes >004
-      │   │       └── Urtext Example - Bracket Node Syntax Highlighting >tnt
-      │   │           └── first level >leu
-      │   │               └── second level >qt8
-      │   │                   └── third test level >nn3
-      │   │                       └── fourth level >ekn
       │   └── Node IDs >01q
       │       ├── Inserting a Node ID manually >04s
       │       └── Duplicate Node IDs >bzv
@@ -136,5 +131,5 @@ Urtext Reference Tree >ac5
 
 [[  ID(>e5j) +(id=ac5) -(flags=exclude_from_toc) HEADER(Urtext Reference _ ) LIST(10) ]]
 
-index::00
+index::01
 @a5m
