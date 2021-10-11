@@ -1,6 +1,6 @@
  
 
-# Urtext Introduction
+# Introduction
 
 ## About Urtext
 
@@ -95,7 +95,7 @@ This Markdown file is a partial export from the Urtext reference documentation. 
 The documentation is in active development. It may be incomplete or behind features/functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
 
 
-## Installation and Setup for the Sublime Text Implementation
+## Installation and Setup in Sublime Text
 
 
 
@@ -155,13 +155,14 @@ This is Urtext itself. Put the entire folder ("urtext") into "Sublime Text 4/Lib
 
 #### Download Dependencies from a Monorepo
 
-As a convenience, all of the above depenencies are (for now) maintained in recent versions at https://github.com/nbeversl/urtext_deps, with all files in the path locations described above. You can either download this repository as a .ZIP file and unzip it, or if you want to maintain version control, use:
+All of the above depenencies are maintained in recent versions at https://github.com/nbeversl/urtext_deps, with all files in the path locations described above. You can either download this repository as a .ZIP file and unzip it, or if you want to maintain version control, use:
 "git clone --recurse-submodules https://github.com/nbeversl/urtext_deps"
 
 Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your "Sublime Text 3/Lib/python3.3" folder.Close and reopen Sublime Text. Urtext is now ready to use.   
 
 
 ## Sublime Text Interface Tips
+
 
 Here are some tips for best leveraging Sublime's great UI features while using Urtext.
 

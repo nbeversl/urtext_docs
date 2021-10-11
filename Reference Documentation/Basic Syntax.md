@@ -6,7 +6,7 @@ All text is plain content unless inside a timestamp wrapper, dynamic definition 
 
 `{  }`
 Bracket Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.
-More information: [ MISSING LINK : 004 ] 
+More information: | Bracket Nodes >004
 
 `>`
 Node Link. Links to the specified node by ID, like a hyperlink. 

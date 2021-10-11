@@ -5,16 +5,32 @@ In Sublime Text, Press Ctrl-Shift-R to browse this table of contents as a naviga
 
 { Urtext Reference _ 
 Urtext Reference Tree >ac5
-  ├── Urtext Reference - HOW >byx
-  │   ├── Installation and Setup for the Sublime Text Implementation >01u
+  ├── Introduction >013
+  │   ├── About Urtext >tkv
+  │   │   ├── Description >yv2
+  │   │   ├── Comparison To Other Tools >h8z
+  │   │   ├── Uses >lhs
+  │   │   ├── Features and Philosophy >006
+  │   │   │   ├── Plain Text >7rg
+  │   │   │   ├── Freeform, Flexible Syntax >wzk
+  │   │   │   ├── Open source >u8o
+  │   │   │   ├── Extensible >gn8
+  │   │   │   ├── Future Proof >xat
+  │   │   │   └── Local >2yx
+  │   │   └── Features >vnv
+  │   ├── Getting Started, Using Either the Demo or Reference Documentation >l7p
+  │   │   ├── Urtext Demo Project >xgj
+  │   │   └── Reference Documentation >6jq
+  │   └── About the README >pjk
+  ├── How To Use Urtext >byx
+  │   ├── Installation and Setup in Sublime Text >01u
   │   │   └── Dependencies and Installation >2fn
   │   │       ├── Download and Install Dependencies Manually >774
   │   │       └── Download Dependencies from a Monorepo >arl
   │   ├── Basic Syntax >znj
-  │   ├── File Nodes >ekz
   │   ├── The Node Browser >01i
   │   ├── Using the Sublime Text Command Pallete with Urtext >jby
-  │   ├── Sublime Text Key Bindings and Operations >1vs
+  │   ├── Sublime Text Urtext Key Bindings >1vs
   │   │   ├── Navigation >k7b
   │   │   │   ├── Node Browser, Backlinks: ctrl + shift + 1 >1ea
   │   │   │   ├── Nav Backward: ctrl + shift + , >3hy
@@ -40,7 +56,7 @@ Urtext Reference Tree >ac5
   │   │   ├── Copy Links >kqz
   │   │   │   ├── Copy Link to this Node With Title: ctrl + shift + super + c >05x
   │   │   │   └── Copy Link to this Node: ctrl + shift + c >vel
-  │   │   └── Toggle History Traverse: ctrl + shift + g >a8q
+  │   │   └── History >a8q
   │   ├── Sublime Text Interface Tips >003
   │   │   ├── Syntax Highlighting >01d
   │   │   ├── Hiding Tabs >015
@@ -59,148 +75,62 @@ Urtext Reference Tree >ac5
   │   │   ├── Plaintext >l60
   │   │   └── Documentation >ooe
   │   ├── File Naming >01m
-  │   ├── Generating a node ID manually >rfp
   │   ├── Reindex Files >qd2
-  │   ├── History >ls3
-  │   ├── Using Multiple Projects >ipy
-  │   │   ├── Project Naming (Identification) >tgp
-  │   │   └── Cross-Project Linking >7lx
-  │   └── Viewing Linked Relationships >00u
-  ├── Urtext Reference - WHAT >mrb
-  │   ├── Introduction >013
-  │   │   ├── About Urtext >tkv
-  │   │   │   ├── Description >yv2
-  │   │   │   ├── Comparison To Other Tools >h8z
-  │   │   │   ├── Uses >lhs
-  │   │   │   ├── Features and Philosophy >006
-  │   │   │   │   ├── Plain Text >7rg
-  │   │   │   │   ├── Freeform, Flexible Syntax >wzk
-  │   │   │   │   ├── Open source >u8o
-  │   │   │   │   ├── Extensible >gn8
-  │   │   │   │   ├── Future Proof >xat
-  │   │   │   │   └── Local >2yx
-  │   │   │   └── Features >vnv
-  │   │   ├── About the README >pjk
-  │   │   ├── Installation and Setup for the Sublime Text Implementation >01u
-  │   │   │   └── Dependencies and Installation >2fn
-  │   │   │       ├── Download and Install Dependencies Manually >774
-  │   │   │       └── Download Dependencies from a Monorepo >arl
-  │   │   ├── Sublime Text Interface Tips >003
-  │   │   │   ├── Syntax Highlighting >01d
-  │   │   │   ├── Hiding Tabs >015
-  │   │   │   ├── Hiding Line Numbers >01e
-  │   │   │   ├── Full Screen / Distraction Free Mode >002
-  │   │   │   ├── Disable Prompts for File Reload >023
-  │   │   │   ├── Remove Indent Guides >1rc
-  │   │   │   ├── Save on Focus Lost >sqq
-  │   │   │   └── Using a Sublime Project for an Urtext Project >c3n
-  │   │   └── Getting Started, Using Either the Demo or Reference Documentation >l7p
-  │   │       ├── Urtext Demo Project >xgj
-  │   │       └── Reference Documentation >6jq
-  │   ├── Nodes >01j
-  │   │   ├── Node IDs >01q
-  │   │   │   ├── Inserting a Node ID manually >04s
-  │   │   │   └── Duplicate Node IDs >bzv
-  │   │   │       └── Generating a node ID manually >rfp
-  │   │   ├── File Nodes >ekz
-  │   │   ├── Bullet Nodes >j6t
-  │   │   │   ├── require an id >frm
-  │   │   │   ├── can have arbitrary other metadata >xlc
-  │   │   │   └── become child nodes of their containing node. >hiz
-  │   │   └── Bracket Nodes >004
-  │   ├── Compact Nodes >kpz
-  │   │   ├── Example Compact Node >d7b
-  │   │   └── Example inline node within compact node. >9up
-  │   ├── Bracket Nodes >004
-  │   ├── Bullet Nodes >j6t
-  │   │   ├── require an id >frm
-  │   │   ├── can have arbitrary other metadata >xlc
-  │   │   └── become child nodes of their containing node. >hiz
-  │   ├── Metadata >00x
-  │   │   ├── General Syntax >8dw
-  │   │   ├── Timestamps >2i4
-  │   │   │   ├── Syntax and Format >005
-  │   │   │   ├── Tracking Node Dates and Times >cee
-  │   │   │   └── Time Zones >7w6
-  │   │   ├── Case-sensitivity >l36
-  │   │   ├── Reserved Keys >fo2
-  │   │   │   ├── index >00z
-  │   │   │   ├── title >pz3
-  │   │   │   └── def >5cq
-  │   │   └── Hash Key >4ry
-  │   ├── Links and Pointers >00j
-  │   │   ├── Links >0y2
-  │   │   │   └── Sublime Text tools to help with linking >00m
-  │   │   ├── Dynamic Titles >4vu
-  │   │   ├── Opening Links >01w
-  │   │   │   ├── Sublime >osu
-  │   │   │   └── Pythonista >iy8
-  │   │   └── Linking to Files and Other Resources >00q
-  │   │       ├── Web / HTTP(S) >00o
-  │   │       └── Files >00p
-  │   ├── Dynamic Definitions >07u
-  │   ├── Traverse Mode >00w
-  │   │   └── Word Wrap in Traverse Mode >xci
-  │   ├── User Interface Elements >3n6
-  │   │   ├── The Node Browser >01i
-  │   │   └── Traverse Mode >00w
-  │   │       └── Word Wrap in Traverse Mode >xci
-  │   ├── Project Settings >00l
-  │   │   └── project_settings >d0s
-  │   └── History >prp
-  │       └── History >ls3
-  ├── Urtext Reference - WHY >3hu
-  │   ├── About the README >pjk
-  │   ├── Projects, Structure and Compiling >01x
-  │   │   └── Project Settings >00l
-  │   │       └── project_settings >d0s
-  │   └── In-Progress / Experimental / Wish List >014
-  │       └── iPhone/iPad/iOS >01y
-  │           └── Synchronator Setup >01z
-  └── Old Reference Tree >ga7
-      ├── Projects >dce
-      │   └── Using/Adding Existing Files >rij
+  │   ├── History >prp
+  │   └── Using Multiple Projects >ipy
+  │       ├── Project Naming (Identification) >tgp
+  │       └── Cross-Project Linking >7lx
+  └── Urtext Reference >mrb
       ├── Nodes >01j
-      │   ├── Node IDs >01q
-      │   │   ├── Inserting a Node ID manually >04s
-      │   │   └── Duplicate Node IDs >bzv
-      │   │       └── Generating a node ID manually >rfp
-      │   ├── File Nodes >ekz
-      │   ├── Bullet Nodes >j6t
-      │   │   ├── require an id >frm
-      │   │   ├── can have arbitrary other metadata >xlc
-      │   │   └── become child nodes of their containing node. >hiz
-      │   └── Bracket Nodes >004
-      ├── Dynamic Nodes >k8p
-      │   ├── Dynamic Definitions >07u
-      │   └── Lists >twz
-      │       └── Example: Nodes from the Documentation >m1r
+      │   ├── Node Titles >u0g
+      │   ├── Types of Nodes >nuc
+      │   │   ├── File Nodes >ekz
+      │   │   ├── Bullet Nodes >j6t
+      │   │   │   ├── require an id >frm
+      │   │   │   ├── can have arbitrary other metadata >xlc
+      │   │   │   └── become child nodes of their containing node. >hiz
+      │   │   └── Bracket Nodes >004
+      │   │       └── Urtext Example - Bracket Node Syntax Highlighting >tnt
+      │   │           └── first level >leu
+      │   │               └── second level >qt8
+      │   │                   └── third test level >nn3
+      │   │                       └── fourth level >ekn
+      │   └── Node IDs >01q
+      │       ├── Inserting a Node ID manually >04s
+      │       └── Duplicate Node IDs >bzv
+      │           └── Generating a node ID manually >rfp
+      ├── Projects, Structure and Compiling >01x
+      ├── Metadata >00x
+      │   ├── General Syntax >8dw
+      │   ├── Timestamps >2i4
+      │   │   ├── Syntax and Format >005
+      │   │   ├── Tracking Node Dates and Times >cee
+      │   │   └── Time Zones >7w6
+      │   ├── Case-sensitivity >l36
+      │   ├── Reserved Keys >fo2
+      │   │   ├── index >00z
+      │   │   ├── title >pz3
+      │   │   └── def >5cq
+      │   ├── Hash Key >4ry
+      │   └── Tag nodes and descendents >tlv
       ├── Links and Pointers >00j
       │   ├── Links >0y2
       │   │   └── Sublime Text tools to help with linking >00m
       │   ├── Dynamic Titles >4vu
       │   ├── Opening Links >01w
-      │   │   ├── Sublime >osu
-      │   │   └── Pythonista >iy8
-      │   └── Linking to Files and Other Resources >00q
-      │       ├── Web / HTTP(S) >00o
-      │       └── Files >00p
-      ├── Exporting >ezg
-      │   ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
-      │   └── Example : Fragment Exported to HTML >baq
-      ├── File Naming >01m
-      ├── History >prp
-      │   └── History >ls3
+      │   │   └── Sublime >osu
+      │   └── Linking to Files and Internet Links >00q
+      │       ├── Link to Web/HTTP(S) >00o
+      │       └── Link to Files >00p
+      ├── Dynamic Definitions >07u
+      ├── Traverse Mode >00w
+      │   └── Word Wrap in Traverse Mode: >xci
+      ├── Pull/Pop Node >on7
       ├── Project Settings >00l
       │   └── project_settings >d0s
-      ├── Errors and Warnings >bpk
-      ├── Using Multiple Projects >ipy
-      │   ├── Project Naming (Identification) >tgp
-      │   └── Cross-Project Linking >7lx
-      └── User Interface Elements >3n6
-          ├── The Node Browser >01i
-          └── Traverse Mode >00w
-              └── Word Wrap in Traverse Mode >xci
+      └── Exporting >ezg
+          ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
+          └── Example : Fragment Exported to HTML >baq
 ((>a5m:243)) @e5j} 
 
 

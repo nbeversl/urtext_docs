@@ -1,7 +1,0 @@
-User Interface Elements _
-
-Urtext is made to require minimal user interface elements. They mostly serve as conveniences that duplicate 
-
-| The Node Browser >>01i
-| Traverse Mode >>00w
-  @3n6 

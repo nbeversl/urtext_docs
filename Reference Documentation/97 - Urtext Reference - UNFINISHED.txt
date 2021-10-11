@@ -1,4 +1,4 @@
-Urtext Reference - UNFINISHED
+Urtext Reference - TODO
 
 
 Empty/Needs Work:
@@ -6,13 +6,13 @@ Empty/Needs Work:
 | Reindex Files >qd2
 | Pull/Pop Node >on7
 | Using the Sublime Text Command Pallete with Urtext >jby
-| Errors and Warnings >bpk
-| Synchronator Setup >01z
-| Metadata - Tag nodes and descendents >tlv
+| Tag nodes and descendents >tlv
 
 
-Really messy, needs proofreading:
+Really messy, needs heavy editing:
 | Exporting >ezg
 
+
+
  <Wed., Oct. 06, 2021, 12:05 PM> @fst
- index::98
+ index::97

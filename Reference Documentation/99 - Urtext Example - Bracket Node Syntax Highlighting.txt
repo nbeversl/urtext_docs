@@ -1,0 +1,10 @@
+Urtext Example - Bracket Node Syntax Highlighting _
+
+              {first level
+                 {second level  
+                    {third test level
+                         {fourth level 
+                              {fifth level      @q3g} @ekn} @nn3} @qt8} @leu} 
+ 
+index::99
+ @nf8
