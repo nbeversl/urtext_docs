@@ -112,6 +112,7 @@ Basic Syntax _
 	• Toggle History Traverse: ctrl + shift + g  _@ndc
 	@a8q }
 
+	kw::exclude_from_toc
 	**_settings::keep_syntax
 	@1vs}
 

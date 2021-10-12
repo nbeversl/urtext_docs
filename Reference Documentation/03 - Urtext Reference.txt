@@ -56,8 +56,7 @@ Urtext Reference _
 
         The syntax for bracket nodes is to wrap the content in curly braces:
 
-
-                 Example Bracket Node _  
+                { Example Bracket Node _ @ypq}
 
 
         Create an bracket nodes with | Insert Inline Node: ctrl + shift + \ >rzx. Inside the inserted double curly braces is a new node with an auto-generated ID.   
@@ -65,13 +64,15 @@ Urtext Reference _
         To wrap existing content into an bracket node, first select the content and use the same keypress.
 
         When syntax highlighting is active, bracket node wrappers are tinted to showing nesting level:
-        
-            | Urtext Example - Bracket Node Syntax Highlighting >nf8
+            
+            
+            
+            PROBLEM
+
+            |  ?  >nf8
 
             A screenshot can be seen here: f>./files/node-nesting-example.png
             
-
-
 
         Note that every opening curly bracket must be closed in the same file. Every node requires an ID between its opening and closing brackets. Nodes at the file level (| File Nodes >ekz) do not use curly-braces, as their region boundaries are the file itself.
           

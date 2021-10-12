@@ -47,7 +47,7 @@ project_settings
 	history_interval::10
 		Sets the interval (in seconds) at which history snapshots should be taken of your views. Increase the interval to have smaller .diff files in your /history folder. Decrease it to have more granular edit history.
 
-	home::013
+	home::a5m
 		Identifies the home node for the project, connected to the "Home" key
 		For example, Press Ctrl-Shift-H to go to the Home node of this documentation, whose ID is 013
 
@@ -65,7 +65,7 @@ project_settings
 			$cursor - where to position the cursor
 			any other Unicode characters are valid — arbitrary text, newlines (\r), etc.
 
-	new_bracket_node_format::$cursor $id
+	new_bracket_node_format::$cursor $id $timestamp
 		As for `new_file_node_format`, only applies to new bracket nodes.
 
 	node_browser_sort::index - oldest_timestamp

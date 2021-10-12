@@ -4,7 +4,7 @@ Urtext Reference - TODO
 Empty/Needs Work:
 
 | Reindex Files >qd2
-| Pull/Pop Node >on7
+| Pulling and Popping Nodes >on7
 | Using the Sublime Text Command Pallete with Urtext >jby
 | Tag nodes and descendents >tlv
 
@@ -12,6 +12,9 @@ Empty/Needs Work:
 Really messy, needs heavy editing:
 | Exporting >ezg
 
+Also:
+maximum node depth is 5, so showing the nested example here messes up syntax highlighting
+Document tag from other.
 
 
  <Wed., Oct. 06, 2021, 12:05 PM> @fst

@@ -30,33 +30,6 @@ Urtext Reference Tree >ac5
   │   ├── Basic Syntax >znj
   │   ├── The Node Browser >01i
   │   ├── Using the Sublime Text Command Pallete with Urtext >jby
-  │   ├── Sublime Text Urtext Key Bindings >1vs
-  │   │   ├── Navigation >k7b
-  │   │   │   ├── Node Browser, Backlinks: ctrl + shift + 1 >1ea
-  │   │   │   ├── Nav Backward: ctrl + shift + , >3hy
-  │   │   │   ├── Home Node: ctrl + shift + h >5ab
-  │   │   │   ├── List Projects: ctrl + shift + o >g5a
-  │   │   │   ├── Toggle Traverse Mode: ctrl + shift + r >hcf
-  │   │   │   ├── Node Browser, Include All Projects: ctrl + shift + * >hyh
-  │   │   │   ├── Open Urtext Link:	ctrl + shift + / >ngh
-  │   │   │   ├── Open Random Node: ctrl + shift + f >q5f
-  │   │   │   ├── Node Browser: ctrl + shift + e >vdr
-  │   │   │   ├── Nav Forward: ctrl + shift + .	_ >yan
-  │   │   │   └── Node Browser, Forward Links: ctrl + shift + 2 >ylo
-  │   │   ├── Content Insertion >kxh
-  │   │   │   ├── Insert Compact Node: ctrl + shift + ^ >1qq
-  │   │   │   ├── Insert Timestamp: ctrl + shift + t >7b8
-  │   │   │   ├── Insert Bracket Node, minimal: ctrl + shift + p (OSX), alt  + shift + p (Windows, Linux) >6ym
-  │   │   │   ├── Add Node ID: ctrl + shift + i >gv9
-  │   │   │   ├── Insert Dynamic Definition with Node: ctrl + shift + \ >jsc
-  │   │   │   ├── Insert Inline Node: ctrl + shift + \ >rzx
-  │   │   │   ├── Insert Link to New Node: ctrl + shift + ' >sxk
-  │   │   │   ├── New Node: ctrl + shift + ; >ve3
-  │   │   │   └── Quick Tag from Other: ctrl + shift + 0 >zep
-  │   │   ├── Copy Links >kqz
-  │   │   │   ├── Copy Link to this Node With Title: ctrl + shift + super + c >05x
-  │   │   │   └── Copy Link to this Node: ctrl + shift + c >vel
-  │   │   └── History >a8q
   │   ├── Sublime Text Interface Tips >003
   │   │   ├── Syntax Highlighting >01d
   │   │   ├── Hiding Tabs >015
@@ -90,6 +63,7 @@ Urtext Reference Tree >ac5
       │   │   │   ├── can have arbitrary other metadata >xlc
       │   │   │   └── become child nodes of their containing node. >hiz
       │   │   └── Bracket Nodes >004
+      │   │       └── Example Bracket Node >ypq
       │   └── Node IDs >01q
       │       ├── Inserting a Node ID manually >04s
       │       └── Duplicate Node IDs >bzv
@@ -121,12 +95,11 @@ Urtext Reference Tree >ac5
       ├── Project Settings >00l
       │   └── project_settings >d0s
       └── Exporting >ezg
-          ├── Example : Urtext Documentation Exported in Markdown to a File >m9d
           └── Example : Fragment Exported to HTML >baq
 ((>a5m:243)) @e5j} 
 
 
-[[  ID(>e5j) +(id=ac5) -(flags=exclude_from_toc) HEADER(Urtext Reference _ ) TREE(10) ]]
+[[  ID(>e5j) +(id=ac5) -(kw=exclude_from_toc) HEADER(Urtext Reference _ ) TREE(10) ]]
 
 index::01
 @a5m
