@@ -18,15 +18,15 @@ Urtext Reference Tree >ac5
   │   │   │   ├── Future Proof >xat
   │   │   │   └── Local >2yx
   │   │   └── Features >vnv
-  │   ├── Getting Started, Using Either the Demo or Reference Documentation >l7p
-  │   │   ├── Urtext Demo Project >xgj
-  │   │   └── Reference Documentation >6jq
   │   └── About the README >pjk
+  ├── Installation and Setup in Sublime Text >01u
+  │   ├── Dependencies and Installation >2fn
+  │   │   ├── Either Download and Install Dependencies Manually >774
+  │   │   └── or Download Dependencies from a Monorepo >arl
+  │   └── Getting Started, Using Either the Demo or Reference Documentation >l7p
+  │       ├── Urtext Demo Project >xgj
+  │       └── Reference Documentation >6jq
   ├── How To Use Urtext >byx
-  │   ├── Installation and Setup in Sublime Text >01u
-  │   │   └── Dependencies and Installation >2fn
-  │   │       ├── Download and Install Dependencies Manually >774
-  │   │       └── Download Dependencies from a Monorepo >arl
   │   ├── Basic Syntax >znj
   │   ├── The Node Browser >01i
   │   ├── Using the Sublime Text Command Pallete with Urtext >jby
@@ -102,10 +102,7 @@ Urtext Reference Tree >ac5
       │   │   ├── Tracking Node Dates and Times >cee
       │   │   └── Time Zones >7w6
       │   ├── Case-sensitivity >l36
-      │   ├── Reserved Keys >fo2
-      │   │   ├── index >00z
-      │   │   ├── title >pz3
-      │   │   └── def >5cq
+      │   ├── Reserved Key : title >fo2
       │   ├── Hash Key >4ry
       │   └── Tag nodes and descendents >tlv
       ├── Links and Pointers >00j
@@ -119,8 +116,8 @@ Urtext Reference Tree >ac5
       │       └── Link to Files >00p
       ├── Dynamic Definitions >07u
       ├── Traverse Mode >00w
-      │   └── Word Wrap in Traverse Mode: >xci
-      ├── Pull/Pop Node >on7
+      │   └── Word Wrap in Traverse Mode >xci
+      ├── Pulling and Popping Nodes >on7
       ├── Project Settings >00l
       │   └── project_settings >d0s
       └── Exporting >ezg
@@ -129,7 +126,7 @@ Urtext Reference Tree >ac5
 ((>a5m:243)) @e5j} 
 
 
-[[  ID(>e5j) +(id=ac5) -(flags=exclude_from_toc) HEADER(Urtext Reference _ ) LIST(10) ]]
+[[  ID(>e5j) +(id=ac5) -(flags=exclude_from_toc) HEADER(Urtext Reference _ ) TREE(10) ]]
 
 index::01
 @a5m

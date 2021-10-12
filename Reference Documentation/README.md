@@ -88,27 +88,6 @@ Cloud services can be used to sync project files among devices if desired.
 - Direct interaction with file system is mostly unnecessary. Creating, naming, saving, and organizing files is handled for you.
 - Urtext is designed to make direct interaction with file system mostly unnecessary. Creating, naming, saving, and organizing files is handled for you.
 
-## Getting Started, Using Either the Demo or Reference Documentation
-
-At this point, clone this repository and open either of its subfolders in Sublime Text:
-
-### Urtext Demo Project 
-
-This walks you through using Urtext through friendly, progressive steps.
-
-After opening this folder (or any file in it) in Sublime Text, position the cursor on this linke below and press Ctrl-Shift-/ which will take you to the start page:
-
-=>"Urtext Demo Project"[ MISSING LINK : 6cd ] 
-
-### Reference Documentation 
-
-This is a component-by-component guide for Urtext's features. After opening this folder in Sublime Text:
-* Ctrl-Shift-H will take you to the node that generated the README file. 
-* Scroll to the bottom and you'll find this node (this very text you are reading) at the end of the file.
-* Click on the link below to browse the reference:
-
-| Table of Contents >a5m
-
 ## About the README  _
 
 The README Markdown file is a partial export from the Urtext reference documentation. It explains installation and setup, the basic Urtext syntax, and thed Sublime Text commands and key bindings.  This repository also contains a fuller reference guide and a "walkthrough" project, both fully functioning Urtext projects with which to experiment with Urtext's features. 

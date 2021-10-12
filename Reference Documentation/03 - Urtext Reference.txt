@@ -192,24 +192,10 @@ Urtext Reference _
 
         For comparison/filtering/sorting purposes, values are not case-sensitive. @l36}
 
-     { Reserved Keys _
+     { Reserved Key : title _
 
-          There are two reserved keys that Urtext interprets in a special way:
-
-          {   index
-        
-             Provides a way to give nodes a sort order in | The Node Browser >01i.  Indexed nodes will sort before (above) the others, lowest numbers appearing first. To utilize, add a two-digit sort index (00-99) to a node, such as:  `index::03`    
-             You can give the same index number to multiple nodes; in this case they sort first by index, then by timestamp, newest first.
-
-             Unindexed nodes will display underneath indexed nodes, by timestamp, newest first. @00z}
-
-          { title
-            
-            Overrides the node title, which is by default the full first non-whitespace line. @pz3}
-
-          {  def
-
-            Generated automatically in a dynamic node, contains a link to the node containing the definition. @5cq}
+        There is only one reserved key is Urtext:
+        `title` overrides the node title, which is by default the full first non-whitespace line. 
          
       @fo2}
 
@@ -222,10 +208,20 @@ Urtext Reference _
 
       {Tag nodes and descendents _
 
-          *key::value 
-          **key::value
-          +key::value
-          +**key::value
+        The * and + characters will assign metadata entries to childen and descendants of nodes:
+
+        To assign the metadata to all children (but not the node containing the metadata):
+        *key::value 
+
+        To include also the node containing the metadata:
+        +*key::value
+
+        To assign the metadata to all descendants (but not the node containing the metadata):
+
+        **key::value
+
+        To include also the node containing the metadata:
+        +**key::value
 
       @tlv}
 @00x}
@@ -300,7 +296,7 @@ Urtext Reference _
 {Dynamic Definitions _
 
     
-    Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets [[ ]], and have there own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference | Dynamic Definitions - Syntax and Parameters >87g.
+    Dynamic nodes are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets [[ ]], and have their own syntax, including scoping and highlighting. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference | Dynamic Definitions - Syntax and Parameters >87g.
 
     Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
@@ -326,7 +322,7 @@ Urtext Reference _
 
     This feature is not built into Urtext; it is a feature of the Sublime package only.
 
-    {Word Wrap in Traverse Mode:
+    {Word Wrap in Traverse Mode _:
 
         Since Traverse Mode splits the window into two or more panes, it is suggested to set Word Wrap Column to "Auto" in Sublime Settings. This will cause the edited views to wrap correctly no matter the screen or window/pane size, as well as in Sublime's Distraction Free Mode.
 
@@ -337,25 +333,24 @@ Urtext Reference _
 
 
 
-{Pull/Pop Node _
+{Pulling and Popping Nodes _
+    
+    Bracketed nodes can be "popped" out to separate file-level nodes and pulled back in again, either to the same node or to another one. 
 
-    Documentation to be added
+    To pop a node, position the cursor inside the node to pop and select "Urtext : Pop Node" from the command palette or press Shift-Ctrl-Super-(right-arrow). The node will be moved to a separate file and replaced with a link to itself.
+
+    To pull a node, make (or choose an existing) a link or pointer and position the cursor on it. Select "Urtext : Pull Node" from the command palette or press Shift-Ctrl-Super-(left-arrow).
+
 @on7 }
-
-
-
-
 
 
 {Project Settings _
 
-    This is the `project_settings` node for the "Urtext Documentation" Urtext project. In the metadata for this node you can specify settings for the project.
+    Below is a pointer to the `project_settings` node for this documentation project. In its metadata for this node you can specify settings for the project.
 
-    The `project_settings` node is optional. To create one, make a node and use metadata to give it the title `project_settings`, as this node has. (The othertext content of the node does not matter.)
+    The `project_settings` node is optional. To create one, make a node and use metadata to give it the title `project_settings`, as this node has. (The other text content of the node does not matter.)
 
-
-
-| project_settings >>d0s
+    | project_settings >>d0s
 
 @00l} 
 
