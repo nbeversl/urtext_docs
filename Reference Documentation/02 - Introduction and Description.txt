@@ -1,4 +1,4 @@
-Introduction _
+Introduction and Description _
 
 {   
     About Urtext _                    
@@ -127,5 +127,5 @@ Introduction _
 
 [[ FILE(README.md) MARKDOWN(root=013; -as_single_file)]]
 
-index::01
+index::02
 @013

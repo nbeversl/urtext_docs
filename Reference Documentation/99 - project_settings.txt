@@ -31,8 +31,8 @@ project_settings
 	filename_title_length::100
 		Sets a maximum title length (in characters) when using | Reindex Files >qd2
 
-	filenames::PREFIX - title
-		Specifies format for filenames when using | Reindex Files >qd2
+	filenames::INDEX - title
+		Specifies format for filenames when using | Reindex Files >qd2 and 
 		Any metadata key used in the project is valid, in addition to the PREFIX placeholder, which will apply a numerical prefix to the outputted filename.
 
 	filename_datestamp_format::%m-%d-%Y

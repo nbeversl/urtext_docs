@@ -28,6 +28,7 @@ More information: | Bullet Nodes >j6t
 Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
 The first character inside the brackets may not be `!`, `-`, or whitespace.
 Example: 
+
 More information: | Syntax and Format >005
 
 `::`

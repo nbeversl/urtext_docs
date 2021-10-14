@@ -1,11 +1,17 @@
 Table of Contents  _
 
-In Sublime Text, Press Ctrl-Shift-R to browse this table of contents as a navigator, called traverse mode. You can then use the up/down arrow keys or the mouse to click on the chapter/subchapter you wish to visit.
+To open the Urtext Links below, press ctrl + shift + /.
+
+Or, press the toggle command Ctrl-Shift-R.
+
+This will open a two column browser called traverse mode. 
+You can then use the up/down keys and the mouse to browse.
 
 
-{ Urtext Reference _ 
-Urtext Reference Tree >ac5
-  ├── Introduction >013
+{ Urtext Documentation _ 
+
+Urtext >ac5
+  ├── Introduction and Description >013
   │   ├── About Urtext >tkv
   │   │   ├── Description >yv2
   │   │   ├── Comparison To Other Tools >h8z
@@ -30,6 +36,12 @@ Urtext Reference Tree >ac5
   │   ├── Basic Syntax >znj
   │   ├── The Node Browser >01i
   │   ├── Using the Sublime Text Command Pallete with Urtext >jby
+  │   ├── Sublime Text Urtext Key Bindings >1vs
+  │   │   ├── Navigation >k7b
+  │   │   ├── Content Insertion >kxh
+  │   │   ├── Copy Links >kqz
+  │   │   ├── Traverse Modes >a8q
+  │   │   └── Changing Key Bindings >t0g
   │   ├── Sublime Text Interface Tips >003
   │   │   ├── Syntax Highlighting >01d
   │   │   ├── Hiding Tabs >015
@@ -72,7 +84,7 @@ Urtext Reference Tree >ac5
       ├── Metadata >00x
       │   ├── General Syntax >8dw
       │   ├── Timestamps >2i4
-      │   │   ├── Syntax and Format >005
+      │   │   ├── Timestamp Syntax and Format >005
       │   │   ├── Tracking Node Dates and Times >cee
       │   │   └── Time Zones >7w6
       │   ├── Case-sensitivity >l36
@@ -96,10 +108,10 @@ Urtext Reference Tree >ac5
       │   └── project_settings >d0s
       └── Exporting >ezg
           └── Example : Fragment Exported to HTML >baq
-((>a5m:243)) @e5j} 
+((>a5m:248)) @e5j} 
 
 
-[[  ID(>e5j) +(id=ac5) -(kw=exclude_from_toc) HEADER(Urtext Reference _ ) TREE(10) ]]
-
+[[  ID(>e5j) +(id=ac5) -(kw=exclude_from_toc) HEADER(Urtext Documentation _ \r\r)  TREE(7)]]
+>ac5
 index::01
 @a5m

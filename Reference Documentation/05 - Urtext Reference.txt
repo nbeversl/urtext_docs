@@ -33,7 +33,7 @@ Urtext Reference _
      
         The most basic node is a single file. It may or may not contain other nodes nested inside it.
 
-        To create a new file-level node: | New Node: ctrl + shift + ; >ve3. A new file is created and named automatically. It contains a single node ID and (by default) a creation timestamp. @ekz }
+        To create a new file-level node: |  ?  >ve3. A new file is created and named automatically. It contains a single node ID and (by default) a creation timestamp. @ekz }
 
 
     {Bullet Nodes  _
@@ -59,7 +59,7 @@ Urtext Reference _
                 { Example Bracket Node _ @ypq}
 
 
-        Create an bracket nodes with | Insert Inline Node: ctrl + shift + \ >rzx. Inside the inserted double curly braces is a new node with an auto-generated ID.   
+        Create an bracket nodes with |  ?  >rzx. Inside the inserted double curly braces is a new node with an auto-generated ID.   
 
         To wrap existing content into an bracket node, first select the content and use the same keypress.
 
@@ -105,7 +105,7 @@ Urtext Reference _
 
     { Inserting a Node ID manually
 
-        | Add Node ID: ctrl + shift + i >gv9  will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually.  @04s}
+        |  ?  >gv9  will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually.  @04s}
 
     Node IDs can also be user-created arbitrarily if for some reason you want to. If you do this, note that node IDs are case-insensitive.
 
@@ -113,7 +113,7 @@ Urtext Reference _
 
         If two nodes end up with the same ID, only one (the first one found) will be assigned the ID. The entire second file containing the node with the duplicate ID will contain a warning message. See |  ?  >bpk
 
-        To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use | Add Node ID: ctrl + shift + i >gv9 for this (as described above), after the rest of the project is compiled.
+        To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use |  ?  >gv9 for this (as described above), after the rest of the project is compiled.
         
 
     {Generating a node ID manually _
@@ -164,7 +164,7 @@ Urtext Reference _
       
     { Timestamps _                                                                 
 
-      {   Syntax and Format _
+      {   Timestamp Syntax and Format _
 
           Text between two angled brackets (`< >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext utilizes the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:
 
@@ -174,7 +174,7 @@ Urtext Reference _
                 <1066>
                 ... and so on
 
-          Press | Insert Timestamp: ctrl + shift + t >7b8 to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the |  ?  >00n key.
+          Press |  ?  >7b8 to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the |  ?  >00n key.
 
           Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`. Like all metadata, they remember their position and may function doubly as anchors/bookmarks. @005}
 
@@ -263,7 +263,7 @@ Urtext Reference _
     {Opening Links _ 
         
         { Sublime
-            Key : | Open Urtext Link:	ctrl + shift + / >ngh on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
+            Key : |  ?  >ngh on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
             @osu}
      
     @01w}
@@ -278,7 +278,7 @@ Urtext Reference _
         {Link to Web/HTTP(S) _
 
                 HTTP(S) links are recognized automatically and will open in the default browser.    
-                Example: pressing | Open Urtext Link:	ctrl + shift + / >ngh on this line will open the link: http://github.com
+                Example: pressing |  ?  >ngh on this line will open the link: http://github.com
                 
         @00o}
 
@@ -301,7 +301,7 @@ Urtext Reference _
 
     Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-    The key | Insert Dynamic Definition with Node: ctrl + shift + \ >jsc creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. 
+    The key |  ?  >jsc creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. 
 
     You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.   
 
@@ -356,8 +356,20 @@ Urtext Reference _
 @00l} 
 
 
-| Exporting >>ezg
+
+{Exporting _
+
+    Urtext can export to plaintext, Markdown and HTML. Output can be written to a file or back into another node in the project. Exporting is dynamic; when changes are made to the source files, exports are immediately updated.
+
+
+        {Example : Fragment Exported to HTML _
+
+            The following Dynamic Definition is identical to the above, except it exports to HTML.   
+
+            @baq}
+
+@ezg}
 
 
  @mrb
- index::03
+ index::05

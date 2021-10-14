@@ -74,8 +74,8 @@ Installation and Setup in Sublime Text _
         This walks you through using Urtext through friendly, progressive steps.
         
         After opening this folder (or any file in it) in Sublime Text, position the cursor on this linke below and press Ctrl-Shift-/ which will take you to the start page:
-     
-         =>"Urtext Demo Project"| Urtext Installation, Setup, Demo and Tutorial Project >6cd
+
+        =>"Sample Project"| Home Node >8mw     
          
          @xgj} 
 
@@ -93,5 +93,5 @@ Installation and Setup in Sublime Text _
 
 @l7p}        
 
-
+index::03
 @01u

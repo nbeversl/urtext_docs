@@ -1,4 +1,3 @@
-
 How To Use Urtext _
 
 {
@@ -31,6 +30,7 @@ Basic Syntax _
 	Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
 	The first character inside the brackets may not be `!`, `-`, or whitespace.
 	Example: <Tue., Jul. 28, 2020, 07:43 PM>
+
 	More information: | Syntax and Format >005
 
 	`::`
@@ -64,56 +64,66 @@ Basic Syntax _
 
 	@jby}
 
-
+test
 
 {Sublime Text Urtext Key Bindings  _
 
-	Below are the default key bindings for Sublime Urtext commands. They can be changed, if desired, by modifying the following files in the Sublime Urtext package:
-
-		Default (Linux).sublime-keymap	
-		Default (OSX).sublime-keymap	
-		Default (Windows).sublime-keymap
+	Below are the default key bindings for Sublime Urtext commands. 
 
 	{ Navigation _
 
-	• Node Browser, Backlinks: ctrl + shift + 1 _  	@1ea
-	• Nav Backward: ctrl + shift + , _  				@3hy
-	• Home Node: ctrl + shift + h _					@5ab
-	• List Projects: ctrl + shift + o _				@g5a
-	• Toggle Traverse Mode: ctrl + shift + r _ 		@hcf
-	• Node Browser, Include All Projects: ctrl + shift + * _ @hyh
-	• Open Urtext Link:	ctrl + shift + / _				@ngh
-	• Open Random Node: ctrl + shift + f _				@q5f
-	• Node Browser: ctrl + shift + e _ 				@vdr
-	• Nav Forward: ctrl + shift + .	_				@yan
-	• Node Browser, Forward Links: ctrl + shift + 2 _ 	@ylo
+		- Open Urtext Link:						ctrl + shift + / 				
+		- Navigate Forward: 					ctrl + shift + .					
+		- Navigate Backward: 					ctrl + shift + ,   				
+		- Home Node: 							ctrl + shift + h 					
+		- Open Random Node: 					ctrl + shift + f 				
+		- Node Browser: 						ctrl + shift + e  				
+		- Node Browser, Include All Projects: 	ctrl + shift + *  
+		- Node Browser, Forward Links: 			ctrl + shift + right 
+		- Node Browser, Backlinks: 				ctrl + shift + left   	
+		- List Projects: 						ctrl + shift + o 
+		- Keyword Browser:						ctrl + shift + x
+		- Metadata Browser:						ctrl + shift + m
+		- Browse Associated Nodes:				ctrl + shift + space
+				
 	@k7b } 
 
 	{ Content Insertion _
 
-	• Insert Compact Node: ctrl + shift + ^ _  		@1qq
-	• Insert Timestamp: ctrl + shift + t _  			@7b8
-	• Insert Bracket Node, minimal: ctrl + shift + p (OSX), alt  + shift + p (Windows, Linux) _ @6ym
-	• Add Node ID: ctrl + shift + i _ 				@gv9
-	• Insert Dynamic Definition with Node: ctrl + shift + \} _ @jsc
-	• Insert Inline Node: ctrl + shift + \{  _			@rzx
-	• Insert Link to New Node: ctrl + shift + ' _		@sxk
-	• New Node: ctrl + shift + ; _ 					@ve3
-	• Quick Tag from Other: ctrl + shift + 0 _		@zep
+		- New Node: 							ctrl + shift + ;  					
+		- Insert Timestamp: 					ctrl + shift + t   			
+		- Add New Node ID: 						ctrl + shift + i  				
+		- Insert Bracket Node with Timestamp:	ctrl + shift + 1
+		- Insert Bracket Node Wrapper:  		ctrl + shift + 2
+		- Insert Bracket Node, Minimal :		ctrl + shift + Left-Bracket  			
+		- Insert Dynamic Definition with Node: 	ctrl + shift + Right-Bracket  
+		- Insert Bullet Node: 					ctrl + shift + 6  
+		- Insert Link to Existing Node: 		ctrl + shift + l 		
+		- Insert Link to New Node: 				ctrl + shift + '		
+		- Quick Tag from Other: 				ctrl + shift + 0 		
 	@kxh  }
 
 	{ Copy Links _
 
-	• Copy Link to this Node With Title: ctrl + shift + super + c _ 	@05x
-	• Copy Link to this Node: ctrl + shift + c _ 	@vel
+		- Copy Link to Node: 					ctrl + shift + c 
+		- Copy Link to Node With Project: 		ctrl + shift + super + c  
 	@kqz  }
 
-	{ History _
-	• Toggle History Traverse: ctrl + shift + g  _@ndc
+	{ Traverse Modes _
+
+		- Toggle Traverse Broswer: 				ctrl + shift + r  		
+		- Toggle Travers History: 				ctrl + shift + g  
 	@a8q }
 
-	kw::exclude_from_toc
-	**_settings::keep_syntax
+
+	{Changing Key Bindings _ 
+
+	Key Bindings can be changed, if desired, by modifying the following files in the Sublime Urtext package:
+
+			Default (Linux).sublime-keymap	
+			Default (OSX).sublime-keymap	
+			Default (Windows).sublime-keymap @t0g}
+
 	@1vs}
 
 
@@ -529,4 +539,4 @@ Basic Syntax _
 	@ipy}
 
  @byx
- index::02
+ index::04
