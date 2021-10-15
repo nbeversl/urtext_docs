@@ -4,6 +4,7 @@ How To Use Urtext _
 
 Basic Syntax _
 
+
 	All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname.
 
 	`{  }`
@@ -16,7 +17,7 @@ Basic Syntax _
 
 	`>>`		
 	Node Pointers: Embeds the specified node as though it were included bracket using wrappers `{ }` (see above)
-	More information: |  ?  >lmu
+	More information: 
 	¡
 	`|`
 	Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.
@@ -36,6 +37,7 @@ Basic Syntax _
 	`::`
 	Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 	Metadata may appear anywhere. They attach to their containing (parent) node, remember their exact location, and can serve as anchors/bookmarks to context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
+
 
 		[[ FILE(Basic Syntax.md) MARKDOWN(root=znj) ]] @znj
 }
@@ -496,6 +498,8 @@ test
 	Urtext has a light built-in versioning system that tracks edits at intervals. It is not necessary to take any explicit actions in order to utilize this. Urtext creates a series of nondestructive snapshots, with each snapshot being a "diff", or record of changes, since the previous snapshot. When a previous state is restored, no "checkout" or "rewind" occurs; rather, the newly restored state is appended to the history. Therefore, in addition to functioning as version control, the feature can also be used as an infinite and non-destructive "undo/redo" editing history that saves state when the file is closed. The default interval is 10 seconds, and can be modified in project_settings. 
 
 	Histories are stored in the /history folder inside the project, as .diff files. This folder requires no user involvement. If using another version control tool such as Git, you may wish to add the /history folder to your .gitignore file, so that only explicitly committed versions of your project are visible in distributed repositories.
+
+	<Fri., Oct. 15, 2021, 01:41 PM>
 
 	@prp}
 

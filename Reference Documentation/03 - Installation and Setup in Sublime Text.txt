@@ -11,11 +11,12 @@ Installation and Setup in Sublime Text _
 
     Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation.
 
+
 {  Dependencies and Installation _
 
     To use Urtext in Sublime Text:
 
-        - Install Sublime Text ( https://www.sublimetext.com/ )
+        - Install Sublime Text: https://www.sublimetext.com/ 
 
         - The Sublime Urtext package is available on Sublime Package Control: Press ⌘/Ctrl + ⇧ + P to open the command palette. Type Install Package and press Enter. Then search for Urtext. Alternative, clone/download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ) and place it in your `Packages` folder.
 
@@ -64,6 +65,7 @@ Installation and Setup in Sublime Text _
     Close and reopen Sublime Text. Urtext is now ready to use.
         
 	@2fn }  
+
 
 { Getting Started, Using Either the Demo or Reference Documentation _
 

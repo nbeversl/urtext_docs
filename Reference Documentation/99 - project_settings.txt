@@ -82,11 +82,11 @@ project_settings
 
 	tag_other::
 		Accepts two values which will be interpreted as key/value.
-		When quick-tagging a node from another (see | Quick Tag from Other: ctrl + shift + 0 >zep), this metadata entry will be the 
+		When quick-tagging a node from another (see | - Quick Tag from Other: ctrl + shift + 0 >zep), this metadata entry will be the 
 		one added.
 
 	timestamp_format::%a., %b. %d, %Y, %I:%M %p
-		Set the format of the timestamp when using | Insert Timestamp: ctrl + shift + t >7b8
+		Set the format of the timestamp when using | - Insert Timestamp: ctrl + shift + t >7b8
 		This accepts a Python `strftime` directive. For possible format strings, see https://strftime.org/
 
 	timezone::US/Eastern

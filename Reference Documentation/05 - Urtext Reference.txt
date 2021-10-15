@@ -33,7 +33,7 @@ Urtext Reference _
      
         The most basic node is a single file. It may or may not contain other nodes nested inside it.
 
-        To create a new file-level node: |  ?  >ve3. A new file is created and named automatically. It contains a single node ID and (by default) a creation timestamp. @ekz }
+        To create a new file-level node: | - New Node: ctrl + shift + ; >ve3. A new file is created and named automatically. It contains a single node ID and (by default) a creation timestamp. @ekz }
 
 
     {Bullet Nodes  _
@@ -59,17 +59,14 @@ Urtext Reference _
                 { Example Bracket Node _ @ypq}
 
 
-        Create an bracket nodes with |  ?  >rzx. Inside the inserted double curly braces is a new node with an auto-generated ID.   
+        Create an bracket nodes with | - Insert Bracket Node, Minimal: ctrl + shift + Left-Bracket >rzx. Inside the inserted double curly braces is a new node with an auto-generated ID.   
 
         To wrap existing content into an bracket node, first select the content and use the same keypress.
 
         When syntax highlighting is active, bracket node wrappers are tinted to showing nesting level:
             
             
-            
-            PROBLEM
-
-            |  ?  >nf8
+            PROBLEM - Insert Nested Brackets
 
             A screenshot can be seen here: f>./files/node-nesting-example.png
             
@@ -105,7 +102,7 @@ Urtext Reference _
 
     { Inserting a Node ID manually
 
-        |  ?  >gv9  will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually.  @04s}
+        | - Add New Node ID: ctrl + shift + i >gv9  will insert a new and unused node anywhere in the project, in case you delete one or want to insert one manually.  @04s}
 
     Node IDs can also be user-created arbitrarily if for some reason you want to. If you do this, note that node IDs are case-insensitive.
 
@@ -113,7 +110,7 @@ Urtext Reference _
 
         If two nodes end up with the same ID, only one (the first one found) will be assigned the ID. The entire second file containing the node with the duplicate ID will contain a warning message. See |  ?  >bpk
 
-        To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use |  ?  >gv9 for this (as described above), after the rest of the project is compiled.
+        To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use | - Add New Node ID: ctrl + shift + i >gv9 for this (as described above), after the rest of the project is compiled.
         
 
     {Generating a node ID manually _
@@ -172,20 +169,21 @@ Urtext Reference _
                 <February 23, 1848>
                 <May 1946>
                 <1066>
+
                 ... and so on
 
-          Press |  ?  >7b8 to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the |  ?  >00n key.
+          Press | - Insert Timestamp: ctrl + shift + t >7b8 to insert the current date and time anywhere. The format of the resulting timestamp can be changed in project_settings using the |  ?  >00n key.
 
           Timestamps may also be used anywhere without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the keyname `inline-timestamp`. Like all metadata, they remember their position and may function doubly as anchors/bookmarks. @005}
 
       {   Tracking Node Dates and Times _
 
           Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created: updated::<Thu., Sep. 10, 2020, 05:42 PM>. 
-           The default keyname can be changed using the |  ?  >8p4 key in project_settings. @cee}
+           The default format can be changed using the timestamp_format in | project_settings >d0s. @cee}
         
       {   Time Zones _
 
-          Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the  |  ?  >boe key in project_settings to another valid value. @7w6}   
+          Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the timezone key in | project_settings >d0s. @7w6}   
 
       @2i4}
 
@@ -263,7 +261,8 @@ Urtext Reference _
     {Opening Links _ 
         
         { Sublime
-            Key : |  ?  >ngh on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
+        
+            Key : | - Open Urtext Link:  ctrl + shift + / >ngh on a line containing a link to open the node with the linked ID. If the link is to an inline node, Sublime will scroll to and center its starting point. 
             @osu}
      
     @01w}
@@ -278,7 +277,7 @@ Urtext Reference _
         {Link to Web/HTTP(S) _
 
                 HTTP(S) links are recognized automatically and will open in the default browser.    
-                Example: pressing |  ?  >ngh on this line will open the link: http://github.com
+                Example: pressing | - Open Urtext Link:  ctrl + shift + / >ngh on this line will open the link: http://github.com
                 
         @00o}
 
@@ -301,7 +300,7 @@ Urtext Reference _
 
     Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
 
-    The key |  ?  >jsc creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. 
+    The key | - Insert Dynamic Definition and Node: ctrl + shift + Right-Bracket >jsc creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. 
 
     You can also write a definition manually, providing the ID of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's ID. If you want it to populate new inline node, create that node and then copy/paste its ID. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.   
 
@@ -370,6 +369,56 @@ Urtext Reference _
 
 @ezg}
 
+
+{Sublime Text Urtext Key Bindings  _
+
+	Below are the default key bindings for Sublime Urtext commands, separated into bracket nodes for display in this reference node. 
+
+	{ Navigation _
+
+{ - Open Urtext Link:  ctrl + shift + / @ngh}
+{ - Navigate Forward: ctrl + shift + . @yan}
+{ - Navigate Backward: ctrl + shift + , @3hy}
+{ - Home Node: ctrl + shift + h @5ab}
+{ - Open Random Node: ctrl + shift + f @q5f}
+{ - Node Browser: ctrl + shift + e @vdr}
+{ - Node Browser, All Projects: ctrl + shift + * @hyh}
+{ - Node Browser, Forward Links: ctrl + shift + right @ylo}
+{ - Node Browser, Backlinks: ctrl + shift + left @1ea}
+{ - List Projects: ctrl + shift + o @g5a}
+{ - Keyword Browser: ctrl + shift + x @l0s}
+{ - Metadata Browser: ctrl + shift + m @rr6}
+{ - Browse Associated Nodes: ctrl + shift + space @bj7}
+				
+	@phj } 
+
+	{ Content Insertion _
+
+{ - New Node: ctrl + shift + ; @ve3}
+{ - Insert Timestamp: ctrl + shift + t @7b8}
+{ - Add New Node ID: ctrl + shift + i @gv9}
+{ - Insert Bracket Node with Timestamp:	ctrl + shift + 1 @umy}
+{ - Insert Bracket Node Wrapper: ctrl + shift + 2 @6ym}
+{ - Insert Bracket Node, Minimal: ctrl + shift + Left-Bracket @rzx}
+{ - Insert Dynamic Definition and Node: ctrl + shift + Right-Bracket @jsc}
+{ - Insert Bullet Node: ctrl + shift + 6 @1qq}
+{ - Insert Link to Existing Node: ctrl + shift + l @0o0}
+{ - Insert Link to New Node: ctrl + shift + ' @sxk}
+{ - Quick Tag from Other: ctrl + shift + 0 @zep}
+	@riz  }
+
+	{ Copy Links _
+
+{ - Copy Link to Node: ctrl + shift + c @vel}
+{ - Copy Link to Node With Project: ctrl + shift + super + c @05x}
+	@b5e  }
+
+	{ Traverse Modes _
+
+{ - Toggle Traverse Broswer: ctrl + shift + r @hcf}
+{ - Toggle Traverse History: ctrl + shift + g @ndc}
+	@02p }
+@8ty}
 
  @mrb
  index::05

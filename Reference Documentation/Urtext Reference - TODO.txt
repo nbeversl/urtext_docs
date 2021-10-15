@@ -7,10 +7,15 @@ Empty/Needs Work:
 | Pulling and Popping Nodes >on7
 | Using the Sublime Text Command Pallete with Urtext >jby
 | Tag nodes and descendents >tlv
+| Exporting >ezg
 
 
 Really messy, needs heavy editing:
-| Exporting >ezg
+
+| Dynamic Definitions - Syntax and Parameters >87g
+
+
+
 
 Also:
 maximum node depth is 5, so showing the nested example here messes up syntax highlighting

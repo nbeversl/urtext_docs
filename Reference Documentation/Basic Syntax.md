@@ -2,6 +2,7 @@
 
 # Basic Syntax
 
+
 All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname.
 
 `{  }`
