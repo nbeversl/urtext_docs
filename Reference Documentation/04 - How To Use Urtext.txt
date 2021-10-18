@@ -226,59 +226,58 @@ test
 	[[ 	ID() 			Target node to dynamically populate with output.
 						Accepts a link to a node (>eee)
 
-		INCLUDE()  		Nodes to include. Accepts one or more key/value pairs and optional parameters.
+		INCLUDE()  		Nodes to include. 
 		or +()
+						Accepts one or more key/value pairs and optional parameters.
+						
 						Comparisons:
 
-						`=` means equal to
-						INCLUDE(key = value)	
-						Includes all nodes with the given key containing the given value
+							`=` means equal to
+								INCLUDE(key = value)	
+								Includes all nodes with the given key containing the given value
 
-						`?` means "contains"
-						INCLUDE(_contents ? some text or content)
-						Includes all nodes containing "some text or content" in their text contents.
-						(See also -search)
+							`?` means "contains"
+								INCLUDE(_contents ? some text or content)
+								Includes all nodes containing "some text or content" in their text contents.
+								(See also -search)
 
-						`*` means "anything"
-						INCLUDE(index = *)
-						Includes all nodes containing the key `index`
+							`*` means "anything"
+								INCLUDE(index = *)
+								Includes all nodes containing the key `index`
 
-						Use semicolon or newline to separate entries, as everywhere in Urtext.
+							Use semicolon or newline to separate entries, as everywhere in Urtext.
 				
 						Additional Flags:
 
 							Additional flags can be included in 
 
 							INCLUDE(*) or +(*)
-							Includes all nodes in the project									
+								Includes all nodes in the project									
 
-							`-all_projects` or `*p`
-							INCLUDE(-all_projects) or +(*p)
-							Expands included nodes to include all projects in the project list.
-							
 							`-blank`
-							Includes all nodes that contain only whitespace as their content
+								Includes all nodes that contain only whitespace as their content
 
 							Note these additional flags substitute for semicolons/newlines as separators between entries.
 
-						System keys
+						System keys:
 
 							Urtext includes some built-in keys whose values are generated automatically. 
 							These may also be used in INCLUDE(): 
-								
-								`_links_to`			
-								INCLUDE(_links_to = 46d)
-								Includes all nodes that contain links to node ID `46d`
-
-								`_links_from`
-								INCLUDE(_links_from = 46d)
-								Includes all nodes to which node ID `46d` links
 
 								`_contents` : Refers to a node's text contents. 
-								Can be used, for instance, for full text search or comparison.
-								INCLUDE(_contents ? Western Civilization)
-								Includes any node that contents the text "Western Civilization"
-								(comparisons are case-insensitive)
+									Can be used, for instance, for full text search or comparison.
+									INCLUDE(_contents ? Western Civilization)
+									Includes any node that contents the text "Western Civilization"
+									(comparisons are case-insensitive)
+								
+								`_links_to`			
+									INCLUDE(_links_to = 46d)
+									Includes all nodes that contain links to node ID `46d`
+
+								`_links_from`
+									INCLUDE(_links_from = 46d)
+									Includes all nodes to which node ID `46d` links
+
 
 		EXCLUDE()		Accepts all the same parameters as INCLUDE()
 		or -()			Always evaluated after INCLUDE(), excludes the specified nodes from the result.
@@ -301,20 +300,13 @@ test
 
 							)
 
-						Note that system-assigned keys are also available:
-
-						`_last_accesssed`
-						`_contents`
-
-						Example:
-						SORT(title -reverse)
+							Example: SORT(title -reverse)
 
 		LIMIT()			Limits the output to the specified number of results.
 						Limit is applied after SORT().
 
-						Example:
-						LIMIT(30)
-						Will only show 30 results of nodes with the specified INCLUDE()/EXCLUDE() parameters.
+							Example: LIMIT(30)
+								Will only show 30 results of nodes with the specified INCLUDE()/EXCLUDE() parameters.
 
 
 		TREE()			The default output, if no other is specified, is a list of (unique) nodes specified 
@@ -325,18 +317,15 @@ test
 						Accepts key/value pais 
 						Returns a seperate item for each occurence.
 
-						Example:
-						COLLECT(timestamp=*)
+							Example: COLLECT(timestamp=*)
 							
-
 		SHOW()			Supplies a template for the output of each result. 
 						Accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
 
 						Words preceded by `$` are are evaluated as metadata keys, replaced in the output by their value(s).
 						Note that key names themselves are not displayed in the output. Add keynames manually if you want them included.
 
-						Example:
-						SHOW(Author: $author, Date: $date\n)
+							Example: SHOW(Author: $author, Date: $date\n)
 
 						In addition to all user-defined metadata keys, the following tokens are included:
 
@@ -359,7 +348,7 @@ test
 							)
 		
 		HEADER()		Adds additional arbitrary/freeform text to the beginning of the output. This can include any syntax 
-						valid inside Urtext nodes, including metadata.
+						valid inside Urtext nodes, including metadata. Also includes unicode characters such as \n for new line.
 		
 		FOOTER()		Adds additional arbitrary/freeform text to the end of the output. Same as for HEADER().
 	
@@ -378,23 +367,13 @@ test
 		PLAINTEXT()		As for MARKDOWN(), but outputs Plaintext (Urtext syntax stripped out, 
 						including metadata and dynamic definitions.)
 
-						Can be used, for instance, to export a node or nodes to a non-Urtext text file.
-
-		FORMAT()		Specificies additional global formatting of the output. There are intended primarily for formatting 
-						exported text, but can be applied to any output. Accepts one or more predefined flags:
-						
-						-preformat or -pre
-						Wraps preformatted text (trees, etc.) in backticks to preserve preformatting, 
-						for instance, for Markdown contenxts.
-
-						-multiline_meta or -mm
-						Places dynamic node metadata on separate lines instead of separated by;
-
-						-indent: or -i
-						Indents the dynamic node by the number of spaces specified in parentheses.
-						Example: FORMAT(-indent:20)
+						Can be used, for instance, to export a node or nodes to a non Urtext text file
 
 ]]  
+
+
+
+
 @87g }
 
 
