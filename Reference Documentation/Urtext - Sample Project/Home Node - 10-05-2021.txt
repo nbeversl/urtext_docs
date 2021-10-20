@@ -3,7 +3,8 @@ Home Node _ @8mw
 Welcome to Urtext. This is a new, blank Urtext project.
 
 This is the "home" node; to get here from anywhere in the project, press Ctrl-Shift-H
-For full documentation, see https://github.com/nbeversl/urtext-docs,
+
+For full documentation, see https://github.com/nbeversl/urtext-docs
 
 To follow the links below, use `ctrl+shift+/` or `ctrl-shift-MouseClick` (from cursor/pointer position)
 

@@ -7,7 +7,7 @@ Installation and Setup in Sublime Text _
         - leverages the built-in Sublime browser/palette for Urtext project navigation
         - defines a syntax for use with Sublime's color schemes
         - adds Urtext syntax highlighting to two of Sublime's default color schemes (Monokai and Sixteen)
-        - adds filebrowser-like project navigation using | Traverse Mode >00w
+        - adds filebrowser-like project navigation using | Traverse Modes >a8q
 
     Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation.
 
