@@ -6,6 +6,7 @@
 
 ## Basic Syntax
 
+
 All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname.
 
 `{  }`
@@ -18,7 +19,7 @@ More information: | Links >0y2
 
 `>>`		
 Node Pointers: Embeds the specified node as though it were included bracket using wrappers `{ }` (see above)
-More information: [ MISSING LINK : lmu ] 
+More information: 
 ¡
 `|`
 Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.
@@ -32,6 +33,7 @@ More information: | Bullet Nodes >j6t
 Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
 The first character inside the brackets may not be `!`, `-`, or whitespace.
 Example: 
+
 More information: | Syntax and Format >005
 
 `::`

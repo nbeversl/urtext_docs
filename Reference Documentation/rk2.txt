@@ -1,0 +1,169 @@
+{ File Nodes >ekz
+Dynamic Titles >4vu
+Documentation >ooe
+Installation and Setup (Sublime Text / Desktop) >6cd
+- Add New Node ID: ctrl + shift + i >gv9
+Traverse Modes >a8q
+Pulling and Popping Nodes >on7
+Node IDs >01q
+Urtext Reference - TODO >fst
+Trailing Node IDs >2a3
+Opening Links >01w
+can have arbitrary other metadata >xlc
+Command Binding >e8x
+Disable Prompts for File Reload >023
+Reference Documentation >6jq
+Hiding Line Numbers >01e
+Syntax Highlighting >01d
+Local >2yx
+The Node Browser >01i
+- Insert Link to Existing Node: ctrl + shift + l >0o0
+File Naming >01m
+Example Recursive Node Tree >01n
+Reindex Files >qd2
+- Insert Dynamic Definition and Node: ctrl + shift + Right-Bracket >jsc
+Urtext >ac5
+- Navigate Forward: ctrl + shift + . >yan
+Timestamps >2i4
+Either Download and Install Dependencies Manually >774
+tag_all >yin
+Uses >lhs
+Syntaxes >r0w
+Current Projects >vze
+Introduction and Description >013
+Escaping Sections of Text >oy5
+Hiding Tabs >015
+Command  Bindings >018
+Traverse Modes >02p
+or Download Dependencies from a Monorepo >arl
+Using the Sublime Text Command Pallete with Urtext >jby
+Exporting >ezg
+￼Home >02o
+Case-sensitivity >l36
+Templating the Output with the SHOW parameter >8p5
+(untitled) >rk2
+Nodes Excluded from the Table of Contents >jkl
+How To Use Urtext >byx
+Open source >u8o
+Lists >twz
+Plain Text >7rg
+- Node Browser, Backlinks: ctrl + shift + left >1ea
+Navigation >phj
+Sublime Text Urtext Key Bindings >1vs
+Urtext Reference - TRASH >59y
+Links >0y2
+Node Titles >u0g
+Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. >q8j
+Urtext Reference >mrb
+Other dynamic instructions >x0c
+Using a Sublime Project for an Urtext Project >c3n
+Project Naming (Identification) >tgp
+Sublime : select                  from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to  >k8v
+Dynamic Definitions - Syntax and Parameters >87g
+Copy Links >b5e
+JSON >njo
+Urtext Demo Project >xgj
+- List Projects: ctrl + shift + o >g5a
+Example Compact Node >d7b
+Generic >6ys
+- Node Browser, All Projects: ctrl + shift + * >hyh
+Full Text Search >4p9
+Plaintext >l60
+Cross-Project Linking >7lx
+Getting Started, Using Either the Demo or Reference Documentation >l7p
+Copy Links >kqz
+General Syntax >8dw
+- Insert Bracket Node Wrapper: ctrl + shift + 2 >6ym
+Types of Nodes >nuc
+Python >ljr
+Example Bracket Node >ypq
+- Metadata Browser: ctrl + shift + m >rr6
+Inserting a Node ID manually >04s
+Cheatsheet >yq8
+Searching >rr3
+- Insert Link to New Node: ctrl + shift + ' >sxk
+- Navigate Backward: ctrl + shift + , >3hy
+- Quick Tag from Other: ctrl + shift + 0 >zep
+Projects, Structure and Compiling >01x
+Extensible >gn8
+Table of Contents >a5m
+- Insert Timestamp: ctrl + shift + t >7b8
+Hash Key >4ry
+Sublime Text Urtext Key Bindings >8ty
+Features >vnv
+- Keyword Browser: ctrl + shift + x >l0s
+Time Zones >7w6
+Compact Nodes >kpz
+project_settings >d0s
+Metadata >00x
+* * Surfaced * * >l7v
+- Copy Link to Node With Project: ctrl + shift + super + c >05x
+become child nodes of their containing node. >hiz
+Description >yv2
+Reserved Key : title >fo2
+Installation and Setup in Sublime Text >01u
+Content Insertion >riz
+- Open Random Node: ctrl + shift + f >q5f
+Traverse Mode >00w
+Search Using Dynamic Nodes >uy4
+Using/Adding Existing Files >rij
+Comparison To Other Tools >h8z
+Nodes >01j
+Content Insertion >kxh
+Example inline node within compact node. >9up
+Linking to Files and Internet Links >00q
+History >prp
+Future Proof >xat
+About the README >pjk
+HTML >xsh
+Using Multiple Projects >ipy
+- Insert Bracket Node, Minimal: ctrl + shift + Left-Bracket >rzx
+- Open Urtext Link:  ctrl + shift + / >ngh
+Example : Fragment Exported to HTML >baq
+Basic Syntax >znj
+Navigation >k7b
+Tag nodes and descendents >tlv
+- Toggle Traverse Broswer: ctrl + shift + r >hcf
+Changing Key Bindings >t0g
+Dynamic Definitions >07u
+Search >k67
+- New Node: ctrl + shift + ; >ve3
+- Node Browser: ctrl + shift + e >vdr
+About Urtext >tkv
+Features and Philosophy >006
+Bracket Nodes >004
+Timestamp Syntax and Format >005
+Full Screen / Distraction Free Mode >002
+Sublime Text Interface Tips >003
+- Browse Associated Nodes: ctrl + shift + space >bj7
+Remove Indent Guides >1rc
+Tracking Node Dates and Times >cee
+- Node Browser, Forward Links: ctrl + shift + right >ylo
+Duplicate Node IDs >bzv
+Reminders >j6k
+- Copy Link to Node: ctrl + shift + c >vel
+Word Wrap in Traverse Mode >xci
+Compact Node Tree Example >lnp
+- Insert Bracket Node with Timestamp:	ctrl + shift + 1 >umy
+- Toggle Traverse History: ctrl + shift + g >ndc
+Flags Example >ttt
+Bullet Nodes >j6t
+Sublime >osu
+Generating a node ID manually >rfp
+Viewing Linked Relationships >00u
+Link to Files >00p
+require an id >frm
+- Home Node: ctrl + shift + h >5ab
+- Insert Bullet Node: ctrl + shift + 6 >1qq
+Dependencies and Installation >2fn
+Save on Focus Lost >sqq
+Freeform, Flexible Syntax >wzk
+Link to Web/HTTP(S) >00o
+Project Settings >00l
+Sublime Text tools to help with linking >00m
+Links and Pointers >00j
+((>rk2:3)) @wwx}
+
+[[ ID(>wwx)
++(*)
+ ]] @rk2

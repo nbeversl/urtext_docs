@@ -1,0 +1,383 @@
+Urtext Reference - TRASH _
+
+
+
+
+{Flags Example _
+
+This node is just here as a destination from the node pointer in | Basic Syntax >znj
+Note it has the `exclude_from_tree` flag, which prevents it from showing up in the table of contents.
+
+@ttt
+flags::exclude_from_toc
+tags::exclude_from_export}
+
+
+
+
+
+
+
+{Nodes Excluded from the Table of Contents
+Example Collection : "Last Updated" >cee
+Example first level >8fv
+└── second level >6qj
+    └── third test level >80d
+        └── fourth level >5pq
+            └── fifth level >e5n
+This node is just here as a destination from the node pointer in  Basic Syntax >ttt
+Example Search Results >3x3
+flags::exclude_from_toc - exclude_from_export
+def::>v7r
+@jkl}
+
+
+
+
+
+
+
+
+
+{ Example Recursive Node Tree
+def::>6ct
+@01n }
+
+
+
+
+
+{Installation and Setup (Sublime Text / Desktop) _
+
+For desktop use (PC/Mac/Linux) Urtext is implemented in Sublime Text.
+
+1. Download Sublime Text. (https://www.sublimetext.com/).
+
+2. Download Urtext and all its dependencies from the monorepo at `https://github.com/nbeversl/urtext_deps`. You can either download this repository as a .ZIP file and unzip it, or if you want to maintain version control, use `git clone --recurse-submodules https://github.com/nbeversl/urtext_deps`. Put the contents of the cloned/unzipped folder (important: not the folder itself) directly into your `Sublime Text 3/Lib/python3.3` folder.
+
+3. Download the Sublime Urtext package at `https://github.com/nbeversl/urtext_sublime`. Place it in your Packages folder (Sublime Text 3/Packages)
+
+4. Clone/download this documentation repository and open its folder in Sublime. It will automatically be read as an Urtext project.
+
+Once the Sublime package is installed, it will always look for any files with the .txt extension in open folders and attempt to compile them into a project. To open an existing Urtext project, open the folder, a file in the folder, or a Sublime project that includes the folder, and any feature described in this documentation will work.
+
+To make a new project, open an empty folder and select Select `Urtext : Initialize Project` from the Sublime Command Palette. For more information, see |  ?  >dce.
+
+@6cd}
+
+
+
+
+
+{Lists
+
+[[ 		
+	Dynamic definitions can contain arbitrary text. The only parts read by the compiler are the function names with their parameters in parentheses. Like nodes, you can format/indent/comment these definitions any way you want.
+
+	This definition targets ID m1r, which appears immediately below: | Example: Nodes from the Documentation >m1r.
+	ID(>m1r) 
+
+	The asterisk means to include all nodes in the project. 
+	INCLUDE(*)
+
+	The LIMIT parameter limits the output to the specified number of results. 
+	Note that the default sort order is alphabetical. 
+	LIMIT(20)
+
+	FORMAT(indent:3)
+	Here the FORMAT parameter is used to indent the output 3 tabs.
+	HEADER(Example: Nodes from the Documentation\n flags::exclude_from_export)
+
+	]]
+
+{ Example: Nodes from the Documentation
+ flags::exclude_from_export
+File Nodes >ekz
+Dynamic Titles >4vu
+Documentation >ooe
+Installation and Setup (Sublime Text / Desktop) >6cd
+- Add New Node ID: ctrl + shift + i >gv9
+Traverse Modes >a8q
+Pulling and Popping Nodes >on7
+Node IDs >01q
+Urtext Reference - TODO >fst
+Trailing Node IDs >2a3
+Opening Links >01w
+can have arbitrary other metadata >xlc
+Command Binding >e8x
+Disable Prompts for File Reload >023
+Reference Documentation >6jq
+Hiding Line Numbers >01e
+Syntax Highlighting >01d
+Local >2yx
+The Node Browser >01i
+- Insert Link to Existing Node: ctrl + shift + l >0o0
+((>twz:7)) @m1r}
+
+	f>./files/example-list-1-definition.png
+	f>./files/example-list-1.png
+
+
+
+@twz }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| Nodes Excluded from the Table of Contents >>jkl
+
+
+
+
+
+
+
+
+{Other dynamic instructions _
+
+Some dynamic instructions do things other than populate or modify contents of nodes.	
+
+{  	tag_all
+
+		tag_all:(key):(value):recursive?
+
+		The `tag_all` instruction tags all children of the target node with the key/value pair specified. If `:recursive` is appended, it will tag all descendents, not just the children. This will affect not just existing children/descendants, but all subsequently added ones as well. When the dynamic definition is removed, the tags are removed from the children/descendants. 
+
+		Note that metadata tags do not actually get added to the inline text of the the children/descendants as a result of this instruction, only that they acquire the specified key/value metadata pair for all purposes metadata serves within Urtext.
+
+ 
+@yin }
+
+
+@x0c}
+
+
+
+
+
+{Using/Adding Existing Files _
+
+	Once a folder contains at least one file with a node ID, you can add and use existing plaintext files in the project without any modification. However for most of the benefits of Urtext you must minimally an ID (| Node IDs >01q) in each file.
+	
+	To do so, select `Urtext : Import Project` from the Sublime Command palette.
+
+    Note the append will occur without a confirmation dialog, so if you are just experimenting with this system, consider making a copy of your file folder so you can revert without having to manually remove the metadata.
+	
+@rij}
+
+
+
+
+{Search _
+
+   {  Full Text Search 
+    
+    Fuzzy and Full Text Search are already implemented in many modern desktop text editors and some mobile text editors. However Urtext has a built-in search and index capability to avoid reliance on editors and environments.
+    
+	{	Searching
+
+		• Sublime : select `Urtext: Search` from the command pallete. This provides an input panel on the lower edge of the screen. Dynamically search results will be shown in a scratch view as you enter search terms. Press ESC to cancel.  Results include links to source nodes. @k8v
+
+        • Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. @q8j
+
+         @rr3}	
+
+	{ 	Search Using Dynamic Nodes
+
+        Search results can populate a dynamic node by using the key-value pair:
+
+            - search:(string)
+
+        For example, the following definition targets node >3x3 (below) and populates it with all nodes containing the word "urtext".
+        [[ 
+            ID(>3x3)
+            HEADER(title::Example Search Results; flags::exclude_from_toc)
+            INCLUDE(contents ? urtext)
+        ]]
+
+        { title::Example Search Results; flags::exclude_from_toc
+((>uy4:284)) @3x3}
+
+ 
+@uy4 }
+
+
+    
+@4p9 }
+
+
+
+
+@k67}
+
+
+
+
+
+{Templating the Output with the SHOW parameter _ 
+
+[[	This definition uses the same parameters as above, targeting the next node below, >c1x.
+
+	We'll illustrate the SHOW parameter by supplying a template for the output of each result.
+	SHOW accepts keynames, denoted with `$`, arbitrary text, and Unicode characters including \n, \r, \t.
+
+	SHOW($title: $link\n-\n)
+	ID(>c1x) 
+    HEADER(Example List 2)
+	INCLUDE(*)
+	LIMIT(5)
+	FORMAT(indent:3) 
+]]
+
+          { Example List 2
+File Nodes: >ekz
+-
+Dynamic Titles: >4vu
+-
+Documentation: >ooe
+-
+Installation and Setup (Sublime Text / Desktop): >6cd
+-
+- Add New Node ID: ctrl + shift + i: >gv9
+-
+((>8p5:50)) @c1x}
+
+@8p5}
+
+
+
+
+
+
+{Syntaxes _
+
+	The `{`  and  `}` wrappers are within the ranges of the CONTAINING node, not the node they enclose.
+	The • character also gets included in its PARENT.
+	
+@r0w
+updated::<Thu., Dec. 12, 2019, 09:02 AM>
+}
+
+
+{Trailing Node IDs
+
+
+updated::<Thu., Sep. 10, 2020, 02:48 PM +0000>
+@2a3
+from::wwci-00407.local
+}
+
+
+{Viewing Linked Relationships
+    
+    Elaborate writing and reference systems such as wikis often linking nodes together in tangled and intricate ways. While Urtext cannot draw diagrams of this kind (called acyclic graphs) in plaintext, it can represent these relationships from the perspective of any one node: Position the cursor in the desired node and select "Urtext : Show Linked Relationships..." The currently selected node will be displayed as root; all nodes linking into this nodes, and recursively into those nodes, will be displayed above the root; all files linked from this node, and recursively from those nodes, will be displayed below. Circular references are represented up to one iteration.
+
+    These diagrams are displayed as Sublime "scratch" views, meaning they will never report as being dirty (unsaved). They are intended for one-time/temporary use and will not update when a node/file changes. To make permanent and dynamically updated diagrams, see |  ?  >e82.
+
+    
+@00u}
+
+{Compact Node Tree Example
+
+{ 
+About Compact Nodes 
+
+Bullet Nodes >j6t
+((>lnp:32)) @ucj}
+
+
+
+[[ ID(>ucj)
+    +(id=j6t)
+    (5)
+    HEADER(\rAbout Compact Nodes \r\r)
+ ]]
+@lnp}
+
+
+
+
+
+
+{Cheatsheet _
+
+| Basic Syntax >>znj
+
+
+(not yet exporting)
+[[ FILE(cheatsheat.md)
+	MARKDOWN(root=yq8; -as_single_file)
+ ]]
+
+
+<Tue., Sep. 28, 2021, 02:32 PM> @yq8}
+
+
+{Command  Bindings _
+
+ctrl+shift+;            New Node
+ctrl+shift+e            Node Browser 
+ctrl+shift+r            Toggle Traverse Mode
+ctrl+shift+s.           Auto rename file from node metadata
+ctrl+shift+/            Open node (from an ID on the same line) 
+ctrl+shift+super+;      New inline node
+ctrl+shift+[            New inline node from selection
+ctrl+Et                  Insert timestamp
+ctrl+shift+]            New dynamic node definition
+ctrl+shift+t            Timeline view
+ctrl+shift+-            Align selected lines to the right (120 character width)
+                                                                                          
+@018
+}
+
+
+{Command Binding  
+  <Thu., Apr. 22, 2021, 12:22 PM> @e8x
+
+
+
+
+
+
+This binds the definition to a specific piece of text, rather than to the output of a node. So when you click on this, anywhere:
+ ##REINDEX FILES
+ ... it runs.
+
+   >>>REINDEX(df) asdfd}
+
+
+{Compact Nodes
+
+Key: | - Insert Bullet Node: ctrl + shift + 6 >1qq
+
+For text content requiring only a single line, such as list items, very short notes and similar, use the caret character (`^`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the • character appears, with the closing wrapper being the end of the same line. 
+
+Like all nodes, a compact node requires an ID. Like all nodes, it can contain metadata and even inline nodes, as long as the entire contents, including wrappers and metadata, are contained on a single line. (Note that "line" in this case refers to consecutive characters between explicit line breaks, and not to lines in the editor, which may be arbitrarily wrapped.)
+
+
+• Example Compact Node @d7b {  Example inline node within compact node. @9up } flags::exclude_from_export
+
+f>./files/example-compact-node.png
+
+@kpz
+Updated::<Thu., Sep. 10, 2020, 05:32 PM>}
+
+
+
+
+ <Wed., Oct. 06, 2021, 11:06 AM> @59y
+ index::99
