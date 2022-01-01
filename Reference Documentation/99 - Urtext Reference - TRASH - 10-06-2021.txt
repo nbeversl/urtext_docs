@@ -92,26 +92,26 @@ To make a new project, open an empty folder and select Select `Urtext : Initiali
 
 { Example: Nodes from the Documentation
  flags::exclude_from_export
-File Nodes >ekz
-Dynamic Titles >4vu
-Documentation >ooe
-Installation and Setup (Sublime Text / Desktop) >6cd
-- Add New Node ID: ctrl + shift + i >gv9
-Traverse Modes >a8q
-Pulling and Popping Nodes >on7
-Node IDs >01q
-Urtext Reference - TODO >fst
-Trailing Node IDs >2a3
-Opening Links >01w
-can have arbitrary other metadata >xlc
-Command Binding >e8x
-Disable Prompts for File Reload >023
+Copy Links >kqz
+Full Text Search >4p9
+- Node Browser, All Projects: ctrl + shift + * >hyh
 Reference Documentation >6jq
-Hiding Line Numbers >01e
-Syntax Highlighting >01d
-Local >2yx
-The Node Browser >01i
+Uses >lhs
+Project Naming (Identification) >tgp
+Freeform, Flexible Syntax >wzk
 - Insert Link to Existing Node: ctrl + shift + l >0o0
+Reindex Files >qd2
+require an id >frm
+Example Bracket Node >ypq
+become child nodes of their containing node. >hiz
+Inserting a Node ID manually >04s
+Example inline node within compact node. >9up
+Cross-Project Linking >7lx
+- Insert Bracket Node with Timestamp:	ctrl + shift + 1 >umy
+Pythonista : Use the "?" Urtext Button. Results will be updated in real time in the view behind the search field. To exit, tap outside the search field. >q8j
+Bullet Nodes >j6t
+Urtext Reference - TODO >fst
+- Node Browser, Forward Links: ctrl + shift + right >ylo
 ((>twz:7)) @m1r}
 
 	f>./files/example-list-1-definition.png
@@ -244,15 +244,15 @@ Some dynamic instructions do things other than populate or modify contents of no
 ]]
 
           { Example List 2
-File Nodes: >ekz
+Copy Links: >kqz
 -
-Dynamic Titles: >4vu
+Full Text Search: >4p9
 -
-Documentation: >ooe
+- Node Browser, All Projects: ctrl + shift + *: >hyh
 -
-Installation and Setup (Sublime Text / Desktop): >6cd
+Reference Documentation: >6jq
 -
-- Add New Node ID: ctrl + shift + i: >gv9
+Uses: >lhs
 -
 ((>8p5:50)) @c1x}
 

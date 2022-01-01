@@ -1,4 +1,4 @@
-Introduction and Description _
+Urtext Introduction _
 
 {   
     About Urtext _                    
@@ -14,7 +14,6 @@ Introduction and Description _
         Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext requires an implementation within a text editor or text view. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).  
 
          @yv2}
-
     { 
 
         Comparison To Other Tools _
@@ -22,7 +21,6 @@ Introduction and Description _
         Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. It is not primarily a document conversion or generation tool, though it can export to some other formats (currently Markdown and HTML). It is rather a tool for writing and organizing writing.
     
         Urtext's syntax mixes content, structure and instructions all together. Unlike HTML or other markup languages, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the author/user. @h8z}
-
     {  
 
         Uses _
@@ -41,7 +39,6 @@ Introduction and Description _
         - any other writing or information management that can be done in text form
 
     @lhs}
-
     {   
         Features and Philosophy _
 
@@ -117,14 +114,17 @@ Introduction and Description _
 @tkv}
 
 
+| Installation and Setup in Sublime Text >>01u
+
 { About the README  _
        
-      The README Markdown file is a partial export from the Urtext reference documentation. It explains installation and setup, the basic Urtext syntax, and thed Sublime Text commands and key bindings.  This repository also contains a fuller reference guide and a "walkthrough" project, both fully functioning Urtext projects with which to experiment with Urtext's features. 
+      The README.md file is an export of this file node (| Urtext Introduction >013). The repository contains a fuller reference guide and a "walkthrough" project, both fully functioning Urtext projects with which to experiment with Urtext's features. 
 
       The documentation is in active development. It may be incomplete or behind features/functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
 
 @pjk}
 
+f>./README.md
 [[ FILE(README.md) MARKDOWN(root=013; -as_single_file)]]
 
 index::02

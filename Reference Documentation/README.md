@@ -1,6 +1,6 @@
  
 
-# Introduction and Description
+# Urtext Introduction
 
 ## About Urtext
 
@@ -88,8 +88,51 @@ Cloud services can be used to sync project files among devices if desired.
 - Direct interaction with file system is mostly unnecessary. Creating, naming, saving, and organizing files is handled for you.
 - Urtext is designed to make direct interaction with file system mostly unnecessary. Creating, naming, saving, and organizing files is handled for you.
 
+## Installation and Setup in Sublime Text
+
+The Urtext package for Sublime Text utilizes Sublime's embedded Python interpreter both to run the Urtext interpreter/compiler and to add features to Sublime that make working with Urtext easy:
+
+- binds many Urtext operations to the Sublime command palette
+- adds key bindings (hotkeys) as shortcuts for some features
+- leverages the built-in Sublime browser/palette for Urtext project navigation
+- defines a syntax for use with Sublime's color schemes
+- adds Urtext syntax highlighting to two of Sublime's default color schemes (Monokai and Sixteen)
+- adds filebrowser-like project navigation using | Traverse Modes >a8q
+
+Some features in this documentation are built into the Urtext interpreter/compiler, while others are part of only the Sublime Text implementation.
+
+### Installation
+
+
+- Install Sublime Text: https://www.sublimetext.com/ 
+
+- The Sublime Urtext package is available on Sublime Package Control: Press ⌘/Ctrl + ⇧ + P to open the command palette. Type Install Package and press Enter. Then search for Urtext. Alternative, clone/download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ) and place it in your `Packages` folder.
+
+- Urtext is now ready to use.
+
+### Getting Started, Using Either the Demo or Reference Documentation
+
+At this point, clone this repository and open either of its subfolders in Sublime Text:
+
+#### Urtext Demo Project 
+
+This walks you through using Urtext through friendly, progressive steps.
+
+After opening this folder (or any file in it) in Sublime Text, position the cursor on this linke below and press Ctrl-Shift-/ which will take you to the start page:
+
+=>"Sample Project"[ MISSING LINK : 8mw ] 
+
+#### Reference Documentation 
+
+This is a component-by-component guide for Urtext's features. After opening this folder in Sublime Text:
+* Ctrl-Shift-H will take you to the node that generated the README file. 
+* Scroll to the bottom and you'll find this node (this very text you are reading) at the end of the file.
+* Click on the link below to browse the reference:
+
+| Urtext: Reference Documentation >a5m
+
 ## About the README  _
 
-The README Markdown file is a partial export from the Urtext reference documentation. It explains installation and setup, the basic Urtext syntax, and thed Sublime Text commands and key bindings.  This repository also contains a fuller reference guide and a "walkthrough" project, both fully functioning Urtext projects with which to experiment with Urtext's features. 
+The README.md file is an export of this file node (| Urtext Introduction >013). The repository contains a fuller reference guide and a "walkthrough" project, both fully functioning Urtext projects with which to experiment with Urtext's features. 
 
-The documentation is in active development. It may be incomplete or behind features/functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues). 
+The documentation is in active development. It may be incomplete or behind features/functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).[./README.md](./README.md) 

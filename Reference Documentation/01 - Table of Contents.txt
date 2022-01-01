@@ -1,17 +1,17 @@
-Table of Contents  _
+-------------------------------------
+Urtext: Reference Documentation _
+-------------------------------------
 
 To open the Urtext Links below, press ctrl + shift + /.
 
-Or, press the toggle command Ctrl-Shift-R.
-
-This will open a two column browser called traverse mode. 
+Or, press the toggle command Ctrl-Shift-R. This will open a two column browser called traverse mode. 
 You can then use the up/down keys and the mouse to browse.
-
-
-{ Urtext Documentation _ 
-
+{ 
+--------------------------------
+Table of Contents _
+--------------------------------
 Urtext >ac5
-  ├── Introduction and Description >013
+  ├── Urtext Introduction >013
   │   ├── About Urtext >tkv
   │   │   ├── Description >yv2
   │   │   ├── Comparison To Other Tools >h8z
@@ -24,11 +24,14 @@ Urtext >ac5
   │   │   │   ├── Future Proof >xat
   │   │   │   └── Local >2yx
   │   │   └── Features >vnv
+  │   ├── Installation and Setup in Sublime Text >01u
+  │   │   ├── Installation >2fn
+  │   │   └── Getting Started, Using Either the Demo or Reference Documentation >l7p
+  │   │       ├── Urtext Demo Project >xgj
+  │   │       └── Reference Documentation >6jq
   │   └── About the README >pjk
   ├── Installation and Setup in Sublime Text >01u
-  │   ├── Dependencies and Installation >2fn
-  │   │   ├── Either Download and Install Dependencies Manually >774
-  │   │   └── or Download Dependencies from a Monorepo >arl
+  │   ├── Installation >2fn
   │   └── Getting Started, Using Either the Demo or Reference Documentation >l7p
   │       ├── Urtext Demo Project >xgj
   │       └── Reference Documentation >6jq
@@ -141,10 +144,13 @@ Urtext >ac5
           └── Traverse Modes >02p
               ├── - Toggle Traverse Broswer: ctrl + shift + r >hcf
               └── - Toggle Traverse History: ctrl + shift + g >ndc
-((>a5m:248)) @e5j} 
+((>a5m:334)) @e5j} 
 
 
-[[  ID(>e5j) +(id=ac5) -(kw=exclude_from_toc) HEADER(Urtext Documentation _ \r\r)  TREE(7)]]
->ac5
+[[  ID(>e5j) +(id=ac5) -(kw=exclude_from_toc) HEADER(
+--------------------------------
+Table of Contents _
+--------------------------------\r)  TREE(7)]]
+
 index::01
 @a5m
