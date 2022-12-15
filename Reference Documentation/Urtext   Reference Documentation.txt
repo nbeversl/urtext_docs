@@ -1,0 +1,53 @@
+-------------------------------------
+Urtext : Reference Documentation _
+-------------------------------------
+
+To open the Urtext Links below, press ctrl + shift + /.
+
+Or, press the toggle command Ctrl-Shift-R. This will open a two column browser called traverse mode. 
+You can then use the up/down keys and the mouse to browse.
+
+{  Table of Contents _
+| Urtext >
+  ├── | Urtext Introduction >
+  │   ├── | About Urtext >
+  │   │   ├── | Description >
+  │   │   ├── | Comparison To Other Tools >
+  │   │   ├── | Uses >
+  │   │   ├── | Features and Philosophy >
+  │   │   │   ├── | Plain Text >
+  │   │   │   ├── | Freeform, Flexible Syntax >
+  │   │   │   ├── | Open source >
+  │   │   │   ├── | Extensible >
+  │   │   │   ├── | Future Proof >
+  │   │   │   └── | Local >
+  │   │   └── | Features >
+  │   ├── | Installation and Setup in Sublime Text >
+  │   │   ├── | Installation >
+  │   │   └── | Getting Started, Using Either the Demo or Reference Documentation >
+  │   │       ├── | Urtext Demo Project >
+  │   │       └── | Reference Documentation >
+  │   └── | About the README >
+  ├── | Installation and Setup in Sublime Text >
+  │   ├── | Installation >
+  │   └── | Getting Started, Using Either the Demo or Reference Documentation >
+  │       ├── | Urtext Demo Project >
+  │       └── | Reference Documentation >
+├── ALIASHow To Use Urtext NOT IN PROJECT (DEBUGGING)
+  └── | Urtext Reference - TODO >
+} 
+
+[[  ID(Table of Contents) +(id="Urtext") TREE(5) ]]
+
+
+
+{  Needs Functional Work _
+| To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use | - Add New Node ID: ctrl + shift + i > for this (as described above), after the rest of the proj >
+} 
+
+{  Needs Check Against Functionality _
+| project_settings >
+}
+
+[[ ID(Needs Check Against Functionality) +(kw=needs_check_against_functionality)]]
+[[ ID(Needs Functional Work) +(kw=needs_functional_work) TREE()]]

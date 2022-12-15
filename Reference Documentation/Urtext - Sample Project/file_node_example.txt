@@ -8,6 +8,5 @@ Example:
 
   { Example text 
   
-   @232} 
+   } 
 
- @sdw

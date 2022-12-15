@@ -9,7 +9,7 @@ For full documentation, see https://github.com/nbeversl/urtext-docs
 To follow the links below, use `ctrl+shift+/` or `ctrl-shift-MouseClick` (from cursor/pointer position)
 
 
-To view project settings, visit | project_settings >2bl
+To view project settings, visit |  ?  >2bl
 
 NOTE: Add Created date
 

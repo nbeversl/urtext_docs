@@ -1,1 +1,1 @@
-{"1633985382": "New File Node _   \n\nThis is a file node. \n\nMake new bracket nodes with `Ctrl-Shift-{` (Ctrl-Shift-leftSquigglyBracket)\n\nExample:  \n\n  { Example text \n  \n   @232} \n\n @sdw"}
+{"1633985382": "New File Node _   \n\nThis is a file node. \n\nMake new bracket nodes with `Ctrl-Shift-{` (Ctrl-Shift-leftSquigglyBracket)\n\nExample:  \n\n  { Example text \n  \n   @232} \n\n @sdw", "1666702679": "@@ -153,12 +153,8 @@\n %0A   \n-@232\n %7D %0A%0A\n"}

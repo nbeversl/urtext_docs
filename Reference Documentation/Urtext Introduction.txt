@@ -7,20 +7,20 @@ Urtext Introduction _
         
         Urtext (pronounced /ˈʊrtekst/) is a syntax and interpreter for writing, connecting and organizing text.
 
-        Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is a "project". The Urtext interpreter is aware of all the nodes in a project at once, so nodes can reference, modify, and organize one another, across hundreds or thousands of files. The | Basic Syntax >znj permits instructions embedded into the text itself. 
+        Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is a "project". The Urtext interpreter is aware of all the nodes in a project at once, so nodes can reference, modify, and organize one another, across hundreds or thousands of files. The | Basic Syntax > permits instructions embedded into the text itself. 
      
         The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
 
         Urtext has no built-in user interface; it only compiles and manages the files. Using Urtext requires an implementation within a text editor or text view. Currently there is a package for Sublime Text (Mac/Windows/Linux) and a script for Pythonista (iOS).  
 
-         @yv2}
+         }
     { 
 
         Comparison To Other Tools _
         
         Urtext shares some characteristics with markup languages such as Markdown and LaTeX, with the important difference that it is author-facing, rather than reader-facing. It is not primarily a document conversion or generation tool, though it can export to some other formats (currently Markdown and HTML). It is rather a tool for writing and organizing writing.
     
-        Urtext's syntax mixes content, structure and instructions all together. Unlike HTML or other markup languages, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the author/user. @h8z}
+        Urtext's syntax mixes content, structure and instructions all together. Unlike HTML or other markup languages, there is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the author/user. }
     {  
 
         Uses _
@@ -38,7 +38,7 @@ Urtext Introduction _
         - lightweight database
         - any other writing or information management that can be done in text form
 
-    @lhs}
+    }
     {   
         Features and Philosophy _
 
@@ -48,7 +48,7 @@ Urtext Introduction _
 
             Urtext can also incorporate (embed) other plaintext syntaxes, including other markup languages and programming language syntaxes.
 
-        @7rg}
+        }
 
         { Freeform, Flexible Syntax _
 
@@ -56,11 +56,11 @@ Urtext Introduction _
 
             Text can be supplemented with user-defined metadata independent of the file system's metadata (datetime stamps, comments, etc.). It can even be used as a flat-file database.
 
-            Similar to code projects, an Urtext project can be spread across dozens or thousands of files, with individual files providing "routes", or connections, to other other files or parts of files (nodes) via their node IDs. Text elements can be linked in tree-like, recursive (tangled), and other non-hierarchical ways.
+            Similar to code projects, an Urtext project can be spread across dozens or thousands of files, with individual files providing "routes", or connections, to other other files or parts of files (nodes) via their titles. Text elements can be linked in tree-like, recursive (tangled), and other non-hierarchical ways.
     
             However, the basics are very simple, and you can use only the parts you need.
 
-        @wzk}
+        }
 
         { Open source _
                
@@ -68,7 +68,7 @@ Urtext Introduction _
 
             - Decoupled from any particular text editor or interface ; it can be incorporated into any environment that runs Python, including any scriptable text editor or Python-scriptable environment capable of displaying a text editing view.
 
-        @u8o}
+        }
 
         { Extensible _
 
@@ -76,7 +76,7 @@ Urtext Introduction _
             
             At present these features are undocumented, but can be understood, with a little Python knowledge, by reading the code.
 
-        @gn8}
+        }
 
         { Future Proof _
                 
@@ -84,8 +84,7 @@ Urtext Introduction _
 
             The interpreter/compiler could be implemented in any sufficiently capable language, current, past or future.
 
-        @xat}
-
+        }
           
         { Local _
 
@@ -93,9 +92,9 @@ Urtext Introduction _
 
             Cloud services can be used to sync project files among devices if desired.
 
-         @2yx}     
+         }     
 
-    @006}
+    }
 
      { 
         Features _
@@ -109,23 +108,18 @@ Urtext Introduction _
         - Direct interaction with file system is mostly unnecessary. Creating, naming, saving, and organizing files is handled for you.
         - Urtext is designed to make direct interaction with file system mostly unnecessary. Creating, naming, saving, and organizing files is handled for you.
 
-    @vnv} 
+    } 
+}
 
-@tkv}
-
-
-| Installation and Setup in Sublime Text >>01u
+| Installation and Setup in Sublime Text >>
 
 { About the README  _
        
-      The README.md file is an export of this file node (| Urtext Introduction >013). The repository contains a fuller reference guide and a "walkthrough" project, both fully functioning Urtext projects with which to experiment with Urtext's features. 
+      The README.md file is an export of this file node (| Urtext Introduction >). The repository contains a fuller reference guide and a "walkthrough" project, both fully functioning Urtext projects with which to experiment with Urtext's features. 
 
       The documentation is in active development. It may be incomplete or behind features/functionality of Urtext. Edits and revisions are encouraged in the form of issues and pull requests (https://github.com/nbeversl/urtext-docs/pulls, https://github.com/nbeversl/urtext-docs/issues).
 
-@pjk}
+}
 
 f>./README.md
 [[ FILE(README.md) MARKDOWN(root=013; -as_single_file)]]
-
-index::02
-@013

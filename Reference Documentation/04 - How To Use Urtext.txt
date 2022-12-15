@@ -1,19 +1,17 @@
 How To Use Urtext _
 
-{
-
-Basic Syntax _
+{ Basic Syntax _
 
 
 	All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname.
 
-	`{  }`
+	`{` and  `}`
 	Bracket Node Wrappers. Can appear anywhere. Can be nested aribrarily deep.
-	More information: | Bracket Nodes >004
+	More information: | Bracket Nodes >
 
-	`>`
-	Node Link. Links to the specified node by ID, like a hyperlink. 
-	More information: | Links >0y2
+	`| [node title] >`
+	Node Link. Links to the specified node by title, like a hyperlink. 
+	More information: | Links >
 
 	`>>`		
 	Node Pointers: Embeds the specified node as though it were included bracket using wrappers `{ }` (see above)
@@ -21,54 +19,54 @@ Basic Syntax _
 	¡
 	`|`
 	Title Pipe. Placed immediately before a node link or node pointer (whitespace is ok), dynamically populates the linked node title.
-	Example and more info: | Dynamic Titles >4vu
+	Example and more info: | Dynamic Titles >
 
 	`•`
 	Bullet Node marker. Must be the first non-whitespace character on a line. Must include an ID in order to parse as a node.
-	More information: | Bullet Nodes >j6t
+	More information: | Bullet Nodes >
 
-	`< >`
-	Timestamp wrapper. Parses user-defined datetime strings, with many default formats built in.
+	`<` and `>`
+	Timestamp wrappers. Parses user-defined datetime strings, with many default formats built in.
 	The first character inside the brackets may not be `!`, `-`, or whitespace.
 	Example: <Tue., Jul. 28, 2020, 07:43 PM>
 
-	More information: | Syntax and Format >005
+	More information: | Timestamp Syntax and Format >
 
 	`::`
 	Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 	Metadata may appear anywhere. They attach to their containing (parent) node, remember their exact location, and can serve as anchors/bookmarks to context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 
 
-		[[ FILE(Basic Syntax.md) MARKDOWN(root=znj) ]] @znj
+	[[ FILE(Basic Syntax.md) MARKDOWN(root=znj) ]] 
 }
 
 
 
-{The Node Browser _
+{ The Node Browser _
 
 	The "Node Browser" utilizes Sublime Text's dropdown to browse all nodes in the project. Press Control-Shift-E or select "Urtext: Node List" from the Sublime command palette (Shift-Super-P). Type part of a node's title to locate and open it with Enter.
 
 	By default, nodes are sorted by their time of creation, with most recent first. 
-	This can be modified using the `node_browser_sort` key in | project_settings >d0s.
+	This can be modified using the `node_browser_sort` key in | project_settings >.
 
 	A "traversable" Node Browser can be created in plaintext using a dynamic definition such as: 
 
-	`[[ ID(>xxx) +(*) ]]`. 
+	[[ ID(Example Node Title) +(*) ]]. 
 
-    (see | Dynamic Definitions >07u)
+    (see | Dynamic Definitions >)
 
-	@01i}
+	}
 
 
-{Using the Sublime Text Command Pallete with Urtext _  
+{ Using the Sublime Text Command Pallete with Urtext _  
 
 	All key bindings and commands can be accecesed through the Sublime Text Command Pallete, which is mapped by default to Ctrl-Shift-P. To see all the Urtext commands, type "Urtext" to reduce the list to matching commands. Key bindings are shown at the far right of each entry. 
 
-	@jby}
+}
 
 
 
-{Sublime Text Urtext Key Bindings  _
+{ Sublime Text Urtext Key Bindings  _
 
 	Below are the default key bindings for Sublime Urtext commands. 
 
@@ -88,13 +86,12 @@ Basic Syntax _
 		- Metadata Browser:						ctrl + shift + m
 		- Browse Associated Nodes:				ctrl + shift + space
 				
-	@k7b } 
+	 } 
 
 	{ Content Insertion _
 
 		- New Node: 							ctrl + shift + ;  					
 		- Insert Timestamp: 					ctrl + shift + t   			
-		- Add New Node ID: 						ctrl + shift + i  				
 		- Insert Bracket Node with Timestamp:	ctrl + shift + 1
 		- Insert Bracket Node Wrapper:  		ctrl + shift + 2
 		- Insert Bracket Node, Minimal :		ctrl + shift + Left-Bracket  			
@@ -103,50 +100,50 @@ Basic Syntax _
 		- Insert Link to Existing Node: 		ctrl + shift + l 		
 		- Insert Link to New Node: 				ctrl + shift + '		
 		- Quick Tag from Other: 				ctrl + shift + 0 		
-	@kxh  }
+  	}
 
 	{ Copy Links _
 
 		- Copy Link to Node: 					ctrl + shift + c 
 		- Copy Link to Node With Project: 		ctrl + shift + super + c  
-	@kqz  }
+	  }
 
 	{ Traverse Modes _
 
 		- Toggle Traverse Broswer: 				ctrl + shift + r  		
 		- Toggle Travers History: 				ctrl + shift + g  
-	@a8q }
+	}
 
 
-	{Changing Key Bindings _ 
+	{ Changing Key Bindings _ 
 
 	Key Bindings can be changed, if desired, by modifying the following files in the Sublime Urtext package:
 
 			Default (Linux).sublime-keymap	
 			Default (OSX).sublime-keymap	
-			Default (Windows).sublime-keymap @t0g}
+			Default (Windows).sublime-keymap 
 
-	@1vs}
+	}
+}
 
 
-
-{Sublime Text Interface Tips _
+{ Sublime Text Interface Tips _
 	
 
 	Here are some tips for best leveraging Sublime's great UI features while using Urtext.
 
-	{ Syntax Highlighting
+	{ Syntax Highlighting _
 
 		The Sublime Text package includes a syntax definition file in YML format (`sublime_urtext.sublime_syntax`), along with two color schemes that provide syntax highlighting. Syntax highlighting makes everything easier by showing depth of node nesting and dimming certain elements of the syntax. Select the Sixteen (for light) or Monokai (for dark) color schemes in Preferences -> Color Scheme ... 
 
-		Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (This can be undone by repeating the same but selecting Plain Text.)  @01d}
+		Then change to the Urtext syntax by selecting it in View -> Syntax -> Urtext. To avoid having to do this for every file, select View -> Syntax -> Open All with Current Extension As ... -> Urtext. (This can be undone by repeating the same but selecting Plain Text.)  }
 
-	{	Hiding Tabs
+	{	Hiding Tabs _
 
 		If you prefer a spare, terminal-like view, hide tabs: View -> Hide Tabs.
-		This preference can also be set on a per-(Sublime)-project basis. See the Sublime documentation.  @015}
+		This preference can also be set on a per-(Sublime)-project basis. See the Sublime documentation.  }
 
-	{  Hiding Line Numbers
+	{  Hiding Line Numbers _
 
 			For an extra-clean look, hide line numbers by adding:
 				
@@ -160,13 +157,13 @@ Basic Syntax _
 
 			... to your Sublime project settings file. 
 
-			(Ignore the JSON syntax pass markers above beginning with `%%`. See | Escaping Sections of Text >oy5 ) @01e}
+			(Ignore the JSON syntax pass markers above beginning with `%%`. See | Escaping Sections of Text > ) }
 
-	{  Full Screen / Distraction Free Mode
+	{  Full Screen / Distraction Free Mode _
 
-		Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode.  @002}
+		Since you can navigate entirely from within files, Urtext works great in Sublime's Distraction Free Mode. View -> Enter Distraction Free Mode.  }
 
-	{ Disable Prompts for File Reload
+	{ Disable Prompts for File Reload _
 
 		 Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
 				 %%-JSON
@@ -177,9 +174,9 @@ Basic Syntax _
 				
 				%%-JSON-END		
 		 
-	@023}
+	}
 
-	{  Remove Indent Guides
+	{  Remove Indent Guides _
 
 		Formatting plaintext using tab indentions can look messy if indent guides are on. To turn them off, add to your Sublime project settings file:
 			
@@ -188,9 +185,9 @@ Basic Syntax _
 				"draw_indent _guides": false,
 			}
 			%%-JSON-END
-	@1rc}
+	}
 
-	{  Save on Focus Lost
+	{  Save on Focus Lost _
 
 		Urtext recompiles your project every time a file changes. To make this more automatic, and to reduce the need to manually press save after every edit, add to your Sublime settings file:
 
@@ -200,19 +197,19 @@ Basic Syntax _
 			}
 		%%-JSON-END
 	
-	@sqq}
+	}
 
-	{  Using a Sublime Project for an Urtext Project
+	{  Using a Sublime Project for an Urtext Project _
 	
 		( see https://www.sublimetext.com/docs/3/projects.html )
 
 		You don't need to define a Sublime Project for the Urtext Project, but if you intend to do more than one thing at a time in Sublime, it's convenient to have one; you can then use Select Project -> Quick Switch Project (Ctrl-Super-P) to switch among them.  
 
-	@c3n}
-@003}
+	}
+}
 
 
-{Dynamic Definitions - Syntax and Parameters _
+{ Dynamic Definitions - Syntax and Parameters _
 
 	Dynamic definitions are powerful instructions for dynamically building nodes from other nodes. Dynamic definitions display content from other nodes in a target dynamic node. 
 
@@ -224,7 +221,7 @@ Basic Syntax _
 
 
 	[[ 	ID() 			Target node to dynamically populate with output.
-						Accepts a link to a node (>eee)
+						Accepts a node title or link t(`| Node title >`)
 
 		INCLUDE()  		Nodes to include. 
 		or +()
@@ -271,12 +268,12 @@ Basic Syntax _
 									(comparisons are case-insensitive)
 								
 								`_links_to`			
-									INCLUDE(_links_to = 46d)
-									Includes all nodes that contain links to node ID `46d`
+									INCLUDE(_links_to = "some node")
+									Includes all nodes that contain links to node title
 
 								`_links_from`
-									INCLUDE(_links_from = 46d)
-									Includes all nodes to which node ID `46d` links
+									INCLUDE(_links_from = "some node")
+									Includes all nodes to which node links
 
 
 		EXCLUDE()		Accepts all the same parameters as INCLUDE()
@@ -313,7 +310,8 @@ Basic Syntax _
 						by the combination of INCLUDE() with EXCLUDE(). 
 						To see instead a tree representation of each node and its descendants, if any, use TREE(), providing a level of depth, such as: TREE(5). To show unlimited depth (until recursion), use the asterisk: TREE(*)
 
-		COLLECT()		Aggregates occurrences of metadata, including timestamps, and surrounding contents.
+		COLLECT()		Aggregates occurrences of metadata, including timestamps, 
+						and surrounding contents.
 						Accepts key/value pais 
 						Returns a seperate item for each occurence.
 
@@ -356,8 +354,7 @@ Basic Syntax _
 						Will include all hierarchically nested nodes using Markdown heading format.
 						See FORMAT() for ways to preformat the output.
 
-						Accepts one or more semicolon- or newline-separated links to nodes or files (see | Linking to outside 
-						resources >00q)
+						Accepts one or more semicolon- or newline-separated links to nodes or files (see | Linking to Files and Internet Links >)
 
 						To include all nodes pointed to from the root file, recursively, use the flag:
 						
@@ -369,24 +366,19 @@ Basic Syntax _
 
 						Can be used, for instance, to export a node or nodes to a non Urtext text file
 
-]]  
+		]]  
+}
 
 
 
-
-@87g }
-
-
-
-{Escaping Sections of Text _
-
+{ Escaping and Embedding _
  
-	Urtext allows for embedded syntaxes and pass markers to escape sections of text from both urtext parsing and Sublime Text syntax highlighting. Note that no text content wrapped between pass markers will appear in Urtext dynamic output, since characters in other syntaxes would have unpredictable interactions.
+	Urtext allows embedded syntaxes and pass markers to escape sections of text from both Urtext parsing and Sublime Text syntax highlighting. Note that no text content wrapped between pass markers will appear in Urtext dynamic output, since characters in other syntaxes would have unpredictable interactions.
 
 
 	{  Generic 
 		
-		`Similar to its use in in Markdown, the backtick designates code, plaintext, or preformatted text that should be escaped/ignored.` @6ys}
+		`Similar to its use in in Markdown, the backtick designates code, plaintext, or preformatted text that should be escaped/ignored.` }
 
 	For larger regions of text, or to embed other syntaxes, us the following:
 
@@ -400,7 +392,7 @@ Basic Syntax _
 			</div>
 
 		%%-HTML-END
-	   @xsh}
+	   }
 
 
 	{ JSON
@@ -412,7 +404,7 @@ Basic Syntax _
 			}
 
 		%%-JSON-END
-	@njo}
+	}
 
 	{ Python
 
@@ -423,7 +415,7 @@ Basic Syntax _
 			return i*10
 
 		%%-PYTHON-END   
-	@ljr}
+	}
 
 
 	{ Plaintext
@@ -433,7 +425,7 @@ Basic Syntax _
 			This text will get no syntax highlighting.
 
 		%%-PLAINTEXT-END 
-		@l60}
+		}
 
 
 
@@ -441,32 +433,31 @@ Basic Syntax _
 
 		%%-DOC
 
-		The "DOC" pass marker is used in parts of this documentation in order to Urtext syntax highlighting without parse or execute anything, for documentation and example purposes. This wrapper will not return an error messages even it is missing an ID  {  }.
-
+		The "DOC" pass marker is used in parts of this documentation in order to Urtext syntax highlighting without parse or execute anything, for documentation and example purposes.
 
 		%%-DOC-END
 
-		@ooe} @oy5}
+		} }
 
 
-{File Naming _
+{ File Naming _
 
-	Since node identities are independent of their filenames, you can use any naming convention you want. Urtext can also rename files automatically in convenient formats based on their title and/or index. Renaming by index is useful, for instance, if you want file-level nodes easily readable inside a file system, mobile app, or other file browser.
+	Since node identities are independent of their filenames, you can use any naming convention you want. Urtext can also rename files automatically in convenient formats based on their title and/or other metadata. Renaming by number is useful, for instance, if you want file-level nodes easily readable inside a file system, mobile app, or other file browser.
 
 	To rename a file, select "Rename File from Meta" from the command palette (Command-P). By default, this will rename the files alphabetically by title, with numerical prefixes to preserve ordering where the filesystem might not.
 
 	This behavior can be changed, if desired, by modifying the `filenames` key of project settings
-	See | project_settings >d0s
+	See | project_settings >
 
-	To rename multiple files at once, see | Reindex Files >qd2 below:
+	To rename multiple files at once, see | Reindex Files > below:
 
-@01m}
+}
 
-{Reindex Files _
+{ Reindex Files _
 
-	"Reindex Files" renames all filnames in your project according to the `filenames` key in | project_settings >d0s
+	"Reindex Files" renames all filnames in your project according to the `filenames` key in | project_settings >
 
-@qd2}
+}
 
 
 
@@ -480,12 +471,9 @@ Basic Syntax _
 
 	<Fri., Oct. 15, 2021, 01:41 PM>
 
-	@prp}
+	}
 
-
-
-
-{Using Multiple Projects _
+{ Using Multiple Projects _
 
 
 	To use multiple projects at once, there is a project context manager. When you initially pass a path to Urtext, it looks recursively in all sub folders for additional projects. If it finds a compilable Urtext project in any one, it adds these to the context manager.  You can then freely switch among projects, either explicitly, or using links between the projects (described below). When switching projects, all Urtext's features, content and behavior, including links, compiling, and all functions linked to UI buttons, will operate in the context of the selected project. 
@@ -502,7 +490,7 @@ Basic Syntax _
 
 	Unlike nodes, projects are uniquely identified by name. For this reason, each project must have an unique name within the running instance of Urtext. Projects can be named using the `project_title` key in the `project_settings` node. If no name is present, the project's name becomes its absolute path in the file system. 
 
-	@tgp}
+	}
 
 	{ Cross-Project Linking _
 
@@ -511,15 +499,11 @@ Basic Syntax _
 		=>"name or path of the other project"
 	    (This link is only an example and is non-functioning)
 
-	    To add a specific node, add the "pipe and angle-bracket" notation followed by a node ID:
-		=>"name or path of the other project"| >idj
+	    To add a specific node, add the "pipe and angle-bracket" notation followed by a node title:
+		=>"name or path of the other project"| title >
 
 		Following this link will change the project context to the named project and open the specified node, if any.
 
-		@7lx}
+		}
 
-
-	@ipy}
-
- @byx
- index::04
+	}
