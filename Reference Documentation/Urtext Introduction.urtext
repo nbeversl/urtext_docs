@@ -8,7 +8,7 @@ Urtext Introduction _
         
         Urtext (pronounced /ˈʊrtekst/) is a syntax and interpreter for writing, connecting and organizing text.
 
-        Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is a "project". The Urtext interpreter is aware of all the nodes in a project at once, so nodes can reference, modify, and organize one another, across hundreds or thousands of files. The | Basic Syntax > permits instructions embedded into the text itself. 
+        Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is a "project". The Urtext interpreter is aware of all the nodes in a project at once, so nodes can reference, modify, and organize one another, across hundreds or thousands of files. The | Syntax > permits instructions embedded into the text itself. 
      
         The present interpreter for Urtext is in Python and can be used wherever Python 3.3 or later runs. Equivalent or variant interpreters could be created in any language or editing environment. 
 

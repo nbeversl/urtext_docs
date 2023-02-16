@@ -4,42 +4,75 @@ Urtext : Reference Documentation _
 
 To open the Urtext Links below, press ctrl + shift + /.
 
-Or, press the toggle command Ctrl-Shift-R. This will open a two column browser called traverse mode. 
-You can then use the up/down keys and the mouse to browse.
-
 {  Table of Contents _
 | Urtext >
   ├── | Urtext Introduction >
-  │   ├── | About Urtext >
-  │   │   ├── | Description >
-  │   │   ├── | Comparison To Other Tools >
-  │   │   ├── | Uses >
-  │   │   ├── | Features and Philosophy >
-  │   │   │   ├── | Plain Text >
-  │   │   │   ├── | Freeform, Flexible Syntax >
-  │   │   │   ├── | Open source >
-  │   │   │   ├── | Extensible >
-  │   │   │   ├── | Future Proof >
-  │   │   │   └── | Local >
-  │   │   └── | Features >
   │   ├── | Installation and Setup in Sublime Text >
-  │   │   ├── | Installation >
-  │   │   └── | Getting Started, Using Either the Demo or Reference Documentation >
-  │   │       ├── | Urtext Demo Project >
-  │   │       └── | Reference Documentation >
-  │   └── | About the README >
+  │   │   ├── | Getting Started, Using Either the Demo or Reference Documentation >
+  │   │   │   ├── | Reference Documentation >
+  │   │   │   └── | Urtext Demo Project >
+  │   │   └── | Installation >
+  │   ├── | About the README >
+  │   └── | About Urtext >
+  │       ├── | Comparison To Other Tools >
+  │       ├── | Features and Philosophy >
+  │       │   ├── | Extensible >
+  │       │   ├── | Future Proof >
+  │       │   ├── | Open source >
+  │       │   ├── | Plain Text >
+  │       │   ├── | Local >
+  │       │   └── | Freeform, Flexible Syntax >
+  │       ├── | Features >
+  │       ├── | Description >
+  │       └── | Uses >
   ├── | Installation and Setup in Sublime Text >
-  │   ├── | Installation >
-  │   └── | Getting Started, Using Either the Demo or Reference Documentation >
-  │       ├── | Urtext Demo Project >
-  │       └── | Reference Documentation >
-├── ALIASHow To Use Urtext NOT IN PROJECT (DEBUGGING)
+  │   ├── | Getting Started, Using Either the Demo or Reference Documentation >
+  │   │   ├── | Reference Documentation >
+  │   │   └── | Urtext Demo Project >
+  │   └── | Installation >
+  ├── | How To Use Urtext >
+  │   ├── | Reindex Files >
+  │   ├── | History >
+  │   ├── | Dynamic Definitions - Syntax and Parameters >
+  │   ├── | File Naming >
+  │   ├── | Sublime Text Urtext Key Bindings >
+  │   │   ├── | Copy Links >
+  │   │   ├── | Content Insertion >
+  │   │   ├── | Navigation >
+  │   │   ├── | Traverse Modes >
+  │   │   └── | Changing Key Bindings >
+  │   ├── | Syntax >
+  │   ├── | Sublime Text Interface Tips >
+  │   │   ├── | Full Screen / Distraction Free Mode >
+  │   │   ├── | Disable Prompts for File Reload >
+  │   │   │   └── | "always_prompt_for_file_reload": false, >
+  │   │   ├── | Save on Focus Lost >
+  │   │   │   └── | "save_on_focus_lost": true >
+  │   │   ├── | Remove Indent Guides >
+  │   │   │   └── | "draw_indent _guides": false, >
+  │   │   ├── | Syntax Highlighting >
+  │   │   ├── | Using a Sublime Project for an Urtext Project >
+  │   │   ├── | Hiding Tabs >
+  │   │   └── | Hiding Line Numbers >
+  │   │       └── | "line_numbers": false, >
+  │   ├── | Using Multiple Projects >
+  │   │   ├── | Cross-Project Linking >
+  │   │   └── | Project Naming (Identification) >
+  │   ├── | The Node Browser >
+  │   ├── | Using the Sublime Text Command Pallete with Urtext >
+  │   └── | Escaping and Embedding >
+  │       ├── | Plaintext >
+  │       ├── | HTML >
+  │       ├── | Python >
+  │       ├── | Generic >
+  │       └── | JSON >
+  │           └── | "title" : "example JSON ", >
   └── | Urtext Reference - TODO >
 } 
 
 [[  ID(Table of Contents) +(id="Urtext") TREE(5) ]]
 
-
+tt::sadfsdafasdf;
 
 {  Needs Functional Work _
 | To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use | - Add New Node ID: ctrl + shift + i > for this (as described above), after the rest of the proj >

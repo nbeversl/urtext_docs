@@ -1,0 +1,14 @@
+<Thu., Feb. 16, 2023, 07:16 AM UTC+00:00> 
+{ My Code
+%%Python
+
+print('hello nate')
+
+%%
+}
+
+[[ ID(Output) EXEC(My Code)]]
+
+{  Output _
+hello nate
+}

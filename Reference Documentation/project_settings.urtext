@@ -51,7 +51,7 @@ project_settings _
 	open_with_system::pdf 
 		File extensions to always open using the default system application.
 
-	new_file_node_format::$cursor`
+	new_file_node_format::$cursor
 		Specifies the default format for new file nodes. The following values can be string together in any way:
 			$timestamp
 			$device_keyname

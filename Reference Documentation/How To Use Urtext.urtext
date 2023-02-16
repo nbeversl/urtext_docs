@@ -1,7 +1,6 @@
 How To Use Urtext _
 
-{ Basic Syntax _
-
+{ Syntax _
 
 	All text is plain content unless inside a timestamp wrapper, dynamic definition wrapper, or preceded by a metadata assignment operator and keyname.
 
@@ -147,13 +146,13 @@ How To Use Urtext _
 
 			For an extra-clean look, hide line numbers by adding:
 				
-				%%-JSON
+				%%JSON
 				
 				"settings" : {
 					 "line_numbers": false,
 				},
 				
-				%%-JSON-END
+				%%
 
 			... to your Sublime project settings file. 
 
@@ -166,13 +165,13 @@ How To Use Urtext _
 	{ Disable Prompts for File Reload _
 
 		 Urtext does a lot of writing to files on the fly, often when they are already open. To avoid seeing a dialog every time, add add the following to your Sublime project settings or User Preferences file:
-				 %%-JSON
+				 %%JSON
 				 
 				 "settings" : {
 					"always_prompt_for_file_reload": false,
 				},
 				
-				%%-JSON-END		
+				%%		
 		 
 	}
 
@@ -180,22 +179,22 @@ How To Use Urtext _
 
 		Formatting plaintext using tab indentions can look messy if indent guides are on. To turn them off, add to your Sublime project settings file:
 			
-			%%-JSON
+			%%JSON
 			 "settings" : { 
 				"draw_indent _guides": false,
 			}
-			%%-JSON-END
+			%%
 	}
 
 	{  Save on Focus Lost _
 
 		Urtext recompiles your project every time a file changes. To make this more automatic, and to reduce the need to manually press save after every edit, add to your Sublime settings file:
 
-		%%-JSON
+		%%JSON
 			"settings" : { 
 			 "save_on_focus_lost": true 
 			}
-		%%-JSON-END
+		%%
 	
 	}
 
@@ -385,59 +384,50 @@ How To Use Urtext _
 
 	{ HTML
 
-		%%-HTML
+		%%HTML
 
 			<div class="example">
 				Example HTML
 			</div>
 
-		%%-HTML-END
+		%%
 	   }
 
 
 	{ JSON
 
-		%%-JSON
+		%%JSON
 
 			{ 	"title" : "example JSON ",
 				"example" : [], 
 			}
 
-		%%-JSON-END
+		%%
 	}
 
 	{ Python
 
-		%%-PYTHON
+		%%Python
 		
 		# Example
 		def times_ten(i):
 			return i*10
 
-		%%-PYTHON-END   
+		%%   
 	}
 
 
 	{ Plaintext
 
-		%%-PLAINTEXT
+		%%PLAINTEXT
 
 			This text will get no syntax highlighting.
 
-		%%-PLAINTEXT-END 
+		%%
 		}
 
 
-
-	{ Documentation
-
-		%%-DOC
-
-		The "DOC" pass marker is used in parts of this documentation in order to Urtext syntax highlighting without parse or execute anything, for documentation and example purposes.
-
-		%%-DOC-END
-
-		} }
+ }
 
 
 { File Naming _
@@ -507,3 +497,4 @@ How To Use Urtext _
 		}
 
 	}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
