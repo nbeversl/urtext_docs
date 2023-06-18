@@ -13,9 +13,7 @@ Search _
          }	
 
 	{ Example Search Results _
-title::Example Search Results; flags::exclude_from_toc
-
-
- }
+      title::Example Search Results; flags::exclude_from_toc
+   }
 
 }

@@ -29,17 +29,14 @@ How To Use Urtext _
 	The first character inside the brackets may not be `!`, `-`, or whitespace.
 	Example: <Tue., Jul. 28, 2020, 07:43 PM>
 
-	More information: | Timestamp Syntax and Format >
+	More information: |? Timestamp Syntax and Format >
 
 	`::`
 	Metadata assignment operator. Accepts a user-defined key on the left, and values and timestamps on the right.
 	Metadata may appear anywhere. They attach to their containing (parent) node, remember their exact location, and can serve as anchors/bookmarks to context. Keys must be single words (underscore permitted), values may be any characters, terminated with a semicolon or newline. The pipe character (`|`) separates multiple values for a single key.
 
-
-	[[ FILE(Basic Syntax.md) MARKDOWN(root=znj) ]] 
+	[[ FILE(Syntax.md) MARKDOWN(root=Syntax) ]] 
 }
-
-
 
 { The Node Browser _
 
@@ -50,7 +47,7 @@ How To Use Urtext _
 
 	A "traversable" Node Browser can be created in plaintext using a dynamic definition such as: 
 
-	[[ ID(Example Node Title) +(*) ]]. 
+	[[ >(Example Node Title) +(*) ]]. 
 
     (see | Dynamic Definitions >)
 
@@ -156,7 +153,7 @@ How To Use Urtext _
 
 			... to your Sublime project settings file. 
 
-			(Ignore the JSON syntax pass markers above beginning with `%%`. See | Escaping Sections of Text > ) }
+			(Ignore the JSON syntax pass markers above beginning with `%%`. See |? Escaping Sections of Text > ) }
 
 	{  Full Screen / Distraction Free Mode _
 
@@ -216,10 +213,10 @@ How To Use Urtext _
 
 	Dynamic definitions are wrapped with double left and right square brackets(`[[`,`]]`). There are no restrictions on spacing, indentation, newlines, or other arbitrary text or whitespace. The order of parameters within a definition is unimportant; they are evaluated as a group.
 
-	This dynamic definition below is for documentation and does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see |  ?  >k8p
+	This dynamic definition below is for documentation and does not actually do anything. It rather lists every parameter along with an explanation of its use and purpose. For example uses, see |? ? >k8p
 
 
-	[[ 	ID() 			Target node to dynamically populate with output.
+	[[ 	>() 			Target node to dynamically populate with output.
 						Accepts a node title or link t(`| Node title >`)
 
 		INCLUDE()  		Nodes to include. 
@@ -490,7 +487,7 @@ How To Use Urtext _
 	    (This link is only an example and is non-functioning)
 
 	    To add a specific node, add the "pipe and angle-bracket" notation followed by a node title:
-		=>"name or path of the other project"| title >
+		=>"name or path of the other project"|? title >
 
 		Following this link will change the project context to the named project and open the specified node, if any.
 

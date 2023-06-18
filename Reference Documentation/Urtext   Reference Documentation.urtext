@@ -4,83 +4,77 @@ Urtext : Reference Documentation _
 
 To open the Urtext Links below, press ctrl + shift + /.
 
-{  Table of Contents _
+{ Table of Contents _
 | Urtext >
   ├── | Urtext Introduction >
   │   ├── | Installation and Setup in Sublime Text >
-  │   │   ├── | Getting Started, Using Either the Demo or Reference Documentation >
-  │   │   │   ├── | Reference Documentation >
-  │   │   │   └── | Urtext Demo Project >
-  │   │   └── | Installation >
-  │   ├── | About the README >
-  │   └── | About Urtext >
-  │       ├── | Comparison To Other Tools >
-  │       ├── | Features and Philosophy >
-  │       │   ├── | Extensible >
-  │       │   ├── | Future Proof >
-  │       │   ├── | Open source >
-  │       │   ├── | Plain Text >
-  │       │   ├── | Local >
-  │       │   └── | Freeform, Flexible Syntax >
-  │       ├── | Features >
-  │       ├── | Description >
-  │       └── | Uses >
+  │   │   ├── | Installation >
+  │   │   └── | Getting Started, Using Either the Demo or Reference Documentation >
+  │   │       └── | Reference Documentation >
+  │   ├── | About Urtext >
+  │   │   ├── | Description >
+  │   │   ├── | Comparison To Other Tools >
+  │   │   ├── | Uses >
+  │   │   ├── | Features and Philosophy >
+  │   │   │   ├── | Plain Text >
+  │   │   │   ├── | Freeform, Flexible Syntax >
+  │   │   │   ├── | Open source >
+  │   │   │   ├── | Extensible >
+  │   │   │   ├── | Future Proof >
+  │   │   │   └── | Local >
+  │   │   └── | Features >
+  │   └── | About the README >
   ├── | Installation and Setup in Sublime Text >
-  │   ├── | Getting Started, Using Either the Demo or Reference Documentation >
-  │   │   ├── | Reference Documentation >
-  │   │   └── | Urtext Demo Project >
-  │   └── | Installation >
+  │   ├── | Installation >
+  │   └── | Getting Started, Using Either the Demo or Reference Documentation >
+  │       └── | Reference Documentation >
   ├── | How To Use Urtext >
-  │   ├── | Reindex Files >
-  │   ├── | History >
-  │   ├── | Dynamic Definitions - Syntax and Parameters >
-  │   ├── | File Naming >
-  │   ├── | Sublime Text Urtext Key Bindings >
-  │   │   ├── | Copy Links >
-  │   │   ├── | Content Insertion >
-  │   │   ├── | Navigation >
-  │   │   ├── | Traverse Modes >
-  │   │   └── | Changing Key Bindings >
   │   ├── | Syntax >
-  │   ├── | Sublime Text Interface Tips >
-  │   │   ├── | Full Screen / Distraction Free Mode >
-  │   │   ├── | Disable Prompts for File Reload >
-  │   │   │   └── | "always_prompt_for_file_reload": false, >
-  │   │   ├── | Save on Focus Lost >
-  │   │   │   └── | "save_on_focus_lost": true >
-  │   │   ├── | Remove Indent Guides >
-  │   │   │   └── | "draw_indent _guides": false, >
-  │   │   ├── | Syntax Highlighting >
-  │   │   ├── | Using a Sublime Project for an Urtext Project >
-  │   │   ├── | Hiding Tabs >
-  │   │   └── | Hiding Line Numbers >
-  │   │       └── | "line_numbers": false, >
-  │   ├── | Using Multiple Projects >
-  │   │   ├── | Cross-Project Linking >
-  │   │   └── | Project Naming (Identification) >
   │   ├── | The Node Browser >
   │   ├── | Using the Sublime Text Command Pallete with Urtext >
-  │   └── | Escaping and Embedding >
-  │       ├── | Plaintext >
-  │       ├── | HTML >
-  │       ├── | Python >
-  │       ├── | Generic >
-  │       └── | JSON >
-  │           └── | "title" : "example JSON ", >
+  │   ├── | Sublime Text Urtext Key Bindings ^ How To Use Urtext >
+  │   │   ├── | Navigation ^ Sublime Text Urtext Key Bindings >
+  │   │   ├── | Content Insertion ^ Sublime Text Urtext Key Bindings >
+  │   │   ├── | Copy Links ^ Sublime Text Urtext Key Bindings >
+  │   │   ├── | Traverse Modes ^ Sublime Text Urtext Key Bindings >
+  │   │   └── | Changing Key Bindings >
+  │   ├── | Sublime Text Interface Tips >
+  │   │   ├── | Syntax Highlighting >
+  │   │   ├── | Hiding Tabs >
+  │   │   ├── | Hiding Line Numbers >
+  │   │   ├── | Full Screen / Distraction Free Mode >
+  │   │   ├── | Disable Prompts for File Reload >
+  │   │   ├── | Remove Indent Guides >
+  │   │   ├── | Save on Focus Lost >
+  │   │   └── | Using a Sublime Project for an Urtext Project >
+  │   ├── | Dynamic Definitions - Syntax and Parameters >
+  │   ├── | Escaping and Embedding >
+  │   │   ├── | Generic >
+  │   │   ├── | HTML >
+  │   │   ├── | JSON >
+  │   │   ├── | Python >
+  │   │   └── | Plaintext >
+  │   ├── | File Naming >
+  │   ├── | Reindex Files >
+  │   ├── | History >
+  │   └── | Using Multiple Projects >
+  │       ├── | Project Naming (Identification) >
+  │       └── | Cross-Project Linking >
   └── | Urtext Reference - TODO >
 } 
 
-[[  ID(Table of Contents) +(id="Urtext") TREE(5) ]]
+[[  >(| Table of Contents >) +(id="Urtext") TREE(5) ]]
 
-tt::sadfsdafasdf;
+[[ FILE(export_test.txt) EXPORT(root=Urtext; -as_single_file) ]]
 
-{  Needs Functional Work _
-| To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use | - Add New Node ID: ctrl + shift + i > for this (as described above), after the rest of the proj >
+
+
+{ Needs Functional Work _
 } 
 
-{  Needs Check Against Functionality _
+{ Needs Check Against Functionality _
 | project_settings >
 }
 
-[[ ID(Needs Check Against Functionality) +(kw=needs_check_against_functionality)]]
-[[ ID(Needs Functional Work) +(kw=needs_functional_work) TREE()]]
+[[ >(Needs Check Against Functionality) +(kw=needs_check_against_functionality)]]
+[[ >(Needs Functional Work) +(kw=needs_functional_work) TREE()]]

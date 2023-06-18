@@ -7,7 +7,7 @@ Urtext Reference - SCRAPS _
 	Dynamic definitions can contain arbitrary text. The only parts read by the compiler are the function names with their parameters in parentheses. Like nodes, you can format/indent/comment these definitions any way you want.
 
 	This definition targets ID m1r, which appears immediately below: | Example: Nodes from the Documentation >.
-	ID(| Example: Nodes from the Documentation >) 
+	>(| Example: Nodes from the Documentation >) 
 
 	The asterisk means to include all nodes in the project. 
 	INCLUDE(*)
@@ -26,21 +26,11 @@ Urtext Reference - SCRAPS _
     
     Elaborate writing and reference systems such as wikis often linking nodes together in tangled and intricate ways. While Urtext cannot draw diagrams of this kind (called acyclic graphs) in plaintext, it can represent these relationships from the perspective of any one node: Position the cursor in the desired node and select "Urtext : Show Linked Relationships..." The currently selected node will be displayed as root; all nodes linking into this nodes, and recursively into those nodes, will be displayed above the root; all files linked from this node, and recursively from those nodes, will be displayed below. Circular references are represented up to one iteration.
 
-    These diagrams are displayed as Sublime "scratch" views, meaning they will never report as being dirty (unsaved). They are intended for one-time/temporary use and will not update when a node/file changes. To make permanent and dynamically updated diagrams, see |  ?  >e82.
+    These diagrams are displayed as Sublime "scratch" views, meaning they will never report as being dirty (unsaved). They are intended for one-time/temporary use and will not update when a node/file changes. To make permanent and dynamically updated diagrams, see |? ? >e82.
 
     
 }
 
-
-{ Cheatsheet _
-
-| Syntax >>
-
-}
-(not yet exporting)
-[[ FILE(cheatsheat.md)
-	MARKDOWN(root="Basic Syntax"; -as_single_file)
- ]]
 
 
 <Tue., Sep. 28, 2021, 02:32 PM> }

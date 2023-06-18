@@ -14,29 +14,16 @@ Installation and Setup in Sublime Text _
 
 {  Installation _
 
-    
     - Install Sublime Text: https://www.sublimetext.com/ 
 
     - The Sublime Urtext package is available on Sublime Package Control: Press ⌘/Ctrl + ⇧ + P to open the command palette. Type Install Package and press Enter. Then search for Urtext. Alternative, clone/download Sublime Urtext ( https://github.com/nbeversl/urtext_sublime ) and place it in your `Packages` folder.
-
-    - Urtext is now ready to use.
         
-	 }  
+	}  
 
 
 { Getting Started, Using Either the Demo or Reference Documentation _
 
-    At this point, clone this repository and open either of its subfolders in Sublime Text:
-
-    {  Urtext Demo Project _ 
-
-        This walks you through using Urtext through friendly, progressive steps.
-        
-        After opening this folder (or any file in it) in Sublime Text, position the cursor on this linke below and press Ctrl-Shift-/ which will take you to the start page:
-
-        =>"Sample Project"| Home Node >    
-         
-         } 
+    At this point, clone this repository and open either of its subfolders in Sublime Text.
 
     { Reference Documentation _ 
 
@@ -45,7 +32,7 @@ Installation and Setup in Sublime Text _
             * Scroll to the bottom and you'll find this node (this very text you are reading) at the end of the file.
             * Click on the link below to browse the reference:
 
-            | Urtext: Reference Documentation >
+            |? Urtext: Reference Documentation >
     } 
 
 }

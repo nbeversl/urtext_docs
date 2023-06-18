@@ -67,14 +67,7 @@ Urtext Reference _
 
     {   Duplicate Node Titles _ 
 
-        If two nodes end up with the same title, only one will be assigned the title. Additional files containing nodes with the same title will show a warning message. See |  ?  >
-
-        { 
-            To correct the problem, it is necessary to manually change the duplicate ID to a new one. To ensure the corrected node ID is unique, it is recommended to use | - Add New Node ID: ctrl + shift + i > for this (as described above), after the rest of the project is compiled.
-            
-            #needs_functional_work
-
-        }
+        If two nodes end up with the same title, only one will be assigned the title. Additional files containing nodes with the same title will show a warning message. See |? ? >
 
     }
 }
@@ -119,7 +112,7 @@ Urtext Reference _
                 <May 1946>
                 <1066>
 
-          Press | - Insert Timestamp: ctrl + shift + t > to insert the current date and time anywhere. The format of the resulting timestamp can be changed in | project_settings > using the |  timestamp_format > key.
+          Press | - Insert Timestamp: ctrl + shift + t > to insert the current date and time anywhere. The format of the resulting timestamp can be changed in | project_settings > using the |? timestamp_format > key.
 
           Timestamps may also be used anywhere, without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the system keyname `inline-timestamp`. Like all metadata, they remember their position and may function doubly as anchors/bookmarks. }
 
