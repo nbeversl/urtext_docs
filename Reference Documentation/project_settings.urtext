@@ -1,122 +1,106 @@
 project_settings _
 
-	always_oneline_meta::False
-		When creating a new node, sets whether the metadata will appear on one line separated by semicolon,	or on separate lines.
+Any node with the title "project_settings" provides special metadata keys that affect your project globally. The "project_settings" node is optional. To create one, make a node and title it "project_settings". (The other text content of the node does not matter.) You can have more than one "project_settings" nodes.
 
-	breadcrumb_key::
-		When popping nodes, optionally adds a breadcrumb showing which node the popped node was popped from, and the timestamp.
+always_oneline_meta::False
+	When creating a new node, sets whether the metadata will appear on one line separated by semicolon,	or on separate lines.
 
-	case_sensitive::title - notes - comments - project_title - timezone - timestamp_format - filenames - weblink - timestamp
-		Specifies which keys' contents should be parsed case-sensitive.
+breadcrumb_key::
+	When popping nodes, optionally adds a breadcrumb showing which node the popped node was popped from, and the timestamp.
 
-	console_log::True
-		(True or False): Sets whether Urtext will log updates, errors, messages to Sublime's Python console.
-		(Press Control-tilde(~)  to open the console)
+case_sensitive::title - notes - comments
+	Specifies which keys' contents should be parsed case-sensitive.
 
-	contents_strip_internal_whitespace::True
-		When including contents in dynamic nodes, determines whether internal multiline whitespace gets stripped from the dynamic output.
+console_log::True
+	(True or False): Sets whether Urtext will log updates, errors, messages to Sublime's Python console.
+	(Press Control-tilde(~)  to open the console)
 
-	contents_strip_outer_whitespace::True
-		When including contents in dynamic nodes, determines whether leading or trailing whitespace gets stripped from the dynamic output.
+contents_strip_internal_whitespace::True
+	When including contents in dynamic nodes, determines whether internal multiline whitespace gets stripped from the dynamic output.
 
-	exclude_files::
-		Sets filenames in the project folder to be excluded from the project, if any.
+contents_strip_outer_whitespace::True
+	When including contents in dynamic nodes, determines whether leading or trailing whitespace gets stripped from the dynamic output.
 
-	exclude_from_star::title - _newest_timestamp - _oldest_timestamp - _breadcrumb - def
-		When marking metadata using the * and ** syntax, these keys will get omitted, if present.
+exclude_files::
+	Sets filenames in the project folder to be excluded from the project, if any.
 
-	filename_title_length::100
-		Sets a maximum title length (in characters) when using | Reindex Files >
+exclude_from_star::title - _newest_timestamp - _oldest_timestamp - _breadcrumb - def
+	When marking metadata using the * and ** syntax, these keys will get omitted, if present.
 
-	filenames::INDEX - title
-		Specifies format for filenames when using | Reindex Files > and 
-		Any metadata key used in the project is valid, in addition to the PREFIX placeholder, which will apply a numerical prefix to the outputted filename.
+filename_title_length::100
+	Sets a maximum title length (in characters) when using | Reindex Files >
 
-	filename_datestamp_format::%m-%d-%Y
-		Specifies how dates will be formatted in filenames when using 
+filenames::INDEX - title
+	Specifies format for filenames when using | Reindex Files > and 
+	Any metadata key used in the project is valid, in addition to the PREFIX placeholder, which will apply a numerical prefix to the outputted filename.
 
-	file_index_sort::index - _oldest_timestamp
-		When using Reindex Files with an index prefix, specifies the order in which the files should be indexed. For more information | Reindex Files >
+filename_datestamp_format::%m-%d-%Y
+	Specifies how dates will be formatted in filenames when using 
 
-	hash_key::kw
-		The keyname to use for the hash mark metadata shortcut. See | Hash Key >
+file_index_sort::index - _oldest_timestamp
+	When using Reindex Files with an index prefix, specifies the order in which the files should be indexed. For more information | Reindex Files >
 
-	history_interval::10
-		Sets the interval (in seconds) at which history snapshots should be taken of your views. Increase the interval to have smaller .diff files in your /history folder. Decrease it to have more granular edit history.
+hash_key::kw
+	The keyname to use for the hash mark metadata shortcut. See | Hash Key >
 
-	home::Urtext : Reference Documentation
-		Identifies the home node for the project, connected to the "Home" key
-		For example, Press Ctrl-Shift-H to go to the Home node of this documentation, whose ID is 013
+history_interval::10
+	Sets the interval (in seconds) at which history snapshots should be taken of your views. Increase the interval to have smaller .diff files in your /history folder. Decrease it to have more granular edit history.
 
-	open_with_system::pdf 
-		File extensions to always open using the default system application.
+home::Urtext Starter Project
+	Identifies the home node for the project, connected to the "Home" key
+	For example, Press Ctrl-Shift-H to go to the Home node of this documentation, whose ID is 013
 
-	new_file_node_format::$cursor
-		Specifies the default format for new file nodes. The following values can be string together in any way:
-			$timestamp
-			$device_keyname
-			$cursor - where to position the cursor
-			any other Unicode characters are valid — arbitrary text, newlines (\r), etc.
+open_with_system::pdf 
+	File extensions to always open using the default system application.
 
-	new_bracket_node_format::$cursor $timestamp
-		As for `new_file_node_format`, only applies to new bracket nodes.
-
-	node_browser_sort::index - oldest_timestamp
-		Specifies the key order by which nodes will sort in the Node Browser dropdown
-
-	node_date_keyname::timestamp
-		When creating a new node, if the node gets a timestamp key, this sets the keyname.
-
-	numerical_keys::_index - index
-		Sets keys that should always be interpreted numerically for sorting and processing in dynamic output.
-
-	project_title::Reference Documentation
-		Provides a title for the entire project
-
-	tag_other::
-		Accepts two values which will be interpreted as key/value.
-		When quick-tagging a node from another (see | - Quick Tag from Other: ctrl + shift + 0 >), this metadata entry will be the 
-		one added.
-
-	timestamp_format::%a., %b. %d, %Y, %I:%M %p
-		Set the format of the timestamp when using | - Insert Timestamp: ctrl + shift + t >
-		This accepts a Python `strftime` directive. For possible format strings, see https://strftime.org/
-
-	timezone::US/Eastern
-		Specifices a timezone to which the timestamp keys should be localized, or, if including a timezone in the `timestamp_format`, what timezone to include.
-
-	title::project_settings
-		Title reserved key is used here to specificy this node as containing project_settings.
-
-	use_timestamp::updated - timestamp - inline-timestamp - _oldest_timestamp - _newest_timestamp
-		Specifies keys for which the timestamp component should be used instead of the text value.
-
-	inline_node_timestamp::True	
-	Specifies whether a new bracket node gets a timestamp.
-
-	file_node_timestamp::True
-
-	filename_title_length::100
-	Sets a maximum title length (in characters) when using Reindex Files
-
-	file_index_sort::index - _oldest_timestamp
-	When using Reindex Files with an prefix, specifies the order in which the files should be prefixed. For more information see "Reindex Files" in the Urtext Reference.
-
-	new_file_line_pos::2
-
-	new_file_node_format::$timestamp $cursor
-	Spcifies the default format for new file nodes. The following values can be string together in any way:
+new_file_node_format::$cursor
+	Specifies the default format for new file nodes. The following values can be string together in any way:
 		$timestamp
 		$device_keyname
 		$cursor - where to position the cursor
+		any other Unicode characters are valid — arbitrary text, newlines (\r), etc.
 
-	tag_other::
-	Accepts two values which will be interpreted as key/value.
-	When quick-tagging a node from another (see "Quick Tagging" in the Urtext Reference), this metadata entry will be the 
-	one added.
+new_bracket_node_format::$cursor $timestamp
+	As for `new_file_node_format`, only applies to new bracket nodes.
 
-	timestamp_format::%a., %b. %d, %Y, %I:%M %p %Z
-	Set the format of the timestamp when using Timestamps.
+node_browser_sort::index - oldest_timestamp
+	Specifies the key order by which nodes will sort in the Node Browser dropdown
+
+node_date_keyname::timestamp
+	When creating a new node, if the node gets a timestamp key, this sets the keyname.
+
+numerical_keys::_index - index
+	Sets keys that should always be interpreted numerically for sorting and processing in dynamic output.
+
+project_title::Starter Project
+	Provides a title for the entire project
+
+timestamp_format::%a., %b. %d, %Y, %I:%M %p
+	Set the format of the timestamp when using | Insert Timestamp: ctrl + shift + t >
 	This accepts a Python `strftime` directive. For possible format strings, see https://strftime.org/
+
+timezone::US/Eastern
+	Specifices a timezone to which the timestamp keys should be localized, or, if including a timezone in the `timestamp_format`, what timezone to include.
+
+use_timestamp::
+	Specifies keys for which the timestamp should be used as output instead of the text or numeric value.
+
+file_node_timestamp::True
+
+filename_title_length::100
+	Sets a maximum title length (in characters) when using Reindex Files
+
+file_index_sort::index - _oldest_timestamp
+	When using Reindex Files with an prefix, specifies the order in which the files should be prefixed. For more information see "Reindex Files" in the Urtext Reference.
+
+new_file_line_pos::2
+
+new_file_node_format::$timestamp $cursor
+	Spcifies the default format for new file nodes. The following values can be string together in any way:
+	$timestamp
+	$device_keyname
+	$cursor - where to position the cursor
+
+timestamp_format::%a., %b. %d, %Y, %I:%M %p %Z
+	Set the format of the timestamp when using Timestamps. This accepts a Python `strftime` directive. For possible format strings, see https://strftime.org/
  
- kw::needs_check_against_functionality

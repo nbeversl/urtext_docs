@@ -6,8 +6,8 @@ Urtext Reference - SCRAPS _
 [[ 		
 	Dynamic definitions can contain arbitrary text. The only parts read by the compiler are the function names with their parameters in parentheses. Like nodes, you can format/indent/comment these definitions any way you want.
 
-	This definition targets ID m1r, which appears immediately below: | Example: Nodes from the Documentation >.
-	>(| Example: Nodes from the Documentation >) 
+	This definition targets ID m1r, which appears immediately below: |? Example: Nodes from the Documentation >.
+	>(|? Example: Nodes from the Documentation >) 
 
 	The asterisk means to include all nodes in the project. 
 	INCLUDE(*)
@@ -49,7 +49,7 @@ This binds the definition to a specific piece of text, rather than to the output
 
 { Compact Nodes _
 
-Key: | - Insert Bullet Node: ctrl + shift + 6 >
+Key: | Insert Bullet Node: ctrl + shift + 6 >
 
 For text content requiring only a single line, such as list items, very short notes and similar, use the bullet character (`•`) as the first non-whitesoace character on a new line. This defines a new node as a child of the node in which the • character appears, with the closing wrapper being the end of the same line. 
 

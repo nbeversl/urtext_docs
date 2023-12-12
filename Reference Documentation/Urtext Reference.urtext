@@ -1,335 +1,63 @@
-Urtext Reference _
+Nodes _
 
-{ Nodes _
-
-
-    Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is a "project". A node is region, or set of regions, of a file, up to and including the entire file.  A file is itself a node, and nodes can contain other nodes. Think of a node being a "linked note with metadata."
-
-}
+Urtext's basic unit is a "node", which is a range or set of ranges of text in a file up to and including the entire file. A file is itself a node. Nodes can contain other nodes nested arbitrarily.
 
 { Node Titles _
 
-    By default, the full first non-whitespace line of any node is the node's title and unique identifier. This can be overridden using the "title" metadata key or by following the desired text with the underscore (`_`) character as used in this document. 
+    By default, the full first non-whitespace line of any node is the node's title and unique identifier. This can be overridden using the "title" metadata key or by following the desired text with a single space and the the underscore character (` _`) as used in this node. 
 }
-
 
 { Types of Nodes _
 
-
-     { File Nodes _
+    { File Nodes _
      
-        The most basic node is a single file. It may or may not contain other nodes nested inside it.
+        A single file is a node. It may contain other nodes nested inside it or not.
 
-        To create a new file-level node: | - New Node: ctrl + shift + ; >. A new file is created and named automatically. It contains a single node title and (by default) a creation timestamp.  }
+        To create a new file-level node, use the key binding | New Node: ctrl + shift + ; >. A new file is created and named automatically. It contains a single node title and (by default) a creation timestamp. 
+
+    }
+
+    { Bracket Nodes _ 
+     
+        Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another bracket node. For all purposes in Urtext, bracket nodes' identities are unique from their containing files, parent nodes, and child nodes.
+
+        The syntax for bracket nodes is to wrap the content in curly braces:
+
+            { Example Bracket Node _ Some more text content ...}
+
+        Create a new bracket node with | Insert Bracket Node: ctrl + shift + Left-Bracket >. Inside the inserted double curly braces is a new node with an auto-generated ID.   
+
+        To wrap existing content into an bracket node, first select the content and use the same key.
+
+        When syntax highlighting is active, bracket node wrappers are tinted to showing nesting level:
+            
+            { One node
+                { another node
+                    { yet another node }
+                }
+            }     
+
+        Note that every opening curly bracket must be closed in the same file. File nodes (| File Nodes >) do not use curly-braces, as their region boundaries are the file itself.
+      }  
 
 
     { Bullet Nodes  _
 
-        For nodes that can fit on a single line, such as items in a list, short phrases, word definitions, and so on, you can use a simplified node syntax. Begin the line with the caret symbol (^); the closing wrapper then becomes the next newline (the end of the same line). Like other nodes:
+        For nodes that can fit on a single line, such as items in a list, short phrases, word definitions, and so on, begin the line with the caret symbol (•). The closing wrapper is the next newline (the end of the same line). In Sublime Text, the key binding to make a bullet node is | Insert Bullet Node: ctrl + shift + 6 >
 
-
-        • require an id 
-        • can have arbitrary other metadata 
-        • become child nodes of their containing node. 
-        }
-
-    { Bracket Nodes _ 
-     
-
-        Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another bracket node. For all purposes in Urtext, bracket nodes' identities are unique from their containing files, parent nodes, and child nodes.   
-
-        The syntax for bracket nodes is to wrap the content in curly braces:
-
-                { Example Bracket Node _ }
-
-
-        Create an bracket nodes with | - Insert Bracket Node, Minimal: ctrl + shift + Left-Bracket >. Inside the inserted double curly braces is a new node with an auto-generated ID.   
-
-        To wrap existing content into an bracket node, first select the content and use the same keypress.
-
-        When syntax highlighting is active, bracket node wrappers are tinted to showing nesting level:
-            
-            
-            PROBLEM - Insert Nested Brackets
-
-            A screenshot can be seen here: f>./files/node-nesting-example.png
-            
-
-        Note that every opening curly bracket must be closed in the same file. Every node requires an ID between its opening and closing brackets. Nodes at the file level (| File Nodes >) do not use curly-braces, as their region boundaries are the file itself.
-
-          Escaping Curly Brackets _
-
-            If you need to use curly brackets in your text, escape the Urtext syntax by preceding the bracket with a backward slash (`\`); this will prevent them from being parsed.
-
-            To ignore syntax elements more globally, and/or to embed other syntaxes that use Urtext characters, such as JSON, PHP, and JavaScript, see | Escaping and Embedding >
-      }  
-
-
-    {   Duplicate Node Titles _ 
-
-        If two nodes end up with the same title, only one will be assigned the title. Additional files containing nodes with the same title will show a warning message. See |? ? >
-
+        Like other nodes, bullet nodes can have metadata and are child nodes of their containing node. 
     }
-}
-
-{ Projects, Structure and Compiling _
-
-    A project is a collection of files in a folder containing Urtext nodes. An Urtext project is a single folder.
-
-    Urtext does not depend on organization of files at the filesystem level and has no subfolder organization scheme. All project files are kept in a single folder. Organization of files, file groups, and file relationships is done entirely within the system. This makes it easy to sync and use across devices and platforms where file and folder paths may not always resolve uniformly, and it avoids broken file paths from moved/renamed/reorganized files.
-
-    To make an new empty project, select "Urtext : New Project" from the Sublime Command Palette. Sublime will ask for a folder location and a new project will be created in the specified location.
-
-    Filenaming is arbitrary but can be automated. 
-}
-
-{ Metadata  _
-
-
-    { Metadata Syntax _
-
-      Every node can have unlimited metadata. Metadata is assigned using double-colon-separated key/value(s) pairs, with the value(s) (to the right of the colon) containing an optional timestamp. Examples:
-
-            purpose::This node describes Metadata in Urtext <Thu., Dec. 15, 2022, 12:50 PM>
-            audience::Urtext user
-
-      Nodes can be searched and sorted by their metadata using | Dynamic Definitions >. Metadata entries "remember" their location, allowing them to double as contextual bookmarks. 
-
-      Other than a few reserved key/value pairs, metadata is user-defined. Keys must be single words, though characters such as dash and underscore are allowed. Values may include spaces. Terminate metadata entries using either a new line or a semicolon. Using the semicolon option, several entries may be strung together on a single line:
-
-          one_key::some value; another_key::some_other_value <Thu., Sep. 10, 2020, 05:37 PM>;
-          
-      Note that a timestamp anywhere in the value will be indexed as the timestamp for the whole metadata entry. If more than on timestamp appears in an entry, only the first one is indexed. }
-      
-    { Timestamps _                                                                 
-
-      {   Timestamp Syntax _
-
-          Text between two angled brackets (`< >`) is parsed as a timestamp whenever the first character inside the brackets is not `!`, `-` or whitespace. Urtext utilizes the Python `dateutil` module to loosely parse dates in almost any format. For instance, all of the following are valid:
-
-                <Fri., Oct. 09, 2020, 09:59 AM>
-                <February 23, 1848>
-                <May 1946>
-                <1066>
-
-          Press | - Insert Timestamp: ctrl + shift + t > to insert the current date and time anywhere. The format of the resulting timestamp can be changed in | project_settings > using the |? timestamp_format > key.
-
-          Timestamps may also be used anywhere, without a keyname; "inline" timestamps that are not part of a keyed metadata entry are auto-assigned the system keyname `inline-timestamp`. Like all metadata, they remember their position and may function doubly as anchors/bookmarks. }
-
-      {   Tracking Node Dates and Times _
-
-          Reliance on the operating system's "created" or "modified" file date metadata is avoided, since these can be inadvertently overwritten during ordinary file system operations. Instead, new file-level nodes receive a "timestamp" metadata key by default when created.
-           The default format can be changed using the timestamp_format in | project_settings >. }
-        
-      {   Time Zones _
-
-          Time zones are not required. If no time zone is present, Coordinated Universal Time (UTC) is added by default for parsing/comparison purposes. To modify this default, set the timezone key in | project_settings >. }   
-
-      }
-
-    {  Case-sensitivity _
-
-        For comparison, filtering, and sorting purposes, metadata values are not case-sensitive. }
-
-     { Reserved Key : title _
-
-        There is only one reserved key is Urtext:
-        `title` overrides the node title, which is by default the full first non-whitespace line. 
-
-        `_newest_timestamp`
-
-        `_oldest_timestamp`
-         
-      }
-
-      { Hash Key _
-
-          If you use one keyword a lot and want a shortcut to use the "hashtag" instead of the keyname, set the `hash_key` value in your project_settings to the keyname.
-          See | project_settings > 
-
-      }
-
-      { Tag nodes and descendents _
-
-        The * character assigns metadata to childen and descendants of nodes:
-
-        To assign the metadata to all children (but not the node containing the metadata):
-        *key::value
-
-        To include also the node containing the metadata:
-        +*key::value
-
-        To assign the metadata to all descendants (but not the node containing the metadata):
-        **key::value
-
-        To include also the node containing the metadata:
-        +**key::value
-      }
-}
-
-
-{ Links and Pointers _
-
-    { Links _ 
-
-        To make a link from one node to another, use the pipe and a space (`| `) followed immediately by a node title, followed by a space and the right angle bracket (` >`). Linking does not require a filename or any other information, only the node title. Any other surrounding text is ignored.
-
-        {  Sublime Text tools to help with linking _
-        
-            Two Sublime Command Palette commands can make linking quick and easy:
-         
-            Urtext : Link To ...
-                Links from the currently viewed node to another node which you can select in the selection panel. When you select a node in the quick panel, a link to that node will be inserted at the cursor.
-     
-            Urtext: Link From ...
-                Links TO the current node FROM another node. When you select this command, a link to the current node will be copied to the clipboard. You can then paste the reference into the node you open in the quick panel.
-        } 
-    }
-
-    { Dynamic Titles _
-
-        Whenever the title of a node is edited/changed, Urtext will attempt to update all links to that node to the new title. In some cases, manually updating may be required. 
-     }
-
-    { Following Urtext Links _ 
-        
-        { Sublime
-        
-            Pressing | - Open Urtext Link:  ctrl + shift + / > on a line containing a link to open the node with the linked title. If the link is to an inline node, Sublime will scroll to and center its starting point. 
-            }
     
-    }
 
-    { Linking to Files and Internet Links _
+    {   Node Titles vs. Node IDs _ 
 
-        { Link to Web/HTTP(S) _
-
-                HTTP(S) links are recognized automatically and will open in the default browser.    
-                Example: pressing | - Open Urtext Link:  ctrl + shift + / > on this line will open the link: http://github.com/nbeversl/urtext
-        }
-
-
-        { Link to Files _
-                
-                Links to files can be made by writing `f>`, followed immediately with a file path relative to the folder of the project:
-                Example: f>README.md
-        } 
-    }
-}
-
-{ Dynamic Definitions _
-
-    Nodes with dynamically updated content are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets [[ ]]. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference | Dynamic Definitions - Syntax and Parameters >.
-
-    Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
-
-    The key | - Insert Dynamic Definition and Node: ctrl + shift + Right-Bracket > creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. 
-
-    You can also write a definition manually, providing the title of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's title. If you want it to populate new inline node, create that node and then copy/paste its title. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.   
-
-    | Dynamic Definitions - Syntax and Parameters >
-
-    }
-
-
-
-
-{ Traverse Mode  _
-
-
-    You can navigate a node tree or list of nodes by turning on Traverse mode (Shift-Ctrl-R). This will open another pane next to the one you are currently in. As you navigate the nodeview in the left side with the cursor or mouse, the selected node shows on the right. Use Sublime's Focus Group navigation keys, or the mouse, to switch between left and right panes.
-    
-    Toggle Traverse Mode off by pressing Shift-Ctrl-R again. The status bar at the bottom of the Sublime window indicates whether Traverse is on or off. 
-
-    Note that if Traverse mode is off, you can also open a link manually (Shift-Ctrl-/) as normal. 
-
-    This feature is not built into Urtext; it is a feature of the Sublime package only.
-
-    { Word Wrap in Traverse Mode _
-
-        Since Traverse Mode splits the window into two or more panes, it is suggested to set Word Wrap Column to "Auto" in Sublime Settings. This will cause the edited views to wrap correctly no matter the screen or window/pane size, as well as in Sublime's Distraction Free Mode.
-
-        Whenever Traverse Mode is enabled on a view, word wrap for that view is turned off altogether to prevent awkward wrapping of trees. It is restored when Traverse Mode is turned off.  }
-}
-
-{ Pulling and Popping Nodes _
-    
-    Bracketed nodes can be "popped" out to separate file-level nodes and pulled back in again, either to the same node or to another one. 
-
-    To pop a node, position the cursor inside the node to pop and select "Urtext : Pop Node" from the command palette or press Shift-Ctrl-Super-(right-arrow). The node will be moved to a separate file and replaced with a link to itself.
-
-    To pull a node, make (or choose an existing) a link or pointer and position the cursor on it. Select "Urtext : Pull Node" from the command palette or press Shift-Ctrl-Super-(left-arrow).
-
- }
-
-
-{ Project Settings _
-
-    Below is a pointer to the `project_settings` node for this documentation project. In its metadata for this node you can specify settings for the project.
-
-    The `project_settings` node is optional. To create one, make a node and use metadata to give it the title `project_settings`, as this node has. (The other text content of the node does not matter.)
-
-    | project_settings >>
-
-} 
-
-{ Exporting _
-
-    Urtext can export to plaintext, Markdown and HTML. Output can be written to a file or back into another node in the project. Exporting is dynamic; when changes are made to the source files, exports are immediately updated.
-
-
-    { Example : Fragment Exported to HTML _
-
-        The following Dynamic Definition is identical to the above, except it exports to HTML.   
 
     }
 }
 
-{ Sublime Text Urtext Key Bindings  _
-
-	Below are the default key bindings for Sublime Urtext commands, separated into bracket nodes for display in this reference node. 
-
-	{ Navigation _
-
-        { - Open Urtext Link:  ctrl + shift + / }
-        { - Navigate Forward: ctrl + shift + . }
-        { - Navigate Backward: ctrl + shift + , }
-        { - Home Node: ctrl + shift + h }
-        { - Open Random Node: ctrl + shift + f }
-        { - Node Browser: ctrl + shift + e }
-        { - Node Browser, All Projects: ctrl + shift + * }
-        { - Node Browser, Forward Links: ctrl + shift + right }
-        { - Node Browser, Backlinks: ctrl + shift + left }
-        { - List Projects: ctrl + shift + o }
-        { - Keyword Browser: ctrl + shift + x }
-        { - Metadata Browser: ctrl + shift + m }
-        { - Browse Associated Nodes: ctrl + shift + space }
-				
-	 } 
-
-	{ Content Insertion _
-
-        { - New Node: ctrl + shift + ; }
-        { - Insert Timestamp: ctrl + shift + t }
-        { - Insert Bracket Node with Timestamp:	ctrl + shift + 1 }
-        { - Insert Bracket Node Wrapper: ctrl + shift + 2 }
-        { - Insert Bracket Node, Minimal: ctrl + shift + Left-Bracket }
-        { - Insert Dynamic Definition and Node: ctrl + shift + Right-Bracket }
-        { - Insert Bullet Node: ctrl + shift + 6 }
-        { - Insert Link to Existing Node: ctrl + shift + l }
-        { - Insert Link to New Node: ctrl + shift + ' }
-        { - Quick Tag from Other: ctrl + shift + 0 }
-	  }
-
-	{ Copy Links _
-
-        { - Copy Link to Node: ctrl + shift + c }
-        { - Copy Link to Node With Project: ctrl + shift + super + c }
-	  }
-
-	{ Traverse Modes _
-
-        { - Toggle Traverse Broswer: ctrl + shift + r }
-        { - Toggle Traverse History: ctrl + shift + g }
-	 }
-}
+| Projects, Structure and Compiling >>
+| Metadata >>
+| Dynamic Definitions >>
+| Traverse Mode >>
+| Pulling and Popping Nodes >>
+| Sublime Text Urtext Key Bindings >>
