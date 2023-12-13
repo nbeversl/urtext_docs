@@ -1,0 +1,47 @@
+Nodes _
+Urtext's basic unit is a "node", which is a range or set of ranges of text in a file up to and including the entire file. A file is itself a node. Nodes can contain other nodes nested arbitrarily.
+
+    { Types of Nodes _
+
+        { File Nodes _
+          A single file is a node. It may contain other nodes nested inside it or not.
+          To create a new file-level node, use the key binding | New Node: ctrl + shift + ; >. A new file is created and named automatically. It contains a single node title and (by default) a creation timestamp.
+        }
+
+        {  Bracket Nodes _
+           Nodes can be nested arbitrarily deep inside other nodes, whether the parent node is a file or another bracket node. For all purposes in Urtext, bracket nodes' identities are unique from their containing files, parent nodes, and child nodes.
+           The syntax for bracket nodes is to wrap the content in curly braces:
+
+            { Example Bracket Node _ Some more text content ...}
+           Create a new bracket node with | Insert Bracket Node: ctrl + shift + Left-Bracket >. Inside the inserted double curly braces is a new node with an auto-generated ID.
+           To wrap existing content into an bracket node, first select the content and use the same key.
+           When syntax highlighting is active, bracket node wrappers are tinted to showing nesting level:
+
+            { One node
+
+                { another node
+
+                    { yet another node }
+                }
+            }
+           Note that every opening curly bracket must be closed in the same file. File nodes (| File Nodes >) do not use curly-braces, as their region boundaries are the file itself.
+        }
+
+        { Bullet Nodes  _
+          For nodes that can fit on a single line, such as items in a list, short phrases, word definitions, and so on, begin the line with the caret symbol (•). The closing wrapper is the next newline (the end of the same line). In Sublime Text, the key binding to make a bullet node is | Insert Bullet Node: ctrl + shift + 6 >
+          Like other nodes, bullet nodes can have metadata and are child nodes of their containing node.
+        }
+
+        { Node Titles _
+          By default, the full first non-whitespace line of any node is the node's title and unique identifier. This can be overridden using the "title" metadata key or by following the desired text with a single space and the the underscore character (` _`) as used in this node.
+        }
+
+        {   Node Titles vs. Node IDs _
+        }
+    }
+| Projects, Structure and Compiling >>
+| Metadata >>
+| Dynamic Definitions >>
+| Traverse Mode >>
+| Pulling and Popping Nodes >>
+| Sublime Text Urtext Key Bindings >>

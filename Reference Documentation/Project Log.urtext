@@ -1,0 +1,19 @@
+ Project Log _
+
+This dynamic node demonstrates the use of the LOG directive, which outputs any messages from parsing your files.
+
+in file |/ /Users/nathanielbeversluis/Documents/Urtext All Aspects/urtext_docs/Reference Documentation/project_settings.urtext > 
+Extension in file |/ /Users/nathanielbeversluis/Documents/Urtext All Aspects/extensions_active/lint/sublime_urtext_lint.py > encountered the following error: 
+Parent module '' not loaded, cannot perform relative import
+
+in file |/ /Users/nathanielbeversluis/Documents/Urtext All Aspects/urtext_docs/Reference Documentation/Urtext Reference - SCRAPS.urtext > Dynamic node definition in | Lists >
+points to nonexistent node |? Example: Nodes from the Documentation >
+
+
+[[
+>(@self)
+LOG()
+HEADER(
+\nThis dynamic node demonstrates the use of the LOG directive, which outputs any messages from parsing your files.\n\n
+)
+]]

@@ -1,0 +1,11 @@
+Dynamic Definitions _
+
+    Nodes with dynamically updated content are created using a Dynamic Definition. Dynamic Definitions are specified with double square brackets [[ ]]. Dynamic definitions can query, sort, filter, and format the output of nodes in a variety of ways, making them adaptable to many purposes. This section illustrates some example uses of dynamic nodes. It will be helpful to reference | Dynamic Definitions - Syntax and Parameters >.
+
+    Dynamic Definitions can be written anywhere; it is not necessary to store the definition in the same file to which it refers. (Note that they cannot, however, be stored in the node they target, since they would overwrite themselves.)
+
+    The key | Insert Dynamic Definition and Node: ctrl + shift + Right-Bracket > creates a new dynamic definition in Sublime, auto-populated with a corresponding empty inline node. 
+
+    You can also write a definition manually, providing the title of an existing node. For example, if you want the contents to replace an existing node, assign this key the value of that node's title. If you want it to populate new inline node, create that node and then copy/paste its title. Note that Dynamic Definitions do not create their target nodes automatically ; the target node must exist, or the definition will have no effect.   
+
+    | Dynamic Definitions - Syntax and Parameters >Tue., Dec. 12, 2023, 04:28 AM  

@@ -1,0 +1,55 @@
+Escaping and Embedding _
+ 
+	Urtext allows embedded syntaxes and pass markers to escape sections of text from both Urtext parsing and Sublime Text syntax highlighting. Note that no text content wrapped between pass markers will appear in Urtext dynamic output, since characters in other syntaxes would have unpredictable interactions.
+
+
+	{  Generic 
+		
+		`Similar to its use in in Markdown, the backtick designates code, plaintext, or preformatted text that should be escaped/ignored.` }
+
+	For larger regions of text, or to embed other syntaxes, us the following:
+
+
+	{ HTML
+
+		%%HTML
+
+			<div class="example">
+				Example HTML
+			</div>
+
+		%%
+	   }
+
+
+	{ JSON
+
+		%%JSON
+
+			{ 	"title" : "example JSON ",
+				"example" : [], 
+			}
+
+		%%
+	}
+
+	{ Python
+
+		%%Python
+		
+		# Example
+		def times_ten(i):
+			return i*10
+
+		%%   
+	}
+
+
+	{ Plaintext
+
+		%%PLAINTEXT
+
+			This text will get no syntax highlighting.
+
+		%%
+		}Tue., Dec. 12, 2023, 04:20 AM  
