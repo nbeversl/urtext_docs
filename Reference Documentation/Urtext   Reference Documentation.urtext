@@ -2,31 +2,25 @@ Urtext Starter Project _
 
 Welcome! Urtext (pronounced /ˈʊrtekst/) is a text framework for writing and information management.
 
-This starter project is written for use in Sublime Text.
+This starter project is written to use in Sublime Text. It demonstrates basic Urtext features using with some typical use examples to get you going. Feel free to modify this starter project, add content, delete or modify parts you don't need, and turn it into a project for your own use.
 
-Urtext combines content, structure and instructions all together into plain text files with the extension `.urtext`, like this one. There is no additional code or markup "behind" the visible syntax. Everything the interpreter reads is visible to the author/user.
+To follow any link, press ctrl + shift + / with the on the line containing the link. Try it: | Open Urtext Link: ctrl + shift + / > 
 
-To get back to this home node at any time, press ctrl - shift - h (| Home Node: ctrl + shift + h >)
+To return to this home node at any time, press the hotkey | Home Node: ctrl + shift + h >. All hotkeys in Sublime text are listed in | Sublime Text Urtext Key Bindings >
 
-Commands can be accecesed through the Sublime Text Command Pallete, Command-Shift-P. To see all the Urtext commands, type "Urtext" to reduce the list to matching commands. Key bindings are shown at the far right of each entry.
-
-
+Urtext combines content, structure and instructions all together into plain text files with the extension `.urtext`. No additional code or markup is "behind" the visible text. Everything the interpreter reads is visible to the author/user.
 
 { Basic Topics _ 
-  
-  Everything in Urtext is linkable. Links begin with a pipe (`|`) and end with a right angle bracket (`>`), as in the examples below. Open a link by pressing ctrl + shift + / when the cursor is on a line containing a link. (Try it: | Open Urtext Link: ctrl + shift + / >) If the link is to an inline node, Sublime will scroll to, center its starting point, and briefly highlight it. To open a link with the mouse, place the pointer on a link and ctrl - shift - click.
-
-  More about | Links and Pointers >>
-
 
   The basic unit of text is not a file but a node. | Nodes >>
-  Urtext has a minimal Syntax | Syntax >>
+  Urtext has a syntax | Urtext Syntax >>
 
-  There is no need to manually create, name, or keep track of files. New files are made automatically.
-  | File Naming >>
+  Everything in Urtext is linkable. If the link is to a bracket node, Sublime will scroll to it, center its starting point, and briefly highlight it. To open a link with the mouse, place the pointer on a link and click while holding ctrl - shift. More about | Links and Pointers >>
+
+  There is no need to manually create, name, or keep track of files. You may organize your writing entirely within the project, mostly ignoring files. New files are made automatically. | File Naming >>
+
 
   | Dynamic Definitions - Syntax and Parameters >>
-  | The Node Browser >>
 
 }
 
@@ -34,25 +28,11 @@ Commands can be accecesed through the Sublime Text Command Pallete, Command-Shif
 
   | Escaping Curly Brackets >>
 }
-{ Example Dynamic Nodes _
-
-}
-
-
-
 
 { Table of Contents _
 | Urtext Starter Project >
   ├── | Basic Topics >
-  │   ├── | Links and Pointers >
-  │   │   ├── | Links >
-  │   │   │   └── | Sublime Text tools to help with linking >
-  │   │   ├── | Dynamic IDs >
-  │   │   └── | Linking to Files and Internet Links >
-  │   │       ├── | Link to Web/HTTP(S) >
-  │   │       └── | Link to Files >
   │   ├── | Nodes >
-  │   │   ├── | Node Titles >
   │   │   ├── | Types of Nodes >
   │   │   │   ├── | File Nodes >
   │   │   │   ├── | Bracket Nodes >
@@ -61,55 +41,40 @@ Commands can be accecesed through the Sublime Text Command Pallete, Command-Shif
   │   │   │   │       └── | another node >
   │   │   │   │           └── | yet another node >
   │   │   │   ├── | Bullet Nodes >
+  │   │   │   ├── | Node Titles >
   │   │   │   └── | Node Titles vs. Node IDs >
   │   │   ├── | Projects, Structure and Compiling >
   │   │   ├── | Metadata >
-  │   │   │   ├── | Metadata Syntax >
+  │   │   │   ├── | Syntax >
   │   │   │   ├── | Timestamps >
-  │   │   │   │   ├── | Timestamp Syntax >
-  │   │   │   │   ├── | Tracking Node Dates and Times >
-  │   │   │   │   └── | Time Zones >
-  │   │   │   ├── | Case-sensitivity >
-  │   │   │   ├── | Reserved Key : title >
-  │   │   │   ├── | Hash Key >
-  │   │   │   └── | Tag nodes and descendents >
+  │   │   │   └── | Tracking Node Dates and Times >
+  │   │   │       ├── | Time Zones >
+  │   │   │       ├── | Case-sensitivity >
+  │   │   │       ├── | Reserved Keys >
+  │   │   │       ├── | Hash Key >
+  │   │   │       └── | Propagating metadata to descendents >
   │   │   ├── | Dynamic Definitions >
   │   │   ├── | Traverse Mode >
   │   │   │   └── | Word Wrap in Traverse Mode >
   │   │   ├── | Pulling and Popping Nodes >
   │   │   └── | Sublime Text Urtext Key Bindings >
   │   │       ├── | Navigation >
-  │   │       │   ├── | Open Urtext Link: ctrl + shift + / >
-  │   │       │   ├── | Navigate Forward: ctrl + shift + >
-  │   │       │   ├── | Navigate Backward: ctrl + shift + < >
-  │   │       │   ├── | Home Node: ctrl + shift + h >
-  │   │       │   ├── | Open Random Node: ctrl + shift + f >
-  │   │       │   ├── | Node Browser: ctrl + shift + e >
-  │   │       │   ├── | Node Browser, All Projects: ctrl + shift + * >
-  │   │       │   ├── | Node Browser, Forward Links: ctrl + shift + right >
-  │   │       │   ├── | Node Browser, Backlinks: ctrl + shift + left >
-  │   │       │   ├── | List Projects: ctrl + shift + o >
-  │   │       │   └── | Metadata Browser: ctrl + shift + m >
   │   │       ├── | Content Insertion >
-  │   │       │   ├── | New Node: ctrl + shift + ; >
-  │   │       │   ├── | Insert Timestamp: ctrl + shift + t >
-  │   │       │   ├── | Insert Bracket Node: ctrl + shift + Left-Bracket >
-  │   │       │   ├── | Insert Dynamic Definition and Node: ctrl + shift + Right-Bracket >
-  │   │       │   ├── | Insert Bullet Node: ctrl + shift + 6 >
-  │   │       │   ├── | Insert Link to Existing Node: ctrl + shift + l >
-  │   │       │   └── | Insert Link to New Node: ctrl + shift + ' >
   │   │       ├── | Copy Links >
-  │   │       │   ├── | Copy Link to Node: ctrl + shift + c >
-  │   │       │   └── | Copy Link to Node With Project: ctrl + shift + super + c >
-  │   │       └── | Traverse Modes >
-  │   │           └── | Toggle Traverse Broswer: ctrl + shift + r >
-  │   ├── | Syntax >
+  │   │       ├── | Traverse Modes >
+  │   │       └── | Changing Key Bindings >
+  │   ├── | Urtext Syntax >
+  │   ├── | Links and Pointers >
+  │   │   ├── | Links >
+  │   │   │   └── | Sublime Text tools to help with linking >
+  │   │   ├── | Dynamic IDs >
+  │   │   └── | Linking to Files and Internet Links >
+  │   │       ├── | Link to Web/HTTP(S) >
+  │   │       └── | Link to Files >
   │   ├── | File Naming >
-  │   ├── | Dynamic Definitions - Syntax and Parameters >
-  │   └── | The Node Browser >
+  │   └── | Dynamic Definitions - Syntax and Parameters >
   ├── | Additional Topics >
   │   └── | Escaping Curly Brackets >
-  ├── | Example Dynamic Nodes >
 } 
 
 [[  

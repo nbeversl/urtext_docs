@@ -6,52 +6,56 @@ always_oneline_meta::False
 	When creating a new node, sets whether the metadata will appear on one line separated by semicolon,	or on separate lines.
 
 breadcrumb_key::
-	When popping nodes, optionally adds a breadcrumb showing which node the popped node was popped from, and the timestamp.
+	When popping nodes, optionally adds a breadcrumb showing the node from which the popped node was popped, and a timestamp. See | Pulling and Popping Nodes > for more information.
 
 case_sensitive::title - notes - comments
-	Specifies which keys' contents should be parsed case-sensitive.
+	Specifies which keys' values should be parsed case-sensitively.
 
-console_log::True
+console_log::
 	(True or False): Sets whether Urtext will log updates, errors, messages to Sublime's Python console.
-	(Press Control-tilde(~)  to open the console)
+	(Press Control-tilde(~)  to open the console) Default is False.
 
-contents_strip_internal_whitespace::True
-	When including contents in dynamic nodes, determines whether internal multiline whitespace gets stripped from the dynamic output.
+contents_strip_internal_whitespace::
+	When including contents in dynamic nodes, determines whether internal multiline whitespace gets stripped from the dynamic output. Default is True.
 
-contents_strip_outer_whitespace::True
-	When including contents in dynamic nodes, determines whether leading or trailing whitespace gets stripped from the dynamic output.
+contents_strip_outer_whitespace::
+	When including contents in dynamic nodes, determines whether leading or trailing whitespace gets stripped from the dynamic output. Default is True
 
 exclude_files::
-	Sets filenames in the project folder to be excluded from the project, if any.
+	Sets filenames in the project folder(s) to be excluded from the project, if any.
 
 exclude_from_star::title - _newest_timestamp - _oldest_timestamp - _breadcrumb - def
-	When marking metadata using the * and ** syntax, these keys will get omitted, if present.
+	When marking metadata using the * and ** syntax, these keys will get omitted, if present. For more information see | Propagating metadata to descendents >
+
+extensions::/Users/nathanielbeversluis/Documents/Urtext All Aspects/extensions_active/lint
 
 filename_title_length::100
 	Sets a maximum title length (in characters) when using | Reindex Files >
 
 filenames::INDEX - title
-	Specifies format for filenames when using | Reindex Files > and 
-	Any metadata key used in the project is valid, in addition to the PREFIX placeholder, which will apply a numerical prefix to the outputted filename.
+	Specifies format for filenames when using | Reindex Files >. Any metadata key used in the project is valid, in addition to the PREFIX placeholder, which will apply a numerical prefix to the outputted filename.
 
 filename_datestamp_format::%m-%d-%Y
-	Specifies how dates will be formatted in filenames when using 
+	Specifies how dates will be formatted in filenames when using | Reindex Files >
 
 file_index_sort::index - _oldest_timestamp
-	When using Reindex Files with an index prefix, specifies the order in which the files should be indexed. For more information | Reindex Files >
+	When using | Reindex Files > with an index prefix (see above), specifies the order in which the files should be indexed. For more information. 
 
-hash_key::kw
-	The keyname to use for the hash mark metadata shortcut. See | Hash Key >
+file_node_timestamp::True
 
-history_interval::10
-	Sets the interval (in seconds) at which history snapshots should be taken of your views. Increase the interval to have smaller .diff files in your /history folder. Decrease it to have more granular edit history.
+filename_title_length::100
+	Sets a maximum title length (in characters) when using Reindex Files
+
+file_index_sort::index - _oldest_timestamp
+	When using Reindex Files with an prefix, specifies the order in which the files should be prefixed. For more information see "Reindex Files" in the Urtext Reference.
+
+
+hash_key::
+	The keyname to use for the hash metadata shortcut. See | Hash Key >
 
 home::Urtext Starter Project
 	Identifies the home node for the project, connected to the "Home" key
 	For example, Press Ctrl-Shift-H to go to the Home node of this documentation, whose ID is 013
-
-open_with_system::pdf 
-	File extensions to always open using the default system application.
 
 new_file_node_format::$cursor
 	Specifies the default format for new file nodes. The following values can be string together in any way:
@@ -72,6 +76,9 @@ node_date_keyname::timestamp
 numerical_keys::_index - index
 	Sets keys that should always be interpreted numerically for sorting and processing in dynamic output.
 
+open_with_system:: 
+	File extensions to always open using the default system application. Default included extensions are .pdf
+
 project_title::Starter Project
 	Provides a title for the entire project
 
@@ -82,18 +89,6 @@ timestamp_format::%a., %b. %d, %Y, %I:%M %p
 timezone::US/Eastern
 	Specifices a timezone to which the timestamp keys should be localized, or, if including a timezone in the `timestamp_format`, what timezone to include.
 
-use_timestamp::
-	Specifies keys for which the timestamp should be used as output instead of the text or numeric value.
-
-file_node_timestamp::True
-
-filename_title_length::100
-	Sets a maximum title length (in characters) when using Reindex Files
-
-file_index_sort::index - _oldest_timestamp
-	When using Reindex Files with an prefix, specifies the order in which the files should be prefixed. For more information see "Reindex Files" in the Urtext Reference.
-
-new_file_line_pos::2
 
 new_file_node_format::$timestamp $cursor
 	Spcifies the default format for new file nodes. The following values can be string together in any way:
@@ -103,4 +98,6 @@ new_file_node_format::$timestamp $cursor
 
 timestamp_format::%a., %b. %d, %Y, %I:%M %p %Z
 	Set the format of the timestamp when using Timestamps. This accepts a Python `strftime` directive. For possible format strings, see https://strftime.org/
- 
+
+use_timestamp::
+	Specifies keys for which the timestamp should be returned as output instead of the text or numeric value.
