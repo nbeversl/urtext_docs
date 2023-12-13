@@ -1,4 +1,0 @@
-Nodes _
-		
-
-		Urtext's basic unit is a "node", which is a range or set of ranges of text within a file. A folder of nodes is a "project". Urtext is aware of all the nodes in a project at once, so nodes can reference, modify, and organize one another, across hundreds or thousands of files. The | Syntax > permits instructions embedded into the text itself.Tue., Dec. 12, 2023, 04:23 AM  
