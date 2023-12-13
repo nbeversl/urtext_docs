@@ -1,0 +1,39 @@
+Links and Pointers _
+
+{ Links _ 
+
+    To make a link from one node to another, use the pipe and a space (`| `) followed immediately by a node ID, followed by a space and the right angle bracket (` >`). Linking does not require a filename or any other information, only the node title. Any other surrounding text is ignored.
+
+    {  Sublime Text tools to help with linking _
+    
+        Two Sublime Command Palette commands can make linking quick and easy:
+     
+        Urtext : Link To ...
+            Links from the currently viewed node to another node which you can select in the selection panel. When you select a node in the quick panel, a link to that node will be inserted at the cursor.
+ 
+        Urtext: Link From ...
+            Links TO the current node FROM another node. When you select this command, a link to the current node will be copied to the clipboard. You can then paste the reference into the node you open in the quick panel.
+    }  
+}
+
+{ Dynamic IDs _
+
+    Whenever the title of a node is edited/changed, Urtext will attempt to update all links to that node to the new title.
+ }
+
+
+{ Linking to Files and Internet Links _
+
+    { Link to Web/HTTP(S) _
+
+        HTTP(S) links are recognized automatically and will open in the default browser.    
+        Example: pressing | Open Urtext Link: ctrl + shift + / > on the HTML link will open it in your system's default browser: http://github.com/nbeversl/urtext
+    }
+
+
+    { Link to Files _
+            
+        Links to files can be made by writing `|/ `, followed immediately with a file path relative to the folder of the project and ending with a right angle bracket ` >`:
+        Example: f>README.md
+    } 
+}

@@ -1,0 +1,7 @@
+Pulling and Popping Nodes _
+    
+    Bracketed nodes can be "popped" out to separate file-level nodes and pulled back in again, either to the same node or to another one. 
+
+    To pop a node, position the cursor inside the node to pop and select "Urtext : Pop Node" from the command palette or press Shift-Ctrl-Super-(right-arrow). The node will be moved to a separate file and replaced with a link to itself.
+
+    To pull a node, make (or choose an existing) a link or pointer and position the cursor on it. Select "Urtext : Pull Node" from the command palette or press Shift-Ctrl-Super-(left-arrow).Tue., Dec. 12, 2023, 04:28 AM  
